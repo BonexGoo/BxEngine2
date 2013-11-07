@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structuv" kind="struct" prot="public">
+    <compoundname>uv</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuv_1af115f41d014631dd92184509b38d7fad" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int uv::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuv_1a5621e5abdbc73a3101130128389e922a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int uv::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>uv구조체 : u, v </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="223" bodyend="223"/>
+    <listofallmembers>
+      <member refid="structuv_1af115f41d014631dd92184509b38d7fad" prot="public" virt="non-virtual"><scope>uv</scope><name>u</name></member>
+      <member refid="structuv_1a5621e5abdbc73a3101130128389e922a" prot="public" virt="non-virtual"><scope>uv</scope><name>v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

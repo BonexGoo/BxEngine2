@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_express" kind="namespace">
+    <compoundname>BxExpress</compoundname>
+    <innerclass refid="class_bx_express_1_1___integer" prot="public">BxExpress::_Integer</innerclass>
+    <innerclass refid="class_bx_express_1_1_integer" prot="public">BxExpress::Integer</innerclass>
+    <innerclass refid="class_bx_express_1_1_integer_x" prot="public">BxExpress::IntegerX</innerclass>
+    <innerclass refid="class_bx_express_1_1___float" prot="public">BxExpress::_Float</innerclass>
+    <innerclass refid="class_bx_express_1_1_float" prot="public">BxExpress::Float</innerclass>
+    <innerclass refid="class_bx_express_1_1_float_x" prot="public">BxExpress::FloatX</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_express_1a19656ee3787d6e77f89dd5a7028b73f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator+</definition>
+        <argsstring>(const int v1, const _Integer &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="247" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a575546660e3b31251e24ee75aa9a0f07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator+</definition>
+        <argsstring>(const int v1, const _Float &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a88ec5824fc42c0b850d19f394430f83e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator+</definition>
+        <argsstring>(const _Integer &amp;v1, const int v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="20" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a07351deca9ee6577f708360eb0ecebc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator+</definition>
+        <argsstring>(const _Integer &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a4879e77f99cd4d78e836435ab1e4ddd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator+</definition>
+        <argsstring>(const _Integer &amp;v1, const _Float &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="251" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a36545c2797708d27f00ff25e51179f8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator+</definition>
+        <argsstring>(const _Float &amp;v1, const int v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="23" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="252" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1aac8dcbcfe75427b6e506444254adce2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator+</definition>
+        <argsstring>(const _Float &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="253" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1aa3255007df91b4508c065ab42e314284" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator+</definition>
+        <argsstring>(const _Float &amp;v1, const _Float &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="25" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="254" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a04342b2adbe93721cb4b378123cb6275" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator-</definition>
+        <argsstring>(const int v1, const _Integer &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="26" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="256" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a9c5bb30ebdfd15c6b044930412dbc6ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator-</definition>
+        <argsstring>(const int v1, const _Float &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="257" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1af94d19238fadab065a81efb5b7ec2355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator-</definition>
+        <argsstring>(const _Integer &amp;v1, const int v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="28" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="258" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1ad7d5b583153c848a694d5fa61d6d9ac6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator-</definition>
+        <argsstring>(const _Integer &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="259" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1ae4c989bdb920c3e6c1ed4911c03da1a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator-</definition>
+        <argsstring>(const _Integer &amp;v1, const _Float &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="30" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="260" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1ac350fdf2ec4b1f615261b124ebe528eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator-</definition>
+        <argsstring>(const _Float &amp;v1, const int v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="261" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1afb100df6af4670d06287d1c66b7c17a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator-</definition>
+        <argsstring>(const _Float &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="32" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="262" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a564108b63c8277a79115c92c7c3cc50b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator-</definition>
+        <argsstring>(const _Float &amp;v1, const _Float &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="33" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="263" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a40530400ac1392bfe69b9a209c410e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator*</definition>
+        <argsstring>(const int v1, const _Integer &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="34" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="265" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a0b1e5b1fe5a44f81f0edb658d14c414a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator*</definition>
+        <argsstring>(const int v1, const _Float &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="35" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="266" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1aeffc60b44f444d2732c7999898cdcff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator*</definition>
+        <argsstring>(const _Integer &amp;v1, const int v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="36" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="267" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a53d400a408fc3d33aec0c6f5772c2f78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator*</definition>
+        <argsstring>(const _Integer &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="268" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1ace6d271b0eab2de2f64054d6be84aae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator*</definition>
+        <argsstring>(const _Integer &amp;v1, const _Float &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="38" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a57b6faea5eaa783c98e19a12f30f972d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator*</definition>
+        <argsstring>(const _Float &amp;v1, const int v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="39" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a7a24cead4b886c00798611fa734e77b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator*</definition>
+        <argsstring>(const _Float &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="40" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a5dec955da545f51f3be720bf3f68ef6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator*</definition>
+        <argsstring>(const _Float &amp;v1, const _Float &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="272" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a4157ac210f0f90de095121c3ba098cbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator/</definition>
+        <argsstring>(const int v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="42" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1ab476b3c4885d1a1d21196db4e4ae7446" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator/</definition>
+        <argsstring>(const int v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="43" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="275" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1acad8eb32456cbba68a2054ca3c6ea323" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator/</definition>
+        <argsstring>(const huge v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const huge</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="44" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="276" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a991e4e7aa578184aeb16260243d14a72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator/</definition>
+        <argsstring>(const huge v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const huge</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="277" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a47d6af4f56f554ddd1d66bd8cc532e6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::operator/</definition>
+        <argsstring>(const _Integer &amp;v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="46" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a8be7425f8d8b05a2a8d7a486f3e1753d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator/</definition>
+        <argsstring>(const _Integer &amp;v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1aaa174ca0d5b9081cc38d7172be0ee635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator/</definition>
+        <argsstring>(const _Float &amp;v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_express_1a5f947952d0f95d3858b3c9231bec83c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float BxExpress::operator/</definition>
+        <argsstring>(const _Float &amp;v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="281" bodyend="281"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>고속처리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

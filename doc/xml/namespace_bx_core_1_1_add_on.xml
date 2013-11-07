@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_add_on" kind="namespace">
+    <compoundname>BxCore::AddOn</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ad8d45ac71de83456a7b5aa27ffa647ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte* BxCore::AddOn::JPGToBMP</definition>
+        <argsstring>(const byte *jpg)</argsstring>
+        <name>JPGToBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>jpg</declname>
+        </param>
+        <briefdescription>
+<para>JPG이미지로 BMP를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jpg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: JPG리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BMP리소스(ReleaseBMP로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kindref="member">ReleaseBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="512" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aeb819fb3335b1d32fd0b3278ee2b00eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte* BxCore::AddOn::GIFToBMP</definition>
+        <argsstring>(const byte *gif, const int length, int _out_ numpage)</argsstring>
+        <name>GIFToBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>numpage</declname>
+        </param>
+        <briefdescription>
+<para>GIF이미지로 BMP를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GIF리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GIF리소스의 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numpage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 장면수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>모든 장면이 세로로 연결된 BMP리소스(ReleaseBMP로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kindref="member">ReleaseBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="522" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aa59974382fefad3d3c37561219e64e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte* BxCore::AddOn::HQXToBMP</definition>
+        <argsstring>(const byte *bmp, int scale)</argsstring>
+        <name>HQXToBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>HQX방식으로 재가공된 BMP를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: HQX옵션(2, 3, 4중 선택) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>재가공된 BMP리소스(ReleaseBMP로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kindref="member">ReleaseBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="531" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::AddOn::ReleaseBMP</definition>
+        <argsstring>(const byte *bmp)</argsstring>
+        <name>ReleaseBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>BMP리소스 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: JPGToBMP로 제작되었던 BMP리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1ad8d45ac71de83456a7b5aa27ffa647ac" kindref="member">JPGToBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="538" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AddOn파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="505" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_library" kind="namespace">
+    <compoundname>BxCore::Library</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_library</type>
+        <definition>id_library BxCore::Library::Open</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>라이브러리 열기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>라이브러리ID(null은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" kindref="member">Close</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="829" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Library::Close</definition>
+        <argsstring>(id_library handle)</argsstring>
+        <name>Close</name>
+        <param>
+          <type>id_library</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>라이브러리 닫기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 라이브러리ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="836" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* BxCore::Library::Link</definition>
+        <argsstring>(id_library handle, string name)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>id_library</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>함수연결 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 라이브러리ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 함수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>함수포인터 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="844" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Library파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="822" column="1"/>
+  </compounddef>
+</doxygen>

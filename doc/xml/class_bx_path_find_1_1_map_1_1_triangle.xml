@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_path_find_1_1_map_1_1_triangle" kind="class" prot="private">
+    <compoundname>BxPathFind::Map::Triangle</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_path_find_1_1_map_1_1_triangle_1ad2f32e921244459f7cc6d50355429cc6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="51" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a0e6378d52c5ca386f47b05930aaae2a3" prot="private" static="no" mutable="no">
+        <type>linetype</type>
+        <definition>linetype BxPathFind::Map::Triangle::TypeAB</definition>
+        <argsstring></argsstring>
+        <name>TypeAB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a8144faec74747f7f857d5f768a9e3ae1" prot="private" static="no" mutable="no">
+        <type>linetype</type>
+        <definition>linetype BxPathFind::Map::Triangle::TypeAC</definition>
+        <argsstring></argsstring>
+        <name>TypeAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a3c86483cb2f3d0d6e498a59bc33ff0fd" prot="private" static="no" mutable="no">
+        <type>linetype</type>
+        <definition>linetype BxPathFind::Map::Triangle::TypeBC</definition>
+        <argsstring></argsstring>
+        <name>TypeBC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="54" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a91b9b5dc85d98c0a6412fa8867a549b9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPathFind::Map::Triangle::DotA</definition>
+        <argsstring></argsstring>
+        <name>DotA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a5ed845ac7b5169e4f28277fdbb0c0fbe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPathFind::Map::Triangle::DotB</definition>
+        <argsstring></argsstring>
+        <name>DotB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a4b7d549daee82306cb9ea9f993937164" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPathFind::Map::Triangle::DotC</definition>
+        <argsstring></argsstring>
+        <name>DotC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="57" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1aa0869ee340a08f3d18f36e689079a895" prot="private" static="no" mutable="no">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::Triangle::LinkAB</definition>
+        <argsstring></argsstring>
+        <name>LinkAB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="58" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1af1ca7e5b19f4a42af9f9195831b81a98" prot="private" static="no" mutable="no">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::Triangle::LinkAC</definition>
+        <argsstring></argsstring>
+        <name>LinkAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="59" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1aa69fd9776844196bf7a28cc207dd71a1" prot="private" static="no" mutable="no">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::Triangle::LinkBC</definition>
+        <argsstring></argsstring>
+        <name>LinkBC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="60" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1ab0698a60483de706c0d8277b4458cd8e" prot="private" static="no" mutable="no">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxPathFind::Map::Triangle::WayDot</definition>
+        <argsstring></argsstring>
+        <name>WayDot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="61" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a015a37e61fc65bce59863a7f543f03d5" prot="private" static="no" mutable="no">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::Triangle::WayBack</definition>
+        <argsstring></argsstring>
+        <name>WayBack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="62" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1a5fdb8a84e3e3fba33f3c6ac97042dc03" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPathFind::Map::Triangle::DistanceSum</definition>
+        <argsstring></argsstring>
+        <name>DistanceSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="63" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1_1_triangle_1af09a1d8d90be05de59b83fb68baaf461" prot="private" static="no" mutable="no">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::Triangle::Next</definition>
+        <argsstring></argsstring>
+        <name>Next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="64" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1_1_triangle_1a8e388ca679bdd17704dda38c9c4207fd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPathFind::Map::Triangle::Triangle</definition>
+        <argsstring>()</argsstring>
+        <name>Triangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="66" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1_1_triangle_1aa89ec58e16208cb7c953c4aef9b7a856" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::Triangle::INSERT_FIRST</definition>
+        <argsstring>()</argsstring>
+        <name>INSERT_FIRST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="94" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1_1_triangle_1abfd96ca3b81c98259b869318913694cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPathFind::Map::Triangle::~Triangle</definition>
+        <argsstring>()</argsstring>
+        <name>~Triangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="82" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="49" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a5fdb8a84e3e3fba33f3c6ac97042dc03" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>DistanceSum</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a91b9b5dc85d98c0a6412fa8867a549b9" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>DotA</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a5ed845ac7b5169e4f28277fdbb0c0fbe" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>DotB</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a4b7d549daee82306cb9ea9f993937164" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>DotC</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa89ec58e16208cb7c953c4aef9b7a856" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>INSERT_FIRST</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa0869ee340a08f3d18f36e689079a895" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>LinkAB</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1af1ca7e5b19f4a42af9f9195831b81a98" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>LinkAC</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa69fd9776844196bf7a28cc207dd71a1" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>LinkBC</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1ad2f32e921244459f7cc6d50355429cc6" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>Map</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1af09a1d8d90be05de59b83fb68baaf461" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>Next</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a8e388ca679bdd17704dda38c9c4207fd" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>Triangle</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a0e6378d52c5ca386f47b05930aaae2a3" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>TypeAB</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a8144faec74747f7f857d5f768a9e3ae1" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>TypeAC</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a3c86483cb2f3d0d6e498a59bc33ff0fd" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>TypeBC</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a015a37e61fc65bce59863a7f543f03d5" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>WayBack</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1ab0698a60483de706c0d8277b4458cd8e" prot="private" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>WayDot</name></member>
+      <member refid="class_bx_path_find_1_1_map_1_1_triangle_1abfd96ca3b81c98259b869318913694cb" prot="public" virt="non-virtual"><scope>BxPathFind::Map::Triangle</scope><name>~Triangle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

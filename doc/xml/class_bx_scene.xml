@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_scene" kind="class" prot="public">
+    <compoundname>BxScene</compoundname>
+    <includes refid="_bx_scene_8hpp" local="no">BxScene.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_bx_scene_1a9c52b5ef80f24ecdc2dd372e95e0cb61" prot="public" static="no">
+        <type>syseventresult(*</type>
+        <definition>typedef syseventresult(* BxScene::EventCB)(void *Data, const sysevent &amp;Event)</definition>
+        <argsstring>)(void *Data, const sysevent &amp;Event)</argsstring>
+        <name>EventCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="74" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_scene_1adef1994cc41a104a8fabc9db74dd56e8" prot="public" static="no">
+        <type>sysupdateresult(*</type>
+        <definition>typedef sysupdateresult(* BxScene::UpdateCB)(void *Data)</definition>
+        <argsstring>)(void *Data)</argsstring>
+        <name>UpdateCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="75" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_scene_1a0ba75744ae3454de4708c8303ef5f627" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxScene::RenderCB)(void *Data, BxDraw &amp;Draw)</definition>
+        <argsstring>)(void *Data, BxDraw &amp;Draw)</argsstring>
+        <name>RenderCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="76" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_scene_1adcf3baf5d18868c7225ad13c00bd094c" prot="public" static="no">
+        <type>void *(*</type>
+        <definition>typedef void*(* BxScene::GetDataCB)(sysmethod Mode)</definition>
+        <argsstring>)(sysmethod Mode)</argsstring>
+        <name>GetDataCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_scene_1a9763cca1ec026a37162400e97c183bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::AddRequest</definition>
+        <argsstring>(string Name, int Order=-1)</argsstring>
+        <name>AddRequest</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Order</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>씬활성화 요청 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 추가될 출력순번(-1은 최상단, -2는 GUI) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_scene_1aa9dd5490b88cfcbe671a331dceb1a77d" kindref="member">SubRequest</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1aa9dd5490b88cfcbe671a331dceb1a77d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::SubRequest</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>SubRequest</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_scene_1a9763cca1ec026a37162400e97c183bae" kindref="member">AddRequest</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="35" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="35" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a993fd47b28dce1816496d5e93ba33662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::SetRequest</definition>
+        <argsstring>(string Name, uint Order)</argsstring>
+        <name>SetRequest</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>Order</declname>
+        </param>
+        <briefdescription>
+<para>활성씬 출력순번변경 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변경될 출력순번 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="57" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="57" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a02c3a0d2d6497abc759327e49d526dc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint</type>
+        <definition>global_func uint BxScene::GetCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetCount</name>
+        <briefdescription>
+<para>활성씬 수량얻기 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="144" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a93faa81b158dc76969ef4af16efde4a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint</type>
+        <definition>global_func uint BxScene::GetOrder</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>GetOrder</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬 출력순번얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>출력순번 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="154" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="154" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a8c58816a245121762a6b475b95b175a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func string</type>
+        <definition>global_func string BxScene::GetName</definition>
+        <argsstring>(uint Order)</argsstring>
+        <name>GetName</name>
+        <param>
+          <type>uint</type>
+          <declname>Order</declname>
+        </param>
+        <briefdescription>
+<para>해당출력순번의 활성씬 이름얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력순번 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>씬이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="173" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="173" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1ac485f70214143d939311e6b403d6ed6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxScene::IsActivity</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>IsActivity</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>해당 씬의 활성화 상태얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>활성화여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="192" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a31f3363df33df2fe373ed5e96679c95d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void *</type>
+        <definition>global_func void* BxScene::GetData</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>GetData</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬의 데이터얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>데이터 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="204" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="204" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>씬관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxScene.hpp" bodystart="8" bodyend="548"/>
+    <listofallmembers>
+      <member refid="class_bx_scene_1a9763cca1ec026a37162400e97c183bae" prot="public" virt="non-virtual"><scope>BxScene</scope><name>AddRequest</name></member>
+      <member refid="class_bx_scene_1a9c52b5ef80f24ecdc2dd372e95e0cb61" prot="public" virt="non-virtual"><scope>BxScene</scope><name>EventCB</name></member>
+      <member refid="class_bx_scene_1a02c3a0d2d6497abc759327e49d526dc2" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetCount</name></member>
+      <member refid="class_bx_scene_1a31f3363df33df2fe373ed5e96679c95d" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetData</name></member>
+      <member refid="class_bx_scene_1adcf3baf5d18868c7225ad13c00bd094c" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetDataCB</name></member>
+      <member refid="class_bx_scene_1a8c58816a245121762a6b475b95b175a4" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetName</name></member>
+      <member refid="class_bx_scene_1a93faa81b158dc76969ef4af16efde4a1" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetOrder</name></member>
+      <member refid="class_bx_scene_1ac485f70214143d939311e6b403d6ed6d" prot="public" virt="non-virtual"><scope>BxScene</scope><name>IsActivity</name></member>
+      <member refid="class_bx_scene_1a0ba75744ae3454de4708c8303ef5f627" prot="public" virt="non-virtual"><scope>BxScene</scope><name>RenderCB</name></member>
+      <member refid="class_bx_scene_1a993fd47b28dce1816496d5e93ba33662" prot="public" virt="non-virtual"><scope>BxScene</scope><name>SetRequest</name></member>
+      <member refid="class_bx_scene_1aa9dd5490b88cfcbe671a331dceb1a77d" prot="public" virt="non-virtual"><scope>BxScene</scope><name>SubRequest</name></member>
+      <member refid="class_bx_scene_1adef1994cc41a104a8fabc9db74dd56e8" prot="public" virt="non-virtual"><scope>BxScene</scope><name>UpdateCB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

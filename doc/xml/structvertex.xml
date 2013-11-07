@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structvertex" kind="struct" prot="public">
+    <compoundname>vertex</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvertex_1a170e80128423a8b3307dd7908fc7564c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vertex::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="219" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvertex_1adc996af0584614ec01cdf8f23bdafc7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vertex::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="219" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvertex_1a759224f594ddf22da9027decd6f90df0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vertex::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="219" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvertex_1af150e17d1d4948db613b1a363fc58317" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vertex::nouse</definition>
+        <argsstring></argsstring>
+        <name>nouse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="219" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>vertex구조체 : x, y, z, nouse(구조체2승수맞춤) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="219" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="219" bodyend="219"/>
+    <listofallmembers>
+      <member refid="structvertex_1af150e17d1d4948db613b1a363fc58317" prot="public" virt="non-virtual"><scope>vertex</scope><name>nouse</name></member>
+      <member refid="structvertex_1a170e80128423a8b3307dd7908fc7564c" prot="public" virt="non-virtual"><scope>vertex</scope><name>x</name></member>
+      <member refid="structvertex_1adc996af0584614ec01cdf8f23bdafc7b" prot="public" virt="non-virtual"><scope>vertex</scope><name>y</name></member>
+      <member refid="structvertex_1a759224f594ddf22da9027decd6f90df0" prot="public" virt="non-virtual"><scope>vertex</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structsize" kind="struct" prot="public">
+    <compoundname>size</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structsize_1a35fd346068e120201a948f939dd50588" prot="public" static="no">
+        <name>@7</name>
+        <enumvalue id="structsize_1a35fd346068e120201a948f939dd50588a9d86a08d08399dd1e0bf6c9527e2a116" prot="public">
+          <name>half</name>
+          <initializer>= 1024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structsize_1a35fd346068e120201a948f939dd50588a11ea0e2b5c1096b05b840ae2ef2342c5" prot="public">
+          <name>max</name>
+          <initializer>= half * 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="202" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="202" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsize_1a46e54bacda3c5ed4d07cacd62665d80d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="201" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize_1a6c969fe8f7eba85ca0235ab86fe49cff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="201" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsize_1a73f20cf2b279769b2bb665b05509bcfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+        <definition>global_func const size&amp; size::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="203" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="structsize_1a722fd3476384568ed279a6001bd88b16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+        <definition>global_func const size&amp; size::full</definition>
+        <argsstring>()</argsstring>
+        <name>full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="204" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="structsize_1a414048a953d865d2c55f1226093a2c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+        <definition>size&amp; size::operator=</definition>
+        <argsstring>(const size &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="205" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="205" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>size구조체 : w, h </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="200" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="199" bodyend="206"/>
+    <listofallmembers>
+      <member refid="structsize_1a722fd3476384568ed279a6001bd88b16" prot="public" virt="non-virtual"><scope>size</scope><name>full</name></member>
+      <member refid="structsize_1a6c969fe8f7eba85ca0235ab86fe49cff" prot="public" virt="non-virtual"><scope>size</scope><name>h</name></member>
+      <member refid="structsize_1a35fd346068e120201a948f939dd50588a9d86a08d08399dd1e0bf6c9527e2a116" prot="public" virt="non-virtual"><scope>size</scope><name>half</name></member>
+      <member refid="structsize_1a35fd346068e120201a948f939dd50588a11ea0e2b5c1096b05b840ae2ef2342c5" prot="public" virt="non-virtual"><scope>size</scope><name>max</name></member>
+      <member refid="structsize_1a414048a953d865d2c55f1226093a2c67" prot="public" virt="non-virtual"><scope>size</scope><name>operator=</name></member>
+      <member refid="structsize_1a46e54bacda3c5ed4d07cacd62665d80d" prot="public" virt="non-virtual"><scope>size</scope><name>w</name></member>
+      <member refid="structsize_1a73f20cf2b279769b2bb665b05509bcfc" prot="public" virt="non-virtual"><scope>size</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_util_global" kind="namespace">
+    <compoundname>BxUtilGlobal</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_util_global_1a56fb895cb86dd749bb28d00a3e46e1f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fint</type>
+        <definition>static fint BxUtilGlobal::Pi</definition>
+        <argsstring>()</argsstring>
+        <name>Pi</name>
+        <briefdescription>
+<para>파이값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>파이값(3.141592...) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="12" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a14e83a98cabb5c7a774f4b754a83356f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::Fps</definition>
+        <argsstring>(const int ms)</argsstring>
+        <name>Fps</name>
+        <param>
+          <type>const int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>밀리초에 따른 프레임수 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>프레임수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int BxUtilGlobal::Min</definition>
+        <argsstring>(const int A, const int B)</argsstring>
+        <name>Min</name>
+        <param>
+          <type>const int</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>최소값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수B </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>최소값 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member">Max</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="33" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int BxUtilGlobal::Max</definition>
+        <argsstring>(const int A, const int B)</argsstring>
+        <name>Max</name>
+        <param>
+          <type>const int</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>최대값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수B </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>최대값 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member">Min</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="46" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a6287716f318295b8e32e131197694730" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int BxUtilGlobal::MinMax</definition>
+        <argsstring>(const int MinValue, const int Value, const int MaxValue)</argsstring>
+        <name>MinMax</name>
+        <param>
+          <type>const int</type>
+          <declname>MinValue</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>MaxValue</declname>
+        </param>
+        <briefdescription>
+<para>최소최대 한계설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MinValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 최소값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 입력값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 최대값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>최소최대 한계설정을 적용한 입력값 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member">Min</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="60" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a488ff490d994d4173653ee396893d5b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::Abs</definition>
+        <argsstring>(const int A)</argsstring>
+        <name>Abs</name>
+        <param>
+          <type>const int</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>절대값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>절대값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="70" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a9cf819f3c909576af6dbc54088271729" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int BxUtilGlobal::Pow</definition>
+        <argsstring>(const int A)</argsstring>
+        <name>Pow</name>
+        <param>
+          <type>const int</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>제곱값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>제곱값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="81" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1aed2b77f1f355f083931ba7e118115b9a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const huge</type>
+        <definition>static const huge BxUtilGlobal::Pow64</definition>
+        <argsstring>(const int A)</argsstring>
+        <name>Pow64</name>
+        <param>
+          <type>const int</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>64비트 제곱값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>64비트 제곱값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="91" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ad12eeb6b5b454f85bf6ea3cf7dcd3094" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int BxUtilGlobal::Sqrt</definition>
+        <argsstring>(const int A)</argsstring>
+        <name>Sqrt</name>
+        <param>
+          <type>const int</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>제곱근값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>제곱근값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="101" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a0732d3795e4787d47c7ac63e74c083ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int BxUtilGlobal::Sqrt64</definition>
+        <argsstring>(const huge A)</argsstring>
+        <name>Sqrt64</name>
+        <param>
+          <type>const huge</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>64비트 제곱근값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수A </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>64비트 제곱근값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="115" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="115" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::StrLen</definition>
+        <argsstring>(string String)</argsstring>
+        <name>StrLen</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <briefdescription>
+<para>스트링길이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>스트링의 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="129" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a39b70575037e5a54e79b304c82c1822a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::StrLenEx</definition>
+        <argsstring>(string String)</argsstring>
+        <name>StrLenEx</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <briefdescription>
+<para>확장된 스트링길이 구하기(과 <linebreak/>
+도 인식) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>스트링의 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="142" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="142" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a41d6743504746604fc1b2607346e2b5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::StrLenEx</definition>
+        <argsstring>(string String, char ExitCode)</argsstring>
+        <name>StrLenEx</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>ExitCode</declname>
+        </param>
+        <briefdescription>
+<para>확장된 스트링길이 구하기(사용자의 끝문자) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ExitCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 종료문자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>스트링의 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="156" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="156" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ad27a75813b9a9bf993a96c31fa738b63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string BxUtilGlobal::StrAlloc</definition>
+        <argsstring>(int SrcLength)</argsstring>
+        <name>StrAlloc</name>
+        <param>
+          <type>int</type>
+          <declname>SrcLength</declname>
+        </param>
+        <briefdescription>
+<para>스트링 할당 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SrcLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 할당할 사이즈(NULL문자가 더해짐) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member">StrFree</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string BxUtilGlobal::StrFree</definition>
+        <argsstring>(string AllocedString)</argsstring>
+        <name>StrFree</name>
+        <param>
+          <type>string</type>
+          <declname>AllocedString</declname>
+        </param>
+        <briefdescription>
+<para>스트링 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>AllocedString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 할당된 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>간편한 사용을 위한 null값 리턴 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_util_global_1ad27a75813b9a9bf993a96c31fa738b63" kindref="member">StrAlloc</ref>, <ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member">StrCpyWithAlloc</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="183" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ab0ebe24132ef62727a0493664df7e8eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::StrCpy</definition>
+        <argsstring>(string_rw_prm DstString, string_prm SrcString, int SrcLength=-1)</argsstring>
+        <name>StrCpy</name>
+        <param>
+          <type>string_rw_prm</type>
+          <declname>DstString</declname>
+        </param>
+        <param>
+          <type>string_prm</type>
+          <declname>SrcString</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SrcLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>스트링 복사하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DstString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 스트링(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가져올 스트링(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사될 사이즈(StringSrc의 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>복사된 사이즈(NULL문자 제외) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="196" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="196" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string BxUtilGlobal::StrCpyWithAlloc</definition>
+        <argsstring>(string SrcString, int SrcLength=-1)</argsstring>
+        <name>StrCpyWithAlloc</name>
+        <param>
+          <type>string</type>
+          <declname>SrcString</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SrcLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>스트링 할당 및 복사하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SrcString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가져올 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사될 사이즈(StringSrc의 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>할당 및 복사된 스트링 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member">StrFree</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="211" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="211" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a6f088d5e02c37b59ffaaacdc19e5d325" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>compare</type>
+        <definition>static compare BxUtilGlobal::StrCmp</definition>
+        <argsstring>(string_prm StringA, string_prm StringB, int FixedLength=-1)</argsstring>
+        <name>StrCmp</name>
+        <param>
+          <type>string_prm</type>
+          <declname>StringA</declname>
+        </param>
+        <param>
+          <type>string_prm</type>
+          <declname>StringB</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>FixedLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>스트링 비교하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StringA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링A(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StringB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링B(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FixedLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 고정식 비교구간(사용안함 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>same-같음, b_is_more-스트링B가 큼, b_is_less-스트링B가 작음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="227" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>compare</type>
+        <definition>static compare BxUtilGlobal::StrICmp</definition>
+        <argsstring>(string_prm StringA, string_prm StringB, int FixedLength=-1)</argsstring>
+        <name>StrICmp</name>
+        <param>
+          <type>string_prm</type>
+          <declname>StringA</declname>
+        </param>
+        <param>
+          <type>string_prm</type>
+          <declname>StringB</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>FixedLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>대소문자 구분없이 스트링 비교하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StringA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링A(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StringB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링B(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FixedLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 고정식 비교구간(사용안함 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>same-같음, b_is_more-스트링B가 큼, b_is_less-스트링B가 작음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="251" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="251" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::StrSameCount</definition>
+        <argsstring>(string_prm StringA, string_prm StringB)</argsstring>
+        <name>StrSameCount</name>
+        <param>
+          <type>string_prm</type>
+          <declname>StringA</declname>
+        </param>
+        <param>
+          <type>string_prm</type>
+          <declname>StringB</declname>
+        </param>
+        <briefdescription>
+<para>스트링간 동일구역의 길이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StringA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링A(restrict속성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StringB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링B(restrict속성) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="282" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="282" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a06eca0ea562f266e838ed7bed0843faa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>static uint BxUtilGlobal::StrHash</definition>
+        <argsstring>(string String, int SrcLength=-1)</argsstring>
+        <name>StrHash</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SrcLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>빠른 스트링비교를 위한 해시코드 만들기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 사이즈(String 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해시코드 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="296" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="296" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ad2174a731be330c26da64403b394bab4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::StrSearch</definition>
+        <argsstring>(string DstString, string SrcString, const int(&amp;SrcSearchMap)[256], int DstLength=-1)</argsstring>
+        <name>StrSearch</name>
+        <param>
+          <type>string</type>
+          <declname>DstString</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>SrcString</declname>
+        </param>
+        <param>
+          <type>const int(&amp;)</type>
+          <declname>SrcSearchMap</declname>
+          <array>[256]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>DstLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>스트링검색 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DstString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 대상스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 찾을 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcSearchMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 찾을 스트링의 검색맵 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DstLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 대상스트링 사이즈(DstString 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>찾은 위치(바이트단위), 검색실패시 -1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="318" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="318" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a89891dd65b308771858ff8d3dc2be904" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void BxUtilGlobal::StrSearchMap</definition>
+        <argsstring>(string String, int(_out_ SearchMap)[256])</argsstring>
+        <name>StrSearchMap</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type>int(_out_ SearchMap)</type>
+          <array>[256]</array>
+        </param>
+        <briefdescription>
+<para>스트링검색을 위한 검색맵 만들기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SearchMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 만들어질 검색맵 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="343" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="343" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a8e494971c4c523b48ff9a4f8f5c7f5f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool BxUtilGlobal::IsNumeric</definition>
+        <argsstring>(string String, int StringLength=-1)</argsstring>
+        <name>IsNumeric</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>StringLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>해당 스트링이 숫자인지의 여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 사이즈(String 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true-숫자, false-숫자아님 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="358" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="358" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a9d45cf5f144f0aaa40fa169feb915ea1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::AtoI</definition>
+        <argsstring>(string String, int StringLength=-1)</argsstring>
+        <name>AtoI</name>
+        <param>
+          <type>string</type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>StringLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>스트링을 정수로 변환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StringLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 처리될 사이즈(String의 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변환된 정수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="376" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="376" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ae93b9c22557509ab724aaebb7877f15e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>static string _tmp_ BxUtilGlobal::ItoA</definition>
+        <argsstring>(int Value)</argsstring>
+        <name>ItoA</name>
+        <param>
+          <type>int</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>정수를 스트링으로 변환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 정수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변환된 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="403" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="403" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a47cdf91c7f5f3970844dff6463bb98a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>static uint BxUtilGlobal::HtoI</definition>
+        <argsstring>(string Hex, int HexLength=-1)</argsstring>
+        <name>HtoI</name>
+        <param>
+          <type>string</type>
+          <declname>Hex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>HexLength</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>헥사덤프를 양수로 변환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Hex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 헥사덤프 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HexLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 처리될 사이즈(String의 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변환된 양수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="433" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="433" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a9a44edd8d2e9a645609ae5d23a84ca56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>static string _tmp_ BxUtilGlobal::ItoH</definition>
+        <argsstring>(uint Value)</argsstring>
+        <name>ItoH</name>
+        <param>
+          <type>uint</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>양수를 헥사덤프로 변환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 양수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변환된 헥사덤프 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="463" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="463" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a1779e753e6ac06f0b0538095c0ff0ca9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>static char BxUtilGlobal::LoadInt8</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadInt8</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드(char) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="485" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="485" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a7eae0e60a7c0d68747315118d63c44d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>short</type>
+        <definition>static short BxUtilGlobal::LoadInt16</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadInt16</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드(short) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="497" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="497" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1af336f01897cb6e50d0347d5ba54aa968" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int BxUtilGlobal::LoadInt32</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadInt32</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드(int) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="509" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="509" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ae5e038296b7ac4d7e4929187d8106c13" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte</type>
+        <definition>static byte BxUtilGlobal::LoadUint8</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadUint8</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드(byte) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="521" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="521" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1af2cc8a19541c23620fd82cc5f76ce048" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ushort</type>
+        <definition>static ushort BxUtilGlobal::LoadUint16</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadUint16</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드(ushort) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="533" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="533" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a49fe224b36cf92615d28ca70e38d9257" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>static uint BxUtilGlobal::LoadUint32</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadUint32</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드(uint) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="545" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="545" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1ad1297c7c4fa7a887810713a0ab541400" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void BxUtilGlobal::LoadBytes</definition>
+        <argsstring>(byte *&amp;Resource, void *Dest, uint Length)</argsstring>
+        <name>LoadBytes</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>Dest</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 바이트배열 로드(uint) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓸 데이터 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓸 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="558" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="558" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1aa3ddb995529bff12b689a073cd518e67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>static uint BxUtilGlobal::LoadBits</definition>
+        <argsstring>(byte *&amp;Resource, int &amp;CurrentBit, const int BitCount)</argsstring>
+        <name>LoadBits</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>CurrentBit</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>BitCount</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 비트배열 로드(uint) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CurrentBit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 현재 비트 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BitCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 비트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="571" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="571" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a5bd37d311b067ed2ac52c3443363013f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte *</type>
+        <definition>static byte* BxUtilGlobal::LoadType</definition>
+        <argsstring>(byte *&amp;Resource, uint TypeLen)</argsstring>
+        <name>LoadType</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>TypeLen</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 임의배열 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 데이터 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TypeLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽을 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 데이터 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="592" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="592" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a956f04e1f763eddd08c74f1bf301c05f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string BxUtilGlobal::LoadString</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>LoadString</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 스트링 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: uint16으로 스트링사이즈를 얻은 다음, 해당 스트링을 로드 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로드한 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="604" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="604" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_util_global_1a8bc0de550dfeda13d1a2bb85e7d55590" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void BxUtilGlobal::SetArray</definition>
+        <argsstring>(TYPE *Dst, const BxThrow &amp;Src)</argsstring>
+        <name>SetArray</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>Dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <declname>Src</declname>
+        </param>
+        <briefdescription>
+<para>상수나열로 배열을 초기화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화할 배열 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 상수나열길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 첫번째 상수값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 상수값들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="621" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="621" bodyend="625"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BxUtil관련 글로벌함수 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

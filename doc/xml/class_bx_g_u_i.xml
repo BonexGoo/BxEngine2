@@ -1,0 +1,1030 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_g_u_i" kind="class" prot="public">
+    <compoundname>BxGUI</compoundname>
+    <includes refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220" prot="private" static="no">
+        <name>@1</name>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220aeb5e021407fa19cf7d07f422d3f73e7b" prot="private">
+          <name>TAG_GUI</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a953e1f85dfd884e7241b080bc6658f0a" prot="private">
+          <name>TAG_LAYOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220af87e6cd70759f6da02f90a36d077faae" prot="private">
+          <name>TAG_LAYOUT_SPLIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a8a7f07d209489c8696a18db6e45069ed" prot="private">
+          <name>TAG_LAYOUT_OUTLINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a244f59afba7d4811d722cb2fc52d9287" prot="private">
+          <name>TAG_LAYOUT_EXTRA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220abd9b00246f5fb09aa60572da2785be84" prot="private">
+          <name>TAG_LAYOUT_VIEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220ae891b2fee26251c96f2a95953bea3093" prot="private">
+          <name>TAG_CONTENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a41663c4095415480fd6b369635bfaacd" prot="private">
+          <name>TAG_CONTENT_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a039194f83d3a00e13cdd3a7e1ee8c1b3" prot="private">
+          <name>TAG_CONTENT_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220ac887dd428600c319967176e2b69ad219" prot="private">
+          <name>TAG_CONTENT_IMAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a11609d0a9d5bd8612108fc5082423acc" prot="private">
+          <name>TAG_CONTENT_SPRITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220ac323f9f6780a8d3de9203055c3fb15aa" prot="private">
+          <name>TAG_CONTENT_FONT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220aa4cd90683fd035bf21b4988daa71eb5f" prot="private">
+          <name>TAG_CONTENT_TEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a09dd3e06645135e0044b06b03ce83f26" prot="private">
+          <name>TAG_CONTENT_BUTTON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a06fcf5e0068a28b54baebe3ffb40d387" prot="private">
+          <name>TAG_CONTENT_EDITBOX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="12" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="11" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420" prot="private" static="no">
+        <name>@2</name>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a379ae9cbd7dd518a483d046f06b5de31" prot="private">
+          <name>ATTB_GUI_VERSION</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a89e744b529cf71c9dcc35f32cc2c69c1" prot="private">
+          <name>ATTB_LAYOUT_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a0f3c4093dd5bf366c0cdbdb6e4ebf73c" prot="private">
+          <name>ATTB_LAYOUT_SPLIT_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ac53f33da920f2053c041c8875b1560f9" prot="private">
+          <name>ATTB_LAYOUT_SPLIT_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420acd1447c677253f8235fea51e333766da" prot="private">
+          <name>ATTB_LAYOUT_SPLIT_SIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a21d5341d2b6b6d970a5906915d8d8087" prot="private">
+          <name>ATTB_LAYOUT_SPLIT_FILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a2a65948ee12c0a997fa9c344be1d334b" prot="private">
+          <name>ATTB_LAYOUT_OUTLINE_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a4c763fb2c21a1641e7dc607958fcbe85" prot="private">
+          <name>ATTB_LAYOUT_OUTLINE_SIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a69fc327c466572ba29a83671453379e1" prot="private">
+          <name>ATTB_LAYOUT_OUTLINE_FILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aac812ab2046b8847a3a5b1550c598a72" prot="private">
+          <name>ATTB_LAYOUT_EXTRA_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ac083564d9c677f060c86189519cf2384" prot="private">
+          <name>ATTB_LAYOUT_EXTRA_WIDTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a6e37120700db74b953c3e3f2d70c35d5" prot="private">
+          <name>ATTB_LAYOUT_EXTRA_HEIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a9d35f4be904eab53f691e0ab85463dbf" prot="private">
+          <name>ATTB_LAYOUT_EXTRA_FILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae6ec2cd82b102c2229d0e4da2499021f" prot="private">
+          <name>ATTB_LAYOUT_VIEW_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420abb9e4ae113cd9f6643b2c6d8cd0da050" prot="private">
+          <name>ATTB_LAYOUT_VIEW_POSX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a28a566221d9f7a0c99fbfb4b9180eb09" prot="private">
+          <name>ATTB_LAYOUT_VIEW_POSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420afdb785cf9959b0f70160d15735acdf04" prot="private">
+          <name>ATTB_LAYOUT_VIEW_WIDTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae79bfc69e447fd20382779dd22cc543f" prot="private">
+          <name>ATTB_LAYOUT_VIEW_HEIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420afaba10539664f92a4c8115a591bbb285" prot="private">
+          <name>ATTB_LAYOUT_VIEW_SCROLL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a3efd1a4f353bcfc867d491f8892cda83" prot="private">
+          <name>ATTB_LAYOUT_VIEW_FILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a4456e01ee3487bd1a1899fa98b9465cd" prot="private">
+          <name>ATTB_CONTENT_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a62f879682e3fd25b9357644e814f9710" prot="private">
+          <name>ATTB_CONTENT_COLOR_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a363aefaf0f7d252848d32d92ffc435a3" prot="private">
+          <name>ATTB_CONTENT_COLOR_ARGB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aab63d647425ce3350a4d1f09cc87c325" prot="private">
+          <name>ATTB_CONTENT_EDGE_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a2c2103a12dee46ffb6f6bea27f7c06a0" prot="private">
+          <name>ATTB_CONTENT_EDGE_COLORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a49b289147605f5c09159d1974afeff16" prot="private">
+          <name>ATTB_CONTENT_IMAGE_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a93d5dd24d774fdd7464eb6b9c0355657" prot="private">
+          <name>ATTB_CONTENT_IMAGE_URL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420acfaf8b95fd9be3cbf0126a8c649110a0" prot="private">
+          <name>ATTB_CONTENT_SPRITE_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ac57db8c17b8d990ece5a3d9ac3127a8f" prot="private">
+          <name>ATTB_CONTENT_SPRITE_IMAGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a88061ace2d771f039d2ecf9d2f816d1b" prot="private">
+          <name>ATTB_CONTENT_SPRITE_DELAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aef124f31c38cd10e95db7c83a705f3c6" prot="private">
+          <name>ATTB_CONTENT_FONT_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aacc3a6a3ccc3fac32f4042e7cbde1635" prot="private">
+          <name>ATTB_CONTENT_FONT_SIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a6e082df6e1469e1bbdc618276dc4d719" prot="private">
+          <name>ATTB_CONTENT_FONT_URL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ab4c40b596b16cb64543f8fc2edc90005" prot="private">
+          <name>ATTB_CONTENT_TEXT_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a49720d9e93f3367451528f8e33f0a422" prot="private">
+          <name>ATTB_CONTENT_TEXT_FORMAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae66868f5ee2784b0201431e729fb8b2f" prot="private">
+          <name>ATTB_CONTENT_TEXT_FONT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a073d493e7a0263975e2db5418d4c1a31" prot="private">
+          <name>ATTB_CONTENT_TEXT_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a8a23c59c9e7da91e97c20c67333f0b5a" prot="private">
+          <name>ATTB_CONTENT_TEXT_VECTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aa479a86bf89557ecf5ea489297a0bd02" prot="private">
+          <name>ATTB_CONTENT_TEXT_LINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a24f9dda6140a333fa6904496b2330ada" prot="private">
+          <name>ATTB_CONTENT_BUTTON_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420af5a9be6fbdd7b8e71349a6e7d01c31bd" prot="private">
+          <name>ATTB_CONTENT_BUTTON_IMAGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a14eb487f77764fa0dd1cf84eb91da007" prot="private">
+          <name>ATTB_CONTENT_BUTTON_EDGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a970fb8c2be67fc355c5ef8210538e7a6" prot="private">
+          <name>ATTB_CONTENT_BUTTON_EVENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a7d0192d04a4e21c2c31b6600173fab77" prot="private">
+          <name>ATTB_CONTENT_BUTTON_LINK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae9c27b81de2a971a5c72b0110ffad4b8" prot="private">
+          <name>ATTB_CONTENT_EDITBOX_NAME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a8cf591e62102a60224c140275acbef42" prot="private">
+          <name>ATTB_CONTENT_EDITBOX_TEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a5c4559d6e6b70420644c3d2d1919d127" prot="private">
+          <name>ATTB_CONTENT_EDITBOX_COLORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="30" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="29" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_g_u_i_1aec59f6450deaf4822a05ca6a14600251" prot="protected" static="no" mutable="no">
+        <type>Section</type>
+        <definition>Section BxGUI::CurSection</definition>
+        <argsstring></argsstring>
+        <name>CurSection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="1691" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="1691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_g_u_i_1a7ca24001d0e3ab2b7cea28a964059fcb" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; Layout &gt;</type>
+        <definition>BxVar&lt;Layout&gt; BxGUI::Layout</definition>
+        <argsstring></argsstring>
+        <name>Layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="1692" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="1692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_g_u_i_1ab5d6326f0117f8749e1a7335739f844b" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; Content &gt;</type>
+        <definition>BxVar&lt;Content&gt; BxGUI::Content</definition>
+        <argsstring></argsstring>
+        <name>Content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="1693" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="1693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_g_u_i_1a80162619dc9558c188ae70081bfc4d0a" prot="protected" static="no" mutable="no">
+        <type>Element::VarMapPtr</type>
+        <definition>Element::VarMapPtr BxGUI::Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="1694" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="1694" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_g_u_i_1accefc42f3f5f8710316c2e497be7f65c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>global_func BxString&amp; BxGUI::Domain</definition>
+        <argsstring>()</argsstring>
+        <name>Domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="81" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1acd70b881e7a126a79de2687cac39303a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>global_func BxString&amp; BxGUI::Subject</definition>
+        <argsstring>()</argsstring>
+        <name>Subject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1ab14c77bd524970f0b858afa5629dbd0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int &amp;</type>
+        <definition>global_func int&amp; BxGUI::Version</definition>
+        <argsstring>()</argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="83" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a4725dc56f03627191869e882e6d57863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool &amp;</type>
+        <definition>global_func bool&amp; BxGUI::IsValidDownload</definition>
+        <argsstring>()</argsstring>
+        <name>IsValidDownload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="84" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a8e28af11bb3db931146d4902a6304250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func callback_event &amp;</type>
+        <definition>global_func callback_event&amp; BxGUI::Callback</definition>
+        <argsstring>()</argsstring>
+        <name>Callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="85" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1afe36a1c9b66537da6cf16be21f625226" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxGUI::DownloadCache</definition>
+        <argsstring>(string url, BxWebContent _out_ Content, int _out_ FileSize, string _out_ FilePath, bool DoLoad)</argsstring>
+        <name>DownloadCache</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_web_content" kindref="compound">BxWebContent</ref> _out_</type>
+          <declname>Content</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>FileSize</declname>
+        </param>
+        <param>
+          <type>string _out_</type>
+          <declname>FilePath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>DoLoad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="86" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1acb06c0e7b3d4fe5623a00965b52bfc9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxGUI::BxGUI</definition>
+        <argsstring>()</argsstring>
+        <name>BxGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="113" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1ad9648b891730fb587b30bcbef1f6cbdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxGUI::~BxGUI</definition>
+        <argsstring>()</argsstring>
+        <name>~BxGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="114" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1ac9560ada555a7a800755721b1876b01c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxGUI::Init</definition>
+        <argsstring>(int index)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="115" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1aa6b504e1e80a525bf99c2736b6d65cc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxGUI::Quit</definition>
+        <argsstring>(int index)</argsstring>
+        <name>Quit</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="119" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1aa658f399b4f2f1642ad9f01f16a6025c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxGUI::GetParser</definition>
+        <argsstring>(BxXml &amp;XMLParser)</argsstring>
+        <name>GetParser</name>
+        <param>
+          <type><ref refid="class_bx_xml" kindref="compound">BxXml</ref> &amp;</type>
+          <declname>XMLParser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="124" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="124" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a4fb1c799df3b2be71581448113350713" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxGUI::LoadXML</definition>
+        <argsstring>(string FileName)</argsstring>
+        <name>LoadXML</name>
+        <param>
+          <type>string</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="190" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="190" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a6ff184d2a3b6e20e8b0fde4f5042ffea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxGUI::AdjustSplitSize</definition>
+        <argsstring>(string SplitName, int SizeBy1024=0)</argsstring>
+        <name>AdjustSplitSize</name>
+        <param>
+          <type>string</type>
+          <declname>SplitName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SizeBy1024</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="434" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="434" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a1ace89b6079b2ec76133f1b59822d636" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxGUI::AdjustViewScroll</definition>
+        <argsstring>(string ViewName, point PosByPixel=point::zero())</argsstring>
+        <name>AdjustViewScroll</name>
+        <param>
+          <type>string</type>
+          <declname>ViewName</declname>
+        </param>
+        <param>
+          <type><ref refid="structpoint" kindref="compound">point</ref></type>
+          <declname>PosByPixel</declname>
+          <defval>point::zero()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="443" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="443" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a7dc8fc96c1027cc24b109973b299fed0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxGUI::GetViewSize</definition>
+        <argsstring>(string ViewName, size &amp;OutSize, size &amp;InSize)</argsstring>
+        <name>GetViewSize</name>
+        <param>
+          <type>string</type>
+          <declname>ViewName</declname>
+        </param>
+        <param>
+          <type><ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+          <declname>OutSize</declname>
+        </param>
+        <param>
+          <type><ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+          <declname>InSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="452" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="452" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a0384a1eb7408fe79f1a8532dacb475ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxGUI::AdjustColorHLS</definition>
+        <argsstring>(string ColorName, int AddHBy256=0, int AddLBy255=0, int AddSBy255=0)</argsstring>
+        <name>AdjustColorHLS</name>
+        <param>
+          <type>string</type>
+          <declname>ColorName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>AddHBy256</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>AddLBy255</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>AddSBy255</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="460" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="460" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1abf7316c7ab9940f9c6823d3fbeb9049e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxGUI::AdjustTextFormat</definition>
+        <argsstring>(string TextName,...)</argsstring>
+        <name>AdjustTextFormat</name>
+        <param>
+          <type>string</type>
+          <declname>TextName</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="469" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="469" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1abee4156df09a6806d1c133692377ff19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxGUI::GetImageWidth</definition>
+        <argsstring>(string ImageName)</argsstring>
+        <name>GetImageWidth</name>
+        <param>
+          <type>string</type>
+          <declname>ImageName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="481" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="481" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a970c1b61d80fc3d450e35b38a7629e6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxGUI::GetImageHeight</definition>
+        <argsstring>(string ImageName)</argsstring>
+        <name>GetImageHeight</name>
+        <param>
+          <type>string</type>
+          <declname>ImageName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="487" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="487" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1ac6bd283b62892a268f38d87975000135" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxGUI::Render</definition>
+        <argsstring>(BxDraw &amp;Draw)</argsstring>
+        <name>Render</name>
+        <param>
+          <type><ref refid="class_bx_draw" kindref="compound">BxDraw</ref> &amp;</type>
+          <declname>Draw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="493" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="493" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_g_u_i_1a65262ea94dab17338fb68cbae53c6e15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxGUI::OnEvent</definition>
+        <argsstring>(const sysevent &amp;Event)</argsstring>
+        <name>OnEvent</name>
+        <param>
+          <type>const <ref refid="structsysevent" kindref="compound">sysevent</ref> &amp;</type>
+          <declname>Event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="500" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="500" bodyend="507"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GUI객체 운영 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="39">
+        <label>BxVar&lt; Content &gt;</label>
+        <link refid="class_bx_var"/>
+      </node>
+      <node id="38">
+        <label>BxGUI</label>
+        <link refid="class_bx_g_u_i"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Content</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>Layout</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>BxVar&lt; Layout &gt;</label>
+        <link refid="class_bx_var"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp" bodystart="9" bodyend="1695"/>
+    <listofallmembers>
+      <member refid="class_bx_g_u_i_1a0384a1eb7408fe79f1a8532dacb475ed" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>AdjustColorHLS</name></member>
+      <member refid="class_bx_g_u_i_1a6ff184d2a3b6e20e8b0fde4f5042ffea" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>AdjustSplitSize</name></member>
+      <member refid="class_bx_g_u_i_1abf7316c7ab9940f9c6823d3fbeb9049e" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>AdjustTextFormat</name></member>
+      <member refid="class_bx_g_u_i_1a1ace89b6079b2ec76133f1b59822d636" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>AdjustViewScroll</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a14eb487f77764fa0dd1cf84eb91da007" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_BUTTON_EDGES</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a970fb8c2be67fc355c5ef8210538e7a6" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_BUTTON_EVENT</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420af5a9be6fbdd7b8e71349a6e7d01c31bd" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_BUTTON_IMAGES</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a7d0192d04a4e21c2c31b6600173fab77" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_BUTTON_LINK</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a24f9dda6140a333fa6904496b2330ada" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_BUTTON_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a363aefaf0f7d252848d32d92ffc435a3" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_COLOR_ARGB</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a62f879682e3fd25b9357644e814f9710" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_COLOR_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a2c2103a12dee46ffb6f6bea27f7c06a0" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_EDGE_COLORS</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aab63d647425ce3350a4d1f09cc87c325" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_EDGE_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a5c4559d6e6b70420644c3d2d1919d127" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_EDITBOX_COLORS</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae9c27b81de2a971a5c72b0110ffad4b8" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_EDITBOX_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a8cf591e62102a60224c140275acbef42" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_EDITBOX_TEXT</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aef124f31c38cd10e95db7c83a705f3c6" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_FONT_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aacc3a6a3ccc3fac32f4042e7cbde1635" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_FONT_SIZE</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a6e082df6e1469e1bbdc618276dc4d719" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_FONT_URL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a49b289147605f5c09159d1974afeff16" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_IMAGE_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a93d5dd24d774fdd7464eb6b9c0355657" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_IMAGE_URL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a4456e01ee3487bd1a1899fa98b9465cd" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a88061ace2d771f039d2ecf9d2f816d1b" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_SPRITE_DELAY</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ac57db8c17b8d990ece5a3d9ac3127a8f" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_SPRITE_IMAGES</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420acfaf8b95fd9be3cbf0126a8c649110a0" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_SPRITE_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a073d493e7a0263975e2db5418d4c1a31" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_TEXT_COLOR</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae66868f5ee2784b0201431e729fb8b2f" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_TEXT_FONT</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a49720d9e93f3367451528f8e33f0a422" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_TEXT_FORMAT</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aa479a86bf89557ecf5ea489297a0bd02" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_TEXT_LINE</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ab4c40b596b16cb64543f8fc2edc90005" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_TEXT_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a8a23c59c9e7da91e97c20c67333f0b5a" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_CONTENT_TEXT_VECTOR</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a379ae9cbd7dd518a483d046f06b5de31" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_GUI_VERSION</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a9d35f4be904eab53f691e0ab85463dbf" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_EXTRA_FILL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a6e37120700db74b953c3e3f2d70c35d5" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_EXTRA_HEIGHT</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420aac812ab2046b8847a3a5b1550c598a72" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_EXTRA_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ac083564d9c677f060c86189519cf2384" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_EXTRA_WIDTH</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a89e744b529cf71c9dcc35f32cc2c69c1" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a69fc327c466572ba29a83671453379e1" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_OUTLINE_FILL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a2a65948ee12c0a997fa9c344be1d334b" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_OUTLINE_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a4c763fb2c21a1641e7dc607958fcbe85" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_OUTLINE_SIZE</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a21d5341d2b6b6d970a5906915d8d8087" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_SPLIT_FILL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a0f3c4093dd5bf366c0cdbdb6e4ebf73c" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_SPLIT_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ac53f33da920f2053c041c8875b1560f9" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_SPLIT_POS</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420acd1447c677253f8235fea51e333766da" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_SPLIT_SIZE</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a3efd1a4f353bcfc867d491f8892cda83" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_FILL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae79bfc69e447fd20382779dd22cc543f" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_HEIGHT</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420ae6ec2cd82b102c2229d0e4da2499021f" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_NAME</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420abb9e4ae113cd9f6643b2c6d8cd0da050" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_POSX</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420a28a566221d9f7a0c99fbfb4b9180eb09" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_POSY</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420afaba10539664f92a4c8115a591bbb285" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_SCROLL</name></member>
+      <member refid="class_bx_g_u_i_1a55cf8a17d8fd0e8a41ec08a6ad886420afdb785cf9959b0f70160d15735acdf04" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>ATTB_LAYOUT_VIEW_WIDTH</name></member>
+      <member refid="class_bx_g_u_i_1acb06c0e7b3d4fe5623a00965b52bfc9f" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>BxGUI</name></member>
+      <member refid="class_bx_g_u_i_1a8e28af11bb3db931146d4902a6304250" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Callback</name></member>
+      <member refid="class_bx_g_u_i_1ab5d6326f0117f8749e1a7335739f844b" prot="protected" virt="non-virtual"><scope>BxGUI</scope><name>Content</name></member>
+      <member refid="class_bx_g_u_i_1aec59f6450deaf4822a05ca6a14600251" prot="protected" virt="non-virtual"><scope>BxGUI</scope><name>CurSection</name></member>
+      <member refid="class_bx_g_u_i_1accefc42f3f5f8710316c2e497be7f65c" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Domain</name></member>
+      <member refid="class_bx_g_u_i_1afe36a1c9b66537da6cf16be21f625226" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>DownloadCache</name></member>
+      <member refid="class_bx_g_u_i_1a970c1b61d80fc3d450e35b38a7629e6b" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>GetImageHeight</name></member>
+      <member refid="class_bx_g_u_i_1abee4156df09a6806d1c133692377ff19" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>GetImageWidth</name></member>
+      <member refid="class_bx_g_u_i_1aa658f399b4f2f1642ad9f01f16a6025c" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>GetParser</name></member>
+      <member refid="class_bx_g_u_i_1a7dc8fc96c1027cc24b109973b299fed0" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>GetViewSize</name></member>
+      <member refid="class_bx_g_u_i_1ac9560ada555a7a800755721b1876b01c" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Init</name></member>
+      <member refid="class_bx_g_u_i_1a4725dc56f03627191869e882e6d57863" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>IsValidDownload</name></member>
+      <member refid="class_bx_g_u_i_1a7ca24001d0e3ab2b7cea28a964059fcb" prot="protected" virt="non-virtual"><scope>BxGUI</scope><name>Layout</name></member>
+      <member refid="class_bx_g_u_i_1a4fb1c799df3b2be71581448113350713" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>LoadXML</name></member>
+      <member refid="class_bx_g_u_i_1a80162619dc9558c188ae70081bfc4d0a" prot="protected" virt="non-virtual"><scope>BxGUI</scope><name>Map</name></member>
+      <member refid="class_bx_g_u_i_1a65262ea94dab17338fb68cbae53c6e15" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>OnEvent</name></member>
+      <member refid="class_bx_g_u_i_1aa6b504e1e80a525bf99c2736b6d65cc5" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Quit</name></member>
+      <member refid="class_bx_g_u_i_1ac6bd283b62892a268f38d87975000135" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Render</name></member>
+      <member refid="class_bx_g_u_i_1acd70b881e7a126a79de2687cac39303a" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Subject</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220ae891b2fee26251c96f2a95953bea3093" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a09dd3e06645135e0044b06b03ce83f26" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_BUTTON</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a41663c4095415480fd6b369635bfaacd" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_COLOR</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a039194f83d3a00e13cdd3a7e1ee8c1b3" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_EDGE</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a06fcf5e0068a28b54baebe3ffb40d387" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_EDITBOX</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220ac323f9f6780a8d3de9203055c3fb15aa" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_FONT</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220ac887dd428600c319967176e2b69ad219" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_IMAGE</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a11609d0a9d5bd8612108fc5082423acc" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_SPRITE</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220aa4cd90683fd035bf21b4988daa71eb5f" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_CONTENT_TEXT</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220aeb5e021407fa19cf7d07f422d3f73e7b" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_GUI</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a953e1f85dfd884e7241b080bc6658f0a" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_LAYOUT</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a244f59afba7d4811d722cb2fc52d9287" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_LAYOUT_EXTRA</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220a8a7f07d209489c8696a18db6e45069ed" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_LAYOUT_OUTLINE</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220af87e6cd70759f6da02f90a36d077faae" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_LAYOUT_SPLIT</name></member>
+      <member refid="class_bx_g_u_i_1a8eb8f02baad501b15369cc8419c38220abd9b00246f5fb09aa60572da2785be84" prot="private" virt="non-virtual"><scope>BxGUI</scope><name>TAG_LAYOUT_VIEW</name></member>
+      <member refid="class_bx_g_u_i_1ab14c77bd524970f0b858afa5629dbd0d" prot="public" virt="non-virtual"><scope>BxGUI</scope><name>Version</name></member>
+      <member refid="class_bx_g_u_i_1ad9648b891730fb587b30bcbef1f6cbdb" prot="public" virt="virtual"><scope>BxGUI</scope><name>~BxGUI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

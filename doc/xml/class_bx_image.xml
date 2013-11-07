@@ -1,0 +1,767 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_image" kind="class" prot="public">
+    <compoundname>BxImage</compoundname>
+    <basecompoundref refid="class_bx_draw_form" prot="public" virt="non-virtual">BxDrawForm</basecompoundref>
+    <includes refid="_bx_image_8hpp" local="no">BxImage.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a25ee4ce8b68fed476bbe7fda43924d00" prot="public">
+          <name>BMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a9b85fca3146f22cf9f4cfd35d3525793" prot="public">
+          <name>B16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a08f5d8b9f9ec0517de34986a43bcded2" prot="public">
+          <name>B32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7ac9f13566b4a0ebe1e9101fe76a43796a" prot="public">
+          <name>PNG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a485889d2a7c385f5c993da1af2aeb88f" prot="public">
+          <name>JPG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a0b0b607835854e3fb56b8f9d34a5ce80" prot="public">
+          <name>GIF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_image_1a28526f6aa2382708374995699a0266f6" prot="public" static="no">
+        <name>hotspot</name>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6ae8f3bb730206c83b2e1280b396c3d88f" prot="public">
+          <name>KEEP</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6ab500fded1e804655d87cef67ce884106" prot="public">
+          <name>PAD1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a1c4cb269132c4407217c67d88de271c4" prot="public">
+          <name>PAD2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a7082526d40afcdc745e7f68746be6563" prot="public">
+          <name>PAD3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a933793903341ce7f08c8a7a065e0dbc5" prot="public">
+          <name>PAD4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a54e170cb20f17a38b652a25ad46f38c1" prot="public">
+          <name>PAD5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a0f7c2947fb0c67812c06dd6d97d3a461" prot="public">
+          <name>PAD6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a222d6388af355f79cde417542da053ef" prot="public">
+          <name>PAD7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6ae93cf6aaefc62f27282d877ae7e1bb17" prot="public">
+          <name>PAD8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_image_1a28526f6aa2382708374995699a0266f6a68e6f9de53c505c987eede5b62cb33da" prot="public">
+          <name>PAD9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_image_1a1ce0faffacd4822f4bb79057181183dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int &amp;</type>
+        <definition>global_func int&amp; BxImage::ScaleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>ScaleNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1aed2c188975216f0a8fd436f16a73be86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxImage::BxImage</definition>
+        <argsstring>()</argsstring>
+        <name>BxImage</name>
+        <briefdescription>
+<para>기본생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a53d0b619eea8e0b088e82c5b634919d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxImage::~BxImage</definition>
+        <argsstring>()</argsstring>
+        <name>~BxImage</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a80e205b759c9b09da3b2ff183f8e09e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxImage::Load</definition>
+        <argsstring>(const byte *Resource, const int Length, type Type)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>const byte *</type>
+          <declname>Resource</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Length</declname>
+        </param>
+        <param>
+          <type>type</type>
+          <declname>Type</declname>
+        </param>
+        <briefdescription>
+<para>이미지 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메모리리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메모리리소스의 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 리소스타입(BMP, B16, B32, PNG, JPG, GIF) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로딩성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="36" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="36" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a36a6da3bb791d810e1f4f01adad3a650" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxImage::Load</definition>
+        <argsstring>(string FileName, type Type)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>type</type>
+          <declname>Type</declname>
+        </param>
+        <briefdescription>
+<para>이미지 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 리소스타입(BMP, B16, B32, PNG, JPG, GIF) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로딩성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="63" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="63" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a7cb0444fd718f17e018b6a82c118ae2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxImage::Load</definition>
+        <argsstring>(string FileName, type Type, const int X, const int Y, const int Width, const int Height, hotspot Hotspot=PAD7)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>type</type>
+          <declname>Type</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Height</declname>
+        </param>
+        <param>
+          <type>hotspot</type>
+          <declname>Hotspot</declname>
+          <defval>PAD7</defval>
+        </param>
+        <briefdescription>
+<para>이미지 부분로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 리소스타입(BMP, B16, B32, PNG, JPG, GIF) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 잘라낼 위치X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 잘라낼 위치Y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 잘라낼 너비 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 잘라낼 높이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Hotspot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기중점(NumPad방식) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로딩성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="99" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a6e6ed0e975ed3abf6ce601cd8a1cb2a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxImage::IsExist</definition>
+        <argsstring>()</argsstring>
+        <name>IsExist</name>
+        <briefdescription>
+<para>이미지 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>존재여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_image_1a80e205b759c9b09da3b2ff183f8e09e5" kindref="member">Load</ref>, <ref refid="class_bx_image_1a32398885ee66cdbf4614230718ddebea" kindref="member">Create</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="113" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="113" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a32398885ee66cdbf4614230718ddebea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxImage::Create</definition>
+        <argsstring>(const int Width, const int Height, const int HotspotX, const int HotspotY)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const int</type>
+          <declname>Width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>HotspotX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>HotspotY</declname>
+        </param>
+        <briefdescription>
+<para>빈 이미지 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성낼 너비 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성낼 높이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HotspotX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 중점X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HotspotY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 중점Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="129" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="129" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1ad8cf3a1291116f0dc05d51b2daa4cf5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxImage::Create</definition>
+        <argsstring>(BxImage &amp;Src, const int X, const int Y, const int Width, const int Height, hotspot Hotspot=PAD7)</argsstring>
+        <name>Create</name>
+        <param>
+          <type><ref refid="class_bx_image" kindref="compound">BxImage</ref> &amp;</type>
+          <declname>Src</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Height</declname>
+        </param>
+        <param>
+          <type>hotspot</type>
+          <declname>Hotspot</declname>
+          <defval>PAD7</defval>
+        </param>
+        <briefdescription>
+<para>복사식 이미지 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소스이미지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 위치X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 위치Y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 너비 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 높이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Hotspot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기중점(NumPad방식) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="163" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a4ceaa21adefa3fde9dd7caf8a4ee1c1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxImage::Release</definition>
+        <argsstring>()</argsstring>
+        <name>Release</name>
+        <briefdescription>
+<para>이미지 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_bx_image_1a80e205b759c9b09da3b2ff183f8e09e5" kindref="member">Load</ref>, <ref refid="class_bx_image_1a32398885ee66cdbf4614230718ddebea" kindref="member">Create</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="187" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a47e46ae65d25e40e67c7d31f17865e2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxImage::CopyFrom</definition>
+        <argsstring>(int X, int Y, BxImage &amp;Src, int SrcX, int SrcY, const int SrcWidth, const int SrcHeight)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_image" kindref="compound">BxImage</ref> &amp;</type>
+          <declname>Src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SrcX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SrcY</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>SrcWidth</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>SrcHeight</declname>
+        </param>
+        <briefdescription>
+<para>이미지복사 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사될 위치X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사될 위치Y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소스이미지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 소스위치X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 소스위치Y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 소스너비 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 소스높이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="209" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="209" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_image_1a713d62bb72baec2908aaf1e35059790d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>OnFormMethod</type>
+        <definition>virtual OnFormMethod BxImage::GetFormMethod</definition>
+        <argsstring>(maskoperate operate, maskflag flag)</argsstring>
+        <name>GetFormMethod</name>
+        <reimplements refid="class_bx_draw_form_1a894380e5a77f9e96caa29712f6a49cbe">GetFormMethod</reimplements>
+        <param>
+          <type>maskoperate</type>
+          <declname>operate</declname>
+        </param>
+        <param>
+          <type>maskflag</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>폼모듈용 콜백함수 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 마스크조건 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓰일 마스크기호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>폼모듈용 콜백함수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="236" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="236" bodyend="268"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>이미지 운영 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>BxImage</label>
+        <link refid="class_bx_image"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>BxDrawForm</label>
+        <link refid="class_bx_draw_form"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>BxImage</label>
+        <link refid="class_bx_image"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="46">
+        <label>BxExpress::_Integer</label>
+        <link refid="class_bx_express_1_1___integer"/>
+      </node>
+      <node id="44">
+        <label>BxDrawForm</label>
+        <link refid="class_bx_draw_form"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>ExpressAreaW</edgelabel>
+          <edgelabel>ExpressAreaH</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>Area</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>BxExpress::IntegerX</label>
+        <link refid="class_bx_express_1_1_integer_x"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" line="6" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxImage.hpp" bodystart="5" bodyend="1326"/>
+    <listofallmembers>
+      <member refid="class_bx_draw_form_1af616c4211cceebbb554d99147f6114e4" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>Area</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a9b85fca3146f22cf9f4cfd35d3525793" prot="public" virt="non-virtual"><scope>BxImage</scope><name>B16</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a08f5d8b9f9ec0517de34986a43bcded2" prot="public" virt="non-virtual"><scope>BxImage</scope><name>B32</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72" prot="public" virt="non-virtual"><scope>BxImage</scope><name>blendflag</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72ab5f76397166f518190b126748b01c997" prot="public" virt="non-virtual"><scope>BxImage</scope><name>blendflag_alpha</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72a8563ba5053a0ceb5f1608a7bdb5c069e" prot="public" virt="non-virtual"><scope>BxImage</scope><name>blendflag_null</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72a6f53b8eb99f8b90d16cb1ffe300972ec" prot="public" virt="non-virtual"><scope>BxImage</scope><name>blendflag_sprite</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a25ee4ce8b68fed476bbe7fda43924d00" prot="public" virt="non-virtual"><scope>BxImage</scope><name>BMP</name></member>
+      <member refid="class_bx_draw_form_1af39f52e363990526ac073c4a1701a78b" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>BxDrawForm</name></member>
+      <member refid="class_bx_image_1aed2c188975216f0a8fd436f16a73be86" prot="public" virt="non-virtual"><scope>BxImage</scope><name>BxImage</name></member>
+      <member refid="class_bx_draw_form_1a588f796aff3db08ec24b8657336b1089" prot="public" virt="non-virtual"><scope>BxImage</scope><name>CalcTextureLevel</name></member>
+      <member refid="class_bx_draw_form_1a91ae5bafff24402b45040491381e051c" prot="public" virt="non-virtual"><scope>BxImage</scope><name>CalcTextureSize</name></member>
+      <member refid="class_bx_image_1a47e46ae65d25e40e67c7d31f17865e2d" prot="public" virt="non-virtual"><scope>BxImage</scope><name>CopyFrom</name></member>
+      <member refid="class_bx_image_1a32398885ee66cdbf4614230718ddebea" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Create</name></member>
+      <member refid="class_bx_image_1ad8cf3a1291116f0dc05d51b2daa4cf5a" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Create</name></member>
+      <member refid="class_bx_draw_form_1ab972aee1625a25721deb39143a99e95d" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>ExpressAreaH</name></member>
+      <member refid="class_bx_draw_form_1a2463aa95307f6160d22251d81d7c240c" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>ExpressAreaW</name></member>
+      <member refid="class_bx_draw_form_1adba6cd397fb21e07f783968b8da38c58" prot="public" virt="non-virtual"><scope>BxImage</scope><name>ExpressHeight</name></member>
+      <member refid="class_bx_draw_form_1a411c74fcd70675279a9cd1353370712f" prot="public" virt="non-virtual"><scope>BxImage</scope><name>ExpressWidth</name></member>
+      <member refid="class_bx_draw_form_1a02412d82f4a96319097716454ac98dac" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>Flag</name></member>
+      <member refid="class_bx_draw_form_1a12fbb099c9969bc1fb7fa4d36adab0ae" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>FrameBegin</name></member>
+      <member refid="class_bx_draw_form_1a8b970823310d2f3af10e1b0020feb909" prot="public" virt="non-virtual"><scope>BxImage</scope><name>GetArea</name></member>
+      <member refid="class_bx_image_1a713d62bb72baec2908aaf1e35059790d" prot="public" virt="virtual"><scope>BxImage</scope><name>GetFormMethod</name></member>
+      <member refid="class_bx_draw_form_1a2cb3267f2a97b4e3c4e2be1f10c662f4" prot="public" virt="non-virtual"><scope>BxImage</scope><name>GetFrameBegin</name></member>
+      <member refid="class_bx_draw_form_1a32479fcf0756bc0ca08de6b6a04d2c93" prot="public" virt="non-virtual"><scope>BxImage</scope><name>GetPage</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a0b0b607835854e3fb56b8f9d34a5ce80" prot="public" virt="non-virtual"><scope>BxImage</scope><name>GIF</name></member>
+      <member refid="class_bx_draw_form_1a44a464b3b4dfd26dfbcb1d57f03945e6" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Height</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6" prot="public" virt="non-virtual"><scope>BxImage</scope><name>hotspot</name></member>
+      <member refid="class_bx_image_1a6e6ed0e975ed3abf6ce601cd8a1cb2a2" prot="public" virt="non-virtual"><scope>BxImage</scope><name>IsExist</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7a485889d2a7c385f5c993da1af2aeb88f" prot="public" virt="non-virtual"><scope>BxImage</scope><name>JPG</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6ae8f3bb730206c83b2e1280b396c3d88f" prot="public" virt="non-virtual"><scope>BxImage</scope><name>KEEP</name></member>
+      <member refid="class_bx_image_1a80e205b759c9b09da3b2ff183f8e09e5" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Load</name></member>
+      <member refid="class_bx_image_1a36a6da3bb791d810e1f4f01adad3a650" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Load</name></member>
+      <member refid="class_bx_image_1a7cb0444fd718f17e018b6a82c118ae2e" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Load</name></member>
+      <member refid="class_bx_draw_form_1aa700fab07f95364a45eb412ccec42732" prot="public" virt="non-virtual"><scope>BxImage</scope><name>OnFormMethod</name></member>
+      <member refid="class_bx_draw_form_1aeb788b0ccf0d251c4bc031b0cf94a44b" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>OnFormNoPrint</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6ab500fded1e804655d87cef67ce884106" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD1</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a1c4cb269132c4407217c67d88de271c4" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD2</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a7082526d40afcdc745e7f68746be6563" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD3</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a933793903341ce7f08c8a7a065e0dbc5" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD4</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a54e170cb20f17a38b652a25ad46f38c1" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD5</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a0f7c2947fb0c67812c06dd6d97d3a461" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD6</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a222d6388af355f79cde417542da053ef" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD7</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6ae93cf6aaefc62f27282d877ae7e1bb17" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD8</name></member>
+      <member refid="class_bx_image_1a28526f6aa2382708374995699a0266f6a68e6f9de53c505c987eede5b62cb33da" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PAD9</name></member>
+      <member refid="class_bx_draw_form_1abafb61197ac20cf2d6fe3c8e85c391ee" prot="protected" virt="non-virtual"><scope>BxImage</scope><name>Page</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7ac9f13566b4a0ebe1e9101fe76a43796a" prot="public" virt="non-virtual"><scope>BxImage</scope><name>PNG</name></member>
+      <member refid="class_bx_image_1a4ceaa21adefa3fde9dd7caf8a4ee1c1b" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Release</name></member>
+      <member refid="class_bx_image_1a1ce0faffacd4822f4bb79057181183dd" prot="public" virt="non-virtual"><scope>BxImage</scope><name>ScaleNumber</name></member>
+      <member refid="class_bx_draw_form_1a9431a75520e742977e045d4faa76e53c" prot="public" virt="non-virtual"><scope>BxImage</scope><name>SetAnimationFrame</name></member>
+      <member refid="class_bx_draw_form_1a5307e14238ed2408e0b8190967be37fb" prot="public" virt="non-virtual"><scope>BxImage</scope><name>SetHotspot</name></member>
+      <member refid="class_bx_image_1ad510628aed01cc208aae8d4faa44c2b7" prot="public" virt="non-virtual"><scope>BxImage</scope><name>type</name></member>
+      <member refid="class_bx_draw_form_1a6a410519a56049dcbf8d639a3acf2fba" prot="public" virt="non-virtual"><scope>BxImage</scope><name>Width</name></member>
+      <member refid="class_bx_draw_form_1abb9f0ef6503e6dbfdd7a5c307df5d642" prot="protected" virt="virtual"><scope>BxImage</scope><name>~BxDrawForm</name></member>
+      <member refid="class_bx_image_1a53d0b619eea8e0b088e82c5b634919d3" prot="public" virt="virtual"><scope>BxImage</scope><name>~BxImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

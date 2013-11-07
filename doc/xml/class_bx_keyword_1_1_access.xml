@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_keyword_1_1_access" kind="class" prot="public">
+    <compoundname>BxKeyword::Access</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_keyword_1_1_access_1a1f80fef56e80105ffb60d3082f4b8597" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxKeyword::Access&lt; TYPE &gt;::Keyword</definition>
+        <argsstring></argsstring>
+        <name>Keyword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="421" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_keyword_1_1_access_1a9d32ea415072534732ece583d6ad2d54" prot="private" static="no" mutable="no">
+        <type>TYPE</type>
+        <definition>TYPE BxKeyword::Access&lt; TYPE &gt;::Element</definition>
+        <argsstring></argsstring>
+        <name>Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="422" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a20c18d0634608837772dff6b35069bf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::Access&lt; TYPE &gt;::Access</definition>
+        <argsstring>()</argsstring>
+        <name>Access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="425" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="425" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1ab01081b867e005a5970a74b775da0481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::Access&lt; TYPE &gt;::~Access</definition>
+        <argsstring>()</argsstring>
+        <name>~Access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="426" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="426" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a6c1487134a2e61fda45f09e877383a18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_keyword_1_1_access" kindref="compound">Access</ref> &gt; &amp;</type>
+        <definition>global_func BxVar&lt;Access&gt;&amp; BxKeyword::Access&lt; TYPE &gt;::LetPool</definition>
+        <argsstring>()</argsstring>
+        <name>LetPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="428" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a888d63b7c631dbc46a9f196130bf9259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>COUNT</declname>
+            <defname>COUNT</defname>
+          </param>
+        </templateparamlist>
+        <type>global_func <ref refid="class_bx_keyword_1_1_access" kindref="compound">Access</ref> &amp;</type>
+        <definition>global_func Access&amp; BxKeyword::Access&lt; TYPE &gt;::ByTemplate</definition>
+        <argsstring>(string name)</argsstring>
+        <name>ByTemplate</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="431" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="431" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a8f3c58a93958bb3c94862ee62ea9b796" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_keyword_1_1_access" kindref="compound">Access</ref> *</type>
+        <definition>global_func Access* BxKeyword::Access&lt; TYPE &gt;::BySearch</definition>
+        <argsstring>(string name, bool doCreate)</argsstring>
+        <name>BySearch</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doCreate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="437" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="437" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a1ff42334fda2cfdef372a56e1568101d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxKeyword::Access&lt; TYPE &gt;::GetKeyword</definition>
+        <argsstring>()</argsstring>
+        <name>GetKeyword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="470" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="470" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a63f0972059f5a67dd637ca6ce1418c15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int &amp;</type>
+        <definition>int&amp; BxKeyword::Access&lt; TYPE &gt;::LetInt</definition>
+        <argsstring>()</argsstring>
+        <name>LetInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="471" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="471" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a22792e9b7ce76b25b5b11f764473c3f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool &amp;</type>
+        <definition>bool&amp; BxKeyword::Access&lt; TYPE &gt;::LetBool</definition>
+        <argsstring>()</argsstring>
+        <name>LetBool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="472" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="472" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a55109ae349def92f33315f9532e061d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxKeyword::Access&lt; TYPE &gt;::LetString</definition>
+        <argsstring>()</argsstring>
+        <name>LetString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="473" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="473" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a5b28dcddc139f63f53c5e2fbb7b9725d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxKeyword::Access&lt; TYPE &gt;::GetConst</definition>
+        <argsstring>()</argsstring>
+        <name>GetConst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="474" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="474" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a55cdf0f72c4c28692a25fd47ac7380ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxKeyword::Access&lt; TYPE &gt;::SetOn</definition>
+        <argsstring>()</argsstring>
+        <name>SetOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="475" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="475" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a08c98454855bdb9bcffabb03279857a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxKeyword::Access&lt; TYPE &gt;::SetOff</definition>
+        <argsstring>()</argsstring>
+        <name>SetOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="483" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="483" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1ae8a40717fe5f44263f3931d176caded0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>callback_event &amp;</type>
+        <definition>callback_event&amp; BxKeyword::Access&lt; TYPE &gt;::LetMethodCB</definition>
+        <argsstring>()</argsstring>
+        <name>LetMethodCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="484" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="484" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1_1_access_1a777a41e8cd40e4a0ec9547e9a2714d84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint &amp;</type>
+        <definition>uint&amp; BxKeyword::Access&lt; TYPE &gt;::LetParentID</definition>
+        <argsstring>()</argsstring>
+        <name>LetParentID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="485" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="485" bodyend="485"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="420" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="419" bodyend="486"/>
+    <listofallmembers>
+      <member refid="class_bx_keyword_1_1_access_1a20c18d0634608837772dff6b35069bf7" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>Access</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a8f3c58a93958bb3c94862ee62ea9b796" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>BySearch</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a888d63b7c631dbc46a9f196130bf9259" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>ByTemplate</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a9d32ea415072534732ece583d6ad2d54" prot="private" virt="non-virtual"><scope>BxKeyword::Access</scope><name>Element</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a5b28dcddc139f63f53c5e2fbb7b9725d" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>GetConst</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a1ff42334fda2cfdef372a56e1568101d" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>GetKeyword</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a1f80fef56e80105ffb60d3082f4b8597" prot="private" virt="non-virtual"><scope>BxKeyword::Access</scope><name>Keyword</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a22792e9b7ce76b25b5b11f764473c3f5" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>LetBool</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a63f0972059f5a67dd637ca6ce1418c15" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>LetInt</name></member>
+      <member refid="class_bx_keyword_1_1_access_1ae8a40717fe5f44263f3931d176caded0" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>LetMethodCB</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a777a41e8cd40e4a0ec9547e9a2714d84" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>LetParentID</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a6c1487134a2e61fda45f09e877383a18" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>LetPool</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a55109ae349def92f33315f9532e061d2" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>LetString</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a08c98454855bdb9bcffabb03279857a7" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>SetOff</name></member>
+      <member refid="class_bx_keyword_1_1_access_1a55cdf0f72c4c28692a25fd47ac7380ac" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>SetOn</name></member>
+      <member refid="class_bx_keyword_1_1_access_1ab01081b867e005a5970a74b775da0481" prot="public" virt="non-virtual"><scope>BxKeyword::Access</scope><name>~Access</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

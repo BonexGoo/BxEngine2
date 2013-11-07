@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_dynamic_1_1_resource" kind="class" prot="public" abstract="yes">
+    <compoundname>BxDynamic::Resource</compoundname>
+    <includes refid="_bx_dynamic_8hpp" local="no">BxDynamic.hpp</includes>
+    <innerclass refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" prot="public">BxDynamic::Resource::BindPool</innerclass>
+    <innerclass refid="class_bx_dynamic_1_1_resource_1_1_link_pool" prot="public">BxDynamic::Resource::LinkPool</innerclass>
+    <innerclass refid="class_bx_dynamic_1_1_resource_1_1_pool" prot="private">BxDynamic::Resource::Pool</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1abe282daaa40e82f894e0513af5133e63" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref> *</type>
+        <definition>BindPool* BxDynamic::Resource::mBinder</definition>
+        <argsstring></argsstring>
+        <name>mBinder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1a2090857f88de9a47a94ae23f4f5b1161" prot="private" static="no" mutable="no">
+        <type>byte *</type>
+        <definition>byte* BxDynamic::Resource::mBuffer</definition>
+        <argsstring></argsstring>
+        <name>mBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1a1fd4a368cf89fa363875e908b2002385" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxDynamic::Resource::mCacheScore</definition>
+        <argsstring></argsstring>
+        <name>mCacheScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="165" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1a25c5ac5b2f25ded7575a92df28d3cb13" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxDynamic::Resource::mUsedCacheSize</definition>
+        <argsstring></argsstring>
+        <name>mUsedCacheSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="166" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1ae1b932b7322560a85c3f17b6e363d140" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxDynamic::Resource::mLockCount</definition>
+        <argsstring></argsstring>
+        <name>mLockCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="167" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1afd5d72dfedc1f87c23e19ea4683798cf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxDynamic::Resource::Bind</definition>
+        <argsstring>(rsid ID)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>rsid</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1af92f360b739162a566cc4e6be60bac24" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxDynamic::Resource::Entrust</definition>
+        <argsstring>(Resource *Res)</argsstring>
+        <name>Entrust</name>
+        <param>
+          <type><ref refid="class_bx_dynamic_1_1_resource" kindref="compound">Resource</ref> *</type>
+          <declname>Res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="27" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a77568d2c0724305b32e52149975a4b4b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func rsid</type>
+        <definition>global_func rsid BxDynamic::Resource::MakeID</definition>
+        <argsstring>()</argsstring>
+        <name>MakeID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1abf76b5cc3de6fbe87ca689b11869d216" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void BxDynamic::Resource::OnLoad</definition>
+        <argsstring>(id_file File)=0</argsstring>
+        <name>OnLoad</name>
+        <param>
+          <type>id_file</type>
+          <declname>File</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a57a1a631ff68f8c357b4b3e2955bdebf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void BxDynamic::Resource::OnSave</definition>
+        <argsstring>(id_file File)=0</argsstring>
+        <name>OnSave</name>
+        <param>
+          <type>id_file</type>
+          <declname>File</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a2ccf3c0aacaf131d14af0a0253d2bab5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDynamic::Resource::AllocCache</definition>
+        <argsstring>(int BufferSize, int UsingCacheSize)</argsstring>
+        <name>AllocCache</name>
+        <param>
+          <type>int</type>
+          <declname>BufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>UsingCacheSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="79" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="79" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a7c4f19cd9edee5b7155a5596248a4261" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDynamic::Resource::FreeCacheManually</definition>
+        <argsstring>()</argsstring>
+        <name>FreeCacheManually</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="101" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1ab35c97d533264e91f147a5cb52990b9c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte *</type>
+        <definition>byte* BxDynamic::Resource::LockCache</definition>
+        <argsstring>()</argsstring>
+        <name>LockCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="109" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a6b3a362c9b6b99d435dd255bfa8b7ecb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxDynamic::Resource::UnlockCache</definition>
+        <argsstring>()</argsstring>
+        <name>UnlockCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="114" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a1dd4f5cc68971d24eb29d7ded85baa67" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDynamic::Resource::UpdateCache</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="119" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="119" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a3b670ce68e6a0e7114cd21a01eb6d68a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int BxDynamic::Resource::GetCacheScore</definition>
+        <argsstring>(int FrameTime, int CacheSize)=0</argsstring>
+        <name>GetCacheScore</name>
+        <param>
+          <type>int</type>
+          <declname>FrameTime</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CacheSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a58811c6a2ee3b82431726a74ed148d97" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void BxDynamic::Resource::OnPreRemoveCache</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnPreRemoveCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1ad3ca2325359dd7626039b5ac97104efc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxDynamic::Resource::GetCachePoolSize</definition>
+        <argsstring>(string CachePoolName)</argsstring>
+        <name>GetCachePoolSize</name>
+        <param>
+          <type>string</type>
+          <declname>CachePoolName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="137" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="137" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1acc84039f3103995e57effea368453fd3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxDynamic::Resource::GetCachePoolUsed</definition>
+        <argsstring>(string CachePoolName)</argsstring>
+        <name>GetCachePoolUsed</name>
+        <param>
+          <type>string</type>
+          <declname>CachePoolName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="154" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a02c5316afe50527f786f25b5613990db" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDynamic::Resource::Resource</definition>
+        <argsstring>()</argsstring>
+        <name>Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="160" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="160" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1aef65fcbd65b20f1dead6c097a0e3b46a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>rsid</type>
+        <definition>rsid BxDynamic::Resource::GetID</definition>
+        <argsstring>()</argsstring>
+        <name>GetID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1abfe44c7f9ca5e30fe1f0ebc8a12f31fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref> *</type>
+        <definition>global_func BindPool* BxDynamic::Resource::BinderBegin</definition>
+        <argsstring>(string CachePoolName)</argsstring>
+        <name>BinderBegin</name>
+        <param>
+          <type>string</type>
+          <declname>CachePoolName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a4f1362472079682e42d551e317d40945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxDynamic::Resource::SortCachePool</definition>
+        <argsstring>(string CachePoolName)</argsstring>
+        <name>SortCachePool</name>
+        <param>
+          <type>string</type>
+          <declname>CachePoolName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="66" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1a69223c3de255646d5b829412138fa6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string _tmp_</type>
+        <definition>virtual string _tmp_ BxDynamic::Resource::GetCachePoolName</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetCachePoolName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1aac4b14461aa99f26d540bee17bca1136" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxDynamic::Resource::~Resource</definition>
+        <argsstring>()</argsstring>
+        <name>~Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="161" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="161" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1ad9c95349e4c063b667ca077abf62eb4b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxDynamic::Resource::AdjustCachePoolUsed</definition>
+        <argsstring>(string CachePoolName, int CacheSize)</argsstring>
+        <name>AdjustCachePoolUsed</name>
+        <param>
+          <type>string</type>
+          <declname>CachePoolName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CacheSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="147" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>리소스 관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="10" bodyend="296"/>
+    <listofallmembers>
+      <member refid="class_bx_dynamic_1_1_resource_1ad9c95349e4c063b667ca077abf62eb4b" prot="private" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>AdjustCachePoolUsed</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a2ccf3c0aacaf131d14af0a0253d2bab5" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>AllocCache</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1afd5d72dfedc1f87c23e19ea4683798cf" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>Bind</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1abfe44c7f9ca5e30fe1f0ebc8a12f31fd" prot="public" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>BinderBegin</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1af92f360b739162a566cc4e6be60bac24" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>Entrust</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a7c4f19cd9edee5b7155a5596248a4261" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>FreeCacheManually</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a69223c3de255646d5b829412138fa6e0" prot="public" virt="pure-virtual"><scope>BxDynamic::Resource</scope><name>GetCachePoolName</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1ad3ca2325359dd7626039b5ac97104efc" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>GetCachePoolSize</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1acc84039f3103995e57effea368453fd3" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>GetCachePoolUsed</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a3b670ce68e6a0e7114cd21a01eb6d68a" prot="protected" virt="pure-virtual"><scope>BxDynamic::Resource</scope><name>GetCacheScore</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1aef65fcbd65b20f1dead6c097a0e3b46a" prot="public" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>GetID</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1ab35c97d533264e91f147a5cb52990b9c" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>LockCache</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a77568d2c0724305b32e52149975a4b4b" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>MakeID</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1abe282daaa40e82f894e0513af5133e63" prot="private" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>mBinder</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a2090857f88de9a47a94ae23f4f5b1161" prot="private" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>mBuffer</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a1fd4a368cf89fa363875e908b2002385" prot="private" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>mCacheScore</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1ae1b932b7322560a85c3f17b6e363d140" prot="private" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>mLockCount</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a25c5ac5b2f25ded7575a92df28d3cb13" prot="private" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>mUsedCacheSize</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1abf76b5cc3de6fbe87ca689b11869d216" prot="protected" virt="pure-virtual"><scope>BxDynamic::Resource</scope><name>OnLoad</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a58811c6a2ee3b82431726a74ed148d97" prot="protected" virt="pure-virtual"><scope>BxDynamic::Resource</scope><name>OnPreRemoveCache</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a57a1a631ff68f8c357b4b3e2955bdebf" prot="protected" virt="pure-virtual"><scope>BxDynamic::Resource</scope><name>OnSave</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a02c5316afe50527f786f25b5613990db" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>Resource</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a4f1362472079682e42d551e317d40945" prot="public" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>SortCachePool</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a6b3a362c9b6b99d435dd255bfa8b7ecb" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>UnlockCache</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1a1dd4f5cc68971d24eb29d7ded85baa67" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource</scope><name>UpdateCache</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1aac4b14461aa99f26d540bee17bca1136" prot="public" virt="virtual"><scope>BxDynamic::Resource</scope><name>~Resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

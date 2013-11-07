@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="group___bx_new___param" kind="group">
+    <compoundname>BxNew_Param</compoundname>
+    <title>BxNew_Param</title>
+    <briefdescription>
+<para>#define BxNew_Param(TYPE, ...) </para>    </briefdescription>
+    <detaileddescription>
+<para>메모리 인수할당 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TYPE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스타입 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달할 인수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>클래스타입 포인터 </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

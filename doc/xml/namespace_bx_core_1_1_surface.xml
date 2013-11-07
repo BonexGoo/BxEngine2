@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_surface" kind="namespace">
+    <compoundname>BxCore::Surface</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1aaef270c828cd57bb99c8d11128bfbbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Surface::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+<para>화면생성 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1abfe9836c517ee028a1e4a858b26b82ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Surface::Flush</definition>
+        <argsstring>(void *ptr, const int row, const int height, const int pitch)</argsstring>
+        <name>Flush</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pitch</declname>
+        </param>
+        <briefdescription>
+<para>업데이트 및 백버퍼를 화면에 출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 화면에 출력할 이미지의 포인터 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이미지의 너비의 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이미지의 픽셀높이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이미지의 더미를 포함한 너비의 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1a4b6f7f764f3e2abadf444292bf7a149f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Surface::MiddleFlush</definition>
+        <argsstring>()</argsstring>
+        <name>MiddleFlush</name>
+        <briefdescription>
+<para>중간 업데이트 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1ad8ea6bdf9f5e8bfdf2ce0aeeedbc3652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetWidth</definition>
+        <argsstring>(bool *isfixedvalue=null, bool usemargin=true)</argsstring>
+        <name>GetWidth</name>
+        <param>
+          <type>bool *</type>
+          <declname>isfixedvalue</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>화면너비 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isfixedvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: icf의 SurfaceWidthBx를 적용한 고정사이즈 여부조사(null이면 생략) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>너비의 픽셀길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1a5056ae5cca49bb60026d16a75045b6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetHeight</definition>
+        <argsstring>(bool *isfixedvalue=null, bool usemargin=true)</argsstring>
+        <name>GetHeight</name>
+        <param>
+          <type>bool *</type>
+          <declname>isfixedvalue</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>화면높이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isfixedvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: icf의 SurfaceHeightBx를 적용한 고정사이즈 여부조사(null이면 생략) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>높이의 픽셀길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1add1206ac58b30b117600c186daca0973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetWidthHW</definition>
+        <argsstring>(bool usemargin=true)</argsstring>
+        <name>GetWidthHW</name>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>하드웨어적 화면너비 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>너비의 픽셀길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1aa396df855a2d8c80089340c5542e0a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetHeightHW</definition>
+        <argsstring>(bool usemargin=true)</argsstring>
+        <name>GetHeightHW</name>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>하드웨어적 화면높이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>높이의 픽셀길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1a301a412c0a71aeca77040391c5417798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Surface::SetMarginMode</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetMarginMode</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>마진고려한 Width/Height값의 작동여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작동여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>작동여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="307" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Surface파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="252" column="1"/>
+  </compounddef>
+</doxygen>

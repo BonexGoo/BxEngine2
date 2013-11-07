@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_var_map" kind="class" prot="public">
+    <compoundname>BxVarMap</compoundname>
+    <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_var_map_1abf580f365169c8c76da8677958dd0fb8" prot="private" static="no" mutable="no">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE &gt;::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="168" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_map_1ae8ff43ac9abfa51d6ac7e61dae39b5f3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref> **</type>
+        <definition>BxVarMap** BxVarMap&lt; TYPE &gt;::Child</definition>
+        <argsstring></argsstring>
+        <name>Child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_var_map_1adb8f69b8b7b8bd888f8008715164d33f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVarMap&lt; TYPE &gt;::operator[]</definition>
+        <argsstring>(uint key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="10" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a0f9bf2325ad270815b253bad0e437ad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVarMap&lt; TYPE &gt;::operator[]</definition>
+        <argsstring>(string key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="31" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ad42b7d6d39fb0117cd892f91cadcb747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVarMap&lt; TYPE &gt;::operator[]</definition>
+        <argsstring>(wstring key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="56" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a7f6392b1771dd4b2cc6d15ca1e3f8b87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE &gt;::Access</definition>
+        <argsstring>(uint key) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="89" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a035b6e1e7b2aeec287e4abd271a1c9d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE &gt;::Access</definition>
+        <argsstring>(string key) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="103" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a4778fe94d3b087e5d07c3556c0d812e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE &gt;::Access</definition>
+        <argsstring>(wstring key) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="120" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="120" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a533a12f831eaa5cd9ab275edfc421050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVarMap&lt; TYPE &gt;::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="143" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="143" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ae40acbc31252742f39d01043f566144f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarMap&lt; TYPE &gt;::BxVarMap</definition>
+        <argsstring>()</argsstring>
+        <name>BxVarMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ae08d6239a32d2e30e61709ac7e27dd81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarMap&lt; TYPE &gt;::~BxVarMap</definition>
+        <argsstring>()</argsstring>
+        <name>~BxVarMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_var_map_1a7888ef24fbed41b8f4d40410f7a7f2e5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVarMap&lt; TYPE &gt;::ValidChild</definition>
+        <argsstring>()</argsstring>
+        <name>ValidChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="171" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>map식 가변배열 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="6" bodyend="177"/>
+    <listofallmembers>
+      <member refid="class_bx_var_map_1a7f6392b1771dd4b2cc6d15ca1e3f8b87" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
+      <member refid="class_bx_var_map_1a035b6e1e7b2aeec287e4abd271a1c9d0" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
+      <member refid="class_bx_var_map_1a4778fe94d3b087e5d07c3556c0d812e7" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
+      <member refid="class_bx_var_map_1ae40acbc31252742f39d01043f566144f" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>BxVarMap</name></member>
+      <member refid="class_bx_var_map_1ae8ff43ac9abfa51d6ac7e61dae39b5f3" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>Child</name></member>
+      <member refid="class_bx_var_map_1abf580f365169c8c76da8677958dd0fb8" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>Data</name></member>
+      <member refid="class_bx_var_map_1adb8f69b8b7b8bd888f8008715164d33f" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator[]</name></member>
+      <member refid="class_bx_var_map_1a0f9bf2325ad270815b253bad0e437ad4" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator[]</name></member>
+      <member refid="class_bx_var_map_1ad42b7d6d39fb0117cd892f91cadcb747" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator[]</name></member>
+      <member refid="class_bx_var_map_1a533a12f831eaa5cd9ab275edfc421050" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Reset</name></member>
+      <member refid="class_bx_var_map_1a7888ef24fbed41b8f4d40410f7a7f2e5" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>ValidChild</name></member>
+      <member refid="class_bx_var_map_1ae08d6239a32d2e30e61709ac7e27dd81" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>~BxVarMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

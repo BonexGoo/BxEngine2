@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_dynamic_1_1_resource_1_1_pool" kind="class" prot="private" abstract="yes">
+    <compoundname>BxDynamic::Resource::Pool</compoundname>
+    <derivedcompoundref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" prot="public" virt="non-virtual">BxDynamic::Resource::BindPool</derivedcompoundref>
+    <derivedcompoundref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" prot="public" virt="non-virtual">BxDynamic::Resource::LinkPool</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1_1_pool_1a8b7f3a2d3bc83535c0a86e0c6a7563a8" prot="protected" static="no" mutable="no">
+        <type>Pool *</type>
+        <definition>Pool* BxDynamic::Resource::Pool::Prev</definition>
+        <argsstring></argsstring>
+        <name>Prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="172" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1_1_pool_1af7842cc18e208f3de182aee9cb72d923" prot="protected" static="no" mutable="no">
+        <type>Pool *</type>
+        <definition>Pool* BxDynamic::Resource::Pool::Next</definition>
+        <argsstring></argsstring>
+        <name>Next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="173" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1aa992ee1e8894c7b302e756dee22c6df3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDynamic::Resource::Pool::Pool</definition>
+        <argsstring>()</argsstring>
+        <name>Pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="174" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="174" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1a6e81445455ec0c20b91e07fa7ed16c20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxDynamic::Resource::Pool::~Pool</definition>
+        <argsstring>()</argsstring>
+        <name>~Pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="175" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="175" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1acdea0771d22b841ddfd579937dda7ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Pool *</type>
+        <definition>virtual Pool* BxDynamic::Resource::Pool::New</definition>
+        <argsstring>(Pool *)=0</argsstring>
+        <name>New</name>
+        <param>
+          <type>Pool *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1a0ce7a74d89995a877906808c39243cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void BxDynamic::Resource::Pool::Delete</definition>
+        <argsstring>()=0</argsstring>
+        <name>Delete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1af1f2b9b20e5fb137b4222dd927b0ce90" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool BxDynamic::Resource::Pool::IsSame</definition>
+        <argsstring>(void *)=0</argsstring>
+        <name>IsSame</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1a3b2c2433ed1a4eb499f22d7315862b94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pool *</type>
+        <definition>Pool* BxDynamic::Resource::Pool::Add</definition>
+        <argsstring>(Pool *Data)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>Pool *</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="189" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="189" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1aa2c56c55db3158236a9565bc0b461ea9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pool *</type>
+        <definition>Pool* BxDynamic::Resource::Pool::Sub</definition>
+        <argsstring>()</argsstring>
+        <name>Sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="197" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="197" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_pool_1a89b4a5beb18c9cac6ffd2d58931d1f39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pool *</type>
+        <definition>Pool* BxDynamic::Resource::Pool::Find</definition>
+        <argsstring>(void *Key)</argsstring>
+        <name>Find</name>
+        <param>
+          <type>void *</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="205" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="205" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="157">
+        <label>BxDynamic::Resource::LinkPool</label>
+        <link refid="class_bx_dynamic_1_1_resource_1_1_link_pool"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>BxDynamic::Resource::Pool</label>
+      </node>
+      <node id="156">
+        <label>BxDynamic::Resource::BindPool</label>
+        <link refid="class_bx_dynamic_1_1_resource_1_1_bind_pool"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="158">
+        <label>BxDynamic::Resource::Pool</label>
+        <childnode refid="158" relation="usage">
+          <edgelabel>Prev</edgelabel>
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="170" bodyend="216"/>
+    <listofallmembers>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a3b2c2433ed1a4eb499f22d7315862b94" prot="public" virt="non-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Add</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a0ce7a74d89995a877906808c39243cff" prot="public" virt="pure-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Delete</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a89b4a5beb18c9cac6ffd2d58931d1f39" prot="public" virt="non-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Find</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1af1f2b9b20e5fb137b4222dd927b0ce90" prot="public" virt="pure-virtual"><scope>BxDynamic::Resource::Pool</scope><name>IsSame</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1acdea0771d22b841ddfd579937dda7ac8" prot="public" virt="pure-virtual"><scope>BxDynamic::Resource::Pool</scope><name>New</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1af7842cc18e208f3de182aee9cb72d923" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Next</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1aa992ee1e8894c7b302e756dee22c6df3" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Pool</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a8b7f3a2d3bc83535c0a86e0c6a7563a8" prot="protected" virt="non-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Prev</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1aa2c56c55db3158236a9565bc0b461ea9" prot="public" virt="non-virtual"><scope>BxDynamic::Resource::Pool</scope><name>Sub</name></member>
+      <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a6e81445455ec0c20b91e07fa7ed16c20" prot="public" virt="virtual"><scope>BxDynamic::Resource::Pool</scope><name>~Pool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

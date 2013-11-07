@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>BxEngine 개요</title>
+    <detaileddescription>
+<sect1 id="index_1developer">
+<title>개발자</title>
+<para><itemizedlist>
+<listitem><para>Bonex Gu </para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1infomation">
+<title>목적</title>
+<para><itemizedlist>
+<listitem><para>크로스플랫폼향 미들웨어 게임엔진 </para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1advenced">
+<title>소개</title>
+<para><itemizedlist>
+<listitem><para>Marmalade-SDK기반 게임엔진</para></listitem><listitem><para>OpenGL/SW랜더링 통합그래픽스</para></listitem><listitem><para>독립형 Core-Interface 게임엔진 </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

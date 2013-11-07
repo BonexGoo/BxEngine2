@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_throw" kind="class" prot="public">
+    <compoundname>BxThrow</compoundname>
+    <includes refid="_bx_throw_8hpp" local="no">BxThrow.hpp</includes>
+    <innerclass refid="class_bx_throw_1_1_head_unit" prot="private">BxThrow::HeadUnit</innerclass>
+    <innerclass refid="class_bx_throw_1_1_ptr_unit" prot="private">BxThrow::PtrUnit</innerclass>
+    <innerclass refid="class_bx_throw_1_1_unit" prot="private">BxThrow::Unit</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_throw_1a1f1a2971f5e030ddb30d41cfa5e42abd" prot="private" static="no" mutable="no">
+        <type>HeadUnit</type>
+        <definition>HeadUnit BxThrow::List</definition>
+        <argsstring></argsstring>
+        <name>List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="150" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_throw_1aedc3f59d88834cd04607b0c0c3286f6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+        <definition>BxThrow&amp; BxThrow::operator,</definition>
+        <argsstring>(const TYPE &amp;rhs)</argsstring>
+        <name>operator,</name>
+        <param>
+          <type>const TYPE &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>범용 Comma연산자 중복함수 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_throw_1ac7f526b42e8c94bf2db1158ad9e45b78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+        <definition>BxThrow&amp; BxThrow::operator,</definition>
+        <argsstring>(string rhs)</argsstring>
+        <name>operator,</name>
+        <param>
+          <type>string</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>string전용 Comma연산자 중복함수 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>TYPE *</type>
+        <definition>TYPE* BxThrow::Access</definition>
+        <argsstring>(int i) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>데이터 접근하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터 순번 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>데이터를 리턴(실패시 null) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="43" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxThrow::Length</definition>
+        <argsstring>() const </argsstring>
+        <name>Length</name>
+        <briefdescription>
+<para>데이터길이 가져오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>데이터길이를 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="57" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+        <definition>global_func const BxThrow&amp; BxThrow::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+<para>공데이터 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>공데이터를 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_throw_1a338da6d23d89baee5f5eb50dcccbf2ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxThrow::BxThrow</definition>
+        <argsstring>()</argsstring>
+        <name>BxThrow</name>
+        <briefdescription>
+<para>생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="75" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_throw_1a800431a78205c12460f7e9be54c43b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxThrow::~BxThrow</definition>
+        <argsstring>()</argsstring>
+        <name>~BxThrow</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="80" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>가변인자 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="7" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>Access</name></member>
+      <member refid="class_bx_throw_1a338da6d23d89baee5f5eb50dcccbf2ea" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>BxThrow</name></member>
+      <member refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>Length</name></member>
+      <member refid="class_bx_throw_1a1f1a2971f5e030ddb30d41cfa5e42abd" prot="private" virt="non-virtual"><scope>BxThrow</scope><name>List</name></member>
+      <member refid="class_bx_throw_1aedc3f59d88834cd04607b0c0c3286f6e" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>operator,</name></member>
+      <member refid="class_bx_throw_1ac7f526b42e8c94bf2db1158ad9e45b78" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>operator,</name></member>
+      <member refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>zero</name></member>
+      <member refid="class_bx_throw_1a800431a78205c12460f7e9be54c43b4e" prot="public" virt="non-virtual"><scope>BxThrow</scope><name>~BxThrow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

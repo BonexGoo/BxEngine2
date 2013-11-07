@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_dynamic_1_1_serialize" kind="class" prot="public">
+    <compoundname>BxDynamic::Serialize</compoundname>
+    <includes refid="_bx_dynamic_8hpp" local="no">BxDynamic.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TYPE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_dynamic_1_1_serialize_1af72f30519c1ba1600a96729cb888f538" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">Resource::LinkPool</ref> *</type>
+        <definition>Resource::LinkPool* BxDynamic::Serialize&lt; TYPE &gt;::Linker</definition>
+        <argsstring></argsstring>
+        <name>Linker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="334" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1a7b1855db8a7c46790b3099c371e3800c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxDynamic::Serialize&lt; TYPE &gt;::Link</definition>
+        <argsstring>(rsid ID, callback_serialize CB=null, string Comment=null)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>rsid</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>callback_serialize</type>
+          <declname>CB</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Comment</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="303" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="303" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1a12a5a0c5cb9af140ef2ad78452ef91fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxDynamic::Serialize&lt; TYPE &gt;::Access</definition>
+        <argsstring>()</argsstring>
+        <name>Access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="311" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="311" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1ae9ca1ba80b8bb8c3d959893c83c0a4e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>rsid</type>
+        <definition>rsid BxDynamic::Serialize&lt; TYPE &gt;::Load</definition>
+        <argsstring>(id_file File)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>id_file</type>
+          <declname>File</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="317" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="317" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1a63fc697a8d89e58edfce8cdeda230479" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDynamic::Serialize&lt; TYPE &gt;::Save</definition>
+        <argsstring>(id_file File)</argsstring>
+        <name>Save</name>
+        <param>
+          <type>id_file</type>
+          <declname>File</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="324" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="324" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1ae17406cec36db26dc31d668d2aa8efc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDynamic::Serialize&lt; TYPE &gt;::Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="331" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="331" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1a3e165464652c4e882cce69ad6594fcb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDynamic::Serialize&lt; TYPE &gt;::~Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>~Serialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="332" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="332" bodyend="332"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_dynamic_1_1_serialize_1a518dd375fa2ce7f012d9bc109cfd88f9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_dynamic_1_1_resource" kindref="compound">Resource</ref> *</type>
+        <definition>global_func Resource* BxDynamic::Serialize&lt; TYPE &gt;::GetClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="336" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="336" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>직렬화 관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="301" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="300" bodyend="337"/>
+    <listofallmembers>
+      <member refid="class_bx_dynamic_1_1_serialize_1a12a5a0c5cb9af140ef2ad78452ef91fb" prot="public" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>Access</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1a518dd375fa2ce7f012d9bc109cfd88f9" prot="private" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>GetClass</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1a7b1855db8a7c46790b3099c371e3800c" prot="public" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>Link</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1af72f30519c1ba1600a96729cb888f538" prot="private" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>Linker</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1ae9ca1ba80b8bb8c3d959893c83c0a4e2" prot="public" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>Load</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1a63fc697a8d89e58edfce8cdeda230479" prot="public" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>Save</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1ae17406cec36db26dc31d668d2aa8efc4" prot="public" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>Serialize</name></member>
+      <member refid="class_bx_dynamic_1_1_serialize_1a3e165464652c4e882cce69ad6594fcb1" prot="public" virt="non-virtual"><scope>BxDynamic::Serialize</scope><name>~Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

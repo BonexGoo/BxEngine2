@@ -1,0 +1,139 @@
+defines
+{
+	IW_GXFONT_TTF
+	__S3E_CL_WRAPPER
+	__BX_OPENGL
+	#__BX_PIXEL16
+	#__BX_CALLSTACK
+}
+
+debug_defines
+{
+	IW_USE_TRACING
+	IW_USE_ASSERTIONS
+	IW_USE_CALLSTACK
+	__BX_DEBUG_MEMORY_DLL
+	__BX_DEBUG_ASSERT_POPUP
+}
+
+includepaths
+{
+	../bxcore
+	../bxlib
+}
+
+files
+{
+	["Source"]
+	(source)
+	TestA.cpp
+	TestA.hpp
+	TestB.cpp
+	TestB.hpp
+	TestList.cpp
+	TestList.hpp
+
+	["BxAddOn"]
+	(../bxaddon)
+	BxAddOn_GIF.cpp
+	BxAddOn_HQX.cpp
+	BxAddOn_JPG.cpp
+
+	["BxCore"]
+	(../bxcore)
+	BxCore.hpp
+	BxCoreForS3E.cpp
+
+	["BxLib"]
+	(../bxlib)
+	BxAnimate.hpp
+	BxAutoBuffer.hpp
+	BxDraw.hpp
+	BxDynamic.hpp
+	BxExpress.hpp
+	BxGUI.hpp
+	BxImage.hpp
+	BxKeyword.hpp
+	BxMain.cpp
+	BxMemory.hpp
+	BxPathFind.hpp
+	BxPool.hpp
+	BxScene.hpp
+	BxSingleton.hpp
+	BxString.hpp
+	BxTelex.hpp
+	BxThrow.hpp
+	BxTween.hpp
+	BxType.hpp
+	BxUtil.hpp
+	BxVar.hpp
+	BxVarMap.hpp
+	BxVarVector.hpp
+	BxWebContent.hpp
+	BxXml.hpp
+
+	["BxFw"]
+	(../bxfw)
+	BxKeyboard.cpp
+	BxKeyboard.hpp
+	BxSimulator.cpp
+	BxSimulator.hpp
+
+	["Doc"]
+	(../doc/html)
+	index.html
+
+	["Config"]
+	(data/config)
+	default.key
+}
+
+options
+{
+	cflags="-std=c++0x"
+	compile-thumb=0
+}
+
+assets
+{
+	(data)
+	app.config.txt
+
+	["Config"]
+	(data)
+	config/
+
+	["Font"]
+	(data)
+	font/
+
+	["Sound"]
+	(data)
+	sound/
+
+	["Data"]
+	<include "Config">
+	<include "Font">
+	<include "Sound">
+}
+
+deployments
+{
+	name='Test1'
+	caption='Test1'
+	long-caption='Test1'
+	provider='Bonex'
+	version='260'
+	version-string='2.6.0'
+	app-icf="data/app.icf"
+	embed-icf=1
+	assets="Data"
+	win32-icon='icon/bxdii.ico'
+}
+
+subprojects
+{
+	iwgx
+	iwgxfont
+	derbh
+}

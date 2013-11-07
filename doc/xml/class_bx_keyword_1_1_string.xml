@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_keyword_1_1_string" kind="class" prot="public">
+    <compoundname>BxKeyword::String</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_keyword_1_1_string_1a08d82246f098ac9035c2224b974d2790" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxKeyword::String::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="416" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_keyword_1_1_string_1a8c1d1acaf38be3b1458bec61ac41e466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::String::String</definition>
+        <argsstring>()</argsstring>
+        <name>String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="416" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="416" bodyend="416"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="182">
+        <label>BxKeyword::String</label>
+        <link refid="class_bx_keyword_1_1_string"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="183">
+        <label>BxString</label>
+        <link refid="class_bx_string"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="416" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="416" bodyend="416"/>
+    <listofallmembers>
+      <member refid="class_bx_keyword_1_1_string_1a08d82246f098ac9035c2224b974d2790" prot="public" virt="non-virtual"><scope>BxKeyword::String</scope><name>Data</name></member>
+      <member refid="class_bx_keyword_1_1_string_1a8c1d1acaf38be3b1458bec61ac41e466" prot="public" virt="non-virtual"><scope>BxKeyword::String</scope><name>String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

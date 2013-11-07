@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_pool_1_1_unit" kind="class" prot="private">
+    <compoundname>BxPool::Unit</compoundname>
+    <basecompoundref refid="class_bx_pool_global_1_1_unit" prot="public" virt="non-virtual">BxPoolGlobal::Unit</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_pool_1_1_unit_1a3f36e71c8d819d0b245082d1af7d1cff" prot="public" static="no">
+        <name>@6</name>
+        <enumvalue id="class_bx_pool_1_1_unit_1a3f36e71c8d819d0b245082d1af7d1cffa92184c49a9c84c510c6f959a37e34fca" prot="public">
+          <name>MAX</name>
+          <initializer>= 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="160" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="160" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_pool_1_1_unit_1a5ae2f02b52901a1c61547f7afc09792b" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte BxPool&lt; TYPE &gt;::Unit::Data[MAX][sizeof(TYPE)]</definition>
+        <argsstring>[MAX][sizeof(TYPE)]</argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="161" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_pool_1_1_unit_1a5240181411a8804040179cb80b0dd290" prot="public" static="no" mutable="no">
+        <type>TYPE *</type>
+        <definition>TYPE* BxPool&lt; TYPE &gt;::Unit::Focus</definition>
+        <argsstring></argsstring>
+        <name>Focus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_pool_1_1_unit_1a54a437eed2659f9a005abfa3af37a955" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPool&lt; TYPE &gt;::Unit::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_pool_1_1_unit_1a6d7a9171d0613ea57b1f9c25538127ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPool&lt; TYPE &gt;::Unit::Unit</definition>
+        <argsstring>()</argsstring>
+        <name>Unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="164" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1_1_unit_1a3e0df32dee6169a969fd96f06d97834f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxPool&lt; TYPE &gt;::Unit::~Unit</definition>
+        <argsstring>()</argsstring>
+        <name>~Unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="172" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1_1_unit_1a44e1937723a2f62d86c5e0cac7707756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool BxPool&lt; TYPE &gt;::Unit::Find</definition>
+        <argsstring>(void *Ptr)</argsstring>
+        <name>Find</name>
+        <param>
+          <type>void *</type>
+          <declname>Ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="175" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1_1_unit_1a32fc091e75778d45cf0cc6cd57db4c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxPool&lt; TYPE &gt;::Unit::Make</definition>
+        <argsstring>()</argsstring>
+        <name>Make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="182" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="182" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1_1_unit_1a4b823bdd28e76d909a185230a62e488e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void BxPool&lt; TYPE &gt;::Unit::Free</definition>
+        <argsstring>(void *Ptr)</argsstring>
+        <name>Free</name>
+        <param>
+          <type>void *</type>
+          <declname>Ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="189" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="189" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="203">
+        <label>BxPoolGlobal::Unit</label>
+        <link refid="class_bx_pool_global_1_1_unit"/>
+      </node>
+      <node id="202">
+        <label>BxPool&lt; TYPE &gt;::Unit</label>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="205">
+        <label>BxPoolGlobal::Unit</label>
+        <link refid="class_bx_pool_global_1_1_unit"/>
+        <childnode refid="205" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="204">
+        <label>BxPool&lt; TYPE &gt;::Unit</label>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="157" bodyend="203"/>
+    <listofallmembers>
+      <member refid="class_bx_pool_1_1_unit_1a54a437eed2659f9a005abfa3af37a955" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Count</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a5ae2f02b52901a1c61547f7afc09792b" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Data</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a44e1937723a2f62d86c5e0cac7707756" prot="public" virt="virtual"><scope>BxPool::Unit</scope><name>Find</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a5240181411a8804040179cb80b0dd290" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Focus</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a4b823bdd28e76d909a185230a62e488e" prot="public" virt="virtual"><scope>BxPool::Unit</scope><name>Free</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a32fc091e75778d45cf0cc6cd57db4c35" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Make</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a3f36e71c8d819d0b245082d1af7d1cffa92184c49a9c84c510c6f959a37e34fca" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>MAX</name></member>
+      <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Next</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a6d7a9171d0613ea57b1f9c25538127ed" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Unit</name></member>
+      <member refid="class_bx_pool_1_1_unit_1a3e0df32dee6169a969fd96f06d97834f" prot="public" virt="virtual"><scope>BxPool::Unit</scope><name>~Unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

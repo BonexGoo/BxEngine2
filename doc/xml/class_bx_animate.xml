@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_animate" kind="class" prot="public">
+    <compoundname>BxAnimate</compoundname>
+    <includes refid="_bx_animate_8hpp" local="no">BxAnimate.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049c" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049ca805643f50d863e3576a6dd69d01bc9d8" prot="public">
+          <name>KEYWORD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049ca283333785e03d9e3d1c2e31b7ef80779" prot="public">
+          <name>FORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049ca169861616b903d0fe8b8217561c8f323" prot="public">
+          <name>OUTLINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049caece320d09058d8e1941f4f7f08d654b7" prot="public">
+          <name>BEGIN_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_animate_1ae430e657f6e0620b85bdba4343b40a85" prot="public" static="no">
+        <type>compare(*</type>
+        <definition>typedef compare(* BxAnimate::OnSort)(BxAnimate &amp;anim, id_object objectA, id_object objectB)</definition>
+        <argsstring>)(BxAnimate &amp;anim, id_object objectA, id_object objectB)</argsstring>
+        <name>OnSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_animate_1a9a318e782bd9ddf40ea4ef54fd3df799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxAnimate::BxAnimate</definition>
+        <argsstring>()</argsstring>
+        <name>BxAnimate</name>
+        <briefdescription>
+<para>기본생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a03fe8b9535741140ae149076da6bbeb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxAnimate::~BxAnimate</definition>
+        <argsstring>()</argsstring>
+        <name>~BxAnimate</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1ab799670da67750e5ae99c9e7ce2739e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>global_func BxString&amp; BxAnimate::SetResourcePath</definition>
+        <argsstring>(string path=null)</argsstring>
+        <name>SetResourcePath</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>리소스폴더 경로지정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 경로 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>저장된 경로스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1aa542dbaa87cd22940e08350440e3a237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxAnimate::Load</definition>
+        <argsstring>(byte *resource)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>byte *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+<para>애니메이션 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메모리리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로딩성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="49" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1ad6e51ca501fa68b9b88f9035c87999a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxAnimate::Load</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>애니메이션 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>로딩성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="86" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxAnimate::IsAliveObject</definition>
+        <argsstring>(id_object objectID)</argsstring>
+        <name>IsAliveObject</name>
+        <param>
+          <type>id_object</type>
+          <declname>objectID</declname>
+        </param>
+        <briefdescription>
+<para>오브젝트 생존여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오브젝트핸들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>생존여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>id_object</type>
+        <definition>id_object BxAnimate::AddObject</definition>
+        <argsstring>(string objectName, int x, int y)</argsstring>
+        <name>AddObject</name>
+        <param>
+          <type>string</type>
+          <declname>objectName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>오브젝트 추가 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오프젝트명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성위치 X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성위치 Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>오브젝트핸들 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" kindref="member">SubObject</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="117" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="117" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxAnimate::SubObject</definition>
+        <argsstring>(id_object _inout_ objectID)</argsstring>
+        <name>SubObject</name>
+        <param>
+          <type>id_object _inout_</type>
+          <declname>objectID</declname>
+        </param>
+        <briefdescription>
+<para>오브젝트 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오브젝트핸들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" kindref="member">AddObject</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="140" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="140" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1af29a6641041d7c3dc33f24a817970e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxAnimate::ClearObjectAll</definition>
+        <argsstring>()</argsstring>
+        <name>ClearObjectAll</name>
+        <briefdescription>
+<para>모든 오브젝트 제거 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="171" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+        <definition>point&amp; BxAnimate::ObjectPos</definition>
+        <argsstring>(id_object objectID)</argsstring>
+        <name>ObjectPos</name>
+        <param>
+          <type>id_object</type>
+          <declname>objectID</declname>
+        </param>
+        <briefdescription>
+<para>오브젝트위치 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오브젝트핸들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>오브젝트위치 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="192" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="192" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxAnimate::SendEvent</definition>
+        <argsstring>(id_object objectID, string eventName, bool doInterrupt=false)</argsstring>
+        <name>SendEvent</name>
+        <param>
+          <type>id_object</type>
+          <declname>objectID</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>eventName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doInterrupt</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>오브젝트에 이벤트전달 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오브젝트핸들 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eventName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이벤트명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doInterrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 끼어들기여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="212" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="212" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a21fbf6451a367b8cdad3430a3aa679b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxAnimate::DrawAnimate</definition>
+        <argsstring>(BxDraw &amp;draw, OnSort sortCB=null)</argsstring>
+        <name>DrawAnimate</name>
+        <param>
+          <type><ref refid="class_bx_draw" kindref="compound">BxDraw</ref> &amp;</type>
+          <declname>draw</declname>
+        </param>
+        <param>
+          <type>OnSort</type>
+          <declname>sortCB</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>전체 오브젝트 그리기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>draw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Draw객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sortCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 정렬용 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" kindref="member">DefaultSort</ref>, <ref refid="class_bx_animate_1a55f71ae45caecc7efc23dd77c95cd903" kindref="member">NextAnimate</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="238" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="238" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a55f71ae45caecc7efc23dd77c95cd903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxAnimate::NextAnimate</definition>
+        <argsstring>()</argsstring>
+        <name>NextAnimate</name>
+        <briefdescription>
+<para>애니메이션 진행 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_bx_animate_1a21fbf6451a367b8cdad3430a3aa679b3" kindref="member">DrawAnimate</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="309" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="309" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func compare</type>
+        <definition>global_func compare BxAnimate::DefaultSort</definition>
+        <argsstring>(BxAnimate &amp;anim, id_object objectA, id_object objectB)</argsstring>
+        <name>DefaultSort</name>
+        <param>
+          <type><ref refid="class_bx_animate" kindref="compound">BxAnimate</ref> &amp;</type>
+          <declname>anim</declname>
+        </param>
+        <param>
+          <type>id_object</type>
+          <declname>objectA</declname>
+        </param>
+        <param>
+          <type>id_object</type>
+          <declname>objectB</declname>
+        </param>
+        <briefdescription>
+<para>OnSort정렬 기본제공함수 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Anim객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objectA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오브젝트A </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objectB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 오브젝트B </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_animate_1a21fbf6451a367b8cdad3430a3aa679b3" kindref="member">DrawAnimate</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="331" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="331" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1aa3ab6243adca81410b6adf1bf68b62e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>event</type>
+        <definition>event BxAnimate::SetEvent</definition>
+        <argsstring>(string eventName, event *setValue=null)</argsstring>
+        <name>SetEvent</name>
+        <param>
+          <type>string</type>
+          <declname>eventName</declname>
+        </param>
+        <param>
+          <type>event *</type>
+          <declname>setValue</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="339" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="339" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1ae19b991093f3fed81def1c24e44224eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>check</type>
+        <definition>check BxAnimate::SetCheck</definition>
+        <argsstring>(string checkName, check *setValue=null)</argsstring>
+        <name>SetCheck</name>
+        <param>
+          <type>string</type>
+          <declname>checkName</declname>
+        </param>
+        <param>
+          <type>check *</type>
+          <declname>setValue</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="359" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="359" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1a8e24583642d5cba9cab2dd5465b5d1bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>radio</type>
+        <definition>radio BxAnimate::SetRadio</definition>
+        <argsstring>(string radioName, radio *setValue=null)</argsstring>
+        <name>SetRadio</name>
+        <param>
+          <type>string</type>
+          <declname>radioName</declname>
+        </param>
+        <param>
+          <type>radio *</type>
+          <declname>setValue</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="376" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="376" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1aac9460681ebf20295fc07744932eb383" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>number</type>
+        <definition>number BxAnimate::SetNumber</definition>
+        <argsstring>(string numberName, number *setValue=null)</argsstring>
+        <name>SetNumber</name>
+        <param>
+          <type>string</type>
+          <declname>numberName</declname>
+        </param>
+        <param>
+          <type>number *</type>
+          <declname>setValue</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="394" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="394" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_animate_1ab05b830ac1b9d3b1e968db9e53086485" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxAnimate::SetString</definition>
+        <argsstring>(string stringName, string *setValue=null)</argsstring>
+        <name>SetString</name>
+        <param>
+          <type>string</type>
+          <declname>stringName</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>setValue</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="411" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="411" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>메두사툴 애니메이션 운영 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="7" bodyend="1518"/>
+    <listofallmembers>
+      <member refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>AddObject</name></member>
+      <member refid="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049caece320d09058d8e1941f4f7f08d654b7" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>BEGIN_MAX</name></member>
+      <member refid="class_bx_animate_1a9a318e782bd9ddf40ea4ef54fd3df799" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>BxAnimate</name></member>
+      <member refid="class_bx_animate_1af29a6641041d7c3dc33f24a817970e79" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>ClearObjectAll</name></member>
+      <member refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>DefaultSort</name></member>
+      <member refid="class_bx_animate_1a21fbf6451a367b8cdad3430a3aa679b3" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>DrawAnimate</name></member>
+      <member refid="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049ca283333785e03d9e3d1c2e31b7ef80779" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>FORM</name></member>
+      <member refid="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>IsAliveObject</name></member>
+      <member refid="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049ca805643f50d863e3576a6dd69d01bc9d8" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>KEYWORD</name></member>
+      <member refid="class_bx_animate_1aa542dbaa87cd22940e08350440e3a237" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>Load</name></member>
+      <member refid="class_bx_animate_1ad6e51ca501fa68b9b88f9035c87999a5" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>Load</name></member>
+      <member refid="class_bx_animate_1a55f71ae45caecc7efc23dd77c95cd903" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>NextAnimate</name></member>
+      <member refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>ObjectPos</name></member>
+      <member refid="class_bx_animate_1ae430e657f6e0620b85bdba4343b40a85" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>OnSort</name></member>
+      <member refid="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049ca169861616b903d0fe8b8217561c8f323" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>OUTLINE</name></member>
+      <member refid="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SendEvent</name></member>
+      <member refid="class_bx_animate_1ae19b991093f3fed81def1c24e44224eb" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SetCheck</name></member>
+      <member refid="class_bx_animate_1aa3ab6243adca81410b6adf1bf68b62e2" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SetEvent</name></member>
+      <member refid="class_bx_animate_1aac9460681ebf20295fc07744932eb383" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SetNumber</name></member>
+      <member refid="class_bx_animate_1a8e24583642d5cba9cab2dd5465b5d1bf" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SetRadio</name></member>
+      <member refid="class_bx_animate_1ab799670da67750e5ae99c9e7ce2739e2" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SetResourcePath</name></member>
+      <member refid="class_bx_animate_1ab05b830ac1b9d3b1e968db9e53086485" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SetString</name></member>
+      <member refid="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>SubObject</name></member>
+      <member refid="class_bx_animate_1a03fe8b9535741140ae149076da6bbeb7" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>~BxAnimate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

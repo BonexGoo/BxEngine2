@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_var" kind="class" prot="public">
+    <compoundname>BxVar</compoundname>
+    <includes refid="_bx_var_8hpp" local="no">BxVar.hpp</includes>
+    <innerclass refid="class_bx_var_1_1_var_list" prot="private">BxVar::VarList</innerclass>
+    <innerclass refid="class_bx_var_1_1_var_tree" prot="private">BxVar::VarTree</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_var_1aaa86bebfceb40b8499259e8d3ba82ddf" prot="public" static="no">
+        <name>Parameter</name>
+        <enumvalue id="class_bx_var_1aaa86bebfceb40b8499259e8d3ba82ddfaf02838ccd2613a9f0fcd5595f4c35c73" prot="public">
+          <name>AutoCreate</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_var_1aaa86bebfceb40b8499259e8d3ba82ddfa92b62b7c4d4aee1975b81f9c261fe96e" prot="public">
+          <name>NoNeed</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="26" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_var_1a8b0d162744b1c712a95f5c43f02ed646" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="class_bx_var_1a8b0d162744b1c712a95f5c43f02ed646af4c81ab970308777162c9914c21c4f4d" prot="public">
+          <name>LengthOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_var_1a8b0d162744b1c712a95f5c43f02ed646a4d687076a4a47c8f313e72c08ae0c397" prot="public">
+          <name>LengthOfCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_var_1a3f8b89853ab4671397e6a3c0afa7a614" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarList &gt;</type>
+        <definition>typedef BxPool&lt;VarList&gt; BxVar&lt; TYPE &gt;::VarListPool</definition>
+        <argsstring></argsstring>
+        <name>VarListPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_var_1a2cf37157d23ae5bd8c0f0d45106bc283" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarTree &gt;</type>
+        <definition>typedef BxPool&lt;VarTree&gt; BxVar&lt; TYPE &gt;::VarTreePool</definition>
+        <argsstring></argsstring>
+        <name>VarTreePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_var_1a533b2dc2085945d42fe2450f6a2d078d" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; TYPE &gt;</type>
+        <definition>typedef BxPool&lt;TYPE&gt; BxVar&lt; TYPE &gt;::TypePool</definition>
+        <argsstring></argsstring>
+        <name>TypePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="23" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_var_1a3219bec12acd7e0a368c8024de63a6c9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxVar&lt; TYPE &gt;::BytesUpdated</definition>
+        <argsstring></argsstring>
+        <name>BytesUpdated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="191" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_1aa30a9e3b63918c5fb87f2708d7f30aef" prot="private" static="no" mutable="no">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVar&lt; TYPE &gt;::BytesData</definition>
+        <argsstring></argsstring>
+        <name>BytesData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="192" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_1a29e57b4435db50544ae80e7e6c39d3d9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxVar&lt; TYPE &gt;::IsDirtyCache</definition>
+        <argsstring></argsstring>
+        <name>IsDirtyCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="193" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_1a29c7b87351a9f4b98a1c6fda2ac3e50a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxVar&lt; TYPE &gt;::CacheIdx[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>CacheIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="194" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_1adf3dc9bacf15184b9709902017655582" prot="private" static="no" mutable="no">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVar&lt; TYPE &gt;::CachePtr[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>CachePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="195" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_1a3cf21ef5f64f80e44cd58a4076accceb" prot="private" static="no" mutable="no">
+        <type>class BxVar::VarTree</type>
+        <definition>class BxVar::VarTree  BxVar&lt; TYPE &gt;::TreeHead</definition>
+        <argsstring></argsstring>
+        <name>TreeHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="517" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_var_1aa6e7d737f6e4a02a48927ad7321a4230" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVar&lt; TYPE &gt;::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="30" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="30" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a0494b5cef73443c38a2395c697bba775" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVar&lt; TYPE &gt;::Access</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a51d27fd65dc137c41883b9d9975b3ccb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxVar&lt; TYPE &gt;::Length</definition>
+        <argsstring>(Type type=LengthOfRange) const </argsstring>
+        <name>Length</name>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+          <defval>LengthOfRange</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="57" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a466f18a382bdcacabba5a513500a7840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVar&lt; TYPE &gt;::Reset</definition>
+        <argsstring>(const bool doRemove=true)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>const bool</type>
+          <declname>doRemove</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="65" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1ad92e2fce1d062e24958d18882e31a491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVar&lt; TYPE &gt;::Insert</definition>
+        <argsstring>(int index, TYPE *newData=(TYPE *) AutoCreate)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>TYPE *</type>
+          <declname>newData</declname>
+          <defval>(TYPE *) AutoCreate</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="74" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1af7707c402f6ee95fcb0dcce9976fa93f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVar&lt; TYPE &gt;::Delete</definition>
+        <argsstring>(int index, TYPE **oldData=(TYPE **) NoNeed)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>TYPE **</type>
+          <declname>oldData</declname>
+          <defval>(TYPE **) NoNeed</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="83" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="83" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a90cbf17e9514523b13df89d128bccec9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVar&lt; TYPE &gt;::ModifyData</definition>
+        <argsstring>(int index, TYPE *newData=(TYPE *) AutoCreate, TYPE **oldData=(TYPE **) NoNeed)</argsstring>
+        <name>ModifyData</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>TYPE *</type>
+          <declname>newData</declname>
+          <defval>(TYPE *) AutoCreate</defval>
+        </param>
+        <param>
+          <type>TYPE **</type>
+          <declname>oldData</declname>
+          <defval>(TYPE **) NoNeed</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="99" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a6298c16e1472eea5f2c14bd4980cd9bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVar&lt; TYPE &gt;::RemoveData</definition>
+        <argsstring>(int index, TYPE **oldData=(TYPE **) NoNeed)</argsstring>
+        <name>RemoveData</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>TYPE **</type>
+          <declname>oldData</declname>
+          <defval>(TYPE **) NoNeed</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="116" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="116" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a1d8df4641f1dcacbb09c94fee34433f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVar&lt; TYPE &gt;::SwapData</definition>
+        <argsstring>(int index1, int index2)</argsstring>
+        <name>SwapData</name>
+        <param>
+          <type>int</type>
+          <declname>index1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="133" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="133" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1aa6d3b8977fd0e4debf2ed7b8c375c68d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte* BxVar&lt; TYPE &gt;::GetBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="146" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="146" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a72807179acee3bda36f44e9fdbf65565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVar&lt; TYPE &gt;::ReleaseBytes</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1aa94f74f11d053319ca04483f02fd0c0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref> &amp;</type>
+        <definition>BxVar&amp; BxVar&lt; TYPE &gt;::operator=</definition>
+        <argsstring>(BxVar &amp;RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_bx_var" kindref="compound">BxVar</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="171" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a74efe7eeac195541cf39582b2a44634c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVar&lt; TYPE &gt;::BxVar</definition>
+        <argsstring>()</argsstring>
+        <name>BxVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="184" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1ac345211b6fc2e30c274c4ce508d44122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVar&lt; TYPE &gt;::BxVar</definition>
+        <argsstring>(const BxVar &amp;RHS)</argsstring>
+        <name>BxVar</name>
+        <param>
+          <type>const <ref refid="class_bx_var" kindref="compound">BxVar</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="186" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1aaad9dbebd659ecca535a0d4eac5701fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxVar&lt; TYPE &gt;::~BxVar</definition>
+        <argsstring>()</argsstring>
+        <name>~BxVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="188" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="188" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_var_1aa6da7b7c8086c1a1529a4f8a5c508777" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>macro int</type>
+        <definition>macro int BxVar&lt; TYPE &gt;::CalcIndex</definition>
+        <argsstring>(int _inout_ index) const </argsstring>
+        <name>CalcIndex</name>
+        <param>
+          <type>int _inout_</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="197" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="197" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1adb4f4cf10f467b2a7480f0e1842752a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>macro TYPE *</type>
+        <definition>macro TYPE* BxVar&lt; TYPE &gt;::MakeNewData</definition>
+        <argsstring>(TYPE *newData)</argsstring>
+        <name>MakeNewData</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>newData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="209" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="209" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_1a2604f22417192d969551eab07ca17dbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVar&lt; TYPE &gt;::CleaningCache</definition>
+        <argsstring>()</argsstring>
+        <name>CleaningCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="218" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="218" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>가변배열 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="17" bodyend="518"/>
+    <listofallmembers>
+      <member refid="class_bx_var_1a0494b5cef73443c38a2395c697bba775" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Access</name></member>
+      <member refid="class_bx_var_1aaa86bebfceb40b8499259e8d3ba82ddfaf02838ccd2613a9f0fcd5595f4c35c73" prot="public" virt="non-virtual"><scope>BxVar</scope><name>AutoCreate</name></member>
+      <member refid="class_bx_var_1a74efe7eeac195541cf39582b2a44634c" prot="public" virt="non-virtual"><scope>BxVar</scope><name>BxVar</name></member>
+      <member refid="class_bx_var_1ac345211b6fc2e30c274c4ce508d44122" prot="public" virt="non-virtual"><scope>BxVar</scope><name>BxVar</name></member>
+      <member refid="class_bx_var_1aa30a9e3b63918c5fb87f2708d7f30aef" prot="private" virt="non-virtual"><scope>BxVar</scope><name>BytesData</name></member>
+      <member refid="class_bx_var_1a3219bec12acd7e0a368c8024de63a6c9" prot="private" virt="non-virtual"><scope>BxVar</scope><name>BytesUpdated</name></member>
+      <member refid="class_bx_var_1a29c7b87351a9f4b98a1c6fda2ac3e50a" prot="private" virt="non-virtual"><scope>BxVar</scope><name>CacheIdx</name></member>
+      <member refid="class_bx_var_1adf3dc9bacf15184b9709902017655582" prot="private" virt="non-virtual"><scope>BxVar</scope><name>CachePtr</name></member>
+      <member refid="class_bx_var_1aa6da7b7c8086c1a1529a4f8a5c508777" prot="private" virt="non-virtual"><scope>BxVar</scope><name>CalcIndex</name></member>
+      <member refid="class_bx_var_1a2604f22417192d969551eab07ca17dbc" prot="private" virt="non-virtual"><scope>BxVar</scope><name>CleaningCache</name></member>
+      <member refid="class_bx_var_1af7707c402f6ee95fcb0dcce9976fa93f" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Delete</name></member>
+      <member refid="class_bx_var_1aa6d3b8977fd0e4debf2ed7b8c375c68d" prot="public" virt="non-virtual"><scope>BxVar</scope><name>GetBytes</name></member>
+      <member refid="class_bx_var_1ad92e2fce1d062e24958d18882e31a491" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Insert</name></member>
+      <member refid="class_bx_var_1a29e57b4435db50544ae80e7e6c39d3d9" prot="private" virt="non-virtual"><scope>BxVar</scope><name>IsDirtyCache</name></member>
+      <member refid="class_bx_var_1a51d27fd65dc137c41883b9d9975b3ccb" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Length</name></member>
+      <member refid="class_bx_var_1a8b0d162744b1c712a95f5c43f02ed646a4d687076a4a47c8f313e72c08ae0c397" prot="public" virt="non-virtual"><scope>BxVar</scope><name>LengthOfCount</name></member>
+      <member refid="class_bx_var_1a8b0d162744b1c712a95f5c43f02ed646af4c81ab970308777162c9914c21c4f4d" prot="public" virt="non-virtual"><scope>BxVar</scope><name>LengthOfRange</name></member>
+      <member refid="class_bx_var_1adb4f4cf10f467b2a7480f0e1842752a7" prot="private" virt="non-virtual"><scope>BxVar</scope><name>MakeNewData</name></member>
+      <member refid="class_bx_var_1a90cbf17e9514523b13df89d128bccec9" prot="public" virt="non-virtual"><scope>BxVar</scope><name>ModifyData</name></member>
+      <member refid="class_bx_var_1aaa86bebfceb40b8499259e8d3ba82ddfa92b62b7c4d4aee1975b81f9c261fe96e" prot="public" virt="non-virtual"><scope>BxVar</scope><name>NoNeed</name></member>
+      <member refid="class_bx_var_1aa94f74f11d053319ca04483f02fd0c0c" prot="public" virt="non-virtual"><scope>BxVar</scope><name>operator=</name></member>
+      <member refid="class_bx_var_1aa6e7d737f6e4a02a48927ad7321a4230" prot="public" virt="non-virtual"><scope>BxVar</scope><name>operator[]</name></member>
+      <member refid="class_bx_var_1aaa86bebfceb40b8499259e8d3ba82ddf" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Parameter</name></member>
+      <member refid="class_bx_var_1a72807179acee3bda36f44e9fdbf65565" prot="public" virt="non-virtual"><scope>BxVar</scope><name>ReleaseBytes</name></member>
+      <member refid="class_bx_var_1a6298c16e1472eea5f2c14bd4980cd9bf" prot="public" virt="non-virtual"><scope>BxVar</scope><name>RemoveData</name></member>
+      <member refid="class_bx_var_1a466f18a382bdcacabba5a513500a7840" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Reset</name></member>
+      <member refid="class_bx_var_1a1d8df4641f1dcacbb09c94fee34433f3" prot="public" virt="non-virtual"><scope>BxVar</scope><name>SwapData</name></member>
+      <member refid="class_bx_var_1a3cf21ef5f64f80e44cd58a4076accceb" prot="private" virt="non-virtual"><scope>BxVar</scope><name>TreeHead</name></member>
+      <member refid="class_bx_var_1a8b0d162744b1c712a95f5c43f02ed646" prot="public" virt="non-virtual"><scope>BxVar</scope><name>Type</name></member>
+      <member refid="class_bx_var_1a533b2dc2085945d42fe2450f6a2d078d" prot="private" virt="non-virtual"><scope>BxVar</scope><name>TypePool</name></member>
+      <member refid="class_bx_var_1a3f8b89853ab4671397e6a3c0afa7a614" prot="private" virt="non-virtual"><scope>BxVar</scope><name>VarListPool</name></member>
+      <member refid="class_bx_var_1a2cf37157d23ae5bd8c0f0d45106bc283" prot="private" virt="non-virtual"><scope>BxVar</scope><name>VarTreePool</name></member>
+      <member refid="class_bx_var_1aaad9dbebd659ecca535a0d4eac5701fe" prot="public" virt="virtual"><scope>BxVar</scope><name>~BxVar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core" kind="namespace">
+    <compoundname>BxCore</compoundname>
+    <innernamespace refid="namespace_bx_core_1_1_add_on">BxCore::AddOn</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_file">BxCore::File</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_font">BxCore::Font</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_library">BxCore::Library</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_main">BxCore::Main</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_socket">BxCore::Socket</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_sound">BxCore::Sound</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_surface">BxCore::Surface</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_system">BxCore::System</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_util">BxCore::Util</innernamespace>
+    <briefdescription>
+<para>BxEngine Core-API. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

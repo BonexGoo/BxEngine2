@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_singleton_1_1_element" kind="class" prot="private">
+    <compoundname>BxSingleton::Element</compoundname>
+    <derivedcompoundref refid="class_bx_singleton_1_1_value" prot="public" virt="non-virtual">BxSingleton::Value&lt; TYPE &gt;</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_singleton_1_1_element_1af7a86af516a40b55b8e3601fc82b5c1a" prot="protected" static="no" mutable="no">
+        <type>void **</type>
+        <definition>void** BxSingleton::Element::ValuePtr</definition>
+        <argsstring></argsstring>
+        <name>ValuePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_singleton_1_1_element_1a877d26700e5b4b1706caf7f324edd7ef" prot="protected" static="no" mutable="no">
+        <type>uint *</type>
+        <definition>uint* BxSingleton::Element::CountPtr</definition>
+        <argsstring></argsstring>
+        <name>CountPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="79" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_singleton_1_1_element_1abb098d6b8496beadeeef07e9e9ab5490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxSingleton::Element::Element</definition>
+        <argsstring>(void **value_ptr, uint *count_ptr)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>void **</type>
+          <declname>value_ptr</declname>
+        </param>
+        <param>
+          <type>uint *</type>
+          <declname>count_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="80" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_element_1a47d7b034a1f0be2401ae03763d247b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxSingleton::Element::~Element</definition>
+        <argsstring>()</argsstring>
+        <name>~Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="81" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_element_1a2957b754db139114977b73fbaba57a76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxSingleton::Element::IsSame</definition>
+        <argsstring>(const void *RHS)</argsstring>
+        <name>IsSame</name>
+        <param>
+          <type>const void *</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="88">
+        <label>BxSingleton::Element</label>
+      </node>
+      <node id="89">
+        <label>BxSingleton::Value&lt; TYPE &gt;</label>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="76" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_bx_singleton_1_1_element_1a877d26700e5b4b1706caf7f324edd7ef" prot="protected" virt="non-virtual"><scope>BxSingleton::Element</scope><name>CountPtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1abb098d6b8496beadeeef07e9e9ab5490" prot="public" virt="non-virtual"><scope>BxSingleton::Element</scope><name>Element</name></member>
+      <member refid="class_bx_singleton_1_1_element_1a2957b754db139114977b73fbaba57a76" prot="public" virt="non-virtual"><scope>BxSingleton::Element</scope><name>IsSame</name></member>
+      <member refid="class_bx_singleton_1_1_element_1af7a86af516a40b55b8e3601fc82b5c1a" prot="protected" virt="non-virtual"><scope>BxSingleton::Element</scope><name>ValuePtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1a47d7b034a1f0be2401ae03763d247b69" prot="public" virt="virtual"><scope>BxSingleton::Element</scope><name>~Element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

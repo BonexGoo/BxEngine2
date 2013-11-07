@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_file" kind="namespace">
+    <compoundname>BxCore::File</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::File::IsExist</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>IsExist</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>파일의 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>존재시 true, 없을시 false </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="549" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_file</type>
+        <definition>id_file BxCore::File::Open</definition>
+        <argsstring>(string filename, string mode)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>파일열기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 열기옵션(전:&quot;r&quot;/&quot;w&quot;/&quot;a&quot;/&quot;r+&quot;/&quot;w+&quot;/&quot;a+&quot;, 후:&quot;t&quot;/&quot;b&quot;/&quot;U&quot;) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>열려진 파일ID, 실패시 0 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member">IsExist</ref>, <ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member">Close</ref>, <ref refid="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" kindref="member">Attach</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="558" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::Close</definition>
+        <argsstring>(id_file file)</argsstring>
+        <name>Close</name>
+        <param>
+          <type>id_file</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>파일닫기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 열린 파일ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="565" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a6eda45c6dfcd26226c824ac400fe1450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::Read</definition>
+        <argsstring>(id_file file, void *buffer, uint length, callback_progress progress=null)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>id_file</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>파일에서 읽기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽은 내용을 저장할 메모리 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽기요청할 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>읽은 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="575" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1af3885eca99cefc3734065b3a2b199925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::Write</definition>
+        <argsstring>(id_file file, const void *buffer, uint length, callback_progress progress=null)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>id_file</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>파일로 쓰기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓸 내용을 담고 있는 메모리 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓰기요청할 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>쓴 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="585" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::WriteString</definition>
+        <argsstring>(id_file file, string buffer, callback_progress progress=null)</argsstring>
+        <name>WriteString</name>
+        <param>
+          <type>id_file</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>파일로 스트링쓰기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓸 내용을 담고 있는 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>쓴 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="594" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a2cc196750f85a59a0a6b346b3fd2ffe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::File::Skip</definition>
+        <argsstring>(id_file file, uint length)</argsstring>
+        <name>Skip</name>
+        <param>
+          <type>id_file</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>파일위치 스킵하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스킵요청할 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>결과 파일위치 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="602" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::File::GetSize</definition>
+        <argsstring>(id_file file)</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>id_file</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>파일의 전체길이 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>전체 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="609" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a749f72fef7e4a7d446c288b64596c2b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::File::GetSize</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>파일의 전체길이 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>전체 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="616" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::File::GetDate</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>GetDate</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>파일의 마지막 수정날짜 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>마지막 수정날짜(1970년1월1일기준 밀리초환산값) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="623" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::File::Attach</definition>
+        <argsstring>(string archivename)</argsstring>
+        <name>Attach</name>
+        <param>
+          <type>string</type>
+          <declname>archivename</declname>
+        </param>
+        <briefdescription>
+<para>DZ압축파일의 연동(여러번 Attach하면 마지막 Attach가 최우선순위) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>archivename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 압축파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>연동의 성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" kindref="member">Detach</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="631" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::Detach</definition>
+        <argsstring>()</argsstring>
+        <name>Detach</name>
+        <briefdescription>
+<para>DZ압축파일의 연동해제(Attach에 성공한 횟수만큼 해제) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" kindref="member">Attach</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="637" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::MakeDirectory</definition>
+        <argsstring>(string dirname, bool isFile=false)</argsstring>
+        <name>MakeDirectory</name>
+        <param>
+          <type>string</type>
+          <declname>dirname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isFile</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>폴더만들기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폴더명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: dirname이 파일인지의 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="644" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::SearchFiles</definition>
+        <argsstring>(string dirname, callback_filesearch resultCB, void *data)</argsstring>
+        <name>SearchFiles</name>
+        <param>
+          <type>string</type>
+          <declname>dirname</declname>
+        </param>
+        <param>
+          <type>callback_filesearch</type>
+          <declname>resultCB</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>파일검색 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폴더명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resultCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 결과받을 콜백함수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수에 전달할 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>검색된 수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="653" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a284c71df33e997d3fd380700c748ba55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::RemoveFile</definition>
+        <argsstring>(string filename, bool doRemoveBlankedDirectory=false)</argsstring>
+        <name>RemoveFile</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doRemoveBlankedDirectory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>파일삭제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doRemoveBlankedDirectory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 빈 폴더가 생기는 경우 폴더까지 삭제할지 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="660" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="542" column="1"/>
+  </compounddef>
+</doxygen>

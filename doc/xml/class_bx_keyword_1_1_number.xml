@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_keyword_1_1_number" kind="class" prot="public">
+    <compoundname>BxKeyword::Number</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_keyword_1_1_number_1a771b9dad13024abcd424ac43db2d3d9a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxKeyword::Number::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="415" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_keyword_1_1_number_1ac43feddae5747ed2b955cd99d4c2e1e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::Number::Number</definition>
+        <argsstring>()</argsstring>
+        <name>Number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="415" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="415" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="415" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="415" bodyend="415"/>
+    <listofallmembers>
+      <member refid="class_bx_keyword_1_1_number_1a771b9dad13024abcd424ac43db2d3d9a" prot="public" virt="non-virtual"><scope>BxKeyword::Number</scope><name>Data</name></member>
+      <member refid="class_bx_keyword_1_1_number_1ac43feddae5747ed2b955cd99d4c2e1e6" prot="public" virt="non-virtual"><scope>BxKeyword::Number</scope><name>Number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

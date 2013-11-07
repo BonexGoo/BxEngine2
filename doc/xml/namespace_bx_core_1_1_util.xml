@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_util" kind="namespace">
+    <compoundname>BxCore::Util</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1ae33cb5b0c5e2af137d9a32c85dd75f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_memory</type>
+        <definition>id_memory BxCore::Util::Malloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>Malloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>메모리할당 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청할 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>할당된 메모리ID, 실패시 0 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1a4f81a8d7cf5960dcf082672afbfb486b" kindref="member">Free</ref>, <ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member">GetPtr</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a4f81a8d7cf5960dcf082672afbfb486b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::Free</definition>
+        <argsstring>(id_memory item)</argsstring>
+        <name>Free</name>
+        <param>
+          <type>id_memory</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>메모리반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 반환할 메모리ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1ae33cb5b0c5e2af137d9a32c85dd75f87" kindref="member">Malloc</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* BxCore::Util::GetPtr</definition>
+        <argsstring>(id_memory item)</argsstring>
+        <name>GetPtr</name>
+        <param>
+          <type>id_memory</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>메모리ID의 실제 메모리번지 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청할 메모리ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 메모리ID의 메모리번지 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1ae33cb5b0c5e2af137d9a32c85dd75f87" kindref="member">Malloc</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="403" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::MemMove</definition>
+        <argsstring>(const void *dst, const void *src, int length)</argsstring>
+        <name>MemMove</name>
+        <param>
+          <type>const void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>메모리 복사 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 붙여넣을 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 원본의 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::MemSet</definition>
+        <argsstring>(const void *dst, byte value, int length)</argsstring>
+        <name>MemSet</name>
+        <param>
+          <type>const void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>메모리 초기화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화할 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화시킬 값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화할 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="419" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Util::MemCmp</definition>
+        <argsstring>(const void *dst, const void *src, int length)</argsstring>
+        <name>MemCmp</name>
+        <param>
+          <type>const void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>메모리 비교 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교대상 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교주체 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>동일하면 0, 다르면 0이 아님 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1acc3991e4564fe39ffe00ec5c16d1cab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::Util::Print</definition>
+        <argsstring>(string src, const BxThrow &amp;args=BxThrow::zero(), int *length=null)</argsstring>
+        <name>Print</name>
+        <param>
+          <type>string</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <declname>args</declname>
+          <defval><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member">BxThrow::zero</ref>()</defval>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>스트링구성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: &quot;&lt;A&gt;&quot;형식의 스크립트 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: src에 쓰일 가변인자 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 구성된 스트링의 길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>구성된 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a41880400f45728f06bf82d985191af63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Util::Printf</definition>
+        <argsstring>(string src,...)</argsstring>
+        <name>Printf</name>
+        <param>
+          <type>string</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>출력창에 스트링기록(Release도 사용하려면 mkb의 defines{}에 IW_USE_TRACING추가) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: printf양식의 맵(d/s/...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: src에 쓰일 가변인자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>기록된 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1acb919367d4ddcaf86284146ce9237c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Util::SnPrintf</definition>
+        <argsstring>(string_rw dst, int length, string src,...)</argsstring>
+        <name>SnPrintf</name>
+        <param>
+          <type>string_rw</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>스트링에 스트링기록 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 기록할 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: dst의 길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: sprintf양식의 맵(d/s/...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: src에 쓰일 가변인자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>기록된 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="455" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1ac70cec443af515775e1715fb098d4ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Util::VsnPrintf</definition>
+        <argsstring>(string_rw dst, int length, string src, va_list list)</argsstring>
+        <name>VsnPrintf</name>
+        <param>
+          <type>string_rw</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>스트링에 va_list식 스트링기록 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 기록할 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: dst의 길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: sprintf양식의 맵(d/s/...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: src에 쓰일 va_list형 가변인자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>기록된 바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="465" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1ad2042ce6755beb730b5b9d6500cec38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::Util::GetCurrentCallDepth</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentCallDepth</name>
+        <briefdescription>
+<para>현재 함수의 콜깊이조사 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>콜깊이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="471" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1afba41f7d3092cdd6b7fcac236bfebddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* BxCore::Util::GetCurrentCallAddress</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentCallAddress</name>
+        <briefdescription>
+<para>현재 함수의 시작주소조사 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>시작주소 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="477" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a2cccf069af739d413adb8437bb16544d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::Util::GetCurrentCallCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentCallCount</name>
+        <briefdescription>
+<para>현재 함수의 콜순번조사 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>콜순번 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="483" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a3055494eac4b2e5797611cd67d7447b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::SetCallCount</definition>
+        <argsstring>(uint value)</argsstring>
+        <name>SetCallCount</name>
+        <param>
+          <type>uint</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>콜순번 초기화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜순번 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="489" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a9ef2e02010c31fe1e7f01fa970f6816d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::PushCallDepthAndLog</definition>
+        <argsstring>(string file, const int line, string func)</argsstring>
+        <name>PushCallDepthAndLog</name>
+        <param>
+          <type>string</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>콜깊이 더하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1aa18ac655e1fd93ba753360dad4e9f8d3" kindref="member">PopCallDepthAndLog</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="495" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1aa18ac655e1fd93ba753360dad4e9f8d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::PopCallDepthAndLog</definition>
+        <argsstring>(string file, const int line)</argsstring>
+        <name>PopCallDepthAndLog</name>
+        <param>
+          <type>string</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>콜깊이 빼기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1a9ef2e02010c31fe1e7f01fa970f6816d" kindref="member">PushCallDepthAndLog</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="501" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Util파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="381" column="1"/>
+  </compounddef>
+</doxygen>

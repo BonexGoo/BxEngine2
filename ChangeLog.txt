@@ -1,0 +1,126 @@
+(MarmaladeSDK 7.0.0)
+https://www.madewithmarmalade.com/downloads/7.0/7.0.0/marmalade-sdk-7.0.0-353650-windows.exe
+
+※ ●:신규, ○:업데이트, ◎:버그패치, ★:폐지
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.5.0] → [2.6.0]
+◎ BxCore::Main : 에뮬시 마우스좌표계 보정
+○ BxCore::Socket : 에러코드 및 접속시나리오 개선
+★ BxGlobal : 전역인스턴스 관리기능, BxSingleton으로 대체
+○ BxDraw : Text출력함수 추가
+○ BxKeyword : IsExist계열 매크로함수 추가
+● BxSingleton : 싱글톤인스턴스의 관리
+○ BxString : 복사생성자 explicit 관리, const인스턴스 대비, ParseUnitParamLength 추가
+● BxTelex : 전보통신 관리체계
+○ BxType : Compile Warning 제거
+○ BxUtil : 스트링검색 추가, Min/Max/Abs의 조건문 제거
+○ BxVar : const인스턴스 시나리오 대비
+○ BxVarVector : const인스턴스 시나리오 대비
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.4.0] → [2.5.0]
+○ BxCore::Main : 절전모드관련 추가
+○ BxCore::Socket : X86모드전용 Winsock직접연결(Marmalade의 소켓 32개 강제제한문제)
+○ BxKeyword : 절전모드관련 OnUpdate함수타입 변경
+○ BxSimulator : 절전모드관련 OnUpdate함수타입 변경, 프레임표시법 변경
+○ BxScene : 절전모드관련 변경
+○ BxString : BxVar최적화에 따른 코드간략화
+○ BxUtil : StrCmp/StrICmp최적화, StrHash추가
+○ BxVar : Tilting도입으로 인한 전방위 최적화, 인덱스캐싱테이블
+○ BxVarMap : wstring대응 추가
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.3.0] → [2.4.0]
+◎ BxAddOn_GIF : Row버그패치
+◎ BxAddOn_JPG : Row버그패치
+○ BxCore::Util : Print 추가
+○ BxDraw : 스타일스택처리를 위한 try문법 도입
+● BxGlobal : BxMemoryJoin에서 이관
+● BxGUI : BxSceneObject에서 이관
+◎ BxKeyword : 종료시 릭관련 버그패치
+● BxPool : BxMemoryPool에서 이관
+○ BxString : SetString/TrimBlank/TrimQuote/ParseCSV 추가
+● BxThrow : 가변인자기능 신설
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.2.0] → [2.3.0]
+● BxKeyboard : 가상키보드씬 신설
+○ BxSimulatorFrame : 현재프레임 표시
+◎ BxAnimate : 로직 안정화
+◎ BxMemory4 : 로직 안정화
+○ BxScene : 이벤트큐 제도화
+○ BxString : DeleteLeft/DeleteRight/IsCharExtend/IsLastCharExtend 추가
+○ BxType : quater/uv/face/matrix 추가, 타입분석함수 추가
+○ BxUtil : HtoI/ItoH/MatrixInit/MatrixCombine/MatrixRotateQ/MatrixApply 추가
+○ BxVarVector : 로직 완성
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.1.0] → [2.2.0]
+● bxaddon폴더 : BxAddOn_GIF.cpp, BxAddOn_HQX.cpp, BxAddOn_JPG.cpp를 이관
+● BxAnimate : 메두사툴 대응
+● BxTween : 티폰툴 대응
+○ BxCore::System : Config계열 Default값 인자추가
+○ BxCore::File : GetDate, SearchFiles 추가
+○ BxDynamic : 최신성선별 알고리즘 강화
+○ BxString : []변경, CloneWithAlloc, ParseUnitName, ParseUnitParam 추가
+◎ BxVarVector : Delete시 버그패치
+○ BxWebContent : 캐시풀시스템 수량/용량 관리강화
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.0.0] → [2.1.0]
+○ BxCore::System : 컴파일된 CPU아키텍쳐명 얻기
+◎ BxCore::Sound : 재생직후 삭제시 크래시나는 버그패치
+○ BxCore::AddOn : 추가로 HQX스케일러 보유(이미지확대시 보간)
+○ BxImage : ScaleNumber()에 2/3/4를 넣는 방법으로 전 포맷에 HQX가능
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [1.0.1] → [2.0.0]
+○ BxCore : Main, AddOn의 신설, BxScene.cpp를 통합
+ - BxCore::Main : 현재 프레임, GUI마진
+ - BxCore::System : 강제터치이벤트, 마멀레이드 config(*.icf)과 자체 config(*.key)의 분리, 시뮬레이터정보
+ - BxCore::Util : 메모리비교
+ - BxCore::AddOn : 오픈소스 연결지원, 현재 JPG/GIF디코더 보유
+ - BxCore::Font : 인코딩옵션
+○ BxDraw : 스타일스택제도(+ 대신 >>)
+● BxDynamic : 동적리소스관리
+● BxExpress : BxFloat에서 이관, 고정소수점객체 완성
+○ BxImage : JPG/GIF지원
+○ BxKeyword : 스크립트급 동적프로퍼티 BEKON관리
+● BxMain : BxScene에서 부분이관, 자체 시뮬레이터운용
+○ BxScene : CREATE_SCENE/CREATE_SCENE_FIRST대신 FRAMEWORK_SCENE 사용, 시작씬은 default.key에 작성
+○ BxString : ISO2022파서, FormatV강화
+○ BxUtil : 모든 string관련 처리를 StrAlloc/StrCpyWithAlloc/StrFree로 통일
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [1.0.0] → [1.0.1]
+○ BxCore : 나노초, 유사-마이크로초, EDK수신용 콜백함수, 함수콜깊이 출력함수 추가
+○ BxDraw : 박스함수/펑터 시범차 도입
+● BxFloat : 고정소수점객체 추가
+○ BxImage : 투명픽셀 보간로직 개선
+○ BxKeyword : 동적프로퍼티 접근방식 개선
+● BxPathFind : 길찾기운용객체 추가
+○ BxType : 박스함수/펑터 추가
+○ BxUtil : 확장스트링길이구하기, 선분교차테스트 추가
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [START] → [1.0.0]
+● BxAutoBuffer : 리소스의 실시간로딩을 지원해주는 템플릿클래스
+● BxCore : Marmalade와의 유일한 접점, 9개의 구성으로 나뉨.
+ - BxCore::System : 종료확인, 슬립, 현재시간, 키, icf, Assert, 프레임콜백, 차일드프로세스, JNI연동
+ - BxCore::Surface : 백버퍼관리, 생성, 출력, 중간출력, 논리적, 물리적 가로세로길이
+ - BxCore::Sound : 배경음관리, 효과음관리
+ - BxCore::Util : 메모리할당, 복사, 리셋, printf계열, 함수콜스택정보
+ - BxCore::File : 파일/폴더관리, 압축파일연동
+ - BxCore::Socket : 네트워크통신
+ - BxCore::Font : ttf폰트 운용/출력
+ - BxCore::Library : DLL연동
+ - BxCore::OpenGL2D : 오픈지엘관련 기능제공, 부분적 3D
+● BxDraw : 화면출력에 대한 도구모음, 자체 소프트웨어랜더링도 내장되어 있습니다.
+● BxImage : 지원되는 이미지(bmp, png, b16, b32)의 로딩 및 비디오메모리 등록과정
+● BxKeyword : 동적프로퍼티, 디폴트값은 스크립트파일을 로드, 디폴트값 없이도 쉽게 생성
+● BxMemory : 자체 메모리관리자, new, delete대신 BxNew, BxDelete등을 씀, 기반엔진 배려차원
+● BxMemoryJoin : 지역, 글로벌의 정적 변수들의 일괄소멸 시나리오 제공
+● BxMemoryPool : 메모리풀링을 지원해주는 템플릿클래스
+● BxScene : 씬관리 제공
+● BxSceneObject : xml기반 자체 GUI스크립트의 운용
+● BxString : MFC의 CString같은 String처리
+● BxType : 모든 중요 Type을 내포
+● BxUtil : math, random, string, filestream, cp949/utf16/utf8전환
+● BxVar : 자체 stl, 뺄셈tree개념으로 구조화된 vector와 list의 융합체, BxVarVector과 동일 인터페이스
+● BxVarMap : 자체 stl, 고속화된 map
+● BxVarVector : 자체 stl, vector, 삽입삭제가 빈번하지 않고 access속도를 더 높이려면 BxVar를 이걸로 변경
+● BxWebContent : 웹에서 직접 파일을 받아 캐시를 운용, http/GET프로토콜
+● BxXml : xml 로드/세이브

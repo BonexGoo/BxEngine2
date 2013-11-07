@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_keyword_1_1_radio" kind="class" prot="public">
+    <compoundname>BxKeyword::Radio</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_keyword_1_1_radio_1a6c7bd738326c12d9fbe354b8f5562a1d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxKeyword::Radio::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="414" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_keyword_1_1_radio_1a70e29a89b25605eb358f07d31a9fbef5" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint BxKeyword::Radio::ParentID</definition>
+        <argsstring></argsstring>
+        <name>ParentID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="414" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_keyword_1_1_radio_1ab50d6086daa31cc38d1fb26989dda974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::Radio::Radio</definition>
+        <argsstring>()</argsstring>
+        <name>Radio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="414" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="414" bodyend="414"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="414" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="414" bodyend="414"/>
+    <listofallmembers>
+      <member refid="class_bx_keyword_1_1_radio_1a6c7bd738326c12d9fbe354b8f5562a1d" prot="public" virt="non-virtual"><scope>BxKeyword::Radio</scope><name>Data</name></member>
+      <member refid="class_bx_keyword_1_1_radio_1a70e29a89b25605eb358f07d31a9fbef5" prot="public" virt="non-virtual"><scope>BxKeyword::Radio</scope><name>ParentID</name></member>
+      <member refid="class_bx_keyword_1_1_radio_1ab50d6086daa31cc38d1fb26989dda974" prot="public" virt="non-virtual"><scope>BxKeyword::Radio</scope><name>Radio</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

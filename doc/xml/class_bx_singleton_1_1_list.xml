@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_singleton_1_1_list" kind="class" prot="private">
+    <compoundname>BxSingleton::List</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_singleton_1_1_list_1a9adfb49d2ba3e720706370792c1ad038" prot="private" static="no" mutable="no">
+        <type>Element *</type>
+        <definition>Element* BxSingleton::List::Unit</definition>
+        <argsstring></argsstring>
+        <name>Unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="96" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" prot="private" static="no" mutable="no">
+        <type>List *</type>
+        <definition>List* BxSingleton::List::Next</definition>
+        <argsstring></argsstring>
+        <name>Next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1ab7cabd94dff350a3c8e0bbac847919f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func List *</type>
+        <definition>global_func List* BxSingleton::List::Head</definition>
+        <argsstring>()</argsstring>
+        <name>Head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="98" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1ad6f1a82e203b12d5327c2159bb900253" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxSingleton::List::List</definition>
+        <argsstring>(Element *unit=null)</argsstring>
+        <name>List</name>
+        <param>
+          <type>Element *</type>
+          <declname>unit</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1aadd472da36ff4848d32f2f94684b7d77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxSingleton::List::~List</definition>
+        <argsstring>()</argsstring>
+        <name>~List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="104" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1a187140527e2f34659f9924aaa8012837" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func uint</type>
+        <definition>global_func uint BxSingleton::List::Link</definition>
+        <argsstring>(TYPE *&amp;value, uint &amp;count)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>TYPE *&amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>uint &amp;</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="110" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1afe19382790542f2afabbeb737e90ec2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func void</type>
+        <definition>global_func void BxSingleton::List::Rebind</definition>
+        <argsstring>(const TYPE *value, TYPE *newvalue, const uint newcount)</argsstring>
+        <name>Rebind</name>
+        <param>
+          <type>const TYPE *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>TYPE *</type>
+          <declname>newvalue</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>newcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="118" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="118" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1aac733da6cfca2cf8c2059154d82cc1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxSingleton::List::Unbind</definition>
+        <argsstring>(const void *value)</argsstring>
+        <name>Unbind</name>
+        <param>
+          <type>const void *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="130" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="130" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_list_1a002432ae825f3ee0eb2f591d378355df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxSingleton::List::UnbindAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnbindAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="146" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="146" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="94" bodyend="158"/>
+    <listofallmembers>
+      <member refid="class_bx_singleton_1_1_list_1ab7cabd94dff350a3c8e0bbac847919f7" prot="private" virt="non-virtual"><scope>BxSingleton::List</scope><name>Head</name></member>
+      <member refid="class_bx_singleton_1_1_list_1a187140527e2f34659f9924aaa8012837" prot="public" virt="non-virtual"><scope>BxSingleton::List</scope><name>Link</name></member>
+      <member refid="class_bx_singleton_1_1_list_1ad6f1a82e203b12d5327c2159bb900253" prot="private" virt="non-virtual"><scope>BxSingleton::List</scope><name>List</name></member>
+      <member refid="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" prot="private" virt="non-virtual"><scope>BxSingleton::List</scope><name>Next</name></member>
+      <member refid="class_bx_singleton_1_1_list_1afe19382790542f2afabbeb737e90ec2a" prot="public" virt="non-virtual"><scope>BxSingleton::List</scope><name>Rebind</name></member>
+      <member refid="class_bx_singleton_1_1_list_1aac733da6cfca2cf8c2059154d82cc1ac" prot="public" virt="non-virtual"><scope>BxSingleton::List</scope><name>Unbind</name></member>
+      <member refid="class_bx_singleton_1_1_list_1a002432ae825f3ee0eb2f591d378355df" prot="public" virt="non-virtual"><scope>BxSingleton::List</scope><name>UnbindAll</name></member>
+      <member refid="class_bx_singleton_1_1_list_1a9adfb49d2ba3e720706370792c1ad038" prot="private" virt="non-virtual"><scope>BxSingleton::List</scope><name>Unit</name></member>
+      <member refid="class_bx_singleton_1_1_list_1aadd472da36ff4848d32f2f94684b7d77" prot="private" virt="non-virtual"><scope>BxSingleton::List</scope><name>~List</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

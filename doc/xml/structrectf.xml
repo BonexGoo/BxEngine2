@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structrectf" kind="struct" prot="public">
+    <compoundname>rectf</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrectf_1a3584fe47ac17d4a121415114ece8ab3f" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint rectf::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrectf_1a3734a52c61815529cc4fd21d727c9718" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint rectf::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrectf_1ad8dfd4e1f90210a1610a7863132b9847" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint rectf::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrectf_1a19ded098c20acb96862ddd36aac3fb64" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint rectf::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>rectf구조체 : l, t, r, b </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="217" bodyend="217"/>
+    <listofallmembers>
+      <member refid="structrectf_1a19ded098c20acb96862ddd36aac3fb64" prot="public" virt="non-virtual"><scope>rectf</scope><name>b</name></member>
+      <member refid="structrectf_1a3584fe47ac17d4a121415114ece8ab3f" prot="public" virt="non-virtual"><scope>rectf</scope><name>l</name></member>
+      <member refid="structrectf_1ad8dfd4e1f90210a1610a7863132b9847" prot="public" virt="non-virtual"><scope>rectf</scope><name>r</name></member>
+      <member refid="structrectf_1a3734a52c61815529cc4fd21d727c9718" prot="public" virt="non-virtual"><scope>rectf</scope><name>t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

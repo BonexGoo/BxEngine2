@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_tween_1_1___part_target" kind="class" prot="private">
+    <compoundname>BxTween::_PartTarget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BxTween::_PartBegin</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1ac02e730ae6a378e0d084ffd13b672802" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::Waiting</definition>
+        <argsstring></argsstring>
+        <name>Waiting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="410" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a63f6a9b807d2ce37c0462e9db0adb4b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::DelayMin</definition>
+        <argsstring></argsstring>
+        <name>DelayMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="411" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1aa46845638974fa836515aa237f6514ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::DelayMax</definition>
+        <argsstring></argsstring>
+        <name>DelayMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="412" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1aec7fceb8f124598b172cb96c9aff5850" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::WorkTimeMin</definition>
+        <argsstring></argsstring>
+        <name>WorkTimeMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="413" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a05315d11697be04b034a551ce5629652" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::WorkTimeMax</definition>
+        <argsstring></argsstring>
+        <name>WorkTimeMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="414" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a2610e886021cebc5d46104544b1eb585" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::Movement</definition>
+        <argsstring></argsstring>
+        <name>Movement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="415" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a2c813384684c1251449512dd73d48fc9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::GravityMin</definition>
+        <argsstring></argsstring>
+        <name>GravityMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="416" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1ac597f80034d667605f7e813baf33ce59" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::GravityMax</definition>
+        <argsstring></argsstring>
+        <name>GravityMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="417" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1aa7e5a587ef8c6513a531ab7cb74e595d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::WindMin</definition>
+        <argsstring></argsstring>
+        <name>WindMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="418" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1ab86d96b35b38839553c2d2cd045f452e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::WindMax</definition>
+        <argsstring></argsstring>
+        <name>WindMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="419" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a501a77de4ff88579a9d2e3d9e3e95235" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::WindAngleMin</definition>
+        <argsstring></argsstring>
+        <name>WindAngleMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="420" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a9e9ad624c7f34354e7ac0e4db88d3947" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::WindAngleMax</definition>
+        <argsstring></argsstring>
+        <name>WindAngleMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="421" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a24f3d13e5c27cc57198cedd85bc90f53" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::Pattern</definition>
+        <argsstring></argsstring>
+        <name>Pattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="422" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a4d92ced25e4ed47cddf07bdf7e45cf70" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::PatternRXMin</definition>
+        <argsstring></argsstring>
+        <name>PatternRXMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="423" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a1863733aa0316c6defa59f3c0379380d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::PatternRXMax</definition>
+        <argsstring></argsstring>
+        <name>PatternRXMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="424" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a0fc7e4f1ab27c0194b9111a9548c671f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::PatternRYMin</definition>
+        <argsstring></argsstring>
+        <name>PatternRYMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="425" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a6b7c7acf6405518c427f97a2c61ae081" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::PatternRYMax</definition>
+        <argsstring></argsstring>
+        <name>PatternRYMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="426" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1a67109d0cb3590e9ca15b2081c6c7515b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::Motion</definition>
+        <argsstring></argsstring>
+        <name>Motion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="427" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_target_1af468c667cc42a680a96634bb8ce5385e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartTarget::CurrentlyDelay</definition>
+        <argsstring></argsstring>
+        <name>CurrentlyDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="428" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_tween_1_1___part_target_1a01f8b92c6d8f75c545ca801a535a7514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartTarget::PlayAnimation</definition>
+        <argsstring>(_PartBegin *PrevTarget, int MsPerFrame)</argsstring>
+        <name>PlayAnimation</name>
+        <param>
+          <type>_PartBegin *</type>
+          <declname>PrevTarget</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>MsPerFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="431" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="431" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_target_1a672908038d6b0c1b818daab22ca87947" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartTarget::StopAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>StopAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="661" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="661" bodyend="664"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>BxTween::_PartTarget</label>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>BxTween::_PartBegin</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>BxTween::_PartTarget</label>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>BxTween::_PartBegin</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="408" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="407" bodyend="665"/>
+    <listofallmembers>
+      <member refid="class_bx_tween_1_1___part_begin_1a2ee5ab024486e8374ff10d12d9a97385" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Animation</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a0c47ab13febf7a3123891745e1f77c9b" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>AnimationLength</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1af468c667cc42a680a96634bb8ce5385e" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>CurrentlyDelay</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1aa46845638974fa836515aa237f6514ca" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>DelayMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a63f6a9b807d2ce37c0462e9db0adb4b4" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>DelayMin</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1ac597f80034d667605f7e813baf33ce59" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>GravityMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a2c813384684c1251449512dd73d48fc9" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>GravityMin</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a428789533919a9c5bbbb02b9e65586e4" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>IsBegin</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a90d5df7ec4322eb764ad89b31485e41e" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Message</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a67109d0cb3590e9ca15b2081c6c7515b" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Motion</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a2610e886021cebc5d46104544b1eb585" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Movement</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a84ca3b98d005bd27315090a1ac282b18" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>OpacityMax</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a8295019f82af6c1ef5ce4d06115bcba2" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>OpacityMin</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a3fafa2720611a1a995c90d2b48a326f1" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PartRateMax</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a91583f0f4f4ccc2cd54b81926829c1ca" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PartRateMin</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a24f3d13e5c27cc57198cedd85bc90f53" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Pattern</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a1863733aa0316c6defa59f3c0379380d" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PatternRXMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a4d92ced25e4ed47cddf07bdf7e45cf70" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PatternRXMin</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a6b7c7acf6405518c427f97a2c61ae081" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PatternRYMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a0fc7e4f1ab27c0194b9111a9548c671f" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PatternRYMin</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a01f8b92c6d8f75c545ca801a535a7514" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>PlayAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a060eb8ecb57719f69fa73c742d63de7c" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Position</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a672908038d6b0c1b818daab22ca87947" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>StopAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1abb1cfa98a8a9c7ce75509b861b86b918" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Targeting</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a756310ff84b61e5c60dbc25e3a67f714" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>TargetX1</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1ac9f6c14458459c0a78dfc67c104052ab" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>TargetX2</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a6c81b70e99044a606e005fab3e21f716" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>TargetY1</name></member>
+      <member refid="class_bx_tween_1_1___part_begin_1a18d48652122a4dd91e8ef42c50e40da7" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>TargetY2</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1ac02e730ae6a378e0d084ffd13b672802" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>Waiting</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a9e9ad624c7f34354e7ac0e4db88d3947" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>WindAngleMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a501a77de4ff88579a9d2e3d9e3e95235" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>WindAngleMin</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1ab86d96b35b38839553c2d2cd045f452e" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>WindMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1aa7e5a587ef8c6513a531ab7cb74e595d" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>WindMin</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1a05315d11697be04b034a551ce5629652" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>WorkTimeMax</name></member>
+      <member refid="class_bx_tween_1_1___part_target_1aec7fceb8f124598b172cb96c9aff5850" prot="public" virt="non-virtual"><scope>BxTween::_PartTarget</scope><name>WorkTimeMin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

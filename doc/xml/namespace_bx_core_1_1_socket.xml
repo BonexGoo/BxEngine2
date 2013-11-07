@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_socket" kind="namespace">
+    <compoundname>BxCore::Socket</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_socket</type>
+        <definition>id_socket BxCore::Socket::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>소켓ID 할당 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>소켓ID(null은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>, <ref refid="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" kindref="member">Connect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="670" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Socket::Release</definition>
+        <argsstring>(id_socket sock)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <briefdescription>
+<para>소켓ID 반환, 접속종료 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member">Create</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="677" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>socketstate</type>
+        <definition>socketstate BxCore::Socket::GetState</definition>
+        <argsstring>(id_socket sock)</argsstring>
+        <name>GetState</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <briefdescription>
+<para>소켓 상태 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 소켓의 상태 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="684" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>connectresult</type>
+        <definition>connectresult BxCore::Socket::Connect</definition>
+        <argsstring>(id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=null)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>timeout</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>서버로 접속 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 도메인 또는 IP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 결과를 기다릴 시간 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>결과를 기다릴 경우 dowait_connected/dowait_disconnected, 안 기다릴 경우 connecting </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kindref="member">Disconnect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="696" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Socket::Disconnect</definition>
+        <argsstring>(id_socket sock)</argsstring>
+        <name>Disconnect</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <briefdescription>
+<para>서버와의 접속종료 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" kindref="member">Connect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="703" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Socket::Send</definition>
+        <argsstring>(id_socket sock, const void *buffer, int len)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>데이터 송신 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 송신할 버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 송신할 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>송신된 바이트길이(음수는 수신에러코드, 이때 GetState로 Create/Connect를 판단) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="713" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Socket::Recv</definition>
+        <argsstring>(id_socket sock, void *buffer, int len)</argsstring>
+        <name>Recv</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>데이터 수신 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 수신할 버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 버퍼의 바이트길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>수신된 바이트길이(음수는 수신에러코드, 이때 GetState로 Create/Connect를 판단) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="723" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Socket::RecvFully</definition>
+        <argsstring>(id_socket sock, byte *buffer, int len, int timeout, bool cancelmode)</argsstring>
+        <name>RecvFully</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>byte *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cancelmode</declname>
+        </param>
+        <briefdescription>
+<para>데이터 강제수신 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 수신할 버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 수신할 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 결과를 기다릴 시간(-1은 디폴트값) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancelmode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 탈출가능여부(현재 수신된 데이터가 0일 경우만 작동) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>수신된 바이트길이(음수는 수신에러코드, 이때 GetState로 Create/Connect를 판단) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="735" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Socket::Ping</definition>
+        <argsstring>(string addr, uint timeout)</argsstring>
+        <name>Ping</name>
+        <param>
+          <type>string</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>핑시간 측정(ICMP프로토콜) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 도메인 또는 IP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 결과를 기다릴 시간 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>핑시간(밀리초, 음수면 실패) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="743" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Socket파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="664" column="1"/>
+  </compounddef>
+</doxygen>

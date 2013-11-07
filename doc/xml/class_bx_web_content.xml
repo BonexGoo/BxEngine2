@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_web_content" kind="class" prot="public">
+    <compoundname>BxWebContent</compoundname>
+    <includes refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includes>
+    <innerclass refid="class_bx_web_content_1_1_cache_pool" prot="private">BxWebContent::CachePool</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_web_content_1ab5753ed039dd89984372f58059b22c05" prot="private" static="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; CachePool, 64 &gt;</type>
+        <definition>typedef BxVarVector&lt;CachePool, 64&gt; BxWebContent::CachePoolList</definition>
+        <argsstring></argsstring>
+        <name>CachePoolList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1ab104adbb7e5be3eacd0730515a39e820" prot="private" static="no" mutable="no">
+        <type>byte *</type>
+        <definition>byte* BxWebContent::ResponseBytes</definition>
+        <argsstring></argsstring>
+        <name>ResponseBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1a3bb4d42aee48bb841c7d41c9e3d3d31e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxWebContent::ResponseLength</definition>
+        <argsstring></argsstring>
+        <name>ResponseLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_web_content_1a57ec38cbc13efde21e4e0f690a4e6012" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func macro bool &amp;</type>
+        <definition>global_func macro bool&amp; BxWebContent::IsInitPool</definition>
+        <argsstring>()</argsstring>
+        <name>IsInitPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a89bde7351441571b34db345ac0f372ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func macro <ref refid="class_bx_var_vector" kindref="compound">CachePoolList</ref> &amp;</type>
+        <definition>global_func macro CachePoolList&amp; BxWebContent::Pool</definition>
+        <argsstring>()</argsstring>
+        <name>Pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="23" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1ac2e657b59601fa4859fb61cdb16078ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func macro int &amp;</type>
+        <definition>global_func macro int&amp; BxWebContent::PoolSumSize</definition>
+        <argsstring>()</argsstring>
+        <name>PoolSumSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1ab2b17b77f23848a73363ecf7a58eeb74" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxWebContent::OnFileSearch</definition>
+        <argsstring>(bool isdirname, string _tmp_ name, void *data)</argsstring>
+        <name>OnFileSearch</name>
+        <param>
+          <type>bool</type>
+          <declname>isdirname</declname>
+        </param>
+        <param>
+          <type>string _tmp_</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="25" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="25" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_web_content_1a69fbb0cf356d34117765359616f8428f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::BxWebContent</definition>
+        <argsstring>()</argsstring>
+        <name>BxWebContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a3ef24ada879d5b2cb40ebf4a73be8432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::~BxWebContent</definition>
+        <argsstring>()</argsstring>
+        <name>~BxWebContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="42" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func string</type>
+        <definition>global_func string BxWebContent::GetCachePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetCachePath</name>
+        <briefdescription>
+<para>캐시폴더이름 받기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>캐시폴더이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const byte *_tmp_</type>
+        <definition>const byte* _tmp_ BxWebContent::GetBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytes</name>
+        <briefdescription>
+<para>쿼리결과 받기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>쿼리결과 바이트배열 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="54" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a4a605274453e93b85aae5e1c7e6fb47f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxWebContent::GetDataLength</definition>
+        <argsstring>()</argsstring>
+        <name>GetDataLength</name>
+        <briefdescription>
+<para>쿼리결과의 사이즈얻기(데이터) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="60" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxWebContent::GetTextLength</definition>
+        <argsstring>()</argsstring>
+        <name>GetTextLength</name>
+        <briefdescription>
+<para>쿼리결과의 사이즈얻기(스트링) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>바이트길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxWebContent::Query</definition>
+        <argsstring>(string Domain, ushort Port, string Path, string Arguments=null, int Timeout=-1, callback_progress Progress=null)</argsstring>
+        <name>Query</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Path</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Arguments</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Timeout</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>Progress</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>HTTP쿼리실행 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접속할 서버(예: &quot;www.naver.com&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호(HTTP는 보통 80번포트) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 다운받을 파일 또는 실행할 서블릿의 경로(예: &quot;Update/Run.aspx&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Arguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서블릿의 경우 전달할 인자들(예: &quot;Data0=aaa&amp;Data1=bbb&amp;Data2=ccc&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 각 단계별 지연허용시간 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>송수신 성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="78" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxWebContent::Cache</definition>
+        <argsstring>(string Domain, ushort Port, string FilePath, bool DoLoad=true, callback_progress Progress=null)</argsstring>
+        <name>Cache</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>FilePath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>DoLoad</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>Progress</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>캐시파일 로드(없으면 생성) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접속할 서버(예: &quot;www.naver.com&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호(HTTP는 보통 80번포트) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 다운받을 파일경로(예: &quot;Update/Abc.bmp&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DoLoad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메모리에 로딩할지의 여부, false면 다운로드여부 확인만 하겠다는 의미 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>캐시로드 성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="237" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HTTP기반 쿼리송수신, 파일다운로드 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="6" bodyend="332"/>
+    <listofallmembers>
+      <member refid="class_bx_web_content_1a69fbb0cf356d34117765359616f8428f" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>BxWebContent</name></member>
+      <member refid="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Cache</name></member>
+      <member refid="class_bx_web_content_1ab5753ed039dd89984372f58059b22c05" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>CachePoolList</name></member>
+      <member refid="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetBytes</name></member>
+      <member refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetCachePath</name></member>
+      <member refid="class_bx_web_content_1a4a605274453e93b85aae5e1c7e6fb47f" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetDataLength</name></member>
+      <member refid="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetTextLength</name></member>
+      <member refid="class_bx_web_content_1a57ec38cbc13efde21e4e0f690a4e6012" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>IsInitPool</name></member>
+      <member refid="class_bx_web_content_1ab2b17b77f23848a73363ecf7a58eeb74" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>OnFileSearch</name></member>
+      <member refid="class_bx_web_content_1a89bde7351441571b34db345ac0f372ff" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>Pool</name></member>
+      <member refid="class_bx_web_content_1ac2e657b59601fa4859fb61cdb16078ce" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>PoolSumSize</name></member>
+      <member refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Query</name></member>
+      <member refid="class_bx_web_content_1ab104adbb7e5be3eacd0730515a39e820" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseBytes</name></member>
+      <member refid="class_bx_web_content_1a3bb4d42aee48bb841c7d41c9e3d3d31e" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseLength</name></member>
+      <member refid="class_bx_web_content_1a3ef24ada879d5b2cb40ebf4a73be8432" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>~BxWebContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

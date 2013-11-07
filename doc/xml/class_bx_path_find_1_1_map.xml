@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_path_find_1_1_map" kind="class" prot="public">
+    <compoundname>BxPathFind::Map</compoundname>
+    <innerclass refid="class_bx_path_find_1_1_map_1_1_triangle" prot="private">BxPathFind::Map::Triangle</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_path_find_1_1_map_1a72878b3428294efec8b65ebc57ed35fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Hurdle</definition>
+        <argsstring></argsstring>
+        <name>Hurdle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="46" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1a707a4b5752a75dbbf560aafc466a571e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">DotList</ref></type>
+        <definition>DotList BxPathFind::Map::Dots</definition>
+        <argsstring></argsstring>
+        <name>Dots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1a090fe274b9deeea1e9548efb0aa70e30" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">LineList</ref></type>
+        <definition>LineList BxPathFind::Map::Lines</definition>
+        <argsstring></argsstring>
+        <name>Lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_path_find_1_1_map_1aaeeb0c03c435bcc0e2cb4b881c4ba50c" prot="private" static="no" mutable="no">
+        <type>class BxPathFind::Map::Triangle</type>
+        <definition>class BxPathFind::Map::Triangle  BxPathFind::Map::Top</definition>
+        <argsstring></argsstring>
+        <name>Top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="100" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a11a6e357cda58bbd5c9367a5a08940ab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPathFind::Map::Map</definition>
+        <argsstring>()</argsstring>
+        <name>Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="102" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1ac565d5cdae152382bd837f6528e1ed0e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPathFind::Map::CREATE_TRIANGLES</definition>
+        <argsstring>(const rect &amp;boundBox, PolygonList &amp;list)</argsstring>
+        <name>CREATE_TRIANGLES</name>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>boundBox</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_var_vector" kindref="compound">PolygonList</ref> &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="156" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="156" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a9722c3910a48580b9aa5a36662d61a05" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPathFind::Map::MAPPING</definition>
+        <argsstring>(Triangle *focus, Triangle *parent, linetype type, int dotA, int dotB)</argsstring>
+        <name>MAPPING</name>
+        <param>
+          <type>Triangle *</type>
+          <declname>focus</declname>
+        </param>
+        <param>
+          <type>Triangle *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>linetype</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="169" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a4c8633a218d69d1b5297d0449bfbd64e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPathFind::Map::IS_INCLUDE_ANI_DOT_BY</definition>
+        <argsstring>(int dotA, int dotB, int dotC)</argsstring>
+        <name>IS_INCLUDE_ANI_DOT_BY</name>
+        <param>
+          <type>int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotB</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="204" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="204" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a0a15b51b519013bc0329892fccb4a539" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPathFind::Map::IS_CROSSING_ANI_LINE_BY</definition>
+        <argsstring>(int dotA, int dotB)</argsstring>
+        <name>IS_CROSSING_ANI_LINE_BY</name>
+        <param>
+          <type>int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="222" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1ad49349da63441adcb080cf3fffef0dbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxPathFind::Map::FIND_LINE_ID</definition>
+        <argsstring>(int dotA, int dotB)</argsstring>
+        <name>FIND_LINE_ID</name>
+        <param>
+          <type>int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="246" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="246" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1aba7f259ba721f171ef8ae60c68fe170d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::FIND_PICK_TRIANGLE</definition>
+        <argsstring>(const point &amp;pos)</argsstring>
+        <name>FIND_PICK_TRIANGLE</name>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="260" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="260" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a45e48eb3b75bc13a205907a5a8caabc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Triangle *</type>
+        <definition>Triangle* BxPathFind::Map::FIND_SAME_TRIANGLE</definition>
+        <argsstring>(int dotA, int dotB, Triangle *parent)</argsstring>
+        <name>FIND_SAME_TRIANGLE</name>
+        <param>
+          <type>int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dotB</declname>
+        </param>
+        <param>
+          <type>Triangle *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="281" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="281" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a4aad2b1b37fa69998abd73966ca9551e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPathFind::Map::PATH_FIND</definition>
+        <argsstring>(Triangle *focus, const Triangle *target, const point &amp;endPos)</argsstring>
+        <name>PATH_FIND</name>
+        <param>
+          <type>Triangle *</type>
+          <declname>focus</declname>
+        </param>
+        <param>
+          <type>const Triangle *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>endPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="294" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="294" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a7fe8d8573ee901988b0581800035d468" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxPathFind::Map::R_SIDE1</definition>
+        <argsstring>(const int dotA, const int dotB, const int dotC)</argsstring>
+        <name>R_SIDE1</name>
+        <param>
+          <type>const int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>dotB</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>dotC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="328" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="328" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a916c4cdc9e1a578d4b669ccc905dac14" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxPathFind::Map::R_SIDE2</definition>
+        <argsstring>(const int dotA, const int dotB, const point &amp;C)</argsstring>
+        <name>R_SIDE2</name>
+        <param>
+          <type>const int</type>
+          <declname>dotA</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>dotB</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="334" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="334" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a895017a83a014bbf067efc2a405d8cd4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxPathFind::Map::DISTANCE</definition>
+        <argsstring>(const point &amp;A, const point &amp;B)</argsstring>
+        <name>DISTANCE</name>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="340" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="340" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a44261e58f63e5ef1247ae4ab3d44199b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPathFind::Map::DOT_AB_SIDE_A</definition>
+        <argsstring>(const Triangle &amp;t)</argsstring>
+        <name>DOT_AB_SIDE_A</name>
+        <param>
+          <type>const Triangle &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="341" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="341" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a65fb83d71b876c4a71789face62f4637" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPathFind::Map::DOT_AC_SIDE_A</definition>
+        <argsstring>(const Triangle &amp;t)</argsstring>
+        <name>DOT_AC_SIDE_A</name>
+        <param>
+          <type>const Triangle &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="342" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="342" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a5589439d3b08d4e6913a9d22ffc3211c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPathFind::Map::DOT_BC_SIDE_B</definition>
+        <argsstring>(const Triangle &amp;t)</argsstring>
+        <name>DOT_BC_SIDE_B</name>
+        <param>
+          <type>const Triangle &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="343" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="343" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a71ff885e2cfc6cec88fecd8600c295cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPathFind::Map::DOT_AB_SIDE_B</definition>
+        <argsstring>(const Triangle &amp;t)</argsstring>
+        <name>DOT_AB_SIDE_B</name>
+        <param>
+          <type>const Triangle &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="344" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="344" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a7020049fb9116f0d72bdc8c3430edb3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPathFind::Map::DOT_AC_SIDE_C</definition>
+        <argsstring>(const Triangle &amp;t)</argsstring>
+        <name>DOT_AC_SIDE_C</name>
+        <param>
+          <type>const Triangle &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="345" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="345" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a9dab9a40d482cfd43c19f9e11cc83579" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPathFind::Map::DOT_BC_SIDE_C</definition>
+        <argsstring>(const Triangle &amp;t)</argsstring>
+        <name>DOT_BC_SIDE_C</name>
+        <param>
+          <type>const Triangle &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="346" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="346" bodyend="346"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a56e36652158f46a6005043a39b17ee53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPathFind::Map::~Map</definition>
+        <argsstring>()</argsstring>
+        <name>~Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="105" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1acb80604b5797c317e4d1e34f5d33d353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxPathFind::Map::Release</definition>
+        <argsstring>(Map *&amp;map)</argsstring>
+        <name>Release</name>
+        <param>
+          <type><ref refid="class_bx_path_find_1_1_map" kindref="compound">Map</ref> *&amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="109" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_path_find_1_1_map_1a72e5d4c0a0a051451948aa41c71506c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_path_find_1_1_path" kindref="compound">Path</ref> *</type>
+        <definition>Path* BxPathFind::Map::BuildPath</definition>
+        <argsstring>(const point &amp;beginPos, const point &amp;endPos, const int step=0)</argsstring>
+        <name>BuildPath</name>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>beginPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>endPos</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>step</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="114" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="114" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="138">
+        <label>BxPathFind::Map</label>
+        <link refid="class_bx_path_find_1_1_map"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>Dots</edgelabel>
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>Lines</edgelabel>
+        </childnode>
+      </node>
+      <node id="139">
+        <label>BxVarVector&lt; point, 4 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="140">
+        <label>BxVarVector&lt; Line, 8 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="44" bodyend="347"/>
+    <listofallmembers>
+      <member refid="class_bx_path_find_1_1_map_1a72e5d4c0a0a051451948aa41c71506c9" prot="public" virt="non-virtual"><scope>BxPathFind::Map</scope><name>BuildPath</name></member>
+      <member refid="class_bx_path_find_1_1_map_1ac565d5cdae152382bd837f6528e1ed0e" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>CREATE_TRIANGLES</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a895017a83a014bbf067efc2a405d8cd4" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DISTANCE</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a44261e58f63e5ef1247ae4ab3d44199b" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DOT_AB_SIDE_A</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a71ff885e2cfc6cec88fecd8600c295cc" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DOT_AB_SIDE_B</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a65fb83d71b876c4a71789face62f4637" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DOT_AC_SIDE_A</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a7020049fb9116f0d72bdc8c3430edb3e" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DOT_AC_SIDE_C</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a5589439d3b08d4e6913a9d22ffc3211c" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DOT_BC_SIDE_B</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a9dab9a40d482cfd43c19f9e11cc83579" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>DOT_BC_SIDE_C</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a707a4b5752a75dbbf560aafc466a571e" prot="public" virt="non-virtual"><scope>BxPathFind::Map</scope><name>Dots</name></member>
+      <member refid="class_bx_path_find_1_1_map_1ad49349da63441adcb080cf3fffef0dbc" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>FIND_LINE_ID</name></member>
+      <member refid="class_bx_path_find_1_1_map_1aba7f259ba721f171ef8ae60c68fe170d" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>FIND_PICK_TRIANGLE</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a45e48eb3b75bc13a205907a5a8caabc0" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>FIND_SAME_TRIANGLE</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a72878b3428294efec8b65ebc57ed35fd" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>Hurdle</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a0a15b51b519013bc0329892fccb4a539" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>IS_CROSSING_ANI_LINE_BY</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a4c8633a218d69d1b5297d0449bfbd64e" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>IS_INCLUDE_ANI_DOT_BY</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a090fe274b9deeea1e9548efb0aa70e30" prot="public" virt="non-virtual"><scope>BxPathFind::Map</scope><name>Lines</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a11a6e357cda58bbd5c9367a5a08940ab" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>Map</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a9722c3910a48580b9aa5a36662d61a05" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>MAPPING</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a4aad2b1b37fa69998abd73966ca9551e" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>PATH_FIND</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a7fe8d8573ee901988b0581800035d468" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>R_SIDE1</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a916c4cdc9e1a578d4b669ccc905dac14" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>R_SIDE2</name></member>
+      <member refid="class_bx_path_find_1_1_map_1acb80604b5797c317e4d1e34f5d33d353" prot="public" virt="non-virtual"><scope>BxPathFind::Map</scope><name>Release</name></member>
+      <member refid="class_bx_path_find_1_1_map_1aaeeb0c03c435bcc0e2cb4b881c4ba50c" prot="private" virt="non-virtual"><scope>BxPathFind::Map</scope><name>Top</name></member>
+      <member refid="class_bx_path_find_1_1_map_1a56e36652158f46a6005043a39b17ee53" prot="public" virt="non-virtual"><scope>BxPathFind::Map</scope><name>~Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

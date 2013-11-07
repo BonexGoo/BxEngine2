@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structrect" kind="struct" prot="public">
+    <compoundname>rect</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrect_1a1cbb063b53650c26b4356ff36254d74a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rect::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="210" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrect_1a6877ac0f6bff3cc3f1563d7a8294cded" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rect::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="210" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrect_1a28d7556dfc8e7e602c855879971687e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rect::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="210" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrect_1aaa94c7790074662fcc239bc93a3976b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rect::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="210" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrect_1aa5121413aab518c03d4e2de576e020e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int rect::width</definition>
+        <argsstring>() const </argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="211" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="211" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="structrect_1a7f8b6ff21e3e2b03d34b688cd6feaa32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int rect::height</definition>
+        <argsstring>() const </argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="212" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="structrect_1a3cad144cdbc72ef6b6ec819089acf7e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+        <definition>global_func const rect&amp; rect::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="213" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="structrect_1a02701be9e2a9916f233cd32115d23ad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+        <definition>rect&amp; rect::operator=</definition>
+        <argsstring>(const rect &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="214" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="214" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>rect구조체 : l, t, r, b </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="209" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="208" bodyend="215"/>
+    <listofallmembers>
+      <member refid="structrect_1aaa94c7790074662fcc239bc93a3976b1" prot="public" virt="non-virtual"><scope>rect</scope><name>b</name></member>
+      <member refid="structrect_1a7f8b6ff21e3e2b03d34b688cd6feaa32" prot="public" virt="non-virtual"><scope>rect</scope><name>height</name></member>
+      <member refid="structrect_1a1cbb063b53650c26b4356ff36254d74a" prot="public" virt="non-virtual"><scope>rect</scope><name>l</name></member>
+      <member refid="structrect_1a02701be9e2a9916f233cd32115d23ad5" prot="public" virt="non-virtual"><scope>rect</scope><name>operator=</name></member>
+      <member refid="structrect_1a28d7556dfc8e7e602c855879971687e9" prot="public" virt="non-virtual"><scope>rect</scope><name>r</name></member>
+      <member refid="structrect_1a6877ac0f6bff3cc3f1563d7a8294cded" prot="public" virt="non-virtual"><scope>rect</scope><name>t</name></member>
+      <member refid="structrect_1aa5121413aab518c03d4e2de576e020e5" prot="public" virt="non-virtual"><scope>rect</scope><name>width</name></member>
+      <member refid="structrect_1a3cad144cdbc72ef6b6ec819089acf7e9" prot="public" virt="non-virtual"><scope>rect</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

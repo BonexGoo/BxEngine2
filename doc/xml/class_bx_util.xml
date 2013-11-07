@@ -1,0 +1,1110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_util" kind="class" prot="public">
+    <compoundname>BxUtil</compoundname>
+    <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0" prot="private" static="no">
+        <name>@16</name>
+        <enumvalue id="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0a78c8007015eed2463cb68b23b5239149" prot="private">
+          <name>Angle90</name>
+          <initializer>= 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0ab74fb3752eaae2ec03dad1f04427d9e7" prot="private">
+          <name>Angle180</name>
+          <initializer>= 512</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0af0239496bc52ea33b723949a0fbd8333" prot="private">
+          <name>Angle270</name>
+          <initializer>= 768</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1227" bodyend="1227"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_util_1a0940d3fda4c6f5a425e2043708f7145f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::SetRandom</definition>
+        <argsstring>(const uint Seed)</argsstring>
+        <name>SetRandom</name>
+        <param>
+          <type>const uint</type>
+          <declname>Seed</declname>
+        </param>
+        <briefdescription>
+<para>랜덤함수 초기화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>BxCore::System::GetTimerMs </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="637" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="637" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a5c3ac899f819d98214f9f3345ac5bd87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint</type>
+        <definition>global_func uint BxUtil::GetRandom</definition>
+        <argsstring>(const int Key=-1)</argsstring>
+        <name>GetRandom</name>
+        <param>
+          <type>const int</type>
+          <declname>Key</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>랜덤값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 랜덤테이블 인덱스값, -1은 실 랜덤값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>결과값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="649" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="649" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a5263a4d55543963e06caf13351a948c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::GetValue</definition>
+        <argsstring>(const int MinValue, const int MaxValue, int Key=-1)</argsstring>
+        <name>GetValue</name>
+        <param>
+          <type>const int</type>
+          <declname>MinValue</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>MaxValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Key</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>구간내 랜덤값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MinValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 최소값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 최대값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 랜덤테이블 인덱스값, -1은 실 랜덤값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>최소값(포함)에서 최대값(포함)사이의 결과값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="662" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="662" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a4263eae18eb8e802e1a00142e1b3689f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::GetValueAngle</definition>
+        <argsstring>(const int MinValue, const int MaxValue, int Key=-1)</argsstring>
+        <name>GetValueAngle</name>
+        <param>
+          <type>const int</type>
+          <declname>MinValue</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>MaxValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Key</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>각도내 랜덤값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MinValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 최소각도값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 최대각도값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 랜덤테이블 인덱스값, -1은 실 랜덤값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>최소값(포함)에서 최대값(포함)사이의 결과값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="674" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="674" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a1d0271ff4863c0b8fbe8b7f9c1076653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func fint</type>
+        <definition>global_func fint BxUtil::Cos</definition>
+        <argsstring>(int Angle1024)</argsstring>
+        <name>Cos</name>
+        <param>
+          <type>int</type>
+          <declname>Angle1024</declname>
+        </param>
+        <briefdescription>
+<para>Cos값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Angle1024</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 각도값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Cos값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="686" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="686" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a19bef9b1c3c37b263ad5d68a9fb710d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func fint</type>
+        <definition>global_func fint BxUtil::Sin</definition>
+        <argsstring>(int Angle1024)</argsstring>
+        <name>Sin</name>
+        <param>
+          <type>int</type>
+          <declname>Angle1024</declname>
+        </param>
+        <briefdescription>
+<para>Sin값 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Angle1024</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 각도값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Sin값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="698" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="698" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a3882d50474b76769b82316e8666150a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::GetAngle1024</definition>
+        <argsstring>(const int VectorX, const int VectorY)</argsstring>
+        <name>GetAngle1024</name>
+        <param>
+          <type>const int</type>
+          <declname>VectorX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>VectorY</declname>
+        </param>
+        <briefdescription>
+<para>방향으로 각도 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>VectorX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 방향X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 방향Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>각도값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="709" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="709" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a147df2b368fe0381b9b46ea850d6f916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const int</type>
+        <definition>global_func const int BxUtil::GetClockwiseValue</definition>
+        <argsstring>(const point &amp;Start, const point &amp;End, const point &amp;Src)</argsstring>
+        <name>GetClockwiseValue</name>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>Start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>End</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>Src</declname>
+        </param>
+        <briefdescription>
+<para>점 3개의 방향성 값을 확인 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 첫점 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>End</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 둘째점 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 셋째점 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>음수 : 시계방향, 양수 : 반시계방향, 0 : 중립 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="725" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="725" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1ac2142bb22ed2a2f45df5b2d56b723fea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::MatrixInit</definition>
+        <argsstring>(matrix _out_ Dst)</argsstring>
+        <name>MatrixInit</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref> _out_</type>
+          <declname>Dst</declname>
+        </param>
+        <briefdescription>
+<para>단위행렬화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 적용될 행렬 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="734" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="734" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a414a342d29fef93a2264fd53314a0645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::MatrixCombine</definition>
+        <argsstring>(matrix _inout_ Dst, const matrix _in_ Src)</argsstring>
+        <name>MatrixCombine</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref> _inout_</type>
+          <declname>Dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmatrix" kindref="compound">matrix</ref> _in_</type>
+          <declname>Src</declname>
+        </param>
+        <briefdescription>
+<para>행렬에 행렬곱하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 적용될 행렬 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 곱할 행렬 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="745" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="745" bodyend="814"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1ae15d759d6643cd9ed4382a76308b831d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::MatrixCombine</definition>
+        <argsstring>(matrix _inout_ Dst, const fint _in_ Src00, const fint _in_ Src10, const fint _in_ Src20, const fint _in_ Src30, const fint _in_ Src01, const fint _in_ Src11, const fint _in_ Src21, const fint _in_ Src31, const fint _in_ Src02, const fint _in_ Src12, const fint _in_ Src22, const fint _in_ Src32, const fint _in_ Src03, const fint _in_ Src13, const fint _in_ Src23, const fint _in_ Src33)</argsstring>
+        <name>MatrixCombine</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref> _inout_</type>
+          <declname>Dst</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src00</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src10</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src20</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src30</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src01</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src11</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src21</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src31</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src02</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src12</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src22</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src32</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src03</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src13</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src23</declname>
+        </param>
+        <param>
+          <type>const fint _in_</type>
+          <declname>Src33</declname>
+        </param>
+        <briefdescription>
+<para>행렬에 행렬곱하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 적용될 행렬 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src00</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 곱할 행렬 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="821" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="821" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1acee0f9a5a21762b01d8a0fa354785091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::MatrixRotateQ</definition>
+        <argsstring>(matrix _inout_ Dst, const quater _in_ Src)</argsstring>
+        <name>MatrixRotateQ</name>
+        <param>
+          <type><ref refid="structmatrix" kindref="compound">matrix</ref> _inout_</type>
+          <declname>Dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structquater" kindref="compound">quater</ref> _in_</type>
+          <declname>Src</declname>
+        </param>
+        <briefdescription>
+<para>행렬의 회전변환(쿼터니언) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 적용될 행렬 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 회전할 쿼터니언 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="901" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="901" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a0abbd37b71ecc2aa9556dd38323677ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::MatrixApply</definition>
+        <argsstring>(vertex _inout_ Dst, const matrix _in_ Src)</argsstring>
+        <name>MatrixApply</name>
+        <param>
+          <type><ref refid="structvertex" kindref="compound">vertex</ref> _inout_</type>
+          <declname>Dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmatrix" kindref="compound">matrix</ref> _in_</type>
+          <declname>Src</declname>
+        </param>
+        <briefdescription>
+<para>버텍스에 행렬곱하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 적용될 버텍스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 곱할 행렬 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="924" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="924" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a66ee23d7c8f2ffa31ee9a77d8549708f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::CP949ToUTF16</definition>
+        <argsstring>(string cp949, int cp949length, wstring_rw utf16, const int utf16length)</argsstring>
+        <name>CP949ToUTF16</name>
+        <param>
+          <type>string</type>
+          <declname>cp949</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cp949length</declname>
+        </param>
+        <param>
+          <type>wstring_rw</type>
+          <declname>utf16</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>utf16length</declname>
+        </param>
+        <briefdescription>
+<para>CP949를 UTF16으로 전환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cp949</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 CP949스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cp949length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 CP949스트링 배열수량(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 받을 UTF16스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf16length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 받을 UTF16스트링 배열수량 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변환된 배열수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="941" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="941" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1afd59076fe1010b645d232f24fa34e84e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::UTF16ToCP949</definition>
+        <argsstring>(wstring utf16, int utf16length, string_rw cp949, const int cp949length)</argsstring>
+        <name>UTF16ToCP949</name>
+        <param>
+          <type>wstring</type>
+          <declname>utf16</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utf16length</declname>
+        </param>
+        <param>
+          <type>string_rw</type>
+          <declname>cp949</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cp949length</declname>
+        </param>
+        <briefdescription>
+<para>UTF16를 CP949로 전환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF16스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf16length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF16스트링 배열수량(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cp949</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 받을 CP949스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cp949length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 받을 CP949스트링 배열수량 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변환된 배열수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="964" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="964" bodyend="977"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1ace58b8597a34f4d9b9ab4f27b4f48dde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::UTF16ToUTF8</definition>
+        <argsstring>(wstring utf16, int utf16length, string_rw utf8)</argsstring>
+        <name>UTF16ToUTF8</name>
+        <param>
+          <type>wstring</type>
+          <declname>utf16</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utf16length</declname>
+        </param>
+        <param>
+          <type>string_rw</type>
+          <declname>utf8</declname>
+        </param>
+        <briefdescription>
+<para>UTF16를 UTF8로 전환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF16스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf16length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF16스트링 배열수량(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 받을 UTF8스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_util_1a70b323773fef5ff0f54a4203664d9f57" kindref="member">BxUtil::GetLengthByUTF8</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="986" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="986" bodyend="1014"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a70b323773fef5ff0f54a4203664d9f57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::GetLengthByUTF8</definition>
+        <argsstring>(wstring utf16, int utf16length)</argsstring>
+        <name>GetLengthByUTF8</name>
+        <param>
+          <type>wstring</type>
+          <declname>utf16</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utf16length</declname>
+        </param>
+        <briefdescription>
+<para>UTF16을 UTF8로 전환시 필요한 UTF8의 배열수량 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF16스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf16length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF16스트링 배열수량(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>필요한 배열수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1022" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1022" bodyend="1041"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a641e1bebe3972ac651d08b6890d76fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::UTF8ToUTF16</definition>
+        <argsstring>(string utf8, int utf8length, wstring_rw utf16)</argsstring>
+        <name>UTF8ToUTF16</name>
+        <param>
+          <type>string</type>
+          <declname>utf8</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utf8length</declname>
+        </param>
+        <param>
+          <type>wstring_rw</type>
+          <declname>utf16</declname>
+        </param>
+        <briefdescription>
+<para>UTF8을 UTF16으로 전환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF8스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf8length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF8스트링 배열수량(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 받을 UTF16스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_util_1a7432c9e436ff321506fc574ed4d80544" kindref="member">BxUtil::GetLengthByUTF16</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1050" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1050" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a7432c9e436ff321506fc574ed4d80544" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxUtil::GetLengthByUTF16</definition>
+        <argsstring>(string utf8, int utf8length)</argsstring>
+        <name>GetLengthByUTF16</name>
+        <param>
+          <type>string</type>
+          <declname>utf8</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utf8length</declname>
+        </param>
+        <briefdescription>
+<para>UTF8을 UTF16으로 전환시 필요한 UTF16의 배열수량 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF8스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utf8length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변환할 UTF8스트링 배열수량(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>필요한 배열수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1085" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1085" bodyend="1110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a8363c42cb6abcbd477dc37e85e26c84f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structpoint" kindref="compound">point</ref> *</type>
+        <definition>global_func const point* BxUtil::GetDotByLineCross</definition>
+        <argsstring>(const point &amp;DstB, const point &amp;DstE, const point &amp;SrcB, const point &amp;SrcE)</argsstring>
+        <name>GetDotByLineCross</name>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>DstB</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>DstE</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>SrcB</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>SrcE</declname>
+        </param>
+        <briefdescription>
+<para>교차테스트후 교차점을 구함 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DstB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 선분1 첫점 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DstE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 선분1 끝점 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 선분2 첫점 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SrcE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 선분2 끝점 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>교차시 교차정보를 리턴함 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1120" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1120" bodyend="1224"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_util_1abae38de2d94a7d391845f2813086f497" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint &amp;</type>
+        <definition>global_func uint&amp; BxUtil::RandomTable</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>RandomTable</name>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1229" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1229" bodyend="1233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a59236c7d397c3595f413ce4e89d90603" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const int &amp;</type>
+        <definition>global_func const int&amp; BxUtil::Cos1024Table</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>Cos1024Table</name>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1235" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1235" bodyend="1257"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1ab1ae7f807af428196819a81fd32cb89e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const int &amp;</type>
+        <definition>global_func const int&amp; BxUtil::Tan1024Table</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>Tan1024Table</name>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1259" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1259" bodyend="1280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a47628faac9b7bc2310c7578932e4d062" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func wstring</type>
+        <definition>global_func wstring BxUtil::CP949Table</definition>
+        <argsstring>()</argsstring>
+        <name>CP949Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1282" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1282" bodyend="1332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1ab3e5bf21df64c7fc3b03f5d85c11e041" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func wstring</type>
+        <definition>global_func wstring BxUtil::UTF16Table</definition>
+        <argsstring>()</argsstring>
+        <name>UTF16Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1334" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1334" bodyend="1434"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a44298f4f26318d05858e9ca8d6d44d6b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const wchar</type>
+        <definition>global_func const wchar BxUtil::CP949ToUTF16_Search</definition>
+        <argsstring>(const char cp949a, const char cp949b= &apos; &apos;)</argsstring>
+        <name>CP949ToUTF16_Search</name>
+        <param>
+          <type>const char</type>
+          <declname>cp949a</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>cp949b</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1436" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1436" bodyend="1476"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a67b7e92c55df2c22a393394826943b84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func string</type>
+        <definition>global_func string BxUtil::UTF16ToCP949_Search</definition>
+        <argsstring>(const wchar utf16)</argsstring>
+        <name>UTF16ToCP949_Search</name>
+        <param>
+          <type>const wchar</type>
+          <declname>utf16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1478" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1478" bodyend="1518"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a4d08ffdfaf5a93afab46a6530393155b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint &amp;</type>
+        <definition>global_func uint&amp; BxUtil::_RandValue</definition>
+        <argsstring>()</argsstring>
+        <name>_RandValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1520" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1520" bodyend="1524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a8cababb7db6694f440db551c9840a326" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxUtil::_SetRand</definition>
+        <argsstring>(const uint Key)</argsstring>
+        <name>_SetRand</name>
+        <param>
+          <type>const uint</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1526" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1526" bodyend="1529"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_util_1a87c769df8c7ed43a97806ea042f4db68" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint</type>
+        <definition>global_func uint BxUtil::_MakeRand</definition>
+        <argsstring>()</argsstring>
+        <name>_MakeRand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="1531" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="1531" bodyend="1536"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>각종 수학/물리모듈 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" line="630" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxUtil.hpp" bodystart="629" bodyend="1537"/>
+    <listofallmembers>
+      <member refid="class_bx_util_1a87c769df8c7ed43a97806ea042f4db68" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>_MakeRand</name></member>
+      <member refid="class_bx_util_1a4d08ffdfaf5a93afab46a6530393155b" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>_RandValue</name></member>
+      <member refid="class_bx_util_1a8cababb7db6694f440db551c9840a326" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>_SetRand</name></member>
+      <member refid="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0ab74fb3752eaae2ec03dad1f04427d9e7" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>Angle180</name></member>
+      <member refid="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0af0239496bc52ea33b723949a0fbd8333" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>Angle270</name></member>
+      <member refid="class_bx_util_1aafe2e663285bc48e3ec1040aa12e61d0a78c8007015eed2463cb68b23b5239149" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>Angle90</name></member>
+      <member refid="class_bx_util_1a1d0271ff4863c0b8fbe8b7f9c1076653" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>Cos</name></member>
+      <member refid="class_bx_util_1a59236c7d397c3595f413ce4e89d90603" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>Cos1024Table</name></member>
+      <member refid="class_bx_util_1a47628faac9b7bc2310c7578932e4d062" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>CP949Table</name></member>
+      <member refid="class_bx_util_1a66ee23d7c8f2ffa31ee9a77d8549708f" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>CP949ToUTF16</name></member>
+      <member refid="class_bx_util_1a44298f4f26318d05858e9ca8d6d44d6b" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>CP949ToUTF16_Search</name></member>
+      <member refid="class_bx_util_1a3882d50474b76769b82316e8666150a1" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetAngle1024</name></member>
+      <member refid="class_bx_util_1a147df2b368fe0381b9b46ea850d6f916" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetClockwiseValue</name></member>
+      <member refid="class_bx_util_1a8363c42cb6abcbd477dc37e85e26c84f" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetDotByLineCross</name></member>
+      <member refid="class_bx_util_1a7432c9e436ff321506fc574ed4d80544" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetLengthByUTF16</name></member>
+      <member refid="class_bx_util_1a70b323773fef5ff0f54a4203664d9f57" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetLengthByUTF8</name></member>
+      <member refid="class_bx_util_1a5c3ac899f819d98214f9f3345ac5bd87" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetRandom</name></member>
+      <member refid="class_bx_util_1a5263a4d55543963e06caf13351a948c0" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetValue</name></member>
+      <member refid="class_bx_util_1a4263eae18eb8e802e1a00142e1b3689f" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>GetValueAngle</name></member>
+      <member refid="class_bx_util_1a0abbd37b71ecc2aa9556dd38323677ae" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>MatrixApply</name></member>
+      <member refid="class_bx_util_1a414a342d29fef93a2264fd53314a0645" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>MatrixCombine</name></member>
+      <member refid="class_bx_util_1ae15d759d6643cd9ed4382a76308b831d" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>MatrixCombine</name></member>
+      <member refid="class_bx_util_1ac2142bb22ed2a2f45df5b2d56b723fea" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>MatrixInit</name></member>
+      <member refid="class_bx_util_1acee0f9a5a21762b01d8a0fa354785091" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>MatrixRotateQ</name></member>
+      <member refid="class_bx_util_1abae38de2d94a7d391845f2813086f497" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>RandomTable</name></member>
+      <member refid="class_bx_util_1a0940d3fda4c6f5a425e2043708f7145f" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>SetRandom</name></member>
+      <member refid="class_bx_util_1a19bef9b1c3c37b263ad5d68a9fb710d0" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>Sin</name></member>
+      <member refid="class_bx_util_1ab1ae7f807af428196819a81fd32cb89e" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>Tan1024Table</name></member>
+      <member refid="class_bx_util_1ab3e5bf21df64c7fc3b03f5d85c11e041" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>UTF16Table</name></member>
+      <member refid="class_bx_util_1afd59076fe1010b645d232f24fa34e84e" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>UTF16ToCP949</name></member>
+      <member refid="class_bx_util_1a67b7e92c55df2c22a393394826943b84" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>UTF16ToCP949_Search</name></member>
+      <member refid="class_bx_util_1ace58b8597a34f4d9b9ab4f27b4f48dde" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>UTF16ToUTF8</name></member>
+      <member refid="class_bx_util_1a641e1bebe3972ac651d08b6890d76fb0" prot="public" virt="non-virtual"><scope>BxUtil</scope><name>UTF8ToUTF16</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

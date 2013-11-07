@@ -1,0 +1,1245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_string" kind="class" prot="public">
+    <compoundname>BxString</compoundname>
+    <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_string_1a4f6530249875ce5e8975039673be1ea4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::BxString</definition>
+        <argsstring>()</argsstring>
+        <name>BxString</name>
+        <briefdescription>
+<para>기본생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a4ba075e59a125b5a9e2cc09f120759fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::BxString</definition>
+        <argsstring>(const BxString &amp;RHS)</argsstring>
+        <name>BxString</name>
+        <param>
+          <type>const <ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>복사생성자(BxString) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 인스턴스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a89b7e3b70310a99d944e60748a9b9f2f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::BxString</definition>
+        <argsstring>(char RHS)</argsstring>
+        <name>BxString</name>
+        <param>
+          <type>char</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>복사생성자(char) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 인스턴스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="25" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a819ce62aca47966ebea31617d4b7d070" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::BxString</definition>
+        <argsstring>(string RHS)</argsstring>
+        <name>BxString</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>복사생성자(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 인스턴스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a0daec2fa643f543b5a826100f41ad5c7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::BxString</definition>
+        <argsstring>(string src, void *nouse,...)</argsstring>
+        <name>BxString</name>
+        <param>
+          <type>string</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>nouse</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>복사생성자(sprintf) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: printf양식의 맵(d/s/...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nouse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성자 식별용 값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가변인자들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="39" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a6bce07db311243e6f927e050381bc419" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxString::~BxString</definition>
+        <argsstring>()</argsstring>
+        <name>~BxString</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1aa438d5974c167a3ed314777237575bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::Empty</definition>
+        <argsstring>()</argsstring>
+        <name>Empty</name>
+        <briefdescription>
+<para>내용 비우기 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxString::GetLength</definition>
+        <argsstring>()</argsstring>
+        <name>GetLength</name>
+        <briefdescription>
+<para>길이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>스트링의 글자길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a93719ae11fd25391525d1508415b07af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; BxString::operator[]</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+<para>배열접근 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 배열번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char형 해당 데이터 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="76" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a8ebafdeb1c7b707352a0fceb478ffdce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::operator string</definition>
+        <argsstring>()</argsstring>
+        <name>operator string</name>
+        <briefdescription>
+<para>형변환 중복함수(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string형 전체스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="88" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1abbb8a825bcdda4cb7bd42e40a337d818" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::operator+</definition>
+        <argsstring>(char RHS) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>char</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+(char) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>새로운 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="98" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a9bb15b0c396d74af6c31420d1fa8a072" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::operator+</definition>
+        <argsstring>(string RHS) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>새로운 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="110" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="110" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a0f927cc312350c3c8305cb711bab413b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::operator+</definition>
+        <argsstring>(BxString &amp;RHS) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+(<ref refid="class_bx_string" kindref="compound">BxString</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>새로운 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="124" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1aa95207728e64e496d10b395027392f77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxString::operator=</definition>
+        <argsstring>(char RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>char</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수=(char) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="138" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1af32e1b19afa666c6d54be622338dc461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxString::operator=</definition>
+        <argsstring>(string RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수=(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="150" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="150" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ad12e9a3cf27f763fb7df61be5d837eaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxString::operator=</definition>
+        <argsstring>(const BxString &amp;RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수=(<ref refid="class_bx_string" kindref="compound">BxString</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="164" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a486a6d77c846171e371da6ac19b41d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxString::operator+=</definition>
+        <argsstring>(char RHS)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>char</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+=(char) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="179" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a06f7967c1c2fa3f7fc8a4333a97a185b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxString::operator+=</definition>
+        <argsstring>(string RHS)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+=(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="190" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="190" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1aa183dba47eb49b94516aa96bfb856aaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+        <definition>BxString&amp; BxString::operator+=</definition>
+        <argsstring>(BxString &amp;RHS)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+=(<ref refid="class_bx_string" kindref="compound">BxString</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="203" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="203" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a68f1931fd6a64a27304be6f1a45e08c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::SetString</definition>
+        <argsstring>(string Src, int Length=-1)</argsstring>
+        <name>SetString</name>
+        <param>
+          <type>string</type>
+          <declname>Src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>스트링으로 초기화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링의 바이트길이(-1은 길이 자동측정) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="216" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="216" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a9ce3ca4169e470f72f1fd1c70fd6abdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::TrimBlank</definition>
+        <argsstring>()</argsstring>
+        <name>TrimBlank</name>
+        <briefdescription>
+<para>공백제거(TrimLeft + TrimRight) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_bx_string_1aa9f1db5c7d9eb02e847cd7021301a099" kindref="member">TrimQuote</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="230" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1aa9f1db5c7d9eb02e847cd7021301a099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::TrimQuote</definition>
+        <argsstring>()</argsstring>
+        <name>TrimQuote</name>
+        <briefdescription>
+<para>인용구제거(&quot;A&quot;나 &apos;A&apos;를 A로 변경) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_bx_string_1a9ce3ca4169e470f72f1fd1c70fd6abdb" kindref="member">TrimBlank</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="242" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="242" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a662659cfa6c9919e979989475eef455f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::Left</definition>
+        <argsstring>(int Length) const </argsstring>
+        <name>Left</name>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+<para>좌측 복사하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 바이트수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>새로운 인스턴스 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_string_1af5b1fc61daec00d218359b63ae882bf8" kindref="member">Right</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="258" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="258" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1af5b1fc61daec00d218359b63ae882bf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::Right</definition>
+        <argsstring>(int Length) const </argsstring>
+        <name>Right</name>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+<para>우측 복사하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 바이트수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>새로운 인스턴스 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_string_1a662659cfa6c9919e979989475eef455f" kindref="member">Left</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="273" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="273" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ae48987d62dcfc83d5dbff1ad6295dde5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::DeleteLeft</definition>
+        <argsstring>(int Length)</argsstring>
+        <name>DeleteLeft</name>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+<para>좌측 제거하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 제거할 바이트수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_string_1a7820c076708a964488ec27e0b5a25a0d" kindref="member">DeleteRight</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="288" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="288" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a7820c076708a964488ec27e0b5a25a0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::DeleteRight</definition>
+        <argsstring>(int Length)</argsstring>
+        <name>DeleteRight</name>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+<para>우측 제거하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 제거할 바이트수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_string_1ae48987d62dcfc83d5dbff1ad6295dde5" kindref="member">DeleteLeft</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="300" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="300" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a020196c0d7556f770c6d87635c6819b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxString::IsCharExtend</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>IsCharExtend</name>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+<para>해당 글자의 확장문자여부 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>:배열번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>확장문자여부, true이면 2바이트문자, false이면 1바이트문자 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_string_1ac56d11d9cbdfde07b68a555ca66e40a7" kindref="member">IsLastCharExtend</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="313" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="313" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ac56d11d9cbdfde07b68a555ca66e40a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxString::IsLastCharExtend</definition>
+        <argsstring>()</argsstring>
+        <name>IsLastCharExtend</name>
+        <briefdescription>
+<para>마지막 글자의 확장문자여부 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>확장문자여부, true이면 2바이트문자, false이면 1바이트문자 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_string_1a020196c0d7556f770c6d87635c6819b2" kindref="member">IsCharExtend</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="324" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="324" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxString::Find</definition>
+        <argsstring>(char Key)</argsstring>
+        <name>Find</name>
+        <param>
+          <type>char</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>글자 찾기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 찾을 글자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>배열위치, -1은 실패 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="338" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="338" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ad63e9586241ff09dfcdb23af9ac844cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxString::ReverseFind</definition>
+        <argsstring>(char Key)</argsstring>
+        <name>ReverseFind</name>
+        <param>
+          <type>char</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>꺼꾸로 글자 찾기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 찾을 글자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>배열위치, -1은 실패 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="352" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="352" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ad82768a52a89e008078998783e622347" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxString::CloneWithAlloc</definition>
+        <argsstring>()</argsstring>
+        <name>CloneWithAlloc</name>
+        <briefdescription>
+<para>할당된 전체스트링 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string형 전체스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="365" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a79578e9b83b5373ebcef438bba4c99a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxString::ParseDivision</definition>
+        <argsstring>(string Other, BxVar&lt; BxString &gt; &amp;Result)</argsstring>
+        <name>ParseDivision</name>
+        <param>
+          <type>string</type>
+          <declname>Other</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_string" kindref="compound">BxString</ref> &gt; &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+<para>파티션스트링 나누기(|A|B|C|, /A/B/C/, <emphasis>A*B*C</emphasis>...) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 나눔기호(첫바이트 자동인식)로 분리된 결과(강제 Reset은 안함) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="375" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="375" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1aeaeaa0a661b398d21a746a77deefd22b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>global_func BxString BxString::ParseUnitName</definition>
+        <argsstring>(string Unit)</argsstring>
+        <name>ParseUnitName</name>
+        <param>
+          <type>string</type>
+          <declname>Unit</declname>
+        </param>
+        <briefdescription>
+<para>유니트스트링 이름 가져오기(A&lt;B:C:D&gt;에서 A부분) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="392" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="392" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a1f0f30ed45375db666db40a9fec09f1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>global_func BxString BxString::ParseUnitParam</definition>
+        <argsstring>(string Unit, int Order)</argsstring>
+        <name>ParseUnitParam</name>
+        <param>
+          <type>string</type>
+          <declname>Unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Order</declname>
+        </param>
+        <briefdescription>
+<para>유니트스트링 인수 가져오기(A&lt;B:C:D&gt;에서 B, C, D부분) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수중 가져올 순번 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>인수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="407" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="407" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ade754b593a36cb7e9f9ec06e82a247f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxString::ParseUnitParamLength</definition>
+        <argsstring>(string Unit)</argsstring>
+        <name>ParseUnitParamLength</name>
+        <param>
+          <type>string</type>
+          <declname>Unit</declname>
+        </param>
+        <briefdescription>
+<para>유니트스트링 인수수량 가져오기(A&lt;B:C:D&gt;의 경우, 3을 리턴) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>인수수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="425" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="425" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a854946ab5a5bf85872bc281ac7dfa24f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxString::ParseCSV</definition>
+        <argsstring>(string Other, BxVar&lt; BxString &gt; &amp;Result)</argsstring>
+        <name>ParseCSV</name>
+        <param>
+          <type>string</type>
+          <declname>Other</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_string" kindref="compound">BxString</ref> &gt; &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+<para>멀티라인 CSV스트링(CP949/UTF8) 나누기(A,&quot;B,B&quot;,C를 A와 B,B와 C로 나눔) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 분리된 결과(강제 Reset은 안함) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>파싱된 길이 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="440" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="440" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a403472e1b5d831c700304e6bee5f461c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxString::ParseISO2022</definition>
+        <argsstring>(string Other, BxVar&lt; BxString &gt; &amp;Result)</argsstring>
+        <name>ParseISO2022</name>
+        <param>
+          <type>string</type>
+          <declname>Other</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_string" kindref="compound">BxString</ref> &gt; &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+<para>멀티라인 ISO-2022스트링 나누기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 줄바꿈기호로 분리된 결과(강제 Reset은 안함) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="478" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="478" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a0b8b4b404eab801b107ee0bb7d1c719d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>compare</type>
+        <definition>compare BxString::Compare</definition>
+        <argsstring>(string Other)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>string</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+<para>스트링간 비교(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>same-같음, param_is_more-인수가 큼, param_is_less-인수가 작음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="510" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="510" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a2792945d195374da18c577707883963b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>compare</type>
+        <definition>compare BxString::Compare</definition>
+        <argsstring>(BxString &amp;Other)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+<para>스트링간 비교(BxString) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>same-같음, param_is_more-인수가 큼, param_is_less-인수가 작음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="526" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="526" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1aaf31f369dfc9d76a8bd304aebeef4752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>compare</type>
+        <definition>compare BxString::CompareNoCase</definition>
+        <argsstring>(string Other)</argsstring>
+        <name>CompareNoCase</name>
+        <param>
+          <type>string</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+<para>스트링간 대소문자 구분없는 비교(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>same-같음, param_is_more-인수가 큼, param_is_less-인수가 작음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="542" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="542" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ada6eaa2e4864d928ea416bb48424ad54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>compare</type>
+        <definition>compare BxString::CompareNoCase</definition>
+        <argsstring>(BxString &amp;Other)</argsstring>
+        <name>CompareNoCase</name>
+        <param>
+          <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+<para>스트링간 대소문자 구분없는 비교(BxString) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>same-같음, param_is_more-인수가 큼, param_is_less-인수가 작음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="562" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="562" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::Format</definition>
+        <argsstring>(string format,...)</argsstring>
+        <name>Format</name>
+        <param>
+          <type>string</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>sprintf형태로 스트링 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성할 포맷스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터 인수들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="582" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="582" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a17527cf4de9395d80887159fb8f82a2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::FormatV</definition>
+        <argsstring>(string format, va_list list)</argsstring>
+        <name>FormatV</name>
+        <param>
+          <type>string</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>vsprintf형태로 스트링 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성할 포맷스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터 인수들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="595" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="595" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a62abfc5510718c8873e366895e413d4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::GetFileName</definition>
+        <argsstring>()</argsstring>
+        <name>GetFileName</name>
+        <briefdescription>
+<para>경로에서 파일명 추출 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>추출된 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="613" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="613" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a29661787c9d623e0a18b2fdf7929ac3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::GetFilePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetFilePath</name>
+        <briefdescription>
+<para>경로에서 파일명을 제외한 패스명(/문자 포함) 추출 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>추출된 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="622" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="622" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1a6e566fd97c7564dc60d92625f319540f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::GetFileTitle</definition>
+        <argsstring>()</argsstring>
+        <name>GetFileTitle</name>
+        <briefdescription>
+<para>경로에서 파일타이틀(확장자 제외) 추출 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>추출된 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="632" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="632" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1ab4151cb71418cbde1b8260be5dafbe84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxString::GetFileExt</definition>
+        <argsstring>()</argsstring>
+        <name>GetFileExt</name>
+        <briefdescription>
+<para>경로에서 파일확장자 추출 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>추출된 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="642" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="642" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1afdb5c11ac9fedea47f19d8d03a48ccaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::Load</definition>
+        <argsstring>(byte *&amp;Resource)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>byte *&amp;</type>
+          <declname>Resource</declname>
+        </param>
+        <briefdescription>
+<para>데이터에서 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: uint16으로 스트링사이즈를 얻은 다음, 해당 스트링을 로드 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="653" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="653" bodyend="659"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>스트링 관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxString.hpp" bodystart="7" bodyend="687"/>
+    <listofallmembers>
+      <member refid="class_bx_string_1a4f6530249875ce5e8975039673be1ea4" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>
+      <member refid="class_bx_string_1a4ba075e59a125b5a9e2cc09f120759fb" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>
+      <member refid="class_bx_string_1a89b7e3b70310a99d944e60748a9b9f2f" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>
+      <member refid="class_bx_string_1a819ce62aca47966ebea31617d4b7d070" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>
+      <member refid="class_bx_string_1a0daec2fa643f543b5a826100f41ad5c7" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>
+      <member refid="class_bx_string_1ad82768a52a89e008078998783e622347" prot="public" virt="non-virtual"><scope>BxString</scope><name>CloneWithAlloc</name></member>
+      <member refid="class_bx_string_1a0b8b4b404eab801b107ee0bb7d1c719d" prot="public" virt="non-virtual"><scope>BxString</scope><name>Compare</name></member>
+      <member refid="class_bx_string_1a2792945d195374da18c577707883963b" prot="public" virt="non-virtual"><scope>BxString</scope><name>Compare</name></member>
+      <member refid="class_bx_string_1aaf31f369dfc9d76a8bd304aebeef4752" prot="public" virt="non-virtual"><scope>BxString</scope><name>CompareNoCase</name></member>
+      <member refid="class_bx_string_1ada6eaa2e4864d928ea416bb48424ad54" prot="public" virt="non-virtual"><scope>BxString</scope><name>CompareNoCase</name></member>
+      <member refid="class_bx_string_1ae48987d62dcfc83d5dbff1ad6295dde5" prot="public" virt="non-virtual"><scope>BxString</scope><name>DeleteLeft</name></member>
+      <member refid="class_bx_string_1a7820c076708a964488ec27e0b5a25a0d" prot="public" virt="non-virtual"><scope>BxString</scope><name>DeleteRight</name></member>
+      <member refid="class_bx_string_1aa438d5974c167a3ed314777237575bb8" prot="public" virt="non-virtual"><scope>BxString</scope><name>Empty</name></member>
+      <member refid="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" prot="public" virt="non-virtual"><scope>BxString</scope><name>Find</name></member>
+      <member refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" prot="public" virt="non-virtual"><scope>BxString</scope><name>Format</name></member>
+      <member refid="class_bx_string_1a17527cf4de9395d80887159fb8f82a2e" prot="public" virt="non-virtual"><scope>BxString</scope><name>FormatV</name></member>
+      <member refid="class_bx_string_1ab4151cb71418cbde1b8260be5dafbe84" prot="public" virt="non-virtual"><scope>BxString</scope><name>GetFileExt</name></member>
+      <member refid="class_bx_string_1a62abfc5510718c8873e366895e413d4f" prot="public" virt="non-virtual"><scope>BxString</scope><name>GetFileName</name></member>
+      <member refid="class_bx_string_1a29661787c9d623e0a18b2fdf7929ac3d" prot="public" virt="non-virtual"><scope>BxString</scope><name>GetFilePath</name></member>
+      <member refid="class_bx_string_1a6e566fd97c7564dc60d92625f319540f" prot="public" virt="non-virtual"><scope>BxString</scope><name>GetFileTitle</name></member>
+      <member refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" prot="public" virt="non-virtual"><scope>BxString</scope><name>GetLength</name></member>
+      <member refid="class_bx_string_1a020196c0d7556f770c6d87635c6819b2" prot="public" virt="non-virtual"><scope>BxString</scope><name>IsCharExtend</name></member>
+      <member refid="class_bx_string_1ac56d11d9cbdfde07b68a555ca66e40a7" prot="public" virt="non-virtual"><scope>BxString</scope><name>IsLastCharExtend</name></member>
+      <member refid="class_bx_string_1a662659cfa6c9919e979989475eef455f" prot="public" virt="non-virtual"><scope>BxString</scope><name>Left</name></member>
+      <member refid="class_bx_string_1afdb5c11ac9fedea47f19d8d03a48ccaa" prot="public" virt="non-virtual"><scope>BxString</scope><name>Load</name></member>
+      <member refid="class_bx_string_1a8ebafdeb1c7b707352a0fceb478ffdce" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator string</name></member>
+      <member refid="class_bx_string_1abbb8a825bcdda4cb7bd42e40a337d818" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator+</name></member>
+      <member refid="class_bx_string_1a9bb15b0c396d74af6c31420d1fa8a072" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator+</name></member>
+      <member refid="class_bx_string_1a0f927cc312350c3c8305cb711bab413b" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator+</name></member>
+      <member refid="class_bx_string_1a486a6d77c846171e371da6ac19b41d7a" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator+=</name></member>
+      <member refid="class_bx_string_1a06f7967c1c2fa3f7fc8a4333a97a185b" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator+=</name></member>
+      <member refid="class_bx_string_1aa183dba47eb49b94516aa96bfb856aaa" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator+=</name></member>
+      <member refid="class_bx_string_1aa95207728e64e496d10b395027392f77" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator=</name></member>
+      <member refid="class_bx_string_1af32e1b19afa666c6d54be622338dc461" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator=</name></member>
+      <member refid="class_bx_string_1ad12e9a3cf27f763fb7df61be5d837eaf" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator=</name></member>
+      <member refid="class_bx_string_1a93719ae11fd25391525d1508415b07af" prot="public" virt="non-virtual"><scope>BxString</scope><name>operator[]</name></member>
+      <member refid="class_bx_string_1a854946ab5a5bf85872bc281ac7dfa24f" prot="public" virt="non-virtual"><scope>BxString</scope><name>ParseCSV</name></member>
+      <member refid="class_bx_string_1a79578e9b83b5373ebcef438bba4c99a9" prot="public" virt="non-virtual"><scope>BxString</scope><name>ParseDivision</name></member>
+      <member refid="class_bx_string_1a403472e1b5d831c700304e6bee5f461c" prot="public" virt="non-virtual"><scope>BxString</scope><name>ParseISO2022</name></member>
+      <member refid="class_bx_string_1aeaeaa0a661b398d21a746a77deefd22b" prot="public" virt="non-virtual"><scope>BxString</scope><name>ParseUnitName</name></member>
+      <member refid="class_bx_string_1a1f0f30ed45375db666db40a9fec09f1b" prot="public" virt="non-virtual"><scope>BxString</scope><name>ParseUnitParam</name></member>
+      <member refid="class_bx_string_1ade754b593a36cb7e9f9ec06e82a247f7" prot="public" virt="non-virtual"><scope>BxString</scope><name>ParseUnitParamLength</name></member>
+      <member refid="class_bx_string_1ad63e9586241ff09dfcdb23af9ac844cc" prot="public" virt="non-virtual"><scope>BxString</scope><name>ReverseFind</name></member>
+      <member refid="class_bx_string_1af5b1fc61daec00d218359b63ae882bf8" prot="public" virt="non-virtual"><scope>BxString</scope><name>Right</name></member>
+      <member refid="class_bx_string_1a68f1931fd6a64a27304be6f1a45e08c6" prot="public" virt="non-virtual"><scope>BxString</scope><name>SetString</name></member>
+      <member refid="class_bx_string_1a9ce3ca4169e470f72f1fd1c70fd6abdb" prot="public" virt="non-virtual"><scope>BxString</scope><name>TrimBlank</name></member>
+      <member refid="class_bx_string_1aa9f1db5c7d9eb02e847cd7021301a099" prot="public" virt="non-virtual"><scope>BxString</scope><name>TrimQuote</name></member>
+      <member refid="class_bx_string_1a6bce07db311243e6f927e050381bc419" prot="public" virt="virtual"><scope>BxString</scope><name>~BxString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

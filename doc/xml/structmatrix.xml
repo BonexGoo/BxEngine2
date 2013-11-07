@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structmatrix" kind="struct" prot="public">
+    <compoundname>matrix</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmatrix_1a2e81c025ac684f32b282ab81579ef535" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint matrix::m[4][4]</definition>
+        <argsstring>[4][4]</argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>matrix구조체 : m[4][4] </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="227" bodyend="227"/>
+    <listofallmembers>
+      <member refid="structmatrix_1a2e81c025ac684f32b282ab81579ef535" prot="public" virt="non-virtual"><scope>matrix</scope><name>m</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_path_find" kind="namespace">
+    <compoundname>BxPathFind</compoundname>
+    <innerclass refid="struct_bx_path_find_1_1_line" prot="public">BxPathFind::Line</innerclass>
+    <innerclass refid="class_bx_path_find_1_1_path" prot="public">BxPathFind::Path</innerclass>
+    <innerclass refid="class_bx_path_find_1_1_map" prot="public">BxPathFind::Map</innerclass>
+    <innerclass refid="class_bx_path_find_1_1_hurdle" prot="public">BxPathFind::Hurdle</innerclass>
+    <innerclass refid="class_bx_path_find_1_1_get_position" prot="public">BxPathFind::GetPosition</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_bx_path_find_1af7b3baf7ae4a11f8a94a9ae21cf3ba02" prot="public" static="no">
+        <name>linetype</name>
+        <enumvalue id="namespace_bx_path_find_1af7b3baf7ae4a11f8a94a9ae21cf3ba02af81602712ed36c1027aa2a5617cd1482" prot="public">
+          <name>linetype_bound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_bx_path_find_1af7b3baf7ae4a11f8a94a9ae21cf3ba02a7eccf485340956fc87c705a3e593a5a1" prot="public">
+          <name>linetype_space</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_bx_path_find_1af7b3baf7ae4a11f8a94a9ae21cf3ba02a255c183ea46e17e101a83a2582436fca" prot="public">
+          <name>linetype_wall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_bx_path_find_1a0f41f9405367ccf7b08fde4c82afad96" prot="public" static="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="structpoint" kindref="compound">point</ref>, 4 &gt;</type>
+        <definition>typedef BxVarVector&lt;point, 4&gt; BxPathFind::DotList</definition>
+        <argsstring></argsstring>
+        <name>DotList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_bx_path_find_1ac063d80f5c4800118d6bec0123af4eb4" prot="public" static="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="struct_bx_path_find_1_1_line" kindref="compound">Line</ref>, 8 &gt;</type>
+        <definition>typedef BxVarVector&lt;Line, 8&gt; BxPathFind::LineList</definition>
+        <argsstring></argsstring>
+        <name>LineList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="23" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_bx_path_find_1a42ce7500f72b756e60370bcf01dfa355" prot="public" static="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="structpoints" kindref="compound">points</ref>, 8 &gt;</type>
+        <definition>typedef BxVarVector&lt;points, 8&gt; BxPathFind::PolygonList</definition>
+        <argsstring></argsstring>
+        <name>PolygonList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>다각형맵 길찾기 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPathFind.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

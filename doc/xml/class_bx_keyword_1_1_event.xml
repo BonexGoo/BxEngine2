@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_keyword_1_1_event" kind="class" prot="public">
+    <compoundname>BxKeyword::Event</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_keyword_1_1_event_1a07558ef4722befafbbef213c60202dc8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxKeyword::Event::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="412" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_keyword_1_1_event_1a40a5330669bb5d5d4572490a37639aa2" prot="public" static="no" mutable="no">
+        <type>callback_event</type>
+        <definition>callback_event BxKeyword::Event::MethodCB</definition>
+        <argsstring></argsstring>
+        <name>MethodCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="412" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_keyword_1_1_event_1a3942b22d335f8660ef68fcb80220f8f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::Event::Event</definition>
+        <argsstring>()</argsstring>
+        <name>Event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="412" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="412" bodyend="412"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="93">
+        <label>BxString</label>
+        <link refid="class_bx_string"/>
+      </node>
+      <node id="92">
+        <label>BxKeyword::Event</label>
+        <link refid="class_bx_keyword_1_1_event"/>
+        <childnode refid="93" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="412" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="412" bodyend="412"/>
+    <listofallmembers>
+      <member refid="class_bx_keyword_1_1_event_1a07558ef4722befafbbef213c60202dc8" prot="public" virt="non-virtual"><scope>BxKeyword::Event</scope><name>Data</name></member>
+      <member refid="class_bx_keyword_1_1_event_1a3942b22d335f8660ef68fcb80220f8f8" prot="public" virt="non-virtual"><scope>BxKeyword::Event</scope><name>Event</name></member>
+      <member refid="class_bx_keyword_1_1_event_1a40a5330669bb5d5d4572490a37639aa2" prot="public" virt="non-virtual"><scope>BxKeyword::Event</scope><name>MethodCB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

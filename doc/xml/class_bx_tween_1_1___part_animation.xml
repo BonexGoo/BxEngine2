@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_tween_1_1___part_animation" kind="class" prot="private">
+    <compoundname>BxTween::_PartAnimation</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a8c78d5263390ee2457516c2082143aa9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxTween::_PartAnimation::IsEnable</definition>
+        <argsstring></argsstring>
+        <name>IsEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="178" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a062b12098136f37dd32f380cd73cbd60" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte BxTween::_PartAnimation::IsAnimation</definition>
+        <argsstring></argsstring>
+        <name>IsAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="179" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a044e3d0d4b19b4458f4aad3d9451f6bd" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte BxTween::_PartAnimation::FirstOpacity</definition>
+        <argsstring></argsstring>
+        <name>FirstOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="180" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1ae69f6be3111b3e204c6138f6e2137732" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte BxTween::_PartAnimation::AnimationOpacity</definition>
+        <argsstring></argsstring>
+        <name>AnimationOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="181" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a0ddf2167689c3b51cbe74e492790b8f4" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::TargetX</definition>
+        <argsstring></argsstring>
+        <name>TargetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="182" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a56439fac4a288af238e03ea0ad474c30" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::TargetY</definition>
+        <argsstring></argsstring>
+        <name>TargetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="183" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a20b88a9c6bd9cb2bd7aa5d47af85ce54" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::MoverX</definition>
+        <argsstring></argsstring>
+        <name>MoverX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="184" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1af1838cd1d31aaec86983c88bdbc31350" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::MoverY</definition>
+        <argsstring></argsstring>
+        <name>MoverY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="185" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1abd5741455c7b61e70606b593a3c15b2a" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationTargetX</definition>
+        <argsstring></argsstring>
+        <name>AnimationTargetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="186" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1afa2d9a4ab46d260983c3b0632066742a" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationTargetY</definition>
+        <argsstring></argsstring>
+        <name>AnimationTargetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="187" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a7596f211eacbafe3a37156476798678f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartAnimation::AnimationTargetAddX</definition>
+        <argsstring></argsstring>
+        <name>AnimationTargetAddX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="188" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1ac5c40a48f40b0ff00f02f4270a5b13c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartAnimation::AnimationTargetAddY</definition>
+        <argsstring></argsstring>
+        <name>AnimationTargetAddY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="189" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a8785da452085ec9117aecb26f75e441b" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationMoverX</definition>
+        <argsstring></argsstring>
+        <name>AnimationMoverX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="190" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a8fac0620c2d7307821bf0e9452946f79" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationMoverY</definition>
+        <argsstring></argsstring>
+        <name>AnimationMoverY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="191" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1ae7170f28dea2d430c2dddb8ddd7dd8a6" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationMoverAddX</definition>
+        <argsstring></argsstring>
+        <name>AnimationMoverAddX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="192" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1af5447cd66bf035176a4cd274b8535b49" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationMoverAddY</definition>
+        <argsstring></argsstring>
+        <name>AnimationMoverAddY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="193" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1ae917467a5ef6efcd11bd2044f3671987" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartAnimation::AnimationGravityVector</definition>
+        <argsstring></argsstring>
+        <name>AnimationGravityVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="194" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a2269d1a23905993362dcd314207e45b3" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort BxTween::_PartAnimation::AnimationWindAngle</definition>
+        <argsstring></argsstring>
+        <name>AnimationWindAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="195" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a732101e837aee01892a3ecd0d9993835" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort BxTween::_PartAnimation::AnimationCalcValue</definition>
+        <argsstring></argsstring>
+        <name>AnimationCalcValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="196" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a9bb918383abdada13093cac3e946c386" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationFrame</definition>
+        <argsstring></argsstring>
+        <name>AnimationFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="197" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1_1___part_animation_1a0581b6a3f7658cb4f9e1d35326f21f13" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short BxTween::_PartAnimation::AnimationFrameBegin</definition>
+        <argsstring></argsstring>
+        <name>AnimationFrameBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="198" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a341c182ac3b17542748968ffd8b62f22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxTween::_PartAnimation::IsShow</definition>
+        <argsstring>()</argsstring>
+        <name>IsShow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="201" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a5dbac57029e7994fbee3936c8aee826b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxTween::_PartAnimation::GetMoverX</definition>
+        <argsstring>()</argsstring>
+        <name>GetMoverX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="202" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a8ab0ab9b832b5120da5256f2d3be6da8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxTween::_PartAnimation::GetMoverY</definition>
+        <argsstring>()</argsstring>
+        <name>GetMoverY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="203" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a4b363048539d69439f10cb2d92fb1ae3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxTween::_PartAnimation::GetRunAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>GetRunAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="204" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a2b368b1d0d0bdf7af4d9032da5b0e8f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::SetRunAnimation</definition>
+        <argsstring>(bool Value)</argsstring>
+        <name>SetRunAnimation</name>
+        <param>
+          <type>bool</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="205" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a25f5e412a7d5bfbc3b389e4417132e60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxTween::_PartAnimation::GetEndAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>GetEndAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="206" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="206" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1af1e48a089c572530270bf05b8ce59efc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::SetEndAnimation</definition>
+        <argsstring>(bool Value)</argsstring>
+        <name>SetEndAnimation</name>
+        <param>
+          <type>bool</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="207" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1ac971285810b846bc4b7af617a7f85757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::SetOpacity</definition>
+        <argsstring>(const int Opacity, const int Step, const int End)</argsstring>
+        <name>SetOpacity</name>
+        <param>
+          <type>const int</type>
+          <declname>Opacity</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Step</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>End</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="209" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="209" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1ace10cc6596fbfd395902d3271934835e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::SetTarget</definition>
+        <argsstring>(const int AddX, const int AddY)</argsstring>
+        <name>SetTarget</name>
+        <param>
+          <type>const int</type>
+          <declname>AddX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>AddY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="215" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="215" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a15144f2e97cd4821cfc182622685824e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::PullTarget</definition>
+        <argsstring>(const int Step, int End)</argsstring>
+        <name>PullTarget</name>
+        <param>
+          <type>const int</type>
+          <declname>Step</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>End</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="221" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="221" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1aa1048e24d5ce1a9f9cbd5c2e90aa8d32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::ResetTarget</definition>
+        <argsstring>(const bool Enable, const int PosX, const int PosY)</argsstring>
+        <name>ResetTarget</name>
+        <param>
+          <type>const bool</type>
+          <declname>Enable</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>PosX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>PosY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="228" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="228" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1ac810b23ffa4c8e4e431269f112b5f867" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::ResetAnimation</definition>
+        <argsstring>(const bool IsBeginByPrev, const int Opacity, const int BeginX, const int BeginY, const int CalcValue, const int WindAngle, const int BeginFrame)</argsstring>
+        <name>ResetAnimation</name>
+        <param>
+          <type>const bool</type>
+          <declname>IsBeginByPrev</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>Opacity</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>BeginX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>BeginY</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>CalcValue</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>WindAngle</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>BeginFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="239" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="239" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1_1___part_animation_1a951d421fc590a863589357f46ad971b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::_PartAnimation::ClearAnimation</definition>
+        <argsstring>(bool AniFinished)</argsstring>
+        <name>ClearAnimation</name>
+        <param>
+          <type>bool</type>
+          <declname>AniFinished</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="263" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" line="176" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTween.hpp" bodystart="175" bodyend="268"/>
+    <listofallmembers>
+      <member refid="class_bx_tween_1_1___part_animation_1a732101e837aee01892a3ecd0d9993835" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationCalcValue</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a9bb918383abdada13093cac3e946c386" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationFrame</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a0581b6a3f7658cb4f9e1d35326f21f13" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationFrameBegin</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ae917467a5ef6efcd11bd2044f3671987" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationGravityVector</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ae7170f28dea2d430c2dddb8ddd7dd8a6" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationMoverAddX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1af5447cd66bf035176a4cd274b8535b49" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationMoverAddY</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a8785da452085ec9117aecb26f75e441b" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationMoverX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a8fac0620c2d7307821bf0e9452946f79" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationMoverY</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ae69f6be3111b3e204c6138f6e2137732" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationOpacity</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a7596f211eacbafe3a37156476798678f" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationTargetAddX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ac5c40a48f40b0ff00f02f4270a5b13c6" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationTargetAddY</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1abd5741455c7b61e70606b593a3c15b2a" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationTargetX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1afa2d9a4ab46d260983c3b0632066742a" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationTargetY</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a2269d1a23905993362dcd314207e45b3" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>AnimationWindAngle</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a951d421fc590a863589357f46ad971b9" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>ClearAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a044e3d0d4b19b4458f4aad3d9451f6bd" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>FirstOpacity</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a25f5e412a7d5bfbc3b389e4417132e60" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>GetEndAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a5dbac57029e7994fbee3936c8aee826b" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>GetMoverX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a8ab0ab9b832b5120da5256f2d3be6da8" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>GetMoverY</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a4b363048539d69439f10cb2d92fb1ae3" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>GetRunAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a062b12098136f37dd32f380cd73cbd60" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>IsAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a8c78d5263390ee2457516c2082143aa9" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>IsEnable</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a341c182ac3b17542748968ffd8b62f22" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>IsShow</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a20b88a9c6bd9cb2bd7aa5d47af85ce54" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>MoverX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1af1838cd1d31aaec86983c88bdbc31350" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>MoverY</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a15144f2e97cd4821cfc182622685824e" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>PullTarget</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ac810b23ffa4c8e4e431269f112b5f867" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>ResetAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1aa1048e24d5ce1a9f9cbd5c2e90aa8d32" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>ResetTarget</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1af1e48a089c572530270bf05b8ce59efc" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>SetEndAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ac971285810b846bc4b7af617a7f85757" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>SetOpacity</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a2b368b1d0d0bdf7af4d9032da5b0e8f6" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>SetRunAnimation</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1ace10cc6596fbfd395902d3271934835e" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>SetTarget</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a0ddf2167689c3b51cbe74e492790b8f4" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>TargetX</name></member>
+      <member refid="class_bx_tween_1_1___part_animation_1a56439fac4a288af238e03ea0ad474c30" prot="public" virt="non-virtual"><scope>BxTween::_PartAnimation</scope><name>TargetY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

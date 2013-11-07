@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_dynamic" kind="namespace">
+    <compoundname>BxDynamic</compoundname>
+    <innerclass refid="class_bx_dynamic_1_1_resource" prot="public">BxDynamic::Resource</innerclass>
+    <innerclass refid="class_bx_dynamic_1_1_serialize" prot="public">BxDynamic::Serialize</innerclass>
+    <briefdescription>
+<para>동적관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

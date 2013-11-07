@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="structcolor__bgra" kind="struct" prot="public">
+    <compoundname>color_bgra</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcolor__bgra_1a185b5f51f613c51582d7919f5eb4f122" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte color_bgra::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcolor__bgra_1a1f3856f400816a47920c630786c19634" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte color_bgra::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcolor__bgra_1a4bcf11c0cbf1f54fd687280a2aa462be" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte color_bgra::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcolor__bgra_1a9bb27091144616bbd8e16fc51c594b38" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte color_bgra::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>color_bgra구조체 : b, g, r, a </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" line="77" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxType.hpp" bodystart="77" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structcolor__bgra_1a9bb27091144616bbd8e16fc51c594b38" prot="public" virt="non-virtual"><scope>color_bgra</scope><name>a</name></member>
+      <member refid="structcolor__bgra_1a185b5f51f613c51582d7919f5eb4f122" prot="public" virt="non-virtual"><scope>color_bgra</scope><name>b</name></member>
+      <member refid="structcolor__bgra_1a1f3856f400816a47920c630786c19634" prot="public" virt="non-virtual"><scope>color_bgra</scope><name>g</name></member>
+      <member refid="structcolor__bgra_1a4bcf11c0cbf1f54fd687280a2aa462be" prot="public" virt="non-virtual"><scope>color_bgra</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

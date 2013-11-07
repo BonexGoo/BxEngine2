@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_express_1_1_integer" kind="class" prot="public">
+    <compoundname>BxExpress::Integer</compoundname>
+    <basecompoundref refid="class_bx_express_1_1___integer" prot="public" virt="non-virtual">BxExpress::_Integer</basecompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a59f9f8e1d65b2841d6c57f9e198ed5d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class _Float</definition>
+        <argsstring></argsstring>
+        <name>_Float</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1ab69dbd14ab2419ea1bdffb62e0785df2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Float</definition>
+        <argsstring></argsstring>
+        <name>Float</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="91" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a1ed1d2067eea8b80b7ac76050ca6f9ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator+</definition>
+        <argsstring>(const int v1, const _Integer &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1afc6249e8f760746009de2a73154c74ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator+</definition>
+        <argsstring>(const _Integer &amp;v1, const int v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a6e0acbcc60277fc1cb41dc188e51e9d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator+</definition>
+        <argsstring>(const _Integer &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a818a43e50cf568d3e6a5e7d243ddb93b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator-</definition>
+        <argsstring>(const int v1, const _Integer &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a6b0e8d2129db524a274e1ed88eb0008a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator-</definition>
+        <argsstring>(const _Integer &amp;v1, const int v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1af1d3dfdb0e83e3be38777767fc5be7cf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator-</definition>
+        <argsstring>(const _Integer &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a6390809a9b7323f6f060194c9958c6b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator*</definition>
+        <argsstring>(const int v1, const _Integer &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1aea999f74dbf31a42681e99199521b5c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator*</definition>
+        <argsstring>(const _Integer &amp;v1, const int v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1a872fdafc4baa69c77df810e04c45e421" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator*</definition>
+        <argsstring>(const _Integer &amp;v1, const _Integer &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1af59a5615900406684ca98d9c0d19be04" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator/</definition>
+        <argsstring>(const int v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1acaa9c1449ac8d5e7707767edfb88c5ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator/</definition>
+        <argsstring>(const huge v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const huge</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_integer_1ab9bf10531b3eb5ec89b86556c85ac7ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer operator/</definition>
+        <argsstring>(const _Integer &amp;v1, const IntegerX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1a0bdd1ca5b7458fe4e3959e5b1b332b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::Integer::Integer</definition>
+        <argsstring>()</argsstring>
+        <name>Integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="105" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1ade4d64574f9f13610d0c0c59fea36b47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::Integer::Integer</definition>
+        <argsstring>(const Integer &amp;v)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="106" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1a1511d6d6b6bd2632231f817a69168264" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::Integer::Integer</definition>
+        <argsstring>(const _Integer &amp;v)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="107" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1a694b13985a6dd05737b51cd39b4b0097" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::Integer::operator-</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="110" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1a441ba485dfb5a46a4e80c034ba76f1b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::Integer::operator&lt;&lt;</definition>
+        <argsstring>(const int v) const </argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="111" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1ae00948de543028ab4fd90e77b04eab86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref></type>
+        <definition>Integer BxExpress::Integer::operator&gt;&gt;</definition>
+        <argsstring>(const int v) const </argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>const int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="112" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1ae8700b8e4342aee04220bd5aa68f35e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref> &amp;</type>
+        <definition>Integer&amp; BxExpress::Integer::operator=</definition>
+        <argsstring>(const _Integer &amp;v)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="113" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1a9db2ae99baf587f514b17352decec55e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>VALUE</declname>
+            <defname>VALUE</defname>
+          </param>
+        </templateparamlist>
+        <type>global_func const <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref> &amp;</type>
+        <definition>global_func const Integer&amp; BxExpress::Integer::Make</definition>
+        <argsstring>()</argsstring>
+        <name>Make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="115" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_express_1_1_integer_1a324b0ca05f96b0bd004dc3c6d9b49ff0" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::Integer::Integer</definition>
+        <argsstring>(const int v, void *)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type>const int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="108" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="115">
+        <label>BxExpress::_Integer</label>
+        <link refid="class_bx_express_1_1___integer"/>
+      </node>
+      <node id="114">
+        <label>BxExpress::Integer</label>
+        <link refid="class_bx_express_1_1_integer"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>BxExpress::_Integer</label>
+        <link refid="class_bx_express_1_1___integer"/>
+      </node>
+      <node id="116">
+        <label>BxExpress::Integer</label>
+        <link refid="class_bx_express_1_1_integer"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="88" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_bx_express_1_1_integer_1a59f9f8e1d65b2841d6c57f9e198ed5d5" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>_Float</name></member>
+      <member refid="class_bx_express_1_1_integer_1ab69dbd14ab2419ea1bdffb62e0785df2" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>Float</name></member>
+      <member refid="class_bx_express_1_1_integer_1a0bdd1ca5b7458fe4e3959e5b1b332b88" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>Integer</name></member>
+      <member refid="class_bx_express_1_1_integer_1ade4d64574f9f13610d0c0c59fea36b47" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>Integer</name></member>
+      <member refid="class_bx_express_1_1_integer_1a1511d6d6b6bd2632231f817a69168264" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>Integer</name></member>
+      <member refid="class_bx_express_1_1_integer_1a324b0ca05f96b0bd004dc3c6d9b49ff0" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>Integer</name></member>
+      <member refid="class_bx_express_1_1_integer_1a9db2ae99baf587f514b17352decec55e" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>Make</name></member>
+      <member refid="class_bx_express_1_1___integer_1a428fb4191242aeef42d4d6958df50c9f" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator int</name></member>
+      <member refid="class_bx_express_1_1___integer_1a6dda60125aae12fef00e34471a242a0b" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator!=</name></member>
+      <member refid="class_bx_express_1_1_integer_1a6390809a9b7323f6f060194c9958c6b7" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator*</name></member>
+      <member refid="class_bx_express_1_1_integer_1aea999f74dbf31a42681e99199521b5c1" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator*</name></member>
+      <member refid="class_bx_express_1_1_integer_1a872fdafc4baa69c77df810e04c45e421" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator*</name></member>
+      <member refid="class_bx_express_1_1_integer_1a1ed1d2067eea8b80b7ac76050ca6f9ab" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator+</name></member>
+      <member refid="class_bx_express_1_1_integer_1afc6249e8f760746009de2a73154c74ce" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator+</name></member>
+      <member refid="class_bx_express_1_1_integer_1a6e0acbcc60277fc1cb41dc188e51e9d7" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator+</name></member>
+      <member refid="class_bx_express_1_1_integer_1a818a43e50cf568d3e6a5e7d243ddb93b" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator-</name></member>
+      <member refid="class_bx_express_1_1_integer_1a6b0e8d2129db524a274e1ed88eb0008a" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator-</name></member>
+      <member refid="class_bx_express_1_1_integer_1af1d3dfdb0e83e3be38777767fc5be7cf" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator-</name></member>
+      <member refid="class_bx_express_1_1_integer_1a694b13985a6dd05737b51cd39b4b0097" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator-</name></member>
+      <member refid="class_bx_express_1_1_integer_1af59a5615900406684ca98d9c0d19be04" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1_integer_1acaa9c1449ac8d5e7707767edfb88c5ef" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1_integer_1ab9bf10531b3eb5ec89b86556c85ac7ea" prot="private" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1___integer_1a64613fbe37e51fb91680a8920839d6cf" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator&lt;</name></member>
+      <member refid="class_bx_express_1_1_integer_1a441ba485dfb5a46a4e80c034ba76f1b0" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_bx_express_1_1___integer_1a2ac24860469abd207f5f1058b6e25a1c" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator&lt;=</name></member>
+      <member refid="class_bx_express_1_1_integer_1ae8700b8e4342aee04220bd5aa68f35e5" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator=</name></member>
+      <member refid="class_bx_express_1_1___integer_1a11e7088d9b797f2cac26ddaf4ad57c17" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator==</name></member>
+      <member refid="class_bx_express_1_1___integer_1ac8a253fdb2f8f2fc8940277d94d4dd84" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator&gt;</name></member>
+      <member refid="class_bx_express_1_1___integer_1ac3f817a0642bb72277b2a683d854aebe" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator&gt;=</name></member>
+      <member refid="class_bx_express_1_1_integer_1ae00948de543028ab4fd90e77b04eab86" prot="public" virt="non-virtual"><scope>BxExpress::Integer</scope><name>operator&gt;&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

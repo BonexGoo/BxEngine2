@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_keyword" kind="class" prot="public">
+    <compoundname>BxKeyword</compoundname>
+    <includes refid="_bx_keyword_8hpp" local="no">BxKeyword.hpp</includes>
+    <innerclass refid="class_bx_keyword_1_1_access" prot="public">BxKeyword::Access</innerclass>
+    <innerclass refid="class_bx_keyword_1_1_check" prot="public">BxKeyword::Check</innerclass>
+    <innerclass refid="class_bx_keyword_1_1_clone" prot="public">BxKeyword::Clone</innerclass>
+    <innerclass refid="class_bx_keyword_1_1_event" prot="public">BxKeyword::Event</innerclass>
+    <innerclass refid="class_bx_keyword_1_1_number" prot="public">BxKeyword::Number</innerclass>
+    <innerclass refid="class_bx_keyword_1_1_radio" prot="public">BxKeyword::Radio</innerclass>
+    <innerclass refid="class_bx_keyword_1_1_string" prot="public">BxKeyword::String</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_keyword_1a65e7af0e50755913d431ee5435d27659" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxKeyword::FileName</definition>
+        <argsstring></argsstring>
+        <name>FileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_keyword_1aab00fdc35d9c8590687b19ef49a680b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_keyword" kindref="compound">BxKeyword</ref> &gt; &amp;</type>
+        <definition>global_func BxVar&lt;BxKeyword&gt;&amp; BxKeyword::LetPool</definition>
+        <argsstring>()</argsstring>
+        <name>LetPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a9aae6abea63d78669397cc706526a87e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func uint</type>
+        <definition>global_func uint BxKeyword::MakeParentID</definition>
+        <argsstring>(bool IsAdd=true)</argsstring>
+        <name>MakeParentID</name>
+        <param>
+          <type>bool</type>
+          <declname>IsAdd</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_keyword_1a62b19b76c2826d7967a76370e31986d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::BxKeyword</definition>
+        <argsstring>()</argsstring>
+        <name>BxKeyword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="38" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a6565be680e8b1902d262615b8b8e6968" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxKeyword::~BxKeyword</definition>
+        <argsstring>()</argsstring>
+        <name>~BxKeyword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="39" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a46e982e9b353a59e26f9a9c0736cc5bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxKeyword::IsLoaded</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>IsLoaded</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1afac5d1167e075ff47ab0db1ec5b008c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxKeyword::Load</definition>
+        <argsstring>(string filename, callback_event method=null)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>callback_event</type>
+          <declname>method</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="50" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a1be4f611b844668118c044861d0e9262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxKeyword::LoadScript</definition>
+        <argsstring>(string buffer, callback_event method)</argsstring>
+        <name>LoadScript</name>
+        <param>
+          <type>string</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>callback_event</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="76" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="76" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a2a45e50edc6783a9014413a32c070d55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxKeyword::Save</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>Save</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="234" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a40d4e2744f72d75661afe15509420e63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxKeyword::IsExist</definition>
+        <argsstring>(keyword type, string name)</argsstring>
+        <name>IsExist</name>
+        <param>
+          <type>keyword</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="334" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="334" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a0580d95328777d5a07208185544928a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxKeyword::CallEvent</definition>
+        <argsstring>(string name)</argsstring>
+        <name>CallEvent</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="347" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="347" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a56d0d3dee638963338594f0b5bd2142d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxKeyword::MakeEvent</definition>
+        <argsstring>(string name, string value, callback_event method)</argsstring>
+        <name>MakeEvent</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>callback_event</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="355" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="355" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_keyword_1a804f00a9ff384dfad80cc1f830790e84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxKeyword::MakeRadio</definition>
+        <argsstring>(string names, int value)</argsstring>
+        <name>MakeRadio</name>
+        <param>
+          <type>string</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="362" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="362" bodyend="379"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>직렬자료 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="26" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="25" bodyend="487"/>
+    <listofallmembers>
+      <member refid="class_bx_keyword_1a62b19b76c2826d7967a76370e31986d8" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>BxKeyword</name></member>
+      <member refid="class_bx_keyword_1a0580d95328777d5a07208185544928a8" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>CallEvent</name></member>
+      <member refid="class_bx_keyword_1a65e7af0e50755913d431ee5435d27659" prot="private" virt="non-virtual"><scope>BxKeyword</scope><name>FileName</name></member>
+      <member refid="class_bx_keyword_1a40d4e2744f72d75661afe15509420e63" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>IsExist</name></member>
+      <member refid="class_bx_keyword_1a46e982e9b353a59e26f9a9c0736cc5bf" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>IsLoaded</name></member>
+      <member refid="class_bx_keyword_1aab00fdc35d9c8590687b19ef49a680b2" prot="private" virt="non-virtual"><scope>BxKeyword</scope><name>LetPool</name></member>
+      <member refid="class_bx_keyword_1afac5d1167e075ff47ab0db1ec5b008c9" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>Load</name></member>
+      <member refid="class_bx_keyword_1a1be4f611b844668118c044861d0e9262" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>LoadScript</name></member>
+      <member refid="class_bx_keyword_1a56d0d3dee638963338594f0b5bd2142d" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>MakeEvent</name></member>
+      <member refid="class_bx_keyword_1a9aae6abea63d78669397cc706526a87e" prot="private" virt="non-virtual"><scope>BxKeyword</scope><name>MakeParentID</name></member>
+      <member refid="class_bx_keyword_1a804f00a9ff384dfad80cc1f830790e84" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>MakeRadio</name></member>
+      <member refid="class_bx_keyword_1a2a45e50edc6783a9014413a32c070d55" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>Save</name></member>
+      <member refid="class_bx_keyword_1a6565be680e8b1902d262615b8b8e6968" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>~BxKeyword</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_draw_form" kind="class" prot="public" abstract="yes">
+    <compoundname>BxDrawForm</compoundname>
+    <derivedcompoundref refid="class_bx_image" prot="public" virt="non-virtual">BxImage</derivedcompoundref>
+    <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72" prot="public" static="no">
+        <name>blendflag</name>
+        <enumvalue id="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72a8563ba5053a0ceb5f1608a7bdb5c069e" prot="public">
+          <name>blendflag_null</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72ab5f76397166f518190b126748b01c997" prot="public">
+          <name>blendflag_alpha</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72a6f53b8eb99f8b90d16cb1ffe300972ec" prot="public">
+          <name>blendflag_sprite</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_draw_form_1aa700fab07f95364a45eb412ccec42732" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxDrawForm::OnFormMethod)(BxDrawForm &amp;srcClass, const rect srcRect, pixel_dst *rowBuffer, const uint rowLength, const fint x, const fint y, const fint xVec, const fint yVec, const byte *blendSpriteTable, const byte *blendAlphaTable)</definition>
+        <argsstring>)(BxDrawForm &amp;srcClass, const rect srcRect, pixel_dst *rowBuffer, const uint rowLength, const fint x, const fint y, const fint xVec, const fint yVec, const byte *blendSpriteTable, const byte *blendAlphaTable)</argsstring>
+        <name>OnFormMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_draw_form_1af616c4211cceebbb554d99147f6114e4" prot="protected" static="no" mutable="no">
+        <type><ref refid="structarea" kindref="compound">area</ref></type>
+        <definition>area BxDrawForm::Area</definition>
+        <argsstring></argsstring>
+        <name>Area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="14" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_draw_form_1a2463aa95307f6160d22251d81d7c240c" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref></type>
+        <definition>BxExpress::IntegerX BxDrawForm::ExpressAreaW</definition>
+        <argsstring></argsstring>
+        <name>ExpressAreaW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="15" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_draw_form_1ab972aee1625a25721deb39143a99e95d" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref></type>
+        <definition>BxExpress::IntegerX BxDrawForm::ExpressAreaH</definition>
+        <argsstring></argsstring>
+        <name>ExpressAreaH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_draw_form_1a02412d82f4a96319097716454ac98dac" prot="protected" static="no" mutable="no">
+        <type>blendflag</type>
+        <definition>blendflag BxDrawForm::Flag</definition>
+        <argsstring></argsstring>
+        <name>Flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_draw_form_1abafb61197ac20cf2d6fe3c8e85c391ee" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxDrawForm::Page</definition>
+        <argsstring></argsstring>
+        <name>Page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_draw_form_1a12fbb099c9969bc1fb7fa4d36adab0ae" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxDrawForm::FrameBegin</definition>
+        <argsstring></argsstring>
+        <name>FrameBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bx_draw_form_1af39f52e363990526ac073c4a1701a78b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDrawForm::BxDrawForm</definition>
+        <argsstring>()</argsstring>
+        <name>BxDrawForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1abb9f0ef6503e6dbfdd7a5c307df5d642" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxDrawForm::~BxDrawForm</definition>
+        <argsstring>()</argsstring>
+        <name>~BxDrawForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1aeb788b0ccf0d251c4bc031b0cf94a44b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxDrawForm::OnFormNoPrint</definition>
+        <argsstring>(BxDrawForm &amp;, const rect, pixel_dst *, const uint, const fint, const fint, const fint, const fint, const byte *, const byte *)</argsstring>
+        <name>OnFormNoPrint</name>
+        <param>
+          <type><ref refid="class_bx_draw_form" kindref="compound">BxDrawForm</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
+        </param>
+        <param>
+          <type>pixel_dst *</type>
+        </param>
+        <param>
+          <type>const uint</type>
+        </param>
+        <param>
+          <type>const fint</type>
+        </param>
+        <param>
+          <type>const fint</type>
+        </param>
+        <param>
+          <type>const fint</type>
+        </param>
+        <param>
+          <type>const fint</type>
+        </param>
+        <param>
+          <type>const byte *</type>
+        </param>
+        <param>
+          <type>const byte *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_draw_form_1a6a410519a56049dcbf8d639a3acf2fba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxDrawForm::Width</definition>
+        <argsstring>()</argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a44a464b3b4dfd26dfbcb1d57f03945e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxDrawForm::Height</definition>
+        <argsstring>()</argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="46" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a411c74fcd70675279a9cd1353370712f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref> &amp;</type>
+        <definition>const BxExpress::IntegerX&amp; BxDrawForm::ExpressWidth</definition>
+        <argsstring>()</argsstring>
+        <name>ExpressWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1adba6cd397fb21e07f783968b8da38c58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref> &amp;</type>
+        <definition>const BxExpress::IntegerX&amp; BxDrawForm::ExpressHeight</definition>
+        <argsstring>()</argsstring>
+        <name>ExpressHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a8b970823310d2f3af10e1b0020feb909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structarea" kindref="compound">area</ref> *</type>
+        <definition>const area* BxDrawForm::GetArea</definition>
+        <argsstring>()</argsstring>
+        <name>GetArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a5307e14238ed2408e0b8190967be37fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDrawForm::SetHotspot</definition>
+        <argsstring>(const int hx, const int hy)</argsstring>
+        <name>SetHotspot</name>
+        <param>
+          <type>const int</type>
+          <declname>hx</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>hy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a32479fcf0756bc0ca08de6b6a04d2c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxDrawForm::GetPage</definition>
+        <argsstring>()</argsstring>
+        <name>GetPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="51" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a2cb3267f2a97b4e3c4e2be1f10c662f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxDrawForm::GetFrameBegin</definition>
+        <argsstring>()</argsstring>
+        <name>GetFrameBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a9431a75520e742977e045d4faa76e53c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDrawForm::SetAnimationFrame</definition>
+        <argsstring>(int Frame)</argsstring>
+        <name>SetAnimationFrame</name>
+        <param>
+          <type>int</type>
+          <declname>Frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a91ae5bafff24402b45040491381e051c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const int</type>
+        <definition>global_func const int BxDrawForm::CalcTextureSize</definition>
+        <argsstring>(const int RealSize)</argsstring>
+        <name>CalcTextureSize</name>
+        <param>
+          <type>const int</type>
+          <declname>RealSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="55" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a588f796aff3db08ec24b8657336b1089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const int</type>
+        <definition>global_func const int BxDrawForm::CalcTextureLevel</definition>
+        <argsstring>(int TextureSize)</argsstring>
+        <name>CalcTextureLevel</name>
+        <param>
+          <type>int</type>
+          <declname>TextureSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="67" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_form_1a894380e5a77f9e96caa29712f6a49cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>OnFormMethod</type>
+        <definition>virtual OnFormMethod BxDrawForm::GetFormMethod</definition>
+        <argsstring>(maskoperate operate, maskflag flag)=0</argsstring>
+        <name>GetFormMethod</name>
+        <reimplementedby refid="class_bx_image_1a713d62bb72baec2908aaf1e35059790d">GetFormMethod</reimplementedby>
+        <param>
+          <type>maskoperate</type>
+          <declname>operate</declname>
+        </param>
+        <param>
+          <type>maskflag</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>새로운 폼개발을 위한 인터페이스 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>BxImage</label>
+        <link refid="class_bx_image"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>BxDrawForm</label>
+        <link refid="class_bx_draw_form"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="35">
+        <label>BxExpress::_Integer</label>
+        <link refid="class_bx_express_1_1___integer"/>
+      </node>
+      <node id="33">
+        <label>BxDrawForm</label>
+        <link refid="class_bx_draw_form"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>ExpressAreaW</edgelabel>
+          <edgelabel>ExpressAreaH</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>Area</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>BxExpress::IntegerX</label>
+        <link refid="class_bx_express_1_1_integer_x"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="6" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_bx_draw_form_1af616c4211cceebbb554d99147f6114e4" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>Area</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>blendflag</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72ab5f76397166f518190b126748b01c997" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>blendflag_alpha</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72a8563ba5053a0ceb5f1608a7bdb5c069e" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>blendflag_null</name></member>
+      <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72a6f53b8eb99f8b90d16cb1ffe300972ec" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>blendflag_sprite</name></member>
+      <member refid="class_bx_draw_form_1af39f52e363990526ac073c4a1701a78b" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>BxDrawForm</name></member>
+      <member refid="class_bx_draw_form_1a588f796aff3db08ec24b8657336b1089" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>CalcTextureLevel</name></member>
+      <member refid="class_bx_draw_form_1a91ae5bafff24402b45040491381e051c" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>CalcTextureSize</name></member>
+      <member refid="class_bx_draw_form_1ab972aee1625a25721deb39143a99e95d" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>ExpressAreaH</name></member>
+      <member refid="class_bx_draw_form_1a2463aa95307f6160d22251d81d7c240c" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>ExpressAreaW</name></member>
+      <member refid="class_bx_draw_form_1adba6cd397fb21e07f783968b8da38c58" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>ExpressHeight</name></member>
+      <member refid="class_bx_draw_form_1a411c74fcd70675279a9cd1353370712f" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>ExpressWidth</name></member>
+      <member refid="class_bx_draw_form_1a02412d82f4a96319097716454ac98dac" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>Flag</name></member>
+      <member refid="class_bx_draw_form_1a12fbb099c9969bc1fb7fa4d36adab0ae" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>FrameBegin</name></member>
+      <member refid="class_bx_draw_form_1a8b970823310d2f3af10e1b0020feb909" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>GetArea</name></member>
+      <member refid="class_bx_draw_form_1a894380e5a77f9e96caa29712f6a49cbe" prot="public" virt="pure-virtual"><scope>BxDrawForm</scope><name>GetFormMethod</name></member>
+      <member refid="class_bx_draw_form_1a2cb3267f2a97b4e3c4e2be1f10c662f4" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>GetFrameBegin</name></member>
+      <member refid="class_bx_draw_form_1a32479fcf0756bc0ca08de6b6a04d2c93" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>GetPage</name></member>
+      <member refid="class_bx_draw_form_1a44a464b3b4dfd26dfbcb1d57f03945e6" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>Height</name></member>
+      <member refid="class_bx_draw_form_1aa700fab07f95364a45eb412ccec42732" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>OnFormMethod</name></member>
+      <member refid="class_bx_draw_form_1aeb788b0ccf0d251c4bc031b0cf94a44b" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>OnFormNoPrint</name></member>
+      <member refid="class_bx_draw_form_1abafb61197ac20cf2d6fe3c8e85c391ee" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>Page</name></member>
+      <member refid="class_bx_draw_form_1a9431a75520e742977e045d4faa76e53c" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>SetAnimationFrame</name></member>
+      <member refid="class_bx_draw_form_1a5307e14238ed2408e0b8190967be37fb" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>SetHotspot</name></member>
+      <member refid="class_bx_draw_form_1a6a410519a56049dcbf8d639a3acf2fba" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>Width</name></member>
+      <member refid="class_bx_draw_form_1abb9f0ef6503e6dbfdd7a5c307df5d642" prot="protected" virt="virtual"><scope>BxDrawForm</scope><name>~BxDrawForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_pool" kind="class" prot="public">
+    <compoundname>BxPool</compoundname>
+    <includes refid="_bx_pool_8hpp" local="no">BxPool.hpp</includes>
+    <innerclass refid="class_bx_pool_1_1_unit" prot="private">BxPool::Unit</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_pool_1aa9b8a9d407cffc9c1acbaab0ec417d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func TYPE *</type>
+        <definition>global_func TYPE* BxPool&lt; TYPE &gt;::Make</definition>
+        <argsstring>()</argsstring>
+        <name>Make</name>
+        <briefdescription>
+<para>템플릿단위 하나의 메모리공간 할당 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>할당된 메모리포인터, 초기화 없음 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_pool_1a43a524743c418a38543f93e279c43b4e" kindref="member">Free</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="100" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="100" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1a43a524743c418a38543f93e279c43b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxPool&lt; TYPE &gt;::Free</definition>
+        <argsstring>(TYPE *Ptr)</argsstring>
+        <name>Free</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>Ptr</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_bx_pool_1aa9b8a9d407cffc9c1acbaab0ec417d65" kindref="member">Make()</ref>로 생성된 메모리공간 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 반환시킬 메모리포인터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>반환성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_pool_1aa9b8a9d407cffc9c1acbaab0ec417d65" kindref="member">Make</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="123" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="123" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func TYPE *</type>
+        <definition>global_func TYPE* BxPool&lt; TYPE &gt;::MakeClass</definition>
+        <argsstring>()</argsstring>
+        <name>MakeClass</name>
+        <briefdescription>
+<para>템플릿단위 하나의 메모리공간 할당 및 생성자호출 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>할당된 메모리포인터 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member">FreeClass</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="136" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxPool&lt; TYPE &gt;::FreeClass</definition>
+        <argsstring>(TYPE *Ptr)</argsstring>
+        <name>FreeClass</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>Ptr</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_bx_pool_1a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" kindref="member">MakeClass()</ref>로 생성된 메모리공간 반환 및 소멸자호출 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 반환시킬 메모리포인터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>반환성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_pool_1a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" kindref="member">MakeClass</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="147" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_pool_1a4478c0d2d62843db08d0729d045999e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func Unit &amp;</type>
+        <definition>global_func Unit&amp; BxPool&lt; TYPE &gt;::PoolBegin</definition>
+        <argsstring>()</argsstring>
+        <name>PoolBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="205" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="205" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1a8801ec27a3878da79e86a425201c4570" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func Unit *&amp;</type>
+        <definition>global_func Unit*&amp; BxPool&lt; TYPE &gt;::PoolFocus</definition>
+        <argsstring>()</argsstring>
+        <name>PoolFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="217" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_1a00b842ac1821035bfac392b4bc3194bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func Unit *</type>
+        <definition>global_func Unit* BxPool&lt; TYPE &gt;::FindUnit</definition>
+        <argsstring>(TYPE *Ptr)</argsstring>
+        <name>FindUnit</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>Ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="223" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>사용자모듈을 위한 풀링도구 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp" bodystart="92" bodyend="240"/>
+    <listofallmembers>
+      <member refid="class_bx_pool_1a00b842ac1821035bfac392b4bc3194bc" prot="private" virt="non-virtual"><scope>BxPool</scope><name>FindUnit</name></member>
+      <member refid="class_bx_pool_1a43a524743c418a38543f93e279c43b4e" prot="public" virt="non-virtual"><scope>BxPool</scope><name>Free</name></member>
+      <member refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" prot="public" virt="non-virtual"><scope>BxPool</scope><name>FreeClass</name></member>
+      <member refid="class_bx_pool_1aa9b8a9d407cffc9c1acbaab0ec417d65" prot="public" virt="non-virtual"><scope>BxPool</scope><name>Make</name></member>
+      <member refid="class_bx_pool_1a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" prot="public" virt="non-virtual"><scope>BxPool</scope><name>MakeClass</name></member>
+      <member refid="class_bx_pool_1a4478c0d2d62843db08d0729d045999e7" prot="private" virt="non-virtual"><scope>BxPool</scope><name>PoolBegin</name></member>
+      <member refid="class_bx_pool_1a8801ec27a3878da79e86a425201c4570" prot="private" virt="non-virtual"><scope>BxPool</scope><name>PoolFocus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

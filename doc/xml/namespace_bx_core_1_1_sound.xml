@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_sound" kind="namespace">
+    <compoundname>BxCore::Sound</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1afdb4f5ce1bf8fd5d6fe945ccef3d5309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_sound</type>
+        <definition>id_sound BxCore::Sound::Create</definition>
+        <argsstring>(string filename, bool autoload=true)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>autoload</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>사운드ID 할당(icf상의 [game]SoundCacheSize내에서 할당) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명(mid, mp3, aac, qcp, wav) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>autoload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 자동로딩해제시스템 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>사운드ID(null은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1a6b955c392b411972ca91efd87c35fe8e" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="319" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a6b955c392b411972ca91efd87c35fe8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::Release</definition>
+        <argsstring>(id_sound sound)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>id_sound</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+<para>사운드ID 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 사운드ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1afdb4f5ce1bf8fd5d6fe945ccef3d5309" kindref="member">Create</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1ae5f64a6ec2d340776d3db3961b123f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::PlayMusic</definition>
+        <argsstring>(id_sound sound, bool interrupt=false, const BxThrow &amp;panorama=BxThrow::zero())</argsstring>
+        <name>PlayMusic</name>
+        <param>
+          <type>id_sound</type>
+          <declname>sound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>interrupt</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <declname>panorama</declname>
+          <defval><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member">BxThrow::zero</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>배경음 출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 사운드ID(파노라마시 첫번째 사운드ID) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력중인 사운드ID를 즉시 중지시키고 새로 출력 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>panorama</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파노라마로 추가될 사운드ID들 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1af8a207c266081ae3271f65c62eb60af3" kindref="member">StopMusic</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1af8a207c266081ae3271f65c62eb60af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::StopMusic</definition>
+        <argsstring>()</argsstring>
+        <name>StopMusic</name>
+        <briefdescription>
+<para>배경음 중지 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1ae5f64a6ec2d340776d3db3961b123f58" kindref="member">PlayMusic</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a7ad143b76624bcfeccda99f889eeb009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::SetMusicVolume</definition>
+        <argsstring>(uint percent)</argsstring>
+        <name>SetMusicVolume</name>
+        <param>
+          <type>uint</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+<para>배경음 볼륨 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 백분율(디폴트값 100) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a6e42e6f184cca12f6cf0df5272426e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::PlayEffect</definition>
+        <argsstring>(id_sound sound, bool interrupt=false)</argsstring>
+        <name>PlayEffect</name>
+        <param>
+          <type>id_sound</type>
+          <declname>sound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>interrupt</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>효과음 출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 사운드ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interrupt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력중인 효과음중 동일한 사운드ID가 있을때 즉시 중지시키고 새로 출력 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1a2b76f9d1cd3074a151ca96b8eb3bfea2" kindref="member">StopEffect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="355" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a2b76f9d1cd3074a151ca96b8eb3bfea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::StopEffect</definition>
+        <argsstring>()</argsstring>
+        <name>StopEffect</name>
+        <briefdescription>
+<para>모든 효과음 중지 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1a6e42e6f184cca12f6cf0df5272426e6c" kindref="member">PlayEffect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1af15db88c483a17d15554a266445c2e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::SetEffectVolume</definition>
+        <argsstring>(uint percent)</argsstring>
+        <name>SetEffectVolume</name>
+        <param>
+          <type>uint</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+<para>효과음 볼륨 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 백분율(디폴트값 100) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a3aec21a0c95d090d4e7d14c755a21193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::PauseAll</definition>
+        <argsstring>()</argsstring>
+        <name>PauseAll</name>
+        <briefdescription>
+<para>전체 배경음/효과음 일시정지 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a7d386c2bb173df20750b012f56647c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::ResumeAll</definition>
+        <argsstring>()</argsstring>
+        <name>ResumeAll</name>
+        <briefdescription>
+<para>전체 배경음/효과음 일시정지 해제 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="377" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sound파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="311" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_telex_1_1_log" kind="class" prot="private" abstract="yes">
+    <compoundname>BxTelex::Log</compoundname>
+    <derivedcompoundref refid="class_bx_telex_1_1_command" prot="public" virt="non-virtual">BxTelex::Command</derivedcompoundref>
+    <derivedcompoundref refid="class_bx_telex_1_1_report" prot="public" virt="non-virtual">BxTelex::Report</derivedcompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_telex_1_1_log_1ae33fd6c6a0ca8bbc63d7f10262e65532" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BxPool&lt; Log &gt;</definition>
+        <argsstring></argsstring>
+        <name>BxPool&lt; Log &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="396" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_telex_1_1_log_1a7eabb4b5ecfe2e4fbf139b3d94240e23" prot="protected" static="no" mutable="no">
+        <type>BxTelex::Type</type>
+        <definition>BxTelex::Type BxTelex::Log::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="410" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1_1_log_1a46c0191a5d98735702c34e537f3af4b4" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string BxTelex::Log::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="411" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1_1_log_1a7474e3723b180bcc9d20f5e5d3132ac9" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string BxTelex::Log::Default</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="412" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1a99499c3b1a498f7bc77c06585f1964a4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxTelex::Log::Log</definition>
+        <argsstring>()</argsstring>
+        <name>Log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="414" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="414" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1a670cca618b280a5bcf0d2b892b9d1c6a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxTelex::Log::Log</definition>
+        <argsstring>(BxTelex::Type type, string name, string defaultValue)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>BxTelex::Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="415" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="415" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1a038807ef8beb087da065625e6380c2fc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxTelex::Log::~Log</definition>
+        <argsstring>()</argsstring>
+        <name>~Log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="420" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="420" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1a0b6222ba7351a506a5c5c665baa44721" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool BxTelex::Log::RemoveByPool</definition>
+        <argsstring>(BxVar&lt; TYPE &gt; &amp;Pool)</argsstring>
+        <name>RemoveByPool</name>
+        <param>
+          <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; TYPE &gt; &amp;</type>
+          <declname>Pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="425" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="425" bodyend="436"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1aa7bef34bccedbeaa37a3fdfe43f75956" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint</type>
+        <definition>virtual uint BxTelex::Log::GetType</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1af2f6113c5258eb12694a85581a768a1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxTelex::Log::GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="438" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="438" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1_1_log_1a2181ecfc5a9b299388924545f655f514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxTelex::Log::GetDefault</definition>
+        <argsstring>()</argsstring>
+        <name>GetDefault</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="439" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="439" bodyend="439"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="135">
+        <label>BxTelex::Report</label>
+        <link refid="class_bx_telex_1_1_report"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>BxTelex::Log</label>
+      </node>
+      <node id="134">
+        <label>BxTelex::Command</label>
+        <link refid="class_bx_telex_1_1_command"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="408" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="407" bodyend="440"/>
+    <listofallmembers>
+      <member refid="class_bx_telex_1_1_log_1ae33fd6c6a0ca8bbc63d7f10262e65532" prot="private" virt="non-virtual"><scope>BxTelex::Log</scope><name>BxPool&lt; Log &gt;</name></member>
+      <member refid="class_bx_telex_1_1_log_1a7474e3723b180bcc9d20f5e5d3132ac9" prot="protected" virt="non-virtual"><scope>BxTelex::Log</scope><name>Default</name></member>
+      <member refid="class_bx_telex_1_1_log_1a2181ecfc5a9b299388924545f655f514" prot="public" virt="non-virtual"><scope>BxTelex::Log</scope><name>GetDefault</name></member>
+      <member refid="class_bx_telex_1_1_log_1af2f6113c5258eb12694a85581a768a1e" prot="public" virt="non-virtual"><scope>BxTelex::Log</scope><name>GetName</name></member>
+      <member refid="class_bx_telex_1_1_log_1aa7bef34bccedbeaa37a3fdfe43f75956" prot="public" virt="pure-virtual"><scope>BxTelex::Log</scope><name>GetType</name></member>
+      <member refid="class_bx_telex_1_1_log_1a99499c3b1a498f7bc77c06585f1964a4" prot="protected" virt="non-virtual"><scope>BxTelex::Log</scope><name>Log</name></member>
+      <member refid="class_bx_telex_1_1_log_1a670cca618b280a5bcf0d2b892b9d1c6a" prot="protected" virt="non-virtual"><scope>BxTelex::Log</scope><name>Log</name></member>
+      <member refid="class_bx_telex_1_1_log_1a46c0191a5d98735702c34e537f3af4b4" prot="protected" virt="non-virtual"><scope>BxTelex::Log</scope><name>Name</name></member>
+      <member refid="class_bx_telex_1_1_log_1a0b6222ba7351a506a5c5c665baa44721" prot="protected" virt="non-virtual"><scope>BxTelex::Log</scope><name>RemoveByPool</name></member>
+      <member refid="class_bx_telex_1_1_log_1a7eabb4b5ecfe2e4fbf139b3d94240e23" prot="protected" virt="non-virtual"><scope>BxTelex::Log</scope><name>Type</name></member>
+      <member refid="class_bx_telex_1_1_log_1a038807ef8beb087da065625e6380c2fc" prot="protected" virt="virtual"><scope>BxTelex::Log</scope><name>~Log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

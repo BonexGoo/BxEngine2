@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_font" kind="namespace">
+    <compoundname>BxCore::Font</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_font</type>
+        <definition>id_font BxCore::Font::Open</definition>
+        <argsstring>(string filename, const int pointsize, const int numCacheGlyphs=-1)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointsize</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numCacheGlyphs</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>폰트열기(파일) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 글자크기 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numCacheGlyphs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 빠른출력을 위한 캐시수(icf의 [gxfont] CacheTextureMaxSize보다 작아야 함, -1은 자동처리) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>폰트ID(null은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member">Close</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="756" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a0aee13633464e7673e33976e4855f636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_font</type>
+        <definition>id_font BxCore::Font::Open</definition>
+        <argsstring>(const byte *buffer, const int buffersize, const int pointsize, const int numCacheGlyphs=-1)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const byte *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>buffersize</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointsize</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numCacheGlyphs</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>폰트열기(버퍼) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffersize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF버퍼사이즈 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 글자크기 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numCacheGlyphs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 빠른출력을 위한 캐시수(icf의 [gxfont] CacheTextureMaxSize보다 작아야 함, -1은 자동처리) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>폰트ID(null은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member">Close</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="767" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::Close</definition>
+        <argsstring>(id_font font)</argsstring>
+        <name>Close</name>
+        <param>
+          <type>id_font</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>폰트닫기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="774" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::SetEncoding</definition>
+        <argsstring>(fontencoding encoding)</argsstring>
+        <name>SetEncoding</name>
+        <param>
+          <type>fontencoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>인코딩방식 설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인코딩 코드 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" kindref="member">SetSort</ref>, <ref refid="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" kindref="member">SetStyle</ref>, <ref refid="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" kindref="member">GetSize</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="781" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fontsort</type>
+        <definition>fontsort BxCore::Font::SetSort</definition>
+        <argsstring>(fontsort sort)</argsstring>
+        <name>SetSort</name>
+        <param>
+          <type>fontsort</type>
+          <declname>sort</declname>
+        </param>
+        <briefdescription>
+<para>정렬방식 설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fontsort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 숫자키패드 방식 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>정렬방식 이전값 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" kindref="member">SetEncoding</ref>, <ref refid="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" kindref="member">SetStyle</ref>, <ref refid="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" kindref="member">GetSize</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="789" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::SetStyle</definition>
+        <argsstring>(bool underline, bool italic)</argsstring>
+        <name>SetStyle</name>
+        <param>
+          <type>bool</type>
+          <declname>underline</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>italic</declname>
+        </param>
+        <briefdescription>
+<para>스타일 설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>underline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 밑줄 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>italic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이탤릭체 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" kindref="member">SetEncoding</ref>, <ref refid="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" kindref="member">SetSort</ref>, <ref refid="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" kindref="member">GetSize</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="797" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsize" kindref="compound">size</ref></type>
+        <definition>size BxCore::Font::GetSize</definition>
+        <argsstring>(id_font font, string str, const size s=size::full())</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>id_font</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsize" kindref="compound">size</ref></type>
+          <declname>s</declname>
+          <defval>size::full()</defval>
+        </param>
+        <briefdescription>
+<para>사이즈 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 지정공간 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 스트링의 출력사이즈 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" kindref="member">SetEncoding</ref>, <ref refid="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" kindref="member">SetSort</ref>, <ref refid="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" kindref="member">SetStyle</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="807" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a08159673a1a3269082f9a3a1bc90eb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::Draw</definition>
+        <argsstring>(id_font font, string str, const point p, const size s=size::full(), const color_x888 color=0, const byte opacity=0xFF)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>id_font</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsize" kindref="compound">size</ref></type>
+          <declname>s</declname>
+          <defval>size::full()</defval>
+        </param>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>opacity</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+<para>스트링 출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력위치 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 지정공간 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 색상 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 불투명도 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="818" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Font파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="747" column="1"/>
+  </compounddef>
+</doxygen>

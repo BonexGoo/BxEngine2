@@ -1,0 +1,60 @@
+[s3e]
+MemSize     =40000000
+MemSizeBx   =20000000
+MemSizeDebug=40000000
+SysStackSize=1280000
+SysGlesVersion=2
+MemMgrMaxAllocWarning=0
+SysAppNeverSleep=1
+IOSDispScaleFactor=200
+DispFixRot=Landscape #Free|Portrait|Landscape|FixedPortrait|FixedLandscape
+WinTitle=BxSimulator
+WinPosX=10000
+WinPosY=10000
+WinWidth=814 #800+7+7
+WinHeight=525 #480+38+7
+WinFullScreen=0
+WinAllowAltEnter=1
+SplashscreenBkR=0
+SplashscreenBkG=0
+SplashscreenBkB=0
+{OS=WINDOWS}
+DisableGL=0
+{}
+
+[util]
+MemMgrMaxAllocWarning=0
+
+[resmanager]
+ResBuild=0
+
+[trace]
+ALL=0
+IWCRT_VERBOSE=0
+DERBH_VERBOSE=0
+
+[gx]
+Rasterisation=HW
+Transform=HW
+Lighting=HW
+UploadStreams=1
+FreeStreamData=0
+DisplayFramerate=0
+GLMipmapOffset=0
+PolyBufferSize=100000
+DataCacheSize=640000
+VertCacheSize=20000
+DataCacheSizeHW=2560000
+VertCacheSizeHW=30000
+NumTPages=128
+NumTPageFreeRects=50
+UseRgbLighting=1
+ScreenOrientAutoHandled=0 #for iOS
+
+[gxfont]
+TextureMaxSize=1024
+CacheTextureMaxSize=1024
+EnableTTFKerning=1
+
+[gl]
+AllowNoDepthBufferClear=1

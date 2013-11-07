@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="dir_bb8de3a4455dbd189bf6e04aa4a17949" kind="dir">
+    <compoundname>bxlib</compoundname>
+    <innerfile refid="_bx_animate_8hpp">BxAnimate.hpp</innerfile>
+    <innerfile refid="_bx_auto_buffer_8hpp">BxAutoBuffer.hpp</innerfile>
+    <innerfile refid="_bx_draw_8hpp">BxDraw.hpp</innerfile>
+    <innerfile refid="_bx_dynamic_8hpp">BxDynamic.hpp</innerfile>
+    <innerfile refid="_bx_express_8hpp">BxExpress.hpp</innerfile>
+    <innerfile refid="_bx_g_u_i_8hpp">BxGUI.hpp</innerfile>
+    <innerfile refid="_bx_image_8hpp">BxImage.hpp</innerfile>
+    <innerfile refid="_bx_keyword_8hpp">BxKeyword.hpp</innerfile>
+    <innerfile refid="_bx_main_8cpp">BxMain.cpp</innerfile>
+    <innerfile refid="_bx_memory_8hpp">BxMemory.hpp</innerfile>
+    <innerfile refid="_bx_path_find_8hpp">BxPathFind.hpp</innerfile>
+    <innerfile refid="_bx_pool_8hpp">BxPool.hpp</innerfile>
+    <innerfile refid="_bx_scene_8hpp">BxScene.hpp</innerfile>
+    <innerfile refid="_bx_singleton_8hpp">BxSingleton.hpp</innerfile>
+    <innerfile refid="_bx_string_8hpp">BxString.hpp</innerfile>
+    <innerfile refid="_bx_telex_8hpp">BxTelex.hpp</innerfile>
+    <innerfile refid="_bx_throw_8hpp">BxThrow.hpp</innerfile>
+    <innerfile refid="_bx_tween_8hpp">BxTween.hpp</innerfile>
+    <innerfile refid="_bx_type_8hpp">BxType.hpp</innerfile>
+    <innerfile refid="_bx_util_8hpp">BxUtil.hpp</innerfile>
+    <innerfile refid="_bx_var_8hpp">BxVar.hpp</innerfile>
+    <innerfile refid="_bx_var_map_8hpp">BxVarMap.hpp</innerfile>
+    <innerfile refid="_bx_var_vector_8hpp">BxVarVector.hpp</innerfile>
+    <innerfile refid="_bx_web_content_8hpp">BxWebContent.hpp</innerfile>
+    <innerfile refid="_bx_xml_8hpp">BxXml.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/"/>
+  </compounddef>
+</doxygen>

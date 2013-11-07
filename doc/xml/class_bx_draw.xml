@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_draw" kind="class" prot="public">
+    <compoundname>BxDraw</compoundname>
+    <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_draw_1a6e7cd38d7d7acac6b1ebc32687f18939" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool &amp;</type>
+        <definition>global_func bool&amp; BxDraw::IsActivated</definition>
+        <argsstring>()</argsstring>
+        <name>IsActivated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1200" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1200" bodyend="1200"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_draw_1a8428f4d8b7e8afcd637a75ca20a0d37c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDraw::BxDraw</definition>
+        <argsstring>()</argsstring>
+        <name>BxDraw</name>
+        <briefdescription>
+<para>기본생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1206" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1206" bodyend="1225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a76b4a684ffb3790d3f48795a5f6fb556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxDraw::~BxDraw</definition>
+        <argsstring>()</argsstring>
+        <name>~BxDraw</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1230" bodyend="1238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1ad082728129e5106507963d63f4a622e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pixel_dst *</type>
+        <definition>pixel_dst* BxDraw::GetBackBufferPtr</definition>
+        <argsstring>()</argsstring>
+        <name>GetBackBufferPtr</name>
+        <briefdescription>
+<para>현재 X축 기준좌표얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>X축 기준좌표</para></simplesect>
+현재 Y축 기준좌표얻기 <simplesect kind="return"><para>Y축 기준좌표</para></simplesect>
+현재 너비얻기 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isScreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: true-스크린, false-현재클리핑 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>너비</para></simplesect>
+현재 높이얻기 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isScreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: true-스크린, false-현재클리핑 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>높이</para></simplesect>
+백버퍼 주소얻기 <simplesect kind="return"><para>백버퍼 메모리주소 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1292" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1292" bodyend="1292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a0caa56d5fcda446e944fa1ffd397bd10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxDraw::GetBackBufferPitch</definition>
+        <argsstring>()</argsstring>
+        <name>GetBackBufferPitch</name>
+        <briefdescription>
+<para>백버퍼 피치정보얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>가로 한줄의 배열길이(바이트길이가 아님) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1298" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1298" bodyend="1298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::Area</definition>
+        <argsstring>(int x, int y, BxDrawGlobal::StyleStack count=BxDrawGlobal::StyleStack::Zero())</argsstring>
+        <name>Area</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+          <defval>BxDrawGlobal::StyleStack::Zero()</defval>
+        </param>
+        <briefdescription>
+<para>형식없는 기본출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력위치X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력위치Y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션(이미지는 FORM으로 가능), 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1306" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1306" bodyend="1330"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a9714a17e6dbafd6b247028cc71fc4e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::Rectangle</definition>
+        <argsstring>(BxDrawGlobal::option opt, rect r, BxDrawGlobal::StyleStack count=BxDrawGlobal::StyleStack::Zero())</argsstring>
+        <name>Rectangle</name>
+        <param>
+          <type>BxDrawGlobal::option</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type><ref refid="structrect" kindref="compound">rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+          <defval>BxDrawGlobal::StyleStack::Zero()</defval>
+        </param>
+        <briefdescription>
+<para>사각형출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: FILL-채움그리기, DRAW-틀그리기 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력영역 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션, 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1338" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1338" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a168e8d1d2da05734334fa946b01d5164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::PolygonSt</definition>
+        <argsstring>(BxDrawGlobal::option opt, points p, BxDrawGlobal::StyleStack count=BxDrawGlobal::StyleStack::Zero())</argsstring>
+        <name>PolygonSt</name>
+        <param>
+          <type>BxDrawGlobal::option</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type><ref refid="structpoints" kindref="compound">points</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+          <defval>BxDrawGlobal::StyleStack::Zero()</defval>
+        </param>
+        <briefdescription>
+<para>폴리곤출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: FILL-채움그리기, DRAW-틀그리기 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력영역(XYS, XYARRAY로 생성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션, 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1536" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1536" bodyend="1686"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1ab8b8696dd54b31dd17decf2690cc467c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::Polygon3D</definition>
+        <argsstring>(vertexs v, points uv, BxDrawGlobal::StyleStack count=BxDrawGlobal::StyleStack::Zero())</argsstring>
+        <name>Polygon3D</name>
+        <param>
+          <type><ref refid="structvertexs" kindref="compound">vertexs</ref></type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="structpoints" kindref="compound">points</ref></type>
+          <declname>uv</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+          <defval>BxDrawGlobal::StyleStack::Zero()</defval>
+        </param>
+        <briefdescription>
+<para>3D폴리곤출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 3차원 출력영역(XYZS, XYZARRAY로 생성) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 텍스쳐의 UV값(1 &lt;&lt; 12 기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션, 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1844" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1844" bodyend="1864"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1ad4b744b3e40c995d6360fb1807c3fbde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::Text</definition>
+        <argsstring>(id_font font, string str, rect r, BxDrawGlobal::StyleStack count=BxDrawGlobal::StyleStack::Zero())</argsstring>
+        <name>Text</name>
+        <param>
+          <type>id_font</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="structrect" kindref="compound">rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+          <defval>BxDrawGlobal::StyleStack::Zero()</defval>
+        </param>
+        <briefdescription>
+<para>텍스트출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력영역 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션, 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1873" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1873" bodyend="1887"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a52abea75c29b2a54bdf024e19d92be7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::Flush</definition>
+        <argsstring>(bool initOnly=false)</argsstring>
+        <name>Flush</name>
+        <param>
+          <type>bool</type>
+          <declname>initOnly</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>백버퍼를 화면에 출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initOnly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력없이 버퍼관련 초기화만 수행 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1893" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1893" bodyend="1919"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a24ca52e897cddbcbb44c8f4f1fc3cdac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxDraw::AddStyle</definition>
+        <argsstring>(BxDrawGlobal::StyleStack count)</argsstring>
+        <name>AddStyle</name>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>스타일옵션 스택추가 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션, 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1925" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1925" bodyend="1930"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1a5a5fd380e6a145fa2fab0e9d2b198c73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxDraw::AddStyleByIf</definition>
+        <argsstring>(BxDrawGlobal::StyleStack count, string buttonName=null)</argsstring>
+        <name>AddStyleByIf</name>
+        <param>
+          <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">BxDrawGlobal::StyleStack</ref></type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>buttonName</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>클리핑고려 스타일옵션 스택추가(if안에서 사용권장) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스타일옵션, 다중설정시 &gt;&gt;사용 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buttonName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 버튼명, 작성시 현재 클리핑영역으로 GUI이벤트 작동 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true-정상처리, false-클리핑되어 출력할 것이 없음(SubStyle 자동처리) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1938" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1938" bodyend="1958"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_draw_1aa42dd1d1c126a92ff578c3963a024dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxDraw::SubStyle</definition>
+        <argsstring>(bool doAll=false)</argsstring>
+        <name>SubStyle</name>
+        <param>
+          <type>bool</type>
+          <declname>doAll</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>스타일옵션 스택해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doAll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: true-전체스택해제, false-1회해제 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>try모듈을 위한 false전달 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1965" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1965" bodyend="1971"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OpenGL/SW랜더링기반 그리기도구 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" line="1199" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDraw.hpp" bodystart="1198" bodyend="2043"/>
+    <listofallmembers>
+      <member refid="class_bx_draw_1a24ca52e897cddbcbb44c8f4f1fc3cdac" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>AddStyle</name></member>
+      <member refid="class_bx_draw_1a5a5fd380e6a145fa2fab0e9d2b198c73" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>AddStyleByIf</name></member>
+      <member refid="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>Area</name></member>
+      <member refid="class_bx_draw_1a8428f4d8b7e8afcd637a75ca20a0d37c" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>BxDraw</name></member>
+      <member refid="class_bx_draw_1a52abea75c29b2a54bdf024e19d92be7e" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>Flush</name></member>
+      <member refid="class_bx_draw_1a0caa56d5fcda446e944fa1ffd397bd10" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>GetBackBufferPitch</name></member>
+      <member refid="class_bx_draw_1ad082728129e5106507963d63f4a622e8" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>GetBackBufferPtr</name></member>
+      <member refid="class_bx_draw_1a6e7cd38d7d7acac6b1ebc32687f18939" prot="private" virt="non-virtual"><scope>BxDraw</scope><name>IsActivated</name></member>
+      <member refid="class_bx_draw_1ab8b8696dd54b31dd17decf2690cc467c" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>Polygon3D</name></member>
+      <member refid="class_bx_draw_1a168e8d1d2da05734334fa946b01d5164" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>PolygonSt</name></member>
+      <member refid="class_bx_draw_1a9714a17e6dbafd6b247028cc71fc4e20" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>Rectangle</name></member>
+      <member refid="class_bx_draw_1aa42dd1d1c126a92ff578c3963a024dd7" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>SubStyle</name></member>
+      <member refid="class_bx_draw_1ad4b744b3e40c995d6360fb1807c3fbde" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>Text</name></member>
+      <member refid="class_bx_draw_1a76b4a684ffb3790d3f48795a5f6fb556" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>~BxDraw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

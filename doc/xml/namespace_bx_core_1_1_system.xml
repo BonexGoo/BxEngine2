@@ -1,0 +1,926 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_system" kind="namespace">
+    <compoundname>BxCore::System</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsQuit</definition>
+        <argsstring>()</argsstring>
+        <name>IsQuit</name>
+        <briefdescription>
+<para>어플종료 요청여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true-종료가 요청됨, false-종료요청 없음 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_system_1a76e419e00d7b54a666a81fbcf125ac0b" kindref="member">DoQuit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a76e419e00d7b54a666a81fbcf125ac0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::DoQuit</definition>
+        <argsstring>()</argsstring>
+        <name>DoQuit</name>
+        <briefdescription>
+<para>어플종료 요청 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kindref="member">IsQuit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::Sleep</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>Sleep</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>프로세스 슬립(밀린 소켓/키이벤트등 처리) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쉴 시간(1/1000초) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a59483b8ee9d089a74c7a9740852aa4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::System::GetTimerMilliSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimerMilliSecond</name>
+        <briefdescription>
+<para>현재시간을 밀리초로 구하기(천분의 1초) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/1,000초 단위로 계산된 현재시간(UTC기준) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aa6cf90144989774248381296f15b37ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::System::GetTimerNanoSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimerNanoSecond</name>
+        <briefdescription>
+<para>현재시간을 나노초로 구하기(10억분의 1초) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/1,000,000,000초 단위로 계산된 현재시간 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a85e8f80e498acf000999ea21f54d6df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::System::GetTimerSimilarMicroSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimerSimilarMicroSecond</name>
+        <briefdescription>
+<para>현재시간을 유사 마이크로초(나노초&gt;&gt;10)로 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/976,562초 단위로 계산된 현재시간 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ae89a8d48541b11a69ed90cf5076e2d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsMultiTouchAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>IsMultiTouchAvailable</name>
+        <briefdescription>
+<para>멀티터치 가능여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true-가능, false-불가능 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a86fbb372ea32b5ef24e6da6ed3bcfd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsTouchDown</definition>
+        <argsstring>()</argsstring>
+        <name>IsTouchDown</name>
+        <briefdescription>
+<para>터치의 현재 누름여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true-눌러짐, false-안눌러짐 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a510c9d39d960f5c707c117e9a62937fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::MakeTouchEvent</definition>
+        <argsstring>(systouchtype type, int x, int y)</argsstring>
+        <name>MakeTouchEvent</name>
+        <param>
+          <type>systouchtype</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>터치이벤트 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이벤트타입 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: X좌표값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Y좌표값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a230fc6a703a2c6e4aa9c9f220c3de98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsKeyDown</definition>
+        <argsstring>(keykind key)</argsstring>
+        <name>IsKeyDown</name>
+        <param>
+          <type>keykind</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>특정 키의 현재 누름여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 확인할 키값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true-눌러짐, false-안눌러짐 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ac714d932b1b27b88793c01f528752691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsExistConfig</definition>
+        <argsstring>(keyword type, string name)</argsstring>
+        <name>IsExistConfig</name>
+        <param>
+          <type>keyword</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>환경설정값 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수타입 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true-있음, false-없음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a233de8b9a6ff5a590555f6ef58033bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::GetConfigCheck</definition>
+        <argsstring>(string name, bool defaultCheck)</argsstring>
+        <name>GetConfigCheck</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>defaultCheck</declname>
+        </param>
+        <briefdescription>
+<para>Check형 환경설정값 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultCheck</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 디폴트값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::GetConfigNumber</definition>
+        <argsstring>(string name, int defaultNumber)</argsstring>
+        <name>GetConfigNumber</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultNumber</declname>
+        </param>
+        <briefdescription>
+<para>Number형 환경설정값 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 디폴트값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aaaf026f3d1f3df3ac0794f8adcf1c4f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetConfigString</definition>
+        <argsstring>(string name, string defaultString)</argsstring>
+        <name>GetConfigString</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>defaultString</declname>
+        </param>
+        <briefdescription>
+<para>String형 환경설정값 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 디폴트값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a7e6b5e614e1e3ed23733fb1f21f4d7dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::GetPlatformConfigNumber</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetPlatformConfigNumber</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>마멀레이드의 Number형 환경설정값(icf/s3e) 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a03bc3ee39c5c98605f0b1ae623722eff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetPlatformConfigString</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetPlatformConfigString</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>마멀레이드의 String형 환경설정값(icf/s3e) 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a981f57e5eb704d7f13cb40aff09395c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::SetSimulatorWindowPos</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>SetSimulatorWindowPos</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>시뮬레이터 윈도우위치설정(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a71ae7ed62da3df2c6fb54473529acfb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::System::GetSimulatorWindowPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetSimulatorWindowPos</name>
+        <briefdescription>
+<para>시뮬레이터 윈도우위치얻기(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>위치값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a7fb73d2ee4780e2463f3bd4d93cba8b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::System::GetSimulatorCursorPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetSimulatorCursorPos</name>
+        <briefdescription>
+<para>시뮬레이터 커서위치얻기(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>위치값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::DoSimulatorMinimize</definition>
+        <argsstring>()</argsstring>
+        <name>DoSimulatorMinimize</name>
+        <briefdescription>
+<para>시뮬레이터 최소화하기(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a1afedf60a29f8013d6d46205eb702526" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::Assert</definition>
+        <argsstring>(string name, bool &amp;IsIgnore, bool flag, string filename, int linenumber)</argsstring>
+        <name>Assert</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>IsIgnore</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linenumber</declname>
+        </param>
+        <briefdescription>
+<para>디버깅코드(Macro함수인 BxAssert로 사용권장) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 에러내용 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 정상동작여부(true-정상동작, false-오류동작) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 해당파일명(<bold>FILE</bold>을 사용) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linenumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 해당줄번호(<bold>LINE</bold>을 사용) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a7445f57ed8e6b3c7ccf18dcb02bb540e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxCore::System::GetOSName</definition>
+        <argsstring>()</argsstring>
+        <name>GetOSName</name>
+        <briefdescription>
+<para>OS이름 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자기 플랫폼의 OS이름(예: SYMBIAN, BREW, WINDOWS, WINMOBILE, LINUX, WIPI, IPHONE, ANDROID) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ae6255fafc82519bc7cfc01ab996d72c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxCore::System::GetArchitectureName</definition>
+        <argsstring>()</argsstring>
+        <name>GetArchitectureName</name>
+        <briefdescription>
+<para>아키텍쳐이름 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>컴파일된 아키텍쳐이름(예: ARM4T, ARM4, ARM5T, ARM5TE, ARM5TEJ, ARM6, ARM6K, ARM6T2, ARM6Z, ARM7, X86, PPC, AMD64, MIPS) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1af4162994ad1af5f2acc648ce736d883d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxCore::System::GetPhoneNumber</definition>
+        <argsstring>()</argsstring>
+        <name>GetPhoneNumber</name>
+        <briefdescription>
+<para>휴대폰번호 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자신의 휴대폰번호(예: 01022223333) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a0b095dd1b0208cbb637868fab91e5cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::PopupOSExecute</definition>
+        <argsstring>(string url, bool exitme)</argsstring>
+        <name>PopupOSExecute</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exitme</declname>
+        </param>
+        <briefdescription>
+<para>웹페이지연결 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 연결할 웹주소(예: market://search?q=pname:com.popcap.pvz, tstore://PRODUCT_VIEW/0000252470/1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exitme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 현재 프로그램의 종료여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1af8690955284b9503907f308014453b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::PopupOSKeyboard</definition>
+        <argsstring>(string_rw result_str256, string default_str=&quot;&quot;, string keyboard_name=&quot;&quot;, oskeyboardtype type=oskeyboardtype_base)</argsstring>
+        <name>PopupOSKeyboard</name>
+        <param>
+          <type>string_rw</type>
+          <declname>result_str256</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>default_str</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>keyboard_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>oskeyboardtype</type>
+          <declname>type</declname>
+          <defval>oskeyboardtype_base</defval>
+        </param>
+        <briefdescription>
+<para>가상키보드로 스트링얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result_str256</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 얻을 스트링(256짜리 배열권장) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>default_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 처음 에디터에 보일 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keyboard_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가상키보드의 이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 키보드종류(기본, 이메일, 숫자, 비번, 웹주소) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부(미지원 OS를 고려) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ac2473ebfc86c3766155c7193893b0ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::AddCallback</definition>
+        <argsstring>(callback_frame method, int value, void *data, int datasize=-1)</argsstring>
+        <name>AddCallback</name>
+        <param>
+          <type>callback_frame</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>datasize</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>프레임단위 정기적 콜백등록(참조식) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수(호출된 콜백함수에서 false리턴시 해제) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터원본 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datasize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: -1은 참조식, 0보다 같거나 크면 복사식(false리턴시 함께 해제) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aaed9632d5a8e7c639d4da18fafdf8e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::BeginChildProcess</definition>
+        <argsstring>(callback_process process)</argsstring>
+        <name>BeginChildProcess</name>
+        <param>
+          <type>callback_process</type>
+          <declname>process</declname>
+        </param>
+        <briefdescription>
+<para>자식프로세스의 실행 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>process</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로세스를 진행시킬 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>실행여부(여러개의 자식프로세스가 실행될 순 없으므로 false이면 실행거절) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a6052ebce9c1a6205aea2245dec1bdcad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsExistClassJNI</definition>
+        <argsstring>(string classpath)</argsstring>
+        <name>IsExistClassJNI</name>
+        <param>
+          <type>string</type>
+          <declname>classpath</declname>
+        </param>
+        <briefdescription>
+<para>JAVA클래스 존재확인 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스주소(예: com/abc/ABC) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>존재시 true, 없을시 false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a80802612df8ad8e204870b2e9ce444d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::CallStaticMethodJNI</definition>
+        <argsstring>(string classpath, string methodname, string param1_str1024, int param2)</argsstring>
+        <name>CallStaticMethodJNI</name>
+        <param>
+          <type>string</type>
+          <declname>classpath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>methodname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>param1_str1024</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>param2</declname>
+        </param>
+        <briefdescription>
+<para>C→JAVA 정적함수호출 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스주소(예: com/abc/ABC) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 함수이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param1_str1024</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달할 상수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>JAVA함수리턴값, -90001에서 -90002는 JNI연결실패, -90003은 classpath없음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aa721d486c3bd5d827a78b5ffb49dc2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::AddCallbackJNI</definition>
+        <argsstring>(string classpath, string methodname, callback_jni methodCB)</argsstring>
+        <name>AddCallbackJNI</name>
+        <param>
+          <type>string</type>
+          <declname>classpath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>methodname</declname>
+        </param>
+        <param>
+          <type>callback_jni</type>
+          <declname>methodCB</declname>
+        </param>
+        <briefdescription>
+<para>JAVA→C 콜백등록(최대 8개까지 등록) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스주소(예: com/abc/ABC) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 함수이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0-성공, -90001에서 -90002는 JNI연결실패, -90003은 classpath없음, -90004는 methodname없음, -90005는 콜백등록수량초과 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ab1e1b596a676fcce2dfd0d73cc568265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>callback_edk</type>
+        <definition>callback_edk BxCore::System::SetCallbackEDK</definition>
+        <argsstring>(callback_edk methodCB)</argsstring>
+        <name>SetCallbackEDK</name>
+        <param>
+          <type>callback_edk</type>
+          <declname>methodCB</declname>
+        </param>
+        <briefdescription>
+<para>EDK수신용 콜백등록(어떤 스레드에서 호출당하던지 엔진스레드로 비동기수신) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>methodCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EDK수신용 내부함수 전달 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="248" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

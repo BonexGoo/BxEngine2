@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_express_1_1_float_x" kind="class" prot="public">
+    <compoundname>BxExpress::FloatX</compoundname>
+    <basecompoundref refid="class_bx_express_1_1___float" prot="public" virt="non-virtual">BxExpress::_Float</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_express_1_1_float_x_1ad35f8dec1ccf82501c3eac73b2a2e61d" prot="private" static="no" mutable="yes">
+        <type>fint</type>
+        <definition>fint BxExpress::FloatX::InverseF</definition>
+        <argsstring></argsstring>
+        <name>InverseF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="242" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_express_1_1_float_x_1aa1d1a54616b1d90cfee3a6ffc0a31465" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float operator/</definition>
+        <argsstring>(const int v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const int</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_float_x_1abf09c35c5f50e36d48112f881c0167e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float operator/</definition>
+        <argsstring>(const huge v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const huge</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_float_x_1a73f28de1428aa55031d8a1f036a6b590" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float operator/</definition>
+        <argsstring>(const _Integer &amp;v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___integer" kindref="compound">_Integer</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_bx_express_1_1_float_x_1a8fb18ad153e3948e427948e02587b472" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref></type>
+        <definition>Float operator/</definition>
+        <argsstring>(const _Float &amp;v1, const FloatX &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1___float" kindref="compound">_Float</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="224" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a484a92f90871083408f5fff5db965974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::FloatX::FloatX</definition>
+        <argsstring>(const FloatX &amp;v)</argsstring>
+        <name>FloatX</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="226" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1ac457830666c6f58366a8a19cfbf1aa19" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::FloatX::FloatX</definition>
+        <argsstring>(const Float &amp;v)</argsstring>
+        <name>FloatX</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a35b3b77419aa88e20dc3a3d247b18b0a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::FloatX::FloatX</definition>
+        <argsstring>(const Integer &amp;v)</argsstring>
+        <name>FloatX</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="228" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1ad98d895c440a9dde60d673c7db2eea79" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::FloatX::FloatX</definition>
+        <argsstring>(const IntegerX &amp;v)</argsstring>
+        <name>FloatX</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="229" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a0278380599ee8d26c729ed264f509349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+        <definition>FloatX&amp; BxExpress::FloatX::operator=</definition>
+        <argsstring>(const FloatX &amp;v)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a55c048de6e273e0d4feb476fff53ec98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxExpress::FloatX::Reset</definition>
+        <argsstring>(const Float &amp;v)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a9a7e9c6befa96fecd001573d789fc0b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxExpress::FloatX::Reset</definition>
+        <argsstring>(const Integer &amp;v)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="238" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="238" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1ac0bdd5c89268f0980ceff694c273203f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>fint</type>
+            <declname>VALUE</declname>
+            <defname>VALUE</defname>
+          </param>
+        </templateparamlist>
+        <type>global_func const <ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+        <definition>global_func const FloatX&amp; BxExpress::FloatX::Make</definition>
+        <argsstring>()</argsstring>
+        <name>Make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="240" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="240" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1ac6f3afe99ec43244fded142cc43c472a" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxExpress::FloatX::FloatX</definition>
+        <argsstring>(const fint v, void *)</argsstring>
+        <name>FloatX</name>
+        <param>
+          <type>const fint</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1aedb16f877ae63f0655dff2df32e0e4e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+        <definition>FloatX&amp; BxExpress::FloatX::operator=</definition>
+        <argsstring>(const Float &amp;v)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_float" kindref="compound">Float</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="232" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="232" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a555c2943855717b78f1f99699f2f0376" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+        <definition>FloatX&amp; BxExpress::FloatX::operator=</definition>
+        <argsstring>(const Integer &amp;v)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer" kindref="compound">Integer</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1af20279de2f22d0d2a6552af3da00153b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_express_1_1_float_x" kindref="compound">FloatX</ref> &amp;</type>
+        <definition>FloatX&amp; BxExpress::FloatX::operator=</definition>
+        <argsstring>(const IntegerX &amp;v)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">IntegerX</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="235" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_express_1_1_float_x_1a3fe3c3e18c8a8cfea8281f4b105bfb6d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>fint</type>
+        <definition>fint BxExpress::FloatX::GetInverseF</definition>
+        <argsstring>() const </argsstring>
+        <name>GetInverseF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="243" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="243" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="101">
+        <label>BxExpress::_Float</label>
+        <link refid="class_bx_express_1_1___float"/>
+      </node>
+      <node id="100">
+        <label>BxExpress::FloatX</label>
+        <link refid="class_bx_express_1_1_float_x"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>BxExpress::_Float</label>
+        <link refid="class_bx_express_1_1___float"/>
+      </node>
+      <node id="102">
+        <label>BxExpress::FloatX</label>
+        <link refid="class_bx_express_1_1_float_x"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" line="220" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxExpress.hpp" bodystart="219" bodyend="244"/>
+    <listofallmembers>
+      <member refid="class_bx_express_1_1_float_x_1a484a92f90871083408f5fff5db965974" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>FloatX</name></member>
+      <member refid="class_bx_express_1_1_float_x_1ac457830666c6f58366a8a19cfbf1aa19" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>FloatX</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a35b3b77419aa88e20dc3a3d247b18b0a" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>FloatX</name></member>
+      <member refid="class_bx_express_1_1_float_x_1ad98d895c440a9dde60d673c7db2eea79" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>FloatX</name></member>
+      <member refid="class_bx_express_1_1_float_x_1ac6f3afe99ec43244fded142cc43c472a" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>FloatX</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a3fe3c3e18c8a8cfea8281f4b105bfb6d" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>GetInverseF</name></member>
+      <member refid="class_bx_express_1_1_float_x_1ad35f8dec1ccf82501c3eac73b2a2e61d" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>InverseF</name></member>
+      <member refid="class_bx_express_1_1_float_x_1ac0bdd5c89268f0980ceff694c273203f" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>Make</name></member>
+      <member refid="class_bx_express_1_1___float_1a1e64af1f585624cc42ea8ad2eb37c6ff" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator!=</name></member>
+      <member refid="class_bx_express_1_1_float_x_1aa1d1a54616b1d90cfee3a6ffc0a31465" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1_float_x_1abf09c35c5f50e36d48112f881c0167e5" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a73f28de1428aa55031d8a1f036a6b590" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a8fb18ad153e3948e427948e02587b472" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator/</name></member>
+      <member refid="class_bx_express_1_1___float_1a3809e980d2ab3b0b6499f58257ee25df" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator&lt;</name></member>
+      <member refid="class_bx_express_1_1___float_1a58d51a2408d96672606b659df3e51234" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator&lt;=</name></member>
+      <member refid="class_bx_express_1_1_float_x_1aedb16f877ae63f0655dff2df32e0e4e4" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator=</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a0278380599ee8d26c729ed264f509349" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator=</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a555c2943855717b78f1f99699f2f0376" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator=</name></member>
+      <member refid="class_bx_express_1_1_float_x_1af20279de2f22d0d2a6552af3da00153b" prot="private" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator=</name></member>
+      <member refid="class_bx_express_1_1___float_1a37c85e2504536abe5395aefa0a9ab991" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator==</name></member>
+      <member refid="class_bx_express_1_1___float_1a92357a267d8af0377ace61f2bb689f6c" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator&gt;</name></member>
+      <member refid="class_bx_express_1_1___float_1adbc61277f9cf0d57035ffd8a8c0f0969" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>operator&gt;=</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a55c048de6e273e0d4feb476fff53ec98" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>Reset</name></member>
+      <member refid="class_bx_express_1_1_float_x_1a9a7e9c6befa96fecd001573d789fc0b7" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>Reset</name></member>
+      <member refid="class_bx_express_1_1___float_1a55c08743c1662ddeae523ec746e5583f" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>ToFixFloat</name></member>
+      <member refid="class_bx_express_1_1___float_1a9c71f44d48cddde61e4254247c2e4a5c" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>ToInt</name></member>
+      <member refid="class_bx_express_1_1___float_1abf40523285ff91f48d1bbf5d5a34bedc" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>ToInteger</name></member>
+      <member refid="class_bx_express_1_1___float_1ac8749fd23445f066a65ad14c004749bd" prot="public" virt="non-virtual"><scope>BxExpress::FloatX</scope><name>ToIntegerX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

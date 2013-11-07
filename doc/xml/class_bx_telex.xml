@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_telex" kind="class" prot="public">
+    <compoundname>BxTelex</compoundname>
+    <includes refid="_bx_telex_8hpp" local="no">BxTelex.hpp</includes>
+    <innerclass refid="class_bx_telex_1_1_command" prot="public">BxTelex::Command</innerclass>
+    <innerclass refid="class_bx_telex_1_1_h_q" prot="public">BxTelex::HQ</innerclass>
+    <innerclass refid="class_bx_telex_1_1_log" prot="private">BxTelex::Log</innerclass>
+    <innerclass refid="class_bx_telex_1_1_report" prot="public">BxTelex::Report</innerclass>
+    <innerclass refid="class_bx_telex_1_1_updated_value" prot="private">BxTelex::UpdatedValue</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_telex_1a935d9927e944623abe2721e71800a091" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="class_bx_telex_1a935d9927e944623abe2721e71800a091ad62105c62fc3ea228a9e3a4be543b82d" prot="public">
+          <name>Field</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_telex_1a935d9927e944623abe2721e71800a091a616a2642ae45025237db7f404d6d36f2" prot="public">
+          <name>Check</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_telex_1a935d9927e944623abe2721e71800a091a0058511db9e9198aa63f7697b3f9fd1a" prot="public">
+          <name>Combo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_telex_1a935d9927e944623abe2721e71800a091a4b81c7cda2c6f82c8243359cca0af29e" prot="public">
+          <name>Timer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_telex_1a2c07fa230560a1b58bf99e6bc6ce3ea1" prot="public" static="no">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_telex_1_1_h_q" kindref="compound">HQ</ref> &gt;</type>
+        <definition>typedef BxVar&lt;HQ&gt; BxTelex::BxVarHQ</definition>
+        <argsstring></argsstring>
+        <name>BxVarHQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="15" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_telex_1a142188b192907b1525113bb150d610be" prot="public" static="no">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref> &gt;</type>
+        <definition>typedef BxVar&lt;Report&gt; BxTelex::BxVarReport</definition>
+        <argsstring></argsstring>
+        <name>BxVarReport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_telex_1a4859efec24b57da86dd12ea99f689887" prot="public" static="no">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>typedef BxVar&lt;Command&gt; BxTelex::BxVarCommand</definition>
+        <argsstring></argsstring>
+        <name>BxVarCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_telex_1af0572381ca878c841236b699f79e37cd" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* BxTelex::UpdateCommandCB)(BxTelex *telex, void *cbdata)</definition>
+        <argsstring>)(BxTelex *telex, void *cbdata)</argsstring>
+        <name>UpdateCommandCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_telex_1a1cf03974ad9cf6f1cbb09483af710a78" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BxMemory</definition>
+        <argsstring></argsstring>
+        <name>BxMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_telex_1ac8bfde9d6a2c31cfda27ec58e75576d7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTelex::TelexID</definition>
+        <argsstring></argsstring>
+        <name>TelexID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="91" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1a8283de17dd6f8a3a175e725f606ed1ae" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string BxTelex::ProjectName</definition>
+        <argsstring></argsstring>
+        <name>ProjectName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="92" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1a32dca036254041ec4a94b362eb9f6b2c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string BxTelex::PeerName</definition>
+        <argsstring></argsstring>
+        <name>PeerName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1a4c0a1bc30bc775672a05f24f58c1c781" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; UpdatedValue &gt;</type>
+        <definition>BxVarMap&lt;UpdatedValue&gt; BxTelex::ReportValues</definition>
+        <argsstring></argsstring>
+        <name>ReportValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="94" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1acc4bcf31955fde2cc7a58966e9c4a232" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; uint, 4 &gt;</type>
+        <definition>BxVarVector&lt;uint, 4&gt; BxTelex::ReportIDs</definition>
+        <argsstring></argsstring>
+        <name>ReportIDs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1ab43b1aaaa1d06b48664bb0e20b366fac" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; UpdatedValue &gt;</type>
+        <definition>BxVarMap&lt;UpdatedValue&gt; BxTelex::CommandValues</definition>
+        <argsstring></argsstring>
+        <name>CommandValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="96" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1a0e1551db6295fe884731e3fa137282ef" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; uint, 4 &gt;</type>
+        <definition>BxVarVector&lt;uint, 4&gt; BxTelex::CommandIDs</definition>
+        <argsstring></argsstring>
+        <name>CommandIDs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1a9f7eb6684f1ca7e8e5e96d88032a1b2f" prot="private" static="no" mutable="no">
+        <type>UpdateCommandCB</type>
+        <definition>UpdateCommandCB BxTelex::CB</definition>
+        <argsstring></argsstring>
+        <name>CB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="98" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_telex_1aecb55c829505681464e8998458829a5a" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* BxTelex::CBData</definition>
+        <argsstring></argsstring>
+        <name>CBData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_telex_1a50209457a5e437e3c4ffd8e07c6a455f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTelex::UpdateReportValue</definition>
+        <argsstring>(Report *report, string value)</argsstring>
+        <name>UpdateReportValue</name>
+        <param>
+          <type><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref> *</type>
+          <declname>report</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1adf016cd62520b28494e36e31efdf1e21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxTelex::GetReportValue</definition>
+        <argsstring>(Report *report, bool doFlush)</argsstring>
+        <name>GetReportValue</name>
+        <param>
+          <type><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref> *</type>
+          <declname>report</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doFlush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1ad7837ef5f2eedffcfbb1e306861e5c6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxTelex::GetDifferentedValue</definition>
+        <argsstring>(Report *report)</argsstring>
+        <name>GetDifferentedValue</name>
+        <param>
+          <type><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref> *</type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="33" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1ab5940504cc448428eab270709b843b43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxTelex::GetCommandValue</definition>
+        <argsstring>(Command *command)</argsstring>
+        <name>GetCommandValue</name>
+        <param>
+          <type><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="39" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1af1e8da037a867a279a114f1c6e41c437" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref> *</type>
+        <definition>Command* BxTelex::FindCommand</definition>
+        <argsstring>(bool updatedOnly)</argsstring>
+        <name>FindCommand</name>
+        <param>
+          <type>bool</type>
+          <declname>updatedOnly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1a97d098c17ef0e71c5c2e1a107a907aaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref> *</type>
+        <definition>Command* BxTelex::NextCommand</definition>
+        <argsstring>()</argsstring>
+        <name>NextCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1a29d240cce5a1075e534b075166eabf59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_telex" kindref="compound">BxTelex</ref> *</type>
+        <definition>global_func BxTelex* BxTelex::Create</definition>
+        <argsstring>(string projectname, string peername, const BxThrow &amp;reports, const BxThrow &amp;commands, UpdateCommandCB cb, void *cbdata)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>string</type>
+          <declname>projectname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>peername</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <declname>reports</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <declname>commands</declname>
+        </param>
+        <param>
+          <type>UpdateCommandCB</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cbdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="109" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="109" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1a60fe9bf219ce0f4d1dc0ba7921570a00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTelex::DestroyMe</definition>
+        <argsstring>(BxTelex *&amp;me)</argsstring>
+        <name>DestroyMe</name>
+        <param>
+          <type><ref refid="class_bx_telex" kindref="compound">BxTelex</ref> *&amp;</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="140" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="140" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_telex_1a6d2b2afaf52b351f8b36b0138817fbef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxTelex::BxTelex</definition>
+        <argsstring>()</argsstring>
+        <name>BxTelex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="101" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_telex_1ab771497159161d5fd8ff49d374be3251" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxTelex::~BxTelex</definition>
+        <argsstring>()</argsstring>
+        <name>~BxTelex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="102" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="102" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HQ서버연동 전보시스템 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxTelex.hpp" bodystart="10" bodyend="489"/>
+    <listofallmembers>
+      <member refid="class_bx_telex_1a1cf03974ad9cf6f1cbb09483af710a78" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>BxMemory</name></member>
+      <member refid="class_bx_telex_1a6d2b2afaf52b351f8b36b0138817fbef" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>BxTelex</name></member>
+      <member refid="class_bx_telex_1a4859efec24b57da86dd12ea99f689887" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>BxVarCommand</name></member>
+      <member refid="class_bx_telex_1a2c07fa230560a1b58bf99e6bc6ce3ea1" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>BxVarHQ</name></member>
+      <member refid="class_bx_telex_1a142188b192907b1525113bb150d610be" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>BxVarReport</name></member>
+      <member refid="class_bx_telex_1a9f7eb6684f1ca7e8e5e96d88032a1b2f" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>CB</name></member>
+      <member refid="class_bx_telex_1aecb55c829505681464e8998458829a5a" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>CBData</name></member>
+      <member refid="class_bx_telex_1a935d9927e944623abe2721e71800a091a616a2642ae45025237db7f404d6d36f2" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>Check</name></member>
+      <member refid="class_bx_telex_1a935d9927e944623abe2721e71800a091a0058511db9e9198aa63f7697b3f9fd1a" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>Combo</name></member>
+      <member refid="class_bx_telex_1a0e1551db6295fe884731e3fa137282ef" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>CommandIDs</name></member>
+      <member refid="class_bx_telex_1ab43b1aaaa1d06b48664bb0e20b366fac" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>CommandValues</name></member>
+      <member refid="class_bx_telex_1a29d240cce5a1075e534b075166eabf59" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>Create</name></member>
+      <member refid="class_bx_telex_1a60fe9bf219ce0f4d1dc0ba7921570a00" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>DestroyMe</name></member>
+      <member refid="class_bx_telex_1a935d9927e944623abe2721e71800a091ad62105c62fc3ea228a9e3a4be543b82d" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>Field</name></member>
+      <member refid="class_bx_telex_1af1e8da037a867a279a114f1c6e41c437" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>FindCommand</name></member>
+      <member refid="class_bx_telex_1ab5940504cc448428eab270709b843b43" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>GetCommandValue</name></member>
+      <member refid="class_bx_telex_1ad7837ef5f2eedffcfbb1e306861e5c6c" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>GetDifferentedValue</name></member>
+      <member refid="class_bx_telex_1adf016cd62520b28494e36e31efdf1e21" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>GetReportValue</name></member>
+      <member refid="class_bx_telex_1a97d098c17ef0e71c5c2e1a107a907aaa" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>NextCommand</name></member>
+      <member refid="class_bx_telex_1a32dca036254041ec4a94b362eb9f6b2c" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>PeerName</name></member>
+      <member refid="class_bx_telex_1a8283de17dd6f8a3a175e725f606ed1ae" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>ProjectName</name></member>
+      <member refid="class_bx_telex_1acc4bcf31955fde2cc7a58966e9c4a232" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>ReportIDs</name></member>
+      <member refid="class_bx_telex_1a4c0a1bc30bc775672a05f24f58c1c781" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>ReportValues</name></member>
+      <member refid="class_bx_telex_1ac8bfde9d6a2c31cfda27ec58e75576d7" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>TelexID</name></member>
+      <member refid="class_bx_telex_1a935d9927e944623abe2721e71800a091a4b81c7cda2c6f82c8243359cca0af29e" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>Timer</name></member>
+      <member refid="class_bx_telex_1a935d9927e944623abe2721e71800a091" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>Type</name></member>
+      <member refid="class_bx_telex_1af0572381ca878c841236b699f79e37cd" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>UpdateCommandCB</name></member>
+      <member refid="class_bx_telex_1a50209457a5e437e3c4ffd8e07c6a455f" prot="public" virt="non-virtual"><scope>BxTelex</scope><name>UpdateReportValue</name></member>
+      <member refid="class_bx_telex_1ab771497159161d5fd8ff49d374be3251" prot="private" virt="non-virtual"><scope>BxTelex</scope><name>~BxTelex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
