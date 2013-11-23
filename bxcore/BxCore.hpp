@@ -44,19 +44,19 @@ namespace BxCore
 		\brief 현재시간을 밀리초로 구하기(천분의 1초)
 		\return 1/1,000초 단위로 계산된 현재시간(UTC기준)
 		*/
-		uhuge GetTimerMilliSecond();
+		uhuge GetTimeMilliSecond();
 
 		/*!
 		\brief 현재시간을 나노초로 구하기(10억분의 1초)
 		\return 1/1,000,000,000초 단위로 계산된 현재시간
 		*/
-		uhuge GetTimerNanoSecond();
+		uhuge GetTimeNanoSecond();
 
 		/*!
 		\brief 현재시간을 유사 마이크로초(나노초>>10)로 구하기
 		\return 1/976,562초 단위로 계산된 현재시간
 		*/
-		uhuge GetTimerSimilarMicroSecond();
+		uhuge GetTimeSimilarMicroSecond();
 
 		/*!
 		\brief 멀티터치 가능여부
@@ -168,19 +168,31 @@ namespace BxCore
 		\brief OS이름 구하기
 		\return 자기 플랫폼의 OS이름(예: SYMBIAN, BREW, WINDOWS, WINMOBILE, LINUX, WIPI, IPHONE, ANDROID)
 		*/
-		string GetOSName();
+		string _tmp_ GetOSName();
 
 		/*!
 		\brief 아키텍쳐이름 구하기
 		\return 컴파일된 아키텍쳐이름(예: ARM4T, ARM4, ARM5T, ARM5TE, ARM5TEJ, ARM6, ARM6K, ARM6T2, ARM6Z, ARM7, X86, PPC, AMD64, MIPS)
 		*/
-		string GetArchitectureName();
+		string _tmp_ GetArchName();
 
 		/*!
 		\brief 휴대폰번호 구하기
 		\return 자신의 휴대폰번호(예: 01022223333)
 		*/
-		string GetPhoneNumber();
+		string _tmp_ GetPhoneNumber();
+
+		/*!
+		\brief 어플패키지 구하기
+		\return 자신의 어플패키지(예: com.bx.game)
+		*/
+		string _tmp_ GetAppPackage();
+
+		/*!
+		\brief 어플버전 구하기
+		\return 자신의 어플버전(예: 1.0.0)
+		*/
+		string _tmp_ GetAppVersion();
 
 		/*!
 		\brief 웹페이지연결
@@ -271,19 +283,19 @@ namespace BxCore
 
 		/*!
 		\brief 화면너비 구하기
-		\param isfixedvalue : icf의 SurfaceWidthBx를 적용한 고정사이즈 여부조사(null이면 생략)
+		\param isfixedvalue : icf의 SurfaceWidthBx를 적용한 고정사이즈 여부조사(nullptr이면 생략)
 		\param usemargin : Margin값 적용여부
 		\return 너비의 픽셀길이
 		*/
-		int GetWidth(bool* isfixedvalue = null, bool usemargin = true);
+		int GetWidth(bool* isfixedvalue = nullptr, bool usemargin = true);
 
 		/*!
 		\brief 화면높이 구하기
-		\param isfixedvalue : icf의 SurfaceHeightBx를 적용한 고정사이즈 여부조사(null이면 생략)
+		\param isfixedvalue : icf의 SurfaceHeightBx를 적용한 고정사이즈 여부조사(nullptr이면 생략)
 		\param usemargin : Margin값 적용여부
 		\return 높이의 픽셀길이
 		*/
-		int GetHeight(bool* isfixedvalue = null, bool usemargin = true);
+		int GetHeight(bool* isfixedvalue = nullptr, bool usemargin = true);
 
 		/*!
 		\brief 하드웨어적 화면너비 구하기
@@ -313,7 +325,7 @@ namespace BxCore
 		\brief 사운드ID 할당(icf상의 [game]SoundCacheSize내에서 할당)
 		\param filename : 파일명(mid, mp3, aac, qcp, wav)
 		\param autoload : 자동로딩해제시스템
-		\return 사운드ID(null은 실패)
+		\return 사운드ID(nullptr은 실패)
 		\see Release
 		*/
 		id_sound Create(string filename, bool autoload = true);
@@ -434,7 +446,7 @@ namespace BxCore
 		\param length : 구성된 스트링의 길이
 		\return 구성된 스트링
 		*/
-		string _tmp_ Print(string src, const BxThrow& args = BxThrow::zero(), int* length = null);
+		string _tmp_ Print(string src, const BxThrow& args = BxThrow::zero(), int* length = nullptr);
 
 		/*!
 		\brief 출력창에 스트링기록(Release도 사용하려면 mkb의 defines{}에 IW_USE_TRACING추가)
@@ -572,7 +584,7 @@ namespace BxCore
 		\param progress : 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출)
 		\return 읽은 바이트길이
 		*/
-		uint Read(id_file file, void* buffer, uint length, callback_progress progress = null);
+		uint Read(id_file file, void* buffer, uint length, callback_progress progress = nullptr);
 
 		/*!
 		\brief 파일로 쓰기
@@ -582,7 +594,7 @@ namespace BxCore
 		\param progress : 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출)
 		\return 쓴 바이트길이
 		*/
-		uint Write(id_file file, const void* buffer, uint length, callback_progress progress = null);
+		uint Write(id_file file, const void* buffer, uint length, callback_progress progress = nullptr);
 
 		/*!
 		\brief 파일로 스트링쓰기
@@ -591,7 +603,7 @@ namespace BxCore
 		\param progress : 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출)
 		\return 쓴 바이트길이
 		*/
-		uint WriteString(id_file file, string buffer, callback_progress progress = null);
+		uint WriteString(id_file file, string buffer, callback_progress progress = nullptr);
 
 		/*!
 		\brief 파일위치 스킵하기
@@ -664,7 +676,7 @@ namespace BxCore
 	{
 		/*!
 		\brief 소켓ID 할당
-		\return 소켓ID(null은 실패)
+		\return 소켓ID(nullptr은 실패)
 		\see Release, Connect
 		*/
 		id_socket Create();
@@ -693,7 +705,7 @@ namespace BxCore
 		\return 결과를 기다릴 경우 dowait_connected/dowait_disconnected, 안 기다릴 경우 connecting
 		\see Disconnect, GetState
 		*/
-		connectresult Connect(id_socket sock, string addr, ushort port, uint timeout = 0, callback_progress progress = null);
+		connectresult Connect(id_socket sock, string addr, ushort port, uint timeout = 0, callback_progress progress = nullptr);
 
 		/*!
 		\brief 서버와의 접속종료
@@ -750,7 +762,7 @@ namespace BxCore
 		\param filename : TTF파일명
 		\param pointsize : 글자크기
 		\param numCacheGlyphs : 빠른출력을 위한 캐시수(icf의 [gxfont] CacheTextureMaxSize보다 작아야 함, -1은 자동처리)
-		\return 폰트ID(null은 실패)
+		\return 폰트ID(nullptr은 실패)
 		\see Close
 		*/
 		id_font Open(string filename, const int pointsize, const int numCacheGlyphs = -1);
@@ -761,7 +773,7 @@ namespace BxCore
 		\param buffersize : TTF버퍼사이즈
 		\param pointsize : 글자크기
 		\param numCacheGlyphs : 빠른출력을 위한 캐시수(icf의 [gxfont] CacheTextureMaxSize보다 작아야 함, -1은 자동처리)
-		\return 폰트ID(null은 실패)
+		\return 폰트ID(nullptr은 실패)
 		\see Close
 		*/
 		id_font Open(const byte* buffer, const int buffersize, const int pointsize, const int numCacheGlyphs = -1);
@@ -782,7 +794,7 @@ namespace BxCore
 
 		/*!
 		\brief 정렬방식 설정
-		\param fontsort : 숫자키패드 방식
+		\param sort : 숫자키패드 방식
 		\return 정렬방식 이전값
 		\see SetEncoding, SetStyle, GetSize
 		*/
@@ -823,7 +835,7 @@ namespace BxCore
 		/*!
 		\brief 라이브러리 열기
 		\param filename : 파일명
-		\return 라이브러리ID(null은 실패)
+		\return 라이브러리ID(nullptr은 실패)
 		\see Close
 		*/
 		id_library Open(string filename);

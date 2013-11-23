@@ -23,7 +23,7 @@ private:
 		{
 			Data = data;
 			Size = size;
-			Next = null;
+			Next = nullptr;
 		}
 		~List()
 		{
@@ -32,7 +32,7 @@ private:
 	};
 	global_func inline List* BufferPoolFirst()
 	{
-		global_data List PoolList(null, 0);
+		global_data List PoolList(nullptr, 0);
 		return &PoolList;
 	}
 	global_func inline int& BufferPoolUsed()
@@ -54,7 +54,7 @@ protected:
 		LastTimeByUse = 0;
 		LockCountByUse = 0;
 		IsAutoRelease = true;
-		Buffer = null;
+		Buffer = nullptr;
 	}
 	~BxAutoBuffer()
 	{
@@ -65,7 +65,7 @@ protected:
 		if(doLock) ++LockCountByUse;
 		while(SecureBuffer(size));
 		BxAssert("BxAutoBuffer<이미 Buffer가 존재합니다>", !Buffer);
-		LastTimeByUse = BxCore::System::GetTimerMilliSecond();
+		LastTimeByUse = BxCore::System::GetTimeMilliSecond();
 		// 풀에 추가
 		BufferPoolUsed() += size;
 		List* AddPool = BxNew_Param(List, this, size);
@@ -88,16 +88,16 @@ protected:
 		BufferPoolUsed() -= FindPool->Next->Size;
 		List* SubPool = FindPool->Next;
 		FindPool->Next = SubPool->Next;
-		SubPool->Next = null;
+		SubPool->Next = nullptr;
 		BxDelete(SubPool);
 		// 버퍼해제
 		BxFree(Buffer);
-		Buffer = null;
+		Buffer = nullptr;
 	}
 	inline void* GetBuffer()
 	{
 		if(Buffer)
-			LastTimeByUse = BxCore::System::GetTimerMilliSecond();
+			LastTimeByUse = BxCore::System::GetTimeMilliSecond();
 		return Buffer;
 	}
 	inline void Lock()
@@ -123,7 +123,7 @@ private:
 			return false;
 		if(BufferPoolSize() < BufferPoolUsed() + size)
 		{
-			List* SubPool = null;
+			List* SubPool = nullptr;
 			uhuge LastTimeMax = 0;
 			List* FindPool = BufferPoolFirst();
 			while(FindPool = FindPool->Next)

@@ -94,7 +94,7 @@ syseventresult OnEvent(BxKeyboard& Data, const sysevent& Event)
 			return syseventresult_done;
 		}
 	}
-	else if(Event.type == syseventtype_key)
+	else if(Event.type == syseventtype_key && Data.UserString)
 	{
 		switch(Event.key.code)
 		{
@@ -122,7 +122,7 @@ syseventresult OnEvent(BxKeyboard& Data, const sysevent& Event)
 	}
 	else if(Event.type == syseventtype_touch)
 	{
-		Data.UserString = null;
+		Data.UserString = nullptr;
 		Data.IMEChars = "";
 		Data.IMETails = "";
 		Data.IMETemps = "";
@@ -158,7 +158,7 @@ syseventresult OnEvent(BxKeyboard& Data, const sysevent& Event)
 				IsButtonKorean = !IsButtonKorean;
 				break;
 			case 40: // ют╥б
-				Data.UserString = null;
+				Data.UserString = nullptr;
 				Data.IMEChars = "";
 				Data.IMETails = "";
 				Data.IMETemps = "";
@@ -228,7 +228,7 @@ void OnRender(BxKeyboard& Data, BxDraw& Draw)
 		const int iY = BeginY + ButtonH * ButtonY[i];
 		const int iW = RateX * ButtonW[i];
 		const int iH = ButtonH;
-		try(Draw, CLIP(XYWH(iX + Data.UIPos.x, iY + Data.UIPos.y, iW, iH)), BxString("KEY-%02d", null, i))
+		try(Draw, CLIP(XYWH(iX + Data.UIPos.x, iY + Data.UIPos.y, iW, iH)), BxString("KEY-%02d", nullptr, i))
 		{
 			try(Draw, CLIP(XYWH(Gap, Gap, Draw.Width() - Gap * 2, Draw.Height() - Gap * 2)))
 			{

@@ -22,13 +22,13 @@ public:
 	int AvgFrameRate;
 
 public:
-	BxSimulator() : NCWindowPos(point::zero()), NCClickPos(point::zero()), GUIFont(null)
+	BxSimulator() : NCWindowPos(point::zero()), NCClickPos(point::zero()), GUIFont(nullptr)
 	{
 		BxWebContent Web;
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"))
 		{
-			GUIFont = BxCore::Font::Open(BxString("%s/%s", null, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 8);
-			GUIFontMini = BxCore::Font::Open(BxString("%s/%s", null, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 6);
+			GUIFont = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 8);
+			GUIFontMini = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 6);
 		}
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.IMG-01-BONEC-000000.popup.png"))
 		{

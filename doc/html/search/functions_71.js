@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['query',['Query',['../class_bx_web_content.html#a53adbac7a2b2d510ed3b3a4b7d27db26',1,'BxWebContent']]]
+  ['query',['Query',['../class_bx_web_content.html#acd8d5ef69739c1368397f38de5889144',1,'BxWebContent']]]
 ];

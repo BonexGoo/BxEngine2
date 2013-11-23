@@ -12,14 +12,8 @@
 */
 
 // 컴파일러 특성
-#ifndef null
-	#ifdef __GNUC__
-		#define null (0)
-	#elif __ARMCC_VERSION
-		#define null (0)
-	#else
-		#define null (nullptr)
-	#endif
+#ifndef nullptr
+	#define nullptr (0)
 #endif
 #ifndef true
 	#define true (1)
@@ -314,31 +308,24 @@ typedef void (*callback_filesearch)(bool isdirname, string _tmp_ name, void* dat
 	#define BxAssert(STRING, CHECK) do{} while(false)
 #endif
 
-// 박스함수관련
-#ifdef __BX_CALLSTACK
-	#define __CALLSTACK_ADD__ BxCore::Util::PushCallDepthAndLog(__FILE__, __LINE__, __FUNCTION__);
-	#define __CALLSTACK_SUB__ BxCore::Util::PopCallDepthAndLog(__FILE__, __LINE__);
-#else
-	#define __CALLSTACK_ADD__
-	#define __CALLSTACK_SUB__
+// NEW/DELETE관련
+#if !defined(IW_STD_NEW_H) && !defined(__PLACEMENT_NEW_INLINE)
+	#define IW_STD_NEW_H
+	#define __PLACEMENT_NEW_INLINE
+		#ifdef __BX_USED_LONG_SIZET
+			#define NEW_SIZE_T unsigned long
+		#else
+			#define NEW_SIZE_T unsigned int
+		#endif
+	inline void* operator new(NEW_SIZE_T, void* ptr) {return ptr;}
+	inline void* operator new[](NEW_SIZE_T, void* ptr) {return ptr;}
+	inline void operator delete(void*, void*) {}
+	inline void operator delete[](void*, void*) {}
+	#if defined _MSC_VER && _MSC_VER <= 1200
+		void* operator new[](NEW_SIZE_T);
+		void operator delete[](void*);
+	#endif
 #endif
-#define ____FunctionBox____return(...) __VA_ARGS__
-#define ____FunctionBoxS____return(...) static __VA_ARGS__
-#define ____FunctionBoxI____return(...) inline __VA_ARGS__
-#define ____FunctionBoxSI____return(...) static inline __VA_ARGS__
-#define ____FunctorBox____name(...) static class Functor##__VA_ARGS__{public: void _(){__CALLSTACK_ADD__
-#define ____name(...) __VA_ARGS__
-#define ____param(...) (__VA_ARGS__)
-#define ____comment(...)
-#define finally(...) do{__CALLSTACK_SUB__ return(__VA_ARGS__);} while(false)
-#define IIII
-#define ___IIII
-#define ___________
-#define _______ {__CALLSTACK_ADD__
-#define _______IIII {__CALLSTACK_ADD__
-#define IIII____return(...) __CALLSTACK_SUB__} __VA_ARGS__ operator()
-#define IIII_____________________________________________________________________________instance(...) __CALLSTACK_SUB__}}__VA_ARGS__;
-#define IIII________________________________________________________________________________________________________________________IIII __CALLSTACK_SUB__}
 
 // 타입분석관련
 #ifndef __BX_DECLARE_IsTypePointer
@@ -350,7 +337,7 @@ typedef void (*callback_filesearch)(bool isdirname, string _tmp_ name, void* dat
 	template<typename TYPE>
 	inline bool IsTypePointer()
 	{
-		TYPE* Pointer = null;
+		TYPE* Pointer = nullptr;
 		TYPE& Variable = *Pointer;
 		return _IsTypePointer(Variable);
 	}

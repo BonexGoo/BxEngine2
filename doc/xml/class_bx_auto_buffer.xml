@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="10" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_auto_buffer_1a748efaa19dd0c70c00296a4cb58ce262" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="11" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_auto_buffer_1a319f70997ff931cfd110d8205355dd12" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="12" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="12" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="12" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_auto_buffer_1ab29b7705d00619f375a3fae23f50712b" prot="private" static="no" mutable="no">
         <type>void *</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="13" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="33" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="33" bodyend="37"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="33" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="33" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a35496c72a0295418899a9d76935da68c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func int &amp;</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="38" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="38" bodyend="42"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="38" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="38" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1aa3d93d30966d515c847f6b74ae72521a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="120" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="120" bodyend="144"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="120" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="120" bodyend="144"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="45" bodyend="49"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="45" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a216e0c2ad1af79eacc257472f5522365" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="52" bodyend="58"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="52" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1ac0672d988a1c7a3d79260884b6e51dd9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="59" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="59" bodyend="62"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="59" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a9880248aef60e70e71f3d098b1519919" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void *</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="63" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="63" bodyend="77"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="63" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="63" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a0675804ca9047601435c65c574130712" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="78" bodyend="96"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="78" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a5d05fb6246c3f7b4cc43bed712ad76bb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void *</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="97" bodyend="102"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="97" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a9ac703cd9f283ef625d06ade36d0d2e4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="103" bodyend="107"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="103" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1aedb5b72d299d6d1289f7b7a5b937a756" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="108" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="108" bodyend="113"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="108" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="108" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_auto_buffer_1a521b45c0aabccf07ef10c452282cb345" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -242,14 +242,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="114" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="114" bodyend="117"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="114" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="114" bodyend="117"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>사용자모듈을 위한 실시간로딩도구 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="7" bodyend="145"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp" bodystart="7" bodyend="145"/>
     <listofallmembers>
       <member refid="class_bx_auto_buffer_1a9880248aef60e70e71f3d098b1519919" prot="protected" virt="non-virtual"><scope>BxAutoBuffer</scope><name>Alloc</name></member>
       <member refid="class_bx_auto_buffer_1ab29b7705d00619f375a3fae23f50712b" prot="private" virt="non-virtual"><scope>BxAutoBuffer</scope><name>Buffer</name></member>

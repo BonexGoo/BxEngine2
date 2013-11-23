@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="239" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="239" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="239" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="239" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_xml_1_1_unit_1ac3e85fb97cb60a682601ee392e4d6f5c" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="240" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="240" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="240" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_xml_1_1_unit_1a7d517cc226900dd5a2ce3d8fd9f9d9aa" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="241" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="241" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="241" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="241" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_xml_1_1_unit_1a53630c55c160fd1ff18c6192eae31ee4" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_string" kindref="compound">BxString</ref> &gt;</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="242" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="242" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="242" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_xml_1_1_unit_1a7fd32906711440cbe4d3af64a7db9ab5" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_string" kindref="compound">BxString</ref> &gt;</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="243" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="243" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="243" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="243" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="244" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="244" bodyend="244"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="244" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="244" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_xml_1_1_unit_1a34becd918fa049e3d968b50614731d62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Unit &amp;</type>
@@ -98,12 +98,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="246" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="246" bodyend="253"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="246" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="246" bodyend="253"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_xml_1_1_unit_1afee63fd9acbf6f4412fbe2e79e2c199e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
         <definition>int BxXml::Unit::Read</definition>
-        <argsstring>(string xml, int focus, State *state=null)</argsstring>
+        <argsstring>(string xml, int focus, State *state=nullptr)</argsstring>
         <name>Read</name>
         <param>
           <type>string</type>
@@ -116,7 +116,7 @@
         <param>
           <type>State *</type>
           <declname>state</declname>
-          <defval>null</defval>
+          <defval>nullptr</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="254" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="254" bodyend="354"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="254" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="254" bodyend="354"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="355" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="355" bodyend="388"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="355" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="355" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="389" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="389" bodyend="409"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="389" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="389" bodyend="409"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -198,7 +198,7 @@
         <link refid="class_bx_string"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxXml.hpp" bodystart="236" bodyend="410"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxXml.hpp" bodystart="236" bodyend="410"/>
     <listofallmembers>
       <member refid="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>AtoH</name></member>
       <member refid="class_bx_xml_1_1_unit_1a53630c55c160fd1ff18c6192eae31ee4" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>AttbName</name></member>
@@ -206,7 +206,7 @@
       <member refid="class_bx_xml_1_1_unit_1a7d517cc226900dd5a2ce3d8fd9f9d9aa" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>Content</name></member>
       <member refid="class_bx_xml_1_1_unit_1a230ffac023d60fe81b0e952e099d7d81" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>IsWritten</name></member>
       <member refid="class_bx_xml_1_1_unit_1a34becd918fa049e3d968b50614731d62" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>operator=</name></member>
-      <member refid="class_bx_xml_1_1_unit_1afee63fd9acbf6f4412fbe2e79e2c199e" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>Read</name></member>
+      <member refid="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>Read</name></member>
       <member refid="class_bx_xml_1_1_unit_1ac3e85fb97cb60a682601ee392e4d6f5c" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>TagName</name></member>
       <member refid="class_bx_xml_1_1_unit_1a4f6b6ab80b376c28648a545bf55851a7" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>Unit</name></member>
       <member refid="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" prot="public" virt="non-virtual"><scope>BxXml::Unit</scope><name>Write</name></member>

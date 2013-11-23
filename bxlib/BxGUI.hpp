@@ -85,7 +85,7 @@ public:
 	global_func callback_event& Callback() {global_data callback_event _Callback; return _Callback;}
 	global_func bool DownloadCache(string url, BxWebContent _out_ Content, int _out_ FileSize, string _out_ FilePath, bool DoLoad)
 	{
-		BxString QueryArg("subject=%s&file=%s&version=%d", null, (string) BxGUI::Subject(), url, BxGUI::Version());
+		BxString QueryArg("subject=%s&file=%s&version=%d", nullptr, (string) BxGUI::Subject(), url, BxGUI::Version());
 		BxWebContent Web;
 		if(Web.Query(BxGUI::Domain(), 80, "update/res_download_cdn.aspx", QueryArg))
 		{
@@ -95,7 +95,7 @@ public:
 			if(QueryResults.Length() == 3 && BxUtilGlobal::AtoI(QueryResults[0]) == 1)
 			{
 				FileSize = BxUtilGlobal::AtoI(QueryResults[1]);
-				BxString FilePathString("update/%s", null, (string) QueryResults[2]);
+				BxString FilePathString("update/%s", nullptr, (string) QueryResults[2]);
 				FilePath = BxUtilGlobal::StrCpyWithAlloc(FilePathString);
 				if(Content.Cache(BxGUI::Domain(), 80, FilePath, DoLoad))
 				{
@@ -473,20 +473,20 @@ public:
 		if(!TextElement || TextElement->GetType() != TypeText) return false;
 		va_list List;
 		va_start(List, TextName);
-		TextElement->AdjustFormat(true, List, &Map, null);
+		TextElement->AdjustFormat(true, List, &Map, nullptr);
 		va_end(List);
 		return true;
 	}
 
 	int GetImageWidth(string ImageName)
 	{
-		Element* ValueElement = *Map.Access(BxString("%s.width", null, ImageName));
+		Element* ValueElement = *Map.Access(BxString("%s.width", nullptr, ImageName));
 		return (ValueElement)? ValueElement->GetValue() : 0;
 	}
 
 	int GetImageHeight(string ImageName)
 	{
-		Element* ValueElement = *Map.Access(BxString("%s.height", null, ImageName));
+		Element* ValueElement = *Map.Access(BxString("%s.height", nullptr, ImageName));
 		return (ValueElement)? ValueElement->GetValue() : 0;
 	}
 
@@ -573,12 +573,12 @@ protected:
 		ElementTree* _ref_ Parent;
 		BxVar<ElementTree> Child;
 	public:
-		ElementTree() : Parent(null) {}
+		ElementTree() : Parent(nullptr) {}
 		virtual ~ElementTree()
 		{
 			for(int i = 0; i < Child.Length(); ++i)
 			{
-				ElementTree* OldData = null;
+				ElementTree* OldData = nullptr;
 				Child.RemoveData(i, &OldData);
 				BxDelete(OldData);
 			}
@@ -594,13 +594,13 @@ protected:
 	public:
 		void PreProcessingTree()
 		{
-			if(Parent) PreProcessing(null, null);
+			if(Parent) PreProcessing(nullptr, nullptr);
 			for(int i = 0; i < Child.Length(); ++i)
 				Child[i].PreProcessingTree();
 		}
 		void ProcessingTree()
 		{
-			if(Parent) Processing(null, null);
+			if(Parent) Processing(nullptr, nullptr);
 			for(int i = 0; i < Child.Length(); ++i)
 				Child[i].ProcessingTree();
 		}
@@ -643,7 +643,7 @@ protected:
 		protected:
 			uint ArgbGen;
 		public:
-			Color() : Name(null), Argb(0xFF000000), ArgbGen(0xFF000000) {Type = TypeColor;}
+			Color() : Name(nullptr), Argb(0xFF000000), ArgbGen(0xFF000000) {Type = TypeColor;}
 			virtual ~Color()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -687,7 +687,7 @@ protected:
 		public:
 			Element::VarPtr _ref_ ColorValues;
 		public:
-			Edge() : Name(null), Colors(null) {Type = TypeEdge;}
+			Edge() : Name(nullptr), Colors(nullptr) {Type = TypeEdge;}
 			virtual ~Edge()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -724,7 +724,7 @@ protected:
 			string FilePath;
 			BxImage CacheImage;
 		public:
-			Image() : Name(null), Url(null), FileSize(0), FilePath(null) {Type = TypeImage;}
+			Image() : Name(nullptr), Url(nullptr), FileSize(0), FilePath(nullptr) {Type = TypeImage;}
 			virtual ~Image()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -765,19 +765,19 @@ protected:
 				}
 				else IsValidDownload() = false;
 				// 가로길이 추가등록
-				BxString WidthName("%s.width", null, (string) Name);
+				BxString WidthName("%s.width", nullptr, (string) Name);
 				BxAssert("BxGUI<중복된 컨텐트명입니다>", !Map->Access(WidthName));
 				Element* NewData1 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Width() : 0);
 				Elements->Insert(LAST, (*Map)[WidthName] = NewData1);
 				NewData1->SetStep(StepNamed);
-				NewData1->PreProcessing(null, null);
+				NewData1->PreProcessing(nullptr, nullptr);
 				// 세로길이 추가등록
-				BxString HeightName("%s.height", null, (string) Name);
+				BxString HeightName("%s.height", nullptr, (string) Name);
 				BxAssert("BxGUI<중복된 컨텐트명입니다>", !Map->Access(HeightName));
 				Element* NewData2 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Height() : 0);
 				Elements->Insert(LAST, (*Map)[HeightName] = NewData2);
 				NewData2->SetStep(StepNamed);
-				NewData2->PreProcessing(null, null);
+				NewData2->PreProcessing(nullptr, nullptr);
 			}
 			virtual void Filling(BxDraw& Draw, rect Rect)
 			{
@@ -794,7 +794,7 @@ protected:
 		public:
 			Element::VarPtr _ref_ ImageValues;
 		public:
-			Sprite() : Name(null), Images(null), Delay(0) {Type = TypeSprite;}
+			Sprite() : Name(nullptr), Images(nullptr), Delay(0) {Type = TypeSprite;}
 			virtual ~Sprite()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -833,7 +833,7 @@ protected:
 			string FilePath;
 			id_font CacheFont;
 		public:
-			Font() : Name(null), Size(0), Url(null), FileSize(0), FilePath(null), CacheFont(null) {Type = TypeFont;}
+			Font() : Name(nullptr), Size(0), Url(nullptr), FileSize(0), FilePath(nullptr), CacheFont(nullptr) {Type = TypeFont;}
 			virtual ~Font()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -877,8 +877,8 @@ protected:
 			ReserveCode VectorValue;
 			ReserveCode LineValue;
 		public:
-			Text() : Name(null), Format(null), Font(null), Color(null), Vector(null), Line(null), FormatGen(null),
-				FontValue(null), ColorValue(null), VectorValue(CodeNull) {Type = TypeText;}
+			Text() : Name(nullptr), Format(nullptr), Font(nullptr), Color(nullptr), Vector(nullptr), Line(nullptr), FormatGen(nullptr),
+				FontValue(nullptr), ColorValue(nullptr), VectorValue(CodeNull) {Type = TypeText;}
 			virtual ~Text()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -912,7 +912,7 @@ protected:
 				FormatGen = BxUtilGlobal::StrFree(FormatGen);
 				if(dosprint)
 				{
-					const int FormatGenLen = BxCore::Util::VsnPrintf(null, 0, Format, list);
+					const int FormatGenLen = BxCore::Util::VsnPrintf(nullptr, 0, Format, list);
 					BxAssert("BxGUI<FormatGen의 예상길이를 얻는데 실패하였습니다>", 0 <= FormatGenLen);
 					FormatGen = BxUtilGlobal::StrAlloc(FormatGenLen);
 					BxCore::Util::VsnPrintf((string_rw) FormatGen, FormatGenLen + 1, Format, list);
@@ -922,24 +922,24 @@ protected:
 				{
 					const size TextSize = (FontValue->GetCacheFont())? BxCore::Font::GetSize(FontValue->GetCacheFont(), FormatGen) : WH(0, 0);
 					// 가로길이 추가등록
-					BxString WidthName("%s.width", null, (string) Name);
+					BxString WidthName("%s.width", nullptr, (string) Name);
 					if(Map->Access(WidthName)) (*Map->Access(WidthName))->SetValue(TextSize.w);
 					else if(Elements)
 					{
 						Element* NewData = BxNew_Param(Element, TextSize.w);
 						Elements->Insert(LAST, (*Map)[WidthName] = NewData);
 						NewData->SetStep(StepNamed);
-						NewData->PreProcessing(null, null);
+						NewData->PreProcessing(nullptr, nullptr);
 					}
 					// 세로길이 추가등록
-					BxString HeightName("%s.height", null, (string) Name);
+					BxString HeightName("%s.height", nullptr, (string) Name);
 					if(Map->Access(HeightName)) (*Map->Access(HeightName))->SetValue(TextSize.h);
 					else if(Elements)
 					{
 						Element* NewData = BxNew_Param(Element, TextSize.h);
 						Elements->Insert(LAST, (*Map)[HeightName] = NewData);
 						NewData->SetStep(StepNamed);
-						NewData->PreProcessing(null, null);
+						NewData->PreProcessing(nullptr, nullptr);
 					}
 				}
 			}
@@ -1024,7 +1024,7 @@ protected:
 			Element::VarPtr _ref_ ImageValues;
 			Element::VarPtr _ref_ EdgeValues;
 		public:
-			Button() : Name(null), Images(null), Edges(null), Event(null), Link(null), EventAreaGen(rect::zero()), IsClickedGen(false)
+			Button() : Name(nullptr), Images(nullptr), Edges(nullptr), Event(nullptr), Link(nullptr), EventAreaGen(rect::zero()), IsClickedGen(false)
 			{Type = TypeButton;}
 			virtual ~Button()
 			{
@@ -1118,7 +1118,7 @@ protected:
 			Element* _ref_ TextValue;
 			Element::VarPtr _ref_ ColorValues;
 		public:
-			EditBox() : Name(null), Text(null), Colors(null), TextValue(null) {Type = TypeEditBox;}
+			EditBox() : Name(nullptr), Text(nullptr), Colors(nullptr), TextValue(nullptr) {Type = TypeEditBox;}
 			virtual ~EditBox()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -1158,7 +1158,7 @@ protected:
 		{
 			for(int i = 0; i < Elements.Length(); ++i)
 			{
-				Element* OldData = null;
+				Element* OldData = nullptr;
 				Elements.RemoveData(i, &OldData);
 				BxDelete(OldData);
 			}
@@ -1273,7 +1273,7 @@ protected:
 			ReserveCode PosValue;
 			Element* _ref_ FillValue;
 		public:
-			Split() : Name(null), Pos(null), Size(null), Fill(null), AddSize1024Gen(0), PosValue(CodeNull), FillValue(null) {Type = TypeSplit;}
+			Split() : Name(nullptr), Pos(nullptr), Size(nullptr), Fill(nullptr), AddSize1024Gen(0), PosValue(CodeNull), FillValue(nullptr) {Type = TypeSplit;}
 			virtual ~Split()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -1350,7 +1350,7 @@ protected:
 		public:
 			Element* _ref_ FillValue;
 		public:
-			Outline() : Name(null), Size(null), Fill(null), FillValue(null) {Type = TypeOutline;}
+			Outline() : Name(nullptr), Size(nullptr), Fill(nullptr), FillValue(nullptr) {Type = TypeOutline;}
 			virtual ~Outline()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -1422,7 +1422,7 @@ protected:
 		public:
 			Element* _ref_ FillValue;
 		public:
-			Extra() : Name(null), Width(null), Height(null), Fill(null), FillValue(null) {Type = TypeExtra;}
+			Extra() : Name(nullptr), Width(nullptr), Height(nullptr), Fill(nullptr), FillValue(nullptr) {Type = TypeExtra;}
 			virtual ~Extra()
 			{
 				Name = BxUtilGlobal::StrFree(Name);
@@ -1511,9 +1511,9 @@ protected:
 			ReserveCode ScrollValue;
 			Element* _ref_ FillValue;
 		public:
-			View() : Name(null), PosX(null), PosY(null), Width(null), Height(null), Scroll(null), Fill(null),
+			View() : Name(nullptr), PosX(nullptr), PosY(nullptr), Width(nullptr), Height(nullptr), Scroll(nullptr), Fill(nullptr),
 				AddPosXGen(0), AddPosYGen(0), IsVisibleGen(false), OutSizeGen(size::zero()), InSizeGen(size::zero()),
-				PosXValue(CodeNull), PosYValue(CodeNull), ScrollValue(CodeNull), FillValue(null) {Type = TypeView;}
+				PosXValue(CodeNull), PosYValue(CodeNull), ScrollValue(CodeNull), FillValue(nullptr) {Type = TypeView;}
 			virtual ~View()
 			{
 				Name = BxUtilGlobal::StrFree(Name);

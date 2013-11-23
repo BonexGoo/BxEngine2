@@ -15,7 +15,7 @@ private:
 		string Path;
 		uint Size;
 		uhuge Date;
-		CachePool() : Path(null), Size(0), Date(0) {}
+		CachePool() : Path(nullptr), Size(0), Date(0) {}
 		~CachePool() {Path = BxUtilGlobal::StrFree(Path);}
 	};
 	typedef BxVarVector<CachePool, 64> CachePoolList;
@@ -38,7 +38,7 @@ private:
 	}
 
 public:
-	BxWebContent() : ResponseBytes(null), ResponseLength(0) {}
+	BxWebContent() : ResponseBytes(nullptr), ResponseLength(0) {}
 	~BxWebContent() {BxFree(ResponseBytes);}
 
 	/*!
@@ -75,7 +75,7 @@ public:
 	\param Progress : 프로그레스의 전달
 	\return 송수신 성공여부
 	*/
-	bool Query(string Domain, ushort Port, string Path, string Arguments = null, int Timeout = -1, callback_progress Progress = null)
+	bool Query(string Domain, ushort Port, string Path, string Arguments = nullptr, int Timeout = -1, callback_progress Progress = nullptr)
 	{
 		if(Timeout < 0) Timeout = 5000;
 		// 소켓연결, 쿼리제작 및 전송
@@ -234,13 +234,13 @@ public:
 	\param Progress : 프로그레스의 전달
 	\return 캐시로드 성공여부
 	*/
-	bool Cache(string Domain, ushort Port, string FilePath, bool DoLoad = true, callback_progress Progress = null)
+	bool Cache(string Domain, ushort Port, string FilePath, bool DoLoad = true, callback_progress Progress = nullptr)
 	{
 		global_data const int CacheCountSumMax = BxCore::System::GetConfigNumber("Bx.WebContent.CacheCountSumMax", -1);
 		global_data const int CacheSizeSumMax = BxCore::System::GetConfigNumber("Bx.WebContent.CacheSizeSumMax", -1);
 
 		// 캐시로드
-		BxString CacheFileName("%s/%s", null, GetCachePath(), FilePath);
+		BxString CacheFileName("%s/%s", nullptr, GetCachePath(), FilePath);
 		int FindedPos = -1;
 		while((FindedPos = CacheFileName.Find('?')) != -1)
 			CacheFileName[FindedPos] = '_';
@@ -263,7 +263,7 @@ public:
 				{
 					ResponseLength = 0;
 					BxFree(ResponseBytes);
-					ResponseBytes = null;
+					ResponseBytes = nullptr;
 				}
 				return true;
 			}
@@ -271,14 +271,14 @@ public:
 		}
 
 		// 쿼리실행
-		if(!Query(Domain, Port, FilePath, null, -1, Progress))
+		if(!Query(Domain, Port, FilePath, nullptr, -1, Progress))
 			return false;
 
 		// 캐시풀 초기수집
 		if(!IsInitPool() && (CacheCountSumMax != -1 || CacheSizeSumMax != -1))
 		{
 			IsInitPool() = true;
-			BxCore::File::SearchFiles(GetCachePath(), OnFileSearch, null);
+			BxCore::File::SearchFiles(GetCachePath(), OnFileSearch, nullptr);
 		}
 
 		// 캐시저장
@@ -297,7 +297,7 @@ public:
 		{
 			ResponseLength = 0;
 			BxFree(ResponseBytes);
-			ResponseBytes = null;
+			ResponseBytes = nullptr;
 		}
 
 		// 캐시풀 운영

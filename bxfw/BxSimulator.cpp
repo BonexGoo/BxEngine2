@@ -69,10 +69,10 @@ sysupdateresult OnUpdate(BxSimulator& Data)
 	Data.CursorPos.x = CursorPos.x - WindowPos.x;
 	Data.CursorPos.y = CursorPos.y - WindowPos.y;
 	// 업데이트 속도계산
-	global_data uhuge LastTime = BxCore::System::GetTimerMilliSecond();
+	global_data uhuge LastTime = BxCore::System::GetTimeMilliSecond();
 	global_data int UpdateTime[16] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 	global_data int UpdateTimeFocus = -1;
-	const uhuge ThisTime = BxCore::System::GetTimerMilliSecond();
+	const uhuge ThisTime = BxCore::System::GetTimeMilliSecond();
 	UpdateTime[UpdateTimeFocus = (UpdateTimeFocus + 1) % 16] = Max(1, (int)(ThisTime - LastTime));
 	LastTime = ThisTime;
 	const int AvgUpdateTime = Max(1, (UpdateTime[0] + UpdateTime[1] + UpdateTime[2] + UpdateTime[3] + UpdateTime[4]
@@ -120,12 +120,12 @@ void OnRender(BxSimulator& Data, BxDraw& Draw)
 	}
 	// 프레임수
 	BxCore::Font::SetSort(fontsort_pad6);
-	BxCore::Font::Draw(Data.GUIFontMini, BxString("%dF, %d%%", null, Data.AvgFrameTime, Data.AvgFrameRate),
+	BxCore::Font::Draw(Data.GUIFontMini, BxString("%dF, %d%%", nullptr, Data.AvgFrameTime, Data.AvgFrameRate),
 		XY(Draw.Width() - Data.GUIImageRect[2].width() - BxCore::Main::GetCurrentGUIMargin().r - size::max, 0 - BxCore::Main::GetCurrentGUIMargin().t),
 		WH(size::max, TitleHeight), RGB32(96, 64, 64));
 	// 제목
 	BxCore::Font::SetSort(fontsort_pad4);
-	BxCore::Font::Draw(Data.GUIFont, BxString("%s.%s", null, BxCore::System::GetConfigString("Bx.Currently.Title", "Untitle"), BxScene::GetName(BxScene::GetCount() - 1)),
+	BxCore::Font::Draw(Data.GUIFont, BxString("%s.%s", nullptr, BxCore::System::GetConfigString("Bx.Currently.Title", "Untitle"), BxScene::GetName(BxScene::GetCount() - 1)),
 		XY(Data.GUIImageRect[0].width() - BxCore::Main::GetCurrentGUIMargin().l, 0 - BxCore::Main::GetCurrentGUIMargin().t), WH(size::max, TitleHeight), RGB32(255, 0, 0));
 	// 중간
 	for(int y = TitleHeight; y < Draw.Height(); y += 64)

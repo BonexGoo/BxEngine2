@@ -6,21 +6,13 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="106">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="100" relation="include">
-        </childnode>
-      </node>
       <node id="102">
         <label>stdarg.h</label>
       </node>
-      <node id="100">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="103" relation="include">
+      <node id="103">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="104" relation="include">
         </childnode>
       </node>
       <node id="107">
@@ -31,22 +23,38 @@
         <childnode refid="106" relation="include">
         </childnode>
       </node>
+      <node id="100">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
       <node id="101">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
         <childnode refid="102" relation="include">
         </childnode>
       </node>
-      <node id="103">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="104" relation="include">
-        </childnode>
-      </node>
       <node id="104">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
         </childnode>
       </node>
       <node id="99">
@@ -57,14 +65,6 @@
         <childnode refid="105" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
-        </childnode>
-      </node>
-      <node id="105">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="106" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
         </childnode>
       </node>
       <node id="108">
@@ -118,7 +118,7 @@
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Res)</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Res-&gt;mBinder<sp/>=<sp/>mBinder;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mBinder<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mBinder<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -140,10 +140,10 @@
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>내부함수</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>global_func<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>BinderBegin(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>CachePoolName)</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref><sp/>LPool(null);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref><sp/>LPool(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/><ref refid="class_bx_var_map" kindref="compound" tooltip="map식 가변배열 제공 ">BxVarMap&lt;BindPool&gt;</ref><sp/>BPoolMap;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!BPoolMap.Access(CachePoolName))</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BPoolMap[CachePoolName].Init(LPool.New(null));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BPoolMap[CachePoolName].Init(LPool.New(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;BPoolMap[CachePoolName];</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
@@ -163,7 +163,7 @@
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AllocCache(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BufferSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UsingCacheSize)</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;이미<sp/>할당된<sp/>버퍼가<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBuffer<sp/>==<sp/>null);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;이미<sp/>할당된<sp/>버퍼가<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBuffer<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CachePoolSize<sp/>=<sp/>GetCachePoolSize(GetCachePoolName());</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CachePoolUsed<sp/>=<sp/>GetCachePoolUsed(GetCachePoolName());</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>확보</highlight><highlight class="normal"></highlight></codeline>
@@ -203,7 +203,7 @@
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateCache()</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;등록되지<sp/>않은<sp/>캐시입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBinder<sp/>!=<sp/>null);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;등록되지<sp/>않은<sp/>캐시입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBinder<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>버퍼가<sp/>존재하지<sp/>않으면<sp/>작업취소</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!mBuffer)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>스코어갱신</highlight><highlight class="normal"></highlight></codeline>
@@ -242,8 +242,8 @@
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자<sp/>&amp;<sp/>소멸자<sp/>///////////////////////////////////////////////////////////////////////////</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>()<sp/>:<sp/>mBinder(null),<sp/>mBuffer(null),<sp/>mCacheScore(0),<sp/>mUsedCacheSize(0),<sp/>mLockCount(0)<sp/>{}</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>()<sp/>{Entrust(null);<sp/>FreeCacheManually();}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>()<sp/>:<sp/>mBinder(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>mBuffer(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>mCacheScore(0),<sp/>mUsedCacheSize(0),<sp/>mLockCount(0)<sp/>{}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>()<sp/>{Entrust(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);<sp/>FreeCacheManually();}</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>멤버변수</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>mBinder;</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>byte*<sp/>mBuffer;</highlight></codeline>
@@ -296,7 +296,7 @@
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CurNode;</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode<sp/>=<sp/>CurNode-&gt;Next;</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
@@ -308,20 +308,20 @@
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>rsid<sp/>ParamID;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>*<sp/>ParamData;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>Pool*<sp/>TopChildLinker;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>(Pool*<sp/>TopChild<sp/>=<sp/>null)<sp/>:<sp/>ParamData(null)<sp/>{Init(TopChild);}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>(Pool*<sp/>TopChild<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>:<sp/>ParamData(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Init(TopChild);}</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>()<sp/>{ResetData();<sp/>TopChildLinker-&gt;Delete();}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(Pool*<sp/>TopChild)<sp/>{TopChildLinker<sp/>=<sp/>TopChild;}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Pool*<sp/>New(Pool*<sp/>TopChild)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BxNew_Param(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>,<sp/>TopChild);}</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Delete()<sp/>{Pool*<sp/>Temp<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;<sp/>BxDelete(Temp);}</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsSame(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Key)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(Key<sp/>==<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>ParamID);}</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>공개함수</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetData(<ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>*<sp/>Data<sp/>=<sp/>null)<sp/>{ParamData<sp/>=<sp/>Data;}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetData(<ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>*<sp/>Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{ParamData<sp/>=<sp/>Data;}</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>FindBinder(rsid<sp/>ID)</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>OneBinder<sp/>=<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*)<sp/>Find((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>ID);</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!OneBinder)</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneBinder<sp/>=<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*)<sp/>New(TopChildLinker-&gt;New(null));</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneBinder<sp/>=<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*)<sp/>New(TopChildLinker-&gt;New(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneBinder-&gt;ParamID<sp/>=<sp/>ID;</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Add(OneBinder);</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -342,13 +342,13 @@
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>ParentBinder;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>callback_serialize<sp/>ParamCB;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ParamComment;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>Parent)<sp/>:<sp/>ParentBinder(Parent),<sp/>ParamCB(null),<sp/>ParamComment(null)<sp/>{}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>Parent)<sp/>:<sp/>ParentBinder(Parent),<sp/>ParamCB(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>ParamComment(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>()<sp/>{ResetData();}</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Pool*<sp/>New(Pool*<sp/>Parent)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BxNew_Param(<ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>,<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*)<sp/>Parent);}</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Delete()<sp/>{Pool*<sp/>Temp<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;<sp/>BxDelete(Temp);}</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsSame(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Key)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>*)<sp/>Key);}</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>공개함수</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetData(callback_serialize<sp/>CB<sp/>=<sp/>null,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Comment<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetData(callback_serialize<sp/>CB<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Comment<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParamCB<sp/>=<sp/>CB;</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParamComment<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(ParamComment);</highlight></codeline>
@@ -364,7 +364,7 @@
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>*<sp/>GetResource()</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!ParentBinder)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!ParentBinder)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ParentBinder-&gt;ParamData;</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CallSerialize(bindstate<sp/>State)</highlight></codeline>
@@ -384,7 +384,7 @@
 <codeline lineno="300" refid="class_bx_dynamic_1_1_serialize" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_dynamic_1_1_serialize" kindref="compound" tooltip="직렬화 관리 ">Serialize</ref></highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>연결</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Link(rsid<sp/>ID,<sp/>callback_serialize<sp/>CB<sp/>=<sp/>null,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Comment<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Link(rsid<sp/>ID,<sp/>callback_serialize<sp/>CB<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Comment<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Linker)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Linker<sp/>=<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">Resource::LinkPool</ref>*)<sp/>Resource::BinderBegin(GetClass()-&gt;GetCachePoolName())-&gt;FindBinder(ID)-&gt;AddLinker();</highlight></codeline>
@@ -394,14 +394,14 @@
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>접근</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>TYPE*<sp/>Access()</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Linker)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Linker)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(TYPE*)<sp/>Linker-&gt;GetResource();</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>파일로드</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>rsid<sp/>Load(id_file<sp/>File)</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>ID<sp/>=<sp/>(uhuge)<sp/>rsid_null;</highlight></codeline>
-<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6eda45c6dfcd26226c824ac400fe1450" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(File,<sp/>&amp;ID,<sp/>8);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(File,<sp/>&amp;ID,<sp/>8);</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rsid)<sp/>ID;</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>파일세이브</highlight><highlight class="normal"></highlight></codeline>
@@ -409,10 +409,10 @@
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>ID<sp/>=<sp/>(uhuge)<sp/>rsid_null;</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Linker)<sp/>ID<sp/>=<sp/>(uhuge)<sp/>Linker-&gt;GetID();</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1af3885eca99cefc3734065b3a2b199925" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(File,<sp/>&amp;ID,<sp/>8);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(File,<sp/>&amp;ID,<sp/>8);</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자<sp/>&amp;<sp/>소멸자</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_serialize" kindref="compound" tooltip="직렬화 관리 ">Serialize</ref>()<sp/>:<sp/>Linker(null)<sp/>{}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_serialize" kindref="compound" tooltip="직렬화 관리 ">Serialize</ref>()<sp/>:<sp/>Linker(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>~<ref refid="class_bx_dynamic_1_1_serialize" kindref="compound" tooltip="직렬화 관리 ">Serialize</ref>()<sp/>{</highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Linker)<sp/>Linker-&gt;Remove();}</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>멤버변수</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">Resource::LinkPool</ref>*<sp/>Linker;</highlight></codeline>
@@ -421,6 +421,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxDynamic.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

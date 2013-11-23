@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="103" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_throw_1_1_head_unit_1a00898a2fdccd97d6edbee7310fb093c1" prot="public" static="no" mutable="no">
         <type>Unit *_ref_</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="104" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="105" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="105" bodyend="105"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="105" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="105" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_throw_1_1_head_unit_1af194903dad4a5000c12f6cc3598ad59d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="106" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="106" bodyend="106"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="106" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="106" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_throw_1_1_head_unit_1a5ff9599afaf938d4c601ba944eabdf13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>Unit *</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="108" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="108" bodyend="114"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="108" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="108" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_throw_1_1_head_unit_1a950f7528b42d49922e98bbbec5c47595" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="115" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="115" bodyend="118"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="115" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="115" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_throw_1_1_head_unit_1a943b09be19dfa11f6b41ebb436e505bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="119" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="119" bodyend="124"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="119" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="119" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_throw_1_1_head_unit_1a367943787abfef5ec13556c81a411f2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Unit *</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="125" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="125" bodyend="134"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="125" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="125" bodyend="134"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -149,7 +149,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" line="101" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxThrow.hpp" bodystart="100" bodyend="135"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" line="101" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxThrow.hpp" bodystart="100" bodyend="135"/>
     <listofallmembers>
       <member refid="class_bx_throw_1_1_head_unit_1a5ff9599afaf938d4c601ba944eabdf13" prot="public" virt="non-virtual"><scope>BxThrow::HeadUnit</scope><name>Access</name></member>
       <member refid="class_bx_throw_1_1_head_unit_1a943b09be19dfa11f6b41ebb436e505bc" prot="public" virt="non-virtual"><scope>BxThrow::HeadUnit</scope><name>AttachLast</name></member>

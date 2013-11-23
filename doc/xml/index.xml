@@ -172,10 +172,10 @@
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a845661d0b6cee33ce86ea718488bbdeb" kind="variable"><name>ParamID</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1adba310bf84c1af5709c56edad817c36d" kind="variable"><name>ParamData</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a8c735d0db18e7028dfa16a29872934c4" kind="variable"><name>TopChildLinker</name></member>
-    <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1ace3227bc6477cf23eda5cdde0e779aa1" kind="function"><name>BindPool</name></member>
+    <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a65e7468a95a8090ffe06c4526d641858" kind="function"><name>BindPool</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1aee847d64954696276c7b071e83fc0836" kind="function"><name>~BindPool</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a69b7395438c3d72140b5cbb615983cf0" kind="function"><name>Init</name></member>
-    <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1aac5793f414bf215aeb4e8f248a70a7e3" kind="function"><name>ResetData</name></member>
+    <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1af1c0b45dedf50b4fce38739b9789b488" kind="function"><name>ResetData</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a5f9d6676359a6984cf98256f418d68dd" kind="function"><name>FindBinder</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1ab10859251bdcb1309b0085ef59d24054" kind="function"><name>GetID</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a684680544b3c376b2981a1a0cad1beb9" kind="function"><name>GetData</name></member>
@@ -196,7 +196,7 @@
     <member refid="class_bx_animate_1ae430e657f6e0620b85bdba4343b40a85" kind="typedef"><name>OnSort</name></member>
     <member refid="class_bx_animate_1a9a318e782bd9ddf40ea4ef54fd3df799" kind="function"><name>BxAnimate</name></member>
     <member refid="class_bx_animate_1a03fe8b9535741140ae149076da6bbeb7" kind="function"><name>~BxAnimate</name></member>
-    <member refid="class_bx_animate_1ab799670da67750e5ae99c9e7ce2739e2" kind="function"><name>SetResourcePath</name></member>
+    <member refid="class_bx_animate_1a7f1d26b44a84cae17da512f14fd5ccfb" kind="function"><name>SetResourcePath</name></member>
     <member refid="class_bx_animate_1aa542dbaa87cd22940e08350440e3a237" kind="function"><name>Load</name></member>
     <member refid="class_bx_animate_1ad6e51ca501fa68b9b88f9035c87999a5" kind="function"><name>Load</name></member>
     <member refid="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" kind="function"><name>IsAliveObject</name></member>
@@ -205,14 +205,14 @@
     <member refid="class_bx_animate_1af29a6641041d7c3dc33f24a817970e79" kind="function"><name>ClearObjectAll</name></member>
     <member refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kind="function"><name>ObjectPos</name></member>
     <member refid="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" kind="function"><name>SendEvent</name></member>
-    <member refid="class_bx_animate_1a21fbf6451a367b8cdad3430a3aa679b3" kind="function"><name>DrawAnimate</name></member>
+    <member refid="class_bx_animate_1a081c245107711ae03c88f091f964358a" kind="function"><name>DrawAnimate</name></member>
     <member refid="class_bx_animate_1a55f71ae45caecc7efc23dd77c95cd903" kind="function"><name>NextAnimate</name></member>
     <member refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" kind="function"><name>DefaultSort</name></member>
-    <member refid="class_bx_animate_1aa3ab6243adca81410b6adf1bf68b62e2" kind="function"><name>SetEvent</name></member>
-    <member refid="class_bx_animate_1ae19b991093f3fed81def1c24e44224eb" kind="function"><name>SetCheck</name></member>
-    <member refid="class_bx_animate_1a8e24583642d5cba9cab2dd5465b5d1bf" kind="function"><name>SetRadio</name></member>
-    <member refid="class_bx_animate_1aac9460681ebf20295fc07744932eb383" kind="function"><name>SetNumber</name></member>
-    <member refid="class_bx_animate_1ab05b830ac1b9d3b1e968db9e53086485" kind="function"><name>SetString</name></member>
+    <member refid="class_bx_animate_1ab3805d16130bc272ba9b7d5629438389" kind="function"><name>SetEvent</name></member>
+    <member refid="class_bx_animate_1ae041614d9aa7a75efbcfdb7700bb9b30" kind="function"><name>SetCheck</name></member>
+    <member refid="class_bx_animate_1a316ddc9c21e8ecd039bffd50ef315160" kind="function"><name>SetRadio</name></member>
+    <member refid="class_bx_animate_1a3ccb6521155e4e75b32235ac45dc105a" kind="function"><name>SetNumber</name></member>
+    <member refid="class_bx_animate_1ad60156ab1f65bec7d8c9ea1ba6002a19" kind="function"><name>SetString</name></member>
   </compound>
   <compound refid="class_bx_auto_buffer" kind="class"><name>BxAutoBuffer</name>
     <member refid="class_bx_auto_buffer_1ae8c00f9e7088aba36e1ec133398be9d8" kind="variable"><name>LastTimeByUse</name></member>
@@ -236,16 +236,20 @@
     <member refid="class_bx_draw_1a6e7cd38d7d7acac6b1ebc32687f18939" kind="function"><name>IsActivated</name></member>
     <member refid="class_bx_draw_1a8428f4d8b7e8afcd637a75ca20a0d37c" kind="function"><name>BxDraw</name></member>
     <member refid="class_bx_draw_1a76b4a684ffb3790d3f48795a5f6fb556" kind="function"><name>~BxDraw</name></member>
+    <member refid="class_bx_draw_1ad633ce6baf25d6c93dde6669d4093a3e" kind="function"><name>TranslateX</name></member>
+    <member refid="class_bx_draw_1a21597dea9cb25b209963d30307b31baf" kind="function"><name>TranslateY</name></member>
+    <member refid="class_bx_draw_1a629c65ebda9be9d1dd7c507a30557eb8" kind="function"><name>Width</name></member>
+    <member refid="class_bx_draw_1a378f6d7988a5a667fd3e720c25e6a297" kind="function"><name>Height</name></member>
     <member refid="class_bx_draw_1ad082728129e5106507963d63f4a622e8" kind="function"><name>GetBackBufferPtr</name></member>
     <member refid="class_bx_draw_1a0caa56d5fcda446e944fa1ffd397bd10" kind="function"><name>GetBackBufferPitch</name></member>
     <member refid="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" kind="function"><name>Area</name></member>
     <member refid="class_bx_draw_1a9714a17e6dbafd6b247028cc71fc4e20" kind="function"><name>Rectangle</name></member>
     <member refid="class_bx_draw_1a168e8d1d2da05734334fa946b01d5164" kind="function"><name>PolygonSt</name></member>
     <member refid="class_bx_draw_1ab8b8696dd54b31dd17decf2690cc467c" kind="function"><name>Polygon3D</name></member>
-    <member refid="class_bx_draw_1ad4b744b3e40c995d6360fb1807c3fbde" kind="function"><name>Text</name></member>
+    <member refid="class_bx_draw_1a2bc21f16fc5a6384772c968774dc2271" kind="function"><name>Text</name></member>
     <member refid="class_bx_draw_1a52abea75c29b2a54bdf024e19d92be7e" kind="function"><name>Flush</name></member>
     <member refid="class_bx_draw_1a24ca52e897cddbcbb44c8f4f1fc3cdac" kind="function"><name>AddStyle</name></member>
-    <member refid="class_bx_draw_1a5a5fd380e6a145fa2fab0e9d2b198c73" kind="function"><name>AddStyleByIf</name></member>
+    <member refid="class_bx_draw_1abaeae537c3db18c065fa50ab0ae81164" kind="function"><name>AddStyleByIf</name></member>
     <member refid="class_bx_draw_1aa42dd1d1c126a92ff578c3963a024dd7" kind="function"><name>SubStyle</name></member>
   </compound>
   <compound refid="class_bx_draw_form" kind="class"><name>BxDrawForm</name>
@@ -406,7 +410,7 @@
     <member refid="class_bx_keyword_1a62b19b76c2826d7967a76370e31986d8" kind="function"><name>BxKeyword</name></member>
     <member refid="class_bx_keyword_1a6565be680e8b1902d262615b8b8e6968" kind="function"><name>~BxKeyword</name></member>
     <member refid="class_bx_keyword_1a46e982e9b353a59e26f9a9c0736cc5bf" kind="function"><name>IsLoaded</name></member>
-    <member refid="class_bx_keyword_1afac5d1167e075ff47ab0db1ec5b008c9" kind="function"><name>Load</name></member>
+    <member refid="class_bx_keyword_1abbe4ab8bda804af58553513efdb8edb3" kind="function"><name>Load</name></member>
     <member refid="class_bx_keyword_1a1be4f611b844668118c044861d0e9262" kind="function"><name>LoadScript</name></member>
     <member refid="class_bx_keyword_1a2a45e50edc6783a9014413a32c070d55" kind="function"><name>Save</name></member>
     <member refid="class_bx_keyword_1a40d4e2744f72d75661afe15509420e63" kind="function"><name>IsExist</name></member>
@@ -556,7 +560,7 @@
     <member refid="class_bx_tween_1a37d5b97ddd1a8fb7c7647e64fed43f07" kind="function"><name>Open</name></member>
     <member refid="class_bx_tween_1a17646755b3e2d80c8ab99d73d87d828a" kind="function"><name>Close</name></member>
     <member refid="class_bx_tween_1a13f4b4d4a2534d996b22d9bde2786c59" kind="function"><name>NextAnimate</name></member>
-    <member refid="class_bx_tween_1abe8caa7e26513d918846772fff96b3f4" kind="function"><name>DrawAnimate</name></member>
+    <member refid="class_bx_tween_1adab9b40a2891e714c1a3a2665d9f4c48" kind="function"><name>DrawAnimate</name></member>
     <member refid="class_bx_tween_1a9b5ec26325b8b69d679d6a2f46412662" kind="function"><name>ResetAnimate</name></member>
     <member refid="class_bx_tween_1a5454e7a1906ade53a68d0d53fac9bd46" kind="function"><name>IsAnimateFinished</name></member>
   </compound>
@@ -578,12 +582,12 @@
     <member refid="class_bx_util_1ae15d759d6643cd9ed4382a76308b831d" kind="function"><name>MatrixCombine</name></member>
     <member refid="class_bx_util_1acee0f9a5a21762b01d8a0fa354785091" kind="function"><name>MatrixRotateQ</name></member>
     <member refid="class_bx_util_1a0abbd37b71ecc2aa9556dd38323677ae" kind="function"><name>MatrixApply</name></member>
-    <member refid="class_bx_util_1a66ee23d7c8f2ffa31ee9a77d8549708f" kind="function"><name>CP949ToUTF16</name></member>
+    <member refid="class_bx_util_1a67d75745d20650033cb419129baaaed8" kind="function"><name>CP949ToUTF16</name></member>
     <member refid="class_bx_util_1afd59076fe1010b645d232f24fa34e84e" kind="function"><name>UTF16ToCP949</name></member>
     <member refid="class_bx_util_1ace58b8597a34f4d9b9ab4f27b4f48dde" kind="function"><name>UTF16ToUTF8</name></member>
-    <member refid="class_bx_util_1a70b323773fef5ff0f54a4203664d9f57" kind="function"><name>GetLengthByUTF8</name></member>
+    <member refid="class_bx_util_1a9734058f17823d1e2f3f7fc07a4aa121" kind="function"><name>GetLengthForUTF8</name></member>
     <member refid="class_bx_util_1a641e1bebe3972ac651d08b6890d76fb0" kind="function"><name>UTF8ToUTF16</name></member>
-    <member refid="class_bx_util_1a7432c9e436ff321506fc574ed4d80544" kind="function"><name>GetLengthByUTF16</name></member>
+    <member refid="class_bx_util_1a6609c0c508f2148565c35b9212052d33" kind="function"><name>GetLengthForUTF16</name></member>
     <member refid="class_bx_util_1a8363c42cb6abcbd477dc37e85e26c84f" kind="function"><name>GetDotByLineCross</name></member>
     <member refid="class_bx_util_1abae38de2d94a7d391845f2813086f497" kind="function"><name>RandomTable</name></member>
     <member refid="class_bx_util_1a59236c7d397c3595f413ce4e89d90603" kind="function"><name>Cos1024Table</name></member>
@@ -690,8 +694,8 @@
     <member refid="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" kind="function"><name>GetBytes</name></member>
     <member refid="class_bx_web_content_1a4a605274453e93b85aae5e1c7e6fb47f" kind="function"><name>GetDataLength</name></member>
     <member refid="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" kind="function"><name>GetTextLength</name></member>
-    <member refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" kind="function"><name>Query</name></member>
-    <member refid="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" kind="function"><name>Cache</name></member>
+    <member refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kind="function"><name>Query</name></member>
+    <member refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" kind="function"><name>Cache</name></member>
   </compound>
   <compound refid="class_bx_xml" kind="class"><name>BxXml</name>
     <member refid="class_bx_xml_1a2ed653df8bc9ff00df18ff7739c5a788" kind="enum"><name>State</name></member>
@@ -718,7 +722,7 @@
     <member refid="class_bx_xml_1a63277c6aa7dc35f5a60dce4bd17b6c92" kind="function"><name>DefineAttb</name></member>
     <member refid="class_bx_xml_1a3724462eb5a38c605035ae9dde7ac11e" kind="function"><name>ReadBegin</name></member>
     <member refid="class_bx_xml_1ae36740b7cb2673322632ef9d710501cd" kind="function"><name>ReadEnd</name></member>
-    <member refid="class_bx_xml_1a05bf8419f1a050f8ffe909ed56946674" kind="function"><name>NextTag</name></member>
+    <member refid="class_bx_xml_1ab8f08f87d9469be97662f9971ba6a754" kind="function"><name>NextTag</name></member>
     <member refid="class_bx_xml_1a9e96971d39864f3491e2d93d817106c2" kind="function"><name>ReadAttb</name></member>
     <member refid="class_bx_xml_1ad8451f2ce4d46b1468fb72199c42e13b" kind="function"><name>ReadAttb</name></member>
     <member refid="class_bx_xml_1a8c6ea2c31d32d1289e3bd8c741f1bc02" kind="function"><name>ReadAttb</name></member>
@@ -892,7 +896,7 @@
     <member refid="class_bx_path_find_1_1_hurdle_1a106bc45018478d148c419a882f811295" kind="function"><name>Hurdle</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1a272cfccedef57010a71b61abda9d384b" kind="function"><name>MERGE_POLYGON</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1a66343c400d746864e1e9902c53ddf85b" kind="function"><name>~Hurdle</name></member>
-    <member refid="class_bx_path_find_1_1_hurdle_1a24143dd3aeff559e1086f119814ff52e" kind="function"><name>Create</name></member>
+    <member refid="class_bx_path_find_1_1_hurdle_1a231115e424b437b84fb820d527cccfac" kind="function"><name>Create</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1aedf66ebf2d30359b27a0fe5b63911af5" kind="function"><name>Release</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1a3c5dbe11a23b0094a8a2a1f00ba585d3" kind="function"><name>Add</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1a4d7d2b1deaa4697b191d05b598d2da90" kind="function"><name>AddWithoutMerging</name></member>
@@ -958,7 +962,7 @@
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a09b38f5aa78863f85742b0631dedd49a" kind="function"><name>Delete</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1af72f276fda80140cd5daaea39e17c0e1" kind="function"><name>IsSame</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a1e56a9bc39ec3a0cf0ac405491627064" kind="function"><name>~LinkPool</name></member>
-    <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1abb9f9fdd0f2a5b5aefda037ed039ed24" kind="function"><name>ResetData</name></member>
+    <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a85cdcd6117d88252c2d31138305bcee2" kind="function"><name>ResetData</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1ac43011e053ac2e20332669ae3196eb52" kind="function"><name>Remove</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a4d2162d3ab80299f4f503d4bdd9b456d" kind="function"><name>GetID</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a414c01717bf4ff54763d8610ad59f42c" kind="function"><name>GetResource</name></member>
@@ -968,7 +972,7 @@
     <member refid="class_bx_singleton_1_1_list_1a9adfb49d2ba3e720706370792c1ad038" kind="variable"><name>Unit</name></member>
     <member refid="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" kind="variable"><name>Next</name></member>
     <member refid="class_bx_singleton_1_1_list_1ab7cabd94dff350a3c8e0bbac847919f7" kind="function"><name>Head</name></member>
-    <member refid="class_bx_singleton_1_1_list_1ad6f1a82e203b12d5327c2159bb900253" kind="function"><name>List</name></member>
+    <member refid="class_bx_singleton_1_1_list_1afaa93188410de3c16010c4cde6718d01" kind="function"><name>List</name></member>
     <member refid="class_bx_singleton_1_1_list_1aadd472da36ff4848d32f2f94684b7d77" kind="function"><name>~List</name></member>
     <member refid="class_bx_singleton_1_1_list_1a187140527e2f34659f9924aaa8012837" kind="function"><name>Link</name></member>
     <member refid="class_bx_singleton_1_1_list_1afe19382790542f2afabbeb737e90ec2a" kind="function"><name>Rebind</name></member>
@@ -1138,7 +1142,7 @@
   </compound>
   <compound refid="class_bx_dynamic_1_1_serialize" kind="class"><name>BxDynamic::Serialize</name>
     <member refid="class_bx_dynamic_1_1_serialize_1af72f30519c1ba1600a96729cb888f538" kind="variable"><name>Linker</name></member>
-    <member refid="class_bx_dynamic_1_1_serialize_1a7b1855db8a7c46790b3099c371e3800c" kind="function"><name>Link</name></member>
+    <member refid="class_bx_dynamic_1_1_serialize_1a64c3406ed8b2d8d4207d19b349595ee8" kind="function"><name>Link</name></member>
     <member refid="class_bx_dynamic_1_1_serialize_1a12a5a0c5cb9af140ef2ad78452ef91fb" kind="function"><name>Access</name></member>
     <member refid="class_bx_dynamic_1_1_serialize_1ae9ca1ba80b8bb8c3d959893c83c0a4e2" kind="function"><name>Load</name></member>
     <member refid="class_bx_dynamic_1_1_serialize_1a63fc697a8d89e58edfce8cdeda230479" kind="function"><name>Save</name></member>
@@ -1226,7 +1230,7 @@
     <member refid="class_bx_xml_1_1_unit_1a7fd32906711440cbe4d3af64a7db9ab5" kind="variable"><name>AttbValue</name></member>
     <member refid="class_bx_xml_1_1_unit_1a4f6b6ab80b376c28648a545bf55851a7" kind="function"><name>Unit</name></member>
     <member refid="class_bx_xml_1_1_unit_1a34becd918fa049e3d968b50614731d62" kind="function"><name>operator=</name></member>
-    <member refid="class_bx_xml_1_1_unit_1afee63fd9acbf6f4412fbe2e79e2c199e" kind="function"><name>Read</name></member>
+    <member refid="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" kind="function"><name>Read</name></member>
     <member refid="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" kind="function"><name>Write</name></member>
     <member refid="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" kind="function"><name>AtoH</name></member>
   </compound>
@@ -1344,9 +1348,9 @@
     <member refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kind="function"><name>IsExist</name></member>
     <member refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kind="function"><name>Open</name></member>
     <member refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kind="function"><name>Close</name></member>
-    <member refid="namespace_bx_core_1_1_file_1a6eda45c6dfcd26226c824ac400fe1450" kind="function"><name>Read</name></member>
-    <member refid="namespace_bx_core_1_1_file_1af3885eca99cefc3734065b3a2b199925" kind="function"><name>Write</name></member>
-    <member refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kind="function"><name>WriteString</name></member>
+    <member refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kind="function"><name>Read</name></member>
+    <member refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kind="function"><name>Write</name></member>
+    <member refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kind="function"><name>WriteString</name></member>
     <member refid="namespace_bx_core_1_1_file_1a2cc196750f85a59a0a6b346b3fd2ffe7" kind="function"><name>Skip</name></member>
     <member refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kind="function"><name>GetSize</name></member>
     <member refid="namespace_bx_core_1_1_file_1a749f72fef7e4a7d446c288b64596c2b7" kind="function"><name>GetSize</name></member>
@@ -1387,7 +1391,7 @@
     <member refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kind="function"><name>Create</name></member>
     <member refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kind="function"><name>Release</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kind="function"><name>GetState</name></member>
-    <member refid="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" kind="function"><name>Connect</name></member>
+    <member refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kind="function"><name>Connect</name></member>
     <member refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kind="function"><name>Disconnect</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" kind="function"><name>Send</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kind="function"><name>Recv</name></member>
@@ -1410,8 +1414,8 @@
     <member refid="namespace_bx_core_1_1_surface_1aaef270c828cd57bb99c8d11128bfbbe3" kind="function"><name>Init</name></member>
     <member refid="namespace_bx_core_1_1_surface_1abfe9836c517ee028a1e4a858b26b82ff" kind="function"><name>Flush</name></member>
     <member refid="namespace_bx_core_1_1_surface_1a4b6f7f764f3e2abadf444292bf7a149f" kind="function"><name>MiddleFlush</name></member>
-    <member refid="namespace_bx_core_1_1_surface_1ad8ea6bdf9f5e8bfdf2ce0aeeedbc3652" kind="function"><name>GetWidth</name></member>
-    <member refid="namespace_bx_core_1_1_surface_1a5056ae5cca49bb60026d16a75045b6ed" kind="function"><name>GetHeight</name></member>
+    <member refid="namespace_bx_core_1_1_surface_1afb97280c477abd9db89abe0d2451943c" kind="function"><name>GetWidth</name></member>
+    <member refid="namespace_bx_core_1_1_surface_1ac12a46758c8b9837608938cbbed95365" kind="function"><name>GetHeight</name></member>
     <member refid="namespace_bx_core_1_1_surface_1add1206ac58b30b117600c186daca0973" kind="function"><name>GetWidthHW</name></member>
     <member refid="namespace_bx_core_1_1_surface_1aa396df855a2d8c80089340c5542e0a52" kind="function"><name>GetHeightHW</name></member>
     <member refid="namespace_bx_core_1_1_surface_1a301a412c0a71aeca77040391c5417798" kind="function"><name>SetMarginMode</name></member>
@@ -1420,9 +1424,9 @@
     <member refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kind="function"><name>IsQuit</name></member>
     <member refid="namespace_bx_core_1_1_system_1a76e419e00d7b54a666a81fbcf125ac0b" kind="function"><name>DoQuit</name></member>
     <member refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kind="function"><name>Sleep</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a59483b8ee9d089a74c7a9740852aa4df" kind="function"><name>GetTimerMilliSecond</name></member>
-    <member refid="namespace_bx_core_1_1_system_1aa6cf90144989774248381296f15b37ab" kind="function"><name>GetTimerNanoSecond</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a85e8f80e498acf000999ea21f54d6df2" kind="function"><name>GetTimerSimilarMicroSecond</name></member>
+    <member refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kind="function"><name>GetTimeMilliSecond</name></member>
+    <member refid="namespace_bx_core_1_1_system_1ad2a6c71226e0449a64c37b80b5cdbe99" kind="function"><name>GetTimeNanoSecond</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a34998eba0b8d104f30f3f51f7f7bf9d0" kind="function"><name>GetTimeSimilarMicroSecond</name></member>
     <member refid="namespace_bx_core_1_1_system_1ae89a8d48541b11a69ed90cf5076e2d06" kind="function"><name>IsMultiTouchAvailable</name></member>
     <member refid="namespace_bx_core_1_1_system_1a86fbb372ea32b5ef24e6da6ed3bcfd3c" kind="function"><name>IsTouchDown</name></member>
     <member refid="namespace_bx_core_1_1_system_1a510c9d39d960f5c707c117e9a62937fc" kind="function"><name>MakeTouchEvent</name></member>
@@ -1438,9 +1442,11 @@
     <member refid="namespace_bx_core_1_1_system_1a7fb73d2ee4780e2463f3bd4d93cba8b6" kind="function"><name>GetSimulatorCursorPos</name></member>
     <member refid="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" kind="function"><name>DoSimulatorMinimize</name></member>
     <member refid="namespace_bx_core_1_1_system_1a1afedf60a29f8013d6d46205eb702526" kind="function"><name>Assert</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a7445f57ed8e6b3c7ccf18dcb02bb540e" kind="function"><name>GetOSName</name></member>
-    <member refid="namespace_bx_core_1_1_system_1ae6255fafc82519bc7cfc01ab996d72c3" kind="function"><name>GetArchitectureName</name></member>
-    <member refid="namespace_bx_core_1_1_system_1af4162994ad1af5f2acc648ce736d883d" kind="function"><name>GetPhoneNumber</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" kind="function"><name>GetOSName</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a6cd582a9429126f4aa5fd79632f22a28" kind="function"><name>GetArchName</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a11a29c154a97f2ba8b70e577a1949668" kind="function"><name>GetPhoneNumber</name></member>
+    <member refid="namespace_bx_core_1_1_system_1ab9cddc7423b39cd731c23a82694e6620" kind="function"><name>GetAppPackage</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a2fb357dd75ed24a9a9c9fc3c58fbe1cb" kind="function"><name>GetAppVersion</name></member>
     <member refid="namespace_bx_core_1_1_system_1a0b095dd1b0208cbb637868fab91e5cfe" kind="function"><name>PopupOSExecute</name></member>
     <member refid="namespace_bx_core_1_1_system_1af8690955284b9503907f308014453b93" kind="function"><name>PopupOSKeyboard</name></member>
     <member refid="namespace_bx_core_1_1_system_1ac2473ebfc86c3766155c7193893b0ce3" kind="function"><name>AddCallback</name></member>
@@ -1457,7 +1463,7 @@
     <member refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kind="function"><name>MemMove</name></member>
     <member refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kind="function"><name>MemSet</name></member>
     <member refid="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" kind="function"><name>MemCmp</name></member>
-    <member refid="namespace_bx_core_1_1_util_1acc3991e4564fe39ffe00ec5c16d1cab6" kind="function"><name>Print</name></member>
+    <member refid="namespace_bx_core_1_1_util_1a7d19a71790c1618490e526fb0a12ed27" kind="function"><name>Print</name></member>
     <member refid="namespace_bx_core_1_1_util_1a41880400f45728f06bf82d985191af63" kind="function"><name>Printf</name></member>
     <member refid="namespace_bx_core_1_1_util_1acb919367d4ddcaf86284146ce9237c2e" kind="function"><name>SnPrintf</name></member>
     <member refid="namespace_bx_core_1_1_util_1ac70cec443af515775e1715fb098d4ebd" kind="function"><name>VsnPrintf</name></member>
@@ -1472,6 +1478,11 @@
     <member refid="namespace_bx_draw_global_1ab4ffc772a3f20e7fad41aac4f67bf083" kind="enum"><name>option</name></member>
     <member refid="namespace_bx_draw_global_1ab4ffc772a3f20e7fad41aac4f67bf083ad5e94a47d68f0e1bacfd1657f9cebbb5" kind="enumvalue"><name>FILL</name></member>
     <member refid="namespace_bx_draw_global_1ab4ffc772a3f20e7fad41aac4f67bf083ad777f222a80ca905d9af98ff2cb64822" kind="enumvalue"><name>DRAW</name></member>
+    <member refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kind="function"><name>XY</name></member>
+    <member refid="namespace_bx_draw_global_1a385990a7ae7f2671078c00fe06afb80d" kind="function"><name>XY</name></member>
+    <member refid="namespace_bx_draw_global_1a573d9a33f68854689c5a94931ef40d64" kind="function"><name>WH</name></member>
+    <member refid="namespace_bx_draw_global_1a5b4308be171bbaea41e7ec41fe575574" kind="function"><name>XYWH</name></member>
+    <member refid="namespace_bx_draw_global_1ae284872147dbce083bbdddfbcf6cf057" kind="function"><name>XYXY</name></member>
     <member refid="namespace_bx_draw_global_1ad15e4e6ddd48750b45d1262cad126e8d" kind="function"><name>XYR</name></member>
     <member refid="namespace_bx_draw_global_1aaad2b306eb1a3cdb820f97ec41543e96" kind="function"><name>XYRR</name></member>
     <member refid="namespace_bx_draw_global_1a64389bd5a1f1f7affa88ff54ff45b210" kind="function"><name>XYS</name></member>
@@ -1507,7 +1518,7 @@
     <member refid="namespace_bx_draw_global_1a1106b5aedf54a1f4c833e8b579d54280" kind="function"><name>COLOR</name></member>
     <member refid="namespace_bx_draw_global_1a7fa6f827fc2f2ed183f211bfb127d3ad" kind="function"><name>OPACITY</name></member>
     <member refid="namespace_bx_draw_global_1ace28c010cf3281f551f837e6428cf690" kind="function"><name>BLEND</name></member>
-    <member refid="namespace_bx_draw_global_1aab314a4ab2685e289eb44379a2d3ce84" kind="function"><name>FORM</name></member>
+    <member refid="namespace_bx_draw_global_1a50883fceecae4f90627db55e7de4c141" kind="function"><name>FORM</name></member>
     <member refid="namespace_bx_draw_global_1a80ba83be68f5db3990b6acb7ad96c3bc" kind="function"><name>MOVE3D</name></member>
   </compound>
   <compound refid="namespace_bx_dynamic" kind="namespace"><name>BxDynamic</name>
@@ -1571,6 +1582,7 @@
     <member refid="namespace_bx_util_global_1ad12eeb6b5b454f85bf6ea3cf7dcd3094" kind="function"><name>Sqrt</name></member>
     <member refid="namespace_bx_util_global_1a0732d3795e4787d47c7ac63e74c083ab" kind="function"><name>Sqrt64</name></member>
     <member refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kind="function"><name>StrLen</name></member>
+    <member refid="namespace_bx_util_global_1acf3ce0b4c4af01dfb26f0e82a438fb22" kind="function"><name>StrLenT</name></member>
     <member refid="namespace_bx_util_global_1a39b70575037e5a54e79b304c82c1822a" kind="function"><name>StrLenEx</name></member>
     <member refid="namespace_bx_util_global_1a41d6743504746604fc1b2607346e2b5c" kind="function"><name>StrLenEx</name></member>
     <member refid="namespace_bx_util_global_1ad27a75813b9a9bf993a96c31fa738b63" kind="function"><name>StrAlloc</name></member>
@@ -1699,7 +1711,7 @@
     <member refid="_bx_tween_8hpp_1a6ae55e09f38049dcb5087de9a03d3d03" kind="define"><name>MS_TO_FRAME</name></member>
   </compound>
   <compound refid="_bx_type_8hpp" kind="file"><name>BxType.hpp</name>
-    <member refid="_bx_type_8hpp_1ac97b8ee753e4405397a42ad5799b0f9e" kind="define"><name>null</name></member>
+    <member refid="_bx_type_8hpp_1ab979d9d4b4923f7c54d6caa6e1a61936" kind="define"><name>nullptr</name></member>
     <member refid="_bx_type_8hpp_1a41f9c5fb8b08eb5dc3edce4dcb37fee7" kind="define"><name>true</name></member>
     <member refid="_bx_type_8hpp_1a65e9886d74aaee76545e83dd09011727" kind="define"><name>false</name></member>
     <member refid="_bx_type_8hpp_1a00d24c7231be28dbaf71f5408f30e44c" kind="define"><name>inline</name></member>
@@ -1725,25 +1737,9 @@
     <member refid="_bx_type_8hpp_1a63347261cdf2b6205e9c261f94db9374" kind="define"><name>VAL4</name></member>
     <member refid="_bx_type_8hpp_1a77a787d04694fc0930721568e9a89d93" kind="define"><name>CASE64</name></member>
     <member refid="_bx_type_8hpp_1a0eb0baab24c8c5d88818371acd534ffc" kind="define"><name>BxAssert</name></member>
-    <member refid="_bx_type_8hpp_1a0a9966c1d6f1ea05f22f28532e4da3c3" kind="define"><name>__CALLSTACK_ADD__</name></member>
-    <member refid="_bx_type_8hpp_1a8f11d9940bf3a1c38ee2cae581ba9fe2" kind="define"><name>__CALLSTACK_SUB__</name></member>
-    <member refid="_bx_type_8hpp_1a370b7746179f58986db17aa6a68e9434" kind="define"><name>____FunctionBox____return</name></member>
-    <member refid="_bx_type_8hpp_1abe7f35dbd985fd859b62fc26cb959e3f" kind="define"><name>____FunctionBoxS____return</name></member>
-    <member refid="_bx_type_8hpp_1ae2fb35652f04b9f1f3c6032326505759" kind="define"><name>____FunctionBoxI____return</name></member>
-    <member refid="_bx_type_8hpp_1abe1f243a9839fd544567a4d9c9f6d915" kind="define"><name>____FunctionBoxSI____return</name></member>
-    <member refid="_bx_type_8hpp_1a43e80fb407576439adf6e79697d49a21" kind="define"><name>____FunctorBox____name</name></member>
-    <member refid="_bx_type_8hpp_1a8d0656e3e95b6a51e3c19ad96b58932d" kind="define"><name>____name</name></member>
-    <member refid="_bx_type_8hpp_1af8e26609815e027f691d03016850dc8d" kind="define"><name>____param</name></member>
-    <member refid="_bx_type_8hpp_1a5cc6a2d57b241753e9cff22940076716" kind="define"><name>____comment</name></member>
-    <member refid="_bx_type_8hpp_1a3e2c218fa165db649f5775dcd5f3fb4e" kind="define"><name>finally</name></member>
-    <member refid="_bx_type_8hpp_1a089fe7368cce256b1388e945218cdaf9" kind="define"><name>IIII</name></member>
-    <member refid="_bx_type_8hpp_1a86c11b3e9856cf85463a9c11a3dca8f5" kind="define"><name>___IIII</name></member>
-    <member refid="_bx_type_8hpp_1accb5cfc9b321f64910782072389e989e" kind="define"><name>___________</name></member>
-    <member refid="_bx_type_8hpp_1aaa27c2d94beaad49bd17fa73855acdbf" kind="define"><name>_______</name></member>
-    <member refid="_bx_type_8hpp_1aeaa3e3a6e389b8cb0f1a54a49977f909" kind="define"><name>_______IIII</name></member>
-    <member refid="_bx_type_8hpp_1aa9a0184fd6548d9d3cd1e16ec13aa21a" kind="define"><name>IIII____return</name></member>
-    <member refid="_bx_type_8hpp_1a4c333be014774b3ad58417dc829af762" kind="define"><name>IIII_____________________________________________________________________________instance</name></member>
-    <member refid="_bx_type_8hpp_1a87572356a23948ff014480c9f5ca8c57" kind="define"><name>IIII________________________________________________________________________________________________________________________IIII</name></member>
+    <member refid="_bx_type_8hpp_1a42e01b72ee690c372b09d89dd2d26f0c" kind="define"><name>IW_STD_NEW_H</name></member>
+    <member refid="_bx_type_8hpp_1a7c71b794f0badaceccc8c0afe790fe34" kind="define"><name>__PLACEMENT_NEW_INLINE</name></member>
+    <member refid="_bx_type_8hpp_1a2160f60eac88968e86fba68a5f0e6c21" kind="define"><name>NEW_SIZE_T</name></member>
     <member refid="_bx_type_8hpp_1a5bf49514a4396e7f66408641b0e22794" kind="define"><name>__BX_DECLARE_IsTypePointer</name></member>
     <member refid="_bx_type_8hpp_1ae79d6f8846cbb2b52dbd0bb7ff262117" kind="define"><name>try</name></member>
     <member refid="_bx_type_8hpp_1aca73786b66060bce4af7787d4fcbfa27" kind="enum"><name>rsid</name></member>
@@ -2134,6 +2130,10 @@
     <member refid="_bx_type_8hpp_1af27373baed57949a36589a9bbd81517c" kind="typedef"><name>callback_progress</name></member>
     <member refid="_bx_type_8hpp_1ad0db018921b55b5b7980081985416a72" kind="typedef"><name>callback_serialize</name></member>
     <member refid="_bx_type_8hpp_1a71df78a2afab516694bdc9e6275cd6bb" kind="typedef"><name>callback_filesearch</name></member>
+    <member refid="_bx_type_8hpp_1a3d4760828e445c0a3efacceee81a7cea" kind="function"><name>operator new</name></member>
+    <member refid="_bx_type_8hpp_1ad82832ac8965e316138da4604acc57c4" kind="function"><name>operator new[]</name></member>
+    <member refid="_bx_type_8hpp_1a41d83e8020f1d841b254be6ebeda92d2" kind="function"><name>operator delete</name></member>
+    <member refid="_bx_type_8hpp_1afea8decef8f286c8d73c89a1a81d4555" kind="function"><name>operator delete[]</name></member>
     <member refid="_bx_type_8hpp_1a9d3dd89539ee0d0f06dcb3fc1fd2b192" kind="function"><name>_IsTypePointer</name></member>
     <member refid="_bx_type_8hpp_1a47ca80be6b3a0861c2bc5d312a78b983" kind="function"><name>_IsTypePointer</name></member>
     <member refid="_bx_type_8hpp_1acf988dd9effb4b48eeff6b361e0c41ef" kind="function"><name>IsTypePointer</name></member>

@@ -133,7 +133,7 @@ public:
 		}
 	}
 
-	void DrawAnimate(OnPart PartCB, void* Data = null)
+	void DrawAnimate(OnPart PartCB, void* Data = nullptr)
 	{
 		if(!_IsAnimationPlay)
 			NextAnimate();

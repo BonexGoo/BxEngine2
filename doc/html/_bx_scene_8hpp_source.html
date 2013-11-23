@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -102,9 +102,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_bx_scene.html#a9763cca1ec026a37162400e97c183bae">   17</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_scene.html#a9763cca1ec026a37162400e97c183bae" title="씬활성화 요청 ">AddRequest</a>(<span class="keywordtype">string</span> Name, <span class="keywordtype">int</span> Order = -1)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        AllScene* FindedScene = __FindAllScene__(Name);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, FindedScene != null);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;이미 활성화된 씬입니다&gt;&quot;</span>, __FindActiveScene__(Name) == null);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 씬은 이미 요청중입니다&gt;&quot;</span>, __FindActiveSceneRequest__(FindedScene) == null);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, FindedScene != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;이미 활성화된 씬입니다&gt;&quot;</span>, __FindActiveScene__(Name) == <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 씬은 이미 요청중입니다&gt;&quot;</span>, __FindActiveSceneRequest__(FindedScene) == <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">// New Request(Add)</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        ActiveSceneRequest* NewActiveSceneRequest = BxNew_Param(ActiveSceneRequest, sysrequest_add, Order, BxNew_Param(ActiveScene, FindedScene));</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        NewActiveSceneRequest-&gt;Next = __GetActiveSceneRequest__().Next;</div>
@@ -114,10 +114,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_bx_scene.html#aa9dd5490b88cfcbe671a331dceb1a77d">   35</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_scene.html#aa9dd5490b88cfcbe671a331dceb1a77d" title="활성씬 제거 ">SubRequest</a>(<span class="keywordtype">string</span> Name)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != null);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        AllScene* FindedScene = __FindActiveScene__(Name);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름으로 활성화된 씬이 없습니다&gt;&quot;</span>, FindedScene != null);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 씬은 이미 요청중입니다&gt;&quot;</span>, __FindActiveSceneRequest__(FindedScene) == null);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름으로 활성화된 씬이 없습니다&gt;&quot;</span>, FindedScene != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 씬은 이미 요청중입니다&gt;&quot;</span>, __FindActiveSceneRequest__(FindedScene) == <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// Find Loop</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        ActiveScene* OneActiveScene = &amp;__GetActiveScene__();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">while</span>(OneActiveScene-&gt;Scene != FindedScene)</div>
@@ -131,10 +131,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_bx_scene.html#a993fd47b28dce1816496d5e93ba33662">   57</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_scene.html#a993fd47b28dce1816496d5e93ba33662" title="활성씬 출력순번변경 ">SetRequest</a>(<span class="keywordtype">string</span> Name, uint Order)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != null);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        AllScene* FindedScene = __FindActiveScene__(Name);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름으로 활성화된 씬이 없습니다&gt;&quot;</span>, FindedScene != null);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 씬은 이미 요청중입니다&gt;&quot;</span>, __FindActiveSceneRequest__(FindedScene) == null);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름으로 활성화된 씬이 없습니다&gt;&quot;</span>, FindedScene != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 씬은 이미 요청중입니다&gt;&quot;</span>, __FindActiveSceneRequest__(FindedScene) == <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Find Loop</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        ActiveScene* OneActiveScene = &amp;__GetActiveScene__();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">while</span>(OneActiveScene-&gt;Scene != FindedScene)</div>
@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">const</span> GetDataCB GetData;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        AllScene* Next;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        AllScene(<span class="keywordtype">string</span> name, EventCB event, UpdateCB update, RenderCB render, GetDataCB getdata)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            : Name(name), Event(event), Update(update), Render(render), GetData(getdata), Next(null) {}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            : Name(name), Event(event), Update(update), Render(render), GetData(getdata), Next(nullptr) {}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        ~AllScene() {BxDelete(Next);}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    };</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
@@ -172,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> EnableKey;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">bool</span> EnableTouch;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        ActiveScene* Next;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        ActiveScene(AllScene* _ref_ layer) : Scene(layer), EnableKey(false), EnableTouch(false), Next(null) {}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        ActiveScene(AllScene* _ref_ layer) : Scene(layer), EnableKey(false), EnableTouch(false), Next(nullptr) {}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        ~ActiveScene() {BxDelete(Next);}</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    };</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
@@ -183,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> Option;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        ActiveScene* _ref_ Data;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        ActiveSceneRequest* Next;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        ActiveSceneRequest(sysrequest type, <span class="keywordtype">int</span> option, ActiveScene* _ref_ data) : Type(type), Option(option), Data(data), Next(null) {}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        ActiveSceneRequest(sysrequest type, <span class="keywordtype">int</span> option, ActiveScene* _ref_ data) : Type(type), Option(option), Data(data), Next(nullptr) {}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        ~ActiveSceneRequest() {BxDelete(Next);}</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    };</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
@@ -193,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="structsysevent.html" title="OnEvent()의 이벤트파라미터 ">sysevent</a> Event;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        syseventset Set;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        EventQueue* Next;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        EventQueue() : Next(null) {}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        EventQueue() : Next(nullptr) {}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        ~EventQueue() {<span class="keyword">delete</span> Next;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        global_func EventQueue* Top(<span class="keywordtype">bool</span> doflip = <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        {</div>
@@ -212,10 +212,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno"><a class="code" href="class_bx_scene.html#a93faa81b158dc76969ef4af16efde4a1">  154</a></span>&#160;    global_func uint <a class="code" href="class_bx_scene.html#a93faa81b158dc76969ef4af16efde4a1" title="활성씬 출력순번얻기 ">GetOrder</a>(<span class="keywordtype">string</span> Name)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != null);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        uint Count = (uint) __GetActiveSceneAllCount__() - 1;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        ActiveScene* OneActiveScene = &amp;__GetActiveScene__();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(OneActiveScene-&gt;Scene-&gt;Name, Name) == same)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">return</span> Count;</div>
@@ -229,33 +229,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;검색할 씬의 순번이 너무 큽니다&gt;&quot;</span>, Order &lt; (uint) __GetActiveSceneAllCount__());</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        uint Count = (uint) __GetActiveSceneAllCount__() - 1;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        ActiveScene* OneActiveScene = &amp;__GetActiveScene__();</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">if</span>(Count == Order)</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="keywordflow">return</span> OneActiveScene-&gt;Scene-&gt;Name;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            --Count;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="class_bx_scene.html#ac485f70214143d939311e6b403d6ed6d">  192</a></span>&#160;    global_func <span class="keywordtype">bool</span> <a class="code" href="class_bx_scene.html#ac485f70214143d939311e6b403d6ed6d" title="해당 씬의 활성화 상태얻기 ">IsActivity</a>(<span class="keywordtype">string</span> Name)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != null);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        AllScene* FindedScene = __FindActiveScene__(Name);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> (FindedScene != null);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> (FindedScene != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno"><a class="code" href="class_bx_scene.html#a31f3363df33df2fe373ed5e96679c95d">  204</a></span>&#160;    global_func <span class="keywordtype">void</span>* <a class="code" href="class_bx_scene.html#a31f3363df33df2fe373ed5e96679c95d" title="활성씬의 데이터얻기 ">GetData</a>(<span class="keywordtype">string</span> Name)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != null);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름의 씬은 존재하지 않습니다&gt;&quot;</span>, __FindAllScene__(Name) != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        AllScene* FindedScene = __FindActiveScene__(Name);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름으로 활성화된 씬이 없습니다&gt;&quot;</span>, FindedScene != null);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이름으로 활성화된 씬이 없습니다&gt;&quot;</span>, FindedScene != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">return</span> FindedScene-&gt;GetData(sysmethod_get);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    global_func <span class="keywordtype">bool</span> __Create__(<span class="keywordtype">string</span> Name, EventCB Event, UpdateCB Update, RenderCB Render, GetDataCB GetData)</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;같은 씬이름을 가진 파일이 이미 존재합니다&gt;&quot;</span>, __FindAllScene__(Name) == null);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxScene&lt;같은 씬이름을 가진 파일이 이미 존재합니다&gt;&quot;</span>, __FindAllScene__(Name) == <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        AllScene* NewScene = BxNew_Param(AllScene, Name, Event, Update, Render, GetData);</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        NewScene-&gt;Next = __GetAllScene__().Next;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        __GetAllScene__().Next = NewScene;</div>
@@ -364,7 +364,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                }</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="comment">// 이벤트처리</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                ActiveScene* OneActiveScene = &amp;__GetActiveScene__();</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                {</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                    <span class="keywordflow">switch</span>(Event.type)</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                    {</div>
@@ -386,7 +386,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이벤트는 독점할 수 없습니다&gt;&quot;</span>, Event.type != syseventtype_init);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이벤트는 독점할 수 없습니다&gt;&quot;</span>, Event.type != syseventtype_quit);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        BxAssert(<span class="stringliteral">&quot;BxScene&lt;해당 이벤트는 독점할 수 없습니다&gt;&quot;</span>, Event.type != syseventtype_resize);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                        {</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                            <span class="keywordflow">switch</span>(Event.type)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                            {</div>
@@ -409,7 +409,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            }</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        }</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keyword">delete</span> TopNode-&gt;Next;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        TopNode-&gt;Next = null;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        TopNode-&gt;Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> DoEvent;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
@@ -419,7 +419,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        sysupdateresult UpdateResult = (BxScene::__OnEvent__(Draw))? sysupdateresult_do_render : sysupdateresult_no_render_fixed_frame;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="comment">// Update</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        ActiveScene* OneActiveScene = &amp;__GetActiveScene__();</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">while</span>((OneActiveScene = OneActiveScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            UpdateResult = (sysupdateresult) (UpdateResult | OneActiveScene-&gt;Scene-&gt;Update(OneActiveScene-&gt;Scene-&gt;GetData(sysmethod_get)));</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="comment">// Render</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> DoRender = (UpdateResult &amp; sysupdateresult_do_render_fixed_frame) == sysupdateresult_do_render_fixed_frame;</div>
@@ -455,7 +455,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ActiveSceneRequestCount = __GetActiveSceneRequestCount__();</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        __GetActiveSceneRequestCount__() = 0;</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        ActiveSceneRequest* OldActiveSceneRequest = __GetActiveSceneRequest__().Next;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        __GetActiveSceneRequest__().Next = null;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        __GetActiveSceneRequest__().Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="comment">// 요청실행</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <a class="code" href="structsysevent.html" title="OnEvent()의 이벤트파라미터 ">sysevent</a> Event;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(&amp;Event, 0, <span class="keyword">sizeof</span>(<a class="code" href="structsysevent.html" title="OnEvent()의 이벤트파라미터 ">sysevent</a>));</div>
@@ -483,8 +483,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                        ++__GetActiveSceneGUICount__();</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                    <span class="comment">// Scene Init(SceneData Create)</span></div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                    Event.type = syseventtype_init;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                    Event.init.w = <a class="code" href="namespace_bx_core_1_1_surface.html#ad8ea6bdf9f5e8bfdf2ce0aeeedbc3652" title="화면너비 구하기 ">BxCore::Surface::GetWidth</a>();</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                    Event.init.h = <a class="code" href="namespace_bx_core_1_1_surface.html#a5056ae5cca49bb60026d16a75045b6ed" title="화면높이 구하기 ">BxCore::Surface::GetHeight</a>();</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                    Event.init.w = <a class="code" href="namespace_bx_core_1_1_surface.html#afb97280c477abd9db89abe0d2451943c" title="화면너비 구하기 ">BxCore::Surface::GetWidth</a>();</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                    Event.init.h = <a class="code" href="namespace_bx_core_1_1_surface.html#ac12a46758c8b9837608938cbbed95365" title="화면높이 구하기 ">BxCore::Surface::GetHeight</a>();</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    OneActiveSceneRequest-&gt;Data-&gt;Scene-&gt;Event(OneActiveSceneRequest-&gt;Data-&gt;Scene-&gt;GetData(sysmethod_get), Event);</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                }</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                <span class="keywordflow">break</span>;</div>
@@ -505,7 +505,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                    }</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                    ActiveScene* DeleteActiveScene = OneActiveSceneRequest-&gt;Data;</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                    PrevDeleteActiveScene-&gt;Next = DeleteActiveScene-&gt;Next;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                    DeleteActiveScene-&gt;Next = null;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                    DeleteActiveScene-&gt;Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                    BxDelete(DeleteActiveScene);</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                    --__GetActiveSceneAllCount__();</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                    <span class="keywordflow">if</span>(Order &lt; __GetActiveSceneGUICount__())</div>
@@ -540,37 +540,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    global_func AllScene* __FindAllScene__(<span class="keywordtype">string</span> Name)</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    {</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        AllScene* FindedScene = &amp;__GetAllScene__();</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">while</span>((FindedScene = FindedScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">while</span>((FindedScene = FindedScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(FindedScene-&gt;Name, Name) == same)</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                <span class="keywordflow">return</span> FindedScene;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    }</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    global_func AllScene* __FindActiveScene__(<span class="keywordtype">string</span> Name)</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        ActiveScene* FindedActiveScene = &amp;__GetActiveScene__();</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">while</span>((FindedActiveScene = FindedActiveScene-&gt;Next) != null)</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">while</span>((FindedActiveScene = FindedActiveScene-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(FindedActiveScene-&gt;Scene-&gt;Name, Name) == same)</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                <span class="keywordflow">return</span> FindedActiveScene-&gt;Scene;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    }</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    global_func ActiveScene* __FindActiveSceneRequest__(AllScene* Scene)</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    {</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        ActiveSceneRequest* FindedActiveSceneRequest = &amp;__GetActiveSceneRequest__();</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keywordflow">while</span>((FindedActiveSceneRequest = FindedActiveSceneRequest-&gt;Next) != null)</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keywordflow">while</span>((FindedActiveSceneRequest = FindedActiveSceneRequest-&gt;Next) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <span class="keywordflow">if</span>(FindedActiveSceneRequest-&gt;Data-&gt;Scene == Scene)</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                <span class="keywordflow">return</span> FindedActiveSceneRequest-&gt;Data;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="comment">// Scene</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    global_func <span class="keyword">inline</span> AllScene&amp; __GetAllScene__() {global_data AllScene Begin(<span class="stringliteral">&quot;&quot;</span>, null, null, null, null); <span class="keywordflow">return</span> Begin;}</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    global_func <span class="keyword">inline</span> ActiveScene&amp; __GetActiveScene__() {global_data ActiveScene Begin(null); <span class="keywordflow">return</span> Begin;}</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    global_func <span class="keyword">inline</span> AllScene&amp; __GetAllScene__() {global_data AllScene Begin(<span class="stringliteral">&quot;&quot;</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>); <span class="keywordflow">return</span> Begin;}</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    global_func <span class="keyword">inline</span> ActiveScene&amp; __GetActiveScene__() {global_data ActiveScene Begin(<span class="keyword">nullptr</span>); <span class="keywordflow">return</span> Begin;}</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">int</span>&amp; __GetActiveSceneAllCount__() {global_data <span class="keywordtype">int</span> AllCount = 0; <span class="keywordflow">return</span> AllCount;}</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">int</span>&amp; __GetActiveSceneGUICount__() {global_data <span class="keywordtype">int</span> GUICount = 0; <span class="keywordflow">return</span> GUICount;}</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="comment">// Request</span></div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    global_func <span class="keyword">inline</span> ActiveSceneRequest&amp; __GetActiveSceneRequest__() {global_data ActiveSceneRequest Begin(sysrequest_null, 0, null); <span class="keywordflow">return</span> Begin;}</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    global_func <span class="keyword">inline</span> ActiveSceneRequest&amp; __GetActiveSceneRequest__() {global_data ActiveSceneRequest Begin(sysrequest_null, 0, <span class="keyword">nullptr</span>); <span class="keywordflow">return</span> Begin;}</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">int</span>&amp; __GetActiveSceneRequestCount__() {global_data <span class="keywordtype">int</span> RequestCount = 0; <span class="keywordflow">return</span> RequestCount;}</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;};</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
@@ -583,21 +583,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="preprocessor">    local_func void __OnRender__(void* Data, BxDraw&amp; Draw) {OnRender(*((DATA*) Data), Draw);} \</span></div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="preprocessor">    local_func void* __GetData__(sysmethod Mode) \</span></div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="preprocessor">    { \</span></div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="preprocessor">        global_data DATA* Data = null; \</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="preprocessor">        global_data DATA* Data = nullptr; \</span></div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="preprocessor">        if(Mode == sysmethod_remove) \</span></div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="preprocessor">        { \</span></div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">            BxDelete(Data); \</span></div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="preprocessor">            Data = null; \</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="preprocessor">            Data = nullptr; \</span></div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">        } \</span></div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="preprocessor">        else if(!Data) \</span></div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="preprocessor">            Data = BxNew(DATA); \</span></div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="preprocessor">        return (void*) Data; \</span></div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor">    } \</span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="preprocessor">    local_data bool Unknown = BxScene::__Create__(STRING, __OnEvent__, __OnUpdate__, __OnRender__, __GetData__);</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="preprocessor">    local_data bool _Unknown = BxScene::__Create__(STRING, __OnEvent__, __OnUpdate__, __OnRender__, __GetData__);</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

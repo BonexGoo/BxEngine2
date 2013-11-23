@@ -7,104 +7,104 @@
     <includedby refid="_bx_string_8hpp" local="no">BxString.hpp</includedby>
     <includedby refid="_bx_telex_8hpp" local="no">BxTelex.hpp</includedby>
     <incdepgraph>
-      <node id="401">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="402" relation="include">
-        </childnode>
-      </node>
-      <node id="404">
+      <node id="405">
         <label>stdarg.h</label>
       </node>
-      <node id="402">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="403" relation="include">
+      <node id="406">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="407" relation="include">
         </childnode>
-        <childnode refid="405" relation="include">
+      </node>
+      <node id="401">
+        <label>BxVar.hpp</label>
+        <link refid="BxVar.hpp"/>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
         </childnode>
       </node>
       <node id="403">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="404" relation="include">
         </childnode>
       </node>
-      <node id="405">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="406" relation="include">
-        </childnode>
-      </node>
-      <node id="400">
-        <label>BxVar.hpp</label>
-        <link refid="BxVar.hpp"/>
-        <childnode refid="401" relation="include">
-        </childnode>
-        <childnode refid="406" relation="include">
-        </childnode>
-      </node>
-      <node id="406">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
+      <node id="402">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="403" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="407">
-        <label>BxVar.hpp</label>
-        <link refid="BxVar.hpp"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="415" relation="include">
-        </childnode>
-      </node>
-      <node id="411">
+      <node id="412">
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
       </node>
-      <node id="414">
-        <label>BxXml.hpp</label>
-        <link refid="_bx_xml_8hpp_source"/>
-        <childnode refid="413" relation="include">
-        </childnode>
-      </node>
-      <node id="409">
+      <node id="410">
         <label>BxAnimate.hpp</label>
         <link refid="_bx_animate_8hpp_source"/>
       </node>
       <node id="408">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
+        <label>BxVar.hpp</label>
+        <link refid="BxVar.hpp"/>
         <childnode refid="409" relation="include">
         </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>BxXml.hpp</label>
+        <link refid="_bx_xml_8hpp_source"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="411">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+      </node>
+      <node id="413">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>BxTelex.hpp</label>
+        <link refid="_bx_telex_8hpp_source"/>
+      </node>
+      <node id="409">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
         <childnode refid="410" relation="include">
         </childnode>
         <childnode refid="411" relation="include">
         </childnode>
         <childnode refid="412" relation="include">
         </childnode>
-        <childnode refid="414" relation="include">
-        </childnode>
-      </node>
-      <node id="413">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="410">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-      </node>
-      <node id="412">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
         <childnode refid="413" relation="include">
         </childnode>
-      </node>
-      <node id="415">
-        <label>BxTelex.hpp</label>
-        <link refid="_bx_telex_8hpp_source"/>
+        <childnode refid="415" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_var" prot="public">BxVar</innerclass>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_var_8hpp_1a210af1d04c8870416a556f0e9a5194fd" prot="public" static="no">
         <name>LAST</name>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="9" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="9" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp" line="9" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_var_8hpp_1a7c4c1083e1a62791293d8893fe35a708" prot="public" static="no">
         <name>FINAL</name>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" line="12" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp" bodystart="12" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp" line="12" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -191,7 +191,7 @@
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree&amp;<sp/>Leaf<sp/>=<sp/>TreeHead.GetLeafMutabled(index);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VarList*<sp/>List<sp/>=<sp/>Leaf.GetList(index);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(List)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(CachePtr[index16]<sp/>=<sp/>List-&gt;Data);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(CachePtr[index16]<sp/>=<sp/>Leaf.AddList(index,<sp/>MakeNewData(null),<sp/>VarTree::NoRanging));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(CachePtr[index16]<sp/>=<sp/>Leaf.AddList(index,<sp/>MakeNewData(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>VarTree::NoRanging));</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터접근</highlight><highlight class="normal"></highlight></codeline>
@@ -201,7 +201,7 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VarTree&amp;<sp/>Leaf<sp/>=<sp/>TreeHead.GetLeaf(index);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VarList*<sp/>List<sp/>=<sp/>Leaf.GetList(index);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(List)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>List-&gt;Data;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터길이</highlight><highlight class="normal"></highlight></codeline>
@@ -239,7 +239,7 @@
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>List<sp/>=<sp/>Leaf.GetListMutabled(index);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(List)</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(oldData)<sp/>*oldData<sp/>=<sp/>List-&gt;Data,<sp/>List-&gt;Data<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(oldData)<sp/>*oldData<sp/>=<sp/>List-&gt;Data,<sp/>List-&gt;Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Leaf.SubList(List,<sp/>VarTree::DoRanging)<sp/>==<sp/>VarTree::DeleteMe)</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarTreePool::FreeClass</ref>(&amp;Leaf);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -272,7 +272,7 @@
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(List)</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CleaningCache();</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(oldData)<sp/>*oldData<sp/>=<sp/>List-&gt;Data,<sp/>List-&gt;Data<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(oldData)<sp/>*oldData<sp/>=<sp/>List-&gt;Data,<sp/>List-&gt;Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Leaf.SubList(List,<sp/>VarTree::NoRanging)<sp/>==<sp/>VarTree::DeleteMe)</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarTreePool::FreeClass</ref>(&amp;Leaf);</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
@@ -286,7 +286,7 @@
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TYPE*<sp/>Data1<sp/>=<sp/>Access(index1);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TYPE*<sp/>Data2<sp/>=<sp/>Access(index2);</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Data1<sp/>&amp;&amp;<sp/>!Data2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TYPE*<sp/>NoDelete<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TYPE*<sp/>NoDelete<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Data1)<sp/>ModifyData(index2,<sp/>Data1,<sp/>&amp;NoDelete);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>RemoveData(index2,<sp/>&amp;NoDelete);</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Data2)<sp/>ModifyData(index1,<sp/>Data2,<sp/>&amp;NoDelete);</highlight></codeline>
@@ -332,9 +332,9 @@
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>()<sp/>:<sp/>TreeHead(null),<sp/>BytesUpdated(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>BytesData(null),<sp/>IsDirtyCache(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{CleaningCache();}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>()<sp/>:<sp/>TreeHead(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>BytesUpdated(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>BytesData(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>IsDirtyCache(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{CleaningCache();}</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>&amp;<sp/>RHS)<sp/>:<sp/>TreeHead(null),<sp/>BytesUpdated(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>BytesData(null),<sp/>IsDirtyCache(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{operator=(RHS);}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>&amp;<sp/>RHS)<sp/>:<sp/>TreeHead(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>BytesUpdated(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>BytesData(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>IsDirtyCache(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{operator=(RHS);}</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>소멸자</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar</ref>()<sp/>{ReleaseBytes();}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
@@ -391,7 +391,7 @@
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Next)<sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarListPool::FreeClass</ref>(Next);</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>Init(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/>TYPE*<sp/>data)<sp/>{Index<sp/>=<sp/>index;<sp/>Data<sp/>=<sp/>data;<sp/>Next<sp/>=<sp/>null;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>Init(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/>TYPE*<sp/>data)<sp/>{Index<sp/>=<sp/>index;<sp/>Data<sp/>=<sp/>data;<sp/>Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RemoveData()</highlight></codeline>
 <codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Data<sp/>&amp;&amp;<sp/>EnableRemove())</highlight></codeline>
@@ -399,7 +399,7 @@
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Result<sp/>=<sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">TypePool::FreeClass</ref>(Data);</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxVar&lt;외부데이터가<sp/>있어<sp/>메모리누수가<sp/>발생합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Result);</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>EnableRemove()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_;}</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
@@ -416,17 +416,17 @@
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree*<sp/>Child[2];<sp/></highlight><highlight class="comment">//<sp/>[좌선][우선]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>List[2];<sp/></highlight><highlight class="comment">//<sp/>[리스트][null]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>List[2];<sp/></highlight><highlight class="comment">//<sp/>[리스트][nullptr]</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree()<sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxVar&lt;잘못된<sp/>호출입니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);}</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/></highlight><highlight class="comment">//<sp/>TreeHead전용</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parent<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Range<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Count<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/>null;</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[1]<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[1]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~VarTree()<sp/>{Quit();}</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -445,7 +445,7 @@
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Range<sp/>=<sp/>range;</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Count<sp/>=<sp/>count;</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/>list;</highlight></codeline>
-<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[1]<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[1]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset()</highlight></codeline>
@@ -454,8 +454,8 @@
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Quit();</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Range<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Count<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/>null;</highlight></codeline>
-<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[1]<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[1]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Quit()</highlight></codeline>
@@ -467,7 +467,7 @@
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarListPool::FreeClass</ref>(List[0]);</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>macro<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasChild()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Child[1]<sp/>!=<sp/>null;}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>macro<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasChild()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Child[1]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VarTree&amp;<sp/>GetLeaf(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_inout_<sp/>index)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="322"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
@@ -506,7 +506,7 @@
 <codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>NewList<sp/>=<sp/><ref refid="class_bx_pool_1aa9b8a9d407cffc9c1acbaab0ec417d65" kindref="member" tooltip="템플릿단위 하나의 메모리공간 할당 ">VarListPool::Make</ref>()-&gt;Init(index,<sp/>data);</highlight></codeline>
 <codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(List[0])</highlight></codeline>
 <codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>PrevList<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>PrevList<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>CurList<sp/>=<sp/>List[0];</highlight></codeline>
 <codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -538,7 +538,7 @@
 <codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Action<sp/>SubList(VarList*<sp/>list,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Parameter<sp/>option)</highlight></codeline>
 <codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxVar&lt;Leaf가<sp/>아닙니다&gt;&quot;</highlight><highlight class="normal">,<sp/>!HasChild());</highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>PrevList<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>PrevList<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>CurList<sp/>=<sp/>List[0];</highlight></codeline>
 <codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -548,7 +548,7 @@
 <codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CurList-&gt;Next)<sp/></highlight><highlight class="comment">//<sp/>인덱스통합</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurList-&gt;Next-&gt;Index<sp/>+=<sp/>CurList-&gt;Index<sp/>-<sp/>((option<sp/>==<sp/>DoRanging)?<sp/>1<sp/>:<sp/>0);</highlight></codeline>
 <codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PrevList)?<sp/>PrevList-&gt;Next<sp/>:<sp/>List[0])<sp/>=<sp/>CurList-&gt;Next;<sp/></highlight><highlight class="comment">//<sp/>리스트분리</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurList-&gt;Next<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurList-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarListPool::FreeClass</ref>(CurList);</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AdjustLoop((option<sp/>==<sp/>DoRanging)?<sp/>-1<sp/>:<sp/>0,<sp/>-1);<sp/></highlight><highlight class="comment">//<sp/>트리조정</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Count<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BrotherToParent();<sp/></highlight><highlight class="comment">//<sp/>패스제거</highlight><highlight class="normal"></highlight></codeline>
@@ -566,7 +566,7 @@
 <codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NewRange2<sp/>=<sp/>Range<sp/>-<sp/>NewRange1;</highlight></codeline>
 <codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>NewList1<sp/>=<sp/>List[0];</highlight></codeline>
 <codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarList*<sp/>NewList2<sp/>=<sp/>NewList1-&gt;Next-&gt;Next;</highlight></codeline>
-<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewList1-&gt;Next-&gt;Next<sp/>=<sp/>null;<sp/></highlight><highlight class="comment">//<sp/>관계분리</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewList1-&gt;Next-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>관계분리</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--NewList2-&gt;Index;</highlight></codeline>
 <codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>리프생성</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Child[0]<sp/>=<sp/><ref refid="class_bx_pool_1aa9b8a9d407cffc9c1acbaab0ec417d65" kindref="member" tooltip="템플릿단위 하나의 메모리공간 할당 ">VarTreePool::Make</ref>()-&gt;InitLeaf(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>NewRange1,<sp/>2,<sp/>NewList1);</highlight></codeline>
@@ -586,14 +586,14 @@
 <codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;Child[0]-&gt;Parent<sp/>=<sp/>Parent;</highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Parent-&gt;Child[1]<sp/>=<sp/>Brother-&gt;Child[1])</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;Child[1]-&gt;Parent<sp/>=<sp/>Parent;</highlight></codeline>
-<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;Child[0]<sp/>=<sp/>null;</highlight></codeline>
-<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;Child[1]<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;Child[0]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;Child[1]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parent-&gt;List[0]<sp/>=<sp/>Brother-&gt;List[0];</highlight></codeline>
-<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parent-&gt;List[1]<sp/>=<sp/>null;</highlight></codeline>
-<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;List[0]<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parent-&gt;List[1]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Brother-&gt;List[0]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarTreePool::FreeClass</ref>(Brother);<sp/></highlight><highlight class="comment">//<sp/>형제제거</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>틸팅</highlight><highlight class="normal"></highlight></codeline>
@@ -602,7 +602,7 @@
 <codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>최상위</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member" tooltip="MakeClass()로 생성된 메모리공간 반환 및 소멸자호출 ">VarListPool::FreeClass</ref>(List[0]);</highlight></codeline>
-<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[0]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NoAction;</highlight></codeline>
 <codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DeleteBlank(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
@@ -634,7 +634,7 @@
 <codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TiltingLoop(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isadd)</highlight></codeline>
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree*<sp/>CurTree<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree*<sp/>CurTree<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarTree*<sp/>ParentTree<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(ParentTree<sp/>=<sp/>(CurTree<sp/>=<sp/>ParentTree)-&gt;Parent)</highlight></codeline>
 <codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -668,6 +668,6 @@
 <codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>TreeHead;</highlight></codeline>
 <codeline lineno="518"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxVar.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVar.hpp"/>
   </compounddef>
 </doxygen>

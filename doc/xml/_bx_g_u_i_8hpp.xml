@@ -8,21 +8,27 @@
     <includes refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includes>
     <includes refid="_bx_image_8hpp" local="no">BxImage.hpp</includes>
     <incdepgraph>
-      <node id="124">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="125" relation="include">
-        </childnode>
-      </node>
       <node id="127">
         <label>stdarg.h</label>
       </node>
-      <node id="125">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="126" relation="include">
+      <node id="137">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="133" relation="include">
         </childnode>
-        <childnode refid="128" relation="include">
+      </node>
+      <node id="136">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="129" relation="include">
         </childnode>
       </node>
       <node id="131">
@@ -33,24 +39,6 @@
         <childnode refid="124" relation="include">
         </childnode>
       </node>
-      <node id="137">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="133" relation="include">
-        </childnode>
-      </node>
-      <node id="126">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="127" relation="include">
-        </childnode>
-      </node>
-      <node id="128">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="129" relation="include">
-        </childnode>
-      </node>
       <node id="123">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
@@ -59,9 +47,17 @@
         <childnode refid="129" relation="include">
         </childnode>
       </node>
-      <node id="129">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
+      <node id="125">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
         <childnode refid="126" relation="include">
         </childnode>
       </node>
@@ -71,12 +67,52 @@
         <childnode refid="122" relation="include">
         </childnode>
       </node>
-      <node id="136">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="124" relation="include">
+      <node id="120">
+        <label>BxGUI.hpp</label>
+        <link refid="BxGUI.hpp"/>
+        <childnode refid="121" relation="include">
         </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
         <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="125" relation="include">
         </childnode>
       </node>
       <node id="130">
@@ -97,46 +133,10 @@
         <childnode refid="131" relation="include">
         </childnode>
       </node>
-      <node id="120">
-        <label>BxGUI.hpp</label>
-        <link refid="BxGUI.hpp"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="132" relation="include">
-        </childnode>
-        <childnode refid="133" relation="include">
-        </childnode>
-        <childnode refid="135" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
-        </childnode>
-      </node>
-      <node id="135">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="136" relation="include">
-        </childnode>
-      </node>
-      <node id="134">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="126" relation="include">
-        </childnode>
-      </node>
       <node id="132">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
         <childnode refid="125" relation="include">
-        </childnode>
-      </node>
-      <node id="133">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="134" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -232,9 +232,9 @@
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/>callback_event&amp;<sp/>Callback()<sp/>{global_data<sp/>callback_event<sp/>_Callback;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_Callback;}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DownloadCache(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/><ref refid="class_bx_web_content" kindref="compound" tooltip="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</ref><sp/>_out_<sp/>Content,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>FileSize,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_out_<sp/>FilePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoLoad)</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>QueryArg(</highlight><highlight class="stringliteral">&quot;subject=%s&amp;file=%s&amp;version=%d&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>BxGUI::Subject(),<sp/>url,<sp/>BxGUI::Version());</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>QueryArg(</highlight><highlight class="stringliteral">&quot;subject=%s&amp;file=%s&amp;version=%d&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>BxGUI::Subject(),<sp/>url,<sp/>BxGUI::Version());</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_web_content" kindref="compound" tooltip="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</ref><sp/>Web;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Web.<ref refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(BxGUI::Domain(),<sp/>80,<sp/></highlight><highlight class="stringliteral">&quot;update/res_download_cdn.aspx&quot;</highlight><highlight class="normal">,<sp/>QueryArg))</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Web.<ref refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(BxGUI::Domain(),<sp/>80,<sp/></highlight><highlight class="stringliteral">&quot;update/res_download_cdn.aspx&quot;</highlight><highlight class="normal">,<sp/>QueryArg))</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>QueryResult<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>((</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Web.<ref refid="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" kindref="member" tooltip="쿼리결과 받기 ">GetBytes</ref>(),<sp/>Web.<ref refid="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" kindref="member" tooltip="쿼리결과의 사이즈얻기(스트링) ">GetTextLength</ref>());</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;BxString&gt;</ref><sp/>QueryResults;</highlight></codeline>
@@ -242,7 +242,7 @@
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QueryResults.Length()<sp/>==<sp/>3<sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1a9d45cf5f144f0aaa40fa169feb915ea1" kindref="member" tooltip="스트링을 정수로 변환 ">BxUtilGlobal::AtoI</ref>(QueryResults[0])<sp/>==<sp/>1)</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileSize<sp/>=<sp/><ref refid="namespace_bx_util_global_1a9d45cf5f144f0aaa40fa169feb915ea1" kindref="member" tooltip="스트링을 정수로 변환 ">BxUtilGlobal::AtoI</ref>(QueryResults[1]);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>FilePathString(</highlight><highlight class="stringliteral">&quot;update/%s&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>QueryResults[2]);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>FilePathString(</highlight><highlight class="stringliteral">&quot;update/%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>QueryResults[2]);</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FilePath<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(FilePathString);</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Content.Cache(BxGUI::Domain(),<sp/>80,<sp/>FilePath,<sp/>DoLoad))</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -620,20 +620,20 @@
 <codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!TextElement<sp/>||<sp/>TextElement-&gt;GetType()<sp/>!=<sp/>TypeText)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_list<sp/>List;</highlight></codeline>
 <codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_start(List,<sp/>TextName);</highlight></codeline>
-<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextElement-&gt;AdjustFormat(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>List,<sp/>&amp;Map,<sp/>null);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextElement-&gt;AdjustFormat(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>List,<sp/>&amp;Map,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_end(List);</highlight></codeline>
 <codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="480"><highlight class="normal"></highlight></codeline>
 <codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetImageWidth(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ImageName)</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>ValueElement<sp/>=<sp/>*Map.Access(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>(</highlight><highlight class="stringliteral">&quot;%s.width&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>ImageName));</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>ValueElement<sp/>=<sp/>*Map.Access(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>(</highlight><highlight class="stringliteral">&quot;%s.width&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ImageName));</highlight></codeline>
 <codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ValueElement)?<sp/>ValueElement-&gt;GetValue()<sp/>:<sp/>0;</highlight></codeline>
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="486"><highlight class="normal"></highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetImageHeight(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ImageName)</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>ValueElement<sp/>=<sp/>*Map.Access(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>(</highlight><highlight class="stringliteral">&quot;%s.height&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>ImageName));</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>ValueElement<sp/>=<sp/>*Map.Access(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>(</highlight><highlight class="stringliteral">&quot;%s.height&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>ImageName));</highlight></codeline>
 <codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ValueElement)?<sp/>ValueElement-&gt;GetValue()<sp/>:<sp/>0;</highlight></codeline>
 <codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="492"><highlight class="normal"></highlight></codeline>
@@ -641,7 +641,7 @@
 <codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsValidDownload())</highlight></codeline>
 <codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Layout.Length();<sp/>++i)</highlight></codeline>
-<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Layout[i].Rendering(Map,<sp/>Draw,<sp/>BxDrawGlobal::XYWH(0,<sp/>0,<sp/>Draw.Width(),<sp/>Draw.Height()));</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Layout[i].Rendering(Map,<sp/>Draw,<sp/><ref refid="namespace_bx_draw_global_1a5b4308be171bbaea41e7ec41fe575574" kindref="member" tooltip="영역제작 ">BxDrawGlobal::XYWH</ref>(0,<sp/>0,<sp/>Draw.<ref refid="class_bx_draw_1a629c65ebda9be9d1dd7c507a30557eb8" kindref="member" tooltip="현재 너비얻기 ">Width</ref>(),<sp/>Draw.<ref refid="class_bx_draw_1a378f6d7988a5a667fd3e720c25e6a297" kindref="member" tooltip="현재 높이얻기 ">Height</ref>()));</highlight></codeline>
 <codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="499"><highlight class="normal"></highlight></codeline>
 <codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OnEvent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>&amp;<sp/>Event)</highlight></codeline>
@@ -715,12 +715,12 @@
 <codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElementTree*<sp/>_ref_<sp/>Parent;</highlight></codeline>
 <codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;ElementTree&gt;</ref><sp/>Child;</highlight></codeline>
 <codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElementTree()<sp/>:<sp/>Parent(null)<sp/>{}</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElementTree()<sp/>:<sp/>Parent(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~ElementTree()</highlight></codeline>
 <codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Child.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElementTree*<sp/>OldData<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElementTree*<sp/>OldData<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Child.RemoveData(i,<sp/>&amp;OldData);</highlight></codeline>
 <codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete(OldData);</highlight></codeline>
 <codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -736,13 +736,13 @@
 <codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PreProcessingTree()</highlight></codeline>
 <codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Parent)<sp/>PreProcessing(null,<sp/>null);</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Parent)<sp/>PreProcessing(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Child.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Child[i].PreProcessingTree();</highlight></codeline>
 <codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ProcessingTree()</highlight></codeline>
 <codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Parent)<sp/>Processing(null,<sp/>null);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Parent)<sp/>Processing(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Child.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Child[i].ProcessingTree();</highlight></codeline>
 <codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -783,7 +783,7 @@
 <codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>ArgbGen;</highlight></codeline>
 <codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Color()<sp/>:<sp/>Name(null),<sp/>Argb(0xFF000000),<sp/>ArgbGen(0xFF000000)<sp/>{Type<sp/>=<sp/>TypeColor;}</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Color()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Argb(0xFF000000),<sp/>ArgbGen(0xFF000000)<sp/>{Type<sp/>=<sp/>TypeColor;}</highlight></codeline>
 <codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Color()</highlight></codeline>
 <codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -827,7 +827,7 @@
 <codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element::VarPtr<sp/>_ref_<sp/>ColorValues;</highlight></codeline>
 <codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Edge()<sp/>:<sp/>Name(null),<sp/>Colors(null)<sp/>{Type<sp/>=<sp/>TypeEdge;}</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Edge()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Colors(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeEdge;}</highlight></codeline>
 <codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Edge()</highlight></codeline>
 <codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -864,7 +864,7 @@
 <codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FilePath;</highlight></codeline>
 <codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_image" kindref="compound" tooltip="이미지 운영 ">BxImage</ref><sp/>CacheImage;</highlight></codeline>
 <codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Image()<sp/>:<sp/>Name(null),<sp/>Url(null),<sp/>FileSize(0),<sp/>FilePath(null)<sp/>{Type<sp/>=<sp/>TypeImage;}</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Image()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Url(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>FileSize(0),<sp/>FilePath(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeImage;}</highlight></codeline>
 <codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Image()</highlight></codeline>
 <codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -905,25 +905,25 @@
 <codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>IsValidDownload()<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>가로길이<sp/>추가등록</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>WidthName(</highlight><highlight class="stringliteral">&quot;%s.width&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>WidthName(</highlight><highlight class="stringliteral">&quot;%s.width&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
 <codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxGUI&lt;중복된<sp/>컨텐트명입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>!Map-&gt;Access(WidthName));</highlight></codeline>
 <codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>NewData1<sp/>=<sp/>BxNew_Param(Element,<sp/>(CacheImage.IsExist())?<sp/>CacheImage.Width()<sp/>:<sp/>0);</highlight></codeline>
 <codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Elements-&gt;Insert(LAST,<sp/>(*Map)[WidthName]<sp/>=<sp/>NewData1);</highlight></codeline>
 <codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData1-&gt;SetStep(StepNamed);</highlight></codeline>
-<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData1-&gt;PreProcessing(null,<sp/>null);</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData1-&gt;PreProcessing(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>세로길이<sp/>추가등록</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="775"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>HeightName(</highlight><highlight class="stringliteral">&quot;%s.height&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>HeightName(</highlight><highlight class="stringliteral">&quot;%s.height&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
 <codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxGUI&lt;중복된<sp/>컨텐트명입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>!Map-&gt;Access(HeightName));</highlight></codeline>
 <codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>NewData2<sp/>=<sp/>BxNew_Param(Element,<sp/>(CacheImage.IsExist())?<sp/>CacheImage.Height()<sp/>:<sp/>0);</highlight></codeline>
 <codeline lineno="778"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Elements-&gt;Insert(LAST,<sp/>(*Map)[HeightName]<sp/>=<sp/>NewData2);</highlight></codeline>
 <codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData2-&gt;SetStep(StepNamed);</highlight></codeline>
-<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData2-&gt;PreProcessing(null,<sp/>null);</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData2-&gt;PreProcessing(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Filling(<ref refid="class_bx_draw" kindref="compound" tooltip="OpenGL/SW랜더링기반 그리기도구 ">BxDraw</ref>&amp;<sp/>Draw,<sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>Rect)</highlight></codeline>
 <codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CacheImage.IsExist())</highlight></codeline>
 <codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">(Draw,<sp/>CLIP(Rect))</highlight></codeline>
-<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Draw.<ref refid="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" kindref="member" tooltip="형식없는 기본출력 ">Area</ref>(0,<sp/>0,<sp/><ref refid="namespace_bx_draw_global_1aab314a4ab2685e289eb44379a2d3ce84" kindref="member" tooltip="스타일-채우기 ">BxDrawGlobal::FORM</ref>(&amp;CacheImage));</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Draw.<ref refid="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" kindref="member" tooltip="형식없는 기본출력 ">Area</ref>(0,<sp/>0,<sp/><ref refid="namespace_bx_draw_global_1a50883fceecae4f90627db55e7de4c141" kindref="member" tooltip="스타일-채우기 ">BxDrawGlobal::FORM</ref>(&amp;CacheImage));</highlight></codeline>
 <codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sprite<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Element</highlight></codeline>
@@ -934,7 +934,7 @@
 <codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element::VarPtr<sp/>_ref_<sp/>ImageValues;</highlight></codeline>
 <codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sprite()<sp/>:<sp/>Name(null),<sp/>Images(null),<sp/>Delay(0)<sp/>{Type<sp/>=<sp/>TypeSprite;}</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sprite()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Images(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Delay(0)<sp/>{Type<sp/>=<sp/>TypeSprite;}</highlight></codeline>
 <codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Sprite()</highlight></codeline>
 <codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -973,7 +973,7 @@
 <codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FilePath;</highlight></codeline>
 <codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_font<sp/>CacheFont;</highlight></codeline>
 <codeline lineno="835"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Font()<sp/>:<sp/>Name(null),<sp/>Size(0),<sp/>Url(null),<sp/>FileSize(0),<sp/>FilePath(null),<sp/>CacheFont(null)<sp/>{Type<sp/>=<sp/>TypeFont;}</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Font()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Size(0),<sp/>Url(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>FileSize(0),<sp/>FilePath(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>CacheFont(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeFont;}</highlight></codeline>
 <codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Font()</highlight></codeline>
 <codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1017,8 +1017,8 @@
 <codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReserveCode<sp/>VectorValue;</highlight></codeline>
 <codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReserveCode<sp/>LineValue;</highlight></codeline>
 <codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text()<sp/>:<sp/>Name(null),<sp/>Format(null),<sp/>Font(null),<sp/>Color(null),<sp/>Vector(null),<sp/>Line(null),<sp/>FormatGen(null),</highlight></codeline>
-<codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FontValue(null),<sp/>ColorValue(null),<sp/>VectorValue(CodeNull)<sp/>{Type<sp/>=<sp/>TypeText;}</highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Format(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Font(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Color(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Vector(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Line(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>FormatGen(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FontValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>ColorValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>VectorValue(CodeNull)<sp/>{Type<sp/>=<sp/>TypeText;}</highlight></codeline>
 <codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Text()</highlight></codeline>
 <codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1052,7 +1052,7 @@
 <codeline lineno="912"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FormatGen<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(FormatGen);</highlight></codeline>
 <codeline lineno="913"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dosprint)</highlight></codeline>
 <codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="915"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FormatGenLen<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1ac70cec443af515775e1715fb098d4ebd" kindref="member" tooltip="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</ref>(null,<sp/>0,<sp/>Format,<sp/>list);</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FormatGenLen<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1ac70cec443af515775e1715fb098d4ebd" kindref="member" tooltip="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/>Format,<sp/>list);</highlight></codeline>
 <codeline lineno="916"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxGUI&lt;FormatGen의<sp/>예상길이를<sp/>얻는데<sp/>실패하였습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;=<sp/>FormatGenLen);</highlight></codeline>
 <codeline lineno="917"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FormatGen<sp/>=<sp/><ref refid="namespace_bx_util_global_1ad27a75813b9a9bf993a96c31fa738b63" kindref="member" tooltip="스트링 할당 ">BxUtilGlobal::StrAlloc</ref>(FormatGenLen);</highlight></codeline>
 <codeline lineno="918"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1ac70cec443af515775e1715fb098d4ebd" kindref="member" tooltip="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</ref>((string_rw)<sp/>FormatGen,<sp/>FormatGenLen<sp/>+<sp/>1,<sp/>Format,<sp/>list);</highlight></codeline>
@@ -1062,24 +1062,24 @@
 <codeline lineno="922"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="923"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/>TextSize<sp/>=<sp/>(FontValue-&gt;GetCacheFont())?<sp/><ref refid="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" kindref="member" tooltip="사이즈 얻기 ">BxCore::Font::GetSize</ref>(FontValue-&gt;GetCacheFont(),<sp/>FormatGen)<sp/>:<sp/>WH(0,<sp/>0);</highlight></codeline>
 <codeline lineno="924"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>가로길이<sp/>추가등록</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="925"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>WidthName(</highlight><highlight class="stringliteral">&quot;%s.width&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
+<codeline lineno="925"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>WidthName(</highlight><highlight class="stringliteral">&quot;%s.width&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
 <codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Map-&gt;Access(WidthName))<sp/>(*Map-&gt;Access(WidthName))-&gt;SetValue(TextSize.w);</highlight></codeline>
 <codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Elements)</highlight></codeline>
 <codeline lineno="928"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="929"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>NewData<sp/>=<sp/>BxNew_Param(Element,<sp/>TextSize.w);</highlight></codeline>
 <codeline lineno="930"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Elements-&gt;Insert(LAST,<sp/>(*Map)[WidthName]<sp/>=<sp/>NewData);</highlight></codeline>
 <codeline lineno="931"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData-&gt;SetStep(StepNamed);</highlight></codeline>
-<codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData-&gt;PreProcessing(null,<sp/>null);</highlight></codeline>
+<codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData-&gt;PreProcessing(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="933"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="934"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>세로길이<sp/>추가등록</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="935"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>HeightName(</highlight><highlight class="stringliteral">&quot;%s.height&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
+<codeline lineno="935"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>HeightName(</highlight><highlight class="stringliteral">&quot;%s.height&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Name);</highlight></codeline>
 <codeline lineno="936"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Map-&gt;Access(HeightName))<sp/>(*Map-&gt;Access(HeightName))-&gt;SetValue(TextSize.h);</highlight></codeline>
 <codeline lineno="937"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Elements)</highlight></codeline>
 <codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>NewData<sp/>=<sp/>BxNew_Param(Element,<sp/>TextSize.h);</highlight></codeline>
 <codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Elements-&gt;Insert(LAST,<sp/>(*Map)[HeightName]<sp/>=<sp/>NewData);</highlight></codeline>
 <codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData-&gt;SetStep(StepNamed);</highlight></codeline>
-<codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData-&gt;PreProcessing(null,<sp/>null);</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewData-&gt;PreProcessing(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="943"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="944"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1129,23 +1129,23 @@
 <codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(VectorValue)</highlight></codeline>
 <codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="991"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad1:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(0,<sp/>RectHeight<sp/>-<sp/>size::max);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad2:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(RectWidth<sp/>/<sp/>2<sp/>-<sp/>size::half,<sp/>RectHeight<sp/>-<sp/>size::max);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad3:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(RectWidth<sp/>-<sp/>size::max,<sp/>RectHeight<sp/>-<sp/>size::max);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad4:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(0,<sp/>RectHeight<sp/>/<sp/>2<sp/>-<sp/>size::half);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="996"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad5:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(RectWidth<sp/>/<sp/>2<sp/>-<sp/>size::half,<sp/>RectHeight<sp/>/<sp/>2<sp/>-<sp/>size::half);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad6:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(RectWidth<sp/>-<sp/>size::max,<sp/>RectHeight<sp/>/<sp/>2<sp/>-<sp/>size::half);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="998"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad7:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(0,<sp/>0);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad8:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(RectWidth<sp/>/<sp/>2<sp/>-<sp/>size::half,<sp/>0);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad9:<sp/>xy<sp/>=<sp/>BxDrawGlobal::XY(RectWidth<sp/>-<sp/>size::max,<sp/>0);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad1:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(0,<sp/>RectHeight<sp/>-<sp/>size::max);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad2:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(RectWidth<sp/>/<sp/>2<sp/>-<sp/>size::half,<sp/>RectHeight<sp/>-<sp/>size::max);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad3:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(RectWidth<sp/>-<sp/>size::max,<sp/>RectHeight<sp/>-<sp/>size::max);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad4:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(0,<sp/>RectHeight<sp/>/<sp/>2<sp/>-<sp/>size::half);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="996"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad5:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(RectWidth<sp/>/<sp/>2<sp/>-<sp/>size::half,<sp/>RectHeight<sp/>/<sp/>2<sp/>-<sp/>size::half);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad6:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(RectWidth<sp/>-<sp/>size::max,<sp/>RectHeight<sp/>/<sp/>2<sp/>-<sp/>size::half);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="998"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad7:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(0,<sp/>0);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad8:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(RectWidth<sp/>/<sp/>2<sp/>-<sp/>size::half,<sp/>0);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodeNumpad9:<sp/>xy<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(RectWidth<sp/>-<sp/>size::max,<sp/>0);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_font_1a08159673a1a3269082f9a3a1bc90eb28" kindref="member" tooltip="스트링 출력 ">BxCore::Font::Draw</ref>(FontValue-&gt;GetCacheFont(),<sp/>FormatGen,</highlight></codeline>
-<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDrawGlobal::XY(Draw.TranslateX()<sp/>+<sp/>xy.x,<sp/>Draw.TranslateY()<sp/>+<sp/>xy.y),<sp/>size::full(),</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(Draw.<ref refid="class_bx_draw_1ad633ce6baf25d6c93dde6669d4093a3e" kindref="member" tooltip="현재 X축 기준좌표얻기 ">TranslateX</ref>()<sp/>+<sp/>xy.x,<sp/>Draw.<ref refid="class_bx_draw_1a21597dea9cb25b209963d30307b31baf" kindref="member" tooltip="현재 Y축 기준좌표얻기 ">TranslateY</ref>()<sp/>+<sp/>xy.y),<sp/>size::full(),</highlight></codeline>
 <codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ColorValue-&gt;GetArgb()<sp/>&amp;<sp/>0x00FFFFFF,<sp/>ColorValue-&gt;GetArgb()<sp/>&gt;&gt;<sp/>24);</highlight></codeline>
 <codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1006"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(LineValue<sp/>==<sp/>CodeMulti)</highlight></codeline>
 <codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_font_1a08159673a1a3269082f9a3a1bc90eb28" kindref="member" tooltip="스트링 출력 ">BxCore::Font::Draw</ref>(FontValue-&gt;GetCacheFont(),<sp/>FormatGen,</highlight></codeline>
-<codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDrawGlobal::XY(Draw.TranslateX(),<sp/>Draw.TranslateY()),<sp/>BxDrawGlobal::WH(RectWidth,<sp/>RectHeight),</highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(Draw.<ref refid="class_bx_draw_1ad633ce6baf25d6c93dde6669d4093a3e" kindref="member" tooltip="현재 X축 기준좌표얻기 ">TranslateX</ref>(),<sp/>Draw.<ref refid="class_bx_draw_1a21597dea9cb25b209963d30307b31baf" kindref="member" tooltip="현재 Y축 기준좌표얻기 ">TranslateY</ref>()),<sp/><ref refid="namespace_bx_draw_global_1a573d9a33f68854689c5a94931ef40d64" kindref="member" tooltip="크기제작 ">BxDrawGlobal::WH</ref>(RectWidth,<sp/>RectHeight),</highlight></codeline>
 <codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ColorValue-&gt;GetArgb()<sp/>&amp;<sp/>0x00FFFFFF,<sp/>ColorValue-&gt;GetArgb()<sp/>&gt;&gt;<sp/>24);</highlight></codeline>
 <codeline lineno="1010"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1011"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1164,7 +1164,7 @@
 <codeline lineno="1024"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element::VarPtr<sp/>_ref_<sp/>ImageValues;</highlight></codeline>
 <codeline lineno="1025"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element::VarPtr<sp/>_ref_<sp/>EdgeValues;</highlight></codeline>
 <codeline lineno="1026"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button()<sp/>:<sp/>Name(null),<sp/>Images(null),<sp/>Edges(null),<sp/>Event(null),<sp/>Link(null),<sp/>EventAreaGen(rect::zero()),<sp/>IsClickedGen(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Images(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Edges(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Event(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Link(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>EventAreaGen(rect::zero()),<sp/>IsClickedGen(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{Type<sp/>=<sp/>TypeButton;}</highlight></codeline>
 <codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Button()</highlight></codeline>
 <codeline lineno="1030"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1219,10 +1219,10 @@
 <codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneSize.w<sp/>=<sp/>OneImage-&gt;CacheImage.Width();</highlight></codeline>
 <codeline lineno="1080"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneSize.h<sp/>=<sp/>OneImage-&gt;CacheImage.Height();</highlight></codeline>
 <codeline lineno="1081"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1082"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.l<sp/>=<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member" tooltip="최대값 구하기 ">BxUtilGlobal::Max</ref>(Rect.l<sp/>+<sp/>Draw.TranslateX(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().l);</highlight></codeline>
-<codeline lineno="1083"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.t<sp/>=<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member" tooltip="최대값 구하기 ">BxUtilGlobal::Max</ref>(Rect.t<sp/>+<sp/>Draw.TranslateY(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().t);</highlight></codeline>
-<codeline lineno="1084"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.r<sp/>=<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(Rect.r<sp/>+<sp/>Draw.TranslateX(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().r);</highlight></codeline>
-<codeline lineno="1085"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.b<sp/>=<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(Rect.b<sp/>+<sp/>Draw.TranslateY(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().b);</highlight></codeline>
+<codeline lineno="1082"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.l<sp/>=<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member" tooltip="최대값 구하기 ">BxUtilGlobal::Max</ref>(Rect.l<sp/>+<sp/>Draw.<ref refid="class_bx_draw_1ad633ce6baf25d6c93dde6669d4093a3e" kindref="member" tooltip="현재 X축 기준좌표얻기 ">TranslateX</ref>(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().l);</highlight></codeline>
+<codeline lineno="1083"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.t<sp/>=<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member" tooltip="최대값 구하기 ">BxUtilGlobal::Max</ref>(Rect.t<sp/>+<sp/>Draw.<ref refid="class_bx_draw_1a21597dea9cb25b209963d30307b31baf" kindref="member" tooltip="현재 Y축 기준좌표얻기 ">TranslateY</ref>(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().t);</highlight></codeline>
+<codeline lineno="1084"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.r<sp/>=<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(Rect.r<sp/>+<sp/>Draw.<ref refid="class_bx_draw_1ad633ce6baf25d6c93dde6669d4093a3e" kindref="member" tooltip="현재 X축 기준좌표얻기 ">TranslateX</ref>(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().r);</highlight></codeline>
+<codeline lineno="1085"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect.b<sp/>=<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(Rect.b<sp/>+<sp/>Draw.<ref refid="class_bx_draw_1a21597dea9cb25b209963d30307b31baf" kindref="member" tooltip="현재 Y축 기준좌표얻기 ">TranslateY</ref>(),<sp/>BxDrawGlobal::_DrawOption::CurClipRect().b);</highlight></codeline>
 <codeline lineno="1086"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EventAreaGen.r<sp/>=<sp/>(EventAreaGen.l<sp/>=<sp/>Rect.l)<sp/>+<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(Rect.r<sp/>-<sp/>Rect.l,<sp/>OneSize.w);</highlight></codeline>
 <codeline lineno="1087"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EventAreaGen.b<sp/>=<sp/>(EventAreaGen.t<sp/>=<sp/>Rect.t)<sp/>+<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(Rect.b<sp/>-<sp/>Rect.t,<sp/>OneSize.h);</highlight></codeline>
 <codeline lineno="1088"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1258,7 +1258,7 @@
 <codeline lineno="1118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>_ref_<sp/>TextValue;</highlight></codeline>
 <codeline lineno="1119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element::VarPtr<sp/>_ref_<sp/>ColorValues;</highlight></codeline>
 <codeline lineno="1120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EditBox()<sp/>:<sp/>Name(null),<sp/>Text(null),<sp/>Colors(null),<sp/>TextValue(null)<sp/>{Type<sp/>=<sp/>TypeEditBox;}</highlight></codeline>
+<codeline lineno="1121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EditBox()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Text(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Colors(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>TextValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeEditBox;}</highlight></codeline>
 <codeline lineno="1122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~EditBox()</highlight></codeline>
 <codeline lineno="1123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1298,7 +1298,7 @@
 <codeline lineno="1158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Elements.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="1160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>OldData<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="1161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>OldData<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Elements.RemoveData(i,<sp/>&amp;OldData);</highlight></codeline>
 <codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete(OldData);</highlight></codeline>
 <codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1411,7 +1411,7 @@
 <codeline lineno="1273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReserveCode<sp/>PosValue;</highlight></codeline>
 <codeline lineno="1274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>_ref_<sp/>FillValue;</highlight></codeline>
 <codeline lineno="1275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Split()<sp/>:<sp/>Name(null),<sp/>Pos(null),<sp/>Size(null),<sp/>Fill(null),<sp/>AddSize1024Gen(0),<sp/>PosValue(CodeNull),<sp/>FillValue(null)<sp/>{Type<sp/>=<sp/>TypeSplit;}</highlight></codeline>
+<codeline lineno="1276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Split()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Pos(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Size(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Fill(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>AddSize1024Gen(0),<sp/>PosValue(CodeNull),<sp/>FillValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeSplit;}</highlight></codeline>
 <codeline lineno="1277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Split()</highlight></codeline>
 <codeline lineno="1278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1488,7 +1488,7 @@
 <codeline lineno="1350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="1351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>_ref_<sp/>FillValue;</highlight></codeline>
 <codeline lineno="1352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Outline()<sp/>:<sp/>Name(null),<sp/>Size(null),<sp/>Fill(null),<sp/>FillValue(null)<sp/>{Type<sp/>=<sp/>TypeOutline;}</highlight></codeline>
+<codeline lineno="1353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Outline()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Size(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Fill(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>FillValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeOutline;}</highlight></codeline>
 <codeline lineno="1354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Outline()</highlight></codeline>
 <codeline lineno="1355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1560,7 +1560,7 @@
 <codeline lineno="1422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="1423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>_ref_<sp/>FillValue;</highlight></codeline>
 <codeline lineno="1424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extra()<sp/>:<sp/>Name(null),<sp/>Width(null),<sp/>Height(null),<sp/>Fill(null),<sp/>FillValue(null)<sp/>{Type<sp/>=<sp/>TypeExtra;}</highlight></codeline>
+<codeline lineno="1425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extra()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Width(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Height(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Fill(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>FillValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeExtra;}</highlight></codeline>
 <codeline lineno="1426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Extra()</highlight></codeline>
 <codeline lineno="1427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1649,9 +1649,9 @@
 <codeline lineno="1511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReserveCode<sp/>ScrollValue;</highlight></codeline>
 <codeline lineno="1512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Element*<sp/>_ref_<sp/>FillValue;</highlight></codeline>
 <codeline lineno="1513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>View()<sp/>:<sp/>Name(null),<sp/>PosX(null),<sp/>PosY(null),<sp/>Width(null),<sp/>Height(null),<sp/>Scroll(null),<sp/>Fill(null),</highlight></codeline>
+<codeline lineno="1514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>View()<sp/>:<sp/>Name(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>PosX(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>PosY(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Width(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Height(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Scroll(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Fill(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
 <codeline lineno="1515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AddPosXGen(0),<sp/>AddPosYGen(0),<sp/>IsVisibleGen(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>OutSizeGen(size::zero()),<sp/>InSizeGen(size::zero()),</highlight></codeline>
-<codeline lineno="1516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PosXValue(CodeNull),<sp/>PosYValue(CodeNull),<sp/>ScrollValue(CodeNull),<sp/>FillValue(null)<sp/>{Type<sp/>=<sp/>TypeView;}</highlight></codeline>
+<codeline lineno="1516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PosXValue(CodeNull),<sp/>PosYValue(CodeNull),<sp/>ScrollValue(CodeNull),<sp/>FillValue(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{Type<sp/>=<sp/>TypeView;}</highlight></codeline>
 <codeline lineno="1517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~View()</highlight></codeline>
 <codeline lineno="1518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -1831,6 +1831,6 @@
 <codeline lineno="1694"><highlight class="normal"><sp/><sp/><sp/><sp/>Element::VarMapPtr<sp/>Map;</highlight></codeline>
 <codeline lineno="1695"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxGUI.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxGUI.hpp"/>
   </compounddef>
 </doxygen>

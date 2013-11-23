@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5505b845782ae3f8fc493a8f26fec984"><td class="memItemLeft" align="right" valign="top">socketstate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984">GetState</a> (id_socket sock)</td></tr>
 <tr class="memdesc:a5505b845782ae3f8fc493a8f26fec984"><td class="mdescLeft">&#160;</td><td class="mdescRight">소켓 상태  <a href="#a5505b845782ae3f8fc493a8f26fec984">More...</a><br/></td></tr>
 <tr class="separator:a5505b845782ae3f8fc493a8f26fec984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3683eb9064e37b8459d1033209ba6c"><td class="memItemLeft" align="right" valign="top">connectresult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#a0a3683eb9064e37b8459d1033209ba6c">Connect</a> (id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=null)</td></tr>
-<tr class="memdesc:a0a3683eb9064e37b8459d1033209ba6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버로 접속  <a href="#a0a3683eb9064e37b8459d1033209ba6c">More...</a><br/></td></tr>
-<tr class="separator:a0a3683eb9064e37b8459d1033209ba6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5663d5681c5c863a16a895c0ced67b3"><td class="memItemLeft" align="right" valign="top">connectresult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3">Connect</a> (id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=nullptr)</td></tr>
+<tr class="memdesc:ab5663d5681c5c863a16a895c0ced67b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버로 접속  <a href="#ab5663d5681c5c863a16a895c0ced67b3">More...</a><br/></td></tr>
+<tr class="separator:ab5663d5681c5c863a16a895c0ced67b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea75d34361bd74bef8a073e0c747fc4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#aea75d34361bd74bef8a073e0c747fc4c">Disconnect</a> (id_socket sock)</td></tr>
 <tr class="memdesc:aea75d34361bd74bef8a073e0c747fc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버와의 접속종료  <a href="#aea75d34361bd74bef8a073e0c747fc4c">More...</a><br/></td></tr>
 <tr class="separator:aea75d34361bd74bef8a073e0c747fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,7 +130,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Socket파트 </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a0a3683eb9064e37b8459d1033209ba6c"></a>
+<a class="anchor" id="ab5663d5681c5c863a16a895c0ced67b3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -162,7 +162,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">callback_progress&#160;</td>
-          <td class="paramname"><em>progress</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>progress</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -202,8 +202,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>소켓ID 할당 </p>
-<dl class="section return"><dt>Returns</dt><dd>소켓ID(null은 실패) </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9" title="소켓ID 반환, 접속종료 ">Release</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a0a3683eb9064e37b8459d1033209ba6c" title="서버로 접속 ">Connect</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>소켓ID(nullptr은 실패) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9" title="소켓ID 반환, 접속종료 ">Release</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">Connect</a> </dd></dl>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#a0a3683eb9064e37b8459d1033209ba6c" title="서버로 접속 ">Connect</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">GetState</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">Connect</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">GetState</a> </dd></dl>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:48 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:50 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

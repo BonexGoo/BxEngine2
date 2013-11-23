@@ -33,7 +33,7 @@ namespace BxDynamic
 			if(Res)
 			{
 				Res->mBinder = mBinder;
-				mBinder = null;
+				mBinder = nullptr;
 			}
 			return true;
 		}
@@ -55,10 +55,10 @@ namespace BxDynamic
 		// 내부함수
 		public: global_func BindPool* BinderBegin(string CachePoolName)
 		{
-			global_data LinkPool LPool(null);
+			global_data LinkPool LPool(nullptr);
 			global_data BxVarMap<BindPool> BPoolMap;
 			if(!BPoolMap.Access(CachePoolName))
-				BPoolMap[CachePoolName].Init(LPool.New(null));
+				BPoolMap[CachePoolName].Init(LPool.New(nullptr));
 			return &BPoolMap[CachePoolName];
 		}
 
@@ -78,7 +78,7 @@ namespace BxDynamic
 		}
 		protected: void AllocCache(int BufferSize, int UsingCacheSize)
 		{
-			BxAssert("BxDynamic::Resource<이미 할당된 버퍼가 존재합니다>", mBuffer == null);
+			BxAssert("BxDynamic::Resource<이미 할당된 버퍼가 존재합니다>", mBuffer == nullptr);
 			const int CachePoolSize = GetCachePoolSize(GetCachePoolName());
 			int CachePoolUsed = GetCachePoolUsed(GetCachePoolName());
 			// 확보
@@ -118,7 +118,7 @@ namespace BxDynamic
 		}
 		protected: void UpdateCache()
 		{
-			BxAssert("BxDynamic::Resource<등록되지 않은 캐시입니다>", mBinder != null);
+			BxAssert("BxDynamic::Resource<등록되지 않은 캐시입니다>", mBinder != nullptr);
 			// 버퍼가 존재하지 않으면 작업취소
 			if(!mBuffer) return;
 			// 스코어갱신
@@ -157,8 +157,8 @@ namespace BxDynamic
 		}
 
 		// 생성자 & 소멸자 ///////////////////////////////////////////////////////////////////////////
-		protected: Resource() : mBinder(null), mBuffer(null), mCacheScore(0), mUsedCacheSize(0), mLockCount(0) {}
-		public: virtual ~Resource() {Entrust(null); FreeCacheManually();}
+		protected: Resource() : mBinder(nullptr), mBuffer(nullptr), mCacheScore(0), mUsedCacheSize(0), mLockCount(0) {}
+		public: virtual ~Resource() {Entrust(nullptr); FreeCacheManually();}
 		// 멤버변수
 		private: BindPool* mBinder;
 		private: byte* mBuffer;
@@ -211,7 +211,7 @@ namespace BxDynamic
 						return CurNode;
 					CurNode = CurNode->Next;
 				}
-				return null;
+				return nullptr;
 			}
 		};
 
@@ -223,20 +223,20 @@ namespace BxDynamic
 			private: rsid ParamID; // MemberData
 			private: Resource* ParamData; // MemberData
 			private: Pool* TopChildLinker; // MemberData
-			public: BindPool(Pool* TopChild = null) : ParamData(null) {Init(TopChild);}
+			public: BindPool(Pool* TopChild = nullptr) : ParamData(nullptr) {Init(TopChild);}
 			public: virtual ~BindPool() {ResetData(); TopChildLinker->Delete();}
 			public: void Init(Pool* TopChild) {TopChildLinker = TopChild;}
 			private: virtual Pool* New(Pool* TopChild) {return BxNew_Param(BindPool, TopChild);}
 			private: virtual void Delete() {Pool* Temp = this; BxDelete(Temp);}
 			private: virtual bool IsSame(void* Key) {return (Key == (void*) ParamID);}
 			// 공개함수
-			public: void ResetData(Resource* Data = null) {ParamData = Data;}
+			public: void ResetData(Resource* Data = nullptr) {ParamData = Data;}
 			public: BindPool* FindBinder(rsid ID)
 			{
 				BindPool* OneBinder = (BindPool*) Find((void*) ID);
 				if(!OneBinder)
 				{
-					OneBinder = (BindPool*) New(TopChildLinker->New(null));
+					OneBinder = (BindPool*) New(TopChildLinker->New(nullptr));
 					OneBinder->ParamID = ID;
 					Add(OneBinder);
 				}
@@ -257,13 +257,13 @@ namespace BxDynamic
 			private: BindPool* ParentBinder; // MemberData
 			private: callback_serialize ParamCB; // MemberData
 			private: string ParamComment; // MemberData
-			private: LinkPool(BindPool* Parent) : ParentBinder(Parent), ParamCB(null), ParamComment(null) {}
+			private: LinkPool(BindPool* Parent) : ParentBinder(Parent), ParamCB(nullptr), ParamComment(nullptr) {}
 			public: virtual ~LinkPool() {ResetData();}
 			private: virtual Pool* New(Pool* Parent) {return BxNew_Param(LinkPool, (BindPool*) Parent);}
 			private: virtual void Delete() {Pool* Temp = this; BxDelete(Temp);}
 			private: virtual bool IsSame(void* Key) {return (this == (LinkPool*) Key);}
 			// 공개함수
-			public: void ResetData(callback_serialize CB = null, string Comment = null)
+			public: void ResetData(callback_serialize CB = nullptr, string Comment = nullptr)
 			{
 				ParamCB = CB;
 				ParamComment = BxUtilGlobal::StrFree(ParamComment);
@@ -279,7 +279,7 @@ namespace BxDynamic
 			}
 			public: Resource* GetResource()
 			{
-				if(!ParentBinder) return null;
+				if(!ParentBinder) return nullptr;
 				return ParentBinder->ParamData;
 			}
 			public: void CallSerialize(bindstate State)
@@ -300,7 +300,7 @@ namespace BxDynamic
 	class Serialize
 	{
 		// 연결
-		public: bool Link(rsid ID, callback_serialize CB = null, string Comment = null)
+		public: bool Link(rsid ID, callback_serialize CB = nullptr, string Comment = nullptr)
 		{
 			if(Linker) return false;
 			Linker = (Resource::LinkPool*) Resource::BinderBegin(GetClass()->GetCachePoolName())->FindBinder(ID)->AddLinker();
@@ -310,7 +310,7 @@ namespace BxDynamic
 		// 접근
 		public: TYPE* Access()
 		{
-			if(!Linker) return null;
+			if(!Linker) return nullptr;
 			return (TYPE*) Linker->GetResource();
 		}
 		// 파일로드
@@ -328,7 +328,7 @@ namespace BxDynamic
 			BxCore::File::Write(File, &ID, 8);
 		}
 		// 생성자 & 소멸자
-		public: Serialize() : Linker(null) {}
+		public: Serialize() : Linker(nullptr) {}
 		public: ~Serialize() {if(Linker) Linker->Remove();}
 		// 멤버변수
 		private: Resource::LinkPool* Linker;

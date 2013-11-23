@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Data = data;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            Size = size;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            Next = null;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ~List()</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    global_func <span class="keyword">inline</span> List* BufferPoolFirst()</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        global_data List PoolList(null, 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        global_data List PoolList(<span class="keyword">nullptr</span>, 0);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> &amp;PoolList;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">int</span>&amp; BufferPoolUsed()</div>
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        LastTimeByUse = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        LockCountByUse = 0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        IsAutoRelease = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        Buffer = null;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        Buffer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ~<a class="code" href="class_bx_auto_buffer.html" title="사용자모듈을 위한 실시간로딩도구 ">BxAutoBuffer</a>()</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span>(doLock) ++LockCountByUse;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">while</span>(SecureBuffer(size));</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAutoBuffer&lt;이미 Buffer가 존재합니다&gt;&quot;</span>, !Buffer);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        LastTimeByUse = <a class="code" href="namespace_bx_core_1_1_system.html#a59483b8ee9d089a74c7a9740852aa4df" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimerMilliSecond</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        LastTimeByUse = <a class="code" href="namespace_bx_core_1_1_system.html#ab14eb3855f4090d1224d7fee625c119f" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// 풀에 추가</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        BufferPoolUsed() += size;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        List* AddPool = BxNew_Param(List, <span class="keyword">this</span>, size);</div>
@@ -179,16 +179,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        BufferPoolUsed() -= FindPool-&gt;Next-&gt;Size;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        List* SubPool = FindPool-&gt;Next;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        FindPool-&gt;Next = SubPool-&gt;Next;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        SubPool-&gt;Next = null;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        SubPool-&gt;Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        BxDelete(SubPool);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// 버퍼해제</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        BxFree(Buffer);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Buffer = null;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Buffer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span>* GetBuffer()</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span>(Buffer)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            LastTimeByUse = <a class="code" href="namespace_bx_core_1_1_system.html#a59483b8ee9d089a74c7a9740852aa4df" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimerMilliSecond</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            LastTimeByUse = <a class="code" href="namespace_bx_core_1_1_system.html#ab14eb3855f4090d1224d7fee625c119f" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</a>();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> Buffer;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> Lock()</div>
@@ -214,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">if</span>(BufferPoolSize() &lt; BufferPoolUsed() + size)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            List* SubPool = null;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            List* SubPool = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            uhuge LastTimeMax = 0;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            List* FindPool = BufferPoolFirst();</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">while</span>(FindPool = FindPool-&gt;Next)</div>
@@ -237,7 +237,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:43 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:48 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

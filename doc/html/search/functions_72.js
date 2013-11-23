@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read',['Read',['../namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450',1,'BxCore::File']]],
+  ['read',['Read',['../namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1',1,'BxCore::File']]],
   ['rectangle',['Rectangle',['../class_bx_draw.html#a9714a17e6dbafd6b247028cc71fc4e20',1,'BxDraw']]],
   ['recv',['Recv',['../namespace_bx_core_1_1_socket.html#a7be3798b55912b18de94d464abc420e5',1,'BxCore::Socket']]],
   ['recvfully',['RecvFully',['../namespace_bx_core_1_1_socket.html#aa8ff5faa5156e2443a76dfff25c8c3e2',1,'BxCore::Socket']]],

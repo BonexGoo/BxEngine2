@@ -38,7 +38,7 @@ public:
 			BxCore::File::Read(File, (void*) Xml, FileLen);
 			((char*) Xml)[FileLen] = '\0';
 			BxCore::File::Close(File);
-			File = null;
+			File = nullptr;
 		}
 		else return false;
 		Mode = READ;
@@ -49,12 +49,12 @@ public:
 		BxAssert("BxXml", Mode == READ);
 		TagStack.Reset();
 		BxDelete_Array(Xml);
-		Xml = null;
+		Xml = nullptr;
 		Focus = 0;
 		TagID = -1;
 		Mode = DEFINE;
 	}
-	const int NextTag(State* state = null)
+	const int NextTag(State* state = nullptr)
 	{
 		BxAssert("BxXml", Mode == READ);
 		TagStack.Reset();
@@ -137,7 +137,7 @@ public:
 		if(File)
 		{
 			BxCore::File::Close(File);
-			File = null;
+			File = nullptr;
 		}
 		TagStack.Reset();
 		Mode = DEFINE;
@@ -216,10 +216,10 @@ public:
 	void Init(int index)
 	{
 		Mode = DEFINE;
-		Xml = null;
+		Xml = nullptr;
 		Focus = 0;
 		TagID = -1;
-		File = null;
+		File = nullptr;
 		IsWriting = false;
 	}
 	void Quit(int index)
@@ -228,7 +228,7 @@ public:
 		if(File)
 		{
 			BxCore::File::Close(File);
-			File = null;
+			File = nullptr;
 		}
 	}
 
@@ -251,7 +251,7 @@ private:
 			AttbValue = rhs.AttbValue;
 			return *this;
 		}
-		int Read(string xml, int focus, State* state = null)
+		int Read(string xml, int focus, State* state = nullptr)
 		{
 			TagName = "";
 			Content = "";

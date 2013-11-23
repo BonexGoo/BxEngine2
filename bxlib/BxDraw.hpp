@@ -31,7 +31,7 @@ protected:
 		Page = 1;
 		FrameBegin = 0;
 		#ifdef __BX_OPENGL
-		FormGL = null;
+		FormGL = nullptr;
 		#endif
 	}
 	virtual ~BxDrawForm()
@@ -123,20 +123,16 @@ namespace BxDrawGlobal
 	\param y : 위치Y
 	\return 위치
 	*/
-	/// @cond SECTION_NAME
-	____FunctorBox____name(XY)____comment(위치제작																		)___________
-	IIII																														IIII
-	IIII____return(const point)____param(int x, int y)____comment(정수타입												)_______IIII
-	IIII																														IIII
-	IIII	const point Result = {x, y};																						IIII
-	IIII	finally(Result);																									IIII
-	IIII																														IIII
-	IIII____return(const pointf)____param(float x, float y)____comment(실수타입											)_______IIII
-	IIII																														IIII
-	IIII	const pointf Result = {(fint)(x * ItoF(1)), (fint)(y * ItoF(1))};													IIII
-	IIII	finally(Result);																									IIII
-	IIII_____________________________________________________________________________instance(XY							)___IIII
-	/// @endcond
+	static inline const point XY(int x, int y)
+	{
+		const point Result = {x, y};
+		return Result;
+	}
+	static inline const pointf XY(float x, float y)
+	{
+		const pointf Result = {(fint)(x * ItoF(1)), (fint)(y * ItoF(1))};
+		return Result;
+	}
 
 	/*!
 	\brief 크기제작
@@ -144,15 +140,11 @@ namespace BxDrawGlobal
 	\param h : 높이
 	\return 크기
 	*/
-	/// @cond SECTION_NAME
-	____FunctorBox____name(WH)____comment(크기제작																		)___________
-	IIII																														IIII
-	IIII____return(const size)____param(int w, int h)____comment(정수타입												)_______IIII
-	IIII																														IIII
-	IIII	const size Result = {w, h};																							IIII
-	IIII	finally(Result);																									IIII
-	IIII_____________________________________________________________________________instance(WH							)___IIII
-	/// @endcond
+	static inline const size WH(int w, int h)
+	{
+		const size Result = {w, h};
+		return Result;
+	}
 
 	/*!
 	\brief 영역제작
@@ -162,17 +154,13 @@ namespace BxDrawGlobal
 	\param h : 높이
 	\return 영역
 	*/
-	/// @cond SECTION_NAME
-	____FunctorBox____name(XYWH)____comment(영역제작																		)___________
-	IIII																														IIII
-	IIII____return(const rect)____param(int x, int y, int w = size::max, int h = size::max)____comment(정수타입			)_______IIII
-	IIII																														IIII
-	IIII	const rect Result = {x, y, x + w, y + h};																			IIII
-	IIII	BxAssert("BxDraw<가로길이가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);								IIII
-	IIII	BxAssert("BxDraw<세로길이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);								IIII
-	IIII	finally(Result);																									IIII
-	IIII_____________________________________________________________________________instance(XYWH							)___IIII
-	/// @endcond
+	static inline const rect XYWH(int x, int y, int w = size::max, int h = size::max)
+	{
+		const rect Result = {x, y, x + w, y + h};
+		BxAssert("BxDraw<가로길이가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
+		BxAssert("BxDraw<세로길이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
+		return Result;
+	}
 
 	/*!
 	\brief 영역제작
@@ -182,15 +170,13 @@ namespace BxDrawGlobal
 	\param y2 : 끝위치Y
 	\return 영역
 	*/
-	/// @cond SECTION_NAME
-	____FunctionBoxSI____return(const rect)____name(XYXY)____param(int x1, int y1, int x2, int y2)____comment(영역제작		)_______
-	IIII																														IIII
-	IIII	const rect Result = {x1, y1, x2, y2};																				IIII
-	IIII	BxAssert("BxDraw<가로길이가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);								IIII
-	IIII	BxAssert("BxDraw<세로길이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);								IIII
-	IIII	finally(Result);																									IIII
-	IIII________________________________________________________________________________________________________________________IIII
-	/// @endcond
+	static inline const rect XYXY(int x1, int y1, int x2, int y2)
+	{
+		const rect Result = {x1, y1, x2, y2};
+		BxAssert("BxDraw<가로길이가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
+		BxAssert("BxDraw<세로길이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
+		return Result;
+	}
 
 	/*!
 	\brief 중점식 영역제작
@@ -634,7 +620,7 @@ namespace BxDrawGlobal
 		#ifndef __BX_OPENGL
 		global_func byte* GetSpriteTable(drawblend blend)
 		{
-			global_data byte* Table[blend_max] = {null,};
+			global_data byte* Table[blend_max] = {nullptr,};
 			if(!Table[blend])
 			{
 				#ifdef __BX_PIXEL16
@@ -663,7 +649,7 @@ namespace BxDrawGlobal
 		}
 		global_func byte* GetAlphaTable(drawblend blend)
 		{
-			global_data byte* Table[blend_max] = {null,};
+			global_data byte* Table[blend_max] = {nullptr,};
 			if(!Table[blend])
 			{
 				#ifdef __BX_PIXEL16
@@ -773,7 +759,7 @@ namespace BxDrawGlobal
 					return OnForm<maskoperate_print_by_0, maskflag_write_0>;
 				break;
 			}
-			return null;
+			return nullptr;
 		}
 
 	protected:
@@ -1151,7 +1137,7 @@ namespace BxDrawGlobal
 	\param r : 로드할 구역
 	\return 스택처리수량(무조건 1), 여러가지 스타일을 +로 복합사용하기 위함
 	*/
-	static StyleStack FORM(BxDrawForm* form = null, rect r = XYWH(0, 0, size::max, size::max))
+	static StyleStack FORM(BxDrawForm* form = nullptr, rect r = XYWH(0, 0, size::max, size::max))
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_form];
 		BxAssert("BxDraw", Focus < Stack().MAX);
@@ -1216,11 +1202,11 @@ public:
 		DoClearButtonEvent = false;
 		// 도형버퍼초기화
 		FigureMapHeight = 0;
-		FigureMap = null;
+		FigureMap = nullptr;
 		// 백버퍼 초기화
 		BackBufferWidth = 0;
 		BackBufferHeight = 0;
-		BackBufferPtr = null;
+		BackBufferPtr = nullptr;
 		Flush(true);
 	}
 
@@ -1241,49 +1227,41 @@ public:
 	\brief 현재 X축 기준좌표얻기
 	\return X축 기준좌표
 	*/
-	/// @cond SECTION_NAME
-	____FunctionBoxI____return(int)____name(TranslateX)____param()____comment(현재 X축 기준좌표얻기							)_______
-	IIII																														IIII
-	IIII	finally(BxDrawGlobal::_DrawOption::CurHotspotX());																	IIII
-	IIII________________________________________________________________________________________________________________________IIII
-	/// @endcond
+	inline int TranslateX()
+	{
+		return BxDrawGlobal::_DrawOption::CurHotspotX();
+	}
 
 	/*!
 	\brief 현재 Y축 기준좌표얻기
 	\return Y축 기준좌표
 	*/
-	/// @cond SECTION_NAME
-	____FunctionBoxI____return(int)____name(TranslateY)____param()____comment(현재 Y축 기준좌표얻기							)_______
-	IIII																														IIII
-	IIII	finally(BxDrawGlobal::_DrawOption::CurHotspotY());																	IIII
-	IIII________________________________________________________________________________________________________________________IIII
-	/// @endcond
+	inline int TranslateY()
+	{
+		return BxDrawGlobal::_DrawOption::CurHotspotY();
+	}
 
 	/*!
 	\brief 현재 너비얻기
 	\param isScreen : true-스크린, false-현재클리핑
 	\return 너비
 	*/
-	/// @cond SECTION_NAME
-	____FunctionBoxI____return(int)____name(Width)____param(bool isScreen = false)____comment(현재 너비얻기					)_______
-	IIII																														IIII
-	IIII	if(isScreen) finally(BxCore::Surface::GetWidthHW());																IIII
-	IIII	finally(BxDrawGlobal::_DrawOption::CurAreaWidth());																	IIII
-	IIII________________________________________________________________________________________________________________________IIII
-	/// @endcond
+	inline int Width(bool isScreen = false)
+	{
+		if(isScreen) return BxCore::Surface::GetWidthHW();
+		return BxDrawGlobal::_DrawOption::CurAreaWidth();
+	}
 
 	/*!
 	\brief 현재 높이얻기
 	\param isScreen : true-스크린, false-현재클리핑
 	\return 높이
 	*/
-	/// @cond SECTION_NAME
-	____FunctionBoxI____return(int)____name(Height)____param(bool isScreen = false)____comment(현재 높이얻기					)_______
-	IIII																														IIII
-	IIII	if(isScreen) finally(BxCore::Surface::GetHeightHW());																IIII
-	IIII	finally(BxDrawGlobal::_DrawOption::CurAreaHeight());																IIII
-	IIII________________________________________________________________________________________________________________________IIII
-	/// @endcond
+	inline int Height(bool isScreen = false)
+	{
+		if(isScreen) return BxCore::Surface::GetHeightHW();
+		return BxDrawGlobal::_DrawOption::CurAreaHeight();
+	}
 
 	/*!
 	\brief 백버퍼 주소얻기
@@ -1868,9 +1846,10 @@ public:
 	\param font : 폰트ID
 	\param str : 스트링
 	\param r : 출력영역
+	\param sort : 숫자키패드 방식
 	\param count : 스타일옵션, 다중설정시 >>사용
 	*/
-	void Text(id_font font, string str, rect r, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
+	void Text(id_font font, string str, rect r, fontsort sort, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
 	{
 		if(!VisibleTest(count)) return;
 		if(!AddStyleByIf(count)) return;
@@ -1879,7 +1858,7 @@ public:
 		r.t += BxDrawGlobal::_DrawOption::CurClipRect().t;
 		r.r = BxUtilGlobal::Min(r.r + BxDrawGlobal::_DrawOption::CurClipRect().l, BxDrawGlobal::_DrawOption::CurClipRect().r);
 		r.b = BxUtilGlobal::Min(r.b + BxDrawGlobal::_DrawOption::CurClipRect().t, BxDrawGlobal::_DrawOption::CurClipRect().b);
-		fontsort OldSort = BxCore::Font::SetSort(fontsort_pad5);
+		fontsort OldSort = BxCore::Font::SetSort(sort);
 		BxCore::Font::Draw(font, str, BxDrawGlobal::XY(r.l - BxCore::Main::GetCurrentGUIMargin().l, r.t - BxCore::Main::GetCurrentGUIMargin().t),
 			BxDrawGlobal::WH(r.width(), r.height()), BxDrawGlobal::_DrawOption::CurColor(), (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) * 0xFF / 8);
 		BxCore::Font::SetSort(OldSort);
@@ -1897,10 +1876,10 @@ public:
 		// 버튼이벤트 초기화지시
 		DoClearButtonEvent = true;
 		// 백버퍼 초기화
-		if(BackBufferWidth != BxCore::Surface::GetWidth(null, false) || BackBufferHeight != BxCore::Surface::GetHeight(null, false))
+		if(BackBufferWidth != BxCore::Surface::GetWidth(nullptr, false) || BackBufferHeight != BxCore::Surface::GetHeight(nullptr, false))
 		{
-			BackBufferWidth = BxCore::Surface::GetWidth(null, false);
-			BackBufferHeight = BxCore::Surface::GetHeight(null, false);
+			BackBufferWidth = BxCore::Surface::GetWidth(nullptr, false);
+			BackBufferHeight = BxCore::Surface::GetHeight(nullptr, false);
 			#ifndef __BX_OPENGL
 				BxDelete_Array(BackBufferPtr);
 				BackBufferPtr = BxNew_Array(pixel_dst, BackBufferWidth * BackBufferHeight);
@@ -1935,7 +1914,7 @@ public:
 	\param buttonName : 버튼명, 작성시 현재 클리핑영역으로 GUI이벤트 작동
 	\return true-정상처리, false-클리핑되어 출력할 것이 없음(SubStyle 자동처리)
 	*/
-	bool AddStyleByIf(BxDrawGlobal::StyleStack count, string buttonName = null)
+	bool AddStyleByIf(BxDrawGlobal::StyleStack count, string buttonName = nullptr)
 	{
 		AddStyle(count);
 		if(BxDrawGlobal::_DrawOption::CurClipRect().r <= BxDrawGlobal::_DrawOption::CurClipRect().l
@@ -1944,7 +1923,7 @@ public:
 			SubStyle();
 			return false;
 		}
-		if(buttonName != null)
+		if(buttonName != nullptr)
 		{
 			if(DoClearButtonEvent)
 			{

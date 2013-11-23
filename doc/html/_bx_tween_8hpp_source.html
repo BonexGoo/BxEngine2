@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        id_file File = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2" title="파일열기 ">BxCore::File::Open</a>(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">int</span> Length = <a class="code" href="namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920" title="파일의 전체길이 얻기 ">BxCore::File::GetSize</a>(File);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        byte* Resource = (byte*) BxAlloc(Length);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450" title="파일에서 읽기 ">BxCore::File::Read</a>(File, Resource, Length);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1" title="파일에서 읽기 ">BxCore::File::Read</a>(File, Resource, Length);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> Result = Open(Resource);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        BxFree(Resource);</div>
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> DrawAnimate(OnPart PartCB, <span class="keywordtype">void</span>* Data = null)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> DrawAnimate(OnPart PartCB, <span class="keywordtype">void</span>* Data = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">if</span>(!_IsAnimationPlay)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            NextAnimate();</div>
@@ -767,7 +767,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

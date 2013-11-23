@@ -46,12 +46,12 @@
 <para>: 빠른출력을 위한 캐시수(icf의 [gxfont] CacheTextureMaxSize보다 작아야 함, -1은 자동처리) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>폰트ID(null은 실패) </para></simplesect>
+<simplesect kind="return"><para>폰트ID(nullptr은 실패) </para></simplesect>
 <simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member">Close</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="756" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="768" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a0aee13633464e7673e33976e4855f636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>id_font</type>
@@ -107,12 +107,12 @@
 <para>: 빠른출력을 위한 캐시수(icf의 [gxfont] CacheTextureMaxSize보다 작아야 함, -1은 자동처리) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>폰트ID(null은 실패) </para></simplesect>
+<simplesect kind="return"><para>폰트ID(nullptr은 실패) </para></simplesect>
 <simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member">Close</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="767" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="779" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -138,7 +138,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="774" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="786" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -164,7 +164,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="781" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="793" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>fontsort</type>
@@ -180,7 +180,7 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>fontsort</parametername>
+<parametername>sort</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>: 숫자키패드 방식 </para></parameterdescription>
@@ -191,7 +191,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="789" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="801" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -228,7 +228,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="797" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="809" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structsize" kindref="compound">size</ref></type>
@@ -278,7 +278,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="807" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="819" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a08159673a1a3269082f9a3a1bc90eb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -361,13 +361,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="818" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="830" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Font파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="747" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="759" column="1"/>
   </compounddef>
 </doxygen>

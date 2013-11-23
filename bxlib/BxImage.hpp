@@ -19,7 +19,7 @@ public:
 	/*!
 	\brief 기본생성자
 	*/
-	BxImage() {Bits = null;}
+	BxImage() {Bits = nullptr;}
 
 	/*!
 	\brief 소멸자
@@ -64,7 +64,7 @@ public:
 	{
 		id_file File = BxCore::File::Open(FileName, "rb");
 		int Length = BxCore::File::GetSize(File);
-		byte* Resource = null;
+		byte* Resource = nullptr;
 		if(Type == BMP)
 		{
 			Length += 2;
@@ -113,9 +113,9 @@ public:
 	bool IsExist()
 	{
 		#ifdef __BX_OPENGL
-			return (Bits != null || FormGL != null);
+			return (Bits != nullptr || FormGL != nullptr);
 		#else
-			return (Bits != null);
+			return (Bits != nullptr);
 		#endif
 	}
 
@@ -143,7 +143,7 @@ public:
 		if(FormGL)
 		{
 			BxCore::OpenGL2D::FreeForm(FormGL);
-			FormGL = null;
+			FormGL = nullptr;
 		}
 		#endif
 		BxDelete_Array(Bits);
@@ -190,7 +190,7 @@ public:
 		if(FormGL)
 		{
 			BxCore::OpenGL2D::FreeForm(FormGL);
-			FormGL = null;
+			FormGL = nullptr;
 		}
 		#endif
 		BxDelete_Array(Bits);
@@ -264,7 +264,7 @@ public:
 				return GetFormMethodSwitch<maskoperate_print_by_0, maskflag_write_0>();
 			break;
 		}
-		return null;
+		return nullptr;
 	}
 
 protected:
@@ -348,7 +348,7 @@ protected:
 		case blendflag_sprite: return OnForm<MASKOP, MASK, blendflag_sprite>;
 		case blendflag_alpha | blendflag_sprite: return OnForm<MASKOP, MASK, (blendflag) 3>;
 		}
-		return null;
+		return nullptr;
 	}
 	/// @endcond
 
@@ -643,16 +643,16 @@ public:
 		PngToBmp(bool autodelete = true)
 		{
 			AutoDelete = autodelete;
-			LZWindow = null;
+			LZWindow = nullptr;
 			LZWindowSize = 0;
 			LZWindowPos = 0;
 			CopyPos = 0;
 			CopyCount = 0;
-			PNG = null;
+			PNG = nullptr;
 			IsFinalBlock = false;
 			BlockMode = 0xff;
 			LiteralLength = 0;
-			BMPData = null;
+			BMPData = nullptr;
 			BMPOffset = 0;
 			BMPSize = 0;
 		}
@@ -670,8 +670,8 @@ public:
 			PNGByteOffset = 0;
 			PNGBitOffset = 0;
 			NextByteOffset = 8;
-			byte* BMPPalette = null;
-			byte* BMPPaletteAlpha = null;
+			byte* BMPPalette = nullptr;
+			byte* BMPPaletteAlpha = nullptr;
 			uint ChunkName = 0;
 
 			// IHDR 청크
@@ -692,7 +692,7 @@ public:
 			if(0 < GetByte())
 			{
 				BxAssert("BxImage<인터레이스가 들어간 PNG는 지원하지 않습니다>", false);
-				return null;
+				return nullptr;
 			}
 
 			// PLTE 청크
@@ -923,7 +923,7 @@ public:
 		inline void DeleteResource()
 		{
 			BxDelete_Array(BMPData);
-			BMPData = null;
+			BMPData = nullptr;
 		}
 
 	protected:

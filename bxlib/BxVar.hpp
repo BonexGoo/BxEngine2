@@ -40,7 +40,7 @@ public:
 		VarTree& Leaf = TreeHead.GetLeafMutabled(index);
 		const VarList* List = Leaf.GetList(index);
 		if(List) return *(CachePtr[index16] = List->Data);
-		return *(CachePtr[index16] = Leaf.AddList(index, MakeNewData(null), VarTree::NoRanging));
+		return *(CachePtr[index16] = Leaf.AddList(index, MakeNewData(nullptr), VarTree::NoRanging));
 	}
 
 	// 데이터접근
@@ -50,7 +50,7 @@ public:
 		const VarTree& Leaf = TreeHead.GetLeaf(index);
 		const VarList* List = Leaf.GetList(index);
 		if(List) return List->Data;
-		return null;
+		return nullptr;
 	}
 
 	// 데이터길이
@@ -88,7 +88,7 @@ public:
 		VarList* List = Leaf.GetListMutabled(index);
 		if(List)
 		{
-			if(oldData) *oldData = List->Data, List->Data = null;
+			if(oldData) *oldData = List->Data, List->Data = nullptr;
 			if(Leaf.SubList(List, VarTree::DoRanging) == VarTree::DeleteMe)
 				VarTreePool::FreeClass(&Leaf);
 		}
@@ -121,7 +121,7 @@ public:
 		if(List)
 		{
 			CleaningCache();
-			if(oldData) *oldData = List->Data, List->Data = null;
+			if(oldData) *oldData = List->Data, List->Data = nullptr;
 			if(Leaf.SubList(List, VarTree::NoRanging) == VarTree::DeleteMe)
 				VarTreePool::FreeClass(&Leaf);
 			return true;
@@ -135,7 +135,7 @@ public:
 		TYPE* Data1 = Access(index1);
 		TYPE* Data2 = Access(index2);
 		if(!Data1 && !Data2) return;
-		TYPE* NoDelete = null;
+		TYPE* NoDelete = nullptr;
 		if(Data1) ModifyData(index2, Data1, &NoDelete);
 		else RemoveData(index2, &NoDelete);
 		if(Data2) ModifyData(index1, Data2, &NoDelete);
@@ -181,9 +181,9 @@ public:
 	}
 
 	// 생성자
-	BxVar() : TreeHead(null), BytesUpdated(false), BytesData(null), IsDirtyCache(true) {CleaningCache();}
+	BxVar() : TreeHead(nullptr), BytesUpdated(false), BytesData(nullptr), IsDirtyCache(true) {CleaningCache();}
 	// 생성자
-	BxVar(const BxVar& RHS) : TreeHead(null), BytesUpdated(false), BytesData(null), IsDirtyCache(true) {operator=(RHS);}
+	BxVar(const BxVar& RHS) : TreeHead(nullptr), BytesUpdated(false), BytesData(nullptr), IsDirtyCache(true) {operator=(RHS);}
 	// 소멸자
 	virtual ~BxVar() {ReleaseBytes();}
 
@@ -240,7 +240,7 @@ private:
 			if(Next) VarListPool::FreeClass(Next);
 		}
 	public:
-		VarList* Init(int index, TYPE* data) {Index = index; Data = data; Next = null; return this;}
+		VarList* Init(int index, TYPE* data) {Index = index; Data = data; Next = nullptr; return this;}
 		void RemoveData()
 		{
 			if(Data && EnableRemove())
@@ -248,7 +248,7 @@ private:
 				const bool Result = TypePool::FreeClass(Data);
 				BxAssert("BxVar<외부데이터가 있어 메모리누수가 발생합니다>", Result);
 			}
-			Data = null;
+			Data = nullptr;
 		}
 		global_func bool& EnableRemove() {global_data bool _ = true; return _;}
 	};
@@ -265,17 +265,17 @@ private:
 		union
 		{
 			VarTree* Child[2]; // [좌선][우선]
-			VarList* List[2]; // [리스트][null]
+			VarList* List[2]; // [리스트][nullptr]
 		};
 	public:
 		VarTree() {BxAssert("BxVar<잘못된 호출입니다>", false);}
 		VarTree(void*) // TreeHead전용
 		{
-			Parent = null;
+			Parent = nullptr;
 			Range = 0;
 			Count = 0;
-			List[0] = null;
-			List[1] = null;
+			List[0] = nullptr;
+			List[1] = nullptr;
 		}
 		~VarTree() {Quit();}
 	public:
@@ -294,7 +294,7 @@ private:
 			Range = range;
 			Count = count;
 			List[0] = list;
-			List[1] = null;
+			List[1] = nullptr;
 			return this;
 		}
 		void Reset()
@@ -303,8 +303,8 @@ private:
 			Quit();
 			Range = 0;
 			Count = 0;
-			List[0] = null;
-			List[1] = null;
+			List[0] = nullptr;
+			List[1] = nullptr;
 		}
 	private:
 		void Quit()
@@ -316,7 +316,7 @@ private:
 			}
 			else VarListPool::FreeClass(List[0]);
 		}
-		macro bool HasChild() const {return Child[1] != null;}
+		macro bool HasChild() const {return Child[1] != nullptr;}
 	public:
 		const VarTree& GetLeaf(int _inout_ index) const
 		{
@@ -355,7 +355,7 @@ private:
 			VarList* NewList = VarListPool::Make()->Init(index, data);
 			if(List[0])
 			{
-				VarList* PrevList = null;
+				VarList* PrevList = nullptr;
 				VarList* CurList = List[0];
 				do
 				{
@@ -387,7 +387,7 @@ private:
 		Action SubList(VarList* list, const Parameter option)
 		{
 			BxAssert("BxVar<Leaf가 아닙니다>", !HasChild());
-			VarList* PrevList = null;
+			VarList* PrevList = nullptr;
 			VarList* CurList = List[0];
 			while(true)
 			{
@@ -397,7 +397,7 @@ private:
 					if(CurList->Next) // 인덱스통합
 						CurList->Next->Index += CurList->Index - ((option == DoRanging)? 1 : 0);
 					((PrevList)? PrevList->Next : List[0]) = CurList->Next; // 리스트분리
-					CurList->Next = null;
+					CurList->Next = nullptr;
 					VarListPool::FreeClass(CurList);
 					AdjustLoop((option == DoRanging)? -1 : 0, -1); // 트리조정
 					if(Count == 0) return BrotherToParent(); // 패스제거
@@ -415,7 +415,7 @@ private:
 			const int NewRange2 = Range - NewRange1;
 			VarList* NewList1 = List[0];
 			VarList* NewList2 = NewList1->Next->Next;
-			NewList1->Next->Next = null; // 관계분리
+			NewList1->Next->Next = nullptr; // 관계분리
 			--NewList2->Index;
 			// 리프생성
 			Child[0] = VarTreePool::Make()->InitLeaf(this, NewRange1, 2, NewList1);
@@ -435,14 +435,14 @@ private:
 						Brother->Child[0]->Parent = Parent;
 					if(Parent->Child[1] = Brother->Child[1])
 						Brother->Child[1]->Parent = Parent;
-					Brother->Child[0] = null;
-					Brother->Child[1] = null;
+					Brother->Child[0] = nullptr;
+					Brother->Child[1] = nullptr;
 				}
 				else
 				{
 					Parent->List[0] = Brother->List[0];
-					Parent->List[1] = null;
-					Brother->List[0] = null;
+					Parent->List[1] = nullptr;
+					Brother->List[0] = nullptr;
 				}
 				VarTreePool::FreeClass(Brother); // 형제제거
 				// 틸팅
@@ -451,7 +451,7 @@ private:
 			}
 			// 최상위
 			VarListPool::FreeClass(List[0]);
-			List[0] = null;
+			List[0] = nullptr;
 			return NoAction;
 		}
 		void DeleteBlank(int index)
@@ -483,7 +483,7 @@ private:
 		}
 		void TiltingLoop(const bool isadd)
 		{
-			VarTree* CurTree = null;
+			VarTree* CurTree = nullptr;
 			VarTree* ParentTree = this;
 			while(ParentTree = (CurTree = ParentTree)->Parent)
 			{

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">string</span> Path;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        uint Size;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        uhuge Date;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        CachePool() : Path(null), Size(0), Date(0) {}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        CachePool() : Path(<span class="keyword">nullptr</span>), Size(0), Date(0) {}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        ~CachePool() {Path = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Path);}</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="class_bx_var_vector.html" title="vector식 가변배열 제공(BxVar와 동일인터페이스) ">BxVarVector&lt;CachePool, 64&gt;</a> <a class="code" href="class_bx_var_vector.html" title="vector식 가변배열 제공(BxVar와 동일인터페이스) ">CachePoolList</a>;</div>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_bx_web_content.html" title="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</a>() : ResponseBytes(null), ResponseLength(0) {}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_bx_web_content.html" title="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</a>() : ResponseBytes(<span class="keyword">nullptr</span>), ResponseLength(0) {}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ~<a class="code" href="class_bx_web_content.html" title="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</a>() {BxFree(ResponseBytes);}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312">   48</a></span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>() {<span class="keywordflow">return</span> <span class="stringliteral">&quot;.webcontent_cache&quot;</span>;}</div>
@@ -140,12 +140,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="class_bx_web_content.html#a2c1ae12564be5f2b1880ad56966fd38c">   66</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_bx_web_content.html#a2c1ae12564be5f2b1880ad56966fd38c" title="쿼리결과의 사이즈얻기(스트링) ">GetTextLength</a>() {<span class="keywordflow">return</span> <a class="code" href="namespace_bx_util_global.html#a39b70575037e5a54e79b304c82c1822a" title="확장된 스트링길이 구하기(과  도 인식) ">BxUtilGlobal::StrLenEx</a>((<span class="keywordtype">string</span>) ResponseBytes);}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_bx_web_content.html#a53adbac7a2b2d510ed3b3a4b7d27db26">   78</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_bx_web_content.html#a53adbac7a2b2d510ed3b3a4b7d27db26" title="HTTP쿼리실행 ">Query</a>(<span class="keywordtype">string</span> Domain, ushort Port, <span class="keywordtype">string</span> Path, <span class="keywordtype">string</span> Arguments = null, <span class="keywordtype">int</span> Timeout = -1, callback_progress Progress = null)</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_bx_web_content.html#acd8d5ef69739c1368397f38de5889144">   78</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_bx_web_content.html#acd8d5ef69739c1368397f38de5889144" title="HTTP쿼리실행 ">Query</a>(<span class="keywordtype">string</span> Domain, ushort Port, <span class="keywordtype">string</span> Path, <span class="keywordtype">string</span> Arguments = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> Timeout = -1, callback_progress Progress = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span>(Timeout &lt; 0) Timeout = 5000;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// 소켓연결, 쿼리제작 및 전송</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        id_socket Socket = <a class="code" href="namespace_bx_core_1_1_socket.html#a85378908a5e811508c7a9b8a96dfa58d" title="소켓ID 할당 ">BxCore::Socket::Create</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(connect_connected == <a class="code" href="namespace_bx_core_1_1_socket.html#a0a3683eb9064e37b8459d1033209ba6c" title="서버로 접속 ">BxCore::Socket::Connect</a>(Socket, Domain, Port, Timeout, Progress))</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(connect_connected == <a class="code" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">BxCore::Socket::Connect</a>(Socket, Domain, Port, Timeout, Progress))</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">char</span> RequestChars[4096];</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#acb919367d4ddcaf86284146ce9237c2e" title="스트링에 스트링기록 ">BxCore::Util::SnPrintf</a>(RequestChars, 4096,</div>
@@ -290,13 +290,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="code" href="class_bx_web_content.html#a1d82a5ce1039b42e7e5f07075be2dfea">  237</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_bx_web_content.html#a1d82a5ce1039b42e7e5f07075be2dfea" title="캐시파일 로드(없으면 생성) ">Cache</a>(<span class="keywordtype">string</span> Domain, ushort Port, <span class="keywordtype">string</span> FilePath, <span class="keywordtype">bool</span> DoLoad = <span class="keyword">true</span>, callback_progress Progress = null)</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="code" href="class_bx_web_content.html#a74c88b12ae7f3dde6e45e92dc977f9b5">  237</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_bx_web_content.html#a74c88b12ae7f3dde6e45e92dc977f9b5" title="캐시파일 로드(없으면 생성) ">Cache</a>(<span class="keywordtype">string</span> Domain, ushort Port, <span class="keywordtype">string</span> FilePath, <span class="keywordtype">bool</span> DoLoad = <span class="keyword">true</span>, callback_progress Progress = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        global_data <span class="keyword">const</span> <span class="keywordtype">int</span> CacheCountSumMax = <a class="code" href="namespace_bx_core_1_1_system.html#acdf43bdd47ce78f2d24404bd6d782d4b" title="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</a>(<span class="stringliteral">&quot;Bx.WebContent.CacheCountSumMax&quot;</span>, -1);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        global_data <span class="keyword">const</span> <span class="keywordtype">int</span> CacheSizeSumMax = <a class="code" href="namespace_bx_core_1_1_system.html#acdf43bdd47ce78f2d24404bd6d782d4b" title="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</a>(<span class="stringliteral">&quot;Bx.WebContent.CacheSizeSumMax&quot;</span>, -1);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">// 캐시로드</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> CacheFileName(<span class="stringliteral">&quot;%s/%s&quot;</span>, null, <a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>(), FilePath);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> CacheFileName(<span class="stringliteral">&quot;%s/%s&quot;</span>, <span class="keyword">nullptr</span>, <a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>(), FilePath);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">int</span> FindedPos = -1;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">while</span>((FindedPos = CacheFileName.<a class="code" href="class_bx_string.html#a3ee00cfa51f7d302abc54a979f2fff07" title="글자 찾기 ">Find</a>(<span class="charliteral">&#39;?&#39;</span>)) != -1)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            CacheFileName[FindedPos] = <span class="charliteral">&#39;_&#39;</span>;</div>
@@ -311,7 +311,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    ResponseLength = FileSize;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    BxFree(ResponseBytes);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    ResponseBytes = (byte*) BxAlloc(ResponseLength + 1);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450" title="파일에서 읽기 ">BxCore::File::Read</a>(CacheFile, ResponseBytes, ResponseLength);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1" title="파일에서 읽기 ">BxCore::File::Read</a>(CacheFile, ResponseBytes, ResponseLength);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(CacheFile);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                    ResponseBytes[ResponseLength] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                }</div>
@@ -319,7 +319,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                {</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                    ResponseLength = 0;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                    BxFree(ResponseBytes);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                    ResponseBytes = null;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                    ResponseBytes = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            }</div>
@@ -327,25 +327,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">// 쿼리실행</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="class_bx_web_content.html#a53adbac7a2b2d510ed3b3a4b7d27db26" title="HTTP쿼리실행 ">Query</a>(Domain, Port, FilePath, null, -1, Progress))</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="class_bx_web_content.html#acd8d5ef69739c1368397f38de5889144" title="HTTP쿼리실행 ">Query</a>(Domain, Port, FilePath, <span class="keyword">nullptr</span>, -1, Progress))</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// 캐시풀 초기수집</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">if</span>(!IsInitPool() &amp;&amp; (CacheCountSumMax != -1 || CacheSizeSumMax != -1))</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        {</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            IsInitPool() = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a81b8aee658da8a26de291fcc41d8fb78" title="파일검색 ">BxCore::File::SearchFiles</a>(<a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>(), OnFileSearch, null);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a81b8aee658da8a26de291fcc41d8fb78" title="파일검색 ">BxCore::File::SearchFiles</a>(<a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>(), OnFileSearch, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">// 캐시저장</span></div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#acbf9996018af3765259e886a85199251" title="폴더만들기 ">BxCore::File::MakeDirectory</a>(CacheFileName.<a class="code" href="class_bx_string.html#a29661787c9d623e0a18b2fdf7929ac3d" title="경로에서 파일명을 제외한 패스명(/문자 포함) 추출 ">GetFilePath</a>());</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">// 다운로드중 생성</span></div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        id_file DownloadingFile = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2" title="파일열기 ">BxCore::File::Open</a>(CacheFileName + <span class="stringliteral">&quot;.downloading&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#af3885eca99cefc3734065b3a2b199925" title="파일로 쓰기 ">BxCore::File::Write</a>(DownloadingFile, &amp;ResponseLength, 4);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0" title="파일로 쓰기 ">BxCore::File::Write</a>(DownloadingFile, &amp;ResponseLength, 4);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(DownloadingFile);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">// 실제파일 생성</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        id_file CacheFile = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2" title="파일열기 ">BxCore::File::Open</a>(CacheFileName, <span class="stringliteral">&quot;wb&quot;</span>);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#af3885eca99cefc3734065b3a2b199925" title="파일로 쓰기 ">BxCore::File::Write</a>(CacheFile, ResponseBytes, ResponseLength);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0" title="파일로 쓰기 ">BxCore::File::Write</a>(CacheFile, ResponseBytes, ResponseLength);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(CacheFile);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">// 다운로드중 삭제</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#a284c71df33e997d3fd380700c748ba55" title="파일삭제 ">BxCore::File::RemoveFile</a>(CacheFileName + <span class="stringliteral">&quot;.downloading&quot;</span>);</div>
@@ -353,7 +353,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            ResponseLength = 0;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            BxFree(ResponseBytes);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            ResponseBytes = null;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            ResponseBytes = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">// 캐시풀 운영</span></div>
@@ -389,7 +389,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

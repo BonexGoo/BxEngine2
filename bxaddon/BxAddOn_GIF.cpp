@@ -177,7 +177,7 @@ const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 		if(code != GIF_OK && code != GIF_WORKING)
 		{
 			BxAssert("BxCore::ThirdParty<NSGIF003의 모듈생성에 실패하였습니다>", false);
-			return null;
+			return nullptr;
 		}
 	}
 	while(code != GIF_OK);
@@ -223,7 +223,7 @@ const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 		{
 			BxAssert("BxCore::ThirdParty<NSGIF003의 디코딩에 실패하였습니다>", false);
 			BxFree(Bmp);
-			return null;
+			return nullptr;
 		}
 		const byte* ImgFocus = ((byte*) gifani.frame_image) + (_width * 4) * (_height - 1);
 		for(int y = 0; y < _height; ++y)

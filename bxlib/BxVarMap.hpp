@@ -92,7 +92,7 @@ public:
 		while(key)
 		{
 			const uint index = (key & 0xF);
-			if(!CurNode->Child || !CurNode->Child[index]) return null;
+			if(!CurNode->Child || !CurNode->Child[index]) return nullptr;
 			CurNode = CurNode->Child[index];
 			key >>= 4;
 		}
@@ -106,11 +106,11 @@ public:
 		while(*key)
 		{
 			const uint indexHi = ((*key & 0xF0) >> 4);
-			if(!CurNode->Child || !CurNode->Child[indexHi]) return null;
+			if(!CurNode->Child || !CurNode->Child[indexHi]) return nullptr;
 			CurNode = CurNode->Child[indexHi];
 			const uint indexLo = (*(key++) & 0x0F);
 			if(!*key && !indexLo) break;
-			if(!CurNode->Child || !CurNode->Child[indexLo]) return null;
+			if(!CurNode->Child || !CurNode->Child[indexLo]) return nullptr;
 			CurNode = CurNode->Child[indexLo];
 		}
 		return CurNode->Data;
@@ -123,17 +123,17 @@ public:
 		while(*key)
 		{
 			const uint indexHiHi = ((*key & 0xF000) >> 12);
-			if(!CurNode->Child || !CurNode->Child[indexHiHi]) return null;
+			if(!CurNode->Child || !CurNode->Child[indexHiHi]) return nullptr;
 			CurNode = CurNode->Child[indexHiHi];
 			const uint indexHiLo = ((*key & 0x0F00) >> 8);
-			if(!CurNode->Child || !CurNode->Child[indexHiLo]) return null;
+			if(!CurNode->Child || !CurNode->Child[indexHiLo]) return nullptr;
 			CurNode = CurNode->Child[indexHiLo];
 			const uint indexLoHi = ((*key & 0x00F0) >> 4);
-			if(!CurNode->Child || !CurNode->Child[indexLoHi]) return null;
+			if(!CurNode->Child || !CurNode->Child[indexLoHi]) return nullptr;
 			CurNode = CurNode->Child[indexLoHi];
 			const uint indexLoLo = (*(key++) & 0x000F);
 			if(!*key && !indexLoLo) break;
-			if(!CurNode->Child || !CurNode->Child[indexLoLo]) return null;
+			if(!CurNode->Child || !CurNode->Child[indexLoLo]) return nullptr;
 			CurNode = CurNode->Child[indexLoLo];
 		}
 		return CurNode->Data;
@@ -149,15 +149,15 @@ public:
 				delete Child[i];
 			delete[] Child;
 		}
-		Data = null;
-		Child = null;
+		Data = nullptr;
+		Child = nullptr;
 	}
 
 	// 持失切/社瑚切
 	BxVarMap()
 	{
-		Data = null;
-		Child = null;
+		Data = nullptr;
+		Child = nullptr;
 	}
 	~BxVarMap()
 	{

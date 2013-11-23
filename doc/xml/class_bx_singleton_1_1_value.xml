@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="88" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="88" bodyend="88"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="88" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="88" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_value_1a0dc5fe4195291432263491d24405a792" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="89" bodyend="89"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="89" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_value_1a92a0562c40caa5fecb4edf1487587b3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="90" bodyend="91"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="90" bodyend="91"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -89,7 +89,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" line="87" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="86" bodyend="92"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="87" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="86" bodyend="92"/>
     <listofallmembers>
       <member refid="class_bx_singleton_1_1_element_1a877d26700e5b4b1706caf7f324edd7ef" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>CountPtr</name></member>
       <member refid="class_bx_singleton_1_1_element_1abb098d6b8496beadeeef07e9e9ab5490" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Element</name></member>

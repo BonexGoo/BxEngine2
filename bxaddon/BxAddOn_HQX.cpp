@@ -56,7 +56,7 @@ void hq4x_32_rb( uint32_t * src, uint32_t src_rowBytes, uint32_t * dest, uint32_
 	#define DETAIL_B_MASK 0x0000007F
 #endif
 
-static uint32_t* RGBtoYUV = null;
+static uint32_t* RGBtoYUV = nullptr;
 static uint32_t YUV1 = 0;
 static uint32_t YUV2 = 0;
 
@@ -64,15 +64,15 @@ static uint32_t YUV2 = 0;
 const byte* HQXToBMP(const byte* bmp, int scale)
 {
 	// 비트맵구성
-	if(scale < 2 || 4 < scale) return null;
+	if(scale < 2 || 4 < scale) return nullptr;
 	typedef struct {uint Size; ushort Reserved1; ushort Reserved2; uint OffBits;} BITMAPFILEHEADER;
 	typedef struct {uint Size; int Width; int Height; ushort Planes; ushort BitCount; uint Compression;
 		uint SizeImage; int XPelsPerMeter; int YPelsPerMeter; uint ClrUsed; uint ClrImportant;} BITMAPINFOHEADER;
 
 	// Source정보
-	if(bmp[0] != 'B' || bmp[1] != 'x' || bmp[2] != 'B' || bmp[3] != 'M') return null;
+	if(bmp[0] != 'B' || bmp[1] != 'x' || bmp[2] != 'B' || bmp[3] != 'M') return nullptr;
 	BITMAPINFOHEADER* SrcBmpInfoHeader = (BITMAPINFOHEADER*)(bmp + 4 + sizeof(BITMAPFILEHEADER));
-	if(SrcBmpInfoHeader->BitCount != 32) return null;
+	if(SrcBmpInfoHeader->BitCount != 32) return nullptr;
 	const int SrcWidth = SrcBmpInfoHeader->Width;
 	const int SrcHeight = SrcBmpInfoHeader->Height;
 

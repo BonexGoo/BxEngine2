@@ -5,21 +5,13 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includedby refid="_bx_core_for_s3_e_8cpp" local="no">BxCoreForS3E.cpp</includedby>
     <incdepgraph>
-      <node id="156">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="157" relation="include">
-        </childnode>
-      </node>
       <node id="159">
         <label>stdarg.h</label>
       </node>
-      <node id="157">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="158" relation="include">
-        </childnode>
-        <childnode refid="160" relation="include">
+      <node id="160">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="161" relation="include">
         </childnode>
       </node>
       <node id="163">
@@ -30,18 +22,6 @@
         <childnode refid="156" relation="include">
         </childnode>
       </node>
-      <node id="158">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="159" relation="include">
-        </childnode>
-      </node>
-      <node id="160">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="161" relation="include">
-        </childnode>
-      </node>
       <node id="155">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
@@ -50,10 +30,36 @@
         <childnode refid="161" relation="include">
         </childnode>
       </node>
+      <node id="157">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>BxKeyword.hpp</label>
+        <link refid="BxKeyword.hpp"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
       <node id="161">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="157" relation="include">
         </childnode>
       </node>
       <node id="162">
@@ -72,12 +78,6 @@
         <childnode refid="162" relation="include">
         </childnode>
         <childnode refid="163" relation="include">
-        </childnode>
-      </node>
-      <node id="153">
-        <label>BxKeyword.hpp</label>
-        <link refid="BxKeyword.hpp"/>
-        <childnode refid="154" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="4" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="4" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1aaea9881cbf6bb906c697f7b26319e8ff" prot="public" static="no">
         <name>BxKeyCheck</name>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="5" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1ad945bbeeb9001d6f2d16b902e25cc121" prot="public" static="no">
         <name>BxKeyRadio_Get</name>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a408e42a178529a2aa7dc2462a9ea3061" prot="public" static="no">
         <name>BxKeyRadio_On</name>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="7" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a163184ec760555b9606988530d3a76be" prot="public" static="no">
         <name>BxKeyRadio_Off</name>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="8" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="8" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="8" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a20935387cb46acaa054c4a31b56bc69f" prot="public" static="no">
         <name>BxKeyNumber</name>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="9" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="9" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="9" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a1dbc738721b6a69c1e56f967c7d1902d" prot="public" static="no">
         <name>BxKeyString</name>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="10" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="10" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="10" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1afed1ab5db6085d8309c2ce6857daf189" prot="public" static="no">
         <name>BxKeyEventBySearch</name>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="11" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="11" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="11" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a9d20da4735b29ea2ede24366044c4492" prot="public" static="no">
         <name>BxKeyCheckBySearch</name>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="12" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="12" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="12" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a6c4f0bf189eb617778f2d6423736217f" prot="public" static="no">
         <name>BxKeyRadioBySearch_Get</name>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="13" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="13" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="13" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a6c99e4c08f598ba669a105fefb15ff1a" prot="public" static="no">
         <name>BxKeyRadioBySearch_On</name>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="14" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="14" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="14" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a923b74a5402d6e24fea5d4f8b4a742a5" prot="public" static="no">
         <name>BxKeyRadioBySearch_Off</name>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="15" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="15" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="15" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a61b276c4ef5f67c6f20c5000bf5c0433" prot="public" static="no">
         <name>BxKeyNumberBySearch</name>
@@ -244,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="16" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="16" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="16" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1aa96c2597d1e8252490ad9e25017dae17" prot="public" static="no">
         <name>BxKeyStringBySearch</name>
@@ -256,67 +256,67 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="17" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="17" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="17" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a14ecf7a1563e4f28f2e1e423d4f070f6" prot="public" static="no">
         <name>IsExistBxKeyEvent</name>
         <param><defname>NAME</defname></param>
-        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_event" kindref="compound">BxKeyword::Event</ref>&gt;::BySearch(NAME, false) != null)</initializer>
+        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_event" kindref="compound">BxKeyword::Event</ref>&gt;::BySearch(NAME, false) != nullptr)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="18" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="18" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="18" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a8565cf7d4e1a07eaab2f88d30780f29d" prot="public" static="no">
         <name>IsExistBxKeyCheck</name>
         <param><defname>NAME</defname></param>
-        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_check" kindref="compound">BxKeyword::Check</ref>&gt;::BySearch(NAME, false) != null)</initializer>
+        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_check" kindref="compound">BxKeyword::Check</ref>&gt;::BySearch(NAME, false) != nullptr)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="19" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="19" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="19" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1aefdb1f795daab1f53db5a0ad53e9e3dd" prot="public" static="no">
         <name>IsExistBxKeyRadio</name>
         <param><defname>NAME</defname></param>
-        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_radio" kindref="compound">BxKeyword::Radio</ref>&gt;::BySearch(NAME, false) != null)</initializer>
+        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_radio" kindref="compound">BxKeyword::Radio</ref>&gt;::BySearch(NAME, false) != nullptr)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="20" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="20" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="20" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a96ce9ebb0e76c1c50cc6e8d11dc6d882" prot="public" static="no">
         <name>IsExistBxKeyNumber</name>
         <param><defname>NAME</defname></param>
-        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_number" kindref="compound">BxKeyword::Number</ref>&gt;::BySearch(NAME, false) != null)</initializer>
+        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_number" kindref="compound">BxKeyword::Number</ref>&gt;::BySearch(NAME, false) != nullptr)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="21" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="21" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="21" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1ada5cae84d0db2e46a9ae3f2b37be1d98" prot="public" static="no">
         <name>IsExistBxKeyString</name>
         <param><defname>NAME</defname></param>
-        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_string" kindref="compound">BxKeyword::String</ref>&gt;::BySearch(NAME, false) != null)</initializer>
+        <initializer>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">BxKeyword::Access</ref>&lt;<ref refid="class_bx_keyword_1_1_string" kindref="compound">BxKeyword::String</ref>&gt;::BySearch(NAME, false) != nullptr)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" line="22" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="22" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="22" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -341,11 +341,11 @@
 <codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BxKeyRadioBySearch_Off(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Radio&gt;::BySearch(NAME,<sp/>true)-&gt;SetOff())</highlight></codeline>
 <codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BxKeyNumberBySearch(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Number&gt;::BySearch(NAME,<sp/>true)-&gt;LetInt())</highlight></codeline>
 <codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BxKeyStringBySearch(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::String&gt;::BySearch(NAME,<sp/>true)-&gt;LetString())</highlight></codeline>
-<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyEvent(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Event&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>null)</highlight></codeline>
-<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyCheck(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Check&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>null)</highlight></codeline>
-<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyRadio(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Radio&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>null)</highlight></codeline>
-<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyNumber(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Number&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>null)</highlight></codeline>
-<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyString(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::String&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyEvent(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Event&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>nullptr)</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyCheck(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Check&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>nullptr)</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyRadio(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Radio&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>nullptr)</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyNumber(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::Number&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>nullptr)</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IsExistBxKeyString(NAME)<sp/>(BxKeyword::Access&lt;BxKeyword::String&gt;::BySearch(NAME,<sp/>false)<sp/>!=<sp/>nullptr)</highlight></codeline>
 <codeline lineno="23"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="25" refid="class_bx_keyword" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_keyword" kindref="compound" tooltip="직렬자료 제공 ">BxKeyword</ref></highlight></codeline>
 <codeline lineno="26"><highlight class="normal">{</highlight></codeline>
@@ -372,7 +372,7 @@
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Load(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/>callback_event<sp/>method<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Load(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/>callback_event<sp/>method<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;BxKeyword&gt;</ref>&amp;<sp/>Pool<sp/>=<sp/>LetPool();</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool[LAST].FileName<sp/>=<sp/>filename;</highlight></codeline>
@@ -388,7 +388,7 @@
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>KeywordBufferSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">BxCore::File::GetSize</ref>(KeywordFile);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string_rw<sp/>KeywordBuffer<sp/>=<sp/>(string_rw)<sp/><ref refid="namespace_bx_util_global_1ad27a75813b9a9bf993a96c31fa738b63" kindref="member" tooltip="스트링 할당 ">BxUtilGlobal::StrAlloc</ref>(KeywordBufferSize);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6eda45c6dfcd26226c824ac400fe1450" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(KeywordFile,<sp/>KeywordBuffer,<sp/>KeywordBufferSize);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(KeywordFile,<sp/>KeywordBuffer,<sp/>KeywordBufferSize);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KeywordBuffer[KeywordBufferSize]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(KeywordFile);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoadScript(KeywordBuffer,<sp/>method);</highlight></codeline>
@@ -486,7 +486,7 @@
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(buffer[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Index(</highlight><highlight class="stringliteral">&quot;.%d&quot;</highlight><highlight class="normal">,<sp/>null,<sp/>GroupArrayIndex[END]++);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Index(</highlight><highlight class="stringliteral">&quot;.%d&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>GroupArrayIndex[END]++);</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GroupArrayIndex[LAST]<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GroupNameLength[LAST]<sp/>=<sp/>Index.<ref refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kindref="member" tooltip="길이 구하기 ">GetLength</ref>();</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GroupName<sp/>+=<sp/>Index;</highlight></codeline>
@@ -561,18 +561,18 @@
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>KeywordFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(filename,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(KeywordFile)</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;bekon_script_area&lt;begin&gt;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;bekon_script_area&lt;begin&gt;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>event</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt; Access&lt;Event&gt;</ref><sp/>&gt;&amp;<sp/>EventPool<sp/>=<sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Event&gt;::LetPool</ref>();</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>EventPool.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>event\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;event(&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>EventPool[i].GetKeyword());</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>EventPool[i].LetString());</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\&quot;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>event\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;event(&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>EventPool[i].GetKeyword());</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>EventPool[i].LetString());</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\&quot;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check</highlight><highlight class="normal"></highlight></codeline>
@@ -580,12 +580,12 @@
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt; Access&lt;Check&gt;</ref><sp/>&gt;&amp;<sp/>CheckPool<sp/>=<sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Check&gt;::LetPool</ref>();</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>CheckPool.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>check\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;check(&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>CheckPool[i].GetKeyword());</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CheckPool[i].LetBool())<sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;true\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;false\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>check\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;check(&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>CheckPool[i].GetKeyword());</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CheckPool[i].LetBool())<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;true\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;false\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>radio</highlight><highlight class="normal"></highlight></codeline>
@@ -604,24 +604,24 @@
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsFirstFind)</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsFirstFind<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>radio\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>radio\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;radio(&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;radio(&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CurrentRadioIndex<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SelectRadioIndex<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>RadioPool.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RadioPool[i].LetParentID()<sp/>!=<sp/>p)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>CurrentRadioIndex)<sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>RadioPool[i].GetKeyword());</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>CurrentRadioIndex)<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>RadioPool[i].GetKeyword());</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RadioPool[i].GetConst())</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SelectRadioIndex<sp/>=<sp/>CurrentRadioIndex;</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++CurrentRadioIndex;</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>SelectNumber;</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SelectNumber.<ref refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kindref="member" tooltip="sprintf형태로 스트링 생성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;%d\r\n&quot;</highlight><highlight class="normal">,<sp/>SelectRadioIndex);</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>SelectNumber);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>SelectNumber);</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -630,12 +630,12 @@
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt; Access&lt;Number&gt;</ref><sp/>&gt;&amp;<sp/>NumberPool<sp/>=<sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Number&gt;::LetPool</ref>();</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>NumberPool.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>number\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;number(&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>NumberPool[i].GetKeyword());</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>number\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;number(&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>NumberPool[i].GetKeyword());</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>NumberValue;</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NumberValue.<ref refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kindref="member" tooltip="sprintf형태로 스트링 생성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>%d\r\n&quot;</highlight><highlight class="normal">,<sp/>NumberPool[i].LetInt());</highlight></codeline>
-<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>NumberValue);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>NumberValue);</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>string</highlight><highlight class="normal"></highlight></codeline>
@@ -643,15 +643,15 @@
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt; Access&lt;String&gt;</ref><sp/>&gt;&amp;<sp/>StringPool<sp/>=<sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;String&gt;::LetPool</ref>();</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>StringPool.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>string\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;string(&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>StringPool[i].GetKeyword());</highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>StringPool[i].LetString());</highlight></codeline>
-<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\&quot;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\n//<sp/>string\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;string(&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>StringPool[i].GetKeyword());</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>StringPool[i].LetString());</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\&quot;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a7dc00f923c881fd0d8002ad8f0e3d514" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\nbekon_script_area&lt;end&gt;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;\r\nbekon_script_area&lt;end&gt;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(KeywordFile);</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -660,11 +660,11 @@
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(type)</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_event:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Event&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/>null);</highlight></codeline>
-<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_check:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Check&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/>null);</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_radio:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Radio&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/>null);</highlight></codeline>
-<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_number:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Number&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/>null);</highlight></codeline>
-<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_string:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;String&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/>null);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_event:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Event&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_check:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Check&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_radio:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Radio&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_number:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Number&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>keyword_string:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;String&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -673,7 +673,7 @@
 <codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Event&gt;</ref>*<sp/>Result<sp/>=<sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Event&gt;::BySearch</ref>(name,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Result<sp/>||<sp/>!Result-&gt;LetMethodCB())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;LetMethodCB()(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>name,<sp/>null);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;LetMethodCB()(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>name,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="354"><highlight class="normal"></highlight></codeline>
@@ -688,7 +688,7 @@
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>NewParentID<sp/>=<sp/>MakeParentID();</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RadioCount<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Radio&gt;</ref>*<sp/>ResultForSet<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_keyword_1_1_access" kindref="compound">Access&lt;Radio&gt;</ref>*<sp/>ResultForSet<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Name(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -734,7 +734,7 @@
 <codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="411"><highlight class="normal"></highlight></codeline>
-<codeline lineno="412" refid="class_bx_keyword_1_1_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_keyword_1_1_event" kindref="compound">Event</ref><sp/>{</highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Data;<sp/>callback_event<sp/>MethodCB;<sp/><ref refid="class_bx_keyword_1_1_event" kindref="compound">Event</ref>()<sp/>:<sp/>Data(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/>MethodCB(null)<sp/>{}};</highlight></codeline>
+<codeline lineno="412" refid="class_bx_keyword_1_1_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_keyword_1_1_event" kindref="compound">Event</ref><sp/>{</highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Data;<sp/>callback_event<sp/>MethodCB;<sp/><ref refid="class_bx_keyword_1_1_event" kindref="compound">Event</ref>()<sp/>:<sp/>Data(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/>MethodCB(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}};</highlight></codeline>
 <codeline lineno="413" refid="class_bx_keyword_1_1_check" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_keyword_1_1_check" kindref="compound">Check</ref><sp/>{</highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Data;<sp/><ref refid="class_bx_keyword_1_1_check" kindref="compound">Check</ref>()<sp/>:<sp/>Data(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{}};</highlight></codeline>
 <codeline lineno="414" refid="class_bx_keyword_1_1_radio" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_keyword_1_1_radio" kindref="compound">Radio</ref><sp/>{</highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Data;<sp/>uint<sp/>ParentID;<sp/><ref refid="class_bx_keyword_1_1_radio" kindref="compound">Radio</ref>()<sp/>:<sp/>Data(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>ParentID(0)<sp/>{}};</highlight></codeline>
 <codeline lineno="415" refid="class_bx_keyword_1_1_number" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_keyword_1_1_number" kindref="compound">Number</ref><sp/>{</highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Data;<sp/><ref refid="class_bx_keyword_1_1_number" kindref="compound">Number</ref>()<sp/>:<sp/>Data(0)<sp/>{}};</highlight></codeline>
@@ -769,7 +769,7 @@
 <codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool[0].Keyword<sp/>=<sp/>name;</highlight></codeline>
 <codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;Pool[0];</highlight></codeline>
 <codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Middle<sp/>=<sp/>0,<sp/>Lower<sp/>=<sp/>0,<sp/>Upper<sp/>=<sp/>Pool.Length()<sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compare<sp/>Result<sp/>=<sp/>same;</highlight></codeline>
@@ -789,7 +789,7 @@
 <codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool.Insert(Middle).Keyword<sp/>=<sp/>name;</highlight></codeline>
 <codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;Pool[Middle];</highlight></codeline>
 <codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="469"><highlight class="normal"></highlight></codeline>
 <codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetKeyword()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Keyword;}</highlight></codeline>
@@ -811,6 +811,6 @@
 <codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="487"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxKeyword.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp"/>
   </compounddef>
 </doxygen>

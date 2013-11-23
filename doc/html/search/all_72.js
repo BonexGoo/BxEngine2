@@ -1,7 +1,7 @@
 var searchData=
 [
   ['radio',['Radio',['../class_bx_keyword_1_1_radio.html',1,'BxKeyword']]],
-  ['read',['Read',['../namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450',1,'BxCore::File']]],
+  ['read',['Read',['../namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1',1,'BxCore::File']]],
   ['rect',['rect',['../structrect.html',1,'']]],
   ['rectangle',['Rectangle',['../class_bx_draw.html#a9714a17e6dbafd6b247028cc71fc4e20',1,'BxDraw']]],
   ['rectf',['rectf',['../structrectf.html',1,'']]],

@@ -15,11 +15,11 @@
 #define BxKeyRadioBySearch_Off(NAME) (BxKeyword::Access<BxKeyword::Radio>::BySearch(NAME, true)->SetOff())
 #define BxKeyNumberBySearch(NAME) (BxKeyword::Access<BxKeyword::Number>::BySearch(NAME, true)->LetInt())
 #define BxKeyStringBySearch(NAME) (BxKeyword::Access<BxKeyword::String>::BySearch(NAME, true)->LetString())
-#define IsExistBxKeyEvent(NAME) (BxKeyword::Access<BxKeyword::Event>::BySearch(NAME, false) != null)
-#define IsExistBxKeyCheck(NAME) (BxKeyword::Access<BxKeyword::Check>::BySearch(NAME, false) != null)
-#define IsExistBxKeyRadio(NAME) (BxKeyword::Access<BxKeyword::Radio>::BySearch(NAME, false) != null)
-#define IsExistBxKeyNumber(NAME) (BxKeyword::Access<BxKeyword::Number>::BySearch(NAME, false) != null)
-#define IsExistBxKeyString(NAME) (BxKeyword::Access<BxKeyword::String>::BySearch(NAME, false) != null)
+#define IsExistBxKeyEvent(NAME) (BxKeyword::Access<BxKeyword::Event>::BySearch(NAME, false) != nullptr)
+#define IsExistBxKeyCheck(NAME) (BxKeyword::Access<BxKeyword::Check>::BySearch(NAME, false) != nullptr)
+#define IsExistBxKeyRadio(NAME) (BxKeyword::Access<BxKeyword::Radio>::BySearch(NAME, false) != nullptr)
+#define IsExistBxKeyNumber(NAME) (BxKeyword::Access<BxKeyword::Number>::BySearch(NAME, false) != nullptr)
+#define IsExistBxKeyString(NAME) (BxKeyword::Access<BxKeyword::String>::BySearch(NAME, false) != nullptr)
 
 //! \brief 직렬자료 제공
 class BxKeyword
@@ -47,7 +47,7 @@ public:
 		return false;
 	}
 
-	global_func bool Load(string filename, callback_event method = null)
+	global_func bool Load(string filename, callback_event method = nullptr)
 	{
 		BxVar<BxKeyword>& Pool = LetPool();
 		Pool[LAST].FileName = filename;
@@ -161,7 +161,7 @@ public:
 				}
 				if(buffer[i] == '[')
 				{
-					BxString Index(".%d", null, GroupArrayIndex[END]++);
+					BxString Index(".%d", nullptr, GroupArrayIndex[END]++);
 					GroupArrayIndex[LAST] = 0;
 					GroupNameLength[LAST] = Index.GetLength();
 					GroupName += Index;
@@ -335,11 +335,11 @@ public:
 	{
 		switch(type)
 		{
-		case keyword_event: return (Access<Event>::BySearch(name, false) != null);
-		case keyword_check: return (Access<Check>::BySearch(name, false) != null);
-		case keyword_radio: return (Access<Radio>::BySearch(name, false) != null);
-		case keyword_number: return (Access<Number>::BySearch(name, false) != null);
-		case keyword_string: return (Access<String>::BySearch(name, false) != null);
+		case keyword_event: return (Access<Event>::BySearch(name, false) != nullptr);
+		case keyword_check: return (Access<Check>::BySearch(name, false) != nullptr);
+		case keyword_radio: return (Access<Radio>::BySearch(name, false) != nullptr);
+		case keyword_number: return (Access<Number>::BySearch(name, false) != nullptr);
+		case keyword_string: return (Access<String>::BySearch(name, false) != nullptr);
 		}
 		return false;
 	}
@@ -348,7 +348,7 @@ public:
 	{
 		Access<Event>* Result = Access<Event>::BySearch(name, false);
 		if(!Result || !Result->LetMethodCB()) return false;
-		Result->LetMethodCB()(false, name, null);
+		Result->LetMethodCB()(false, name, nullptr);
 		return true;
 	}
 
@@ -363,7 +363,7 @@ public:
 	{
 		uint NewParentID = MakeParentID();
 		int RadioCount = 0;
-		Access<Radio>* ResultForSet = null;
+		Access<Radio>* ResultForSet = nullptr;
 		do
 		{
 			BxString Name("");
@@ -409,7 +409,7 @@ public:
 		}
 	};
 
-	class Event {public: BxString Data; callback_event MethodCB; Event() : Data(""), MethodCB(null) {}};
+	class Event {public: BxString Data; callback_event MethodCB; Event() : Data(""), MethodCB(nullptr) {}};
 	class Check {public: bool Data; Check() : Data(false) {}};
 	class Radio {public: bool Data; uint ParentID; Radio() : Data(false), ParentID(0) {}};
 	class Number {public: int Data; Number() : Data(0) {}};
@@ -444,7 +444,7 @@ public:
 					Pool[0].Keyword = name;
 					return &Pool[0];
 				}
-				else return null;
+				else return nullptr;
 			}
 			int Middle = 0, Lower = 0, Upper = Pool.Length() - 1;
 			compare Result = same;
@@ -464,7 +464,7 @@ public:
 				Pool.Insert(Middle).Keyword = name;
 				return &Pool[Middle];
 			}
-			return null;
+			return nullptr;
 		}
 
 		inline string GetKeyword() {return Keyword;}

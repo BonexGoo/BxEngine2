@@ -41,7 +41,7 @@ public:
 	inline TYPE* Access(int index) const
 	{
 		CalcIndex(index);
-		if(Size <= index) return null;
+		if(Size <= index) return nullptr;
 		return Unit[index];
 	}
 
@@ -59,7 +59,7 @@ public:
 		for(int i = 0; i < Size; ++i)
 		{
 			if(doRemove) delete Unit[i];
-			Unit[i] = null;
+			Unit[i] = nullptr;
 		}
 		Size = 0;
 		Count = 0;
@@ -99,9 +99,9 @@ public:
 		if(index < --Size)
 		{
 			BxCore::Util::MemMove(&Unit[index], &Unit[index + 1], sizeof(TYPE*) * (Size - index));
-			Unit[index + (Size - index)] = null;
+			Unit[index + (Size - index)] = nullptr;
 		}
-		else Unit[index] = null;
+		else Unit[index] = nullptr;
 		BytesUpdated = false;
 	}
 
@@ -128,7 +128,7 @@ public:
 		if(Unit[index]) --Count;
 		if(oldData) *oldData = Unit[index];
 		else delete Unit[index];
-		Unit[index] = null;
+		Unit[index] = nullptr;
 		BytesUpdated = false;
 		return true;
 	}
@@ -138,7 +138,7 @@ public:
 	{
 		TYPE* Data1 = Access(index1);
 		TYPE* Data2 = Access(index2);
-		TYPE* NoDelete = null;
+		TYPE* NoDelete = nullptr;
 		if(!Data1 && !Data2) return;
 		if(Data1) ModifyData(index2, Data1, &NoDelete);
 		else RemoveData(index2, &NoDelete);
@@ -171,7 +171,7 @@ public:
 	inline void ReleaseBytes()
 	{
 		delete[] BytesData;
-		BytesData = null;
+		BytesData = nullptr;
 		BytesUpdated = false;
 	}
 
@@ -189,7 +189,7 @@ public:
 	}
 
 	// 持失切
-	BxVarVector() : BytesUpdated(false), BytesData(null)
+	BxVarVector() : BytesUpdated(false), BytesData(nullptr)
 	{
 		UnitSize = UNITSIZE;
 		Unit = (TYPE**) BxAlloc(sizeof(TYPE*) * UNITSIZE);
@@ -198,7 +198,7 @@ public:
 		Count = 0;
 	}
 	// 持失切
-	BxVarVector(const BxVarVector& RHS) : BytesUpdated(false), BytesData(null)
+	BxVarVector(const BxVarVector& RHS) : BytesUpdated(false), BytesData(nullptr)
 	{
 		UnitSize = UNITSIZE;
 		Unit = (TYPE**) BxAlloc(sizeof(TYPE*) * UNITSIZE);

@@ -8,5 +8,5 @@ var searchData=
   ['doquit',['DoQuit',['../namespace_bx_core_1_1_system.html#a76e419e00d7b54a666a81fbcf125ac0b',1,'BxCore::System']]],
   ['dosimulatorminimize',['DoSimulatorMinimize',['../namespace_bx_core_1_1_system.html#aa3061377ddfe3bbfbd8d81198d958b4f',1,'BxCore::System']]],
   ['draw',['Draw',['../namespace_bx_core_1_1_font.html#a08159673a1a3269082f9a3a1bc90eb28',1,'BxCore::Font']]],
-  ['drawanimate',['DrawAnimate',['../class_bx_animate.html#a21fbf6451a367b8cdad3430a3aa679b3',1,'BxAnimate']]]
+  ['drawanimate',['DrawAnimate',['../class_bx_animate.html#a081c245107711ae03c88f091f964358a',1,'BxAnimate']]]
 ];

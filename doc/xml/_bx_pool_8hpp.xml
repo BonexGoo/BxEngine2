@@ -6,206 +6,206 @@
     <includedby refid="_bx_throw_8hpp" local="no">BxThrow.hpp</includedby>
     <includedby refid="_bx_var_8hpp" local="no">BxVar.hpp</includedby>
     <incdepgraph>
-      <node id="223">
+      <node id="224">
         <label>stdarg.h</label>
       </node>
-      <node id="222">
+      <node id="223">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="223" relation="include">
+        <childnode refid="224" relation="include">
         </childnode>
       </node>
-      <node id="221">
+      <node id="222">
         <label>BxPool.hpp</label>
         <link refid="BxPool.hpp"/>
-        <childnode refid="222" relation="include">
+        <childnode refid="223" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="230">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="228" relation="include">
+      <node id="242">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="234" relation="include">
         </childnode>
-        <childnode refid="231" relation="include">
-        </childnode>
-        <childnode refid="226" relation="include">
-        </childnode>
-        <childnode refid="239" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-        <childnode refid="244" relation="include">
+        <childnode refid="238" relation="include">
         </childnode>
       </node>
-      <node id="227">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
+      <node id="236">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+      </node>
+      <node id="245">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
+      <node id="226">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="227" relation="include">
+        </childnode>
         <childnode refid="228" relation="include">
         </childnode>
+      </node>
+      <node id="232">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
         <childnode refid="229" relation="include">
         </childnode>
         <childnode refid="230" relation="include">
         </childnode>
         <childnode refid="231" relation="include">
         </childnode>
-        <childnode refid="246" relation="include">
-        </childnode>
-      </node>
-      <node id="231">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
-        </childnode>
-        <childnode refid="239" relation="include">
-        </childnode>
-      </node>
-      <node id="241">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="233" relation="include">
-        </childnode>
-        <childnode refid="237" relation="include">
-        </childnode>
-      </node>
-      <node id="225">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="226" relation="include">
-        </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="247" relation="include">
         </childnode>
       </node>
       <node id="243">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
+      </node>
+      <node id="244">
         <label>BxTween.hpp</label>
         <link refid="_bx_tween_8hpp_source"/>
       </node>
-      <node id="245">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="232" relation="include">
-        </childnode>
-        <childnode refid="226" relation="include">
-        </childnode>
-      </node>
-      <node id="224">
-        <label>BxPool.hpp</label>
-        <link refid="BxPool.hpp"/>
-        <childnode refid="225" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="235">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-      </node>
-      <node id="238">
+      <node id="239">
         <label>BxXml.hpp</label>
         <link refid="_bx_xml_8hpp_source"/>
-        <childnode refid="237" relation="include">
+        <childnode refid="238" relation="include">
         </childnode>
       </node>
-      <node id="229">
-        <label>BxDynamic.hpp</label>
-        <link refid="_bx_dynamic_8hpp_source"/>
+      <node id="238">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
-      <node id="244">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="233" relation="include">
+      <node id="235">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+      </node>
+      <node id="237">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>BxTelex.hpp</label>
+        <link refid="_bx_telex_8hpp_source"/>
+      </node>
+      <node id="241">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="238" relation="include">
         </childnode>
         <childnode refid="242" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
         <childnode refid="236" relation="include">
         </childnode>
       </node>
-      <node id="239">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="240" relation="include">
+      <node id="225">
+        <label>BxPool.hpp</label>
+        <link refid="BxPool.hpp"/>
+        <childnode refid="226" relation="include">
         </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="229" relation="include">
-        </childnode>
-        <childnode refid="242" relation="include">
         </childnode>
         <childnode refid="232" relation="include">
         </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
         <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
         </childnode>
         <childnode refid="244" relation="include">
         </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
       </node>
-      <node id="228">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
+      <node id="230">
+        <label>BxDynamic.hpp</label>
+        <link refid="_bx_dynamic_8hpp_source"/>
       </node>
       <node id="233">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="232">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="233" relation="include">
-        </childnode>
         <childnode refid="234" relation="include">
         </childnode>
         <childnode refid="235" relation="include">
         </childnode>
         <childnode refid="236" relation="include">
         </childnode>
-        <childnode refid="238" relation="include">
-        </childnode>
-      </node>
-      <node id="237">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="234">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-      </node>
-      <node id="236">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
         <childnode refid="237" relation="include">
         </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
       </node>
-      <node id="246">
+      <node id="247">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="229" relation="include">
+        <childnode refid="230" relation="include">
         </childnode>
-        <childnode refid="237" relation="include">
+        <childnode refid="238" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="227" relation="include">
         </childnode>
       </node>
-      <node id="242">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
-      </node>
-      <node id="226">
-        <label>BxTelex.hpp</label>
-        <link refid="_bx_telex_8hpp_source"/>
-      </node>
-      <node id="240">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="237" relation="include">
-        </childnode>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
+      <node id="229">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_pool_global_1_1_unit" prot="public">BxPoolGlobal::Unit</innerclass>
@@ -227,15 +227,15 @@
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>*<sp/>Next;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>()<sp/>:<sp/>Next(null)<sp/>{}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>()<sp/>:<sp/>Next(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>()</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>*<sp/>CurNode<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>*<sp/>CurNode<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>*<sp/>NextNode<sp/>=<sp/>Next;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(CurNode<sp/>=<sp/>NextNode)</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NextNode<sp/>=<sp/>CurNode-&gt;Next;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Next<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>CurNode;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -255,15 +255,15 @@
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref>*<sp/>_ref_<sp/>Data;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>*<sp/>Next;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>()<sp/>:<sp/>Data(null),<sp/>Next(null)<sp/>{}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>()<sp/>:<sp/>Data(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Next(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>()</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>*<sp/>CurNode<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>*<sp/>CurNode<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref>*<sp/>NextNode<sp/>=<sp/>Next;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(CurNode<sp/>=<sp/>NextNode)</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NextNode<sp/>=<sp/>CurNode-&gt;Next;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Next<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>CurNode;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -302,7 +302,7 @@
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPoolGlobal&lt;해당<sp/>Ptr을<sp/>찾을<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="88"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
@@ -319,7 +319,7 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(Ptr<sp/>=<sp/>List-&gt;Make()))</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!List-&gt;Next<sp/>&amp;&amp;<sp/>!(List-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Unit))</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List<sp/>=<sp/>(Unit*)<sp/>List-&gt;Next;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PoolFocus()<sp/>=<sp/>List;</highlight></codeline>
@@ -370,7 +370,7 @@
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Find(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Ptr)</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;Ptr이<sp/>null입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Ptr<sp/>!=<sp/>null);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;Ptr이<sp/>nullptr입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Ptr<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Ptr<sp/>&lt;<sp/>((TYPE*)<sp/>&amp;Data[0][0])<sp/>||<sp/>((TYPE*)<sp/>&amp;Data[0][0])<sp/>+<sp/>MAX<sp/>&lt;=<sp/>Ptr)</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
@@ -379,7 +379,7 @@
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TYPE*<sp/>Ptr<sp/>=<sp/>Focus;</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Count<sp/>&lt;<sp/>MAX)</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Focus<sp/>=<sp/>(++Count<sp/>==<sp/>MAX)?<sp/>null<sp/>:<sp/>((TYPE*)<sp/>&amp;Data[0][0])<sp/>+<sp/>*((byte*)<sp/>Focus);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Focus<sp/>=<sp/>(++Count<sp/>==<sp/>MAX)?<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>:<sp/>((TYPE*)<sp/>&amp;Data[0][0])<sp/>+<sp/>*((byte*)<sp/>Focus);</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Ptr;</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_pool_1a43a524743c418a38543f93e279c43b4e" kindref="member" tooltip="Make()로 생성된 메모리공간 반환 ">Free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Ptr)</highlight></codeline>
@@ -389,7 +389,7 @@
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;부정확한<sp/>메모리주소입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>((((byte*)<sp/>Ptr)<sp/>-<sp/>&amp;Data[0][0])<sp/>%<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE))<sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Count--<sp/>&lt;<sp/>MAX)</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;포커스정보가<sp/>유효하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Focus<sp/>!=<sp/>null);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;포커스정보가<sp/>유효하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Focus<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;포커스정보가<sp/>유효하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>((TYPE*)<sp/>&amp;Data[0][0])<sp/>&lt;=<sp/>Focus<sp/>&amp;&amp;<sp/>Focus<sp/>&lt;<sp/>((TYPE*)<sp/>&amp;Data[0][0])<sp/>+<sp/>MAX);</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPool&lt;포커스정보가<sp/>유효하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>((((byte*)<sp/>Focus)<sp/>-<sp/>&amp;Data[0][0])<sp/>%<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE))<sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((byte*)<sp/>Ptr)<sp/>=<sp/>(((byte*)<sp/>Focus)<sp/>-<sp/>&amp;Data[0][0])<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE);</highlight></codeline>
@@ -418,7 +418,7 @@
 <codeline lineno="222"><highlight class="normal"></highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/>Unit*<sp/>FindUnit(TYPE*<sp/>Ptr)</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Ptr)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Ptr)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(PoolFocus()-&gt;Find(Ptr))</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PoolFocus();</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit*<sp/>List<sp/>=<sp/>&amp;PoolBegin();</highlight></codeline>
@@ -435,6 +435,6 @@
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="240"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxPool.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp"/>
   </compounddef>
 </doxygen>

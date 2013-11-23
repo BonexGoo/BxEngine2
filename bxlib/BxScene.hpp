@@ -17,9 +17,9 @@ public:
 	global_func void AddRequest(string Name, int Order = -1)
 	{
 		AllScene* FindedScene = __FindAllScene__(Name);
-		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", FindedScene != null);
-		BxAssert("BxScene<이미 활성화된 씬입니다>", __FindActiveScene__(Name) == null);
-		BxAssert("BxScene<해당 씬은 이미 요청중입니다>", __FindActiveSceneRequest__(FindedScene) == null);
+		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", FindedScene != nullptr);
+		BxAssert("BxScene<이미 활성화된 씬입니다>", __FindActiveScene__(Name) == nullptr);
+		BxAssert("BxScene<해당 씬은 이미 요청중입니다>", __FindActiveSceneRequest__(FindedScene) == nullptr);
 		// New Request(Add)
 		ActiveSceneRequest* NewActiveSceneRequest = BxNew_Param(ActiveSceneRequest, sysrequest_add, Order, BxNew_Param(ActiveScene, FindedScene));
 		NewActiveSceneRequest->Next = __GetActiveSceneRequest__().Next;
@@ -34,10 +34,10 @@ public:
 	*/
 	global_func void SubRequest(string Name)
 	{
-		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != null);
+		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		BxAssert("BxScene<해당 이름으로 활성화된 씬이 없습니다>", FindedScene != null);
-		BxAssert("BxScene<해당 씬은 이미 요청중입니다>", __FindActiveSceneRequest__(FindedScene) == null);
+		BxAssert("BxScene<해당 이름으로 활성화된 씬이 없습니다>", FindedScene != nullptr);
+		BxAssert("BxScene<해당 씬은 이미 요청중입니다>", __FindActiveSceneRequest__(FindedScene) == nullptr);
 		// Find Loop
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
 		while(OneActiveScene->Scene != FindedScene)
@@ -56,10 +56,10 @@ public:
 	*/
 	global_func void SetRequest(string Name, uint Order)
 	{
-		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != null);
+		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		BxAssert("BxScene<해당 이름으로 활성화된 씬이 없습니다>", FindedScene != null);
-		BxAssert("BxScene<해당 씬은 이미 요청중입니다>", __FindActiveSceneRequest__(FindedScene) == null);
+		BxAssert("BxScene<해당 이름으로 활성화된 씬이 없습니다>", FindedScene != nullptr);
+		BxAssert("BxScene<해당 씬은 이미 요청중입니다>", __FindActiveSceneRequest__(FindedScene) == nullptr);
 		// Find Loop
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
 		while(OneActiveScene->Scene != FindedScene)
@@ -87,7 +87,7 @@ public:
 		const GetDataCB GetData;
 		AllScene* Next;
 		AllScene(string name, EventCB event, UpdateCB update, RenderCB render, GetDataCB getdata)
-			: Name(name), Event(event), Update(update), Render(render), GetData(getdata), Next(null) {}
+			: Name(name), Event(event), Update(update), Render(render), GetData(getdata), Next(nullptr) {}
 		~AllScene() {BxDelete(Next);}
 	};
 	/// @endcond
@@ -100,7 +100,7 @@ public:
 		bool EnableKey;
 		bool EnableTouch;
 		ActiveScene* Next;
-		ActiveScene(AllScene* _ref_ layer) : Scene(layer), EnableKey(false), EnableTouch(false), Next(null) {}
+		ActiveScene(AllScene* _ref_ layer) : Scene(layer), EnableKey(false), EnableTouch(false), Next(nullptr) {}
 		~ActiveScene() {BxDelete(Next);}
 	};
 	/// @endcond
@@ -113,7 +113,7 @@ public:
 		const int Option;
 		ActiveScene* _ref_ Data;
 		ActiveSceneRequest* Next;
-		ActiveSceneRequest(sysrequest type, int option, ActiveScene* _ref_ data) : Type(type), Option(option), Data(data), Next(null) {}
+		ActiveSceneRequest(sysrequest type, int option, ActiveScene* _ref_ data) : Type(type), Option(option), Data(data), Next(nullptr) {}
 		~ActiveSceneRequest() {BxDelete(Next);}
 	};
 	/// @endcond
@@ -125,7 +125,7 @@ public:
 		sysevent Event;
 		syseventset Set;
 		EventQueue* Next;
-		EventQueue() : Next(null) {}
+		EventQueue() : Next(nullptr) {}
 		~EventQueue() {delete Next;}
 		global_func EventQueue* Top(bool doflip = false)
 		{
@@ -153,10 +153,10 @@ public:
 	*/
 	global_func uint GetOrder(string Name)
 	{
-		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != null);
+		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != nullptr);
 		uint Count = (uint) __GetActiveSceneAllCount__() - 1;
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
-		while((OneActiveScene = OneActiveScene->Next) != null)
+		while((OneActiveScene = OneActiveScene->Next) != nullptr)
 		{
 			if(BxUtilGlobal::StrCmp(OneActiveScene->Scene->Name, Name) == same)
 				return Count;
@@ -175,13 +175,13 @@ public:
 		BxAssert("BxScene<검색할 씬의 순번이 너무 큽니다>", Order < (uint) __GetActiveSceneAllCount__());
 		uint Count = (uint) __GetActiveSceneAllCount__() - 1;
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
-		while((OneActiveScene = OneActiveScene->Next) != null)
+		while((OneActiveScene = OneActiveScene->Next) != nullptr)
 		{
 			if(Count == Order)
 				return OneActiveScene->Scene->Name;
 			--Count;
 		}
-		return null;
+		return nullptr;
 	}
 
 	/*!
@@ -191,9 +191,9 @@ public:
 	*/
 	global_func bool IsActivity(string Name)
 	{
-		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != null);
+		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		return (FindedScene != null);
+		return (FindedScene != nullptr);
 	}
 
 	/*!
@@ -203,16 +203,16 @@ public:
 	*/
 	global_func void* GetData(string Name)
 	{
-		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != null);
+		BxAssert("BxScene<해당 이름의 씬은 존재하지 않습니다>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		BxAssert("BxScene<해당 이름으로 활성화된 씬이 없습니다>", FindedScene != null);
+		BxAssert("BxScene<해당 이름으로 활성화된 씬이 없습니다>", FindedScene != nullptr);
 		return FindedScene->GetData(sysmethod_get);
 	}
 
 	/// @cond SECTION_NAME
 	global_func bool __Create__(string Name, EventCB Event, UpdateCB Update, RenderCB Render, GetDataCB GetData)
 	{
-		BxAssert("BxScene<같은 씬이름을 가진 파일이 이미 존재합니다>", __FindAllScene__(Name) == null);
+		BxAssert("BxScene<같은 씬이름을 가진 파일이 이미 존재합니다>", __FindAllScene__(Name) == nullptr);
 		AllScene* NewScene = BxNew_Param(AllScene, Name, Event, Update, Render, GetData);
 		NewScene->Next = __GetAllScene__().Next;
 		__GetAllScene__().Next = NewScene;
@@ -324,7 +324,7 @@ public:
 				}
 				// 이벤트처리
 				ActiveScene* OneActiveScene = &__GetActiveScene__();
-				while((OneActiveScene = OneActiveScene->Next) != null)
+				while((OneActiveScene = OneActiveScene->Next) != nullptr)
 				{
 					switch(Event.type)
 					{
@@ -346,7 +346,7 @@ public:
 						BxAssert("BxScene<해당 이벤트는 독점할 수 없습니다>", Event.type != syseventtype_init);
 						BxAssert("BxScene<해당 이벤트는 독점할 수 없습니다>", Event.type != syseventtype_quit);
 						BxAssert("BxScene<해당 이벤트는 독점할 수 없습니다>", Event.type != syseventtype_resize);
-						while((OneActiveScene = OneActiveScene->Next) != null)
+						while((OneActiveScene = OneActiveScene->Next) != nullptr)
 						{
 							switch(Event.type)
 							{
@@ -369,7 +369,7 @@ public:
 			}
 		}
 		delete TopNode->Next;
-		TopNode->Next = null;
+		TopNode->Next = nullptr;
 		return DoEvent;
 	}
 	/// @endcond
@@ -381,7 +381,7 @@ public:
 		sysupdateresult UpdateResult = (BxScene::__OnEvent__(Draw))? sysupdateresult_do_render : sysupdateresult_no_render_fixed_frame;
 		// Update
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
-		while((OneActiveScene = OneActiveScene->Next) != null)
+		while((OneActiveScene = OneActiveScene->Next) != nullptr)
 			UpdateResult = (sysupdateresult) (UpdateResult | OneActiveScene->Scene->Update(OneActiveScene->Scene->GetData(sysmethod_get)));
 		// Render
 		const bool DoRender = (UpdateResult & sysupdateresult_do_render_fixed_frame) == sysupdateresult_do_render_fixed_frame;
@@ -419,7 +419,7 @@ public:
 		const int ActiveSceneRequestCount = __GetActiveSceneRequestCount__();
 		__GetActiveSceneRequestCount__() = 0;
 		ActiveSceneRequest* OldActiveSceneRequest = __GetActiveSceneRequest__().Next;
-		__GetActiveSceneRequest__().Next = null;
+		__GetActiveSceneRequest__().Next = nullptr;
 		// 요청실행
 		sysevent Event;
 		BxCore::Util::MemSet(&Event, 0, sizeof(sysevent));
@@ -469,7 +469,7 @@ public:
 					}
 					ActiveScene* DeleteActiveScene = OneActiveSceneRequest->Data;
 					PrevDeleteActiveScene->Next = DeleteActiveScene->Next;
-					DeleteActiveScene->Next = null;
+					DeleteActiveScene->Next = nullptr;
 					BxDelete(DeleteActiveScene);
 					--__GetActiveSceneAllCount__();
 					if(Order < __GetActiveSceneGUICount__())
@@ -506,10 +506,10 @@ public:
 	global_func AllScene* __FindAllScene__(string Name)
 	{
 		AllScene* FindedScene = &__GetAllScene__();
-		while((FindedScene = FindedScene->Next) != null)
+		while((FindedScene = FindedScene->Next) != nullptr)
 			if(BxUtilGlobal::StrCmp(FindedScene->Name, Name) == same)
 				return FindedScene;
-		return null;
+		return nullptr;
 	}
 	/// @endcond
 
@@ -517,10 +517,10 @@ public:
 	global_func AllScene* __FindActiveScene__(string Name)
 	{
 		ActiveScene* FindedActiveScene = &__GetActiveScene__();
-		while((FindedActiveScene = FindedActiveScene->Next) != null)
+		while((FindedActiveScene = FindedActiveScene->Next) != nullptr)
 			if(BxUtilGlobal::StrCmp(FindedActiveScene->Scene->Name, Name) == same)
 				return FindedActiveScene->Scene;
-		return null;
+		return nullptr;
 	}
 	/// @endcond
 
@@ -528,21 +528,21 @@ public:
 	global_func ActiveScene* __FindActiveSceneRequest__(AllScene* Scene)
 	{
 		ActiveSceneRequest* FindedActiveSceneRequest = &__GetActiveSceneRequest__();
-		while((FindedActiveSceneRequest = FindedActiveSceneRequest->Next) != null)
+		while((FindedActiveSceneRequest = FindedActiveSceneRequest->Next) != nullptr)
 			if(FindedActiveSceneRequest->Data->Scene == Scene)
 				return FindedActiveSceneRequest->Data;
-		return null;
+		return nullptr;
 	}
 	/// @endcond
 
 	/// @cond SECTION_NAME
 	// Scene
-	global_func inline AllScene& __GetAllScene__() {global_data AllScene Begin("", null, null, null, null); return Begin;}
-	global_func inline ActiveScene& __GetActiveScene__() {global_data ActiveScene Begin(null); return Begin;}
+	global_func inline AllScene& __GetAllScene__() {global_data AllScene Begin("", nullptr, nullptr, nullptr, nullptr); return Begin;}
+	global_func inline ActiveScene& __GetActiveScene__() {global_data ActiveScene Begin(nullptr); return Begin;}
 	global_func inline int& __GetActiveSceneAllCount__() {global_data int AllCount = 0; return AllCount;}
 	global_func inline int& __GetActiveSceneGUICount__() {global_data int GUICount = 0; return GUICount;}
 	// Request
-	global_func inline ActiveSceneRequest& __GetActiveSceneRequest__() {global_data ActiveSceneRequest Begin(sysrequest_null, 0, null); return Begin;}
+	global_func inline ActiveSceneRequest& __GetActiveSceneRequest__() {global_data ActiveSceneRequest Begin(sysrequest_null, 0, nullptr); return Begin;}
 	global_func inline int& __GetActiveSceneRequestCount__() {global_data int RequestCount = 0; return RequestCount;}
 	/// @endcond
 };
@@ -556,14 +556,14 @@ public:
 	local_func void __OnRender__(void* Data, BxDraw& Draw) {OnRender(*((DATA*) Data), Draw);} \
 	local_func void* __GetData__(sysmethod Mode) \
 	{ \
-		global_data DATA* Data = null; \
+		global_data DATA* Data = nullptr; \
 		if(Mode == sysmethod_remove) \
 		{ \
 			BxDelete(Data); \
-			Data = null; \
+			Data = nullptr; \
 		} \
 		else if(!Data) \
 			Data = BxNew(DATA); \
 		return (void*) Data; \
 	} \
-	local_data bool Unknown = BxScene::__Create__(STRING, __OnEvent__, __OnUpdate__, __OnRender__, __GetData__);
+	local_data bool _Unknown = BxScene::__Create__(STRING, __OnEvent__, __OnUpdate__, __OnRender__, __GetData__);

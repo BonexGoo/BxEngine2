@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -99,15 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>* Next;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>() : Next(null) {}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>() : Next(<span class="keyword">nullptr</span>) {}</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>()</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>* CurNode = null;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>* CurNode = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>* NextNode = Next;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">while</span>(CurNode = NextNode)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                NextNode = CurNode-&gt;Next;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                CurNode-&gt;Next = null;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                CurNode-&gt;Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keyword">delete</span> CurNode;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
@@ -127,15 +127,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit.html">Unit</a>* _ref_ Data;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>* Next;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>() : Data(null), Next(null) {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>() : Data(<span class="keyword">nullptr</span>), Next(<span class="keyword">nullptr</span>) {}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        ~<a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>* CurNode = null;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>* CurNode = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_bx_pool_global_1_1_unit_link.html">UnitLink</a>* NextNode = Next;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">while</span>(CurNode = NextNode)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                NextNode = CurNode-&gt;Next;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                CurNode-&gt;Next = null;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                CurNode-&gt;Next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keyword">delete</span> CurNode;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
@@ -174,7 +174,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxPoolGlobal&lt;해당 Ptr을 찾을 수 없습니다&gt;&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
@@ -191,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">while</span>(!(Ptr = List-&gt;Make()))</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">if</span>(!List-&gt;Next &amp;&amp; !(List-&gt;Next = <span class="keyword">new</span> Unit))</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                List = (Unit*) List-&gt;Next;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            PoolFocus() = List;</div>
@@ -242,7 +242,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Find(<span class="keywordtype">void</span>* Ptr)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxPool&lt;Ptr이 null입니다&gt;&quot;</span>, Ptr != null);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxPool&lt;Ptr이 nullptr입니다&gt;&quot;</span>, Ptr != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">if</span>(Ptr &lt; ((TYPE*) &amp;Data[0][0]) || ((TYPE*) &amp;Data[0][0]) + MAX &lt;= Ptr)</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -251,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            TYPE* Ptr = Focus;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span>(Count &lt; MAX)</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                Focus = (++Count == MAX)? null : ((TYPE*) &amp;Data[0][0]) + *((byte*) Focus);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                Focus = (++Count == MAX)? <span class="keyword">nullptr</span> : ((TYPE*) &amp;Data[0][0]) + *((byte*) Focus);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">return</span> Ptr;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_bx_pool.html#a43a524743c418a38543f93e279c43b4e" title="Make()로 생성된 메모리공간 반환 ">Free</a>(<span class="keywordtype">void</span>* Ptr)</div>
@@ -261,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxPool&lt;부정확한 메모리주소입니다&gt;&quot;</span>, ((((byte*) Ptr) - &amp;Data[0][0]) % <span class="keyword">sizeof</span>(TYPE)) == 0);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">if</span>(Count-- &lt; MAX)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxPool&lt;포커스정보가 유효하지 않습니다&gt;&quot;</span>, Focus != null);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxPool&lt;포커스정보가 유효하지 않습니다&gt;&quot;</span>, Focus != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxPool&lt;포커스정보가 유효하지 않습니다&gt;&quot;</span>, ((TYPE*) &amp;Data[0][0]) &lt;= Focus &amp;&amp; Focus &lt; ((TYPE*) &amp;Data[0][0]) + MAX);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxPool&lt;포커스정보가 유효하지 않습니다&gt;&quot;</span>, ((((byte*) Focus) - &amp;Data[0][0]) % <span class="keyword">sizeof</span>(TYPE)) == 0);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                *((byte*) Ptr) = (((byte*) Focus) - &amp;Data[0][0]) / <span class="keyword">sizeof</span>(TYPE);</div>
@@ -290,7 +290,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    global_func Unit* FindUnit(TYPE* Ptr)</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span>(!Ptr) <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span>(!Ptr) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">if</span>(PoolFocus()-&gt;Find(Ptr))</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">return</span> PoolFocus();</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        Unit* List = &amp;PoolBegin();</div>
@@ -309,7 +309,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

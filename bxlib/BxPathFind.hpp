@@ -71,13 +71,13 @@ namespace BxPathFind
 				DotA = -1;
 				DotB = -1;
 				DotC = -1;
-				LinkAB = null;
-				LinkAC = null;
-				LinkBC = null;
+				LinkAB = nullptr;
+				LinkAC = nullptr;
+				LinkBC = nullptr;
 				WayDot = point::zero();
-				WayBack = null;
+				WayBack = nullptr;
 				DistanceSum = 0;
-				Next = null;
+				Next = nullptr;
 			}
 			public: ~Triangle()
 			{
@@ -85,7 +85,7 @@ namespace BxPathFind
 				while(DeleteNode)
 				{
 					Triangle* DeleteNodeNext = DeleteNode->Next;
-					DeleteNode->Next = null;
+					DeleteNode->Next = nullptr;
 					BxDelete(DeleteNode);
 					DeleteNode = DeleteNodeNext;
 				}
@@ -117,7 +117,7 @@ namespace BxPathFind
 			while(ClearNode = ClearNode->Next)
 			{
 				ClearNode->WayDot = point::zero();
-				ClearNode->WayBack = null;
+				ClearNode->WayBack = nullptr;
 				ClearNode->DistanceSum = 0;
 			}
 			Triangle* Begin = FIND_PICK_TRIANGLE(beginPos);
@@ -127,7 +127,7 @@ namespace BxPathFind
 				Begin->WayDot = beginPos;
 				Begin->WayBack = (Triangle*) 0xFFFFFFFF;
 				bool IsSuccess = PATH_FIND(Begin, End, endPos);
-				Begin->WayBack = null;
+				Begin->WayBack = nullptr;
 				if(IsSuccess)
 				{
 					Path* Result = BxNew(Path);
@@ -150,7 +150,7 @@ namespace BxPathFind
 					return Result;
 				}
 			}
-			return null;
+			return nullptr;
 		}
 
 		private: void CREATE_TRIANGLES(const rect& boundBox, PolygonList& list)
@@ -163,7 +163,7 @@ namespace BxPathFind
 				Lines[LAST].Set((i == list.Length() - 1)? linetype_bound : linetype_wall, CurIndex, CurIndex + ((j + 1) % jend) - j);
 			}
 			// 맵구성
-			MAPPING(Top.INSERT_FIRST(), null, linetype_bound, 0, 1);
+			MAPPING(Top.INSERT_FIRST(), nullptr, linetype_bound, 0, 1);
 		}
 
 		private: void MAPPING(Triangle* focus, Triangle* parent, linetype type, int dotA, int dotB)
@@ -275,7 +275,7 @@ namespace BxPathFind
 					continue;
 				return Node;
 			}
-			return null;
+			return nullptr;
 		}
 
 		private: Triangle* FIND_SAME_TRIANGLE(int dotA, int dotB, Triangle* parent)
@@ -288,7 +288,7 @@ namespace BxPathFind
 					&& (dotB == Node->DotA || dotB == Node->DotB || dotB == Node->DotC))
 					return Node;
 			}
-			return null;
+			return nullptr;
 		}
 
 		private: bool PATH_FIND(Triangle* focus, const Triangle* target, const point& endPos)
@@ -359,13 +359,13 @@ namespace BxPathFind
 		{
 			for(int i = List.Length() - 1; 0 <= i; --i)
 			{
-				points* DeleteNode = null;
+				points* DeleteNode = nullptr;
 				List.Delete(i, &DeleteNode);
 				BxFree(DeleteNode);
 			}
 		}
 
-		public: global_func Hurdle* Create(Hurdle* hurdle = null)
+		public: global_func Hurdle* Create(Hurdle* hurdle = nullptr)
 		{
 			Hurdle* Result = BxNew(Hurdle);
 			if(hurdle)
@@ -400,7 +400,7 @@ namespace BxPathFind
 				if(Result)
 				{
 					BxCore::Util::MemMove(&polygon, Result, sizeof(points));
-					points* DeleteNode = null;
+					points* DeleteNode = nullptr;
 					List.Delete(i, &DeleteNode);
 					BxFree(DeleteNode);
 				}
@@ -453,7 +453,7 @@ namespace BxPathFind
 					BestDstI = i;
 			}
 			BxAssert("BxPathFind<Src는 Dst의 우측하단에 위치하여야 안전합니다>", IsBoundLine || BestDstI != -1);
-			if(IsL || IsT || IsR || IsB) return null;
+			if(IsL || IsT || IsR || IsB) return nullptr;
 			// 교차검사 수집데이터(최소한 Dst의 0번 정점은 Src에 포함되지 않아야 함)
 			point CollectDstB[1024];
 			point CollectDstE[1024];
@@ -470,7 +470,7 @@ namespace BxPathFind
 			for(int d = 0; d < CollectDstLength; ++d)
 			for(int s = 0; s < CollectSrcLength; ++s)
 			{
-				const point* CrossDot = null;
+				const point* CrossDot = nullptr;
 				if(CrossDot = BxUtil::GetDotByLineCross(CollectDstB[d], CollectDstE[d], CollectSrcB[s], CollectSrcE[s]))
 				{
 					if((CrossDot->x != CollectDstB[d].x || CrossDot->y != CollectDstB[d].y)
@@ -489,7 +489,7 @@ namespace BxPathFind
 				}
 			}
 			if(CollectDstLength == Dst.count)
-				return null;
+				return nullptr;
 			Result.count = 0;
 			if(IsBoundLine)
 			{
@@ -589,7 +589,7 @@ namespace BxPathFind
 						}
 						for(int l = 0, lend = hurdle->List[h].count; !IsFind && l < lend; ++l)
 						{
-							IsFind = (null != BxUtil::GetDotByLineCross(hurdle->List[h].pt[l], hurdle->List[h].pt[(l + 1) % lend], curPos, SubTarget));
+							IsFind = (nullptr != BxUtil::GetDotByLineCross(hurdle->List[h].pt[l], hurdle->List[h].pt[(l + 1) % lend], curPos, SubTarget));
 							if(IsFind && !BxUtil::GetClockwiseValue(hurdle->List[h].pt[l], hurdle->List[h].pt[(l + 1) % lend], curPos))
 								IsFind = false;
 						}

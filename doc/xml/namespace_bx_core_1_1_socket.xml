@@ -11,12 +11,12 @@
         <briefdescription>
 <para>소켓ID 할당 </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>소켓ID(null은 실패) </para></simplesect>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>, <ref refid="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" kindref="member">Connect</ref> </para></simplesect>
+<para><simplesect kind="return"><para>소켓ID(nullptr은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>, <ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">Connect</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="670" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="682" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="677" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="689" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>socketstate</type>
@@ -68,12 +68,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="684" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="696" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>connectresult</type>
         <definition>connectresult BxCore::Socket::Connect</definition>
-        <argsstring>(id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=null)</argsstring>
+        <argsstring>(id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=nullptr)</argsstring>
         <name>Connect</name>
         <param>
           <type>id_socket</type>
@@ -95,7 +95,7 @@
         <param>
           <type>callback_progress</type>
           <declname>progress</declname>
-          <defval>null</defval>
+          <defval>nullptr</defval>
         </param>
         <briefdescription>
 <para>서버로 접속 </para>        </briefdescription>
@@ -141,7 +141,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="696" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="708" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -163,11 +163,11 @@
 <para>: 소켓ID </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" kindref="member">Connect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">Connect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="703" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="715" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -216,7 +216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="713" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="725" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -265,7 +265,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="723" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="735" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -336,7 +336,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="735" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="747" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -373,13 +373,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="743" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="755" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Socket파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxcore/BxCore.hpp" line="664" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="676" column="1"/>
   </compounddef>
 </doxygen>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    pixel_src* Bits;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_bx_image.html#aed2c188975216f0a8fd436f16a73be86">   22</a></span>&#160;    <a class="code" href="class_bx_image.html#aed2c188975216f0a8fd436f16a73be86" title="기본생성자 ">BxImage</a>() {Bits = null;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_bx_image.html#aed2c188975216f0a8fd436f16a73be86">   22</a></span>&#160;    <a class="code" href="class_bx_image.html#aed2c188975216f0a8fd436f16a73be86" title="기본생성자 ">BxImage</a>() {Bits = <span class="keyword">nullptr</span>;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_bx_image.html#a53d0b619eea8e0b088e82c5b634919d3">   27</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_bx_image.html#a53d0b619eea8e0b088e82c5b634919d3" title="소멸자 ">~BxImage</a>() {<a class="code" href="class_bx_image.html#a4ceaa21adefa3fde9dd7caf8a4ee1c1b" title="이미지 제거 ">Release</a>();}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -134,20 +134,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        id_file File = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2" title="파일열기 ">BxCore::File::Open</a>(FileName, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">int</span> Length = <a class="code" href="namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920" title="파일의 전체길이 얻기 ">BxCore::File::GetSize</a>(File);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        byte* Resource = null;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        byte* Resource = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(Type == BMP)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            Length += 2;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            Resource = BxNew_Array(byte, Length);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            Resource[0] = <span class="charliteral">&#39;B&#39;</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            Resource[1] = <span class="charliteral">&#39;x&#39;</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450" title="파일에서 읽기 ">BxCore::File::Read</a>(File, &amp;Resource[2], Length - 2);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1" title="파일에서 읽기 ">BxCore::File::Read</a>(File, &amp;Resource[2], Length - 2);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            Resource = BxNew_Array(byte, Length);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450" title="파일에서 읽기 ">BxCore::File::Read</a>(File, Resource, Length);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1" title="파일에서 읽기 ">BxCore::File::Read</a>(File, Resource, Length);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">bool</span> Result = <a class="code" href="class_bx_image.html#a80e205b759c9b09da3b2ff183f8e09e5" title="이미지 로드 ">Load</a>(Resource, Length, Type);</div>
@@ -167,9 +167,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="class_bx_image.html#a6e6ed0e975ed3abf6ce601cd8a1cb2a2">  113</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_bx_image.html#a6e6ed0e975ed3abf6ce601cd8a1cb2a2" title="이미지 존재여부 ">IsExist</a>()</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">        #ifdef __BX_OPENGL</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">return</span> (Bits != null || FormGL != null);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">return</span> (Bits != <span class="keyword">nullptr</span> || FormGL != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">        #else</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">return</span> (Bits != null);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">return</span> (Bits != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span>    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
@@ -190,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span>(FormGL)</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        {</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            BxCore::OpenGL2D::FreeForm(FormGL);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            FormGL = null;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            FormGL = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span>        BxDelete_Array(Bits);</div>
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span>(FormGL)</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        {</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            BxCore::OpenGL2D::FreeForm(FormGL);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            FormGL = null;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            FormGL = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span>        BxDelete_Array(Bits);</div>
@@ -282,7 +282,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                <span class="keywordflow">return</span> GetFormMethodSwitch&lt;maskoperate_print_by_0, maskflag_write_0&gt;();</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keyword">protected</span>:</div>
@@ -363,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">case</span> blendflag_sprite: <span class="keywordflow">return</span> OnForm&lt;MASKOP, MASK, blendflag_sprite&gt;;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">case</span> blendflag_alpha | blendflag_sprite: <span class="keywordflow">return</span> OnForm&lt;MASKOP, MASK, (blendflag) 3&gt;;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">    #ifdef __BX_OPENGL</span></div>
@@ -642,16 +642,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        PngToBmp(<span class="keywordtype">bool</span> autodelete = <span class="keyword">true</span>)</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        {</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;            AutoDelete = autodelete;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;            LZWindow = null;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;            LZWindow = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;            LZWindowSize = 0;</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            LZWindowPos = 0;</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;            CopyPos = 0;</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;            CopyCount = 0;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            PNG = null;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            PNG = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;            IsFinalBlock = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;            BlockMode = 0xff;</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            LiteralLength = 0;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;            BMPData = null;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;            BMPData = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            BMPOffset = 0;</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;            BMPSize = 0;</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        }</div>
@@ -669,8 +669,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;            PNGByteOffset = 0;</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            PNGBitOffset = 0;</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            NextByteOffset = 8;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            byte* BMPPalette = null;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;            byte* BMPPaletteAlpha = null;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            byte* BMPPalette = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;            byte* BMPPaletteAlpha = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            uint ChunkName = 0;</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="comment">// IHDR 청크</span></div>
@@ -691,7 +691,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            <span class="keywordflow">if</span>(0 &lt; GetByte())</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            {</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxImage&lt;인터레이스가 들어간 PNG는 지원하지 않습니다&gt;&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            }</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            <span class="comment">// PLTE 청크</span></div>
@@ -922,7 +922,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> DeleteResource()</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        {</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;            BxDelete_Array(BMPData);</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;            BMPData = null;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;            BMPData = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        }</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    <span class="keyword">protected</span>:</div>
@@ -1325,7 +1325,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

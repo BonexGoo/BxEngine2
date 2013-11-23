@@ -23,8 +23,8 @@ public:
 		BxWebContent Web;
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"))
 		{
-			buttonfont = BxCore::Font::Open(BxString("%s/%s", null, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 12);
-			IMEfont = BxCore::Font::Open(BxString("%s/%s", null, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 18);
+			buttonfont = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 12);
+			IMEfont = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 18);
 		}
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.IMG-01-BONEC-000000.keyboard.png"))
 		{
@@ -36,7 +36,7 @@ public:
 			IMEImageRect[1][1] = XYWH(1 + 8 + 1, 42, 128, 40);
 			IMEImageRect[1][2] = XYWH(1 + 8 + 1 + 128 + 1, 42, 8, 40);
 		}
-		UserString = null;
+		UserString = nullptr;
 		IMEChars = "";
 		IMETails = "";
 		IMETemps = "";

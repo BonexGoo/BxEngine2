@@ -4,9 +4,9 @@
 
 /// @cond SECTION_NAME
 local_func bool Procedure();
-local_data BxDraw* Draw = null;
+local_data BxDraw* Draw = nullptr;
 local_data bool IsChildProcessRun = false;
-callback_process ChildProcess = null;
+callback_process ChildProcess = nullptr;
 /// @endcond
 
 /// @cond SECTION_NAME
@@ -36,7 +36,7 @@ int main()
 
 	// Add GUIScene
 	if(BxUtilGlobal::StrCmp(BxCore::System::GetOSName(), "WINDOWS") == same
-		&& BxUtilGlobal::StrCmp(BxCore::System::GetArchitectureName(), "X86") == same
+		&& BxUtilGlobal::StrCmp(BxCore::System::GetArchName(), "X86") == same
 		&& BxCore::System::IsExistConfig(keyword_string, "Bx.Framework.GUIScene"))
 	{
 		BxScene::AddRequest(BxCore::System::GetConfigString("Bx.Framework.GUIScene", ""), -2);
@@ -57,15 +57,15 @@ int main()
 	BxScene::__AddEvent__(Event, syseventset_null);
 	BxScene::__OnEvent__(*Draw);
 
-	uhuge CheckTime = BxCore::System::GetTimerMilliSecond();
+	uhuge CheckTime = BxCore::System::GetTimeMilliSecond();
 	while(Procedure())
 	{
 		// 프레임슬립처리
-		const int SleepTime = BxCore::Main::GetCurrentFrameTime() - (int) (BxCore::System::GetTimerMilliSecond() - CheckTime) - 1;
+		const int SleepTime = BxCore::Main::GetCurrentFrameTime() - (int) (BxCore::System::GetTimeMilliSecond() - CheckTime) - 1;
 		BxCore::System::Sleep(BxUtilGlobal::Max(0, SleepTime));
-		while((int) (BxCore::System::GetTimerMilliSecond() - CheckTime) < BxCore::Main::GetCurrentFrameTime())
+		while((int) (BxCore::System::GetTimeMilliSecond() - CheckTime) < BxCore::Main::GetCurrentFrameTime())
 			BxCore::System::Sleep(1);
-		CheckTime = BxCore::System::GetTimerMilliSecond();
+		CheckTime = BxCore::System::GetTimeMilliSecond();
 	}
 
 	// Scene Quit
@@ -74,7 +74,7 @@ int main()
 	BxScene::__OnEvent__(*Draw);
 	// All SceneData Remove
 	BxScene::AllScene* OneScene = &BxScene::__GetAllScene__();
-	while((OneScene = OneScene->Next) != null)
+	while((OneScene = OneScene->Next) != nullptr)
 		OneScene->GetData(sysmethod_remove);
 
 	// 이벤트해제
@@ -100,12 +100,12 @@ int main()
 /// @cond SECTION_NAME
 local_func bool ProcedureWithYield(int sleep)
 {
-	global_data uhuge LastTime = BxCore::System::GetTimerMilliSecond();
-	const uhuge LimitTime = BxCore::System::GetTimerMilliSecond() + sleep;
+	global_data uhuge LastTime = BxCore::System::GetTimeMilliSecond();
+	const uhuge LimitTime = BxCore::System::GetTimeMilliSecond() + sleep;
 	if(BxCore::System::IsQuit()) return false;
 	do
 	{
-		const uhuge CurTime = BxCore::System::GetTimerMilliSecond();
+		const uhuge CurTime = BxCore::System::GetTimeMilliSecond();
 		if(LastTime + BxCore::Main::GetCurrentFrameTime() < CurTime)
 		{
 			LastTime = CurTime - BxUtilGlobal::Min((const int) (CurTime - (LastTime + BxCore::Main::GetCurrentFrameTime())),
@@ -115,7 +115,7 @@ local_func bool ProcedureWithYield(int sleep)
 		}
 		if(sleep) BxCore::System::Sleep(1);
 	}
-	while(BxCore::System::GetTimerMilliSecond() < LimitTime);
+	while(BxCore::System::GetTimeMilliSecond() < LimitTime);
 	return true;
 }
 /// @endcond
@@ -142,7 +142,7 @@ bool Procedure()
 	{
 		IsChildProcessRun = true;
 		ChildProcess(ProcedureWithYield);
-		ChildProcess = null;
+		ChildProcess = nullptr;
 		IsChildProcessRun = false;
 	}
 

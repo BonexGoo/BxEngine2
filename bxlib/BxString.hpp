@@ -594,11 +594,11 @@ public:
 	*/
 	void FormatV(string format, va_list list)
 	{
-		const int TempLen = BxCore::Util::VsnPrintf(null, 0, format, list);
+		const int TempLen = BxCore::Util::VsnPrintf(nullptr, 0, format, list);
 		BxAssert("BxString<Temp의 예상길이를 얻는데 실패하였습니다>", 0 <= TempLen);
 		global_data int TempSizeMax = 0;
 		if(TempSizeMax < TempLen + 1) TempSizeMax = TempLen + 1;
-		string_rw Temp = null;
+		string_rw Temp = nullptr;
 		BxSINGLETON(Temp, TempSizeMax);
 		BxCore::Util::VsnPrintf(Temp, TempLen + 1, format, list);
 		Empty();

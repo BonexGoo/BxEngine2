@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -135,12 +135,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>: <a class="code" href="class_bx_telex_1_1_command.html">Command</a>* FindCommand(<span class="keywordtype">bool</span> updatedOnly)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> null; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>: <a class="code" href="class_bx_telex_1_1_command.html">Command</a>* NextCommand()</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> null; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span>: <span class="keyword">class </span>UpdatedValue</div>
@@ -148,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_bx_var_map.html" title="map식 가변배열 제공 ">BxVarMap</a>&lt;UpdatedValue&gt;;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">private</span>: <span class="keywordtype">bool</span> IsUpdated;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">private</span>: <span class="keywordtype">string</span> Value;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">private</span>: UpdatedValue() : IsUpdated(<span class="keyword">false</span>), Value(null) {}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">private</span>: UpdatedValue() : IsUpdated(<span class="keyword">false</span>), Value(<span class="keyword">nullptr</span>) {}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">private</span>: ~UpdatedValue() {Value = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Value);}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">public</span>: <span class="keyword">inline</span> <span class="keywordtype">void</span> SetValue(<span class="keywordtype">string</span> _tmp_ value, <span class="keywordtype">bool</span> doUpdate)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    IsUpdated = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">return</span> Value;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> Value;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
@@ -173,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            IsUpdated = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Value, defaultValue) == same)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> Value;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
@@ -259,8 +259,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            Pool()[LAST].Domain = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(domain);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            Pool()[END].Port = port;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            Pool()[END].Freq = freq;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            Pool()[END].Sock = null;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Pool()[END].TransTime = <a class="code" href="namespace_bx_core_1_1_system.html#a59483b8ee9d089a74c7a9740852aa4df" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimerMilliSecond</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            Pool()[END].Sock = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Pool()[END].TransTime = <a class="code" href="namespace_bx_core_1_1_system.html#ab14eb3855f4090d1224d7fee625c119f" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</a>();</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keyword">public</span>: global_func <span class="keywordtype">bool</span> Detach()</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        {</div>
@@ -308,9 +308,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Pool().Length(); ++i)</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            {</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                HQ&amp; CurHQ = Pool()[(i + iTurn) % Pool().Length()];</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">if</span>(CurHQ.TransTime &lt; <a class="code" href="namespace_bx_core_1_1_system.html#a59483b8ee9d089a74c7a9740852aa4df" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimerMilliSecond</a>())</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">if</span>(CurHQ.TransTime &lt; <a class="code" href="namespace_bx_core_1_1_system.html#ab14eb3855f4090d1224d7fee625c119f" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</a>())</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    CurHQ.TransTime = <a class="code" href="namespace_bx_core_1_1_system.html#a59483b8ee9d089a74c7a9740852aa4df" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimerMilliSecond</a>() + CurHQ.Freq;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    CurHQ.TransTime = <a class="code" href="namespace_bx_core_1_1_system.html#ab14eb3855f4090d1224d7fee625c119f" title="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</a>() + CurHQ.Freq;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    <span class="comment">// 연결상태 체크</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    <span class="keywordtype">bool</span> IsReconnected = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">BxCore::Socket::GetState</a>(CurHQ.Sock) != socketstate_connected)</div>
@@ -318,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        <span class="keywordflow">if</span>(CurHQ.Sock) IsReconnected = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9" title="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</a>(CurHQ.Sock);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        CurHQ.Sock = <a class="code" href="namespace_bx_core_1_1_socket.html#a85378908a5e811508c7a9b8a96dfa58d" title="소켓ID 할당 ">BxCore::Socket::Create</a>();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_socket.html#a0a3683eb9064e37b8459d1033209ba6c" title="서버로 접속 ">BxCore::Socket::Connect</a>(CurHQ.Sock, CurHQ.Domain, CurHQ.Port, 3000);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">BxCore::Socket::Connect</a>(CurHQ.Sock, CurHQ.Domain, CurHQ.Port, 3000);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    <span class="comment">// 업데이트</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">BxCore::Socket::GetState</a>(CurHQ.Sock) == socketstate_connected)</div>
@@ -389,7 +389,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                {</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0, kend = RecvHeader[1] / 4; k &lt; kend; ++k)</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                    {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                        Log* LogPtr = null;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                        Log* LogPtr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                        <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_core_1_1_socket.html#aa8ff5faa5156e2443a76dfff25c8c3e2" title="데이터 강제수신 ">BxCore::Socket::RecvFully</a>(CurHQ.Sock, (byte*) &amp;LogPtr, 4, 3000, <span class="keyword">false</span>) == 4)</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                        {</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                            CurHQ._SendInt4((<span class="keywordtype">int</span>) LogPtr);</div>
@@ -404,7 +404,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_core_1_1_socket.html#aa8ff5faa5156e2443a76dfff25c8c3e2" title="데이터 강제수신 ">BxCore::Socket::RecvFully</a>(CurHQ.Sock, (byte*) &amp;TempID, 4, 3000, <span class="keyword">false</span>) == 4)</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                {</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                    RecvHeader[1] -= 4;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                    <a class="code" href="class_bx_telex.html" title="HQ서버연동 전보시스템 ">BxTelex</a>* CurPeer = null;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                    <a class="code" href="class_bx_telex.html" title="HQ서버연동 전보시스템 ">BxTelex</a>* CurPeer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0; k &lt; CurHQ.TransPeers.Length() &amp;&amp; !CurPeer; ++k)</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                        <span class="keywordflow">if</span>(CurHQ.TransPeers[k]-&gt;TelexID == TempID)</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                            CurPeer = CurHQ.TransPeers[k];</div>
@@ -445,7 +445,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        {</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            global_data <span class="keyword">const</span> <span class="keywordtype">int</span> Length = 32;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            global_data <span class="keywordtype">int</span> Offset = 4;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            byte* Bytes = null;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            byte* Bytes = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            BxSINGLETON(Bytes, Length);</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">if</span>(0 &lt; length)</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            {</div>
@@ -472,7 +472,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="comment">// 스트림마감</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">if</span>(Sock)</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                byte* Bytes = null;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                byte* Bytes = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                _PushByteStream(&amp;Bytes, 0);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                <span class="keyword">const</span> uint Length = 4 + *((uint*) Bytes);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                <a class="code" href="namespace_bx_core_1_1_socket.html#a9a23c3a4ad8819aa795983a72eb8c5b2" title="데이터 송신 ">BxCore::Socket::Send</a>(Sock, Bytes, Length);</div>
@@ -518,7 +518,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Pool.Length(); ++i)</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                <span class="keywordflow">if</span>(Pool.Access(i) == <span class="keyword">this</span>)</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                {</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                    TYPE* OneData = null;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                    TYPE* OneData = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                    Pool.RemoveData(i, &amp;OneData);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                }</div>
@@ -581,7 +581,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

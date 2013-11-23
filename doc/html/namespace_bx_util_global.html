@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -128,6 +128,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a677b3048a42145d09849067b4d4a73ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a677b3048a42145d09849067b4d4a73ce">StrLen</a> (string String)</td></tr>
 <tr class="memdesc:a677b3048a42145d09849067b4d4a73ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">스트링길이 구하기  <a href="#a677b3048a42145d09849067b4d4a73ce">More...</a><br/></td></tr>
 <tr class="separator:a677b3048a42145d09849067b4d4a73ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
+<tr class="memitem:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="memTemplItemLeft" align="right" valign="top">static int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#acf3ce0b4c4af01dfb26f0e82a438fb22">StrLenT</a> (const TYPE *String)</td></tr>
+<tr class="memdesc:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">템플릿타입 스트링길이 구하기  <a href="#acf3ce0b4c4af01dfb26f0e82a438fb22">More...</a><br/></td></tr>
+<tr class="separator:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b70575037e5a54e79b304c82c1822a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a39b70575037e5a54e79b304c82c1822a">StrLenEx</a> (string String)</td></tr>
 <tr class="memdesc:a39b70575037e5a54e79b304c82c1822a"><td class="mdescLeft">&#160;</td><td class="mdescRight">확장된 스트링길이 구하기(과 <br/>
 도 인식)  <a href="#a39b70575037e5a54e79b304c82c1822a">More...</a><br/></td></tr>
@@ -1408,7 +1412,7 @@ template&lt;typename TYPE &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>간편한 사용을 위한 null값 리턴 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>간편한 사용을 위한 nullptr값 리턴 </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_util_global.html#ad27a75813b9a9bf993a96c31fa738b63" title="스트링 할당 ">StrAlloc</a>, <a class="el" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">StrCpyWithAlloc</a> </dd></dl>
 
 </div>
@@ -1619,6 +1623,41 @@ template&lt;typename TYPE &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="acf3ce0b4c4af01dfb26f0e82a438fb22"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int BxUtilGlobal::StrLenT </td>
+          <td>(</td>
+          <td class="paramtype">const TYPE *&#160;</td>
+          <td class="paramname"><em>String</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>템플릿타입 스트링길이 구하기 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">String</td><td>: 스트링 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>스트링의 바이트길이 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6e24c46c55a8937dc65a258adc40c1b9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1767,7 +1806,7 @@ template&lt;typename TYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:48 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:51 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

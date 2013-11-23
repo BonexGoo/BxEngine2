@@ -44,12 +44,12 @@ class BxTelex
 
 	public: Command* FindCommand(bool updatedOnly)
 	{
-		return null; ///////////////////////////////////////////////////////////////////
+		return nullptr; ///////////////////////////////////////////////////////////////////
 	}
 
 	public: Command* NextCommand()
 	{
-		return null; ///////////////////////////////////////////////////////////////////
+		return nullptr; ///////////////////////////////////////////////////////////////////
 	}
 
 	private: class UpdatedValue
@@ -57,7 +57,7 @@ class BxTelex
 		friend class BxVarMap<UpdatedValue>;
 		private: bool IsUpdated;
 		private: string Value;
-		private: UpdatedValue() : IsUpdated(false), Value(null) {}
+		private: UpdatedValue() : IsUpdated(false), Value(nullptr) {}
 		private: ~UpdatedValue() {Value = BxUtilGlobal::StrFree(Value);}
 		public: inline void SetValue(string _tmp_ value, bool doUpdate)
 		{
@@ -74,7 +74,7 @@ class BxTelex
 					IsUpdated = false;
 					return Value;
 				}
-				return null;
+				return nullptr;
 			}
 			return Value;
 		}
@@ -82,7 +82,7 @@ class BxTelex
 		{
 			IsUpdated = false;
 			if(BxUtilGlobal::StrCmp(Value, defaultValue) == same)
-				return null;
+				return nullptr;
 			return Value;
 		}
 	};
@@ -168,8 +168,8 @@ class BxTelex
 			Pool()[LAST].Domain = BxUtilGlobal::StrCpyWithAlloc(domain);
 			Pool()[END].Port = port;
 			Pool()[END].Freq = freq;
-			Pool()[END].Sock = null;
-			Pool()[END].TransTime = BxCore::System::GetTimerMilliSecond();
+			Pool()[END].Sock = nullptr;
+			Pool()[END].TransTime = BxCore::System::GetTimeMilliSecond();
 		}
 		public: global_func bool Detach()
 		{
@@ -217,9 +217,9 @@ class BxTelex
 			for(int i = 0; i < Pool().Length(); ++i)
 			{
 				HQ& CurHQ = Pool()[(i + iTurn) % Pool().Length()];
-				if(CurHQ.TransTime < BxCore::System::GetTimerMilliSecond())
+				if(CurHQ.TransTime < BxCore::System::GetTimeMilliSecond())
 				{
-					CurHQ.TransTime = BxCore::System::GetTimerMilliSecond() + CurHQ.Freq;
+					CurHQ.TransTime = BxCore::System::GetTimeMilliSecond() + CurHQ.Freq;
 					// 연결상태 체크
 					bool IsReconnected = false;
 					if(BxCore::Socket::GetState(CurHQ.Sock) != socketstate_connected)
@@ -298,7 +298,7 @@ class BxTelex
 								{
 									for(int k = 0, kend = RecvHeader[1] / 4; k < kend; ++k)
 									{
-										Log* LogPtr = null;
+										Log* LogPtr = nullptr;
 										if(BxCore::Socket::RecvFully(CurHQ.Sock, (byte*) &LogPtr, 4, 3000, false) == 4)
 										{
 											CurHQ._SendInt4((int) LogPtr);
@@ -313,7 +313,7 @@ class BxTelex
 								if(BxCore::Socket::RecvFully(CurHQ.Sock, (byte*) &TempID, 4, 3000, false) == 4)
 								{
 									RecvHeader[1] -= 4;
-									BxTelex* CurPeer = null;
+									BxTelex* CurPeer = nullptr;
 									for(int k = 0; k < CurHQ.TransPeers.Length() && !CurPeer; ++k)
 										if(CurHQ.TransPeers[k]->TelexID == TempID)
 											CurPeer = CurHQ.TransPeers[k];
@@ -354,7 +354,7 @@ class BxTelex
 		{
 			global_data const int Length = 32;
 			global_data int Offset = 4;
-			byte* Bytes = null;
+			byte* Bytes = nullptr;
 			BxSINGLETON(Bytes, Length);
 			if(0 < length)
 			{
@@ -381,7 +381,7 @@ class BxTelex
 			// 스트림마감
 			if(Sock)
 			{
-				byte* Bytes = null;
+				byte* Bytes = nullptr;
 				_PushByteStream(&Bytes, 0);
 				const uint Length = 4 + *((uint*) Bytes);
 				BxCore::Socket::Send(Sock, Bytes, Length);
@@ -427,7 +427,7 @@ class BxTelex
 			for(int i = 0; i < Pool.Length(); ++i)
 				if(Pool.Access(i) == this)
 				{
-					TYPE* OneData = null;
+					TYPE* OneData = nullptr;
 					Pool.RemoveData(i, &OneData);
 					return true;
 				}

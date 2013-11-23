@@ -4,7 +4,7 @@
 
 #define BxSINGLETON(RET, ...) \
 	do { \
-		static decltype(RET) Value = null; \
+		static decltype(RET) Value = nullptr; \
 		static uint Count = BxSingleton::Link(Value, Count); \
 		RET = BxSingleton::Bind(Value, Count, __VA_ARGS__); \
 	} while(false)
@@ -22,34 +22,34 @@ class BxSingleton
 	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount)
 	{
 		if(count == newcount) return value;
-		return Transfer(value, count, (0 < newcount)? BxNew_Array(TYPE, newcount) : null, newcount);
+		return Transfer(value, count, (0 < newcount)? BxNew_Array(TYPE, newcount) : nullptr, newcount);
 	}
 
 	public: template<typename TYPE, typename P1>
 	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1)
 	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1) : null, newcount);}
+	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1) : nullptr, newcount);}
 	public: template<typename TYPE, typename P1, typename P2>
 	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2)
 	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2) : null, newcount);}
+	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2) : nullptr, newcount);}
 	public: template<typename TYPE, typename P1, typename P2, typename P3>
 	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2, P3 v3)
 	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3) : null, newcount);}
+	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3) : nullptr, newcount);}
 	public: template<typename TYPE, typename P1, typename P2, typename P3, typename P4>
 	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2, P3 v3, P4 v4)
 	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3, v4) : null, newcount);}
+	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3, v4) : nullptr, newcount);}
 	public: template<typename TYPE, typename P1, typename P2, typename P3, typename P4, typename P5>
 	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2, P3 v3, P4 v4, P5 v5)
 	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3, v4, v5) : null, newcount);}
+	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3, v4, v5) : nullptr, newcount);}
 
 	public: template<typename TYPE>
 	global_func inline void Rebind(const TYPE* value, const uint newcount)
 	{
-		List::Rebind(value, (0 < newcount)? BxNew_Array(TYPE, newcount) : null, newcount);
+		List::Rebind(value, (0 < newcount)? BxNew_Array(TYPE, newcount) : nullptr, newcount);
 	}
 
 	public: global_func inline void Unbind(const void* value)
@@ -96,10 +96,10 @@ class BxSingleton
 		private: Element* Unit;
 		private: List* Next;
 		private: global_func List* Head() {global_data List _; return &_;}
-		private: List(Element* unit = null)
+		private: List(Element* unit = nullptr)
 		{
 			Unit = unit;
-			Next = null;
+			Next = nullptr;
 		}
 		private: ~List()
 		{
@@ -136,7 +136,7 @@ class BxSingleton
 				if(CurListNext->Unit->IsSame(value))
 				{
 					CurList->Next = CurListNext->Next;
-					CurListNext->Next = null;
+					CurListNext->Next = nullptr;
 					delete CurListNext;
 					return;
 				}
@@ -146,11 +146,11 @@ class BxSingleton
 		public: global_func void UnbindAll()
 		{
 			List* CurList = Head()->Next;
-			Head()->Next = null;
+			Head()->Next = nullptr;
 			while(CurList)
 			{
 				List* CurListNext = CurList->Next;
-				CurList->Next = null;
+				CurList->Next = nullptr;
 				delete CurList;
 				CurList = CurListNext;
 			}

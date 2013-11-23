@@ -135,6 +135,20 @@ namespace BxUtilGlobal
 	}
 
 	/*!
+	\brief ÅÛÇÃ¸´Å¸ÀÔ ½ºÆ®¸µ±æÀÌ ±¸ÇÏ±â
+	\param String : ½ºÆ®¸µ
+	\return ½ºÆ®¸µÀÇ ¹ÙÀÌÆ®±æÀÌ
+	*/
+	template<typename TYPE>
+	static int StrLenT(const TYPE* String)
+	{
+		BxAssert("BxUtil", String);
+		int i = -1;
+		while(String[++i]);
+		return i;
+	}
+
+	/*!
 	\brief È®ÀåµÈ ½ºÆ®¸µ±æÀÌ ±¸ÇÏ±â(\r°ú \nµµ ÀÎ½Ä)
 	\param String : ½ºÆ®¸µ
 	\return ½ºÆ®¸µÀÇ ¹ÙÀÌÆ®±æÀÌ
@@ -177,13 +191,13 @@ namespace BxUtilGlobal
 	/*!
 	\brief ½ºÆ®¸µ ÇØÁ¦
 	\param AllocedString : ÇÒ´çµÈ ½ºÆ®¸µ
-	\return °£ÆíÇÑ »ç¿ëÀ» À§ÇÑ null°ª ¸®ÅÏ
+	\return °£ÆíÇÑ »ç¿ëÀ» À§ÇÑ nullptr°ª ¸®ÅÏ
 	\see StrAlloc, StrCpyWithAlloc
 	*/
 	static string StrFree(string AllocedString)
 	{
 		BxCore::Util::Free((id_memory) AllocedString);
-		return null;
+		return nullptr;
 	}
 
 	/*!
@@ -938,19 +952,30 @@ public:
 	\param utf16length : ¹ÞÀ» UTF16½ºÆ®¸µ ¹è¿­¼ö·®
 	\return º¯È¯µÈ ¹è¿­¼ö·®
 	*/
-	global_func int CP949ToUTF16(string cp949, int cp949length, wstring_rw utf16, const int utf16length)
+	global_func int CP949ToUTF16(string cp949, int cp949length, wstring_rw utf16, int utf16length)
 	{
 		if(cp949length < 0) cp949length = 0x7FFFFFFF;
+		utf16length *= 2;
+		byte* utf16bytes = (byte*) utf16;
 		int utf16focus = 0;
 		for(int i = 0; cp949[i] && i < cp949length && utf16focus < utf16length; ++i)
 		{
-			if(cp949[i] < 0x80)
-				utf16[utf16focus++] = CP949ToUTF16_Search(cp949[i]);
+			if(!(cp949[i] & 0x80))
+			{
+				const wchar onechar = CP949ToUTF16_Search(cp949[i]);
+				utf16bytes[utf16focus++] = (byte)(onechar & 0xFF);
+				utf16bytes[utf16focus++] = (byte)(onechar >> 8);
+			}
 			else if(cp949[++i] && i < cp949length)
-				utf16[utf16focus++] = CP949ToUTF16_Search(cp949[i - 1], cp949[i]);
+			{
+				const wchar onechar = CP949ToUTF16_Search(cp949[i - 1], cp949[i]);
+				utf16bytes[utf16focus++] = (byte)(onechar & 0xFF);
+				utf16bytes[utf16focus++] = (byte)(onechar >> 8);
+			}
 		}
-		utf16[utf16focus] = 0;
-		return utf16focus;
+		utf16bytes[utf16focus++] = 0;
+		utf16bytes[utf16focus] = 0;
+		return utf16focus / 2;
 	}
 
 	/*!
@@ -964,10 +989,12 @@ public:
 	global_func int UTF16ToCP949(wstring utf16, int utf16length, string_rw cp949, const int cp949length)
 	{
 		if(utf16length < 0) utf16length = 0x7FFFFFFF;
+		else utf16length *= 2;
+		const byte* utf16bytes = (const byte*) utf16;
 		int cp949focus = 0;
-		for(int i = 0; utf16[i] && i < utf16length && cp949focus < cp949length; ++i)
+		for(int i = 0; (utf16bytes[i] || utf16bytes[i + 1]) && i < utf16length && cp949focus < cp949length; i += 2)
 		{
-			string Result = UTF16ToCP949_Search(utf16[i]);
+			string Result = UTF16ToCP949_Search((utf16bytes[i] & 0xFF) | (utf16bytes[i + 1] << 8));
 			cp949[cp949focus++] = Result[0];
 			if(0x80 <= Result[0] && cp949focus < cp949length)
 				cp949[cp949focus++] = Result[1];
@@ -981,7 +1008,7 @@ public:
 	\param utf16 : º¯È¯ÇÒ UTF16½ºÆ®¸µ
 	\param utf16length : º¯È¯ÇÒ UTF16½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
 	\param utf8 : ¹ÞÀ» UTF8½ºÆ®¸µ
-	\see BxUtil::GetLengthByUTF8
+	\see BxUtil::GetLengthForUTF8
 	*/
 	global_func void UTF16ToUTF8(wstring utf16, int utf16length, string_rw utf8)
 	{
@@ -1019,7 +1046,7 @@ public:
 	\param utf16length : º¯È¯ÇÒ UTF16½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
 	\return ÇÊ¿äÇÑ ¹è¿­¼ö·®
 	*/
-	global_func int GetLengthByUTF8(wstring utf16, int utf16length)
+	global_func int GetLengthForUTF8(wstring utf16, int utf16length)
 	{
 		if(utf16length < 0) utf16length = 0x7FFFFFFF;
 		int Result = 0;
@@ -1045,7 +1072,7 @@ public:
 	\param utf8 : º¯È¯ÇÒ UTF8½ºÆ®¸µ
 	\param utf8length : º¯È¯ÇÒ UTF8½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
 	\param utf16 : ¹ÞÀ» UTF16½ºÆ®¸µ
-	\see BxUtil::GetLengthByUTF16
+	\see BxUtil::GetLengthForUTF16
 	*/
 	global_func void UTF8ToUTF16(string utf8, int utf8length, wstring_rw utf16)
 	{
@@ -1082,7 +1109,7 @@ public:
 	\param utf8length : º¯È¯ÇÒ UTF8½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
 	\return ÇÊ¿äÇÑ ¹è¿­¼ö·®
 	*/
-	global_func int GetLengthByUTF16(string utf8, int utf8length)
+	global_func int GetLengthForUTF16(string utf8, int utf8length)
 	{
 		if(utf8length < 0) utf8length = 0x7FFFFFFF;
 		int Result = 0;
@@ -1124,7 +1151,7 @@ public:
 			|| BxUtilGlobal::Max(DstB.x, DstE.x) < BxUtilGlobal::Min(SrcB.x, SrcE.x)
 			|| BxUtilGlobal::Max(SrcB.y, SrcE.y) < BxUtilGlobal::Min(DstB.y, DstE.y)
 			|| BxUtilGlobal::Max(DstB.y, DstE.y) < BxUtilGlobal::Min(SrcB.y, SrcE.y))
-			return null;
+			return nullptr;
 		const int ResultA1 = GetClockwiseValue(DstB, DstE, SrcB);
 		const int ResultB1 = GetClockwiseValue(DstB, DstE, SrcE);
 		const int ResultA2 = GetClockwiseValue(SrcB, SrcE, DstB);
@@ -1196,7 +1223,7 @@ public:
 			// ²ÀÁöÁ¡´êÀ½
 			else if((DstB.x == SrcB.x && DstB.y == SrcB.y) || (DstE.x == SrcE.x && DstE.y == SrcE.y)
 				|| (DstB.x == SrcE.x && DstB.y == SrcE.y) || (DstE.x == SrcB.x && DstE.y == SrcB.y))
-				return null;
+				return nullptr;
 			else
 			{
 				// Á÷¼±A
@@ -1220,7 +1247,7 @@ public:
 			}
 			return &Result;
 		}
-		return null;
+		return nullptr;
 	}
 
 private:
@@ -1284,6 +1311,8 @@ private:
 		global_data wstring CP949 = (wstring)
 			"\t \n \r   ! \" # $ % & \' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L "
 			"M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ "
+			"¤¡¤¢¤£¤¤¤¥¤¦¤§¤¨¤©¤ª¤«¤¬¤­¤®¤¯¤°¤±¤²¤³¤´¤µ¤¶¤·¤¸¤¹¤º¤»¤¼¤½¤¾"
+			"¤¿¤À¤Á¤Â¤Ã¤Ä¤Å¤Æ¤Ç¤È¤É¤Ê¤Ë¤Ì¤Í¤Î¤Ï¤Ð¤Ñ¤Ò¤Ó"
 			"°¡°¢°£°¤°¥°¦°§°¨°©°ª°«°¬°­°®°¯°°°±°²°³°´°µ°¶°·°¸°¹°º°»°¼°½°¾°¿°À°Á°Â°Ã°Ä°Å°Æ°Ç°È°É°Ê°Ë°Ì°Í°Î°Ï°Ð°Ñ°Ò°Ó°Ô°Õ°Ö"
 			"°×°Ø°Ù°Ú°Û°Ü°Ý°Þ°ß°à°á°â°ã°ä°å°æ°ç°è°é°ê°ë°ì°í°î°ï°ð°ñ°ò°ó°ô°õ°ö°÷°ø°ù°ú°û°ü°ý°þ±¡±¢±£±¤±¥±¦±§‚R±©±ª±«±¬±­±®"
 			"±¯±°±±±²±³±´±µ±¶±·±¸±¹±º±»±¼±½±¾±¿±À±Á±Â±Ã±Ä±Å±Æ±Ç±È±É±Ê±Ë±Ì±Í±Î±Ï±Ð±Ñ±Ò±Ó±Ô±Õ±Ö±×±Ø±Ù±Ú±Û±Ü±Ý±Þ±ß±à±á±â±ã±ä"
@@ -1336,6 +1365,8 @@ private:
 		global_data wstring UTF16 = (wstring)
 			L"\t\n\r !\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKL"
 			L"MNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+			L"\x3131\x3132\x3133\x3134\x3135\x3136\x3137\x3138\x3139\x313A\x313B\x313C\x313D\x313E\x313F\x3140\x3141\x3142\x3143\x3144\x3145\x3146\x3147\x3148\x3149\x314A\x314B\x314C\x314D\x314E"
+			L"\x314F\x3150\x3151\x3152\x3153\x3154\x3155\x3156\x3157\x3158\x3159\x315A\x315B\x315C\x315D\x315E\x315F\x3160\x3161\x3162\x3163"
 			L"\xAC00\xAC01\xAC04\xAC07\xAC08\xAC09\xAC0A\xAC10\xAC11\xAC12\xAC13\xAC14\xAC15\xAC16\xAC17\xAC19\xAC1A\xAC1B\xAC1C\xAC1D\xAC20\xAC24\xAC2C\xAC2D\xAC2F"
 			L"\xAC30\xAC31\xAC38\xAC39\xAC3C\xAC40\xAC4B\xAC4D\xAC54\xAC58\xAC5C\xAC70\xAC71\xAC74\xAC77\xAC78\xAC7A\xAC80\xAC81\xAC83\xAC84\xAC85\xAC86\xAC89\xAC8A"
 			L"\xAC8B\xAC8C\xAC90\xAC94\xAC9C\xAC9D\xAC9F\xACA0\xACA1\xACA8\xACA9\xACAA\xACAC\xACAF\xACB0\xACB8\xACB9\xACBB\xACBC\xACBD\xACC1\xACC4\xACC8\xACCC\xACD5"
@@ -1435,7 +1466,7 @@ private:
 
 	global_func const wchar CP949ToUTF16_Search(const char cp949a, const char cp949b = ' ')
 	{
-		global_data const int Length = 98 + 2350;
+		global_data const int Length = 98 + 51 + 2350;
 		global_data wchar CP949[Length];
 		global_data wchar UTF16[Length];
 		global_data bool DoCopyAndSortByCP949 = true;
@@ -1472,12 +1503,12 @@ private:
 				Lower = Middle + 1;
 			else Upper = Middle - 1;
 		}
-		return (const wchar) L'?';
+		return (const wchar) L'\x25A1';
 	}
 
 	global_func string UTF16ToCP949_Search(const wchar utf16)
 	{
-		global_data const int Length = 98 + 2350;
+		global_data const int Length = 98 + 51 + 2350;
 		global_data wchar UTF16[Length];
 		global_data wchar CP949[Length];
 		global_data bool DoCopyAndSortByUTF16 = true;
@@ -1514,7 +1545,7 @@ private:
 				Lower = Middle + 1;
 			else Upper = Middle - 1;
 		}
-		return (string) "?";
+		return (string) "¡à";
 	}
 
 	global_func inline uint& _RandValue()

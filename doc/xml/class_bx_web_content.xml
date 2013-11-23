@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="21" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="8" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_web_content_1a3bb4d42aee48bb841c7d41c9e3d3d31e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="9" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="9" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="22" bodyend="22"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="22" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1a89bde7351441571b34db345ac0f372ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func macro <ref refid="class_bx_var_vector" kindref="compound">CachePoolList</ref> &amp;</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="23" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="23" bodyend="23"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="23" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1ac2e657b59601fa4859fb61cdb16078ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func macro int &amp;</type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="24" bodyend="24"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="24" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1ab2b17b77f23848a73363ecf7a58eeb74" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="25" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="25" bodyend="38"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="25" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="25" bodyend="38"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="41" bodyend="41"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1a3ef24ada879d5b2cb40ebf4a73be8432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="42" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="42" bodyend="42"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="42" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func string</type>
@@ -152,7 +152,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="48" bodyend="48"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const byte *_tmp_</type>
@@ -166,7 +166,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="54" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="54" bodyend="54"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="54" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="54" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1a4a605274453e93b85aae5e1c7e6fb47f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -180,7 +180,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="60" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="60" bodyend="60"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="60" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="60" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -194,12 +194,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="66" bodyend="66"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="66" bodyend="66"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool BxWebContent::Query</definition>
-        <argsstring>(string Domain, ushort Port, string Path, string Arguments=null, int Timeout=-1, callback_progress Progress=null)</argsstring>
+        <argsstring>(string Domain, ushort Port, string Path, string Arguments=nullptr, int Timeout=-1, callback_progress Progress=nullptr)</argsstring>
         <name>Query</name>
         <param>
           <type>string</type>
@@ -216,7 +216,7 @@
         <param>
           <type>string</type>
           <declname>Arguments</declname>
-          <defval>null</defval>
+          <defval>nullptr</defval>
         </param>
         <param>
           <type>int</type>
@@ -226,7 +226,7 @@
         <param>
           <type>callback_progress</type>
           <declname>Progress</declname>
-          <defval>null</defval>
+          <defval>nullptr</defval>
         </param>
         <briefdescription>
 <para>HTTP쿼리실행 </para>        </briefdescription>
@@ -278,12 +278,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="78" bodyend="226"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="78" bodyend="226"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool BxWebContent::Cache</definition>
-        <argsstring>(string Domain, ushort Port, string FilePath, bool DoLoad=true, callback_progress Progress=null)</argsstring>
+        <argsstring>(string Domain, ushort Port, string FilePath, bool DoLoad=true, callback_progress Progress=nullptr)</argsstring>
         <name>Cache</name>
         <param>
           <type>string</type>
@@ -305,7 +305,7 @@
         <param>
           <type>callback_progress</type>
           <declname>Progress</declname>
-          <defval>null</defval>
+          <defval>nullptr</defval>
         </param>
         <briefdescription>
 <para>캐시파일 로드(없으면 생성) </para>        </briefdescription>
@@ -350,17 +350,17 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="237" bodyend="331"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="237" bodyend="331"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>HTTP기반 쿼리송수신, 파일다운로드 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="6" bodyend="332"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="6" bodyend="332"/>
     <listofallmembers>
       <member refid="class_bx_web_content_1a69fbb0cf356d34117765359616f8428f" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>BxWebContent</name></member>
-      <member refid="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Cache</name></member>
+      <member refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Cache</name></member>
       <member refid="class_bx_web_content_1ab5753ed039dd89984372f58059b22c05" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>CachePoolList</name></member>
       <member refid="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetBytes</name></member>
       <member refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetCachePath</name></member>
@@ -370,7 +370,7 @@
       <member refid="class_bx_web_content_1ab2b17b77f23848a73363ecf7a58eeb74" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>OnFileSearch</name></member>
       <member refid="class_bx_web_content_1a89bde7351441571b34db345ac0f372ff" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>Pool</name></member>
       <member refid="class_bx_web_content_1ac2e657b59601fa4859fb61cdb16078ce" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>PoolSumSize</name></member>
-      <member refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Query</name></member>
+      <member refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Query</name></member>
       <member refid="class_bx_web_content_1ab104adbb7e5be3eacd0730515a39e820" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseBytes</name></member>
       <member refid="class_bx_web_content_1a3bb4d42aee48bb841c7d41c9e3d3d31e" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseLength</name></member>
       <member refid="class_bx_web_content_1a3ef24ada879d5b2cb40ebf4a73be8432" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>~BxWebContent</name></member>

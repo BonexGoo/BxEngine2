@@ -107,12 +107,12 @@ namespace BxExpress
 		public:  explicit Integer(const _Integer& v) : _Integer(v.Value) {}
 		private: explicit Integer(const int v, void*) : _Integer(v) {}
 		// 연산자
-		public:  inline Integer operator-() const {return Integer(-Value, null);}
-		public:  inline Integer operator<<(const int v) const {return Integer(Value << v, null);}
-		public:  inline Integer operator>>(const int v) const {return Integer(Value >> v, null);}
+		public:  inline Integer operator-() const {return Integer(-Value, nullptr);}
+		public:  inline Integer operator<<(const int v) const {return Integer(Value << v, nullptr);}
+		public:  inline Integer operator>>(const int v) const {return Integer(Value >> v, nullptr);}
 		public:  inline Integer& operator=(const _Integer& v) {Value = v.Value; return *this;}
 		// 할당자
-		public:  template<int VALUE> global_func const Integer& Make() {global_data const Integer Result(VALUE, null); return Result;}
+		public:  template<int VALUE> global_func const Integer& Make() {global_data const Integer Result(VALUE, nullptr); return Result;}
 	};
 	class IntegerX : public _Integer
 	{
@@ -134,7 +134,7 @@ namespace BxExpress
 		// 강제초기화
 		public:  void Reset(const Integer& v) {Value = v.Value; InverseFF = 0;}
 		// 할당자
-		public:  template<int VALUE> global_func const IntegerX& Make() {global_data const IntegerX Result(VALUE, null); return Result;}
+		public:  template<int VALUE> global_func const IntegerX& Make() {global_data const IntegerX Result(VALUE, nullptr); return Result;}
 		// 데이터
 		private: mutable fint InverseFF;
 		private: inline fint GetInverseFF() const {return (InverseFF)? InverseFF : (InverseFF = (fint)(ox100000000 / Value));}
@@ -174,8 +174,8 @@ namespace BxExpress
 		// 기타
 		public:  inline fint ToFixFloat() const {return ValueF;}
 		public:  inline int ToInt() const {return FtoI(ValueF);}
-		public:  inline Integer ToInteger() const {return Integer(FtoI(ValueF), null);}
-		public:  inline IntegerX ToIntegerX() const {return IntegerX(FtoI(ValueF), null);}
+		public:  inline Integer ToInteger() const {return Integer(FtoI(ValueF), nullptr);}
+		public:  inline IntegerX ToIntegerX() const {return IntegerX(FtoI(ValueF), nullptr);}
 		// 데이터
 		private: fint ValueF;
 	};
@@ -208,13 +208,13 @@ namespace BxExpress
 		public:  explicit Float(const _Integer& v) : _Float(ItoF(v.Value)) {}
 		private: explicit Float(const fint v, void*) : _Float(v) {}
 		// 연산자
-		public:  inline Float operator-() const {return Float(-ValueF, null);}
-		public:  inline Float operator<<(const int v) const {return Float(ValueF << v, null);}
-		public:  inline Float operator>>(const int v) const {return Float(ValueF >> v, null);}
+		public:  inline Float operator-() const {return Float(-ValueF, nullptr);}
+		public:  inline Float operator<<(const int v) const {return Float(ValueF << v, nullptr);}
+		public:  inline Float operator>>(const int v) const {return Float(ValueF >> v, nullptr);}
 		public:  inline Float& operator=(const _Float& v) {ValueF = v.ValueF; return *this;}
 		public:  inline Float& operator=(const _Integer& v) {ValueF = ItoF(v.Value); return *this;}
 		// 할당자
-		public:  template<fint VALUE> global_func const Float& Make() {global_data const Float Result(VALUE, null); return Result;}
+		public:  template<fint VALUE> global_func const Float& Make() {global_data const Float Result(VALUE, nullptr); return Result;}
 	};
 	class FloatX : public _Float
 	{
@@ -237,46 +237,46 @@ namespace BxExpress
 		public:  void Reset(const Float& v) {ValueF = v.ValueF; InverseF = 0;}
 		public:  void Reset(const Integer& v) {ValueF = ItoF(v.Value); InverseF = 0;}
 		// 할당자
-		public:  template<fint VALUE> global_func const FloatX& Make() {global_data const FloatX Result(VALUE, null); return Result;}
+		public:  template<fint VALUE> global_func const FloatX& Make() {global_data const FloatX Result(VALUE, nullptr); return Result;}
 		// 데이터
 		private: mutable fint InverseF;
 		private: inline fint GetInverseF() const {return (InverseF)? InverseF : (InverseF = (fint)(ox100000000 / ValueF));}
 	};
 
 	// ADD
-	Integer operator+(const int v1,       const _Integer& v2) {return Integer(v1 + v2.Value, null);}
-	Float   operator+(const int v1,       const _Float& v2  ) {return Float(ItoF(v1) + v2.ValueF, null);}
-	Integer operator+(const _Integer& v1, const int v2      ) {return Integer(v1.Value + v2, null);}
-	Integer operator+(const _Integer& v1, const _Integer& v2) {return Integer(v1.Value + v2.Value, null);}
-	Float   operator+(const _Integer& v1, const _Float& v2  ) {return Float(ItoF(v1.Value) + v2.ValueF, null);}
-	Float   operator+(const _Float& v1,   const int v2      ) {return Float(v1.ValueF + ItoF(v2), null);}
-	Float   operator+(const _Float& v1,   const _Integer& v2) {return Float(v1.ValueF + ItoF(v2.Value), null);}
-	Float   operator+(const _Float& v1,   const _Float& v2  ) {return Float(v1.ValueF + v2.ValueF, null);}
+	Integer operator+(const int v1,       const _Integer& v2) {return Integer(v1 + v2.Value, nullptr);}
+	Float   operator+(const int v1,       const _Float& v2  ) {return Float(ItoF(v1) + v2.ValueF, nullptr);}
+	Integer operator+(const _Integer& v1, const int v2      ) {return Integer(v1.Value + v2, nullptr);}
+	Integer operator+(const _Integer& v1, const _Integer& v2) {return Integer(v1.Value + v2.Value, nullptr);}
+	Float   operator+(const _Integer& v1, const _Float& v2  ) {return Float(ItoF(v1.Value) + v2.ValueF, nullptr);}
+	Float   operator+(const _Float& v1,   const int v2      ) {return Float(v1.ValueF + ItoF(v2), nullptr);}
+	Float   operator+(const _Float& v1,   const _Integer& v2) {return Float(v1.ValueF + ItoF(v2.Value), nullptr);}
+	Float   operator+(const _Float& v1,   const _Float& v2  ) {return Float(v1.ValueF + v2.ValueF, nullptr);}
 	// SUB
-	Integer operator-(const int v1,       const _Integer& v2) {return Integer(v1 - v2.Value, null);}
-	Float   operator-(const int v1,       const _Float& v2  ) {return Float(ItoF(v1) - v2.ValueF, null);}
-	Integer operator-(const _Integer& v1, const int v2      ) {return Integer(v1.Value - v2, null);}
-	Integer operator-(const _Integer& v1, const _Integer& v2) {return Integer(v1.Value - v2.Value, null);}
-	Float   operator-(const _Integer& v1, const _Float& v2  ) {return Float(ItoF(v1.Value) - v2.ValueF, null);}
-	Float   operator-(const _Float& v1,   const int v2      ) {return Float(v1.ValueF - ItoF(v2), null);}
-	Float   operator-(const _Float& v1,   const _Integer& v2) {return Float(v1.ValueF - ItoF(v2.Value), null);}
-	Float   operator-(const _Float& v1,   const _Float& v2  ) {return Float(v1.ValueF - v2.ValueF, null);}
+	Integer operator-(const int v1,       const _Integer& v2) {return Integer(v1 - v2.Value, nullptr);}
+	Float   operator-(const int v1,       const _Float& v2  ) {return Float(ItoF(v1) - v2.ValueF, nullptr);}
+	Integer operator-(const _Integer& v1, const int v2      ) {return Integer(v1.Value - v2, nullptr);}
+	Integer operator-(const _Integer& v1, const _Integer& v2) {return Integer(v1.Value - v2.Value, nullptr);}
+	Float   operator-(const _Integer& v1, const _Float& v2  ) {return Float(ItoF(v1.Value) - v2.ValueF, nullptr);}
+	Float   operator-(const _Float& v1,   const int v2      ) {return Float(v1.ValueF - ItoF(v2), nullptr);}
+	Float   operator-(const _Float& v1,   const _Integer& v2) {return Float(v1.ValueF - ItoF(v2.Value), nullptr);}
+	Float   operator-(const _Float& v1,   const _Float& v2  ) {return Float(v1.ValueF - v2.ValueF, nullptr);}
 	// MUL
-	Integer operator*(const int v1,       const _Integer& v2) {return Integer(v1 * v2.Value, null);}
-	Float   operator*(const int v1,       const _Float& v2  ) {return Float((fint)((ItoF(v1) * (huge) v2.ValueF) >> 16), null);}
-	Integer operator*(const _Integer& v1, const int v2      ) {return Integer(v1.Value * v2, null);}
-	Integer operator*(const _Integer& v1, const _Integer& v2) {return Integer(v1.Value * v2.Value, null);}
-	Float   operator*(const _Integer& v1, const _Float& v2  ) {return Float((fint)((ItoF(v1.Value) * (huge) v2.ValueF) >> 16), null);}
-	Float   operator*(const _Float& v1,   const int v2      ) {return Float((fint)((v1.ValueF * (huge) ItoF(v2)) >> 16), null);}
-	Float   operator*(const _Float& v1,   const _Integer& v2) {return Float((fint)((v1.ValueF * (huge) ItoF(v2.Value)) >> 16), null);}
-	Float   operator*(const _Float& v1,   const _Float& v2  ) {return Float((fint)((v1.ValueF * (huge) v2.ValueF) >> 16), null);}
+	Integer operator*(const int v1,       const _Integer& v2) {return Integer(v1 * v2.Value, nullptr);}
+	Float   operator*(const int v1,       const _Float& v2  ) {return Float((fint)((ItoF(v1) * (huge) v2.ValueF) >> 16), nullptr);}
+	Integer operator*(const _Integer& v1, const int v2      ) {return Integer(v1.Value * v2, nullptr);}
+	Integer operator*(const _Integer& v1, const _Integer& v2) {return Integer(v1.Value * v2.Value, nullptr);}
+	Float   operator*(const _Integer& v1, const _Float& v2  ) {return Float((fint)((ItoF(v1.Value) * (huge) v2.ValueF) >> 16), nullptr);}
+	Float   operator*(const _Float& v1,   const int v2      ) {return Float((fint)((v1.ValueF * (huge) ItoF(v2)) >> 16), nullptr);}
+	Float   operator*(const _Float& v1,   const _Integer& v2) {return Float((fint)((v1.ValueF * (huge) ItoF(v2.Value)) >> 16), nullptr);}
+	Float   operator*(const _Float& v1,   const _Float& v2  ) {return Float((fint)((v1.ValueF * (huge) v2.ValueF) >> 16), nullptr);}
 	// DIV
-	Integer operator/(const int v1,       const IntegerX& v2) {return Integer((int)((v1 * (huge) v2.GetInverseFF()) >> 32), null);}
-	Float   operator/(const int v1,       const FloatX& v2  ) {return Float(v1 * v2.GetInverseF(), null);}
-	Integer operator/(const huge v1,      const IntegerX& v2) {return Integer((int)((v1 * v2.GetInverseFF()) >> 32), null);}
-	Float   operator/(const huge v1,      const FloatX& v2  ) {return Float((int)(v1 * v2.GetInverseF()), null);}
-	Integer operator/(const _Integer& v1, const IntegerX& v2) {return Integer((int)((v1.Value * (huge) v2.GetInverseFF()) >> 32), null);}
-	Float   operator/(const _Integer& v1, const FloatX& v2  ) {return Float(v1.Value * v2.GetInverseF(), null);}
-	Float   operator/(const _Float& v1,   const IntegerX& v2) {return Float((fint)((v1.ValueF * (huge) v2.GetInverseFF()) >> 32), null);}
-	Float   operator/(const _Float& v1,   const FloatX& v2  ) {return Float((fint)((v1.ValueF * (huge) v2.GetInverseF()) >> 16), null);}
+	Integer operator/(const int v1,       const IntegerX& v2) {return Integer((int)((v1 * (huge) v2.GetInverseFF()) >> 32), nullptr);}
+	Float   operator/(const int v1,       const FloatX& v2  ) {return Float(v1 * v2.GetInverseF(), nullptr);}
+	Integer operator/(const huge v1,      const IntegerX& v2) {return Integer((int)((v1 * v2.GetInverseFF()) >> 32), nullptr);}
+	Float   operator/(const huge v1,      const FloatX& v2  ) {return Float((int)(v1 * v2.GetInverseF()), nullptr);}
+	Integer operator/(const _Integer& v1, const IntegerX& v2) {return Integer((int)((v1.Value * (huge) v2.GetInverseFF()) >> 32), nullptr);}
+	Float   operator/(const _Integer& v1, const FloatX& v2  ) {return Float(v1.Value * v2.GetInverseF(), nullptr);}
+	Float   operator/(const _Float& v1,   const IntegerX& v2) {return Float((fint)((v1.ValueF * (huge) v2.GetInverseFF()) >> 32), nullptr);}
+	Float   operator/(const _Float& v1,   const FloatX& v2  ) {return Float((fint)((v1.ValueF * (huge) v2.GetInverseF()) >> 16), nullptr);}
 }

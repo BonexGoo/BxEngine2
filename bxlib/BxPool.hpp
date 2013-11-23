@@ -8,15 +8,15 @@ namespace BxPoolGlobal
 	{
 	public:
 		Unit* Next;
-		Unit() : Next(null) {}
+		Unit() : Next(nullptr) {}
 		virtual ~Unit()
 		{
-			Unit* CurNode = null;
+			Unit* CurNode = nullptr;
 			Unit* NextNode = Next;
 			while(CurNode = NextNode)
 			{
 				NextNode = CurNode->Next;
-				CurNode->Next = null;
+				CurNode->Next = nullptr;
 				delete CurNode;
 			}
 		}
@@ -36,15 +36,15 @@ namespace BxPoolGlobal
 	public:
 		Unit* _ref_ Data;
 		UnitLink* Next;
-		UnitLink() : Data(null), Next(null) {}
+		UnitLink() : Data(nullptr), Next(nullptr) {}
 		~UnitLink()
 		{
-			UnitLink* CurNode = null;
+			UnitLink* CurNode = nullptr;
 			UnitLink* NextNode = Next;
 			while(CurNode = NextNode)
 			{
 				NextNode = CurNode->Next;
-				CurNode->Next = null;
+				CurNode->Next = nullptr;
 				delete CurNode;
 			}
 		}
@@ -83,7 +83,7 @@ namespace BxPoolGlobal
 			}
 		}
 		BxAssert("BxPoolGlobal<해당 Ptr을 찾을 수 없습니다>", false);
-		return null;
+		return nullptr;
 	}
 }
 
@@ -106,7 +106,7 @@ public:
 			while(!(Ptr = List->Make()))
 			{
 				if(!List->Next && !(List->Next = new Unit))
-					return null;
+					return nullptr;
 				List = (Unit*) List->Next;
 			}
 			PoolFocus() = List;
@@ -174,7 +174,7 @@ private:
 		}
 		virtual bool Find(void* Ptr)
 		{
-			BxAssert("BxPool<Ptr이 null입니다>", Ptr != null);
+			BxAssert("BxPool<Ptr이 nullptr입니다>", Ptr != nullptr);
 			if(Ptr < ((TYPE*) &Data[0][0]) || ((TYPE*) &Data[0][0]) + MAX <= Ptr)
 				return false;
 			return true;
@@ -183,7 +183,7 @@ private:
 		{
 			TYPE* Ptr = Focus;
 			if(Count < MAX)
-				Focus = (++Count == MAX)? null : ((TYPE*) &Data[0][0]) + *((byte*) Focus);
+				Focus = (++Count == MAX)? nullptr : ((TYPE*) &Data[0][0]) + *((byte*) Focus);
 			return Ptr;
 		}
 		virtual void Free(void* Ptr)
@@ -193,7 +193,7 @@ private:
 			BxAssert("BxPool<부정확한 메모리주소입니다>", ((((byte*) Ptr) - &Data[0][0]) % sizeof(TYPE)) == 0);
 			if(Count-- < MAX)
 			{
-				BxAssert("BxPool<포커스정보가 유효하지 않습니다>", Focus != null);
+				BxAssert("BxPool<포커스정보가 유효하지 않습니다>", Focus != nullptr);
 				BxAssert("BxPool<포커스정보가 유효하지 않습니다>", ((TYPE*) &Data[0][0]) <= Focus && Focus < ((TYPE*) &Data[0][0]) + MAX);
 				BxAssert("BxPool<포커스정보가 유효하지 않습니다>", ((((byte*) Focus) - &Data[0][0]) % sizeof(TYPE)) == 0);
 				*((byte*) Ptr) = (((byte*) Focus) - &Data[0][0]) / sizeof(TYPE);
@@ -222,7 +222,7 @@ private:
 
 	global_func Unit* FindUnit(TYPE* Ptr)
 	{
-		if(!Ptr) return null;
+		if(!Ptr) return nullptr;
 		if(PoolFocus()->Find(Ptr))
 			return PoolFocus();
 		Unit* List = &PoolBegin();

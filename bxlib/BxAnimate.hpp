@@ -18,7 +18,7 @@ public:
 	*/
 	BxAnimate()
 	{
-		Begin[KEYWORD] = Begin[FORM] = Begin[OUTLINE] = null;
+		Begin[KEYWORD] = Begin[FORM] = Begin[OUTLINE] = nullptr;
 	}
 
 	/*!
@@ -34,7 +34,7 @@ public:
 	\param path : 경로
 	\return 저장된 경로스트링
 	*/
-	global_func BxString& SetResourcePath(string path = null)
+	global_func BxString& SetResourcePath(string path = nullptr)
 	{
 		global_data BxString Path("");
 		if(path) Path = path;
@@ -51,7 +51,7 @@ public:
 		byte* ResourcePtr = (byte*) resource;
 		if(BxUtilGlobal::LoadUint32(ResourcePtr) != *((uint*) "man1"))
 			return false;
-		Begin[KEYWORD] = Begin[FORM] = Begin[OUTLINE] = null;
+		Begin[KEYWORD] = Begin[FORM] = Begin[OUTLINE] = nullptr;
 		// Keyword
 		for(int g = 0; g < 2; ++g)
 		{
@@ -117,14 +117,14 @@ public:
 	id_object AddObject(string objectName, int x, int y)
 	{
 		BxAssert("BxAnimate", objectName);
-		_Object* FindObject = null;
+		_Object* FindObject = nullptr;
 		for(int i = 0; i < Object.Length(); ++i)
 			if(BxUtilGlobal::StrCmp(objectName, Object[i].Name) == same)
 			{
 				FindObject = &Object[i];
 				break;
 			}
-		if(!FindObject) return null;
+		if(!FindObject) return nullptr;
 		_Active* NewActive = BxNew_Param(_Active, FindObject);
 		NewActive->SetPos(x, y);
 		NewActive->Play(&Begin[KEYWORD]);
@@ -140,13 +140,13 @@ public:
 	void SubObject(id_object _inout_ objectID)
 	{
 		_Active* OneActive = (_Active*) objectID;
-		objectID = null;
+		objectID = nullptr;
 		for(int i = 0; i < AliveActive.Length(); ++i)
 		{
 			if(&AliveActive[i] == OneActive)
 			{
 				BxAssert("BxAnimate<해당 오브젝트의 생존여부가 틀립니다>", OneActive->IsAlive);
-				_Active* RemoveItem = null;
+				_Active* RemoveItem = nullptr;
 				AliveActive.Delete(i, &RemoveItem);
 				BxDelete(RemoveItem);
 				return;
@@ -157,7 +157,7 @@ public:
 			if(&DeadActive[i] == OneActive)
 			{
 				BxAssert("BxAnimate<해당 오브젝트의 생존여부가 틀립니다>", !OneActive->IsAlive);
-				_Active* RemoveItem = null;
+				_Active* RemoveItem = nullptr;
 				DeadActive.Delete(i, &RemoveItem);
 				BxDelete(RemoveItem);
 				return;
@@ -172,13 +172,13 @@ public:
 	{
 		for(int i = AliveActive.Length() - 1; 0 <= i; --i)
 		{
-			_Active* RemoveItem = null;
+			_Active* RemoveItem = nullptr;
 			AliveActive.Delete(i, &RemoveItem);
 			BxDelete(RemoveItem);
 		}
 		for(int i = DeadActive.Length() - 1; 0 <= i; --i)
 		{
-			_Active* RemoveItem = null;
+			_Active* RemoveItem = nullptr;
 			DeadActive.Delete(i, &RemoveItem);
 			BxDelete(RemoveItem);
 		}
@@ -235,7 +235,7 @@ public:
 	\param sortCB : 정렬용 콜백함수
 	\see DefaultSort, NextAnimate
 	*/
-	void DrawAnimate(BxDraw& draw, OnSort sortCB = null)
+	void DrawAnimate(BxDraw& draw, OnSort sortCB = nullptr)
 	{
 		if(sortCB)
 		for(int i = 0; i < AliveActive.Length() - 1; ++i)
@@ -254,7 +254,7 @@ public:
 			{
 				if(AliveActive[i].Play(&Begin[KEYWORD]))
 				{
-					_Active* MoveItem = null;
+					_Active* MoveItem = nullptr;
 					AliveActive.Delete(i, &MoveItem);
 					if(MoveItem) MoveItem->IsAlive = false;
 					DeadActive.Insert(LAST, MoveItem);
@@ -312,7 +312,7 @@ public:
 		{
 			if(AliveActive[i].Play(&Begin[KEYWORD]))
 			{
-				_Active* MoveItem = null;
+				_Active* MoveItem = nullptr;
 				AliveActive.Delete(i, &MoveItem);
 				if(MoveItem) MoveItem->IsAlive = false;
 				DeadActive.Insert(LAST, MoveItem);
@@ -336,7 +336,7 @@ public:
 		return same;
 	}
 
-	event SetEvent(string eventName, event* setValue = null)
+	event SetEvent(string eventName, event* setValue = nullptr)
 	{
 		BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 1);
 		while(Node)
@@ -356,7 +356,7 @@ public:
 		return Node->Event;
 	}
 
-	check SetCheck(string checkName, check* setValue = null)
+	check SetCheck(string checkName, check* setValue = nullptr)
 	{
 		BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 1);
 		while(Node)
@@ -373,7 +373,7 @@ public:
 		return Node->Check;
 	}
 
-	radio SetRadio(string radioName, radio* setValue = null)
+	radio SetRadio(string radioName, radio* setValue = nullptr)
 	{
 		BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 1);
 		while(Node)
@@ -382,7 +382,7 @@ public:
 			{
 				if(setValue)
 					if(Node->Radio = *setValue)
-						BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 0, null, Node);
+						BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 0, nullptr, Node);
 				return Node->Radio;
 			}
 			Node = Node->Link;
@@ -391,7 +391,7 @@ public:
 		return Node->Radio;
 	}
 
-	number SetNumber(string numberName, number* setValue = null)
+	number SetNumber(string numberName, number* setValue = nullptr)
 	{
 		BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 1);
 		while(Node)
@@ -408,7 +408,7 @@ public:
 		return Node->Number;
 	}
 
-	string SetString(string stringName, string* setValue = null)
+	string SetString(string stringName, string* setValue = nullptr)
 	{
 		BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&Begin[KEYWORD], 1);
 		while(Node)
@@ -483,7 +483,7 @@ protected:
 		};
 		_Keyword* _ref_ Link;
 	public:
-		_Keyword() : Type(keyword_null), Name(null), ParentID(0), Link(null) {}
+		_Keyword() : Type(keyword_null), Name(nullptr), ParentID(0), Link(nullptr) {}
 		~_Keyword()
 		{
 			Name = BxUtilGlobal::StrFree(Name);
@@ -510,12 +510,12 @@ protected:
 			}
 			GetKeyword(Begin, 0, this);
 		}
-		global_func _Keyword* GetKeyword(void** Begin, int Index, _Keyword* Insert = null, _Keyword* SetRadio = null)
+		global_func _Keyword* GetKeyword(void** Begin, int Index, _Keyword* Insert = nullptr, _Keyword* SetRadio = nullptr)
 		{
 			BxAnimate::_Keyword** KeywordBegin = (BxAnimate::_Keyword**) Begin;
 			if(Insert)
 			{
-				Insert->Link = null;
+				Insert->Link = nullptr;
 				if(*KeywordBegin)
 				{
 					_Keyword* Node = *KeywordBegin;
@@ -523,7 +523,7 @@ protected:
 					Node->Link = Insert;
 				}
 				else *KeywordBegin = Insert;
-				return null;
+				return nullptr;
 			}
 			else if(SetRadio)
 			{
@@ -535,9 +535,9 @@ protected:
 						Node->Radio = false;
 					Node = Node->Link;
 				}
-				return null;
+				return nullptr;
 			}
-			if(Index-- <= 0) return null;
+			if(Index-- <= 0) return nullptr;
 			_Keyword* Node = *KeywordBegin;
 			while(0 < Index-- && Node) Node = Node->Link;
 			BxAssert("BxAnimate", Node);
@@ -561,7 +561,7 @@ protected:
 			virtual BxDrawForm* GetForm()
 			{
 				BxAssert("BxAnimate<호출이 금지된 함수입니다>", false);
-				return null;
+				return nullptr;
 			}
 		};
 		union _Data
@@ -572,7 +572,7 @@ protected:
 				uint FileID;
 				BxImage* Image;
 			public:
-				_Sprite() : _DataClass(ClassType_Sprite), FileID(0), Image(null) {}
+				_Sprite() : _DataClass(ClassType_Sprite), FileID(0), Image(nullptr) {}
 				~_Sprite() {BxAssert("BxAnimate<소멸되는 타입이 다릅니다>", CType == ClassType_Sprite); BxDelete(Image);}
 			public:
 				virtual BxDrawForm* GetForm()
@@ -607,7 +607,7 @@ protected:
 				} *Unit;
 				uint Angle1024;
 			public:
-				_Gradation() : _DataClass(ClassType_Gradation), Width(0), Height(0), NumUnit(0), Unit(null), Angle1024(0) {}
+				_Gradation() : _DataClass(ClassType_Gradation), Width(0), Height(0), NumUnit(0), Unit(nullptr), Angle1024(0) {}
 				~_Gradation() {BxAssert("BxAnimate<소멸되는 타입이 다릅니다>", CType == ClassType_Gradation); BxDelete_Array(Unit);}
 			} *Gradation;
 			class _Stencil : public _DataClass
@@ -617,13 +617,13 @@ protected:
 				uint Height;
 				byte* Bits;
 			public:
-				_Stencil() : _DataClass(ClassType_Stencil), Width(0), Height(0), Bits(null) {}
+				_Stencil() : _DataClass(ClassType_Stencil), Width(0), Height(0), Bits(nullptr) {}
 				~_Stencil() {BxAssert("BxAnimate<소멸되는 타입이 다릅니다>", CType == ClassType_Stencil); BxDelete_Array(Bits);}
 			} *Stencil;
 		} Data;
 		_Form* _ref_ Link;
 	public:
-		_Form() : Type(form_null), Length(0), Link(null) {}
+		_Form() : Type(form_null), Length(0), Link(nullptr) {}
 		~_Form()
 		{
 			switch(Type)
@@ -677,12 +677,12 @@ protected:
 			}
 			GetFormData(Begin, 0, this);
 		}
-		global_func _DataClass* GetFormData(void** Begin, int Index, _Form* Insert = null)
+		global_func _DataClass* GetFormData(void** Begin, int Index, _Form* Insert = nullptr)
 		{
 			BxAnimate::_Form** FormBegin = (BxAnimate::_Form**) Begin;
 			if(Insert)
 			{
-				Insert->Link = null;
+				Insert->Link = nullptr;
 				if(*FormBegin)
 				{
 					_Form* Node = *FormBegin;
@@ -690,9 +690,9 @@ protected:
 					Node->Link = Insert;
 				}
 				else *FormBegin = Insert;
-				return null;
+				return nullptr;
 			}
-			if(Index-- <= 0) return null;
+			if(Index-- <= 0) return nullptr;
 			_Form* Node = *FormBegin;
 			while(Node)
 			{
@@ -709,7 +709,7 @@ protected:
 				Node = Node->Link;
 			}
 			BxAssert("BxAnimate", false);
-			return null;
+			return nullptr;
 		}
 	};
 	/// @endcond
@@ -752,7 +752,7 @@ protected:
 				point* Grid;
 				point* Detail;
 			public:
-				_Points() : _DataClass(ClassType_Points), NumPoint(0), Grid(null), Detail(null) {}
+				_Points() : _DataClass(ClassType_Points), NumPoint(0), Grid(nullptr), Detail(nullptr) {}
 				~_Points()
 				{
 					BxAssert("BxAnimate<소멸되는 타입이 다릅니다>", CType == ClassType_Points);
@@ -763,7 +763,7 @@ protected:
 		} Data;
 		_Outline* _ref_ Link;
 	public:
-		_Outline() : Type(outline_null), Length(0), Link(null) {}
+		_Outline() : Type(outline_null), Length(0), Link(nullptr) {}
 		~_Outline()
 		{
 			switch(Type)
@@ -826,22 +826,22 @@ protected:
 			}
 			GetOutlineData(Begin, 0, this);
 		}
-		global_func _DataClass* GetOutlineData(void** Begin, int Index, _Outline* Insert = null)
+		global_func _DataClass* GetOutlineData(void** Begin, int Index, _Outline* Insert = nullptr)
 		{
 			BxAnimate::_Outline** OutlineBegin = (BxAnimate::_Outline**) Begin;
 			if(Insert)
 			{
 				if(*OutlineBegin)
 				{
-					Insert->Link = null;
+					Insert->Link = nullptr;
 					_Outline* Node = *OutlineBegin;
 					while(Node->Link) Node = Node->Link;
 					Node->Link = Insert;
 				}
 				else *OutlineBegin = Insert;
-				return null;
+				return nullptr;
 			}
-			if(Index-- <= 0) return null;
+			if(Index-- <= 0) return nullptr;
 			_Outline* Node = *OutlineBegin;
 			while(Node)
 			{
@@ -861,7 +861,7 @@ protected:
 				Node = Node->Link;
 			}
 			BxAssert("BxAnimate", false);
-			return null;
+			return nullptr;
 		}
 	};
 	/// @endcond
@@ -873,7 +873,7 @@ protected:
 		string Name;
 		int NumAction;
 	public:
-		_Object() : Name(null), NumAction(0), Action(null) {}
+		_Object() : Name(nullptr), NumAction(0), Action(nullptr) {}
 		~_Object() {Name = BxUtilGlobal::StrFree(Name); BxDelete_Array(Action);}
 	public:
 		void Load(void* BeginArray[3], byte* _inout_ Resource)
@@ -892,7 +892,7 @@ protected:
 			BxAnimate::_Keyword* _ref_ Event;
 			int NumMotion;
 		public:
-			_Action() : Name(null), Event(null), NumMotion(0), Motion(null) {}
+			_Action() : Name(nullptr), Event(nullptr), NumMotion(0), Motion(nullptr) {}
 			~_Action() {Name = BxUtilGlobal::StrFree(Name); BxDelete_Array(Motion);}
 		public:
 			void Load(void* BeginArray[3], byte* _inout_ Resource)
@@ -981,7 +981,7 @@ protected:
 							}
 						} *Layer;
 					public:
-						_Frame() : _DataClass(ClassType_Frame), ShowEvent(null), TouchEvent(null), NumLayer(0), Layer(null) {}
+						_Frame() : _DataClass(ClassType_Frame), ShowEvent(nullptr), TouchEvent(nullptr), NumLayer(0), Layer(nullptr) {}
 						~_Frame() {BxAssert("BxAnimate<소멸되는 타입이 다릅니다>", CType == ClassType_Frame); BxDelete_Array(Layer);}
 					public:
 						void Load(void* BeginArray[3], byte* _inout_ Resource)
@@ -1034,7 +1034,7 @@ protected:
 							string String;
 						} Compare;
 					public:
-						_Keyword() : _DataClass(ClassType_Keyword), Keyword(null) {}
+						_Keyword() : _DataClass(ClassType_Keyword), Keyword(nullptr) {}
 						~_Keyword()
 						{
 							BxAssert("BxAnimate<소멸되는 타입이 다릅니다>", CType == ClassType_Keyword);
@@ -1185,7 +1185,7 @@ protected:
 		_Active(_Object* object) : Object(object), IsAlive(true)
 		{
 			EventCur = Object->Action[0].Event;
-			EventNext = null;
+			EventNext = nullptr;
 			ActionID = 0;
 			MotionID = 0;
 			CurrentAction = 0;
@@ -1212,13 +1212,13 @@ protected:
 				if(Object->Action[i].Event == EventNext)
 				{
 					EventCur = EventNext;
-					EventNext = null;
+					EventNext = nullptr;
 					ActionID = i;
 					MotionID = 0;
 					Init();
 					return true;
 				}
-			EventNext = null;
+			EventNext = nullptr;
 			return false;
 		}
 	public:
@@ -1286,7 +1286,7 @@ protected:
 							break;
 						case keyword_radio:
 							if(OneMotion.Data.Set->Keyword->Radio = OneMotion.Data.Set->Compare.Radio)
-								BxAnimate::_Keyword::GetKeyword(Begin, 0, null, OneMotion.Data.Set->Keyword);
+								BxAnimate::_Keyword::GetKeyword(Begin, 0, nullptr, OneMotion.Data.Set->Keyword);
 							break;
 						case keyword_number:
 							OneMotion.Data.Set->Keyword->Number = OneMotion.Data.Set->Compare.Number;
@@ -1483,7 +1483,7 @@ protected:
 					case motion_end:
 						if(!Push())
 						{
-							EventCur = null;
+							EventCur = nullptr;
 							return false;
 						}
 						break;
@@ -1492,7 +1492,7 @@ protected:
 							++MotionID;
 						break;
 					case motion_finish:
-						EventCur = null;
+						EventCur = nullptr;
 						return true;
 					default:
 						++MotionID;

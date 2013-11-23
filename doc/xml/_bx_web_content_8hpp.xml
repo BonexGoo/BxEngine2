@@ -6,101 +6,101 @@
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="444">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="445" relation="include">
-        </childnode>
-      </node>
-      <node id="447">
+      <node id="448">
         <label>stdarg.h</label>
       </node>
-      <node id="445">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="446" relation="include">
-        </childnode>
-        <childnode refid="448" relation="include">
-        </childnode>
-      </node>
-      <node id="451">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
+      <node id="453">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
         <childnode refid="445" relation="include">
         </childnode>
-        <childnode refid="444" relation="include">
-        </childnode>
-      </node>
-      <node id="446">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="447" relation="include">
-        </childnode>
-      </node>
-      <node id="448">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="449" relation="include">
-        </childnode>
-      </node>
-      <node id="443">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="444" relation="include">
-        </childnode>
-        <childnode refid="449" relation="include">
+        <childnode refid="451" relation="include">
         </childnode>
       </node>
       <node id="449">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="446" relation="include">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="450" relation="include">
         </childnode>
       </node>
       <node id="452">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="444" relation="include">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="445" relation="include">
         </childnode>
         <childnode refid="450" relation="include">
         </childnode>
       </node>
-      <node id="450">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="444" relation="include">
+      <node id="446">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="447" relation="include">
         </childnode>
-        <childnode refid="451" relation="include">
+        <childnode refid="449" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="448" relation="include">
         </childnode>
       </node>
       <node id="442">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="443" relation="include">
-        </childnode>
-        <childnode refid="450" relation="include">
-        </childnode>
-        <childnode refid="451" relation="include">
-        </childnode>
-      </node>
-      <node id="441">
         <label>BxWebContent.hpp</label>
         <link refid="BxWebContent.hpp"/>
-        <childnode refid="442" relation="include">
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
         </childnode>
         <childnode refid="452" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="454">
+      <node id="455">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
-      <node id="453">
+      <node id="454">
         <label>BxWebContent.hpp</label>
         <link refid="BxWebContent.hpp"/>
-        <childnode refid="454" relation="include">
+        <childnode refid="455" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -127,7 +127,7 @@
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Path;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>Size;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>Date;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CachePool()<sp/>:<sp/>Path(null),<sp/>Size(0),<sp/>Date(0)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CachePool()<sp/>:<sp/>Path(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Size(0),<sp/>Date(0)<sp/>{}</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~CachePool()<sp/>{Path<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Path);}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_bx_var_vector" kindref="compound" tooltip="vector식 가변배열 제공(BxVar와 동일인터페이스) ">BxVarVector&lt;CachePool, 64&gt;</ref><sp/><ref refid="class_bx_var_vector" kindref="compound" tooltip="vector식 가변배열 제공(BxVar와 동일인터페이스) ">CachePoolList</ref>;</highlight></codeline>
@@ -150,7 +150,7 @@
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_web_content" kindref="compound" tooltip="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</ref>()<sp/>:<sp/>ResponseBytes(null),<sp/>ResponseLength(0)<sp/>{}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_web_content" kindref="compound" tooltip="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</ref>()<sp/>:<sp/>ResponseBytes(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>ResponseLength(0)<sp/>{}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_bx_web_content" kindref="compound" tooltip="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</ref>()<sp/>{BxFree(ResponseBytes);}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48" refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;.webcontent_cache&quot;</highlight><highlight class="normal">;}</highlight></codeline>
@@ -161,12 +161,12 @@
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66" refid="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" kindref="member" tooltip="쿼리결과의 사이즈얻기(스트링) ">GetTextLength</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_util_global_1a39b70575037e5a54e79b304c82c1822a" kindref="member" tooltip="확장된 스트링길이 구하기(과  도 인식) ">BxUtilGlobal::StrLenEx</ref>((</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>ResponseBytes);}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78" refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain,<sp/>ushort<sp/>Port,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Path,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Arguments<sp/>=<sp/>null,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Timeout<sp/>=<sp/>-1,<sp/>callback_progress<sp/>Progress<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="78" refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain,<sp/>ushort<sp/>Port,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Path,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Arguments<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Timeout<sp/>=<sp/>-1,<sp/>callback_progress<sp/>Progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Timeout<sp/>&lt;<sp/>0)<sp/>Timeout<sp/>=<sp/>5000;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>소켓연결,<sp/>쿼리제작<sp/>및<sp/>전송</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_socket<sp/>Socket<sp/>=<sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member" tooltip="소켓ID 할당 ">BxCore::Socket::Create</ref>();</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(connect_connected<sp/>==<sp/><ref refid="namespace_bx_core_1_1_socket_1a0a3683eb9064e37b8459d1033209ba6c" kindref="member" tooltip="서버로 접속 ">BxCore::Socket::Connect</ref>(Socket,<sp/>Domain,<sp/>Port,<sp/>Timeout,<sp/>Progress))</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(connect_connected<sp/>==<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member" tooltip="서버로 접속 ">BxCore::Socket::Connect</ref>(Socket,<sp/>Domain,<sp/>Port,<sp/>Timeout,<sp/>Progress))</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>RequestChars[4096];</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1acb919367d4ddcaf86284146ce9237c2e" kindref="member" tooltip="스트링에 스트링기록 ">BxCore::Util::SnPrintf</ref>(RequestChars,<sp/>4096,</highlight></codeline>
@@ -311,13 +311,13 @@
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight></codeline>
-<codeline lineno="237" refid="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a1d82a5ce1039b42e7e5f07075be2dfea" kindref="member" tooltip="캐시파일 로드(없으면 생성) ">Cache</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain,<sp/>ushort<sp/>Port,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FilePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoLoad<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>callback_progress<sp/>Progress<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="237" refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" kindref="member" tooltip="캐시파일 로드(없으면 생성) ">Cache</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain,<sp/>ushort<sp/>Port,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FilePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoLoad<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>callback_progress<sp/>Progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheCountSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheCountSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheSizeSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheSizeSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"></highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시로드</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>CacheFileName(</highlight><highlight class="stringliteral">&quot;%s/%s&quot;</highlight><highlight class="normal">,<sp/>null,<sp/><ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>FilePath);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>CacheFileName(</highlight><highlight class="stringliteral">&quot;%s/%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>FilePath);</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FindedPos<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((FindedPos<sp/>=<sp/>CacheFileName.<ref refid="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" kindref="member" tooltip="글자 찾기 ">Find</ref>(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">))<sp/>!=<sp/>-1)</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CacheFileName[FindedPos]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;</highlight></codeline>
@@ -332,7 +332,7 @@
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>FileSize;</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/>(byte*)<sp/>BxAlloc(ResponseLength<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6eda45c6dfcd26226c824ac400fe1450" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes[ResponseLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -340,7 +340,7 @@
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -348,25 +348,25 @@
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"></highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>쿼리실행</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_bx_web_content_1a53adbac7a2b2d510ed3b3a4b7d27db26" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(Domain,<sp/>Port,<sp/>FilePath,<sp/>null,<sp/>-1,<sp/>Progress))</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(Domain,<sp/>Port,<sp/>FilePath,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>-1,<sp/>Progress))</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"></highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시풀<sp/>초기수집</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsInitPool()<sp/>&amp;&amp;<sp/>(CacheCountSumMax<sp/>!=<sp/>-1<sp/>||<sp/>CacheSizeSumMax<sp/>!=<sp/>-1))</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsInitPool()<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kindref="member" tooltip="파일검색 ">BxCore::File::SearchFiles</ref>(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>OnFileSearch,<sp/>null);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kindref="member" tooltip="파일검색 ">BxCore::File::SearchFiles</ref>(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>OnFileSearch,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시저장</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kindref="member" tooltip="폴더만들기 ">BxCore::File::MakeDirectory</ref>(CacheFileName.<ref refid="class_bx_string_1a29661787c9d623e0a18b2fdf7929ac3d" kindref="member" tooltip="경로에서 파일명을 제외한 패스명(/문자 포함) 추출 ">GetFilePath</ref>());</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>DownloadingFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1af3885eca99cefc3734065b3a2b199925" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(DownloadingFile,<sp/>&amp;ResponseLength,<sp/>4);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(DownloadingFile,<sp/>&amp;ResponseLength,<sp/>4);</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(DownloadingFile);</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>실제파일<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1af3885eca99cefc3734065b3a2b199925" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>삭제</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a284c71df33e997d3fd380700c748ba55" kindref="member" tooltip="파일삭제 ">BxCore::File::RemoveFile</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -374,7 +374,7 @@
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/>null;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"></highlight></codeline>
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시풀<sp/>운영</highlight><highlight class="normal"></highlight></codeline>
@@ -408,6 +408,6 @@
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="332"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine260ForMarmalade700/bxlib/BxWebContent.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxWebContent.hpp"/>
   </compounddef>
 </doxygen>

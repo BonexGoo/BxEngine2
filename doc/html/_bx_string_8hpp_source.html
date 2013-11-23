@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -478,11 +478,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
 <div class="line"><a name="l00595"></a><span class="lineno"><a class="code" href="class_bx_string.html#a17527cf4de9395d80887159fb8f82a2e">  595</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bx_string.html#a17527cf4de9395d80887159fb8f82a2e" title="vsprintf형태로 스트링 생성 ">FormatV</a>(<span class="keywordtype">string</span> format, va_list list)</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    {</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> TempLen = <a class="code" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd" title="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</a>(null, 0, format, list);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> TempLen = <a class="code" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd" title="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</a>(<span class="keyword">nullptr</span>, 0, format, list);</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxString&lt;Temp의 예상길이를 얻는데 실패하였습니다&gt;&quot;</span>, 0 &lt;= TempLen);</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        global_data <span class="keywordtype">int</span> TempSizeMax = 0;</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="keywordflow">if</span>(TempSizeMax &lt; TempLen + 1) TempSizeMax = TempLen + 1;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        string_rw Temp = null;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        string_rw Temp = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        BxSINGLETON(Temp, TempSizeMax);</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd" title="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</a>(Temp, TempLen + 1, format, list);</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <a class="code" href="class_bx_string.html#aa438d5974c167a3ed314777237575bb8" title="내용 비우기 ">Empty</a>();</div>
@@ -546,7 +546,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

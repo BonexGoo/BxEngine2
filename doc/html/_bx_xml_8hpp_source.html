@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -126,10 +126,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> FileLen = <a class="code" href="namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920" title="파일의 전체길이 얻기 ">BxCore::File::GetSize</a>(File);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            Xml = BxNew_Array(<span class="keywordtype">char</span>, FileLen + 1);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a6eda45c6dfcd26226c824ac400fe1450" title="파일에서 읽기 ">BxCore::File::Read</a>(File, (<span class="keywordtype">void</span>*) Xml, FileLen);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1" title="파일에서 읽기 ">BxCore::File::Read</a>(File, (<span class="keywordtype">void</span>*) Xml, FileLen);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            ((<span class="keywordtype">char</span>*) Xml)[FileLen] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            File = null;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            File = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        Mode = READ;</div>
@@ -140,12 +140,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        TagStack.Reset();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        BxDelete_Array(Xml);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Xml = null;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Xml = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Focus = 0;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        TagID = -1;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Mode = DEFINE;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NextTag(State* state = null)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NextTag(State* state = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        TagStack.Reset();</div>
@@ -228,7 +228,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span>(File)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            File = null;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            File = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        TagStack.Reset();</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        Mode = DEFINE;</div>
@@ -307,10 +307,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keywordtype">int</span> index)</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    {</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        Mode = DEFINE;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        Xml = null;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        Xml = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        Focus = 0;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        TagID = -1;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        File = null;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        File = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        IsWriting = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">void</span> Quit(<span class="keywordtype">int</span> index)</div>
@@ -319,7 +319,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span>(File)</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            File = null;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            File = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
@@ -342,7 +342,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            AttbValue = rhs.AttbValue;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordtype">int</span> Read(<span class="keywordtype">string</span> xml, <span class="keywordtype">int</span> focus, State* state = null)</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordtype">int</span> Read(<span class="keywordtype">string</span> xml, <span class="keywordtype">int</span> focus, State* state = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            TagName = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            Content = <span class="stringliteral">&quot;&quot;</span>;</div>
@@ -474,7 +474,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#af3885eca99cefc3734065b3a2b199925" title="파일로 쓰기 ">BxCore::File::Write</a>(file, (<span class="keywordtype">string</span>) Sum, Sum.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>());</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0" title="파일로 쓰기 ">BxCore::File::Write</a>(file, (<span class="keywordtype">string</span>) Sum, Sum.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>());</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">return</span> (0 &lt; Content.GetLength());</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        }</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        global_func <span class="keywordtype">void</span> AtoH(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>&amp; strValue, <a class="code" href="class_bx_var.html" title="가변배열 제공 ">BxVar&lt;byte&gt;</a>&amp; hexValue)</div>
@@ -512,7 +512,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

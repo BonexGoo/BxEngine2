@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.0</span>
+   &#160;<span id="projectnumber">2.6.1</span>
    </div>
   </td>
  </tr>
@@ -176,9 +176,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    global_func callback_event&amp; Callback() {global_data callback_event _Callback; <span class="keywordflow">return</span> _Callback;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    global_func <span class="keywordtype">bool</span> DownloadCache(<span class="keywordtype">string</span> url, <a class="code" href="class_bx_web_content.html" title="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</a> _out_ Content, <span class="keywordtype">int</span> _out_ FileSize, <span class="keywordtype">string</span> _out_ FilePath, <span class="keywordtype">bool</span> DoLoad)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> QueryArg(<span class="stringliteral">&quot;subject=%s&amp;file=%s&amp;version=%d&quot;</span>, null, (<span class="keywordtype">string</span>) BxGUI::Subject(), url, BxGUI::Version());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> QueryArg(<span class="stringliteral">&quot;subject=%s&amp;file=%s&amp;version=%d&quot;</span>, <span class="keyword">nullptr</span>, (<span class="keywordtype">string</span>) BxGUI::Subject(), url, BxGUI::Version());</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="class_bx_web_content.html" title="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</a> Web;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(Web.<a class="code" href="class_bx_web_content.html#a53adbac7a2b2d510ed3b3a4b7d27db26" title="HTTP쿼리실행 ">Query</a>(BxGUI::Domain(), 80, <span class="stringliteral">&quot;update/res_download_cdn.aspx&quot;</span>, QueryArg))</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(Web.<a class="code" href="class_bx_web_content.html#acd8d5ef69739c1368397f38de5889144" title="HTTP쿼리실행 ">Query</a>(BxGUI::Domain(), 80, <span class="stringliteral">&quot;update/res_download_cdn.aspx&quot;</span>, QueryArg))</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">string</span> QueryResult = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>((<span class="keywordtype">string</span>) Web.<a class="code" href="class_bx_web_content.html#a378dffe3154698e8b9f6fd67e2631050" title="쿼리결과 받기 ">GetBytes</a>(), Web.<a class="code" href="class_bx_web_content.html#a2c1ae12564be5f2b1880ad56966fd38c" title="쿼리결과의 사이즈얻기(스트링) ">GetTextLength</a>());</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="class_bx_var.html">BxVar&lt;BxString&gt;</a> QueryResults;</div>
@@ -186,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span>(QueryResults.Length() == 3 &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a9d45cf5f144f0aaa40fa169feb915ea1" title="스트링을 정수로 변환 ">BxUtilGlobal::AtoI</a>(QueryResults[0]) == 1)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                FileSize = <a class="code" href="namespace_bx_util_global.html#a9d45cf5f144f0aaa40fa169feb915ea1" title="스트링을 정수로 변환 ">BxUtilGlobal::AtoI</a>(QueryResults[1]);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> FilePathString(<span class="stringliteral">&quot;update/%s&quot;</span>, null, (<span class="keywordtype">string</span>) QueryResults[2]);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> FilePathString(<span class="stringliteral">&quot;update/%s&quot;</span>, <span class="keyword">nullptr</span>, (<span class="keywordtype">string</span>) QueryResults[2]);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                FilePath = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(FilePathString);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">if</span>(Content.Cache(BxGUI::Domain(), 80, FilePath, DoLoad))</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                {</div>
@@ -564,20 +564,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="keywordflow">if</span>(!TextElement || TextElement-&gt;GetType() != TypeText) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        va_list List;</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        va_start(List, TextName);</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        TextElement-&gt;AdjustFormat(<span class="keyword">true</span>, List, &amp;Map, null);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        TextElement-&gt;AdjustFormat(<span class="keyword">true</span>, List, &amp;Map, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        va_end(List);</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    }</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keywordtype">int</span> GetImageWidth(<span class="keywordtype">string</span> ImageName)</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    {</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        Element* ValueElement = *Map.Access(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>(<span class="stringliteral">&quot;%s.width&quot;</span>, null, ImageName));</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        Element* ValueElement = *Map.Access(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>(<span class="stringliteral">&quot;%s.width&quot;</span>, <span class="keyword">nullptr</span>, ImageName));</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="keywordflow">return</span> (ValueElement)? ValueElement-&gt;GetValue() : 0;</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    }</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordtype">int</span> GetImageHeight(<span class="keywordtype">string</span> ImageName)</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        Element* ValueElement = *Map.Access(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>(<span class="stringliteral">&quot;%s.height&quot;</span>, null, ImageName));</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        Element* ValueElement = *Map.Access(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>(<span class="stringliteral">&quot;%s.height&quot;</span>, <span class="keyword">nullptr</span>, ImageName));</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="keywordflow">return</span> (ValueElement)? ValueElement-&gt;GetValue() : 0;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    }</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
@@ -585,7 +585,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    {</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keywordflow">if</span>(IsValidDownload())</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Layout.Length(); ++i)</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            Layout[i].Rendering(Map, Draw, BxDrawGlobal::XYWH(0, 0, Draw.Width(), Draw.Height()));</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            Layout[i].Rendering(Map, Draw, <a class="code" href="namespace_bx_draw_global.html#a5b4308be171bbaea41e7ec41fe575574" title="영역제작 ">BxDrawGlobal::XYWH</a>(0, 0, Draw.<a class="code" href="class_bx_draw.html#a629c65ebda9be9d1dd7c507a30557eb8" title="현재 너비얻기 ">Width</a>(), Draw.<a class="code" href="class_bx_draw.html#a378f6d7988a5a667fd3e720c25e6a297" title="현재 높이얻기 ">Height</a>()));</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    }</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordtype">bool</span> OnEvent(<span class="keyword">const</span> <a class="code" href="structsysevent.html" title="OnEvent()의 이벤트파라미터 ">sysevent</a>&amp; Event)</div>
@@ -659,12 +659,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        ElementTree* _ref_ Parent;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <a class="code" href="class_bx_var.html" title="가변배열 제공 ">BxVar&lt;ElementTree&gt;</a> Child;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        ElementTree() : Parent(null) {}</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        ElementTree() : Parent(<span class="keyword">nullptr</span>) {}</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keyword">virtual</span> ~ElementTree()</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        {</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Child.Length(); ++i)</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;            {</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                ElementTree* OldData = null;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                ElementTree* OldData = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                Child.RemoveData(i, &amp;OldData);</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                BxDelete(OldData);</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            }</div>
@@ -680,13 +680,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <span class="keywordtype">void</span> PreProcessingTree()</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        {</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keywordflow">if</span>(Parent) PreProcessing(null, null);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keywordflow">if</span>(Parent) PreProcessing(<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Child.Length(); ++i)</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                Child[i].PreProcessingTree();</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        }</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordtype">void</span> ProcessingTree()</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        {</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            <span class="keywordflow">if</span>(Parent) Processing(null, null);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            <span class="keywordflow">if</span>(Parent) Processing(<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Child.Length(); ++i)</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                Child[i].ProcessingTree();</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        }</div>
@@ -727,7 +727,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;            uint ArgbGen;</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;            Color() : Name(null), Argb(0xFF000000), ArgbGen(0xFF000000) {Type = TypeColor;}</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;            Color() : Name(<span class="keyword">nullptr</span>), Argb(0xFF000000), ArgbGen(0xFF000000) {Type = TypeColor;}</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;            <span class="keyword">virtual</span> ~Color()</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            {</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -771,7 +771,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            Element::VarPtr _ref_ ColorValues;</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            Edge() : Name(null), Colors(null) {Type = TypeEdge;}</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            Edge() : Name(<span class="keyword">nullptr</span>), Colors(<span class="keyword">nullptr</span>) {Type = TypeEdge;}</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            <span class="keyword">virtual</span> ~Edge()</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            {</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -808,7 +808,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            <span class="keywordtype">string</span> FilePath;</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            <a class="code" href="class_bx_image.html" title="이미지 운영 ">BxImage</a> CacheImage;</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;            Image() : Name(null), Url(null), FileSize(0), FilePath(null) {Type = TypeImage;}</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;            Image() : Name(<span class="keyword">nullptr</span>), Url(<span class="keyword">nullptr</span>), FileSize(0), FilePath(<span class="keyword">nullptr</span>) {Type = TypeImage;}</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;            <span class="keyword">virtual</span> ~Image()</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;            {</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -849,25 +849,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                }</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                <span class="keywordflow">else</span> IsValidDownload() = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                <span class="comment">// 가로길이 추가등록</span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> WidthName(<span class="stringliteral">&quot;%s.width&quot;</span>, null, (<span class="keywordtype">string</span>) Name);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> WidthName(<span class="stringliteral">&quot;%s.width&quot;</span>, <span class="keyword">nullptr</span>, (<span class="keywordtype">string</span>) Name);</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxGUI&lt;중복된 컨텐트명입니다&gt;&quot;</span>, !Map-&gt;Access(WidthName));</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                Element* NewData1 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Width() : 0);</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                Elements-&gt;Insert(LAST, (*Map)[WidthName] = NewData1);</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                NewData1-&gt;SetStep(StepNamed);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                NewData1-&gt;PreProcessing(null, null);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                NewData1-&gt;PreProcessing(<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                <span class="comment">// 세로길이 추가등록</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> HeightName(<span class="stringliteral">&quot;%s.height&quot;</span>, null, (<span class="keywordtype">string</span>) Name);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> HeightName(<span class="stringliteral">&quot;%s.height&quot;</span>, <span class="keyword">nullptr</span>, (<span class="keywordtype">string</span>) Name);</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxGUI&lt;중복된 컨텐트명입니다&gt;&quot;</span>, !Map-&gt;Access(HeightName));</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                Element* NewData2 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Height() : 0);</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;                Elements-&gt;Insert(LAST, (*Map)[HeightName] = NewData2);</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;                NewData2-&gt;SetStep(StepNamed);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;                NewData2-&gt;PreProcessing(null, null);</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;                NewData2-&gt;PreProcessing(<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            }</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> Filling(<a class="code" href="class_bx_draw.html" title="OpenGL/SW랜더링기반 그리기도구 ">BxDraw</a>&amp; Draw, <a class="code" href="structrect.html" title="rect구조체 : l, t, r, b ">rect</a> Rect)</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;            {</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                <span class="keywordflow">if</span>(CacheImage.IsExist())</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;                <span class="keywordflow">try</span>(Draw, CLIP(Rect))</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                    Draw.<a class="code" href="class_bx_draw.html#a58dd427c33d344d7c302338fbbdc9491" title="형식없는 기본출력 ">Area</a>(0, 0, <a class="code" href="namespace_bx_draw_global.html#aab314a4ab2685e289eb44379a2d3ce84" title="스타일-채우기 ">BxDrawGlobal::FORM</a>(&amp;CacheImage));</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                    Draw.<a class="code" href="class_bx_draw.html#a58dd427c33d344d7c302338fbbdc9491" title="형식없는 기본출력 ">Area</a>(0, 0, <a class="code" href="namespace_bx_draw_global.html#a50883fceecae4f90627db55e7de4c141" title="스타일-채우기 ">BxDrawGlobal::FORM</a>(&amp;CacheImage));</div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            }</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        };</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keyword">class </span>Sprite : <span class="keyword">public</span> Element</div>
@@ -878,7 +878,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;            Element::VarPtr _ref_ ImageValues;</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            Sprite() : Name(null), Images(null), Delay(0) {Type = TypeSprite;}</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            Sprite() : Name(<span class="keyword">nullptr</span>), Images(<span class="keyword">nullptr</span>), Delay(0) {Type = TypeSprite;}</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keyword">virtual</span> ~Sprite()</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            {</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -917,7 +917,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            <span class="keywordtype">string</span> FilePath;</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            id_font CacheFont;</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;            Font() : Name(null), Size(0), Url(null), FileSize(0), FilePath(null), CacheFont(null) {Type = TypeFont;}</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;            Font() : Name(<span class="keyword">nullptr</span>), Size(0), Url(<span class="keyword">nullptr</span>), FileSize(0), FilePath(<span class="keyword">nullptr</span>), CacheFont(<span class="keyword">nullptr</span>) {Type = TypeFont;}</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            <span class="keyword">virtual</span> ~Font()</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            {</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -961,8 +961,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            ReserveCode VectorValue;</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            ReserveCode LineValue;</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            Text() : Name(null), Format(null), Font(null), Color(null), Vector(null), Line(null), FormatGen(null),</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                FontValue(null), ColorValue(null), VectorValue(CodeNull) {Type = TypeText;}</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            Text() : Name(<span class="keyword">nullptr</span>), Format(<span class="keyword">nullptr</span>), Font(<span class="keyword">nullptr</span>), Color(<span class="keyword">nullptr</span>), Vector(<span class="keyword">nullptr</span>), Line(<span class="keyword">nullptr</span>), FormatGen(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                FontValue(<span class="keyword">nullptr</span>), ColorValue(<span class="keyword">nullptr</span>), VectorValue(CodeNull) {Type = TypeText;}</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keyword">virtual</span> ~Text()</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            {</div>
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -996,7 +996,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                FormatGen = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(FormatGen);</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                <span class="keywordflow">if</span>(dosprint)</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                {</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">int</span> FormatGenLen = <a class="code" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd" title="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</a>(null, 0, Format, list);</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">int</span> FormatGenLen = <a class="code" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd" title="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</a>(<span class="keyword">nullptr</span>, 0, Format, list);</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                    BxAssert(<span class="stringliteral">&quot;BxGUI&lt;FormatGen의 예상길이를 얻는데 실패하였습니다&gt;&quot;</span>, 0 &lt;= FormatGenLen);</div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                    FormatGen = <a class="code" href="namespace_bx_util_global.html#ad27a75813b9a9bf993a96c31fa738b63" title="스트링 할당 ">BxUtilGlobal::StrAlloc</a>(FormatGenLen);</div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd" title="스트링에 va_list식 스트링기록 ">BxCore::Util::VsnPrintf</a>((string_rw) FormatGen, FormatGenLen + 1, Format, list);</div>
@@ -1006,24 +1006,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;                {</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;                    <span class="keyword">const</span> <a class="code" href="structsize.html" title="size구조체 : w, h ">size</a> TextSize = (FontValue-&gt;GetCacheFont())? <a class="code" href="namespace_bx_core_1_1_font.html#a3e241c20e4073cadd5e3e25add4293e3" title="사이즈 얻기 ">BxCore::Font::GetSize</a>(FontValue-&gt;GetCacheFont(), FormatGen) : WH(0, 0);</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                    <span class="comment">// 가로길이 추가등록</span></div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> WidthName(<span class="stringliteral">&quot;%s.width&quot;</span>, null, (<span class="keywordtype">string</span>) Name);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> WidthName(<span class="stringliteral">&quot;%s.width&quot;</span>, <span class="keyword">nullptr</span>, (<span class="keywordtype">string</span>) Name);</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;                    <span class="keywordflow">if</span>(Map-&gt;Access(WidthName)) (*Map-&gt;Access(WidthName))-&gt;SetValue(TextSize.w);</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(Elements)</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                    {</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                        Element* NewData = BxNew_Param(Element, TextSize.w);</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                        Elements-&gt;Insert(LAST, (*Map)[WidthName] = NewData);</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                        NewData-&gt;SetStep(StepNamed);</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                        NewData-&gt;PreProcessing(null, null);</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                        NewData-&gt;PreProcessing(<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                    }</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                    <span class="comment">// 세로길이 추가등록</span></div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> HeightName(<span class="stringliteral">&quot;%s.height&quot;</span>, null, (<span class="keywordtype">string</span>) Name);</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> HeightName(<span class="stringliteral">&quot;%s.height&quot;</span>, <span class="keyword">nullptr</span>, (<span class="keywordtype">string</span>) Name);</div>
 <div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                    <span class="keywordflow">if</span>(Map-&gt;Access(HeightName)) (*Map-&gt;Access(HeightName))-&gt;SetValue(TextSize.h);</div>
 <div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(Elements)</div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                    {</div>
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                        Element* NewData = BxNew_Param(Element, TextSize.h);</div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                        Elements-&gt;Insert(LAST, (*Map)[HeightName] = NewData);</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                        NewData-&gt;SetStep(StepNamed);</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                        NewData-&gt;PreProcessing(null, null);</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                        NewData-&gt;PreProcessing(<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                    }</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                }</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;            }</div>
@@ -1073,23 +1073,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                        <span class="keywordflow">switch</span>(VectorValue)</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                        {</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad1: xy = BxDrawGlobal::XY(0, RectHeight - size::max); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad2: xy = BxDrawGlobal::XY(RectWidth / 2 - size::half, RectHeight - size::max); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad3: xy = BxDrawGlobal::XY(RectWidth - size::max, RectHeight - size::max); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad4: xy = BxDrawGlobal::XY(0, RectHeight / 2 - size::half); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad5: xy = BxDrawGlobal::XY(RectWidth / 2 - size::half, RectHeight / 2 - size::half); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad6: xy = BxDrawGlobal::XY(RectWidth - size::max, RectHeight / 2 - size::half); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad7: xy = BxDrawGlobal::XY(0, 0); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad8: xy = BxDrawGlobal::XY(RectWidth / 2 - size::half, 0); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad9: xy = BxDrawGlobal::XY(RectWidth - size::max, 0); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad1: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(0, RectHeight - size::max); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad2: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(RectWidth / 2 - size::half, RectHeight - size::max); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad3: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(RectWidth - size::max, RectHeight - size::max); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad4: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(0, RectHeight / 2 - size::half); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad5: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(RectWidth / 2 - size::half, RectHeight / 2 - size::half); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad6: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(RectWidth - size::max, RectHeight / 2 - size::half); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad7: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(0, 0); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad8: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(RectWidth / 2 - size::half, 0); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                        <span class="keywordflow">case</span> CodeNumpad9: xy = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(RectWidth - size::max, 0); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;                        }</div>
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_font.html#a08159673a1a3269082f9a3a1bc90eb28" title="스트링 출력 ">BxCore::Font::Draw</a>(FontValue-&gt;GetCacheFont(), FormatGen,</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;                            BxDrawGlobal::XY(Draw.TranslateX() + xy.x, Draw.TranslateY() + xy.y), size::full(),</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;                            <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(Draw.<a class="code" href="class_bx_draw.html#ad633ce6baf25d6c93dde6669d4093a3e" title="현재 X축 기준좌표얻기 ">TranslateX</a>() + xy.x, Draw.<a class="code" href="class_bx_draw.html#a21597dea9cb25b209963d30307b31baf" title="현재 Y축 기준좌표얻기 ">TranslateY</a>() + xy.y), size::full(),</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;                            ColorValue-&gt;GetArgb() &amp; 0x00FFFFFF, ColorValue-&gt;GetArgb() &gt;&gt; 24);</div>
 <div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;                    }</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(LineValue == CodeMulti)</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_font.html#a08159673a1a3269082f9a3a1bc90eb28" title="스트링 출력 ">BxCore::Font::Draw</a>(FontValue-&gt;GetCacheFont(), FormatGen,</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;                            BxDrawGlobal::XY(Draw.TranslateX(), Draw.TranslateY()), BxDrawGlobal::WH(RectWidth, RectHeight),</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;                            <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(Draw.<a class="code" href="class_bx_draw.html#ad633ce6baf25d6c93dde6669d4093a3e" title="현재 X축 기준좌표얻기 ">TranslateX</a>(), Draw.<a class="code" href="class_bx_draw.html#a21597dea9cb25b209963d30307b31baf" title="현재 Y축 기준좌표얻기 ">TranslateY</a>()), <a class="code" href="namespace_bx_draw_global.html#a573d9a33f68854689c5a94931ef40d64" title="크기제작 ">BxDrawGlobal::WH</a>(RectWidth, RectHeight),</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;                            ColorValue-&gt;GetArgb() &amp; 0x00FFFFFF, ColorValue-&gt;GetArgb() &gt;&gt; 24);</div>
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;                }</div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;            }</div>
@@ -1108,7 +1108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;            Element::VarPtr _ref_ ImageValues;</div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;            Element::VarPtr _ref_ EdgeValues;</div>
 <div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;            Button() : Name(null), Images(null), Edges(null), Event(null), Link(null), EventAreaGen(rect::zero()), IsClickedGen(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;            Button() : Name(<span class="keyword">nullptr</span>), Images(<span class="keyword">nullptr</span>), Edges(<span class="keyword">nullptr</span>), Event(<span class="keyword">nullptr</span>), Link(<span class="keyword">nullptr</span>), EventAreaGen(rect::zero()), IsClickedGen(<span class="keyword">false</span>)</div>
 <div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;            {Type = TypeButton;}</div>
 <div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;            <span class="keyword">virtual</span> ~Button()</div>
 <div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;            {</div>
@@ -1163,10 +1163,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;                        OneSize.w = OneImage-&gt;CacheImage.Width();</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                        OneSize.h = OneImage-&gt;CacheImage.Height();</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                    }</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                    Rect.l = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f" title="최대값 구하기 ">BxUtilGlobal::Max</a>(Rect.l + Draw.TranslateX(), BxDrawGlobal::_DrawOption::CurClipRect().l);</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                    Rect.t = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f" title="최대값 구하기 ">BxUtilGlobal::Max</a>(Rect.t + Draw.TranslateY(), BxDrawGlobal::_DrawOption::CurClipRect().t);</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;                    Rect.r = <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e" title="최소값 구하기 ">BxUtilGlobal::Min</a>(Rect.r + Draw.TranslateX(), BxDrawGlobal::_DrawOption::CurClipRect().r);</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;                    Rect.b = <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e" title="최소값 구하기 ">BxUtilGlobal::Min</a>(Rect.b + Draw.TranslateY(), BxDrawGlobal::_DrawOption::CurClipRect().b);</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                    Rect.l = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f" title="최대값 구하기 ">BxUtilGlobal::Max</a>(Rect.l + Draw.<a class="code" href="class_bx_draw.html#ad633ce6baf25d6c93dde6669d4093a3e" title="현재 X축 기준좌표얻기 ">TranslateX</a>(), BxDrawGlobal::_DrawOption::CurClipRect().l);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                    Rect.t = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f" title="최대값 구하기 ">BxUtilGlobal::Max</a>(Rect.t + Draw.<a class="code" href="class_bx_draw.html#a21597dea9cb25b209963d30307b31baf" title="현재 Y축 기준좌표얻기 ">TranslateY</a>(), BxDrawGlobal::_DrawOption::CurClipRect().t);</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;                    Rect.r = <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e" title="최소값 구하기 ">BxUtilGlobal::Min</a>(Rect.r + Draw.<a class="code" href="class_bx_draw.html#ad633ce6baf25d6c93dde6669d4093a3e" title="현재 X축 기준좌표얻기 ">TranslateX</a>(), BxDrawGlobal::_DrawOption::CurClipRect().r);</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;                    Rect.b = <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e" title="최소값 구하기 ">BxUtilGlobal::Min</a>(Rect.b + Draw.<a class="code" href="class_bx_draw.html#a21597dea9cb25b209963d30307b31baf" title="현재 Y축 기준좌표얻기 ">TranslateY</a>(), BxDrawGlobal::_DrawOption::CurClipRect().b);</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;                    EventAreaGen.r = (EventAreaGen.l = Rect.l) + <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e" title="최소값 구하기 ">BxUtilGlobal::Min</a>(Rect.r - Rect.l, OneSize.w);</div>
 <div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;                    EventAreaGen.b = (EventAreaGen.t = Rect.t) + <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e" title="최소값 구하기 ">BxUtilGlobal::Min</a>(Rect.b - Rect.t, OneSize.h);</div>
 <div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;                }</div>
@@ -1202,7 +1202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;            Element* _ref_ TextValue;</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;            Element::VarPtr _ref_ ColorValues;</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;            EditBox() : Name(null), Text(null), Colors(null), TextValue(null) {Type = TypeEditBox;}</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;            EditBox() : Name(<span class="keyword">nullptr</span>), Text(<span class="keyword">nullptr</span>), Colors(<span class="keyword">nullptr</span>), TextValue(<span class="keyword">nullptr</span>) {Type = TypeEditBox;}</div>
 <div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;            <span class="keyword">virtual</span> ~EditBox()</div>
 <div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;            {</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -1242,7 +1242,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;        {</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Elements.Length(); ++i)</div>
 <div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;            {</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;                Element* OldData = null;</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;                Element* OldData = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;                Elements.RemoveData(i, &amp;OldData);</div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;                BxDelete(OldData);</div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;            }</div>
@@ -1355,7 +1355,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;            ReserveCode PosValue;</div>
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;            Element* _ref_ FillValue;</div>
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;            Split() : Name(null), Pos(null), Size(null), Fill(null), AddSize1024Gen(0), PosValue(CodeNull), FillValue(null) {Type = TypeSplit;}</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;            Split() : Name(<span class="keyword">nullptr</span>), Pos(<span class="keyword">nullptr</span>), Size(<span class="keyword">nullptr</span>), Fill(<span class="keyword">nullptr</span>), AddSize1024Gen(0), PosValue(CodeNull), FillValue(<span class="keyword">nullptr</span>) {Type = TypeSplit;}</div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;            <span class="keyword">virtual</span> ~Split()</div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;            {</div>
 <div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -1432,7 +1432,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;            Element* _ref_ FillValue;</div>
 <div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;            Outline() : Name(null), Size(null), Fill(null), FillValue(null) {Type = TypeOutline;}</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;            Outline() : Name(<span class="keyword">nullptr</span>), Size(<span class="keyword">nullptr</span>), Fill(<span class="keyword">nullptr</span>), FillValue(<span class="keyword">nullptr</span>) {Type = TypeOutline;}</div>
 <div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;            <span class="keyword">virtual</span> ~Outline()</div>
 <div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;            {</div>
 <div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -1504,7 +1504,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;            Element* _ref_ FillValue;</div>
 <div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;            Extra() : Name(null), Width(null), Height(null), Fill(null), FillValue(null) {Type = TypeExtra;}</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;            Extra() : Name(<span class="keyword">nullptr</span>), Width(<span class="keyword">nullptr</span>), Height(<span class="keyword">nullptr</span>), Fill(<span class="keyword">nullptr</span>), FillValue(<span class="keyword">nullptr</span>) {Type = TypeExtra;}</div>
 <div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;            <span class="keyword">virtual</span> ~Extra()</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;            {</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -1593,9 +1593,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;            ReserveCode ScrollValue;</div>
 <div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;            Element* _ref_ FillValue;</div>
 <div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;            View() : Name(null), PosX(null), PosY(null), Width(null), Height(null), Scroll(null), Fill(null),</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;            View() : Name(<span class="keyword">nullptr</span>), PosX(<span class="keyword">nullptr</span>), PosY(<span class="keyword">nullptr</span>), Width(<span class="keyword">nullptr</span>), Height(<span class="keyword">nullptr</span>), Scroll(<span class="keyword">nullptr</span>), Fill(<span class="keyword">nullptr</span>),</div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;                AddPosXGen(0), AddPosYGen(0), IsVisibleGen(<span class="keyword">false</span>), OutSizeGen(size::zero()), InSizeGen(size::zero()),</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;                PosXValue(CodeNull), PosYValue(CodeNull), ScrollValue(CodeNull), FillValue(null) {Type = TypeView;}</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;                PosXValue(CodeNull), PosYValue(CodeNull), ScrollValue(CodeNull), FillValue(<span class="keyword">nullptr</span>) {Type = TypeView;}</div>
 <div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;            <span class="keyword">virtual</span> ~View()</div>
 <div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;            {</div>
 <div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;                Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
@@ -1777,7 +1777,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 8 2013 00:09:44 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 04:19:48 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

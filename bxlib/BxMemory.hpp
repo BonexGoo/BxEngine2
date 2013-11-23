@@ -47,7 +47,7 @@
 \brief 메모리 기본소멸
 \param PTR : 해당 클래스타입 포인터
 */
-#define BxDelete(PTR)                      do{BxMemory::_Delete(PTR, 1, __FILE__, __LINE__, __FUNCTION__); PTR = null;} while(false)
+#define BxDelete(PTR)                      do{BxMemory::_Delete(PTR, 1, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
 
 /*!
 \defgroup BxDelete_ByType
@@ -56,7 +56,7 @@
 \param TYPE : 형변환시킬 클래스타입
 \param PTR : 해당 포인터
 */
-#define BxDelete_ByType(TYPE, PTR)         do{BxMemory::_Delete((TYPE*) PTR, 1, __FILE__, __LINE__, __FUNCTION__); PTR = null;} while(false)
+#define BxDelete_ByType(TYPE, PTR)         do{BxMemory::_Delete((TYPE*) PTR, 1, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
 
 /*!
 \defgroup BxDelete_Array
@@ -64,7 +64,7 @@
 \brief 메모리 배열소멸
 \param PTR : 해당 클래스타입 배열포인터
 */
-#define BxDelete_Array(PTR)                do{BxMemory::_DeleteArray(PTR, 2, __FILE__, __LINE__, __FUNCTION__); PTR = null;} while(false)
+#define BxDelete_Array(PTR)                do{BxMemory::_DeleteArray(PTR, 2, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
 
 /*!
 \defgroup BxDelete_ArrayByType
@@ -73,7 +73,7 @@
 \param TYPE : 형변환시킬 클래스타입
 \param PTR : 해당 배열포인터
 */
-#define BxDelete_ArrayByType(TYPE, PTR)    do{BxMemory::_DeleteArray((TYPE*) PTR, 2, __FILE__, __LINE__, __FUNCTION__); PTR = null;} while(false)
+#define BxDelete_ArrayByType(TYPE, PTR)    do{BxMemory::_DeleteArray((TYPE*) PTR, 2, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
 
 /*!
 \defgroup BxAlloc
@@ -90,22 +90,7 @@
 \brief 메모리덤프 소명
 \param PTR : 메모리덤프 포인터
 */
-#define BxFree(PTR)                        do{BxMemory::_Free(PTR, 0, __FILE__, __LINE__, __FUNCTION__); PTR = null;} while(false)
-
-/// @cond SECTION_NAME
-#if !defined(IW_STD_NEW_H) && !defined(__PLACEMENT_NEW_INLINE)
-#define IW_STD_NEW_H
-#define __PLACEMENT_NEW_INLINE
-inline void* operator new(uint, void* ptr) {return ptr;}
-inline void* operator new[](uint, void* ptr) {return ptr;}
-inline void operator delete(void*, void*) {}
-inline void operator delete[](void*, void*) {}
-	#if defined _MSC_VER && _MSC_VER <= 1200
-	void* operator new[](size_t);
-	void operator delete[](void*);
-	#endif
-#endif
-/// @endcond
+#define BxFree(PTR)                        do{BxMemory::_Free(PTR, 0, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
 
 /// @cond SECTION_NAME
 class BxMemory
@@ -125,7 +110,7 @@ public:
 	template<typename TYPE>
 	global_func void _Delete(const TYPE* ptr, int type, string file, const int line, string func)
 	{
-		if(ptr == null) return;
+		if(ptr == nullptr) return;
 		ptr->~TYPE();
 		_Free(ptr, type, file, line, func);
 	}
@@ -133,7 +118,7 @@ public:
 	template<typename TYPE>
 	global_func void _DeleteArray(const TYPE* ptr, int type, string file, const int line, string func)
 	{
-		if(ptr == null) return;
+		if(ptr == nullptr) return;
 		const uint* DataArray = &((const uint*) ptr)[-1];
 		for(uint i = 0, count = DataArray[0]; i < count; ++i)
 			ptr[i].~TYPE();
@@ -149,7 +134,7 @@ public:
 
 	global_func inline void _Free(const void* ptr, int type, string file, const int line, string func)
 	{
-		if(ptr == null) return;
+		if(ptr == nullptr) return;
 		LogMethod()(1, file, line, func);
 		FreeMethod()(ptr, type);
 	}
@@ -176,11 +161,11 @@ public:
 	template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3, typename PARAM4, typename PARAM5>
 	global_func TYPE* _NewArrayParam(const uint count, int type, string file, const int line, string func, PARAM1 value1, PARAM2 value2, PARAM3 value3, PARAM4 value4, PARAM4 value5)
 	{BXMEMORY_ARRAY_CORE(value1, value2, value3, value4, value5);}
-	global_func inline bool DoMemLogger() {return (DLLHandle() != null);}
+	global_func inline bool DoMemLogger() {return (DLLHandle() != nullptr);}
 
 private:
 	template<typename TYPE> global_func inline TYPE* GetModel() {global_data TYPE Type; return &Type;}
-	global_func inline id_library& DLLHandle() {global_data id_library Handle = null; return Handle;}
+	global_func inline id_library& DLLHandle() {global_data id_library Handle = nullptr; return Handle;}
 	typedef int (*LogType)(int type, string file, int line, string func);
 	typedef void* (*MakeType)(uint size, int type);
 	typedef void (*FreeType)(const void* ptr, int type);
@@ -228,10 +213,10 @@ private:
 				else BxCore::Util::Free(Pool);
 			}
 		#endif
-		if(DLLHandle() != null)
+		if(DLLHandle() != nullptr)
 		{
 			BxCore::Library::Close(DLLHandle());
-			DLLHandle() = null;
+			DLLHandle() = nullptr;
 		}
 		LogMethod() = NullLog;
 		MakeMethod() = MakePack;
@@ -291,7 +276,7 @@ private:
 	global_func inline PackState& Pack(const int index) {global_data PackState _Pack[PackMaximum]; return _Pack[index];}
 	global_func inline unsigned& NumChunk() {global_data unsigned _NumChunk = 0; return _NumChunk;}
 	// POOL
-	global_func inline MemUint*& Pool() {global_data MemUint* _Pool = null; return _Pool;}
+	global_func inline MemUint*& Pool() {global_data MemUint* _Pool = nullptr; return _Pool;}
 	global_func inline unsigned& PoolLength() {global_data unsigned _PoolLength = 0; return _PoolLength;}
 	// MIN/MAX
 	template <class TYPE> global_func inline const TYPE& Min(const TYPE& A, const TYPE& B) {return (A < B)? A : B;}
@@ -301,7 +286,7 @@ private:
 	global_func MemUint* FindChunk(MemUint* Ptr)
 	{
 		if(Ptr < Pool() || Pool() + PoolLength() <= Ptr)
-			return null;
+			return nullptr;
 		MemUint* ChunkFocus = Pool();
 		while(BXMEMORY_NEXT_CHUNK(ChunkFocus) <= Ptr)
 			ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
@@ -350,7 +335,7 @@ private:
 			if(ChunkFocus == PoolEnd)
 			{
 				BxAssert("BxMemory<메모리가 부족합니다>", false); // 메모리부족
-				return null;
+				return nullptr;
 			}
 		}
 		// 공간분할
@@ -378,7 +363,7 @@ private:
 			{
 				if(Focus < PackCount - 1)
 					*(DataPtr) = (MemUint) (DataPtr + Size);
-				else *(DataPtr) = (MemUint) null;
+				else *(DataPtr) = (MemUint) nullptr;
 				DataPtr = (MemUint*) *(DataPtr);
 			}
 		}
@@ -412,7 +397,7 @@ private:
 				return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
 			ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
 		}
-		return null;
+		return nullptr;
 	}
 
 	// 팩내 신규유니트 확보
@@ -442,7 +427,7 @@ private:
 		const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
 		MemUint* PackFocus = (MemUint*) BXMEMORY_PACK_FOCUS(PackPtr);
 		BxAssert("BxMemory<Pack정보오류>", 0 < PackCount && PackFree < PackCount);
-		BxAssert("BxMemory<PackFocus가 해당 팩의 범위내에 없습니다>", PackFocus == null || (BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount));
+		BxAssert("BxMemory<PackFocus가 해당 팩의 범위내에 없습니다>", PackFocus == nullptr || (BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount));
 		BxAssert("BxMemory<Ptr이 해당 팩의 범위내에 없습니다>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= Ptr && Ptr < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
 		BxAssert("BxMemory<Ptr이 해당 유니트의 시작주소가 아닙니다>", (Ptr - BXMEMORY_PACK_UNIT_PTR(PackPtr)) % (PackID + 1) == 0);
 
@@ -477,7 +462,7 @@ private:
 		// 소용량데이터 처리(packed)
 		if(0 < Size)
 		{
-			MemUint* NewPack = null;
+			MemUint* NewPack = nullptr;
 			const unsigned PackID = Size - 1; // Size가 256까지라서 1바이트에 기록될 수 있게 함
 			PackState* PackInfo = &Pack(PackID);
 			int RecentFocus = BXMEMORY_RECENT_COUNT;
@@ -490,7 +475,7 @@ private:
 					if(AddCount == 0)
 					{
 						BxAssert("BxMemory<메모리가 부족합니다>", false); // 메모리부족
-						return null;
+						return nullptr;
 					}
 				// 팩정보 처리
 				++PackInfo->NumPack;
@@ -507,7 +492,7 @@ private:
 						NewPack = PackInfo->Recent[RecentFocus];
 				// 대상팩 검색
 				if(!NewPack) NewPack = FindPack(PackID);
-				BxAssert("BxMemory<TotalFreeUnit정보 불일치>", NewPack != null);
+				BxAssert("BxMemory<TotalFreeUnit정보 불일치>", NewPack != nullptr);
 			}
 			// 우선순위 처리
 			for(int i = RecentFocus - 1; 0 < i; --i)
@@ -517,7 +502,7 @@ private:
 			return LockUnit(NewPack);
 		}
 		// size요청이 0일 경우의 처리
-		return null;
+		return nullptr;
 	}
 
 	global_func void FreePack(const void* ptr, int)
@@ -539,7 +524,7 @@ private:
 					while(++RecentFocus < BXMEMORY_RECENT_COUNT)
 						if(PackInfo->Recent[RecentFocus] == DelPack)
 						{
-							PackInfo->Recent[RecentFocus] = null;
+							PackInfo->Recent[RecentFocus] = nullptr;
 							// 우선순위 재정렬
 							for(int i = RecentFocus; i < BXMEMORY_RECENT_COUNT - 1; ++i)
 								PackInfo->Recent[i] = PackInfo->Recent[i + 1];

@@ -47,21 +47,21 @@
 	typedef int (__stdcall *WindowsLib_GetSystemMetrics)(int);
 	typedef int (__stdcall *WindowsLib_SendMessageA)(uint, uint, short, int);
 	typedef int (__stdcall *WindowsLib_ShowWindow)(uint, int);
-	local_data WindowsLib_GetSystemTimeAsFileTime BxDLL_GetSystemTimeAsFileTime = null;
-	local_data WindowsLib_FileTimeToLocalFileTime BxDLL_FileTimeToLocalFileTime = null;
-	local_data WindowsLib_GetFocus BxDLL_GetFocus = null;
-	local_data WindowsLib_FindWindowA BxDLL_FindWindowA = null;
-	local_data WindowsLib_GetWindowLongA BxDLL_GetWindowLongA = null;
-	local_data WindowsLib_SetWindowLongA BxDLL_SetWindowLongA = null;
-	local_data WindowsLib_GetClassLongA BxDLL_GetClassLongA = null;
-	local_data WindowsLib_SetClassLongA BxDLL_SetClassLongA = null;
-	local_data WindowsLib_SetMenu BxDLL_SetMenu = null;
-	local_data WindowsLib_MoveWindow BxDLL_MoveWindow = null;
-	local_data WindowsLib_GetWindowRect BxDLL_GetWindowRect = null;
-	local_data WindowsLib_GetCursorPos BxDLL_GetCursorPos = null;
-	local_data WindowsLib_GetSystemMetrics BxDLL_GetSystemMetrics = null;
-	local_data WindowsLib_SendMessageA BxDLL_SendMessageA = null;
-	local_data WindowsLib_ShowWindow BxDLL_ShowWindow = null;
+	local_data WindowsLib_GetSystemTimeAsFileTime BxDLL_GetSystemTimeAsFileTime = nullptr;
+	local_data WindowsLib_FileTimeToLocalFileTime BxDLL_FileTimeToLocalFileTime = nullptr;
+	local_data WindowsLib_GetFocus BxDLL_GetFocus = nullptr;
+	local_data WindowsLib_FindWindowA BxDLL_FindWindowA = nullptr;
+	local_data WindowsLib_GetWindowLongA BxDLL_GetWindowLongA = nullptr;
+	local_data WindowsLib_SetWindowLongA BxDLL_SetWindowLongA = nullptr;
+	local_data WindowsLib_GetClassLongA BxDLL_GetClassLongA = nullptr;
+	local_data WindowsLib_SetClassLongA BxDLL_SetClassLongA = nullptr;
+	local_data WindowsLib_SetMenu BxDLL_SetMenu = nullptr;
+	local_data WindowsLib_MoveWindow BxDLL_MoveWindow = nullptr;
+	local_data WindowsLib_GetWindowRect BxDLL_GetWindowRect = nullptr;
+	local_data WindowsLib_GetCursorPos BxDLL_GetCursorPos = nullptr;
+	local_data WindowsLib_GetSystemMetrics BxDLL_GetSystemMetrics = nullptr;
+	local_data WindowsLib_SendMessageA BxDLL_SendMessageA = nullptr;
+	local_data WindowsLib_ShowWindow BxDLL_ShowWindow = nullptr;
 	local_data uint BxDLL_WindowHandle = 0;
 	local_func bool LoadWindowsLibMain()
 	{
@@ -121,6 +121,7 @@
 #ifdef I3D_ARCH_X86
 	#define WSADESCRIPTION_LEN 256
 	#define WSASYS_STATUS_LEN 128
+	#define WSAEFAULT 10014L
 	#define WSAEWOULDBLOCK 10035L
 	#define WSAEINPROGRESS 10036L
 	#define WSAENOTSOCK 10038L
@@ -177,22 +178,22 @@
 	typedef int (__stdcall *NetworkLib_ioctlsocket)(SOCKET, int, uint*);
 	typedef int (__stdcall *NetworkLib_select)(int, BxDLL_fd_set*, BxDLL_fd_set*, BxDLL_fd_set*, BxDLL_timeval*);
 	typedef int (__stdcall *NetworkLib_WSAFDIsSet)(SOCKET, BxDLL_fd_set*);
-	local_data NetworkLib_WSAStartup BxDLL_WSAStartup = null;
-	local_data NetworkLib_WSACleanup BxDLL_WSACleanup = null;
-	local_data NetworkLib_WSAGetLastError BxDLL_WSAGetLastError = null;
-	local_data NetworkLib_socket BxDLL_socket = null;
-	local_data NetworkLib_closesocket BxDLL_closesocket = null;
-	local_data NetworkLib_connect BxDLL_connect = null;
-	local_data NetworkLib_shutdown BxDLL_shutdown = null;
-	local_data NetworkLib_send BxDLL_send = null;
-	local_data NetworkLib_recv BxDLL_recv = null;
-	local_data NetworkLib_sendto BxDLL_sendto = null;
-	local_data NetworkLib_recvfrom BxDLL_recvfrom = null;
-	local_data NetworkLib_setsockopt BxDLL_setsockopt = null;
-	local_data NetworkLib_getsockopt BxDLL_getsockopt = null;
-	local_data NetworkLib_ioctlsocket BxDLL_ioctlsocket = null;
-	local_data NetworkLib_select BxDLL_select = null;
-	local_data NetworkLib_WSAFDIsSet BxDLL_WSAFDIsSet = null;
+	local_data NetworkLib_WSAStartup BxDLL_WSAStartup = nullptr;
+	local_data NetworkLib_WSACleanup BxDLL_WSACleanup = nullptr;
+	local_data NetworkLib_WSAGetLastError BxDLL_WSAGetLastError = nullptr;
+	local_data NetworkLib_socket BxDLL_socket = nullptr;
+	local_data NetworkLib_closesocket BxDLL_closesocket = nullptr;
+	local_data NetworkLib_connect BxDLL_connect = nullptr;
+	local_data NetworkLib_shutdown BxDLL_shutdown = nullptr;
+	local_data NetworkLib_send BxDLL_send = nullptr;
+	local_data NetworkLib_recv BxDLL_recv = nullptr;
+	local_data NetworkLib_sendto BxDLL_sendto = nullptr;
+	local_data NetworkLib_recvfrom BxDLL_recvfrom = nullptr;
+	local_data NetworkLib_setsockopt BxDLL_setsockopt = nullptr;
+	local_data NetworkLib_getsockopt BxDLL_getsockopt = nullptr;
+	local_data NetworkLib_ioctlsocket BxDLL_ioctlsocket = nullptr;
+	local_data NetworkLib_select BxDLL_select = nullptr;
+	local_data NetworkLib_WSAFDIsSet BxDLL_WSAFDIsSet = nullptr;
 	local_func bool LoadNetworkLibMain()
 	{
 		id_library NetworkLib_WS2_32 = BxCore::Library::Open("ws2_32.dll");
@@ -225,7 +226,7 @@ class CallbackListJNI
 	local_func string_rw ClassPath() {global_data char Name[256] = {'\0',}; return Name;}
 	local_func string_rw MethodName() {global_data char Name[256] = {'\0',}; return Name;}
 
-	local_func callback_jni& MethodJNI() {global_data callback_jni MethodJNI = null; return MethodJNI;}
+	local_func callback_jni& MethodJNI() {global_data callback_jni MethodJNI = nullptr; return MethodJNI;}
 
 	local_func jint CallbackMethod(JNIEnv* ENV, jobject OBJ, jstring param1_str1024, jint param2)
 	{
@@ -272,7 +273,7 @@ namespace BxCore
 {
 	namespace Main
 	{
-		local_data BxDraw* Draw = null;
+		local_data BxDraw* Draw = nullptr;
 
 		local_func keykind GetKeyKind(s3eKey keycode)
 		{
@@ -403,7 +404,7 @@ namespace BxCore
 			BxScene::__AddEvent__(Event, (EventData->m_Pressed)? syseventset_do_enable : syseventset_need_enable);
 			// 모션이벤트 설정/해제
 			if(EventData->m_Pressed)
-				s3ePointerRegister(S3E_POINTER_MOTION_EVENT, OnPointerMotion, null);
+				s3ePointerRegister(S3E_POINTER_MOTION_EVENT, OnPointerMotion, nullptr);
 			else s3ePointerUnRegister(S3E_POINTER_MOTION_EVENT, OnPointerMotion);
 			return 0;
 		}
@@ -442,7 +443,7 @@ namespace BxCore
 			for(int i = 0; i < S3E_POINTER_TOUCH_MAX; ++i)
 				if(IsPressed[i]) ++PressCount;
 			if(EventData->m_Pressed && PressCount == 1)
-				s3ePointerRegister(S3E_POINTER_TOUCH_MOTION_EVENT, OnPointerMotion_Multi, null);
+				s3ePointerRegister(S3E_POINTER_TOUCH_MOTION_EVENT, OnPointerMotion_Multi, nullptr);
 			if(!EventData->m_Pressed && PressCount == 0)
 				s3ePointerUnRegister(S3E_POINTER_TOUCH_MOTION_EVENT, OnPointerMotion_Multi);
 			return 0;
@@ -451,15 +452,15 @@ namespace BxCore
 		void EventAttach(void* drawclass)
 		{
 			Draw = (BxDraw*) drawclass;
-			s3eKeyboardRegister(S3E_KEYBOARD_KEY_EVENT, OnKeyboard, null);
+			s3eKeyboardRegister(S3E_KEYBOARD_KEY_EVENT, OnKeyboard, nullptr);
 			if(BxCore::System::IsMultiTouchAvailable())
-				s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, OnPointer_Multi, null);
-			else s3ePointerRegister(S3E_POINTER_BUTTON_EVENT, OnPointer, null);
+				s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, OnPointer_Multi, nullptr);
+			else s3ePointerRegister(S3E_POINTER_BUTTON_EVENT, OnPointer, nullptr);
 		}
 
 		void EventDetach()
 		{
-			Draw = null;
+			Draw = nullptr;
 			s3eKeyboardUnRegister(S3E_KEYBOARD_KEY_EVENT, OnKeyboard);
 			if(BxCore::System::IsMultiTouchAvailable())
 				s3ePointerUnRegister(S3E_POINTER_TOUCH_EVENT, OnPointer_Multi);
@@ -525,12 +526,12 @@ namespace BxCore
 			s3eDeviceYield(ms);
 		}
 
-		uhuge GetTimerMilliSecond()
+		uhuge GetTimeMilliSecond()
 		{
 			return (uhuge) s3eTimerGetUTC();
 		}
 
-		uhuge GetTimerNanoSecond()
+		uhuge GetTimeNanoSecond()
 		{
 			#ifdef I3D_ARCH_X86
 				FILETIME sys;
@@ -547,9 +548,9 @@ namespace BxCore
 			#endif
 		}
 
-		uhuge GetTimerSimilarMicroSecond()
+		uhuge GetTimeSimilarMicroSecond()
 		{
-			return GetTimerNanoSecond() >> 10;
+			return GetTimeNanoSecond() >> 10;
 		}
 
 		bool IsMultiTouchAvailable()
@@ -583,7 +584,7 @@ namespace BxCore
 					EventData.m_TouchID = 0;
 					EventData.m_x = x;
 					EventData.m_y = y;
-					BxCore::Main::OnPointerMotion_Multi(&EventData, null);
+					BxCore::Main::OnPointerMotion_Multi(&EventData, nullptr);
 				}
 				else if(type != systouchtype_cancel)
 				{
@@ -592,7 +593,7 @@ namespace BxCore
 					EventData.m_Pressed = (type == systouchtype_down);
 					EventData.m_x = x;
 					EventData.m_y = y;
-					BxCore::Main::OnPointer_Multi(&EventData, null);
+					BxCore::Main::OnPointer_Multi(&EventData, nullptr);
 				}
 			}
 			else
@@ -602,7 +603,7 @@ namespace BxCore
 					s3ePointerMotionEvent EventData;
 					EventData.m_x = x;
 					EventData.m_y = y;
-					BxCore::Main::OnPointerMotion(&EventData, null);
+					BxCore::Main::OnPointerMotion(&EventData, nullptr);
 				}
 				else if(type != systouchtype_cancel)
 				{
@@ -611,7 +612,7 @@ namespace BxCore
 					EventData.m_Pressed = (type == systouchtype_down);
 					EventData.m_x = x;
 					EventData.m_y = y;
-					BxCore::Main::OnPointer(&EventData, null);
+					BxCore::Main::OnPointer(&EventData, nullptr);
 				}
 			}
 		}
@@ -821,19 +822,29 @@ namespace BxCore
 			}
 		}
 
-		string GetOSName()
+		string _tmp_ GetOSName()
 		{
 			return s3eDeviceGetString(S3E_DEVICE_OS);
 		}
 
-		string GetArchitectureName()
+		string _tmp_ GetArchName()
 		{
 			return s3eDeviceGetString(S3E_DEVICE_ARCHITECTURE);
 		}
 
-		string GetPhoneNumber()
+		string _tmp_ GetPhoneNumber()
 		{
 			return s3eDeviceGetString(S3E_DEVICE_PHONE_NUMBER);
+		}
+
+		string _tmp_ GetAppPackage()
+		{
+			return GetConfigString("Bx.Application.Package", "com.bx.game");
+		}
+
+		string _tmp_ GetAppVersion()
+		{
+			return GetConfigString("Bx.Application.Version", "1.0.0");
 		}
 
 		void PopupOSExecute(string url, bool exitme)
@@ -889,10 +900,10 @@ namespace BxCore
 						Data = BxAlloc(datasize);
 						BxCore::Util::MemMove(Data, data, datasize);
 					}
-					else Data = null;
+					else Data = nullptr;
 				}
 				else Data = data;
-				Next = null;
+				Next = nullptr;
 			}
 			virtual ~CallbackList()
 			{
@@ -901,7 +912,7 @@ namespace BxCore
 			}
 			global_func CallbackList* GetFirst()
 			{
-				global_data CallbackList First(null, 0, null, -1);
+				global_data CallbackList First(nullptr, 0, nullptr, -1);
 				return &First;
 			}
 		};
@@ -915,7 +926,7 @@ namespace BxCore
 				{
 					CallbackList* DeleteList = List->Next;
 					List->Next = DeleteList->Next;
-					DeleteList->Next = null;
+					DeleteList->Next = nullptr;
 					BxDelete(DeleteList);
 				}
 				else List = List->Next;
@@ -941,7 +952,7 @@ namespace BxCore
 			if(!s3eAndroidJNIAvailable()) return false;
 			JavaVM* JVM = (JavaVM*) s3eAndroidJNIGetVM();
 			if(!JVM) return false;
-			JNIEnv* ENV = null;
+			JNIEnv* ENV = nullptr;
 			JVM->GetEnv((void**) &ENV, JNI_VERSION_1_6);
 			jclass JCLASS = ENV->FindClass(classpath);
 			if(!JCLASS) return false;
@@ -954,7 +965,7 @@ namespace BxCore
 			if(!s3eAndroidJNIAvailable()) return -90001;
 			JavaVM* JVM = (JavaVM*) s3eAndroidJNIGetVM();
 			if(!JVM) return -90002;
-			JNIEnv* ENV = null;
+			JNIEnv* ENV = nullptr;
 			JVM->GetEnv((void**) &ENV, JNI_VERSION_1_6);
 			jclass JCLASS = ENV->FindClass(classpath);
 			if(!JCLASS) return -90003;
@@ -976,7 +987,7 @@ namespace BxCore
 			if(!s3eAndroidJNIAvailable()) return -90001;
 			JavaVM* JVM = (JavaVM*) s3eAndroidJNIGetVM();
 			if(!JVM) return -90002;
-			JNIEnv* ENV = null;
+			JNIEnv* ENV = nullptr;
 			JVM->GetEnv((void**) &ENV, JNI_VERSION_1_6);
 			jclass JCLASS = ENV->FindClass(classpath);
 			if(!JCLASS) return -90003;
@@ -993,7 +1004,7 @@ namespace BxCore
 			return -90005;
 		}
 
-		local_func inline callback_edk& _EDKClient() {global_data callback_edk EDKClient = null; return EDKClient;}
+		local_func inline callback_edk& _EDKClient() {global_data callback_edk EDKClient = nullptr; return EDKClient;}
 
 		bool _EDKCallback(int value, void* data)
 		{
@@ -1067,7 +1078,7 @@ namespace BxCore
 				case dir_rot270: Direction = S3E_SURFACE_BLIT_DIR_ROT270; break;
 				case dir_native: Direction = S3E_SURFACE_BLIT_DIR_NATIVE; break;
 				}
-				s3eSurfaceSetup(Type, 0, null, Direction);
+				s3eSurfaceSetup(Type, 0, nullptr, Direction);
 			#else
 				switch(dir)
 				{
@@ -1087,13 +1098,13 @@ namespace BxCore
 				IwGxLightingOff();
 				//IwGxMipMappingOff();
 				IwGxFogOff();
-				IwGxSetColStream(null);
+				IwGxSetColStream(nullptr);
 				IwGxSetColClear(0x00, 0x00, 0x00, 0xFF);
 				BxCore::Surface::SetRenderMode(rendermode_2d);
 				IwGxClear();
 				if(GetWidth() != GetWidthHW() || GetHeight() != GetHeightHW())
 				{
-					if(!OffscreenSurface().CreateSurface(null, GetWidth(), GetHeight(),
+					if(!OffscreenSurface().CreateSurface(nullptr, GetWidth(), GetHeight(),
 						CIwGxSurface::EXACT_MATCH_F | CIwGxSurface::PERSISTENT_F))
 						BxAssert("BxCore::Surface<FBO의 초기화에 실패하였습니다>", false);
 					else
@@ -1103,7 +1114,7 @@ namespace BxCore
 						IwGxLightingOff();
 						//IwGxMipMappingOff();
 						IwGxFogOff();
-						IwGxSetColStream(null);
+						IwGxSetColStream(nullptr);
 						IwGxSetColClear(0x00, 0x00, 0x00, 0xFF);
 						IwGxClear();
 					}
@@ -1156,7 +1167,7 @@ namespace BxCore
 					UV[3] = CIwSVec2((1 << 12) * GetWidth() / OffscreenSurface().GetWidth(), 0);
 					IwGxSetVertStreamScreenSpace(Vertex, 4);
 					IwGxSetUVStream(UV, 0, 4);
-					IwGxDrawPrims(IW_GX_QUAD_LIST, null, 4);
+					IwGxDrawPrims(IW_GX_QUAD_LIST, nullptr, 4);
 					IwGxFlush();
 				}
 				IwGLSwapBuffers(); // for marmalade logo disabled
@@ -1182,7 +1193,7 @@ namespace BxCore
 			if(SurfaceWidth == -1)
 			{
 				if(BxUtilGlobal::StrCmp(BxCore::System::GetOSName(), "WINDOWS") != same
-					&& BxUtilGlobal::StrCmp(BxCore::System::GetArchitectureName(), "X86") != same
+					&& BxUtilGlobal::StrCmp(BxCore::System::GetArchName(), "X86") != same
 					&& BxCore::System::GetConfigCheck("Bx.VirtualScreen.Enable", false))
 					SurfaceWidth = BxCore::System::GetConfigNumber("Bx.VirtualScreen.Width", 480);
 				else SurfaceWidth = 0;
@@ -1202,7 +1213,7 @@ namespace BxCore
 			if(SurfaceHeight == -1)
 			{
 				if(BxUtilGlobal::StrCmp(BxCore::System::GetOSName(), "WINDOWS") != same
-					&& BxUtilGlobal::StrCmp(BxCore::System::GetArchitectureName(), "X86") != same
+					&& BxUtilGlobal::StrCmp(BxCore::System::GetArchName(), "X86") != same
 					&& BxCore::System::GetConfigCheck("Bx.VirtualScreen.Enable", false))
 					SurfaceHeight = BxCore::System::GetConfigNumber("Bx.VirtualScreen.Height", 320);
 				else SurfaceHeight = 0;
@@ -1275,7 +1286,7 @@ namespace BxCore
 					SetMusicVolume(100);
 					SetEffectVolume(100);
 					for(int i = GetEffectChannelBegin(); i < GetChannelCount(); ++i)
-						System::AddCallback(EffectChannelCB, i, null);
+						System::AddCallback(EffectChannelCB, i, nullptr);
 				}
 				virtual ~Initializer() {}
 				local_func void Run() {global_data Initializer Init;}
@@ -1350,7 +1361,7 @@ namespace BxCore
 				IsAudio = audio;
 				FileName = BxUtilGlobal::StrCpyWithAlloc(filename);
 				FileSize = (int) s3eFileGetFileInt(FileName, S3E_FILE_SIZE);
-				WaveData = null;
+				WaveData = nullptr;
 				WaveLength = 0;
 				SamplesPerSec = s3eSoundGetInt(S3E_SOUND_DEFAULT_FREQ);
 				if(!autoload)
@@ -1410,7 +1421,7 @@ namespace BxCore
 			local_func s3eResult EffectChannelPlay(int channel, id_sound sound)
 			{
 				ChannelState(channel, false) = sound;
-				ChannelState(channel, true) = null;
+				ChannelState(channel, true) = nullptr;
 				BxAssert("BxCore::Sound<효과음은 Audio포맷이 지원불가합니다>", !((SoundData*) sound)->IsSoundDataByAudio());
 				((SoundData*) sound)->LockSoundData();
 				s3eSoundChannelSetInt(channel, S3E_CHANNEL_RATE, ((SoundData*) sound)->SamplesPerSec);
@@ -1436,14 +1447,14 @@ namespace BxCore
 			{
 				SoundData* CurSound = (SoundData*) SoundData::ChannelState(channel, false);
 				if(CurSound) CurSound->UnlockSoundData();
-				ChannelState(channel, false) = null;
-				ChannelState(channel, true) = null;
+				ChannelState(channel, false) = nullptr;
+				ChannelState(channel, true) = nullptr;
 				return s3eSoundChannelStop(channel);
 			}
 
 			local_func id_sound& ChannelState(int channel, bool isReserve)
 			{
-				global_data id_sound Channel[32][2] = {{null,},};
+				global_data id_sound Channel[32][2] = {{nullptr,},};
 				return Channel[channel][isReserve];
 			}
 
@@ -1456,7 +1467,7 @@ namespace BxCore
 				if(s3eSoundChannelGetInt(Channel, S3E_CHANNEL_PAUSED)) return true;
 				if(s3eSoundChannelGetInt(Channel, S3E_CHANNEL_STATUS)) return true;
 				CurSound->UnlockSoundData();
-				SoundData::ChannelState(Channel, false) = null;
+				SoundData::ChannelState(Channel, false) = nullptr;
 				// 처리
 				SoundData* Sound = (SoundData*) ChannelState(Channel, true);
 				if(Sound)
@@ -1468,7 +1479,7 @@ namespace BxCore
 					BxAssert("BxCore::Sound<해당 사운드를 출력할 수 없습니다>", Result != S3E_RESULT_ERROR);
 				}
 				ChannelState(Channel, false) = ChannelState(Channel, true);
-				ChannelState(Channel, true) = null;
+				ChannelState(Channel, true) = nullptr;
 				return true;
 			}
 
@@ -1486,7 +1497,7 @@ namespace BxCore
 			local_func int GetFreeEffectChannel()
 			{
 				for(int i = GetEffectChannelBegin(); i < GetChannelCount(); ++i)
-					if(ChannelState(i, false) == null && ChannelState(i, true) == null)
+					if(ChannelState(i, false) == nullptr && ChannelState(i, true) == nullptr)
 						return i;
 				return 0;
 			}
@@ -1494,7 +1505,7 @@ namespace BxCore
 			local_func int GetSameEffectChannel(id_sound sound)
 			{
 				for(int i = GetEffectChannelBegin(); i < GetChannelCount(); ++i)
-					if(ChannelState(i, false) == sound && ChannelState(i, true) == null)
+					if(ChannelState(i, false) == sound && ChannelState(i, true) == nullptr)
 						return i;
 				for(int i = GetEffectChannelBegin(); i < GetChannelCount(); ++i)
 					if(ChannelState(i, true) == sound)
@@ -1511,7 +1522,7 @@ namespace BxCore
 				{
 					SoundData* Sound1 = (SoundData*) ChannelState(i, false);
 					SoundData* Sound2 = (SoundData*) ChannelState(i, false);
-					bool IsReserve = (Sound2 != null);
+					bool IsReserve = (Sound2 != nullptr);
 					int Value = ((Sound1)? Sound1->GetSoundDataSize() : 0) + ((Sound2)? Sound2->GetSoundDataSize() : 0);
 					if(IsReserve < IsReserveBest || ((IsReserve == IsReserveBest) && Value < ValueBest))
 					{
@@ -1533,9 +1544,9 @@ namespace BxCore
 
 			PanoramaList()
 			{
-				Sound = null;
+				Sound = nullptr;
 				Next = this;
-				System::AddCallback(MusicChannelCB, 0, null);
+				System::AddCallback(MusicChannelCB, 0, nullptr);
 			}
 
 			virtual ~PanoramaList()
@@ -1609,7 +1620,7 @@ namespace BxCore
 					if(s3eSoundChannelGetInt(0, S3E_CHANNEL_STATUS)) return true;
 				}
 				CurSound->UnlockSoundData();
-				SoundData::ChannelState(0, false) = null;
+				SoundData::ChannelState(0, false) = nullptr;
 				// 처리
 				if(!Focus(GoNext)->Sound) Focus(GoNext);
 				if(Focus()->Sound)
@@ -1698,7 +1709,7 @@ namespace BxCore
 				else s3eSoundChannelStop(0);
 				CurSound->UnlockSoundData();
 			}
-			SoundData::ChannelState(0, false) = null;
+			SoundData::ChannelState(0, false) = nullptr;
 		}
 
 		void SetMusicVolume(uint percent)
@@ -1794,7 +1805,7 @@ namespace BxCore
 		string _tmp_ Print(string src, const BxThrow& args, int* length)
 		{
 			global_data int ResultSize = 1024;
-			string_rw Result = null;
+			string_rw Result = nullptr;
 			BxSINGLETON(Result, ResultSize);
 			string_rw Focus = Result;
 			int DefaultArgID = 0;
@@ -1842,8 +1853,8 @@ namespace BxCore
 								}
 							}
 							// 인수수집
-							void* ArgData = null;
-							string ArgString[2] = {null, null};
+							void* ArgData = nullptr;
+							string ArgString[2] = {nullptr, nullptr};
 							int ArgStringLength[2] = {0, 0};
 							if(ArgData = args.Access<char>(ArgID))
 							{
@@ -1902,7 +1913,7 @@ namespace BxCore
 								}
 								if(0 < SpaceSize[1])
 								{
-									bool IsRight = (ArgString[1] != null);
+									bool IsRight = (ArgString[1] != nullptr);
 									int SpaceCount = SpaceSize[1] - ArgStringLength[IsRight];
 									if(0 < SpaceCount)
 									{
@@ -2025,7 +2036,7 @@ namespace BxCore
 
 		void* GetCurrentCallAddress()
 		{
-			if(!__CallCount__) return null;
+			if(!__CallCount__) return nullptr;
 			return (void*) __CallStackFocus__[-4];
 		}
 
@@ -2086,7 +2097,7 @@ namespace BxCore
 				Printf("%s%s%s                ........%s(%dLn), %I64ds\r%s{\r",
 					(_function_is_before_endline)? "\r" : "",
 					_function_depth_blank[_function_cur_depth - 1], func, file, line,
-					BxCore::System::GetTimerNanoSecond(),
+					BxCore::System::GetTimeNanoSecond(),
 					_function_depth_blank[_function_cur_depth - 1]);
 			_function_is_before_endline = false;
 		}
@@ -2096,7 +2107,7 @@ namespace BxCore
 			if(--_function_cur_depth < _function_log_depth)
 				Printf("%s}                ........%s(%dLn), %I64ds\r",
 					_function_depth_blank[_function_cur_depth], file, line,
-					BxCore::System::GetTimerNanoSecond());
+					BxCore::System::GetTimeNanoSecond());
 			_function_is_before_endline = true;
 		}
 	}
@@ -2164,7 +2175,7 @@ namespace BxCore
 
 		typedef const byte* (*CoreJPGToBMP)(const byte* jpg);
 		const byte* DefaultJPGToBMP(const byte* jpg)
-		{BxAssert("BxCore::AddOn<해당 JPGToBMP확장함수가 없습니다>", false); return null;}
+		{BxAssert("BxCore::AddOn<해당 JPGToBMP확장함수가 없습니다>", false); return nullptr;}
 		void* _inout_ ForExtend_JPGToBMP() {static void* Function = (void*) DefaultJPGToBMP; return Function;}
 		const byte* JPGToBMP(const byte* jpg)
 		{
@@ -2173,7 +2184,7 @@ namespace BxCore
 
 		typedef const byte* (*CoreGIFToBMP)(const byte* gif, const int length, int _out_ numpage);
 		const byte* DefaultGIFToBMP(const byte* gif, const int length, int _out_ numpage)
-		{BxAssert("BxCore::AddOn<해당 GIFToBMP확장함수가 없습니다>", false); return null;}
+		{BxAssert("BxCore::AddOn<해당 GIFToBMP확장함수가 없습니다>", false); return nullptr;}
 		void* _inout_ ForExtend_GIFToBMP() {static void* Function = (void*) DefaultGIFToBMP; return Function;}
 		const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 		{
@@ -2182,7 +2193,7 @@ namespace BxCore
 
 		typedef const byte* (*CoreHQXToBMP)(const byte* bmp, int scale);
 		const byte* DefaultHQXToBMP(const byte* bmp, int scale)
-		{BxAssert("BxCore::AddOn<해당 HQXToBMP확장함수가 없습니다>", false); return null;}
+		{BxAssert("BxCore::AddOn<해당 HQXToBMP확장함수가 없습니다>", false); return nullptr;}
 		void* _inout_ ForExtend_HQXToBMP() {static void* Function = (void*) DefaultHQXToBMP; return Function;}
 		const byte* HQXToBMP(const byte* bmp, int scale)
 		{
@@ -2208,13 +2219,13 @@ namespace BxCore
 
 		void Close(id_file file)
 		{
-			BxAssert("BxCore::File<파일핸들이 null입니다>", file);
+			BxAssert("BxCore::File<파일핸들이 nullptr입니다>", file);
 			s3eFileClose((s3eFile*) file);
 		}
 
 		uint Read(id_file file, void* buffer, uint length, callback_progress progress)
 		{
-			BxAssert("BxCore::File<파일핸들이 null입니다>", file);
+			BxAssert("BxCore::File<파일핸들이 nullptr입니다>", file);
 			if(!progress)
 				return s3eFileRead(buffer, length, 1, (s3eFile*) file);
 			uint Result = 0;
@@ -2228,7 +2239,7 @@ namespace BxCore
 
 		uint Write(id_file file, const void* buffer, uint length, callback_progress progress)
 		{
-			BxAssert("BxCore::File<파일핸들이 null입니다>", file);
+			BxAssert("BxCore::File<파일핸들이 nullptr입니다>", file);
 			if(!progress)
 				return s3eFileWrite(buffer, length, 1, (s3eFile*) file);
 			uint Result = 0;
@@ -2247,13 +2258,13 @@ namespace BxCore
 
 		int Skip(id_file file, uint length)
 		{
-			BxAssert("BxCore::File<파일핸들이 null입니다>", file);
+			BxAssert("BxCore::File<파일핸들이 nullptr입니다>", file);
 			return s3eFileSeek((s3eFile*) file, length, S3E_FILESEEK_CUR);
 		}
 
 		int GetSize(id_file file)
 		{
-			BxAssert("BxCore::File<파일핸들이 null입니다>", file);
+			BxAssert("BxCore::File<파일핸들이 nullptr입니다>", file);
 			return s3eFileGetSize((s3eFile*) file);
 		}
 
@@ -2369,7 +2380,7 @@ namespace BxCore
 					if(Client == INVALID_SOCKET)
 					{
 						const int ErrorCode = BxDLL_WSAGetLastError();
-						BxAssert(BxString("BxCore::Socket<소켓생성 실패(%d)>", null, ErrorCode), false);
+						BxAssert(BxString("BxCore::Socket<소켓생성 실패(%d)>", nullptr, ErrorCode), false);
 						State = socketstate_null;
 					}
 					else State = socketstate_created;
@@ -2406,8 +2417,8 @@ namespace BxCore
 			public:
 				TCPData()
 				{
-					Client = null;
-					Server = null;
+					Client = nullptr;
+					Server = nullptr;
 					State = socketstate_null;
 					ResetClient();
 				}
@@ -2434,7 +2445,7 @@ namespace BxCore
 					if(!Client)
 					{
 						const int ErrorCode = (int) s3eSocketGetError();
-						BxAssert(BxString("BxCore::Socket<소켓생성 실패(%d)>", null, ErrorCode), false);
+						BxAssert(BxString("BxCore::Socket<소켓생성 실패(%d)>", nullptr, ErrorCode), false);
 					}
 					State = (Client)? socketstate_created : socketstate_null;
 				}
@@ -2451,8 +2462,8 @@ namespace BxCore
 				inline void Disconnect()
 				{
 					if(Client) s3eSocketClose(Client);
-					Client = null;
-					Server = null;
+					Client = nullptr;
+					Server = nullptr;
 					State = socketstate_null;
 				}
 			};
@@ -2513,7 +2524,7 @@ namespace BxCore
 						if(Server == INVALID_SOCKET)
 						{
 							const int ErrorCode = BxDLL_WSAGetLastError();
-							BxAssert(BxString("BxCore::Socket<소켓생성 실패(%d)>", null, ErrorCode), false);
+							BxAssert(BxString("BxCore::Socket<소켓생성 실패(%d)>", nullptr, ErrorCode), false);
 						}
 					}
 					if(Server != INVALID_SOCKET && LastTimeout != Timeout)
@@ -2534,7 +2545,7 @@ namespace BxCore
 					Message.icmp_type = ECHO_REQUEST;
 					Message.icmp_code = 0;
 					Message.icmp_cksum = 0;
-					Message.icmp_id = (ushort) (BxCore::System::GetTimerMilliSecond() & 0xFFFF);
+					Message.icmp_id = (ushort) (BxCore::System::GetTimeMilliSecond() & 0xFFFF);
 					Message.icmp_seq = 0;
 				}
 				virtual ~ICMPData()
@@ -2550,7 +2561,7 @@ namespace BxCore
 						Message.icmp_cksum = 0;
 						++Message.icmp_seq;
 						Message.icmp_cksum = MakeChecksum((ushort*) &Message, sizeof(ICMPMESSAGE));
-						LastSendTime = BxCore::System::GetTimerMilliSecond();
+						LastSendTime = BxCore::System::GetTimeMilliSecond();
 						return BxDLL_sendto(Server, (string) &Message, sizeof(ICMPMESSAGE), 0, SockAddr, SockAddrLen);
 					}
 					return SOCKET_ERROR;
@@ -2571,7 +2582,7 @@ namespace BxCore
 						if(RecvValue < IPHdrLen + (int) sizeof(ICMPMESSAGE)) return SOCKET_ERROR;
 						if(ICMPMsg->icmp_id != Message.icmp_id) return SOCKET_ERROR;
 						if(ICMPMsg->icmp_type != ECHO_REPLY) return SOCKET_ERROR;
-						return (int) (BxCore::System::GetTimerMilliSecond() - LastSendTime);
+						return (int) (BxCore::System::GetTimeMilliSecond() - LastSendTime);
 					}
 					return SOCKET_ERROR;
 				}
@@ -2584,7 +2595,7 @@ namespace BxCore
 			if(Data->GetState() == socketstate_created)
 				return (id_socket) Data;
 			BxDelete(Data);
-			return null;
+			return nullptr;
 		}
 
 		void Release(id_socket sock)
@@ -2607,6 +2618,7 @@ namespace BxCore
 				if(ErrorCode == WSAEWOULDBLOCK) return 0;
 				switch(ErrorCode)
 				{
+				case WSAEFAULT: BxCore::Util::Printf("##### Socket ErrorCode : WSAEFAULT #####\r\n"); break;
 				case WSAENOTSOCK: BxCore::Util::Printf("##### Socket ErrorCode : WSAENOTSOCK #####\r\n"); break;
 				case WSAESHUTDOWN: BxCore::Util::Printf("##### Socket ErrorCode : WSAESHUTDOWN #####\r\n"); break;
 				case WSAENOTCONN: BxCore::Util::Printf("##### Socket ErrorCode : WSAENOTCONN #####\r\n"); break;
@@ -2616,6 +2628,7 @@ namespace BxCore
 				}
 				switch(ErrorCode)
 				{
+				case WSAEFAULT:
 				case WSAENOTSOCK:
 				case WSAESHUTDOWN: ((TCPData*) sock)->SetState(socketstate_null); break;
 				case WSAENOTCONN:
@@ -2685,7 +2698,7 @@ namespace BxCore
 				// 결과확인
 				BxDLL_fd_set fdset = {1, {FD,}};
 				BxDLL_timeval tmval = {(timeout + 999) / 1000, 0};
-				BxDLL_select(FD + 1, null, &fdset, null, &tmval);
+				BxDLL_select(FD + 1, nullptr, &fdset, nullptr, &tmval);
 				if(!BxDLL_WSAFDIsSet(FD, &fdset))
 					((TCPData*) sock)->Disconnect();
 				else if(0 < fdset.fd_count)
@@ -2714,8 +2727,8 @@ namespace BxCore
 				// 결과확인
 				if(0 < timeout)
 				{
-					uhuge LimitTime = BxCore::System::GetTimerMilliSecond() + timeout;
-					while(BxCore::System::GetTimerMilliSecond() < LimitTime && ((TCPData*) sock)->GetState() == socketstate_connecting)
+					uhuge LimitTime = BxCore::System::GetTimeMilliSecond() + timeout;
+					while(BxCore::System::GetTimeMilliSecond() < LimitTime && ((TCPData*) sock)->GetState() == socketstate_connecting)
 					{
 						if(progress && !progress(-1, 0)) // 업데이트
 							return connect_error_unknown;
@@ -2772,7 +2785,6 @@ namespace BxCore
 		int RecvFully(id_socket sock, byte* buffer, int len, int timeout, bool cancelmode)
 		{
 			BxAssert("BxCore::Socket<파라미터 len은 1 이상이어야 합니다>", 1 <= len);
-			if(timeout < 0) timeout = 5000;
 			int RecvResult = 0, RecvedLength = 0, ErrorTime = 0, SleepTime = 0;
 			while(0 <= (RecvResult = Recv(sock, buffer + RecvedLength, len - RecvedLength)))
 			{
@@ -2782,10 +2794,13 @@ namespace BxCore
 					ErrorTime = 0;
 					SleepTime >>= 1;
 				}
-				if(RecvedLength == len
-					|| (RecvedLength == 0 && cancelmode)
-					|| timeout < (ErrorTime += SleepTime))
+				if(RecvedLength == len || (RecvedLength == 0 && cancelmode))
 					return RecvedLength;
+				else if(timeout < (ErrorTime += SleepTime))
+				{
+					Disconnect(sock);
+					return RecvedLength;
+				}
 				else BxCore::System::Sleep(BxUtilGlobal::Min(SleepTime++, timeout >> 6));
 			}
 			return RecvResult;
@@ -2821,7 +2836,7 @@ namespace BxCore
 		id_font Open(string filename, const int pointsize, const int numCacheGlyphs)
 		{
 			#ifndef __BX_OPENGL
-			return null;
+			return nullptr;
 			#else
 			if(++RefCount() == 1)
 			{
@@ -2848,7 +2863,7 @@ namespace BxCore
 		id_font Open(const byte* buffer, const int buffersize, const int pointsize, const int numCacheGlyphs)
 		{
 			#ifndef __BX_OPENGL
-			return null;
+			return nullptr;
 			#else
 			if(++RefCount() == 1)
 			{
@@ -2956,7 +2971,7 @@ namespace BxCore
 		void Draw(id_font font, string str, const point p, const size s, const color_x888 color, const byte opacity)
 		{
 			if(!font || !str) return;
-			global_data id_font LastFont = null;
+			global_data id_font LastFont = nullptr;
 			global_data color_x888 LastColor = 0;
 			global_data byte LastOpacity = 0xFF;
 			if(LastFont != font || LastColor != color || LastOpacity != opacity)
@@ -3224,7 +3239,7 @@ namespace BxCore
 		id_opengl_form MakeForm_TextureMaterial(color_a888* image, const int width, const int height, const int pitch)
 		{
 			TextureMaterial* Result = BxNew(TextureMaterial);
-			Result->Texture.CopyFromBuffer(width, height, CIwImage::ARGB_8888, sizeof(color_a888) * pitch, (uint8*) image, null);
+			Result->Texture.CopyFromBuffer(width, height, CIwImage::ARGB_8888, sizeof(color_a888) * pitch, (uint8*) image, nullptr);
 			Result->Texture.Upload();
 			Result->ExpressWidth.Reset(BxInteger(0) + (int) Result->Texture.GetWidth());
 			Result->ExpressHeight.Reset(BxInteger(0) + (int) Result->Texture.GetHeight());
@@ -3309,7 +3324,7 @@ namespace BxCore
 			if(Bound.r <= Bound.l || Bound.b <= Bound.t)
 			{
 				BxDelete(Result);
-				return null;
+				return nullptr;
 			}
 			// UV
 			BxExpress::IntegerX BoundWidth(Bound.r - Bound.l + BxInteger(0));
@@ -3429,7 +3444,7 @@ namespace BxCore
 		{
 			BxCore::Surface::SetRenderMode(rendermode_2d);
 			// Material
-			CIwMaterial* Material = null;
+			CIwMaterial* Material = nullptr;
 			if(TM->Type == OpenGLForm::IMAGE) Material = &((TextureMaterial*) TM)->Material;
 			else if(TM->Type == OpenGLForm::COLOR) Material = &((ColorAmbient*) TM)->Material;
 			if(Material)
@@ -3469,14 +3484,14 @@ namespace BxCore
 				VBOCache::Pool().SetUVStream(UV);
 			}
 			else VBOCache::Pool().SetUVStream(VUV->UV);
-			IwGxDrawPrims(IW_GX_QUAD_LIST, null, 4);
+			IwGxDrawPrims(IW_GX_QUAD_LIST, nullptr, 4);
 		}
 
 		void _RenderPoly(OpenGLForm* TM, PolyVertexUV* PolyVUV, int x, int y, const byte opacity, const color_x888 color)
 		{
 			BxCore::Surface::SetRenderMode(rendermode_2d);
 			// Material
-			CIwMaterial* Material = null;
+			CIwMaterial* Material = nullptr;
 			if(TM->Type == OpenGLForm::IMAGE) Material = &((TextureMaterial*) TM)->Material;
 			else if(TM->Type == OpenGLForm::COLOR) Material = &((ColorAmbient*) TM)->Material;
 			if(Material)
@@ -3516,14 +3531,14 @@ namespace BxCore
 				VBOCache::Pool().SetUVStream(UV);
 			}
 			else VBOCache::Pool().SetUVStream(PolyVUV->UV);
-			IwGxDrawPrims(IW_GX_QUAD_LIST, null, PolyVUV->Count);
+			IwGxDrawPrims(IW_GX_QUAD_LIST, nullptr, PolyVUV->Count);
 		}
 
 		void _RenderPoly3D(OpenGLForm* TM, PolyVertexUV3D* PolyVUV3D, int x, int y, int z, const byte opacity, const color_x888 color)
 		{
 			BxCore::Surface::SetRenderMode(rendermode_3d);
 			// Material
-			CIwMaterial* Material = null;
+			CIwMaterial* Material = nullptr;
 			if(TM->Type == OpenGLForm::IMAGE) Material = &((TextureMaterial*) TM)->Material;
 			else if(TM->Type == OpenGLForm::COLOR) Material = &((ColorAmbient*) TM)->Material;
 			if(Material)
@@ -3572,7 +3587,7 @@ namespace BxCore
 				IwGxSetUVStream(UV, 0, PolyVUV3D->Count);
 			}
 			else IwGxSetUVStream(PolyVUV3D->UV, 0, PolyVUV3D->Count);
-			IwGxDrawPrims(IW_GX_QUAD_LIST, null, PolyVUV3D->Count);
+			IwGxDrawPrims(IW_GX_QUAD_LIST, nullptr, PolyVUV3D->Count);
 		}
 
 		void Render(id_opengl_form form, id_opengl_outline outline, int x, int y, const byte opacity, const color_x888 color)

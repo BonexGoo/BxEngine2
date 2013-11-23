@@ -37,16 +37,16 @@ public:
 	/*!
 	\brief 데이터 접근하기
 	\param i : 데이터 순번
-	\return 데이터를 리턴(실패시 null)
+	\return 데이터를 리턴(실패시 nullptr)
 	*/
 	template<typename TYPE>
 	inline TYPE* Access(int i) const
 	{
-		if(i < 0 || List.Length() <= i) return null;
+		if(i < 0 || List.Length() <= i) return nullptr;
 		Unit* AccessedUnit = List.Access(i);
-		if(!AccessedUnit) return null;
+		if(!AccessedUnit) return nullptr;
 		if(AccessedUnit->TablePtr() != PtrUnit<TYPE>::StaticTablePtr())
-			return null;
+			return nullptr;
 		return ((PtrUnit<TYPE>*) AccessedUnit)->Ptr;
 	}
 
@@ -79,7 +79,7 @@ public:
 	*/
 	~BxThrow()
 	{
-		Unit* OldUnit = null;
+		Unit* OldUnit = nullptr;
 		while(OldUnit = List.DetachFirst())
 			BxPool<Unit>::FreeClass(OldUnit);
 	}
@@ -89,7 +89,7 @@ private:
 	{
 	public:
 		Unit* _ref_ Next;
-		Unit() : Next(null) {}
+		Unit() : Next(nullptr) {}
 		virtual ~Unit() {}
 	public:
 		const void* TablePtr() const
@@ -102,7 +102,7 @@ private:
 	public:
 		int Count;
 		Unit* _ref_ Last;
-		HeadUnit() : Count(0), Last(null) {Last = this;}
+		HeadUnit() : Count(0), Last(nullptr) {Last = this;}
 		virtual ~HeadUnit() {}
 	public:
 		Unit* Access(int index) const
@@ -124,12 +124,12 @@ private:
 		}
 		inline Unit* DetachFirst()
 		{
-			if(!Next) return null;
+			if(!Next) return nullptr;
 			if(Last == Next) Last = this;
 			--Count;
 			Unit* OldUnit = Next;
 			Next = OldUnit->Next;
-			OldUnit->Next = null;
+			OldUnit->Next = nullptr;
 			return OldUnit;
 		}
 	};
@@ -138,7 +138,7 @@ private:
 	{
 	public:
 		TYPE* _ref_ Ptr;
-		PtrUnit() : Ptr(null) {}
+		PtrUnit() : Ptr(nullptr) {}
 		virtual ~PtrUnit() {}
 	public:
 		global_func const void* StaticTablePtr()
