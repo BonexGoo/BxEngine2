@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.1</span>
+   &#160;<span id="projectnumber">2.7.0</span>
    </div>
   </td>
  </tr>
@@ -141,9 +141,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a81b8aee658da8a26de291fcc41d8fb78"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a81b8aee658da8a26de291fcc41d8fb78">SearchFiles</a> (string dirname, callback_filesearch resultCB, void *data)</td></tr>
 <tr class="memdesc:a81b8aee658da8a26de291fcc41d8fb78"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일검색  <a href="#a81b8aee658da8a26de291fcc41d8fb78">More...</a><br/></td></tr>
 <tr class="separator:a81b8aee658da8a26de291fcc41d8fb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a284c71df33e997d3fd380700c748ba55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a284c71df33e997d3fd380700c748ba55">RemoveFile</a> (string filename, bool doRemoveBlankedDirectory=false)</td></tr>
-<tr class="memdesc:a284c71df33e997d3fd380700c748ba55"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일삭제  <a href="#a284c71df33e997d3fd380700c748ba55">More...</a><br/></td></tr>
-<tr class="separator:a284c71df33e997d3fd380700c748ba55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e174bc48590d33a8389aa627ead540a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a6e174bc48590d33a8389aa627ead540a">RemoveFile</a> (string filename, bool doRemoveBlankedDirectory=false)</td></tr>
+<tr class="memdesc:a6e174bc48590d33a8389aa627ead540a"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일삭제  <a href="#a6e174bc48590d33a8389aa627ead540a">More...</a><br/></td></tr>
+<tr class="separator:a6e174bc48590d33a8389aa627ead540a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa619ac618c718c7497eb786a68dd7aba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#aa619ac618c718c7497eb786a68dd7aba">RenameFile</a> (string srcname, string dstname)</td></tr>
+<tr class="memdesc:aa619ac618c718c7497eb786a68dd7aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일의 이름변경  <a href="#aa619ac618c718c7497eb786a68dd7aba">More...</a><br/></td></tr>
+<tr class="separator:aa619ac618c718c7497eb786a68dd7aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File파트 </p>
@@ -288,7 +291,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>전체 바이트길이 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>전체 바이트길이(파일이 없으면 -1) </dd></dl>
 
 </div>
 </div>
@@ -440,12 +443,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a284c71df33e997d3fd380700c748ba55"></a>
+<a class="anchor" id="a6e174bc48590d33a8389aa627ead540a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BxCore::File::RemoveFile </td>
+          <td class="memname">bool BxCore::File::RemoveFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
@@ -472,6 +475,43 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>성공여부 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa619ac618c718c7497eb786a68dd7aba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BxCore::File::RenameFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>srcname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>dstname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>파일의 이름변경 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcname</td><td>: 대상 파일명 </td></tr>
+    <tr><td class="paramname">dstname</td><td>: 변경하고자 하는 파일명 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>성공여부 </dd></dl>
 
 </div>
 </div>
@@ -650,7 +690,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 04:19:50 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 26 2013 03:14:08 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

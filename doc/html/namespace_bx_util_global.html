@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.1</span>
+   &#160;<span id="projectnumber">2.7.0</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ Functions</h2></td></tr>
 <tr class="separator:a677b3048a42145d09849067b4d4a73ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
 <tr class="memitem:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="memTemplItemLeft" align="right" valign="top">static int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#acf3ce0b4c4af01dfb26f0e82a438fb22">StrLenT</a> (const TYPE *String)</td></tr>
-<tr class="memdesc:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">템플릿타입 스트링길이 구하기  <a href="#acf3ce0b4c4af01dfb26f0e82a438fb22">More...</a><br/></td></tr>
+<tr class="memdesc:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">템플릿타입 스트링수량 구하기  <a href="#acf3ce0b4c4af01dfb26f0e82a438fb22">More...</a><br/></td></tr>
 <tr class="separator:acf3ce0b4c4af01dfb26f0e82a438fb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b70575037e5a54e79b304c82c1822a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a39b70575037e5a54e79b304c82c1822a">StrLenEx</a> (string String)</td></tr>
 <tr class="memdesc:a39b70575037e5a54e79b304c82c1822a"><td class="mdescLeft">&#160;</td><td class="mdescRight">확장된 스트링길이 구하기(과 <br/>
@@ -181,9 +181,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a47cdf91c7f5f3970844dff6463bb98a9"><td class="memItemLeft" align="right" valign="top">static uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a47cdf91c7f5f3970844dff6463bb98a9">HtoI</a> (string Hex, int HexLength=-1)</td></tr>
 <tr class="memdesc:a47cdf91c7f5f3970844dff6463bb98a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">헥사덤프를 양수로 변환  <a href="#a47cdf91c7f5f3970844dff6463bb98a9">More...</a><br/></td></tr>
 <tr class="separator:a47cdf91c7f5f3970844dff6463bb98a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a44edd8d2e9a645609ae5d23a84ca56"><td class="memItemLeft" align="right" valign="top">static string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a9a44edd8d2e9a645609ae5d23a84ca56">ItoH</a> (uint Value)</td></tr>
-<tr class="memdesc:a9a44edd8d2e9a645609ae5d23a84ca56"><td class="mdescLeft">&#160;</td><td class="mdescRight">양수를 헥사덤프로 변환  <a href="#a9a44edd8d2e9a645609ae5d23a84ca56">More...</a><br/></td></tr>
-<tr class="separator:a9a44edd8d2e9a645609ae5d23a84ca56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aa25e27b037d3b316d895b3d41e188"><td class="memItemLeft" align="right" valign="top">static string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a52aa25e27b037d3b316d895b3d41e188">ItoH</a> (uint Value, bool IsUpper)</td></tr>
+<tr class="memdesc:a52aa25e27b037d3b316d895b3d41e188"><td class="mdescLeft">&#160;</td><td class="mdescRight">양수를 헥사덤프로 변환  <a href="#a52aa25e27b037d3b316d895b3d41e188">More...</a><br/></td></tr>
+<tr class="separator:a52aa25e27b037d3b316d895b3d41e188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1779e753e6ac06f0b0538095c0ff0ca9"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a1779e753e6ac06f0b0538095c0ff0ca9">LoadInt8</a> (byte *&amp;Resource)</td></tr>
 <tr class="memdesc:a1779e753e6ac06f0b0538095c0ff0ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터에서 로드(char)  <a href="#a1779e753e6ac06f0b0538095c0ff0ca9">More...</a><br/></td></tr>
 <tr class="separator:a1779e753e6ac06f0b0538095c0ff0ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,7 +447,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9a44edd8d2e9a645609ae5d23a84ca56"></a>
+<a class="anchor" id="a52aa25e27b037d3b316d895b3d41e188"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -458,8 +458,18 @@ Functions</h2></td></tr>
           <td class="memname">static string _tmp_ BxUtilGlobal::ItoH </td>
           <td>(</td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>Value</em>)</td><td></td>
+          <td class="paramname"><em>Value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IsUpper</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -473,6 +483,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Value</td><td>: 양수 </td></tr>
+    <tr><td class="paramname">IsUpper</td><td>: 대문자여부(true-대문자, false-소문자) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1647,14 +1658,14 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>템플릿타입 스트링길이 구하기 </p>
+<p>템플릿타입 스트링수량 구하기 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">String</td><td>: 스트링 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>스트링의 바이트길이 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>스트링의 수량 </dd></dl>
 
 </div>
 </div>
@@ -1806,7 +1817,7 @@ template&lt;typename TYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 04:19:51 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 26 2013 03:14:08 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

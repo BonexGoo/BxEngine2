@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.1</span>
+   &#160;<span id="projectnumber">2.7.0</span>
    </div>
   </td>
  </tr>
@@ -348,7 +348,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0" title="파일로 쓰기 ">BxCore::File::Write</a>(CacheFile, ResponseBytes, ResponseLength);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(CacheFile);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">// 다운로드중 삭제</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#a284c71df33e997d3fd380700c748ba55" title="파일삭제 ">BxCore::File::RemoveFile</a>(CacheFileName + <span class="stringliteral">&quot;.downloading&quot;</span>);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="namespace_bx_core_1_1_file.html#a6e174bc48590d33a8389aa627ead540a" title="파일삭제 ">BxCore::File::RemoveFile</a>(CacheFileName + <span class="stringliteral">&quot;.downloading&quot;</span>);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span>(!DoLoad)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            ResponseLength = 0;</div>
@@ -373,7 +373,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                        BestDate = Pool()[i].Date;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                    }</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <span class="comment">// RemoveFile로 지워지지 않는 파일이라고 해도 캐시관리 특성상 지워졌다고 판단함</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <a class="code" href="namespace_bx_core_1_1_file.html#a284c71df33e997d3fd380700c748ba55" title="파일삭제 ">BxCore::File::RemoveFile</a>(Pool()[iBest].Path, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <a class="code" href="namespace_bx_core_1_1_file.html#a6e174bc48590d33a8389aa627ead540a" title="파일삭제 ">BxCore::File::RemoveFile</a>(Pool()[iBest].Path, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                PoolSumSize() -= Pool()[iBest].Size;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                Pool().Delete(iBest);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            }</div>
@@ -389,7 +389,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 26 2013 03:14:07 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -28,7 +28,7 @@
 // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 // 윈도우일반
 /// @cond SECTION_NAME
-#ifdef I3D_ARCH_X86
+#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 	typedef struct {uint dwLowDateTime; uint dwHighDateTime;} FILETIME, *PFILETIME, *LPFILETIME;
 	typedef struct {int x; int y;} POINT, *LPPOINT;
 	typedef struct {int left; int top; int right; int bottom;} RECT, *LPRECT;
@@ -118,7 +118,7 @@
 
 // 네트워크
 /// @cond SECTION_NAME
-#ifdef I3D_ARCH_X86
+#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 	#define WSADESCRIPTION_LEN 256
 	#define WSASYS_STATUS_LEN 128
 	#define WSAEFAULT 10014L
@@ -264,7 +264,7 @@ public:
 /// @endcond
 
 /// @cond SECTION_NAME
-extern callback_process ChildProcess;
+callback_process ChildProcess = nullptr;
 /// @endcond
 
 // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -533,7 +533,7 @@ namespace BxCore
 
 		uhuge GetTimeNanoSecond()
 		{
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				FILETIME sys;
 				__asm push EAX
 				__asm push EDX
@@ -761,7 +761,7 @@ namespace BxCore
 
 		void SetSimulatorWindowPos(int x, int y)
 		{
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				if(BxDLL_WindowHandle)
 					BxDLL_MoveWindow(BxDLL_WindowHandle, x, y, BxCore::Surface::GetWidthHW(false), BxCore::Surface::GetHeightHW(false), 1);
 			#endif
@@ -770,7 +770,7 @@ namespace BxCore
 		point GetSimulatorWindowPos()
 		{
 			point SimulatorPos = point::zero();
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				if(BxDLL_WindowHandle)
 				{
 					RECT WindowRect = {0, 0, 0, 0};
@@ -785,7 +785,7 @@ namespace BxCore
 		point GetSimulatorCursorPos()
 		{
 			point SimulatorCursorPos = point::zero();
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				if(BxDLL_WindowHandle)
 				{
 					POINT CursorPos = {0, 0};
@@ -799,7 +799,7 @@ namespace BxCore
 
 		void DoSimulatorMinimize()
 		{
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				if(BxDLL_WindowHandle)
 				{
 					const int SW_MINIMIZE = 6;
@@ -832,6 +832,22 @@ namespace BxCore
 			return s3eDeviceGetString(S3E_DEVICE_ARCHITECTURE);
 		}
 
+		string _tmp_ GetDeviceID(int* integerid)
+		{
+			const int IntegerID = s3eDeviceGetInt(S3E_DEVICE_UNIQUE_ID);
+			if(IntegerID == -1)
+			{
+				// 맥어드레스ID를 제작
+				//////////////////////////////
+				//////////////////////////////
+				//////////////////////////////
+				if(integerid) *integerid = 0;
+				return "UNSUPPORTED";
+			}
+			if(integerid) *integerid = IntegerID;
+			return s3eDeviceGetString(S3E_DEVICE_UNIQUE_ID);
+		}
+
 		string _tmp_ GetPhoneNumber()
 		{
 			return s3eDeviceGetString(S3E_DEVICE_PHONE_NUMBER);
@@ -842,9 +858,19 @@ namespace BxCore
 			return GetConfigString("Bx.Application.Package", "com.bx.game");
 		}
 
+		string _tmp_ GetAppPackageExt()
+		{
+			return ".apk";
+		}
+
 		string _tmp_ GetAppVersion()
 		{
-			return GetConfigString("Bx.Application.Version", "1.0.0");
+			return GetConfigString("Bx.Application.Version", "1.x.x");
+		}
+
+		bool IsExistApp(string packagename)
+		{
+			return false;////////////////////////////////////////////////////////////////////////////
 		}
 
 		void PopupOSExecute(string url, bool exitme)
@@ -1830,7 +1856,7 @@ namespace BxCore
 							// 인수매칭
 							string SubSrc = src;
 							while(*SubSrc != ':' && *SubSrc != '>') ++SubSrc;
-							const int ArgID = ((SubSrc - src)? AtoI(src, SubSrc - src) : DefaultArgID) % args.Length();
+							const int ArgID = ((SubSrc - src)? BxUtilGlobal::AtoI(src, SubSrc - src) : DefaultArgID) % args.Length();
 							// 공간제약
 							char SpaceCode[2] = {' ', ' '};
 							int SpaceSize[2] = {-1, -1};
@@ -1868,7 +1894,7 @@ namespace BxCore
 							}
 							else if(ArgData = args.Access<double>(ArgID))
 							{
-								ArgString[0] = ItoA((int) *((double*) ArgData));
+								ArgString[0] = BxUtilGlobal::ItoA((int) *((double*) ArgData));
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 								if(SpaceSize[0] == -1 && SpaceSize[1] != -1)
 									SpaceSize[0] = ArgStringLength[0];
@@ -1884,7 +1910,12 @@ namespace BxCore
 							}
 							else if(ArgData = args.Access<string>(ArgID))
 							{
-								ArgString[0] = (string) ArgData; // 특수화
+								ArgString[0] = (string) ArgData; // 특수처리
+								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+							}
+							else if(ArgData = args.Access<char*>(ArgID))
+							{
+								ArgString[0] = *((char**) ArgData);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
 							else if(ArgData = args.Access<BxString>(ArgID))
@@ -2113,68 +2144,8 @@ namespace BxCore
 	}
 	namespace AddOn
 	{
-		/*const byte* JPGToBMP(const byte* jpg)
-		{
-			typedef struct {uint Size; ushort Reserved1; ushort Reserved2; uint OffBits;} BITMAPFILEHEADER;
-			typedef struct {uint Size; int Width; int Height; ushort Planes; ushort BitCount; uint Compression;
-				uint SizeImage; int XPelsPerMeter; int YPelsPerMeter; uint ClrUsed; uint ClrImportant;} BITMAPINFOHEADER;
-
-			struct jpeg_error_mgr jerr;
-			struct jpeg_decompress_struct cinfo;
-			cinfo.err = jpeg_std_error(&jerr);
-			jpeg_create_decompress(&cinfo);
-			jpeg_mem_src(&cinfo, jpg, 15000);
-			jpeg_read_header(&cinfo, true);
-
-			const int _width = cinfo.image_width;
-			const int _height = cinfo.image_height;
-			cinfo.out_color_space = JCS_RGB;
-			cinfo.out_color_components = 3;
-
-			const int BmpRow = (3 * _width + 3) & ~3;
-			byte* Bmp = (byte*) BxAlloc(2 + sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER) + BmpRow * _height);
-			Bmp[0] = 'B';
-			Bmp[1] = 'M';
-			BITMAPFILEHEADER* BmpFileHeader = (BITMAPFILEHEADER*)(Bmp + 2);
-			BmpFileHeader->Size = 54 + BmpRow * _height;
-			BmpFileHeader->Reserved1 = 0;
-			BmpFileHeader->Reserved2 = 0;
-			BmpFileHeader->OffBits = 54;
-			BITMAPINFOHEADER* BmpInfoHeader = (BITMAPINFOHEADER*)(Bmp + 2 + sizeof(BITMAPFILEHEADER));
-			BmpInfoHeader->Size = 40;
-			BmpInfoHeader->Width = _width;
-			BmpInfoHeader->Height = _height;
-			BmpInfoHeader->Planes = 1;
-			BmpInfoHeader->BitCount = 24;
-			BmpInfoHeader->Compression = 0;
-			BmpInfoHeader->SizeImage = BmpRow * _height;
-			BmpInfoHeader->XPelsPerMeter = 3780;
-			BmpInfoHeader->YPelsPerMeter = 3780;
-			BmpInfoHeader->ClrUsed = 0;
-			BmpInfoHeader->ClrImportant = 0;
-
-			jpeg_start_decompress(&cinfo);
-			JSAMPARRAY buffer = (*cinfo.mem->alloc_sarray)((j_common_ptr) &cinfo,
-				JPOOL_IMAGE, BmpRow, 1);
-			byte* BmpFocus = Bmp + 2 + sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER)
-				+ BmpRow * (_height - 1);
-			for(int y = _height; y--; BmpFocus -= BmpRow)
-			{
-				jpeg_read_scanlines(&cinfo, buffer, 1);
-				for(int x = 0; x < BmpRow; x += 3)
-				{
-					BmpFocus[x + 0] = (*buffer)[x + 2];
-					BmpFocus[x + 1] = (*buffer)[x + 1];
-					BmpFocus[x + 2] = (*buffer)[x + 0];
-				}
-			}
-			jpeg_finish_decompress(&cinfo);
-			jpeg_destroy_decompress(&cinfo);
-			return Bmp;
-		}*/
-
-		typedef const byte* (*CoreJPGToBMP)(const byte* jpg);
-		const byte* DefaultJPGToBMP(const byte* jpg)
+		typedef const byte* (*CoreJPGToBMP)(const byte*);
+		const byte* DefaultJPGToBMP(const byte*)
 		{BxAssert("BxCore::AddOn<해당 JPGToBMP확장함수가 없습니다>", false); return nullptr;}
 		void* _inout_ ForExtend_JPGToBMP() {static void* Function = (void*) DefaultJPGToBMP; return Function;}
 		const byte* JPGToBMP(const byte* jpg)
@@ -2182,8 +2153,8 @@ namespace BxCore
 			return ((CoreJPGToBMP) ForExtend_JPGToBMP())(jpg);
 		}
 
-		typedef const byte* (*CoreGIFToBMP)(const byte* gif, const int length, int _out_ numpage);
-		const byte* DefaultGIFToBMP(const byte* gif, const int length, int _out_ numpage)
+		typedef const byte* (*CoreGIFToBMP)(const byte*, const int, int _out_);
+		const byte* DefaultGIFToBMP(const byte*, const int, int _out_)
 		{BxAssert("BxCore::AddOn<해당 GIFToBMP확장함수가 없습니다>", false); return nullptr;}
 		void* _inout_ ForExtend_GIFToBMP() {static void* Function = (void*) DefaultGIFToBMP; return Function;}
 		const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
@@ -2191,8 +2162,8 @@ namespace BxCore
 			return ((CoreGIFToBMP) ForExtend_GIFToBMP())(gif, length, numpage);
 		}
 
-		typedef const byte* (*CoreHQXToBMP)(const byte* bmp, int scale);
-		const byte* DefaultHQXToBMP(const byte* bmp, int scale)
+		typedef const byte* (*CoreHQXToBMP)(const byte*, int);
+		const byte* DefaultHQXToBMP(const byte*, int)
 		{BxAssert("BxCore::AddOn<해당 HQXToBMP확장함수가 없습니다>", false); return nullptr;}
 		void* _inout_ ForExtend_HQXToBMP() {static void* Function = (void*) DefaultHQXToBMP; return Function;}
 		const byte* HQXToBMP(const byte* bmp, int scale)
@@ -2200,9 +2171,56 @@ namespace BxCore
 			return ((CoreHQXToBMP) ForExtend_HQXToBMP())(bmp, scale);
 		}
 
-		void ReleaseBMP(const byte* bmp)
+		typedef string _tmp_ (*CoreBUFToMD5)(const byte*, const int);
+		string _tmp_ DefaultBUFToMD5(const byte*, const int)
+		{BxAssert("BxCore::AddOn<해당 BUFToMD5확장함수가 없습니다>", false); return nullptr;}
+		void* _inout_ ForExtend_BUFToMD5() {static void* Function = (void*) DefaultBUFToMD5; return Function;}
+		string _tmp_ BUFToMD5(const byte* buffer, const int length)
 		{
-			BxFree(bmp);
+			return ((CoreBUFToMD5) ForExtend_BUFToMD5())(buffer, length);
+		}
+
+		typedef id_zip (*CoreCreateZIP)(const byte*, const int, int _out_, string);
+		id_zip DefaultCreateZIP(const byte*, const int, int _out_, string)
+		{BxAssert("BxCore::AddOn<해당 CreateZIP확장함수가 없습니다>", false); return nullptr;}
+		void* _inout_ ForExtend_CreateZIP() {static void* Function = (void*) DefaultCreateZIP; return Function;}
+		id_zip CreateZIP(const byte* zip, const int length, int _out_ numfile, string password)
+		{
+			return ((CoreCreateZIP) ForExtend_CreateZIP())(zip, length, numfile, password);
+		}
+
+		typedef void (*CoreReleaseZIP)(id_zip);
+		void DefaultReleaseZIP(id_zip)
+		{BxAssert("BxCore::AddOn<해당 ReleaseZIP확장함수가 없습니다>", false);}
+		void* _inout_ ForExtend_ReleaseZIP() {static void* Function = (void*) DefaultReleaseZIP; return Function;}
+		void ReleaseZIP(id_zip zip)
+		{
+			return ((CoreReleaseZIP) ForExtend_ReleaseZIP())(zip);
+		}
+
+		typedef const byte* (*CoreZIPToFILE)(id_zip, const int, int _out_);
+		const byte* DefaultZIPToFILE(id_zip, const int, int _out_)
+		{BxAssert("BxCore::AddOn<해당 ZIPToFILE확장함수가 없습니다>", false); return nullptr;}
+		void* _inout_ ForExtend_ZIPToFILE() {static void* Function = (void*) DefaultZIPToFILE; return Function;}
+		const byte* ZIPToFILE(id_zip zip, const int fileindex, int _out_ filesize)
+		{
+			return ((CoreZIPToFILE) ForExtend_ZIPToFILE())(zip, fileindex, filesize);
+		}
+
+		typedef string _tmp_ (*CoreZIPToINFO)(id_zip, const int, bool*, uhuge*, uhuge*, uhuge*, bool*, bool*, bool*, bool*);
+		string _tmp_ DefaultZIPToINFO(id_zip, const int, bool*, uhuge*, uhuge*, uhuge*, bool*, bool*, bool*, bool*)
+		{BxAssert("BxCore::AddOn<해당 ZIPToINFO확장함수가 없습니다>", false); return nullptr;}
+		void* _inout_ ForExtend_ZIPToINFO() {static void* Function = (void*) DefaultZIPToINFO; return Function;}
+		string _tmp_ ZIPToINFO(id_zip zip, const int fileindex,
+			bool* isdir, uhuge* ctime, uhuge* mtime, uhuge* atime,
+			bool* archive, bool* hidden, bool* readonly, bool* system)
+		{
+			return ((CoreZIPToINFO) ForExtend_ZIPToINFO())(zip, fileindex, isdir, ctime, mtime, atime, archive, hidden, readonly, system);
+		}
+
+		void Release(const byte* buf)
+		{
+			BxFree(buf);
 		}
 	}
 	namespace File
@@ -2271,7 +2289,7 @@ namespace BxCore
 		int GetSize(string filename)
 		{
 			s3eFile* File = s3eFileOpen(filename, "rb");
-			const int Result = (File)? s3eFileGetSize(File) : 0;
+			const int Result = (File)? s3eFileGetSize(File) : -1;
 			if(File) s3eFileClose(File);
 			return Result;
 		}
@@ -2326,24 +2344,40 @@ namespace BxCore
 			return SearchCount;
 		}
 
-		void RemoveFile(string filename, bool doRemoveBlankedDirectory)
+		bool RemoveFile(string filename, bool doRemoveBlankedDirectory)
 		{
 			if(s3eFileDelete(filename) != S3E_RESULT_SUCCESS)
+			{
 				s3eFileGetError();
+				return false;
+			}
 			else if(doRemoveBlankedDirectory)
 			{
-				BxString BlankedDirectoryName(filename);
-				while(s3eFileDeleteDirectory(BlankedDirectoryName.GetFilePath()) == S3E_RESULT_SUCCESS)
+				BxString::Parse DirName(filename);
+				do
 				{
-					BlankedDirectoryName = BlankedDirectoryName.GetFilePath();
-					BlankedDirectoryName = BlankedDirectoryName.Left(BlankedDirectoryName.GetLength() - 1);
+					DirName.DeleteLast();
+					while(DirName.GetLast() != '/' && DirName.GetLast() != '\\')
+						DirName.DeleteLast();
 				}
+				while(s3eFileDeleteDirectory(DirName) == S3E_RESULT_SUCCESS);
 			}
+			return true;
+		}
+
+		bool RenameFile(string srcname, string dstname)
+		{
+			if(s3eFileRename(srcname, dstname) != S3E_RESULT_SUCCESS)
+			{
+				s3eFileGetError();
+				return false;
+			}
+			return true;
 		}
 	}
 	namespace Socket
 	{
-		#ifdef I3D_ARCH_X86
+		#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 			class TCPData
 			{
 				SOCKET Client;
@@ -2469,7 +2503,7 @@ namespace BxCore
 			};
 		#endif
 
-		#ifdef I3D_ARCH_X86
+		#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 			class ICMPData
 			{
 				enum ECHO:byte {ECHO_REPLY = 0, ECHO_REQUEST = 8};
@@ -2611,7 +2645,7 @@ namespace BxCore
 			return socketstate_null;
 		}
 
-		#ifdef I3D_ARCH_X86
+		#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 			int _GetErrorCode(id_socket sock)
 			{
 				const int ErrorCode = BxDLL_WSAGetLastError();
@@ -2682,7 +2716,7 @@ namespace BxCore
 			hostent* HostEnt = gethostbyname(addr);
 			BxAssert("BxCore::Socket<알 수 없는 도메인입니다>", HostEnt);
 			if(!HostEnt) return connect_error_param;
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				// 접속정보
 				SOCKADDR_IN SockAddr;
 				BxCore::Util::MemSet(&SockAddr, 0, sizeof(SOCKADDR_IN));
@@ -2758,7 +2792,7 @@ namespace BxCore
 			if(!sock) return -1;
 			TCPData* TCP = (TCPData*) sock;
 			if(TCP->GetState() != socketstate_connected) return -2;
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				int Result = BxDLL_send(TCP->GetServer(), (string) buffer, len, 0);
 			#else
 				int Result = s3eSocketSend(TCP->GetServer(), (string) buffer, len, 0);
@@ -2773,7 +2807,7 @@ namespace BxCore
 			TCPData* TCP = (TCPData*) sock;
 			if(TCP->GetState() != socketstate_connected)
 				return -2;
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				int Result = BxDLL_recv(TCP->GetServer(), (string_rw) buffer, len, 0);
 			#else
 				int Result = s3eSocketRecv(TCP->GetServer(), (string_rw) buffer, len, 0);
@@ -2808,7 +2842,7 @@ namespace BxCore
 
 		int Ping(string addr, uint timeout)
 		{
-			#ifdef I3D_ARCH_X86
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				global_data ICMPData Sock;
 				// IP조사
 				hostent* HostEnt = gethostbyname(addr);

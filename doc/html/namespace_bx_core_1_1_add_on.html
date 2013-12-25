@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.1</span>
+   &#160;<span id="projectnumber">2.7.0</span>
    </div>
   </td>
  </tr>
@@ -108,13 +108,115 @@ Functions</h2></td></tr>
 <tr class="memitem:aa59974382fefad3d3c37561219e64e80"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#aa59974382fefad3d3c37561219e64e80">HQXToBMP</a> (const byte *bmp, int scale)</td></tr>
 <tr class="memdesc:aa59974382fefad3d3c37561219e64e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">HQX방식으로 재가공된 BMP를 제작  <a href="#aa59974382fefad3d3c37561219e64e80">More...</a><br/></td></tr>
 <tr class="separator:aa59974382fefad3d3c37561219e64e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d8d030786b60facf89057638023b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f">ReleaseBMP</a> (const byte *bmp)</td></tr>
-<tr class="memdesc:a25d8d030786b60facf89057638023b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">BMP리소스 해제  <a href="#a25d8d030786b60facf89057638023b0f">More...</a><br/></td></tr>
-<tr class="separator:a25d8d030786b60facf89057638023b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5afd2b177cb0dfa7ad9cdc7a00ad7f"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a7e5afd2b177cb0dfa7ad9cdc7a00ad7f">BUFToMD5</a> (const byte *buffer, const int length)</td></tr>
+<tr class="memdesc:a7e5afd2b177cb0dfa7ad9cdc7a00ad7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터버퍼를 통해 MD5해시스트링을 제작  <a href="#a7e5afd2b177cb0dfa7ad9cdc7a00ad7f">More...</a><br/></td></tr>
+<tr class="separator:a7e5afd2b177cb0dfa7ad9cdc7a00ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0a1d827096b16626f6b0a89ace07f9"><td class="memItemLeft" align="right" valign="top">id_zip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9">CreateZIP</a> (const byte *zip, const int length, int _out_ numfile, string password=nullptr)</td></tr>
+<tr class="memdesc:a4f0a1d827096b16626f6b0a89ace07f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP파일의 디코딩을 위한 객체 생성  <a href="#a4f0a1d827096b16626f6b0a89ace07f9">More...</a><br/></td></tr>
+<tr class="separator:a4f0a1d827096b16626f6b0a89ace07f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8940c44357430f8d5aa09fb22478630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#ad8940c44357430f8d5aa09fb22478630">ReleaseZIP</a> (id_zip zip)</td></tr>
+<tr class="memdesc:ad8940c44357430f8d5aa09fb22478630"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP객체 제거  <a href="#ad8940c44357430f8d5aa09fb22478630">More...</a><br/></td></tr>
+<tr class="separator:ad8940c44357430f8d5aa09fb22478630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47dc2d509f9a450e143d488af753d8c"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#aa47dc2d509f9a450e143d488af753d8c">ZIPToFILE</a> (id_zip zip, const int fileindex, int _out_ filesize)</td></tr>
+<tr class="memdesc:aa47dc2d509f9a450e143d488af753d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP객체에서 요청 순번의 파일을 로드  <a href="#aa47dc2d509f9a450e143d488af753d8c">More...</a><br/></td></tr>
+<tr class="separator:aa47dc2d509f9a450e143d488af753d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9e110e245439608c9af694714ff3fc"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a7b9e110e245439608c9af694714ff3fc">ZIPToINFO</a> (id_zip zip, const int fileindex, bool *isdir=nullptr, uhuge *ctime=nullptr, uhuge *mtime=nullptr, uhuge *atime=nullptr, bool *archive=nullptr, bool *hidden=nullptr, bool *readonly=nullptr, bool *system=nullptr)</td></tr>
+<tr class="memdesc:a7b9e110e245439608c9af694714ff3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP객체에서 요청 순번의 파일정보를 로드  <a href="#a7b9e110e245439608c9af694714ff3fc">More...</a><br/></td></tr>
+<tr class="separator:a7b9e110e245439608c9af694714ff3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d31d4d96a38632a5372d1de8bd7cdf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6">Release</a> (const byte *buf)</td></tr>
+<tr class="memdesc:a6d31d4d96a38632a5372d1de8bd7cdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AddOn리소스 해제  <a href="#a6d31d4d96a38632a5372d1de8bd7cdf6">More...</a><br/></td></tr>
+<tr class="separator:a6d31d4d96a38632a5372d1de8bd7cdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AddOn파트 </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7e5afd2b177cb0dfa7ad9cdc7a00ad7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string _tmp_ BxCore::AddOn::BUFToMD5 </td>
+          <td>(</td>
+          <td class="paramtype">const byte *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>데이터버퍼를 통해 MD5해시스트링을 제작 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>: 데이터버퍼 </td></tr>
+    <tr><td class="paramname">length</td><td>: 데이터버퍼의 바이트길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MD5해시스트링(무조건 32바이트) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4f0a1d827096b16626f6b0a89ace07f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">id_zip BxCore::AddOn::CreateZIP </td>
+          <td>(</td>
+          <td class="paramtype">const byte *&#160;</td>
+          <td class="paramname"><em>zip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int _out_&#160;</td>
+          <td class="paramname"><em>numfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>password</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ZIP파일의 디코딩을 위한 객체 생성 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zip</td><td>: ZIP리소스 </td></tr>
+    <tr><td class="paramname">length</td><td>: ZIP리소스의 바이트길이 </td></tr>
+    <tr><td class="paramname">numfile</td><td>: 파일수 </td></tr>
+    <tr><td class="paramname">password</td><td>: 비밀번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ZIP객체 </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#ad8940c44357430f8d5aa09fb22478630" title="ZIP객체 제거 ">ReleaseZIP</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aeb819fb3335b1d32fd0b3278ee2b00eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,8 +256,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>모든 장면이 세로로 연결된 BMP리소스(ReleaseBMP로 해제) </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">ReleaseBMP</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>모든 장면이 세로로 연결된 BMP리소스(Release로 해제) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">Release</a> </dd></dl>
 
 </div>
 </div>
@@ -191,8 +293,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>재가공된 BMP리소스(ReleaseBMP로 해제) </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">ReleaseBMP</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>재가공된 BMP리소스(Release로 해제) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">Release</a> </dd></dl>
 
 </div>
 </div>
@@ -217,40 +319,200 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>BMP리소스(ReleaseBMP로 해제) </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">ReleaseBMP</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>BMP리소스(Release로 해제) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">Release</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a25d8d030786b60facf89057638023b0f"></a>
+<a class="anchor" id="a6d31d4d96a38632a5372d1de8bd7cdf6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BxCore::AddOn::ReleaseBMP </td>
+          <td class="memname">void BxCore::AddOn::Release </td>
           <td>(</td>
           <td class="paramtype">const byte *&#160;</td>
-          <td class="paramname"><em>bmp</em>)</td><td></td>
+          <td class="paramname"><em>buf</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>BMP리소스 해제 </p>
+<p>AddOn리소스 해제 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bmp</td><td>: JPGToBMP로 제작되었던 BMP리소스 </td></tr>
+    <tr><td class="paramname">buf</td><td>: AddOn함수로 생성한 메모리 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#ad8d45ac71de83456a7b5aa27ffa647ac" title="JPG이미지로 BMP를 제작 ">JPGToBMP</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad8940c44357430f8d5aa09fb22478630"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BxCore::AddOn::ReleaseZIP </td>
+          <td>(</td>
+          <td class="paramtype">id_zip&#160;</td>
+          <td class="paramname"><em>zip</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ZIP객체 제거 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zip</td><td>: ZIP객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9" title="ZIP파일의 디코딩을 위한 객체 생성 ">CreateZIP</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa47dc2d509f9a450e143d488af753d8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte* BxCore::AddOn::ZIPToFILE </td>
+          <td>(</td>
+          <td class="paramtype">id_zip&#160;</td>
+          <td class="paramname"><em>zip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>fileindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int _out_&#160;</td>
+          <td class="paramname"><em>filesize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ZIP객체에서 요청 순번의 파일을 로드 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zip</td><td>: ZIP객체 </td></tr>
+    <tr><td class="paramname">fileindex</td><td>: 요청 순번 </td></tr>
+    <tr><td class="paramname">filesize</td><td>: 파일사이즈 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>요청 순번의 파일리소스(Release로 해제) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">Release</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b9e110e245439608c9af694714ff3fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string _tmp_ BxCore::AddOn::ZIPToINFO </td>
+          <td>(</td>
+          <td class="paramtype">id_zip&#160;</td>
+          <td class="paramname"><em>zip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>fileindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>isdir</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uhuge *&#160;</td>
+          <td class="paramname"><em>ctime</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uhuge *&#160;</td>
+          <td class="paramname"><em>mtime</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uhuge *&#160;</td>
+          <td class="paramname"><em>atime</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>archive</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>hidden</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>readonly</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>system</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ZIP객체에서 요청 순번의 파일정보를 로드 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zip</td><td>: ZIP객체 </td></tr>
+    <tr><td class="paramname">fileindex</td><td>: 요청 순번 </td></tr>
+    <tr><td class="paramname">isdir</td><td>: 폴더인지의 여부 </td></tr>
+    <tr><td class="paramname">ctime</td><td>: 생성시간(UTC기준) </td></tr>
+    <tr><td class="paramname">mtime</td><td>: 수정시간(UTC기준) </td></tr>
+    <tr><td class="paramname">atime</td><td>: 접근시간(UTC기준) </td></tr>
+    <tr><td class="paramname">archive</td><td>: 저장속성 여부 </td></tr>
+    <tr><td class="paramname">hidden</td><td>: 숨김속성 여부 </td></tr>
+    <tr><td class="paramname">readonly</td><td>: 읽기전용속성 여부 </td></tr>
+    <tr><td class="paramname">system</td><td>: 시스템속성 여부 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>요청 순번의 파일명 </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 04:19:50 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 26 2013 03:14:08 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

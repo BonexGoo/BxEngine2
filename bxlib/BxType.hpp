@@ -236,6 +236,7 @@ typedef void* id_object;
 typedef void* id_opengl_form;
 typedef void* id_opengl_outline;
 typedef void* id_static;
+typedef void* id_zip;
 typedef bool delete_me;
 //! \brief OnEvent()의 이벤트파라미터
 typedef struct sysevent

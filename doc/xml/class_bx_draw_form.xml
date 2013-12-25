@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="9" bodyend="9"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="9" bodyend="9"/>
       </memberdef>
       <memberdef kind="typedef" id="class_bx_draw_form_1aa700fab07f95364a45eb412ccec42732" prot="public" static="no">
         <type>void(*</type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="10" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="10" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="14" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="14" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="14" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_draw_form_1a2463aa95307f6160d22251d81d7c240c" prot="protected" static="no" mutable="no">
         <type><ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref></type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="15" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="15" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="15" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_draw_form_1ab972aee1625a25721deb39143a99e95d" prot="protected" static="no" mutable="no">
         <type><ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="16" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_draw_form_1a02412d82f4a96319097716454ac98dac" prot="protected" static="no" mutable="no">
         <type>blendflag</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="17" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_draw_form_1abafb61197ac20cf2d6fe3c8e85c391ee" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="18" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_draw_form_1a12fbb099c9969bc1fb7fa4d36adab0ae" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="19" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="24" bodyend="36"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="24" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="24" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1abb9f0ef6503e6dbfdd7a5c307df5d642" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="37" bodyend="42"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="37" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1aeb788b0ccf0d251c4bc031b0cf94a44b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="86" bodyend="89"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="86" bodyend="89"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="45" bodyend="45"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a44a464b3b4dfd26dfbcb1d57f03945e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="46" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="46" bodyend="46"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="46" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="46" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a411c74fcd70675279a9cd1353370712f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref> &amp;</type>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="47" bodyend="47"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="47" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1adba6cd397fb21e07f783968b8da38c58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="class_bx_express_1_1_integer_x" kindref="compound">BxExpress::IntegerX</ref> &amp;</type>
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="48" bodyend="48"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a8b970823310d2f3af10e1b0020feb909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structarea" kindref="compound">area</ref> *</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="49" bodyend="49"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="49" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a5307e14238ed2408e0b8190967be37fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="50" bodyend="50"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="50" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a32479fcf0756bc0ca08de6b6a04d2c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="51" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="51" bodyend="51"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="51" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a2cb3267f2a97b4e3c4e2be1f10c662f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -315,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="52" bodyend="52"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a9431a75520e742977e045d4faa76e53c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="53" bodyend="53"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a91ae5bafff24402b45040491381e051c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func const int</type>
@@ -349,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="55" bodyend="65"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="55" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a588f796aff3db08ec24b8657336b1089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func const int</type>
@@ -366,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="67" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="67" bodyend="73"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="67" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="67" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_form_1a894380e5a77f9e96caa29712f6a49cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>OnFormMethod</type>
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="75" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="75" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -434,7 +434,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp" bodystart="6" bodyend="93"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp" bodystart="6" bodyend="93"/>
     <listofallmembers>
       <member refid="class_bx_draw_form_1af616c4211cceebbb554d99147f6114e4" prot="protected" virt="non-virtual"><scope>BxDrawForm</scope><name>Area</name></member>
       <member refid="class_bx_draw_form_1a9366b19099ec2725254eb3d2de033d72" prot="public" virt="non-virtual"><scope>BxDrawForm</scope><name>blendflag</name></member>

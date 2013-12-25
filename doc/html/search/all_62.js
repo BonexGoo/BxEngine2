@@ -4,6 +4,7 @@ var searchData=
   ['beginchildprocess',['BeginChildProcess',['../namespace_bx_core_1_1_system.html#aaed9632d5a8e7c639d4da18fafdf8e0e',1,'BxCore::System']]],
   ['bindpool',['BindPool',['../class_bx_dynamic_1_1_resource_1_1_bind_pool.html',1,'BxDynamic::Resource']]],
   ['blend',['BLEND',['../namespace_bx_draw_global.html#ace28c010cf3281f551f837e6428cf690',1,'BxDrawGlobal']]],
+  ['buftomd5',['BUFToMD5',['../namespace_bx_core_1_1_add_on.html#a7e5afd2b177cb0dfa7ad9cdc7a00ad7f',1,'BxCore::AddOn']]],
   ['bxalloc',['BxAlloc',['../group___bx_alloc.html',1,'']]],
   ['bxanimate',['BxAnimate',['../class_bx_animate.html',1,'BxAnimate'],['../class_bx_animate.html#a9a318e782bd9ddf40ea4ef54fd3df799',1,'BxAnimate::BxAnimate()']]],
   ['bxautobuffer',['BxAutoBuffer',['../class_bx_auto_buffer.html',1,'']]],

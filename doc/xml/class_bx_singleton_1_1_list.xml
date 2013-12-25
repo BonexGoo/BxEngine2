@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="96" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="96" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="96" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" prot="private" static="no" mutable="no">
         <type>List *</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="97" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="97" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="98" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="98" bodyend="98"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="98" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="98" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_list_1afaa93188410de3c16010c4cde6718d01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="99" bodyend="103"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="99" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_list_1aadd472da36ff4848d32f2f94684b7d77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="104" bodyend="108"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="104" bodyend="108"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="110" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="110" bodyend="116"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="110" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="110" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_list_1afe19382790542f2afabbeb737e90ec2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="118" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="118" bodyend="129"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="118" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="118" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_list_1aac733da6cfca2cf8c2059154d82cc1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="130" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="130" bodyend="145"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="130" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="130" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_list_1a002432ae825f3ee0eb2f591d378355df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -161,14 +161,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="146" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="146" bodyend="157"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="146" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="146" bodyend="157"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="94" bodyend="158"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="94" bodyend="158"/>
     <listofallmembers>
       <member refid="class_bx_singleton_1_1_list_1ab7cabd94dff350a3c8e0bbac847919f7" prot="private" virt="non-virtual"><scope>BxSingleton::List</scope><name>Head</name></member>
       <member refid="class_bx_singleton_1_1_list_1a187140527e2f34659f9924aaa8012837" prot="public" virt="non-virtual"><scope>BxSingleton::List</scope><name>Link</name></member>

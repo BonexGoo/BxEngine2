@@ -135,9 +135,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief 템플릿타입 스트링길이 구하기
+	\brief 템플릿타입 스트링수량 구하기
 	\param String : 스트링
-	\return 스트링의 바이트길이
+	\return 스트링의 수량
 	*/
 	template<typename TYPE>
 	static int StrLenT(const TYPE* String)
@@ -472,9 +472,10 @@ namespace BxUtilGlobal
 	/*!
 	\brief 양수를 헥사덤프로 변환
 	\param Value : 양수
+	\param IsUpper : 대문자여부(true-대문자, false-소문자)
 	\return 변환된 헥사덤프
 	*/
-	static string _tmp_ ItoH(uint Value)
+	static string _tmp_ ItoH(uint Value, bool IsUpper)
 	{
 		const int Length = 255;
 		global_data char Result[Length + 1];
@@ -483,7 +484,7 @@ namespace BxUtilGlobal
 		{
 			if((Value & 0xF) < 10)
 				Result[i] = '0' + (Value & 0xF);
-			else Result[i] = 'A' + (Value & 0xF) - 10;
+			else Result[i] = ((IsUpper)? 'A' : 'a') + (Value & 0xF) - 10;
 			Value >>= 4;
 			if(Value == 0)
 				return &Result[i];

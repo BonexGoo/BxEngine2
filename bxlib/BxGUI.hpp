@@ -89,22 +89,15 @@ public:
 		BxWebContent Web;
 		if(Web.Query(BxGUI::Domain(), 80, "update/res_download_cdn.aspx", QueryArg))
 		{
-			string QueryResult = BxUtilGlobal::StrCpyWithAlloc((string) Web.GetBytes(), Web.GetTextLength());
-			BxVar<BxString> QueryResults;
-			BxString::ParseDivision(QueryResult, QueryResults);
+			BxVar<BxString::Parse> QueryResults;
+			BxString::Parse::Division(QueryResults, (string) Web.GetBytes(), Web.GetTextLength());
 			if(QueryResults.Length() == 3 && BxUtilGlobal::AtoI(QueryResults[0]) == 1)
 			{
 				FileSize = BxUtilGlobal::AtoI(QueryResults[1]);
 				BxString FilePathString("update/%s", nullptr, (string) QueryResults[2]);
-				FilePath = BxUtilGlobal::StrCpyWithAlloc(FilePathString);
-				if(Content.Cache(BxGUI::Domain(), 80, FilePath, DoLoad))
-				{
-					QueryResult = BxUtilGlobal::StrFree(QueryResult);
+				if(Content.Cache(BxGUI::Domain(), 80, FilePathString, DoLoad))
 					return true;
-				}
-				FilePath = BxUtilGlobal::StrFree(FilePath);
 			}
-			QueryResult = BxUtilGlobal::StrFree(QueryResult);
 		}
 		return false;
 	}
@@ -704,8 +697,8 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxVar<BxString> ColorNames;
-				BxString::ParseDivision(Colors, ColorNames);
+				BxVar<BxString::Parse> ColorNames;
+				BxString::Parse::Division(ColorNames, Colors);
 				BxAssert("BxGUI<연결작업중 유효한 엘리먼트가 하나도 없습니다>", ColorNames.Length());
 				for(int i = 0; i < ColorNames.Length(); ++i)
 				{
@@ -812,8 +805,8 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxVar<BxString> ImageNames;
-				BxString::ParseDivision(Images, ImageNames);
+				BxVar<BxString::Parse> ImageNames;
+				BxString::Parse::Division(ImageNames, Images);
 				BxAssert("BxGUI<연결작업중 유효한 엘리먼트가 하나도 없습니다>", ImageNames.Length());
 				for(int i = 0; i < ImageNames.Length(); ++i)
 				{
@@ -1048,8 +1041,8 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxVar<BxString> ImageNames;
-				BxString::ParseDivision(Images, ImageNames);
+				BxVar<BxString::Parse> ImageNames;
+				BxString::Parse::Division(ImageNames, Images);
 				BxAssert("BxGUI<연결작업중 유효한 엘리먼트가 하나도 없습니다>", ImageNames.Length());
 				for(int i = 0; i < ImageNames.Length(); ++i)
 				{
@@ -1057,8 +1050,8 @@ protected:
 					BxAssert("BxGUI<연결작업중 타입이 일치하지 않습니다>", (*Map.Access(ImageNames[i]))->GetType() == TypeImage);
 					ImageValues[i] = *Map.Access(ImageNames[i]);
 				}
-				BxVar<BxString> EdgeNames;
-				BxString::ParseDivision(Edges, EdgeNames);
+				BxVar<BxString::Parse> EdgeNames;
+				BxString::Parse::Division(EdgeNames, Edges);
 				for(int i = 0; i < EdgeNames.Length(); ++i)
 				{
 					BxAssert("BxGUI<연결작업에 실패했습니다>", Map.Access(EdgeNames[i]) && *Map.Access(EdgeNames[i]));
@@ -1140,8 +1133,8 @@ protected:
 				BxAssert("BxGUI<연결작업에 실패했습니다>", Map.Access(Text) && *Map.Access(Text));
 				BxAssert("BxGUI<연결작업중 타입이 일치하지 않습니다>", (*Map.Access(Text))->GetType() == TypeText);
 				TextValue = *Map.Access(Text);
-				BxVar<BxString> ColorNames;
-				BxString::ParseDivision(Colors, ColorNames);
+				BxVar<BxString::Parse> ColorNames;
+				BxString::Parse::Division(ColorNames, Colors);
 				BxAssert("BxGUI<연결작업중 유효한 엘리먼트가 하나도 없습니다>", ColorNames.Length());
 				for(int i = 0; i < ColorNames.Length(); ++i)
 				{

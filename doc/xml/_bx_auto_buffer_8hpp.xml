@@ -9,12 +9,6 @@
       <node id="19">
         <label>stdarg.h</label>
       </node>
-      <node id="20">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
       <node id="17">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
@@ -23,22 +17,28 @@
         <childnode refid="20" relation="include">
         </childnode>
       </node>
+      <node id="22">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
       <node id="18">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
         <childnode refid="19" relation="include">
         </childnode>
       </node>
+      <node id="20">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
       <node id="21">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="18" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -202,6 +202,6 @@
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="145"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxAutoBuffer.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxAutoBuffer.hpp"/>
   </compounddef>
 </doxygen>

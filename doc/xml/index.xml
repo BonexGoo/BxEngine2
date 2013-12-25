@@ -475,29 +475,25 @@
     <member refid="class_bx_string_1a06f7967c1c2fa3f7fc8a4333a97a185b" kind="function"><name>operator+=</name></member>
     <member refid="class_bx_string_1aa183dba47eb49b94516aa96bfb856aaa" kind="function"><name>operator+=</name></member>
     <member refid="class_bx_string_1a68f1931fd6a64a27304be6f1a45e08c6" kind="function"><name>SetString</name></member>
-    <member refid="class_bx_string_1a9ce3ca4169e470f72f1fd1c70fd6abdb" kind="function"><name>TrimBlank</name></member>
-    <member refid="class_bx_string_1aa9f1db5c7d9eb02e847cd7021301a099" kind="function"><name>TrimQuote</name></member>
+    <member refid="class_bx_string_1ad9729749a9548aaa226d45a930228594" kind="function"><name>TrimBlank</name></member>
+    <member refid="class_bx_string_1ae45a4472b463773fb1c8379a88c30d48" kind="function"><name>TrimQuote</name></member>
     <member refid="class_bx_string_1a662659cfa6c9919e979989475eef455f" kind="function"><name>Left</name></member>
     <member refid="class_bx_string_1af5b1fc61daec00d218359b63ae882bf8" kind="function"><name>Right</name></member>
-    <member refid="class_bx_string_1ae48987d62dcfc83d5dbff1ad6295dde5" kind="function"><name>DeleteLeft</name></member>
-    <member refid="class_bx_string_1a7820c076708a964488ec27e0b5a25a0d" kind="function"><name>DeleteRight</name></member>
+    <member refid="class_bx_string_1acad22d7718d272cc1ee89716639b0ca7" kind="function"><name>DeleteLeft</name></member>
+    <member refid="class_bx_string_1a4b69e4d1bc7da67d55680d069b0b72ff" kind="function"><name>DeleteRight</name></member>
     <member refid="class_bx_string_1a020196c0d7556f770c6d87635c6819b2" kind="function"><name>IsCharExtend</name></member>
     <member refid="class_bx_string_1ac56d11d9cbdfde07b68a555ca66e40a7" kind="function"><name>IsLastCharExtend</name></member>
     <member refid="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" kind="function"><name>Find</name></member>
     <member refid="class_bx_string_1ad63e9586241ff09dfcdb23af9ac844cc" kind="function"><name>ReverseFind</name></member>
     <member refid="class_bx_string_1ad82768a52a89e008078998783e622347" kind="function"><name>CloneWithAlloc</name></member>
-    <member refid="class_bx_string_1a79578e9b83b5373ebcef438bba4c99a9" kind="function"><name>ParseDivision</name></member>
-    <member refid="class_bx_string_1aeaeaa0a661b398d21a746a77deefd22b" kind="function"><name>ParseUnitName</name></member>
-    <member refid="class_bx_string_1a1f0f30ed45375db666db40a9fec09f1b" kind="function"><name>ParseUnitParam</name></member>
-    <member refid="class_bx_string_1ade754b593a36cb7e9f9ec06e82a247f7" kind="function"><name>ParseUnitParamLength</name></member>
-    <member refid="class_bx_string_1a854946ab5a5bf85872bc281ac7dfa24f" kind="function"><name>ParseCSV</name></member>
-    <member refid="class_bx_string_1a403472e1b5d831c700304e6bee5f461c" kind="function"><name>ParseISO2022</name></member>
     <member refid="class_bx_string_1a0b8b4b404eab801b107ee0bb7d1c719d" kind="function"><name>Compare</name></member>
     <member refid="class_bx_string_1a2792945d195374da18c577707883963b" kind="function"><name>Compare</name></member>
     <member refid="class_bx_string_1aaf31f369dfc9d76a8bd304aebeef4752" kind="function"><name>CompareNoCase</name></member>
     <member refid="class_bx_string_1ada6eaa2e4864d928ea416bb48424ad54" kind="function"><name>CompareNoCase</name></member>
     <member refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kind="function"><name>Format</name></member>
     <member refid="class_bx_string_1a17527cf4de9395d80887159fb8f82a2e" kind="function"><name>FormatV</name></member>
+    <member refid="class_bx_string_1a854946ab5a5bf85872bc281ac7dfa24f" kind="function"><name>ParseCSV</name></member>
+    <member refid="class_bx_string_1a403472e1b5d831c700304e6bee5f461c" kind="function"><name>ParseISO2022</name></member>
     <member refid="class_bx_string_1a62abfc5510718c8873e366895e413d4f" kind="function"><name>GetFileName</name></member>
     <member refid="class_bx_string_1a29661787c9d623e0a18b2fdf7929ac3d" kind="function"><name>GetFilePath</name></member>
     <member refid="class_bx_string_1a6e566fd97c7564dc60d92625f319540f" kind="function"><name>GetFileTitle</name></member>
@@ -1033,6 +1029,29 @@
     <member refid="class_bx_keyword_1_1_number_1a771b9dad13024abcd424ac43db2d3d9a" kind="variable"><name>Data</name></member>
     <member refid="class_bx_keyword_1_1_number_1ac43feddae5747ed2b955cd99d4c2e1e6" kind="function"><name>Number</name></member>
   </compound>
+  <compound refid="class_bx_string_1_1_parse" kind="class"><name>BxString::Parse</name>
+    <member refid="class_bx_string_1_1_parse_1ad1ae50e417ad19bc696eb1c1cf9d644c" kind="variable"><name>ValidCount</name></member>
+    <member refid="class_bx_string_1_1_parse_1a15ee95cfab2bbb7d4538be2189c8e30a" kind="variable"><name>StringLength</name></member>
+    <member refid="class_bx_string_1_1_parse_1a31d781c81bf8a484b05e52e74467a2eb" kind="variable"><name>String</name></member>
+    <member refid="class_bx_string_1_1_parse_1a4b450ff95cb02d0dc27f1afb5b3cfe9f" kind="function"><name>Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1a67105b5647f1e31bcfb94de979a03c8e" kind="function"><name>Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1a0472574efd03e5e7881a2039c23f4da3" kind="function"><name>Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1af800c7e1bb8dca01fa259d614897ba84" kind="function"><name>Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1af65bf9d9b4cc402aea1056e389b4f5dc" kind="function"><name>Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1a66a98aa39b029070417c6420918a9386" kind="function"><name>~Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1a501c0c42d5a3349b4380ca1ed460923e" kind="function"><name>GetLength</name></member>
+    <member refid="class_bx_string_1_1_parse_1a803e49be0b06ee7701d1ca3e7f662b40" kind="function"><name>GetLast</name></member>
+    <member refid="class_bx_string_1_1_parse_1a53e874e70b65c59b05b6cb2cf3bbfdc0" kind="function"><name>DeleteLast</name></member>
+    <member refid="class_bx_string_1_1_parse_1a4b3d625a38c9263ec88d139b2fb0392b" kind="function"><name>operator+</name></member>
+    <member refid="class_bx_string_1_1_parse_1a354770597a5da6b41837223b0cab586c" kind="function"><name>operator=</name></member>
+    <member refid="class_bx_string_1_1_parse_1a5db01feb4515750b37566145091f2377" kind="function"><name>operator+=</name></member>
+    <member refid="class_bx_string_1_1_parse_1a9133ab1ee00bc347a9fb9d2fb9b90601" kind="function"><name>operator string</name></member>
+    <member refid="class_bx_string_1_1_parse_1a16edc62b59aa67d20cf6843140229c02" kind="function"><name>operator[]</name></member>
+    <member refid="class_bx_string_1_1_parse_1a05942fce2477768ec02e472de905223d" kind="function"><name>Division</name></member>
+    <member refid="class_bx_string_1_1_parse_1a3ec32ba0a6e656d34b313ca6b28676e1" kind="function"><name>UnitName</name></member>
+    <member refid="class_bx_string_1_1_parse_1abcaf42e665a9a274dc1192de26c9e1be" kind="function"><name>UnitParam</name></member>
+    <member refid="class_bx_string_1_1_parse_1ace762831e8c79f125e960fdf726d9399" kind="function"><name>UnitParamLength</name></member>
+  </compound>
   <compound refid="class_bx_path_find_1_1_path" kind="class"><name>BxPathFind::Path</name>
     <member refid="class_bx_path_find_1_1_path_1ad2f32e921244459f7cc6d50355429cc6" kind="friend"><name>Map</name></member>
     <member refid="class_bx_path_find_1_1_path_1a35f895b09ab03c6eedd79fefa0e27b6f" kind="variable"><name>Dots</name></member>
@@ -1216,6 +1235,13 @@
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa89ec58e16208cb7c953c4aef9b7a856" kind="function"><name>INSERT_FIRST</name></member>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1abfd96ca3b81c98259b869318913694cb" kind="function"><name>~Triangle</name></member>
   </compound>
+  <compound refid="class_bx_pool_global_1_1_unit" kind="class"><name>BxPoolGlobal::Unit</name>
+    <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1a38355505768c59fae2266502bb22b8ac" kind="function"><name>Unit</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1a8bf5cc78657e6a5e286f79b2e6966d70" kind="function"><name>~Unit</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1a76c51992d6f880345f9728b2dd9c591d" kind="function"><name>Find</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1ab40c59973e7765b3cba71f985939a282" kind="function"><name>Free</name></member>
+  </compound>
   <compound refid="class_bx_throw_1_1_unit" kind="class"><name>BxThrow::Unit</name>
     <member refid="class_bx_throw_1_1_unit_1a0669421cde97e40027c33c1dfe4152cf" kind="variable"><name>Next</name></member>
     <member refid="class_bx_throw_1_1_unit_1af92d493271b40f6fec68e1971c62cd98" kind="function"><name>Unit</name></member>
@@ -1233,13 +1259,6 @@
     <member refid="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" kind="function"><name>Read</name></member>
     <member refid="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" kind="function"><name>Write</name></member>
     <member refid="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" kind="function"><name>AtoH</name></member>
-  </compound>
-  <compound refid="class_bx_pool_global_1_1_unit" kind="class"><name>BxPoolGlobal::Unit</name>
-    <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1a38355505768c59fae2266502bb22b8ac" kind="function"><name>Unit</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1a8bf5cc78657e6a5e286f79b2e6966d70" kind="function"><name>~Unit</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1a76c51992d6f880345f9728b2dd9c591d" kind="function"><name>Find</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1ab40c59973e7765b3cba71f985939a282" kind="function"><name>Free</name></member>
   </compound>
   <compound refid="class_bx_pool_1_1_unit" kind="class"><name>BxPool::Unit</name>
     <member refid="class_bx_pool_1_1_unit_1a3f36e71c8d819d0b245082d1af7d1cff" kind="enum"><name>@6</name></member>
@@ -1342,7 +1361,12 @@
     <member refid="namespace_bx_core_1_1_add_on_1ad8d45ac71de83456a7b5aa27ffa647ac" kind="function"><name>JPGToBMP</name></member>
     <member refid="namespace_bx_core_1_1_add_on_1aeb819fb3335b1d32fd0b3278ee2b00eb" kind="function"><name>GIFToBMP</name></member>
     <member refid="namespace_bx_core_1_1_add_on_1aa59974382fefad3d3c37561219e64e80" kind="function"><name>HQXToBMP</name></member>
-    <member refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kind="function"><name>ReleaseBMP</name></member>
+    <member refid="namespace_bx_core_1_1_add_on_1a7e5afd2b177cb0dfa7ad9cdc7a00ad7f" kind="function"><name>BUFToMD5</name></member>
+    <member refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kind="function"><name>CreateZIP</name></member>
+    <member refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kind="function"><name>ReleaseZIP</name></member>
+    <member refid="namespace_bx_core_1_1_add_on_1aa47dc2d509f9a450e143d488af753d8c" kind="function"><name>ZIPToFILE</name></member>
+    <member refid="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" kind="function"><name>ZIPToINFO</name></member>
+    <member refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kind="function"><name>Release</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_file" kind="namespace"><name>BxCore::File</name>
     <member refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kind="function"><name>IsExist</name></member>
@@ -1359,7 +1383,8 @@
     <member refid="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" kind="function"><name>Detach</name></member>
     <member refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kind="function"><name>MakeDirectory</name></member>
     <member refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kind="function"><name>SearchFiles</name></member>
-    <member refid="namespace_bx_core_1_1_file_1a284c71df33e997d3fd380700c748ba55" kind="function"><name>RemoveFile</name></member>
+    <member refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kind="function"><name>RemoveFile</name></member>
+    <member refid="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" kind="function"><name>RenameFile</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_font" kind="namespace"><name>BxCore::Font</name>
     <member refid="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" kind="function"><name>Open</name></member>
@@ -1444,9 +1469,12 @@
     <member refid="namespace_bx_core_1_1_system_1a1afedf60a29f8013d6d46205eb702526" kind="function"><name>Assert</name></member>
     <member refid="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" kind="function"><name>GetOSName</name></member>
     <member refid="namespace_bx_core_1_1_system_1a6cd582a9429126f4aa5fd79632f22a28" kind="function"><name>GetArchName</name></member>
+    <member refid="namespace_bx_core_1_1_system_1aa0aec579b20508c545e741183592e89c" kind="function"><name>GetDeviceID</name></member>
     <member refid="namespace_bx_core_1_1_system_1a11a29c154a97f2ba8b70e577a1949668" kind="function"><name>GetPhoneNumber</name></member>
     <member refid="namespace_bx_core_1_1_system_1ab9cddc7423b39cd731c23a82694e6620" kind="function"><name>GetAppPackage</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a5bbe817c55c6022c67fb3ab532c3c903" kind="function"><name>GetAppPackageExt</name></member>
     <member refid="namespace_bx_core_1_1_system_1a2fb357dd75ed24a9a9c9fc3c58fbe1cb" kind="function"><name>GetAppVersion</name></member>
+    <member refid="namespace_bx_core_1_1_system_1abcbe983d966638f8a82aad358d022203" kind="function"><name>IsExistApp</name></member>
     <member refid="namespace_bx_core_1_1_system_1a0b095dd1b0208cbb637868fab91e5cfe" kind="function"><name>PopupOSExecute</name></member>
     <member refid="namespace_bx_core_1_1_system_1af8690955284b9503907f308014453b93" kind="function"><name>PopupOSKeyboard</name></member>
     <member refid="namespace_bx_core_1_1_system_1ac2473ebfc86c3766155c7193893b0ce3" kind="function"><name>AddCallback</name></member>
@@ -1599,7 +1627,7 @@
     <member refid="namespace_bx_util_global_1a9d45cf5f144f0aaa40fa169feb915ea1" kind="function"><name>AtoI</name></member>
     <member refid="namespace_bx_util_global_1ae93b9c22557509ab724aaebb7877f15e" kind="function"><name>ItoA</name></member>
     <member refid="namespace_bx_util_global_1a47cdf91c7f5f3970844dff6463bb98a9" kind="function"><name>HtoI</name></member>
-    <member refid="namespace_bx_util_global_1a9a44edd8d2e9a645609ae5d23a84ca56" kind="function"><name>ItoH</name></member>
+    <member refid="namespace_bx_util_global_1a52aa25e27b037d3b316d895b3d41e188" kind="function"><name>ItoH</name></member>
     <member refid="namespace_bx_util_global_1a1779e753e6ac06f0b0538095c0ff0ca9" kind="function"><name>LoadInt8</name></member>
     <member refid="namespace_bx_util_global_1a7eae0e60a7c0d68747315118d63c44d3" kind="function"><name>LoadInt16</name></member>
     <member refid="namespace_bx_util_global_1af336f01897cb6e50d0347d5ba54aa968" kind="function"><name>LoadInt32</name></member>
@@ -2119,6 +2147,7 @@
     <member refid="_bx_type_8hpp_1a4f86ea0d8d23738d4b7d89d5c372983c" kind="typedef"><name>id_opengl_form</name></member>
     <member refid="_bx_type_8hpp_1abc6e0396c8408ec774449c86bfdb6d9c" kind="typedef"><name>id_opengl_outline</name></member>
     <member refid="_bx_type_8hpp_1a560e826887e1abff7df42ce7d7d88db9" kind="typedef"><name>id_static</name></member>
+    <member refid="_bx_type_8hpp_1a9468053fc99c7249d0a27b0c7e394799" kind="typedef"><name>id_zip</name></member>
     <member refid="_bx_type_8hpp_1a387774b386e52cf47029e6d3cb639c30" kind="typedef"><name>delete_me</name></member>
     <member refid="_bx_type_8hpp_1a63a1319aa9bf8dfd191174cec23a13a6" kind="typedef"><name>sysevent</name></member>
     <member refid="_bx_type_8hpp_1a13e8bf7843c0e9a8041a4219be41085a" kind="typedef"><name>callback_frame</name></member>

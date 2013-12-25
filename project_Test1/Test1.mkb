@@ -38,6 +38,8 @@ files
 	BxAddOn_GIF.cpp
 	BxAddOn_HQX.cpp
 	BxAddOn_JPG.cpp
+	BxAddOn_MD5.cpp
+	BxAddOn_ZIP.cpp
 
 	["BxCore"]
 	(../bxcore)
@@ -123,8 +125,8 @@ deployments
 	caption='Test1'
 	long-caption='Test1'
 	provider='Bonex'
-	version='260'
-	version-string='2.6.0'
+	version='270'
+	version-string='2.7.0'
 	app-icf="data/app.icf"
 	embed-icf=1
 	assets="Data"

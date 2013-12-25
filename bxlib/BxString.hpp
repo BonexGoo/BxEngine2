@@ -7,6 +7,235 @@
 class BxString
 {
 public:
+	//! \brief 파싱 관리
+	class Parse
+	{
+	public:
+		/*!
+		\brief 기본생성자
+		*/
+		Parse()
+		{
+			ValidCount = 0;
+			StringLength = ValidCount + 1;
+			String = BxUtilGlobal::StrCpyWithAlloc("", ValidCount);
+		}
+
+		/*!
+		\brief 복사생성자(Parse)
+		*/
+		Parse(const Parse& RHS)
+		{
+			ValidCount = RHS.ValidCount;
+			StringLength = ValidCount + 1;
+			String = BxUtilGlobal::StrCpyWithAlloc(RHS.String, ValidCount);
+		}
+
+		/*!
+		\brief 복사생성자(string, int)
+		*/
+		explicit Parse(string RHS, int Length = -1)
+		{
+			ValidCount = (Length < 0)? BxUtilGlobal::StrLen(RHS) : Length;
+			StringLength = ValidCount + 1;
+			String = BxUtilGlobal::StrCpyWithAlloc(RHS, ValidCount);
+		}
+
+		/*!
+		\brief 복사생성자(Parse*, string)
+		*/
+		explicit Parse(const Parse* RHS1, string RHS2)
+		{
+			const int RHS2Count = BxUtilGlobal::StrLen(RHS2);
+			ValidCount = RHS1->ValidCount + RHS2Count;
+			StringLength = ValidCount + 1;
+			String = BxUtilGlobal::StrAlloc(ValidCount);
+			BxCore::Util::MemMove(String, RHS1->String, RHS1->ValidCount);
+			BxCore::Util::MemMove(String + RHS1->ValidCount, RHS2, RHS2Count);
+			((char*) String)[ValidCount] = '\0';
+		}
+
+		/*!
+		\brief 복사생성자(string, BxThrow)
+		*/
+		explicit Parse(string RHS, const BxThrow& args)
+		{
+			ValidCount = 0;
+			string Result = BxCore::Util::Print(RHS, args, &ValidCount);
+			StringLength = ValidCount + 1;
+			String = BxUtilGlobal::StrCpyWithAlloc(Result, ValidCount);
+		}
+
+		/*!
+		\brief 소멸자
+		*/
+		~Parse()
+		{
+			String = BxUtilGlobal::StrFree(String);
+		}
+
+		/*!
+		\brief 길이 구하기
+		\return 스트링의 글자길이
+		*/
+		inline int GetLength()
+		{
+			return ValidCount;
+		}
+
+		/*!
+		\brief 마지막 글자 구하기
+		\return 마지막 글자
+		*/
+		inline char GetLast()
+		{
+			return String[BxUtilGlobal::Max(0, ValidCount - 1)];
+		}
+
+		/*!
+		\brief 마지막 글자 지우기
+		*/
+		inline void DeleteLast()
+		{
+			ValidCount = BxUtilGlobal::Max(0, ValidCount - 1);
+			((char*) String)[ValidCount] = '\0';
+		}
+
+		/*!
+		\brief 연산자 중복함수+(string)
+		\param RHS : 우측 피연산자
+		\return 새로운 인스턴스
+		*/
+		Parse operator+(string RHS) const
+		{
+			return Parse(this, RHS);
+		}
+
+		/*!
+		\brief 연산자 중복함수=(string)
+		\param RHS : 우측 피연산자
+		\return 자신을 리턴
+		*/
+		Parse& operator=(string RHS)
+		{
+			String = BxUtilGlobal::StrFree(String);
+			ValidCount = BxUtilGlobal::StrLen(RHS);
+			StringLength = ValidCount + 1;
+			String = BxUtilGlobal::StrCpyWithAlloc(RHS, ValidCount);
+			return *this;
+		}
+
+		/*!
+		\brief 연산자 중복함수+=(char)
+		\param RHS : 우측 피연산자
+		\return 자신을 리턴
+		*/
+		inline Parse& operator+=(char RHS)
+		{
+			if(StringLength <= ValidCount + 1)
+			{
+				const int OldStringLength = StringLength;
+				string NewString = BxUtilGlobal::StrAlloc((StringLength *= 2) - 1);
+				BxCore::Util::MemMove(NewString, String, OldStringLength);
+				String = BxUtilGlobal::StrFree(String);
+				String = NewString;
+			}
+			((char*) String)[ValidCount++] = RHS;
+			((char*) String)[ValidCount] = '\0';
+			return *this;
+		}
+
+		/*!
+		\brief 형변환 중복함수(string)
+		\return string형 전체스트링
+		*/
+		inline operator string()
+		{
+			return String;
+		}
+
+		/*!
+		\brief 배열접근
+		\param index : 배열번호
+		\return char형 해당 데이터
+		*/
+		inline const char operator[](int Index)
+		{
+			if(Index < 0 || ValidCount <= Index)
+				return '\0';
+			return String[Index];
+		}
+
+		/*!
+		\brief 파티션스트링 나누기(|A|B|C|, /A/B/C/, *A*B*C*...)
+		\param Result : 나눔기호(첫바이트 자동인식)로 분리된 결과(강제 Reset은 안함)
+		\param Other : 작업할 스트링
+		\param Length : 작업할 스트링의 사이즈(Other의 길이로 자동셋팅 : -1)
+		*/
+		global_func void Division(BxVar<Parse>& Result, string Other, int Length = -1)
+		{
+			const int OtherLength = (Length < 0)? BxUtilGlobal::StrLen(Other) : Length;
+			if(OtherLength && Other[0] == Other[OtherLength - 1])
+			for(int i = 1, iprev = 1; i < OtherLength; ++i)
+				if(Other[i] == Other[0])
+				{
+					Result[LAST].ValidCount = i - iprev;
+					Result[END].StringLength = i - iprev + 1;
+					Result[END].String = BxUtilGlobal::StrCpyWithAlloc(&Other[iprev], i - iprev);
+					iprev = i + 1;
+				}
+		}
+
+		/*!
+		\brief 유니트스트링 이름 가져오기(A<B:C:D>에서 A부분)
+		\param Unit : 작업할 스트링
+		\return 이름
+		*/
+		global_func Parse UnitName(string Unit)
+		{
+			int i = -1;
+			while(Unit[++i] != '<');
+			return Parse(Unit, i);
+		}
+
+		/*!
+		\brief 유니트스트링 인수 가져오기(A<B:C:D>에서 B, C, D부분)
+		\param Unit : 작업할 스트링
+		\param Order : 인수중 가져올 순번
+		\return 인수
+		*/
+		global_func Parse UnitParam(string Unit, int Order)
+		{
+			int i = 0;
+			while(Unit[i++] != '<');
+			for(int j = 0; j < Order; ++j)
+				while(Unit[i++] != ':');
+			const int ibegin = i--;
+			while(Unit[++i] != ':' && Unit[i] != '>');
+			return Parse(&Unit[ibegin], i - ibegin);
+		}
+
+		/*!
+		\brief 유니트스트링 인수수량 가져오기(A<B:C:D>의 경우, 3을 리턴)
+		\param Unit : 작업할 스트링
+		\return 인수수량
+		*/
+		global_func int UnitParamLength(string Unit)
+		{
+			int Result = 1, i = 0;
+			while(Unit[i++] != '<');
+			do {if(Unit[i] == ':') ++Result;}
+			while(Unit[i++] != '>');
+			return Result;
+		}
+
+	protected:
+		int ValidCount;
+		int StringLength;
+		string String;
+	};
+
+public:
 	/*!
 	\brief 기본생성자
 	*/
@@ -225,21 +454,24 @@ public:
 
 	/*!
 	\brief 공백제거(TrimLeft + TrimRight)
+	\return 자신을 리턴
 	\see TrimQuote
 	*/
-	void TrimBlank()
+	BxString& TrimBlank()
 	{
 		while(1 < Chars.Length() && Chars[0] == ' ')
 			Chars.Delete(0);
 		while(1 < Chars.Length() && Chars[END - 1] == ' ')
 			Chars.Delete(END - 1);
+		return *this;
 	}
 
 	/*!
 	\brief 인용구제거("A"나 'A'를 A로 변경)
+	\return 자신을 리턴
 	\see TrimBlank
 	*/
-	void TrimQuote()
+	BxString& TrimQuote()
 	{
 		if(2 < Chars.Length())
 		if((Chars[0] == '\'' && Chars[END - 1] == '\'') || (Chars[0] == '\"' && Chars[END - 1] == '\"'))
@@ -247,6 +479,7 @@ public:
 			Chars.Delete(0);
 			Chars.Delete(END - 1);
 		}
+		return *this;
 	}
 
 	/*!
@@ -283,25 +516,29 @@ public:
 	/*!
 	\brief 좌측 제거하기
 	\param Count : 제거할 바이트수
+	\return 자신을 리턴
 	\see DeleteRight
 	*/
-	void DeleteLeft(int Length)
+	BxString& DeleteLeft(int Length)
 	{
 		Length = BxUtilGlobal::Min(Length, Chars.Length() - 1);
 		for(int i = 0; i < Length; ++i)
 			Chars.Delete(0);
+		return *this;
 	}
 
 	/*!
 	\brief 우측 제거하기
 	\param Count : 제거할 바이트수
+	\return 자신을 리턴
 	\see DeleteLeft
 	*/
-	void DeleteRight(int Length)
+	BxString& DeleteRight(int Length)
 	{
 		Length = BxUtilGlobal::Min(Length, Chars.Length() - 1);
 		for(int i = 0; i < Length; ++i)
 			Chars.Delete(END - 1);
+		return *this;
 	}
 
 	/*!
@@ -365,141 +602,6 @@ public:
 	inline string CloneWithAlloc()
 	{
 		return BxUtilGlobal::StrCpyWithAlloc((string) Chars.GetBytes());
-	}
-
-	/*!
-	\brief 파티션스트링 나누기(|A|B|C|, /A/B/C/, *A*B*C*...)
-	\param Other : 작업할 스트링
-	\param Result : 나눔기호(첫바이트 자동인식)로 분리된 결과(강제 Reset은 안함)
-	*/
-	global_func void ParseDivision(string Other, BxVar<BxString>& Result)
-	{
-		const int OtherLength = BxUtilGlobal::StrLen(Other);
-		if(OtherLength && Other[0] == Other[OtherLength - 1])
-		for(int i = 0; i < OtherLength - 1; ++i)
-		{
-			if(Other[i] == Other[0])
-				Result.Insert(LAST);
-			else Result[END] += Other[i];
-		}
-	}
-
-	/*!
-	\brief 유니트스트링 이름 가져오기(A<B:C:D>에서 A부분)
-	\param Unit : 작업할 스트링
-	\return 이름
-	*/
-	global_func BxString ParseUnitName(string Unit)
-	{
-		BxString Result;
-		int i = 0;
-		while(Unit[i] != '<')
-			Result += Unit[i++];
-		return Result;
-	}
-
-	/*!
-	\brief 유니트스트링 인수 가져오기(A<B:C:D>에서 B, C, D부분)
-	\param Unit : 작업할 스트링
-	\param Order : 인수중 가져올 순번
-	\return 인수
-	*/
-	global_func BxString ParseUnitParam(string Unit, int Order)
-	{
-		int i = 0;
-		while(Unit[i++] != '<');
-		for(int j = 0; j < Order; ++j)
-			while(Unit[i++] != ':');
-		BxString Result;
-		const int begini = i;
-		while(Unit[i] != ':' && Unit[i] != '>')
-			Result += Unit[i++];
-		return Result;
-	}
-
-	/*!
-	\brief 유니트스트링 인수수량 가져오기(A<B:C:D>의 경우, 3을 리턴)
-	\param Unit : 작업할 스트링
-	\return 인수수량
-	*/
-	global_func int ParseUnitParamLength(string Unit)
-	{
-		int Result = 1, i = 0;
-		while(Unit[i++] != '<');
-		do {if(Unit[i] == ':') ++Result;}
-		while(Unit[i++] != '>');
-		return Result;
-	}
-
-	/*!
-	\brief 멀티라인 CSV스트링(CP949/UTF8) 나누기(A,"B,B",C를 A와 B,B와 C로 나눔)
-	\param Other : 작업할 스트링
-	\param Result : 분리된 결과(강제 Reset은 안함)
-	\return 파싱된 길이
-	*/
-	global_func int ParseCSV(string Other, BxVar<BxString>& Result)
-	{
-		int iBegin = 0, iFocus = -1;
-		do
-		{
-			++iFocus;
-			// 인용구 스킵
-			if(Other[iFocus] == '\'' || Other[iFocus] == '\"')
-			{
-				const char QuoteCode = Other[iFocus++];
-				while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n'
-					&& Other[iFocus] != QuoteCode) ++iFocus;
-			}
-			// 확장문자 스킵(UTF8고려)
-			else if(Other[iFocus] & 0x80)
-			{
-				++iFocus;
-				while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n'
-					&& (Other[iFocus] & 0x80)) ++iFocus;
-			}
-			// 스트링 저장
-			if(Other[iFocus] == ',' || Other[iFocus] == '\0' || Other[iFocus] == '\r' || Other[iFocus] == '\n')
-			{
-				Result[LAST].SetString(&Other[iBegin], iFocus - iBegin);
-				Result[END].TrimBlank(); // 공백제거
-				Result[END].TrimQuote(); // 인용구제거
-				iBegin = iFocus + 1;
-			}
-		}
-		while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n');
-		return iFocus;
-	}
-
-	/*!
-	\brief 멀티라인 ISO-2022스트링 나누기
-	\param Other : 작업할 스트링
-	\param Result : 줄바꿈기호로 분리된 결과(강제 Reset은 안함)
-	*/
-	global_func void ParseISO2022(string Other, BxVar<BxString>& Result)
-	{
-		const int OtherLength = BxUtilGlobal::StrLen(Other);
-		bool IsExtendChar = false;
-		Result[LAST] = "";
-		for(int i = 0; i < OtherLength; ++i)
-		{
-			if(Other[i] == '\x1B' && i + 2 < OtherLength)
-			{
-				if(Other[i + 1] == '$' && Other[i + 2] == 'B') IsExtendChar = true;
-				else if(Other[i + 1] == '(' && Other[i + 2] == 'B') IsExtendChar = false;
-				i += 2;
-			}
-			else if(IsExtendChar)
-			{
-				Result[END] += "\x1B$B";
-				Result[END] += Other[i];
-				Result[END] += Other[i + 1];
-				i += 1;
-			}
-			else if(Other[i] == '\n')
-				Result[LAST] = "";
-			else if(Other[i] != '\r')
-				Result[END] += Other[i];
-		}
 	}
 
 	/*!
@@ -604,6 +706,77 @@ public:
 		Empty();
 		for(int i = 0; i < TempLen; ++i)
 			Chars.Insert(i) = Temp[i];
+	}
+
+	/*!
+	\brief 멀티라인 CSV스트링(CP949/UTF8) 나누기(A,"B,B",C를 A와 B,B와 C로 나눔)
+	\param Other : 작업할 스트링
+	\param Result : 분리된 결과(강제 Reset은 안함)
+	\return 파싱된 길이
+	*/
+	global_func int ParseCSV(string Other, BxVar<BxString>& Result)
+	{
+		int iBegin = 0, iFocus = -1;
+		do
+		{
+			++iFocus;
+			// 인용구 스킵
+			if(Other[iFocus] == '\'' || Other[iFocus] == '\"')
+			{
+				const char QuoteCode = Other[iFocus++];
+				while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n'
+					&& Other[iFocus] != QuoteCode) ++iFocus;
+			}
+			// 확장문자 스킵(UTF8고려)
+			else if(Other[iFocus] & 0x80)
+			{
+				++iFocus;
+				while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n'
+					&& (Other[iFocus] & 0x80)) ++iFocus;
+			}
+			// 스트링 저장
+			if(Other[iFocus] == ',' || Other[iFocus] == '\0' || Other[iFocus] == '\r' || Other[iFocus] == '\n')
+			{
+				Result[LAST].SetString(&Other[iBegin], iFocus - iBegin);
+				Result[END].TrimBlank(); // 공백제거
+				Result[END].TrimQuote(); // 인용구제거
+				iBegin = iFocus + 1;
+			}
+		}
+		while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n');
+		return iFocus;
+	}
+
+	/*!
+	\brief 멀티라인 ISO-2022스트링 나누기
+	\param Other : 작업할 스트링
+	\param Result : 줄바꿈기호로 분리된 결과(강제 Reset은 안함)
+	*/
+	global_func void ParseISO2022(string Other, BxVar<BxString>& Result)
+	{
+		const int OtherLength = BxUtilGlobal::StrLen(Other);
+		bool IsExtendChar = false;
+		Result[LAST] = "";
+		for(int i = 0; i < OtherLength; ++i)
+		{
+			if(Other[i] == '\x1B' && i + 2 < OtherLength)
+			{
+				if(Other[i + 1] == '$' && Other[i + 2] == 'B') IsExtendChar = true;
+				else if(Other[i + 1] == '(' && Other[i + 2] == 'B') IsExtendChar = false;
+				i += 2;
+			}
+			else if(IsExtendChar)
+			{
+				Result[END] += "\x1B$B";
+				Result[END] += Other[i];
+				Result[END] += Other[i + 1];
+				i += 1;
+			}
+			else if(Other[i] == '\n')
+				Result[LAST] = "";
+			else if(Other[i] != '\r')
+				Result[END] += Other[i];
+		}
 	}
 
 	/*!

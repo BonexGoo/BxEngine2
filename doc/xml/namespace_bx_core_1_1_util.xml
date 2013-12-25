@@ -28,7 +28,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="400" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="421" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a4f81a8d7cf5960dcf082672afbfb486b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -54,7 +54,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="407" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="428" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -81,7 +81,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="415" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="436" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -128,7 +128,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="423" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="444" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -175,7 +175,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="431" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="452" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="440" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="461" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a7d19a71790c1618490e526fb0a12ed27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string _tmp_</type>
@@ -273,7 +273,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="449" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="470" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a41880400f45728f06bf82d985191af63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -309,7 +309,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="457" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="478" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1acb919367d4ddcaf86284146ce9237c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -367,7 +367,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="467" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="488" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1ac70cec443af515775e1715fb098d4ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -426,7 +426,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="477" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="498" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1ad2042ce6755beb730b5b9d6500cec38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint</type>
@@ -440,7 +440,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="483" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="504" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1afba41f7d3092cdd6b7fcac236bfebddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -454,7 +454,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="489" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="510" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a2cccf069af739d413adb8437bb16544d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint</type>
@@ -468,7 +468,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="495" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="516" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a3055494eac4b2e5797611cd67d7447b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -493,7 +493,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="501" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="522" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a9ef2e02010c31fe1e7f01fa970f6816d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -519,7 +519,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="507" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="528" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1aa18ac655e1fd93ba753360dad4e9f8d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -541,13 +541,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="513" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="534" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Util파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="393" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="414" column="1"/>
   </compounddef>
 </doxygen>

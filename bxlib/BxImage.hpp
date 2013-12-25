@@ -41,7 +41,7 @@ public:
 			{
 				const byte* ScaledBmp = BxCore::AddOn::HQXToBMP(Resource, ScaleNumber());
 				bool Result = _LoadBMP((ScaledBmp)? ScaledBmp : Resource);
-				BxCore::AddOn::ReleaseBMP(ScaledBmp);
+				BxCore::AddOn::Release(ScaledBmp);
 				return Result;
 			}
 			break;
@@ -604,7 +604,7 @@ protected:
 		const byte* Bmp = PngDecoder.GetResource(Resource, 1 < ScaleNumber());
 		const byte* ScaledBmp = BxCore::AddOn::HQXToBMP(Bmp, ScaleNumber());
 		bool Result = _LoadBMP((ScaledBmp)? ScaledBmp : Bmp);
-		BxCore::AddOn::ReleaseBMP(ScaledBmp);
+		BxCore::AddOn::Release(ScaledBmp);
 		return Result;
 	}
 	/// @endcond
@@ -615,8 +615,8 @@ protected:
 		const byte* Bmp = BxCore::AddOn::JPGToBMP(Resource);
 		const byte* ScaledBmp = BxCore::AddOn::HQXToBMP(Bmp, ScaleNumber());
 		bool Result = _LoadBMP((ScaledBmp)? ScaledBmp : Bmp);
-		BxCore::AddOn::ReleaseBMP(ScaledBmp);
-		BxCore::AddOn::ReleaseBMP(Bmp);
+		BxCore::AddOn::Release(ScaledBmp);
+		BxCore::AddOn::Release(Bmp);
 		return Result;
 	}
 	/// @endcond
@@ -628,8 +628,8 @@ protected:
 		const byte* Bmp = BxCore::AddOn::GIFToBMP(Resource, Length, NumPage);
 		const byte* ScaledBmp = BxCore::AddOn::HQXToBMP(Bmp, ScaleNumber());
 		bool Result = _LoadBMP((ScaledBmp)? ScaledBmp : Bmp);
-		BxCore::AddOn::ReleaseBMP(ScaledBmp);
-		BxCore::AddOn::ReleaseBMP(Bmp);
+		BxCore::AddOn::Release(ScaledBmp);
+		BxCore::AddOn::Release(Bmp);
 		Page = NumPage;
 		return Result;
 	}

@@ -195,7 +195,7 @@ private:
 		global_data bool IsInit = false;
 		if(IsInit) return;
 		IsInit = true;
-		#if defined(I3D_ARCH_X86) && defined(__BX_DEBUG_MEMORY_DLL)
+		#if defined(_MSC_VER) && defined(I3D_ARCH_X86) && defined(__BX_DEBUG_MEMORY_DLL)
 			DLLHandle() = BxCore::Library::Open("../../../bxtool/CodeLogger2.dll");
 			if(DLLHandle())
 			{

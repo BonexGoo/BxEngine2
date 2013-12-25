@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="27" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="29" bodyend="29"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="29" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a9aae6abea63d78669397cc706526a87e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func uint</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="31" bodyend="35"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="31" bodyend="35"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="38" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="38" bodyend="38"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="38" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="38" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a6565be680e8b1902d262615b8b8e6968" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="39" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="39" bodyend="39"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="39" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="39" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a46e982e9b353a59e26f9a9c0736cc5bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="41" bodyend="48"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="41" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1abbe4ab8bda804af58553513efdb8edb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="50" bodyend="74"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="50" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a1be4f611b844668118c044861d0e9262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="76" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="76" bodyend="232"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="76" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="76" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a2a45e50edc6783a9014413a32c070d55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="234" bodyend="332"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="234" bodyend="332"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a40d4e2744f72d75661afe15509420e63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="334" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="334" bodyend="345"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="334" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="334" bodyend="345"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a0580d95328777d5a07208185544928a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="347" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="347" bodyend="353"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="347" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="347" bodyend="353"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a56d0d3dee638963338594f0b5bd2142d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="355" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="355" bodyend="360"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="355" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="355" bodyend="360"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_keyword_1a804f00a9ff384dfad80cc1f830790e84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -244,14 +244,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="362" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="362" bodyend="379"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="362" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="362" bodyend="379"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>직렬자료 제공 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" line="26" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="25" bodyend="487"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" line="26" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="25" bodyend="487"/>
     <listofallmembers>
       <member refid="class_bx_keyword_1a62b19b76c2826d7967a76370e31986d8" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>BxKeyword</name></member>
       <member refid="class_bx_keyword_1a0580d95328777d5a07208185544928a8" prot="public" virt="non-virtual"><scope>BxKeyword</scope><name>CallEvent</name></member>

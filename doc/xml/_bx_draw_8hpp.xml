@@ -12,26 +12,18 @@
       <node id="88">
         <label>stdarg.h</label>
       </node>
-      <node id="89">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="90" relation="include">
-        </childnode>
-      </node>
-      <node id="91">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="86" relation="include">
-        </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
-      </node>
       <node id="86">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
         <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="86" relation="include">
         </childnode>
       </node>
       <node id="92">
@@ -46,12 +38,10 @@
         <childnode refid="88" relation="include">
         </childnode>
       </node>
-      <node id="83">
-        <label>BxDraw.hpp</label>
-        <link refid="BxDraw.hpp"/>
-        <childnode refid="84" relation="include">
-        </childnode>
-        <childnode refid="92" relation="include">
+      <node id="89">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="90" relation="include">
         </childnode>
       </node>
       <node id="90">
@@ -60,10 +50,12 @@
         <childnode refid="87" relation="include">
         </childnode>
       </node>
-      <node id="85">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
+      <node id="91">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
         </childnode>
       </node>
       <node id="84">
@@ -74,8 +66,24 @@
         <childnode refid="91" relation="include">
         </childnode>
       </node>
+      <node id="83">
+        <label>BxDraw.hpp</label>
+        <link refid="BxDraw.hpp"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="94">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="96">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
       <node id="95">
         <label>BxImage.hpp</label>
         <link refid="_bx_image_8hpp_source"/>
@@ -88,18 +96,6 @@
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
       </node>
-      <node id="96">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="97">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
-      </node>
-      <node id="94">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
       <node id="93">
         <label>BxDraw.hpp</label>
         <link refid="BxDraw.hpp"/>
@@ -111,6 +107,10 @@
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
+      </node>
+      <node id="97">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_draw_form" prot="public">BxDrawForm</innerclass>
@@ -1779,6 +1779,6 @@
 <codeline lineno="2020"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2022"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxDraw.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDraw.hpp"/>
   </compounddef>
 </doxygen>

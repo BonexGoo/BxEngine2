@@ -7,63 +7,63 @@
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <includedby refid="_bx_telex_8hpp" local="no">BxTelex.hpp</includedby>
     <incdepgraph>
-      <node id="420">
+      <node id="419">
         <label>stdarg.h</label>
       </node>
-      <node id="421">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="422" relation="include">
-        </childnode>
-      </node>
-      <node id="418">
+      <node id="417">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="419" relation="include">
+        <childnode refid="418" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
-        </childnode>
-      </node>
-      <node id="419">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
         <childnode refid="420" relation="include">
         </childnode>
       </node>
-      <node id="422">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
+      <node id="418">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
         <childnode refid="419" relation="include">
         </childnode>
       </node>
-      <node id="417">
+      <node id="420">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="418" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
         <label>BxVarMap.hpp</label>
         <link refid="BxVarMap.hpp"/>
-        <childnode refid="418" relation="include">
+        <childnode refid="417" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="425">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="426">
         <label>BxTelex.hpp</label>
         <link refid="_bx_telex_8hpp_source"/>
       </node>
       <node id="424">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="423">
         <label>BxDynamic.hpp</label>
         <link refid="_bx_dynamic_8hpp_source"/>
       </node>
-      <node id="423">
+      <node id="422">
         <label>BxVarMap.hpp</label>
         <link refid="BxVarMap.hpp"/>
+        <childnode refid="423" relation="include">
+        </childnode>
         <childnode refid="424" relation="include">
         </childnode>
         <childnode refid="425" relation="include">
-        </childnode>
-        <childnode refid="426" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -250,6 +250,6 @@
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="177"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxVarMap.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxVarMap.hpp"/>
   </compounddef>
 </doxygen>

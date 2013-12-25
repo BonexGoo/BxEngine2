@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="160" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="160" bodyend="160"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="160" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="160" bodyend="160"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="161" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="161" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="161" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_pool_1_1_unit_1a5240181411a8804040179cb80b0dd290" prot="public" static="no" mutable="no">
         <type>TYPE *</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="162" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_pool_1_1_unit_1a54a437eed2659f9a005abfa3af37a955" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="163" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="163" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="164" bodyend="171"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="164" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1_1_unit_1a3e0df32dee6169a969fd96f06d97834f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="172" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="172" bodyend="174"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="172" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="172" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1_1_unit_1a44e1937723a2f62d86c5e0cac7707756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="175" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="175" bodyend="181"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="175" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="175" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1_1_unit_1a32fc091e75778d45cf0cc6cd57db4c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="182" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="182" bodyend="188"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="182" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="182" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1_1_unit_1a4b823bdd28e76d909a185230a62e488e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="189" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="189" bodyend="202"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="189" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="189" bodyend="202"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,31 +144,31 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="203">
-        <label>BxPoolGlobal::Unit</label>
-        <link refid="class_bx_pool_global_1_1_unit"/>
-      </node>
-      <node id="202">
-        <label>BxPool&lt; TYPE &gt;::Unit</label>
-        <childnode refid="203" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="205">
         <label>BxPoolGlobal::Unit</label>
         <link refid="class_bx_pool_global_1_1_unit"/>
-        <childnode refid="205" relation="usage">
-          <edgelabel>Next</edgelabel>
-        </childnode>
       </node>
       <node id="204">
         <label>BxPool&lt; TYPE &gt;::Unit</label>
         <childnode refid="205" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="207">
+        <label>BxPoolGlobal::Unit</label>
+        <link refid="class_bx_pool_global_1_1_unit"/>
+        <childnode refid="207" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="206">
+        <label>BxPool&lt; TYPE &gt;::Unit</label>
+        <childnode refid="207" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxPool.hpp" bodystart="157" bodyend="203"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="157" bodyend="203"/>
     <listofallmembers>
       <member refid="class_bx_pool_1_1_unit_1a54a437eed2659f9a005abfa3af37a955" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Count</name></member>
       <member refid="class_bx_pool_1_1_unit_1a5ae2f02b52901a1c61547f7afc09792b" prot="public" virt="non-virtual"><scope>BxPool::Unit</scope><name>Data</name></member>

@@ -4,6 +4,14 @@ https://www.madewithmarmalade.com/downloads/7.0/7.0.0/marmalade-sdk-7.0.0-353650
 ※ ●:신규, ○:업데이트, ◎:버그패치, ★:폐지
 
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.6.1] → [2.7.0]
+● BxAddOn_MD5 : MD5 해시생성기
+● BxAddOn_ZIP : Unzip용 라이브러리
+● BxCore::AddOn : BUFToMD5, CreateZIP, ReleaseZIP, ZIPToFILE, ZIPToINFO 추가
+● BxCore::File : RenameFile 추가
+○ BxString : 파싱특화, 스레드세이프 내장클래스 BxString::Parse의 도입
+○ BxGUI : BxString::Parse관련 업데이트
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■ [2.6.0] → [2.6.1]
 ◎ BxType : nullptr도입
 ○ BxUtil : CP949/UTF16 테이블확장

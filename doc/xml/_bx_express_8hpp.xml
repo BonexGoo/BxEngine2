@@ -23,6 +23,20 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="115">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="117">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
+      <node id="113">
+        <label>BxExpress.hpp</label>
+        <link refid="BxExpress.hpp"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
       <node id="116">
         <label>BxImage.hpp</label>
         <link refid="_bx_image_8hpp_source"/>
@@ -35,24 +49,6 @@
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
       </node>
-      <node id="117">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="118">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
-      </node>
-      <node id="113">
-        <label>BxExpress.hpp</label>
-        <link refid="BxExpress.hpp"/>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="115">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
       <node id="114">
         <label>BxDraw.hpp</label>
         <link refid="_bx_draw_8hpp_source"/>
@@ -64,6 +60,10 @@
         </childnode>
         <childnode refid="119" relation="include">
         </childnode>
+      </node>
+      <node id="118">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_express_1_1___integer" prot="public">BxExpress::_Integer</innerclass>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" bodystart="4" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" bodystart="4" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1ae402912f25257c568fe484c088384346" prot="public" static="no">
         <name>BxIntegerX</name>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" bodystart="5" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1a915820da0672b4dc79b74489cea4b8c7" prot="public" static="no">
         <name>BxFloat</name>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1ab20410305c53094bc7ad556aa6f12b95" prot="public" static="no">
         <name>BxFloatX</name>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp" bodystart="7" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp" bodystart="7" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -410,6 +410,6 @@
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>Float<sp/><sp/><sp/>operator/(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>_Float&amp;<sp/>v1,<sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FloatX&amp;<sp/>v2<sp/><sp/>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Float((fint)((v1.ValueF<sp/>*<sp/>(huge)<sp/>v2.GetInverseF())<sp/>&gt;&gt;<sp/>16),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);}</highlight></codeline>
 <codeline lineno="282"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxlib/BxExpress.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxExpress.hpp"/>
   </compounddef>
 </doxygen>

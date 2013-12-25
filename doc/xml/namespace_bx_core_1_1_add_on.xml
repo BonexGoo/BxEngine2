@@ -23,12 +23,12 @@
 <para>: JPG리소스 </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>BMP리소스(ReleaseBMP로 해제) </para></simplesect>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kindref="member">ReleaseBMP</ref> </para></simplesect>
+<simplesect kind="return"><para>BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="524" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="545" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aeb819fb3335b1d32fd0b3278ee2b00eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const byte *</type>
@@ -72,12 +72,12 @@
 <para>: 장면수 </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>모든 장면이 세로로 연결된 BMP리소스(ReleaseBMP로 해제) </para></simplesect>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kindref="member">ReleaseBMP</ref> </para></simplesect>
+<simplesect kind="return"><para>모든 장면이 세로로 연결된 BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="534" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="555" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aa59974382fefad3d3c37561219e64e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const byte *</type>
@@ -110,44 +110,349 @@
 <para>: HQX옵션(2, 3, 4중 선택) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>재가공된 BMP리소스(ReleaseBMP로 해제) </para></simplesect>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" kindref="member">ReleaseBMP</ref> </para></simplesect>
+<simplesect kind="return"><para>재가공된 BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="543" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="564" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a25d8d030786b60facf89057638023b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void BxCore::AddOn::ReleaseBMP</definition>
-        <argsstring>(const byte *bmp)</argsstring>
-        <name>ReleaseBMP</name>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a7e5afd2b177cb0dfa7ad9cdc7a00ad7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::AddOn::BUFToMD5</definition>
+        <argsstring>(const byte *buffer, const int length)</argsstring>
+        <name>BUFToMD5</name>
         <param>
           <type>const byte *</type>
-          <declname>bmp</declname>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
         </param>
         <briefdescription>
-<para>BMP리소스 해제 </para>        </briefdescription>
+<para>데이터버퍼를 통해 MD5해시스트링을 제작 </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>bmp</parametername>
+<parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>: JPGToBMP로 제작되었던 BMP리소스 </para></parameterdescription>
+<para>: 데이터버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터버퍼의 바이트길이 </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1ad8d45ac71de83456a7b5aa27ffa647ac" kindref="member">JPGToBMP</ref> </para></simplesect>
+<simplesect kind="return"><para>MD5해시스트링(무조건 32바이트) </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="550" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="572" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_zip</type>
+        <definition>id_zip BxCore::AddOn::CreateZIP</definition>
+        <argsstring>(const byte *zip, const int length, int _out_ numfile, string password=nullptr)</argsstring>
+        <name>CreateZIP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>zip</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>numfile</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>ZIP파일의 디코딩을 위한 객체 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP리소스의 바이트길이 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비밀번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ZIP객체 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kindref="member">ReleaseZIP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="583" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::AddOn::ReleaseZIP</definition>
+        <argsstring>(id_zip zip)</argsstring>
+        <name>ReleaseZIP</name>
+        <param>
+          <type>id_zip</type>
+          <declname>zip</declname>
+        </param>
+        <briefdescription>
+<para>ZIP객체 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP객체 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kindref="member">CreateZIP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="590" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aa47dc2d509f9a450e143d488af753d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte* BxCore::AddOn::ZIPToFILE</definition>
+        <argsstring>(id_zip zip, const int fileindex, int _out_ filesize)</argsstring>
+        <name>ZIPToFILE</name>
+        <param>
+          <type>id_zip</type>
+          <declname>zip</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>fileindex</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>filesize</declname>
+        </param>
+        <briefdescription>
+<para>ZIP객체에서 요청 순번의 파일을 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청 순번 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일사이즈 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>요청 순번의 파일리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="600" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::AddOn::ZIPToINFO</definition>
+        <argsstring>(id_zip zip, const int fileindex, bool *isdir=nullptr, uhuge *ctime=nullptr, uhuge *mtime=nullptr, uhuge *atime=nullptr, bool *archive=nullptr, bool *hidden=nullptr, bool *readonly=nullptr, bool *system=nullptr)</argsstring>
+        <name>ZIPToINFO</name>
+        <param>
+          <type>id_zip</type>
+          <declname>zip</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>fileindex</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>isdir</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>ctime</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>mtime</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>atime</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>archive</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>hidden</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>readonly</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>system</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>ZIP객체에서 요청 순번의 파일정보를 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청 순번 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isdir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폴더인지의 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성시간(UTC기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 수정시간(UTC기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>atime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접근시간(UTC기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>archive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 저장속성 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hidden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 숨김속성 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>readonly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽기전용속성 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>system</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 시스템속성 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>요청 순번의 파일명 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="616" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::AddOn::Release</definition>
+        <argsstring>(const byte *buf)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>const byte *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>AddOn리소스 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AddOn함수로 생성한 메모리 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="624" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>AddOn파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine261ForMarmalade700/bxcore/BxCore.hpp" line="517" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="538" column="1"/>
   </compounddef>
 </doxygen>

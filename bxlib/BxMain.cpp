@@ -6,7 +6,7 @@
 local_func bool Procedure();
 local_data BxDraw* Draw = nullptr;
 local_data bool IsChildProcessRun = false;
-callback_process ChildProcess = nullptr;
+extern callback_process ChildProcess;
 /// @endcond
 
 /// @cond SECTION_NAME

@@ -177,6 +177,13 @@ namespace BxCore
 		string _tmp_ GetArchName();
 
 		/*!
+		\brief 장치ID 구하기
+		\param integerid : 정수타입 장치ID 받기
+		\return 스트링타입 장치ID
+		*/
+		string _tmp_ GetDeviceID(int* integerid = nullptr);
+
+		/*!
 		\brief 휴대폰번호 구하기
 		\return 자신의 휴대폰번호(예: 01022223333)
 		*/
@@ -189,10 +196,24 @@ namespace BxCore
 		string _tmp_ GetAppPackage();
 
 		/*!
+		\brief 어플패키지 파일확장자 구하기
+		\return 파일확장자(예: .apk)
+		*/
+		string _tmp_ GetAppPackageExt();
+
+		/*!
 		\brief 어플버전 구하기
 		\return 자신의 어플버전(예: 1.0.0)
 		*/
 		string _tmp_ GetAppVersion();
+
+		/*!
+		\brief 어플의 존재여부
+		\param packagename : 패키지명
+		\return 존재시 true, 없을시 false
+		\see GetAppPackage
+		*/
+		bool IsExistApp(string packagename);
 
 		/*!
 		\brief 웹페이지연결
@@ -518,8 +539,8 @@ namespace BxCore
 		/*!
 		\brief JPG이미지로 BMP를 제작
 		\param jpg : JPG리소스
-		\return BMP리소스(ReleaseBMP로 해제)
-		\see ReleaseBMP
+		\return BMP리소스(Release로 해제)
+		\see Release
 		*/
 		const byte* JPGToBMP(const byte* jpg);
 
@@ -528,8 +549,8 @@ namespace BxCore
 		\param gif : GIF리소스
 		\param length : GIF리소스의 바이트길이
 		\param numpage : 장면수
-		\return 모든 장면이 세로로 연결된 BMP리소스(ReleaseBMP로 해제)
-		\see ReleaseBMP
+		\return 모든 장면이 세로로 연결된 BMP리소스(Release로 해제)
+		\see Release
 		*/
 		const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage);
 
@@ -537,17 +558,70 @@ namespace BxCore
 		\brief HQX방식으로 재가공된 BMP를 제작
 		\param bmp : BMP리소스
 		\param scale : HQX옵션(2, 3, 4중 선택)
-		\return 재가공된 BMP리소스(ReleaseBMP로 해제)
-		\see ReleaseBMP
+		\return 재가공된 BMP리소스(Release로 해제)
+		\see Release
 		*/
 		const byte* HQXToBMP(const byte* bmp, int scale);
 
 		/*!
-		\brief BMP리소스 해제
-		\param bmp : JPGToBMP로 제작되었던 BMP리소스
-		\see JPGToBMP
+		\brief 데이터버퍼를 통해 MD5해시스트링을 제작
+		\param buffer : 데이터버퍼
+		\param length : 데이터버퍼의 바이트길이
+		\return MD5해시스트링(무조건 32바이트)
 		*/
-		void ReleaseBMP(const byte* bmp);
+		string _tmp_ BUFToMD5(const byte* buffer, const int length);
+
+		/*!
+		\brief ZIP파일의 디코딩을 위한 객체 생성
+		\param zip : ZIP리소스
+		\param length : ZIP리소스의 바이트길이
+		\param numfile : 파일수
+		\param password : 비밀번호
+		\return ZIP객체
+		\see ReleaseZIP
+		*/
+		id_zip CreateZIP(const byte* zip, const int length, int _out_ numfile, string password = nullptr);
+
+		/*!
+		\brief ZIP객체 제거
+		\param zip : ZIP객체
+		\see CreateZIP
+		*/
+		void ReleaseZIP(id_zip zip);
+
+		/*!
+		\brief ZIP객체에서 요청 순번의 파일을 로드
+		\param zip : ZIP객체
+		\param fileindex : 요청 순번
+		\param filesize : 파일사이즈
+		\return 요청 순번의 파일리소스(Release로 해제)
+		\see Release
+		*/
+		const byte* ZIPToFILE(id_zip zip, const int fileindex, int _out_ filesize);
+
+		/*!
+		\brief ZIP객체에서 요청 순번의 파일정보를 로드
+		\param zip : ZIP객체
+		\param fileindex : 요청 순번
+		\param isdir : 폴더인지의 여부
+		\param ctime : 생성시간(UTC기준)
+		\param mtime : 수정시간(UTC기준)
+		\param atime : 접근시간(UTC기준)
+		\param archive : 저장속성 여부
+		\param hidden : 숨김속성 여부
+		\param readonly : 읽기전용속성 여부
+		\param system : 시스템속성 여부
+		\return 요청 순번의 파일명
+		*/
+		string _tmp_ ZIPToINFO(id_zip zip, const int fileindex,
+			bool* isdir = nullptr, uhuge* ctime = nullptr, uhuge* mtime = nullptr, uhuge* atime = nullptr,
+			bool* archive = nullptr, bool* hidden = nullptr, bool* readonly = nullptr, bool* system = nullptr);
+
+		/*!
+		\brief AddOn리소스 해제
+		\param buf : AddOn함수로 생성한 메모리
+		*/
+		void Release(const byte* buf);
 	}
 	//! \brief File파트
 	namespace File
@@ -623,7 +697,7 @@ namespace BxCore
 		/*!
 		\brief 파일의 전체길이 얻기
 		\param filename : 파일명
-		\return 전체 바이트길이
+		\return 전체 바이트길이(파일이 없으면 -1)
 		*/
 		int GetSize(string filename);
 
@@ -668,8 +742,17 @@ namespace BxCore
 		\brief 파일삭제
 		\param filename : 파일명
 		\param doRemoveBlankedDirectory : 빈 폴더가 생기는 경우 폴더까지 삭제할지 여부
+		\return 성공여부
 		*/
-		void RemoveFile(string filename, bool doRemoveBlankedDirectory = false);
+		bool RemoveFile(string filename, bool doRemoveBlankedDirectory = false);
+
+		/*!
+		\brief 파일의 이름변경
+		\param srcname : 대상 파일명
+		\param dstname : 변경하고자 하는 파일명
+		\return 성공여부
+		*/
+		bool RenameFile(string srcname, string dstname);
 	}
 	//! \brief Socket파트
 	namespace Socket

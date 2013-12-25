@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.6.1</span>
+   &#160;<span id="projectnumber">2.7.0</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keyword">const</span> byte* ScaledBmp = <a class="code" href="namespace_bx_core_1_1_add_on.html#aa59974382fefad3d3c37561219e64e80" title="HQX방식으로 재가공된 BMP를 제작 ">BxCore::AddOn::HQXToBMP</a>(Resource, ScaleNumber());</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordtype">bool</span> Result = _LoadBMP((ScaledBmp)? ScaledBmp : Resource);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">BxCore::AddOn::ReleaseBMP</a>(ScaledBmp);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">BxCore::AddOn::Release</a>(ScaledBmp);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -609,7 +609,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <span class="keyword">const</span> byte* Bmp = PngDecoder.GetResource(Resource, 1 &lt; ScaleNumber());</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keyword">const</span> byte* ScaledBmp = <a class="code" href="namespace_bx_core_1_1_add_on.html#aa59974382fefad3d3c37561219e64e80" title="HQX방식으로 재가공된 BMP를 제작 ">BxCore::AddOn::HQXToBMP</a>(Bmp, ScaleNumber());</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <span class="keywordtype">bool</span> Result = _LoadBMP((ScaledBmp)? ScaledBmp : Bmp);</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">BxCore::AddOn::ReleaseBMP</a>(ScaledBmp);</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">BxCore::AddOn::Release</a>(ScaledBmp);</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    }</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
@@ -618,8 +618,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <span class="keyword">const</span> byte* Bmp = <a class="code" href="namespace_bx_core_1_1_add_on.html#ad8d45ac71de83456a7b5aa27ffa647ac" title="JPG이미지로 BMP를 제작 ">BxCore::AddOn::JPGToBMP</a>(Resource);</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="keyword">const</span> byte* ScaledBmp = <a class="code" href="namespace_bx_core_1_1_add_on.html#aa59974382fefad3d3c37561219e64e80" title="HQX방식으로 재가공된 BMP를 제작 ">BxCore::AddOn::HQXToBMP</a>(Bmp, ScaleNumber());</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="keywordtype">bool</span> Result = _LoadBMP((ScaledBmp)? ScaledBmp : Bmp);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">BxCore::AddOn::ReleaseBMP</a>(ScaledBmp);</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">BxCore::AddOn::ReleaseBMP</a>(Bmp);</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">BxCore::AddOn::Release</a>(ScaledBmp);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">BxCore::AddOn::Release</a>(Bmp);</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    }</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
@@ -629,8 +629,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        <span class="keyword">const</span> byte* Bmp = <a class="code" href="namespace_bx_core_1_1_add_on.html#aeb819fb3335b1d32fd0b3278ee2b00eb" title="GIF이미지로 BMP를 제작 ">BxCore::AddOn::GIFToBMP</a>(Resource, Length, NumPage);</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keyword">const</span> byte* ScaledBmp = <a class="code" href="namespace_bx_core_1_1_add_on.html#aa59974382fefad3d3c37561219e64e80" title="HQX방식으로 재가공된 BMP를 제작 ">BxCore::AddOn::HQXToBMP</a>(Bmp, ScaleNumber());</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        <span class="keywordtype">bool</span> Result = _LoadBMP((ScaledBmp)? ScaledBmp : Bmp);</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">BxCore::AddOn::ReleaseBMP</a>(ScaledBmp);</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a25d8d030786b60facf89057638023b0f" title="BMP리소스 해제 ">BxCore::AddOn::ReleaseBMP</a>(Bmp);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">BxCore::AddOn::Release</a>(ScaledBmp);</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <a class="code" href="namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6" title="AddOn리소스 해제 ">BxCore::AddOn::Release</a>(Bmp);</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        Page = NumPage;</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    }</div>
@@ -1325,7 +1325,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 04:19:49 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 26 2013 03:14:06 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
