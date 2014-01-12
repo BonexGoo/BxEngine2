@@ -4,61 +4,61 @@
     <compoundname>BxTween.hpp</compoundname>
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <incdepgraph>
-      <node id="345">
+      <node id="428">
         <label>stdarg.h</label>
       </node>
-      <node id="343">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="344" relation="include">
-        </childnode>
-        <childnode refid="346" relation="include">
-        </childnode>
-      </node>
-      <node id="342">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="343" relation="include">
-        </childnode>
-      </node>
-      <node id="344">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="345" relation="include">
-        </childnode>
-      </node>
-      <node id="346">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="347" relation="include">
-        </childnode>
-      </node>
-      <node id="347">
+      <node id="430">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="344" relation="include">
+        <childnode refid="427" relation="include">
         </childnode>
       </node>
-      <node id="340">
-        <label>BxTween.hpp</label>
-        <link refid="BxTween.hpp"/>
-        <childnode refid="341" relation="include">
+      <node id="426">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
         </childnode>
       </node>
-      <node id="348">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="343" relation="include">
-        </childnode>
-        <childnode refid="342" relation="include">
+      <node id="425">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="426" relation="include">
         </childnode>
       </node>
-      <node id="341">
+      <node id="424">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="342" relation="include">
+        <childnode refid="425" relation="include">
         </childnode>
-        <childnode refid="348" relation="include">
+        <childnode refid="431" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>BxTween.hpp</label>
+        <link refid="BxTween.hpp"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="428" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxTween.hpp" line="433" column="12"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTween.hpp" line="433" column="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,7 +144,7 @@
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>MessageLength)</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>id_memory<sp/>Message<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1ae33cb5b0c5e2af137d9a32c85dd75f87" kindref="member" tooltip="메모리할당 ">BxCore::Util::Malloc</ref>(MessageLength);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(<ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Message),<sp/>Resource,<sp/>MessageLength);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(<ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Message),<sp/>Resource,<sp/>MessageLength);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Resource<sp/>+=<sp/>MessageLength;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Target-&gt;Message<sp/>=<sp/>Message;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -208,7 +208,7 @@
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Target-&gt;StopAnimation();</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>Target-&gt;AnimationLength;<sp/>++j)</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Target-&gt;Animation))[j].ClearAnimation(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Target-&gt;Animation))[j].ClearAnimation(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>_PartLength;<sp/>++i)</highlight></codeline>
@@ -227,7 +227,7 @@
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>_PartLength;<sp/>++i)</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartTarget*<sp/>Target<sp/>=<sp/>&amp;_Target[i<sp/>-<sp/>1];</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>Animation<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Target-&gt;Animation);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>Animation<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Target-&gt;Animation);</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>Target-&gt;AnimationLength<sp/>-<sp/>1;<sp/>0<sp/>&lt;=<sp/>j;<sp/>--j)</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Animation[j].GetRunAnimation())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
@@ -384,13 +384,13 @@
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Animation)<sp/><ref refid="namespace_bx_core_1_1_util_1a4f81a8d7cf5960dcf082672afbfb486b" kindref="member" tooltip="메모리반환 ">BxCore::Util::Free</ref>(Animation);</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AnimationLength<sp/>=<sp/>NumPart;</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Animation<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1ae33cb5b0c5e2af137d9a32c85dd75f87" kindref="member" tooltip="메모리할당 ">BxCore::Util::Malloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(_PartAnimation)<sp/>*<sp/>AnimationLength);</highlight></codeline>
-<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(<ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Animation),<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(_PartAnimation)<sp/>*<sp/>AnimationLength);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(<ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Animation),<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(_PartAnimation)<sp/>*<sp/>AnimationLength);</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_memory<sp/>Point<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1ae33cb5b0c5e2af137d9a32c85dd75f87" kindref="member" tooltip="메모리할당 ">BxCore::Util::Malloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>*<sp/>AnimationLength<sp/>*<sp/>2);</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(<ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Point),<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>*<sp/>AnimationLength<sp/>*<sp/>2);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(<ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Point),<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>*<sp/>AnimationLength<sp/>*<sp/>2);</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>포인터화</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>AnimationPtr<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Animation);</highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>PosX<sp/>=<sp/>&amp;((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Point))[0];</highlight></codeline>
-<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>PosY<sp/>=<sp/>&amp;((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Point))[AnimationLength];</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>AnimationPtr<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Animation);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>PosX<sp/>=<sp/>&amp;((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Point))[0];</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>PosY<sp/>=<sp/>&amp;((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Point))[AnimationLength];</highlight></codeline>
 <codeline lineno="308"><highlight class="normal"></highlight></codeline>
 <codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsMiddle)</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -517,7 +517,7 @@
 <codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PlayAnimation(_PartBegin*<sp/>PrevTarget,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MsPerFrame)</highlight></codeline>
 <codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="433"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>MS_TO_FRAME(A)<sp/>(((A)<sp/>+<sp/>MsPerFrame<sp/>/<sp/>2)<sp/>/<sp/>MsPerFrame)</highlight></codeline>
-<codeline lineno="434"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>AnimationPtr<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Animation);</highlight></codeline>
+<codeline lineno="434"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>AnimationPtr<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(Animation);</highlight></codeline>
 <codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>AnimationLength;<sp/>++i)</highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!AnimationPtr[i].IsEnable)</highlight></codeline>
@@ -712,7 +712,7 @@
 <codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>신규</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(PrevTarget<sp/>&amp;&amp;<sp/>!AnimationPtr[i].GetEndAnimation())</highlight></codeline>
 <codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>PrevAnimationPtr<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a2de766e24a98d6e01066d06578d27137" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(PrevTarget-&gt;Animation);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_PartAnimation*<sp/>PrevAnimationPtr<sp/>=<sp/>(_PartAnimation*)<sp/><ref refid="namespace_bx_core_1_1_util_1a6a57bb094d32039831bd41c2057c6708" kindref="member" tooltip="메모리ID의 실제 메모리번지 구하기 ">BxCore::Util::GetPtr</ref>(PrevTarget-&gt;Animation);</highlight></codeline>
 <codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>i;<sp/>0<sp/>&lt;=<sp/>j;<sp/>--j)</highlight></codeline>
 <codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(PrevAnimationPtr[j].IsEnable)</highlight></codeline>
 <codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -760,6 +760,6 @@
 <codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;_PartTarget&gt;</ref><sp/>_Target;</highlight></codeline>
 <codeline lineno="675"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxTween.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTween.hpp"/>
   </compounddef>
 </doxygen>

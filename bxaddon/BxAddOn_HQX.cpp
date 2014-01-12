@@ -221,7 +221,7 @@ static inline void Interp10(uint32_t * pc, uint32_t c1, uint32_t c2, uint32_t c3
 void hqxInit(void)
 {
 	if(RGBtoYUV) return;
-	BxSINGLETON(RGBtoYUV, (DETAIL_R_MASK | DETAIL_G_MASK | DETAIL_B_MASK) + 1);
+	BxSINGLETON(RGBtoYUV, uint, (DETAIL_R_MASK | DETAIL_G_MASK | DETAIL_B_MASK) + 1);
     /* Initalize RGB to YUV lookup table */
     uint32_t c, r, g, b, y, u, v;
     for (c = 0; c < (DETAIL_R_MASK | DETAIL_G_MASK | DETAIL_B_MASK) + 1; c++) {

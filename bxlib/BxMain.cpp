@@ -6,7 +6,6 @@
 local_func bool Procedure();
 local_data BxDraw* Draw = nullptr;
 local_data bool IsChildProcessRun = false;
-extern callback_process ChildProcess;
 /// @endcond
 
 /// @cond SECTION_NAME
@@ -20,7 +19,10 @@ namespace BxCore
 	}
 	namespace System
 	{
-		void ForMain_CallbackRun();
+		void ForSystem_CallbackRun();
+		void ForSystem_ClearChildProcess();
+		bool ForSystem_HasChildProcess();
+		void ForSystem_RunChildProcess(callback_procedure yield);
 	}
 }
 /// @endcond
@@ -135,14 +137,14 @@ bool Procedure()
 	#endif
 
 	// 통합콜백처리
-	BxCore::System::ForMain_CallbackRun();
+	BxCore::System::ForSystem_CallbackRun();
 
 	// 자식프로세스의 실행
-	if(!IsChildProcessRun && ChildProcess)
+	if(!IsChildProcessRun && BxCore::System::ForSystem_HasChildProcess())
 	{
 		IsChildProcessRun = true;
-		ChildProcess(ProcedureWithYield);
-		ChildProcess = nullptr;
+		BxCore::System::ForSystem_RunChildProcess(ProcedureWithYield);
+		BxCore::System::ForSystem_ClearChildProcess();
 		IsChildProcessRun = false;
 	}
 

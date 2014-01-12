@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.7.0</span>
+   &#160;<span id="projectnumber">2.8.0</span>
    </div>
   </td>
  </tr>
@@ -148,12 +148,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ace58b8597a34f4d9b9ab4f27b4f48dde"><td class="memItemLeft" align="right" valign="top">global_func void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde">UTF16ToUTF8</a> (wstring utf16, int utf16length, string_rw utf8)</td></tr>
 <tr class="memdesc:ace58b8597a34f4d9b9ab4f27b4f48dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF16를 UTF8로 전환  <a href="#ace58b8597a34f4d9b9ab4f27b4f48dde">More...</a><br/></td></tr>
 <tr class="separator:ace58b8597a34f4d9b9ab4f27b4f48dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9734058f17823d1e2f3f7fc07a4aa121"><td class="memItemLeft" align="right" valign="top">global_func int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121">GetLengthForUTF8</a> (wstring utf16, int utf16length)</td></tr>
-<tr class="memdesc:a9734058f17823d1e2f3f7fc07a4aa121"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF16을 UTF8로 전환시 필요한 UTF8의 배열수량  <a href="#a9734058f17823d1e2f3f7fc07a4aa121">More...</a><br/></td></tr>
-<tr class="separator:a9734058f17823d1e2f3f7fc07a4aa121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a641e1bebe3972ac651d08b6890d76fb0"><td class="memItemLeft" align="right" valign="top">global_func void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0">UTF8ToUTF16</a> (string utf8, int utf8length, wstring_rw utf16)</td></tr>
 <tr class="memdesc:a641e1bebe3972ac651d08b6890d76fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF8을 UTF16으로 전환  <a href="#a641e1bebe3972ac651d08b6890d76fb0">More...</a><br/></td></tr>
 <tr class="separator:a641e1bebe3972ac651d08b6890d76fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9734058f17823d1e2f3f7fc07a4aa121"><td class="memItemLeft" align="right" valign="top">global_func int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121">GetLengthForUTF8</a> (wstring utf16, int utf16length)</td></tr>
+<tr class="memdesc:a9734058f17823d1e2f3f7fc07a4aa121"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF16을 UTF8로 전환시 필요한 UTF8의 바이트길이  <a href="#a9734058f17823d1e2f3f7fc07a4aa121">More...</a><br/></td></tr>
+<tr class="separator:a9734058f17823d1e2f3f7fc07a4aa121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6609c0c508f2148565c35b9212052d33"><td class="memItemLeft" align="right" valign="top">global_func int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33">GetLengthForUTF16</a> (string utf8, int utf8length)</td></tr>
 <tr class="memdesc:a6609c0c508f2148565c35b9212052d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF8을 UTF16으로 전환시 필요한 UTF16의 배열수량  <a href="#a6609c0c508f2148565c35b9212052d33">More...</a><br/></td></tr>
 <tr class="separator:a6609c0c508f2148565c35b9212052d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,7 +448,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>필요한 배열수량 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>필요한 UTF16의 배열수량 </dd></dl>
 
 </div>
 </div>
@@ -484,7 +484,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>UTF16을 UTF8로 전환시 필요한 UTF8의 배열수량 </p>
+<p>UTF16을 UTF8로 전환시 필요한 UTF8의 바이트길이 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">utf16</td><td>: 변환할 UTF16스트링 </td></tr>
@@ -492,7 +492,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>필요한 배열수량 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>필요한 바이트길이 </dd></dl>
 
 </div>
 </div>
@@ -1096,7 +1096,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121" title="UTF16을 UTF8로 전환시 필요한 UTF8의 배열수량 ">BxUtil::GetLengthForUTF8</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121" title="UTF16을 UTF8로 전환시 필요한 UTF8의 바이트길이 ">BxUtil::GetLengthForUTF8</a> </dd></dl>
 
 </div>
 </div>
@@ -1157,7 +1157,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 26 2013 03:14:07 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 13 2014 00:27:29 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.7.0</span>
+   &#160;<span id="projectnumber">2.8.0</span>
    </div>
   </td>
  </tr>
@@ -93,9 +93,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxCore.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define BxNew(TYPE)                        new(BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define BxNew(TYPE)                        new((int) BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define BxNew_Param(TYPE, ...)             new(BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define BxNew_Param(TYPE, ...)             new((int) BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE(__VA_ARGS__)</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define BxNew_Array(TYPE, COUNT)           BxMemory::_NewArray&lt;TYPE&gt;(COUNT, 2, __FILE__, __LINE__, __FUNCTION__)</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        DataArray[0] = count;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        TYPE* ClassArray = (TYPE*) &amp;DataArray[1];</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">for</span>(uint i = 0; i &lt; count; ++i)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">new</span>(&amp;ClassArray[i]) TYPE;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">new</span>((<span class="keywordtype">int</span>) &amp;ClassArray[i]) TYPE;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> ClassArray;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
@@ -222,12 +222,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> MemSize = <a class="code" href="namespace_bx_core_1_1_system.html#a7e6b5e614e1e3ed23733fb1f21f4d7dd" title="마멀레이드의 Number형 환경설정값(icf/s3e) 불러오기 ">BxCore::System::GetPlatformConfigNumber</a>(<span class="stringliteral">&quot;MemSizeBx&quot;</span>);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                id_memory Pool = <a class="code" href="namespace_bx_core_1_1_util.html#ae33cb5b0c5e2af137d9a32c85dd75f87" title="메모리할당 ">BxCore::Util::Malloc</a>(MemSize); <span class="comment">// 동일한 조건</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="keyword">typedef</span> bool (*LoggerOnType)(<span class="keywordtype">string</span> sysname, uint memorysizebykb, <span class="keywordtype">string</span> projname, <span class="keywordtype">string</span> filename);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                LoggerOnType LoggerOnMethod = (LoggerOnType) <a class="code" href="namespace_bx_core_1_1_library.html#a1299d51e4cfcc97f32a4299ac9ce0e1d" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxMemLoggerOn&quot;</span>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                LoggerOnType LoggerOnMethod = (LoggerOnType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxMemLoggerOn&quot;</span>);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="keywordflow">if</span>(LoggerOnMethod(<span class="stringliteral">&quot;BxMemoryFast&quot;</span>, MemSize / 1024, <span class="stringliteral">&quot;BxMemory&quot;</span>, __FILE__))</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    LogMethod() = (LogType) <a class="code" href="namespace_bx_core_1_1_library.html#a1299d51e4cfcc97f32a4299ac9ce0e1d" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxLog&quot;</span>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    MakeMethod() = (MakeType) <a class="code" href="namespace_bx_core_1_1_library.html#a1299d51e4cfcc97f32a4299ac9ce0e1d" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxMake&quot;</span>);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    FreeMethod() = (FreeType) <a class="code" href="namespace_bx_core_1_1_library.html#a1299d51e4cfcc97f32a4299ac9ce0e1d" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxFree&quot;</span>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    LogMethod() = (LogType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxLog&quot;</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    MakeMethod() = (MakeType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxMake&quot;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    FreeMethod() = (FreeType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxFree&quot;</span>);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                }</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">else</span> <a class="code" href="namespace_bx_core_1_1_util.html#a4f81a8d7cf5960dcf082672afbfb486b" title="메모리반환 ">BxCore::Util::Free</a>(Pool);</div>
@@ -565,7 +565,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 26 2013 03:14:06 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 13 2014 00:27:27 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

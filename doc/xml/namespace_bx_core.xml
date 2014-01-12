@@ -7,15 +7,17 @@
     <innernamespace refid="namespace_bx_core_1_1_font">BxCore::Font</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_library">BxCore::Library</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_main">BxCore::Main</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_open_g_l2_d">BxCore::OpenGL2D</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_socket">BxCore::Socket</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_sound">BxCore::Sound</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_surface">BxCore::Surface</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_system">BxCore::System</innernamespace>
+    <innernamespace refid="namespace_bx_core_1_1_thread">BxCore::Thread</innernamespace>
     <innernamespace refid="namespace_bx_core_1_1_util">BxCore::Util</innernamespace>
     <briefdescription>
 <para>BxEngine Core-API. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="7" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="7" column="1"/>
   </compounddef>
 </doxygen>

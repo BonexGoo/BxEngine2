@@ -59,9 +59,11 @@ var searchData=
   ['bxengine_20_ea_b0_9c_ec_9a_94',['BxEngine 개요',['../index.html',1,'']]],
   ['library',['Library',['../namespace_bx_core_1_1_library.html',1,'BxCore']]],
   ['main',['Main',['../namespace_bx_core_1_1_main.html',1,'BxCore']]],
+  ['opengl2d',['OpenGL2D',['../namespace_bx_core_1_1_open_g_l2_d.html',1,'BxCore']]],
   ['socket',['Socket',['../namespace_bx_core_1_1_socket.html',1,'BxCore']]],
   ['sound',['Sound',['../namespace_bx_core_1_1_sound.html',1,'BxCore']]],
   ['surface',['Surface',['../namespace_bx_core_1_1_surface.html',1,'BxCore']]],
   ['system',['System',['../namespace_bx_core_1_1_system.html',1,'BxCore']]],
+  ['thread',['Thread',['../namespace_bx_core_1_1_thread.html',1,'BxCore']]],
   ['util',['Util',['../namespace_bx_core_1_1_util.html',1,'BxCore']]]
 ];

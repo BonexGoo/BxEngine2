@@ -2,9 +2,9 @@
 #include <BxCore.hpp>
 #include <BxMemory.hpp>
 
-#define BxSINGLETON(RET, ...) \
+#define BxSINGLETON(RET, TYPE, ...) \
 	do { \
-		static decltype(RET) Value = nullptr; \
+		static TYPE* Value = nullptr; \
 		static uint Count = BxSingleton::Link(Value, Count); \
 		RET = BxSingleton::Bind(Value, Count, __VA_ARGS__); \
 	} while(false)

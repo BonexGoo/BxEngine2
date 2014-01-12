@@ -126,6 +126,16 @@ public:
 		}
 
 		/*!
+		\brief 연산자 중복함수=(Parse)
+		\param RHS : 우측 피연산자
+		\return 자신을 리턴
+		*/
+		Parse& operator=(const Parse& RHS)
+		{
+			return operator=((string) RHS);
+		}
+
+		/*!
 		\brief 연산자 중복함수+=(char)
 		\param RHS : 우측 피연산자
 		\return 자신을 리턴
@@ -149,7 +159,7 @@ public:
 		\brief 형변환 중복함수(string)
 		\return string형 전체스트링
 		*/
-		inline operator string()
+		inline operator string() const
 		{
 			return String;
 		}
@@ -701,7 +711,7 @@ public:
 		global_data int TempSizeMax = 0;
 		if(TempSizeMax < TempLen + 1) TempSizeMax = TempLen + 1;
 		string_rw Temp = nullptr;
-		BxSINGLETON(Temp, TempSizeMax);
+		BxSINGLETON(Temp, char, TempSizeMax);
 		BxCore::Util::VsnPrintf(Temp, TempLen + 1, format, list);
 		Empty();
 		for(int i = 0; i < TempLen; ++i)

@@ -8,6 +8,7 @@ var searchData=
   ['clone',['Clone',['../class_bx_keyword_1_1_clone.html',1,'BxKeyword']]],
   ['clonewithalloc',['CloneWithAlloc',['../class_bx_string.html#ad82768a52a89e008078998783e622347',1,'BxString']]],
   ['close',['Close',['../namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b',1,'BxCore::File::Close()'],['../namespace_bx_core_1_1_font.html#a774eba3b56f296434e719f06842743b1',1,'BxCore::Font::Close()'],['../namespace_bx_core_1_1_library.html#a4a4735c133e1cf5689553b237901e02a',1,'BxCore::Library::Close()']]],
+  ['closemutex',['CloseMutex',['../namespace_bx_core_1_1_thread.html#a01f908e2c4137aaf47cbd5adf675e1b7',1,'BxCore::Thread']]],
   ['color',['COLOR',['../namespace_bx_draw_global.html#aa77b8b6570afce4266316a45e5e552ee',1,'BxDrawGlobal::COLOR(byte r, byte g, byte b, uint rate=100)'],['../namespace_bx_draw_global.html#a1106b5aedf54a1f4c833e8b579d54280',1,'BxDrawGlobal::COLOR(color_x888 rgb, uint rate=100)']]],
   ['color565tonativedst',['Color565ToNativeDst',['../namespace_bx_draw_global.html#acdda0ad3e9387274a1fbc9aa6210b757',1,'BxDrawGlobal']]],
   ['color565tonativesrc',['Color565ToNativeSrc',['../namespace_bx_draw_global.html#a6ad7cb2fb717655bb122e55879f5757d',1,'BxDrawGlobal']]],
@@ -30,6 +31,6 @@ var searchData=
   ['copyfrom',['CopyFrom',['../class_bx_image.html#a47e46ae65d25e40e67c7d31f17865e2d',1,'BxImage']]],
   ['cos',['Cos',['../class_bx_util.html#a1d0271ff4863c0b8fbe8b7f9c1076653',1,'BxUtil']]],
   ['cp949toutf16',['CP949ToUTF16',['../class_bx_util.html#a67d75745d20650033cb419129baaaed8',1,'BxUtil']]],
-  ['create',['Create',['../class_bx_image.html#a32398885ee66cdbf4614230718ddebea',1,'BxImage::Create(const int Width, const int Height, const int HotspotX, const int HotspotY)'],['../class_bx_image.html#ad8cf3a1291116f0dc05d51b2daa4cf5a',1,'BxImage::Create(BxImage &amp;Src, const int X, const int Y, const int Width, const int Height, hotspot Hotspot=PAD7)'],['../namespace_bx_core_1_1_sound.html#afdb4f5ce1bf8fd5d6fe945ccef3d5309',1,'BxCore::Sound::Create()'],['../namespace_bx_core_1_1_socket.html#a85378908a5e811508c7a9b8a96dfa58d',1,'BxCore::Socket::Create()']]],
+  ['create',['Create',['../class_bx_image.html#a32398885ee66cdbf4614230718ddebea',1,'BxImage::Create(const int Width, const int Height, const int HotspotX, const int HotspotY)'],['../class_bx_image.html#ad8cf3a1291116f0dc05d51b2daa4cf5a',1,'BxImage::Create(BxImage &amp;Src, const int X, const int Y, const int Width, const int Height, hotspot Hotspot=PAD7)'],['../namespace_bx_core_1_1_sound.html#afdb4f5ce1bf8fd5d6fe945ccef3d5309',1,'BxCore::Sound::Create()'],['../namespace_bx_core_1_1_socket.html#a85378908a5e811508c7a9b8a96dfa58d',1,'BxCore::Socket::Create()'],['../namespace_bx_core_1_1_thread.html#aaedfd3f40c87744a20478d8a9f08e2ea',1,'BxCore::Thread::Create()']]],
   ['createzip',['CreateZIP',['../namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9',1,'BxCore::AddOn']]]
 ];

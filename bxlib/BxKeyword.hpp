@@ -26,7 +26,8 @@ class BxKeyword
 {
 	BxString FileName;
 
-	global_func inline BxVar<BxKeyword>& LetPool() {BxVar<BxKeyword>* _; BxSINGLETON(_, 1); return *_;}
+	global_func inline BxVar<BxKeyword>& LetPool()
+	{BxVar<BxKeyword>* _; BxSINGLETON(_, BxVar<BxKeyword>, 1); return *_;}
 
 	global_func inline uint MakeParentID(bool IsAdd = true)
 	{
@@ -425,7 +426,8 @@ public:
 		Access() : Keyword("") {}
 		~Access() {}
 
-		global_func inline BxVar<Access>& LetPool() {BxVar<Access>* _; BxSINGLETON(_, 1); return *_;}
+		global_func inline BxVar<Access>& LetPool()
+		{BxVar<Access>* _; BxSINGLETON(_, BxVar<Access>, 1); return *_;}
 
 		template<int COUNT>
 		global_func inline Access& ByTemplate(string name)

@@ -18,6 +18,7 @@ namespace BxCore
 		void PushFrameDelay();
 		void PullFrameDelay();
 	}
+
 	//! \brief System파트
 	namespace System
 	{
@@ -158,11 +159,14 @@ namespace BxCore
 		/*!
 		\brief 디버깅코드(Macro함수인 BxAssert로 사용권장)
 		\param name : 에러내용
+		\param query : 질의내용
+		\param IsIgnore : 무시여부
 		\param flag : 정상동작여부(true-정상동작, false-오류동작)
-		\param filename : 해당파일명(__FILE__을 사용)
-		\param linenumber : 해당줄번호(__LINE__을 사용)
+		\param file : 해당파일명(__FILE__을 사용)
+		\param line : 해당줄번호(__LINE__을 사용)
+		\param func : 해당줄번호(__FUNCTION__를 사용)
 		*/
-		void Assert(string name, bool& IsIgnore, bool flag, string filename, int linenumber);
+		void Assert(string name, string query, bool& IsIgnore, bool flag, string file, int line, string func);
 
 		/*!
 		\brief OS이름 구하기
@@ -280,6 +284,7 @@ namespace BxCore
 		*/
 		callback_edk SetCallbackEDK(callback_edk methodCB);
 	}
+
 	//! \brief Surface파트
 	namespace Surface
 	{
@@ -339,6 +344,7 @@ namespace BxCore
 		*/
 		bool SetMarginMode(bool enable);
 	}
+
 	//! \brief Sound파트
 	namespace Sound
 	{
@@ -409,6 +415,7 @@ namespace BxCore
 		*/
 		void ResumeAll();
 	}
+
 	//! \brief Util파트
 	namespace Util
 	{
@@ -532,7 +539,13 @@ namespace BxCore
 		\see PushCallDepthAndLog
 		*/
 		void PopCallDepthAndLog(string file, const int line);
+
+		const int* Cos1024Table();
+		const int* Tan1024Table();
+		wstring UTF16Table();
+		wstring CP949Table();
 	}
+
 	//! \brief AddOn파트
 	namespace AddOn
 	{
@@ -623,6 +636,7 @@ namespace BxCore
 		*/
 		void Release(const byte* buf);
 	}
+
 	//! \brief File파트
 	namespace File
 	{
@@ -661,6 +675,16 @@ namespace BxCore
 		uint Read(id_file file, void* buffer, uint length, callback_progress progress = nullptr);
 
 		/*!
+		\brief 파일에서 가변정수읽기
+		\param file : 파일ID
+		\param variable : 가변정수를 읽을 메모리
+		\param additionkey : 입력보정을 위한 덧셈키
+		\param progress : 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출)
+		\return 읽은 바이트길이
+		*/
+		uint ReadVariable(id_file file, uhuge* variable, const byte additionkey = 0x00, callback_progress progress = nullptr);
+
+		/*!
 		\brief 파일로 쓰기
 		\param file : 파일ID
 		\param buffer : 쓸 내용을 담고 있는 메모리
@@ -669,6 +693,16 @@ namespace BxCore
 		\return 쓴 바이트길이
 		*/
 		uint Write(id_file file, const void* buffer, uint length, callback_progress progress = nullptr);
+
+		/*!
+		\brief 파일로 가변정수쓰기
+		\param file : 파일ID
+		\param variable : 파일에 쓸 가변정수
+		\param additionkey : 출력보정을 위한 덧셈키
+		\param progress : 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출)
+		\return 쓴 바이트길이
+		*/
+		uint WriteVariable(id_file file, const uhuge variable, const byte additionkey = 0x00, callback_progress progress = nullptr);
 
 		/*!
 		\brief 파일로 스트링쓰기
@@ -754,6 +788,7 @@ namespace BxCore
 		*/
 		bool RenameFile(string srcname, string dstname);
 	}
+
 	//! \brief Socket파트
 	namespace Socket
 	{
@@ -837,6 +872,7 @@ namespace BxCore
 		*/
 		int Ping(string addr, uint timeout);
 	}
+
 	//! \brief Font파트
 	namespace Font
 	{
@@ -912,6 +948,57 @@ namespace BxCore
 		*/
 		void Draw(id_font font, string str, const point p, const size s = size::full(), const color_x888 color = 0, const byte opacity = 0xFF);
 	}
+
+	//! \brief Thread파트
+	namespace Thread
+	{
+		/*!
+		\brief 스레드 생성
+		\param threadCB : 콜백함수
+		\param data : 전달할 데이터
+		\return 생성된 스레드ID
+		\see Release
+		*/
+		id_thread Create(callback_thread threadCB, void* data = nullptr);
+
+		/*!
+		\brief 스레드 해제
+		\param thread : 스레드ID
+		\param dokill : 강제로 종료시킬지의 여부
+		\param dowait : 종료때까지 대기할지의 여부
+		\see Create
+		*/
+		void Release(id_thread thread, bool dokill = false, bool dowait = false);
+
+		/*!
+		\brief 뮤텍스 열기
+		\return 생성된 뮤텍스ID
+		\see CloseMutex
+		*/
+		id_mutex OpenMutex();
+		
+		/*!
+		\brief 뮤텍스 닫기
+		\param mutex : 뮤텍스ID
+		\see OpenMutex
+		*/
+		void CloseMutex(id_mutex mutex);
+		
+		/*!
+		\brief 뮤텍스 잠금
+		\param mutex : 뮤텍스ID
+		\see Unlock
+		*/
+		void Lock(id_mutex mutex);
+		
+		/*!
+		\brief 뮤텍스 해제
+		\param mutex : 뮤텍스ID
+		\see Lock
+		*/
+		void Unlock(id_mutex mutex);
+	}
+
 	//! \brief Library파트
 	namespace Library
 	{
@@ -938,8 +1025,8 @@ namespace BxCore
 		*/
 		void* Link(id_library handle, string name);
 	}
-	/// @cond SECTION_NAME
-	#ifdef __BX_OPENGL
+
+	//! \brief OpenGL2D파트
 	namespace OpenGL2D
 	{
 		void Init();
@@ -976,6 +1063,4 @@ namespace BxCore
 		const int GetTextureMargin();
 		const bool DoTextureInterpolation();
 	}
-	#endif
-	/// @endcond
 }

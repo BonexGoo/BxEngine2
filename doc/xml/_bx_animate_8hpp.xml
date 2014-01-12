@@ -9,14 +9,18 @@
       <node id="5">
         <label>stdarg.h</label>
       </node>
-      <node id="0">
-        <label>BxAnimate.hpp</label>
-        <link refid="BxAnimate.hpp"/>
-        <childnode refid="1" relation="include">
+      <node id="1">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+      </node>
+      <node id="7">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -33,42 +37,12 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="12">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
+      <node id="8">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -81,20 +55,42 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="12">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>BxAnimate.hpp</label>
+        <link refid="BxAnimate.hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
       <node id="9">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="14">
@@ -105,12 +101,16 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="8" relation="include">
+      <node id="10">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+      </node>
+      <node id="4">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -523,9 +523,9 @@
 <codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>Number;</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>String;</highlight></codeline>
 <codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Keyword*<sp/>_ref_<sp/><ref refid="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" kindref="member" tooltip="함수연결 ">Link</ref>;</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Keyword*<sp/>_ref_<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>;</highlight></codeline>
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Keyword()<sp/>:<sp/>Type(keyword_null),<sp/>Name(nullptr),<sp/>ParentID(0),<sp/><ref refid="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" kindref="member" tooltip="함수연결 ">Link</ref>(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Keyword()<sp/>:<sp/>Type(keyword_null),<sp/>Name(nullptr),<sp/>ParentID(0),<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>(nullptr)<sp/>{}</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~_Keyword()</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
@@ -661,9 +661,9 @@
 <codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~_Stencil()<sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxAnimate&lt;소멸되는<sp/>타입이<sp/>다릅니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CType<sp/>==<sp/>ClassType_Stencil);<sp/>BxDelete_Array(Bits);}</highlight></codeline>
 <codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>*Stencil;</highlight></codeline>
 <codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>Data;</highlight></codeline>
-<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Form*<sp/>_ref_<sp/><ref refid="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" kindref="member" tooltip="함수연결 ">Link</ref>;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Form*<sp/>_ref_<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>;</highlight></codeline>
 <codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Form()<sp/>:<sp/>Type(form_null),<sp/>Length(0),<sp/><ref refid="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" kindref="member" tooltip="함수연결 ">Link</ref>(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Form()<sp/>:<sp/>Type(form_null),<sp/>Length(0),<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>(nullptr)<sp/>{}</highlight></codeline>
 <codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~_Form()</highlight></codeline>
 <codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(Type)</highlight></codeline>
@@ -799,9 +799,9 @@
 <codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>*StPolygon,<sp/>*BzPolygon;</highlight></codeline>
 <codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>Data;</highlight></codeline>
-<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Outline*<sp/>_ref_<sp/><ref refid="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" kindref="member" tooltip="함수연결 ">Link</ref>;</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Outline*<sp/>_ref_<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>;</highlight></codeline>
 <codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Outline()<sp/>:<sp/>Type(outline_null),<sp/>Length(0),<sp/><ref refid="namespace_bx_core_1_1_library_1a1299d51e4cfcc97f32a4299ac9ce0e1d" kindref="member" tooltip="함수연결 ">Link</ref>(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Outline()<sp/>:<sp/>Type(outline_null),<sp/>Length(0),<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>(nullptr)<sp/>{}</highlight></codeline>
 <codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~_Outline()</highlight></codeline>
 <codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(Type)</highlight></codeline>
@@ -1548,6 +1548,6 @@
 <codeline lineno="1516"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var_vector" kindref="compound" tooltip="vector식 가변배열 제공(BxVar와 동일인터페이스) ">BxVarVector&lt;_Active, 256&gt;</ref><sp/>DeadActive;</highlight></codeline>
 <codeline lineno="1518"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxAnimate.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxAnimate.hpp"/>
   </compounddef>
 </doxygen>

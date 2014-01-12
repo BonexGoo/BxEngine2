@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.7.0</span>
+   &#160;<span id="projectnumber">2.8.0</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxPool.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define throw(...) (BxThrow(), __VA_ARGS__)</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define Throw(...) (BxThrow(), __VA_ARGS__)</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_bx_throw.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bx_throw.html" title="가변인자 제공 ">BxThrow</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -205,8 +205,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        global_func <span class="keyword">const</span> <span class="keywordtype">void</span>* StaticTablePtr()</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            global_data <span class="keyword">const</span> PtrUnit Uint;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> ((<span class="keyword">const</span> <span class="keywordtype">void</span>**) &amp;Uint)[0];</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            global_data <span class="keyword">const</span> PtrUnit Unit;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> ((<span class="keyword">const</span> <span class="keywordtype">void</span>**) &amp;Unit)[0];</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    };</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    HeadUnit List;</div>
@@ -214,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 26 2013 03:14:07 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 13 2014 00:27:27 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -1,10 +1,11 @@
 var searchData=
 [
   ['read',['Read',['../namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1',1,'BxCore::File']]],
+  ['readvariable',['ReadVariable',['../namespace_bx_core_1_1_file.html#a74accb21bf2f405effb1968424bc7127',1,'BxCore::File']]],
   ['rectangle',['Rectangle',['../class_bx_draw.html#a9714a17e6dbafd6b247028cc71fc4e20',1,'BxDraw']]],
   ['recv',['Recv',['../namespace_bx_core_1_1_socket.html#a7be3798b55912b18de94d464abc420e5',1,'BxCore::Socket']]],
   ['recvfully',['RecvFully',['../namespace_bx_core_1_1_socket.html#aa8ff5faa5156e2443a76dfff25c8c3e2',1,'BxCore::Socket']]],
-  ['release',['Release',['../class_bx_image.html#a4ceaa21adefa3fde9dd7caf8a4ee1c1b',1,'BxImage::Release()'],['../namespace_bx_core_1_1_sound.html#a6b955c392b411972ca91efd87c35fe8e',1,'BxCore::Sound::Release()'],['../namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6',1,'BxCore::AddOn::Release()'],['../namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9',1,'BxCore::Socket::Release()']]],
+  ['release',['Release',['../class_bx_image.html#a4ceaa21adefa3fde9dd7caf8a4ee1c1b',1,'BxImage::Release()'],['../namespace_bx_core_1_1_sound.html#a6b955c392b411972ca91efd87c35fe8e',1,'BxCore::Sound::Release()'],['../namespace_bx_core_1_1_add_on.html#a6d31d4d96a38632a5372d1de8bd7cdf6',1,'BxCore::AddOn::Release()'],['../namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9',1,'BxCore::Socket::Release()'],['../namespace_bx_core_1_1_thread.html#ab826ab467ee70b36c1884e87a855c3c4',1,'BxCore::Thread::Release()']]],
   ['releasezip',['ReleaseZIP',['../namespace_bx_core_1_1_add_on.html#ad8940c44357430f8d5aa09fb22478630',1,'BxCore::AddOn']]],
   ['removefile',['RemoveFile',['../namespace_bx_core_1_1_file.html#a6e174bc48590d33a8389aa627ead540a',1,'BxCore::File']]],
   ['renamefile',['RenameFile',['../namespace_bx_core_1_1_file.html#aa619ac618c718c7497eb786a68dd7aba',1,'BxCore::File']]],

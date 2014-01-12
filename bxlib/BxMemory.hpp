@@ -8,7 +8,7 @@
 \param TYPE : 클래스타입
 \return 클래스타입 포인터
 */
-#define BxNew(TYPE)                        new(BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE
+#define BxNew(TYPE)                        new((int) BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE
 
 /*!
 \defgroup BxNew_Param
@@ -18,7 +18,7 @@
 \param ... : 전달할 인수
 \return 클래스타입 포인터
 */
-#define BxNew_Param(TYPE, ...)             new(BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE(__VA_ARGS__)
+#define BxNew_Param(TYPE, ...)             new((int) BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE(__VA_ARGS__)
 
 /*!
 \defgroup BxNew_Array
@@ -103,7 +103,7 @@ public:
 		DataArray[0] = count;
 		TYPE* ClassArray = (TYPE*) &DataArray[1];
 		for(uint i = 0; i < count; ++i)
-			new(&ClassArray[i]) TYPE;
+			new((int) &ClassArray[i]) TYPE;
 		return ClassArray;
 	}
 

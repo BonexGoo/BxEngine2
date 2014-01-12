@@ -25,7 +25,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="100" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="100" bodyend="115"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="100" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="100" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1a43a524743c418a38543f93e279c43b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -52,7 +52,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="123" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="123" bodyend="129"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="123" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="123" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func TYPE *</type>
@@ -67,7 +67,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="136" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="136" bodyend="139"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="136" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="136" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -94,7 +94,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="147" bodyend="154"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="147" bodyend="154"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="205" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="205" bodyend="215"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="205" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="205" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1a8801ec27a3878da79e86a425201c4570" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func Unit *&amp;</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="217" bodyend="221"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="217" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="217" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_pool_1a00b842ac1821035bfac392b4bc3194bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func Unit *</type>
@@ -139,14 +139,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="223" bodyend="239"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="223" bodyend="239"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>사용자모듈을 위한 풀링도구 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxPool.hpp" bodystart="92" bodyend="240"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="92" bodyend="240"/>
     <listofallmembers>
       <member refid="class_bx_pool_1a00b842ac1821035bfac392b4bc3194bc" prot="private" virt="non-virtual"><scope>BxPool</scope><name>FindUnit</name></member>
       <member refid="class_bx_pool_1a43a524743c418a38543f93e279c43b4e" prot="public" virt="non-virtual"><scope>BxPool</scope><name>Free</name></member>

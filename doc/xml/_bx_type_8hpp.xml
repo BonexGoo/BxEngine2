@@ -7,216 +7,230 @@
     <includedby refid="_bx_pool_8hpp" local="no">BxPool.hpp</includedby>
     <includedby refid="_bx_core_8hpp" local="no">BxCore.hpp</includedby>
     <incdepgraph>
-      <node id="351">
+      <node id="434">
         <label>stdarg.h</label>
       </node>
-      <node id="350">
+      <node id="433">
         <label>BxType.hpp</label>
         <link refid="BxType.hpp"/>
-        <childnode refid="351" relation="include">
+        <childnode refid="434" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="362">
+      <node id="454">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
+      </node>
+      <node id="441">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
+      </node>
+      <node id="456">
+        <label>BxXml.hpp</label>
+        <link refid="_bx_xml_8hpp_source"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
         <label>BxTelex.hpp</label>
         <link refid="_bx_telex_8hpp_source"/>
       </node>
-      <node id="355">
+      <node id="438">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
-      <node id="357">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="363">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="364" relation="include">
-        </childnode>
-        <childnode refid="365" relation="include">
-        </childnode>
-        <childnode refid="366" relation="include">
-        </childnode>
-        <childnode refid="367" relation="include">
-        </childnode>
-        <childnode refid="376" relation="include">
-        </childnode>
-      </node>
-      <node id="365">
+      <node id="449">
         <label>BxDynamic.hpp</label>
         <link refid="_bx_dynamic_8hpp_source"/>
       </node>
-      <node id="366">
+      <node id="448">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
         <label>BxMemory.hpp</label>
         <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="364" relation="include">
+        <childnode refid="448" relation="include">
         </childnode>
-        <childnode refid="367" relation="include">
+        <childnode refid="451" relation="include">
         </childnode>
-        <childnode refid="362" relation="include">
+        <childnode refid="446" relation="include">
         </childnode>
-        <childnode refid="372" relation="include">
+        <childnode refid="457" relation="include">
         </childnode>
-        <childnode refid="375" relation="include">
+        <childnode refid="460" relation="include">
         </childnode>
-        <childnode refid="374" relation="include">
+        <childnode refid="459" relation="include">
         </childnode>
       </node>
-      <node id="369">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
+      <node id="457">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
       </node>
-      <node id="353">
+      <node id="461">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
         <label>BxExpress.hpp</label>
         <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="354" relation="include">
+        <childnode refid="437" relation="include">
         </childnode>
       </node>
-      <node id="352">
-        <label>BxType.hpp</label>
-        <link refid="BxType.hpp"/>
-        <childnode refid="353" relation="include">
+      <node id="437">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="438" relation="include">
         </childnode>
-        <childnode refid="360" relation="include">
+        <childnode refid="439" relation="include">
         </childnode>
-        <childnode refid="363" relation="include">
+        <childnode refid="441" relation="include">
         </childnode>
-      </node>
-      <node id="356">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="357" relation="include">
-        </childnode>
-        <childnode refid="355" relation="include">
+        <childnode refid="442" relation="include">
         </childnode>
       </node>
-      <node id="361">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="362" relation="include">
-        </childnode>
-        <childnode refid="363" relation="include">
-        </childnode>
-      </node>
-      <node id="374">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="357" relation="include">
-        </childnode>
-        <childnode refid="358" relation="include">
-        </childnode>
-        <childnode refid="362" relation="include">
-        </childnode>
-        <childnode refid="370" relation="include">
-        </childnode>
-      </node>
-      <node id="370">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
-        <childnode refid="355" relation="include">
-        </childnode>
-      </node>
-      <node id="360">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="361" relation="include">
-        </childnode>
-        <childnode refid="375" relation="include">
-        </childnode>
-      </node>
-      <node id="373">
+      <node id="458">
         <label>BxTween.hpp</label>
         <link refid="_bx_tween_8hpp_source"/>
       </node>
-      <node id="359">
+      <node id="442">
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
-      </node>
-      <node id="368">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="357" relation="include">
-        </childnode>
-        <childnode refid="369" relation="include">
-        </childnode>
-        <childnode refid="359" relation="include">
-        </childnode>
-        <childnode refid="370" relation="include">
-        </childnode>
-        <childnode refid="371" relation="include">
+        <childnode refid="443" relation="include">
         </childnode>
       </node>
-      <node id="367">
+      <node id="440">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
+      <node id="453">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      </node>
+      <node id="445">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="451">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="368" relation="include">
+        <childnode refid="452" relation="include">
         </childnode>
-        <childnode refid="362" relation="include">
+        <childnode refid="446" relation="include">
         </childnode>
-        <childnode refid="372" relation="include">
-        </childnode>
-      </node>
-      <node id="372">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="354" relation="include">
-        </childnode>
-        <childnode refid="365" relation="include">
-        </childnode>
-        <childnode refid="358" relation="include">
-        </childnode>
-        <childnode refid="368" relation="include">
-        </childnode>
-        <childnode refid="373" relation="include">
-        </childnode>
-        <childnode refid="374" relation="include">
+        <childnode refid="457" relation="include">
         </childnode>
       </node>
-      <node id="376">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="365" relation="include">
-        </childnode>
-        <childnode refid="355" relation="include">
-        </childnode>
-        <childnode refid="362" relation="include">
-        </childnode>
-      </node>
-      <node id="375">
+      <node id="460">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="368" relation="include">
+        <childnode refid="452" relation="include">
         </childnode>
-        <childnode refid="362" relation="include">
-        </childnode>
-      </node>
-      <node id="364">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-      </node>
-      <node id="371">
-        <label>BxXml.hpp</label>
-        <link refid="_bx_xml_8hpp_source"/>
-        <childnode refid="355" relation="include">
+        <childnode refid="446" relation="include">
         </childnode>
       </node>
-      <node id="354">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="355" relation="include">
+      <node id="439">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="440" relation="include">
         </childnode>
-        <childnode refid="356" relation="include">
-        </childnode>
-        <childnode refid="358" relation="include">
-        </childnode>
-        <childnode refid="359" relation="include">
+        <childnode refid="438" relation="include">
         </childnode>
       </node>
-      <node id="358">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
+      <node id="435">
+        <label>BxType.hpp</label>
+        <link refid="BxType.hpp"/>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structcolor__bgra" prot="public">color_bgra</innerclass>
@@ -244,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="16" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="16" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="16" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a41f9c5fb8b08eb5dc3edce4dcb37fee7" prot="public" static="no">
         <name>true</name>
@@ -255,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="19" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="19" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="19" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a65e9886d74aaee76545e83dd09011727" prot="public" static="no">
         <name>false</name>
@@ -266,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="22" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="22" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="22" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a00d24c7231be28dbaf71f5408f30e44c" prot="public" static="no">
         <name>inline</name>
@@ -277,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="25" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="25" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="25" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1af83a7c727ccabce9a4b27fc1872e5460" prot="public" static="no">
         <name>_inline</name>
@@ -288,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="28" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="28" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="28" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a9cdcad0c486033f699656fb6ed0bd5cd" prot="public" static="no">
         <name>_arr_</name>
@@ -298,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="32" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="32" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="32" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a5427aeee61e05b6edff539be5159d359" prot="public" static="no">
         <name>_ref_</name>
@@ -308,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="33" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="33" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="33" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a1366798be6aaabaccabad9ef4b529d56" prot="public" static="no">
         <name>_tmp_</name>
@@ -318,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="34" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="34" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="34" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1ac22026408fa430f2ef2f35fc131215f8" prot="public" static="no">
         <name>_in_</name>
@@ -328,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="35" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="35" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="35" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a12cce0e82ea7feba2f65f85aedaa036d" prot="public" static="no">
         <name>_out_</name>
@@ -339,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="36" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="36" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="36" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a0dc4b878d03d414c5f8233a588ac24ba" prot="public" static="no">
         <name>_inout_</name>
@@ -350,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="37" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="37" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="37" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1abdbfb952ff896a8e1f75d44775b3a502" prot="public" static="no">
         <name>local_func</name>
@@ -361,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="38" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="38" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="38" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a15ff5cdc3e56dddbe0e99384495e7740" prot="public" static="no">
         <name>local_data</name>
@@ -372,7 +386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="39" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="39" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="39" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a3f033c42613e7f788fa09cb7dceb39fd" prot="public" static="no">
         <name>global_func</name>
@@ -383,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="40" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="40" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="40" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a2c4ccd585bc28f238f9d62555557dfe4" prot="public" static="no">
         <name>global_data</name>
@@ -394,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="41" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="41" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="41" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a27188a3f4bdad4750865cc4b0d001559" prot="public" static="no">
         <name>macro</name>
@@ -405,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="47" column="11" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="47" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="47" column="11" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1aaf500f3b1880133098b0d6b0318a2a26" prot="public" static="no">
         <name>_MASK_BIT_</name>
@@ -416,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="80" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="80" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="80" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1ae5c08a3a49693a7591648e76ed3c4b10" prot="public" static="no">
         <name>_OPA_BIT_</name>
@@ -427,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="81" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="81" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="81" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a9427adba88e874054c3ac51fa37ab642" prot="public" static="no">
         <name>ox100000000</name>
@@ -438,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="277" column="11" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="277" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="281" column="11" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="281" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1ab1b041f63819143a7c0b3e65279e70b2" prot="public" static="no">
         <name>ItoF</name>
@@ -450,7 +464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="281" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="281" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="285" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="285" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a7d4ce4c61d6c96a09e51fd6f4cfd3677" prot="public" static="no">
         <name>FtoI</name>
@@ -462,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="282" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="282" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="286" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a256f69aa33ae1d8514ee99d000f613bb" prot="public" static="no">
         <name>FtoR</name>
@@ -474,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="283" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="283" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="287" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="287" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1ad5642c089511ee22809967048b52ccfb" prot="public" static="no">
         <name>REV4</name>
@@ -486,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="284" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="284" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="288" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="288" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a63347261cdf2b6205e9c261f94db9374" prot="public" static="no">
         <name>VAL4</name>
@@ -501,7 +515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="285" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="285" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="289" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="289" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a77a787d04694fc0930721568e9a89d93" prot="public" static="no">
         <name>CASE64</name>
@@ -529,7 +543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="286" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="286" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="290" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="290" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a0eb0baab24c8c5d88818371acd534ffc" prot="public" static="no">
         <name>BxAssert</name>
@@ -542,27 +556,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="309" column="11" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="309" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="314" column="11" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="314" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="_bx_type_8hpp_1a42e01b72ee690c372b09d89dd2d26f0c" prot="public" static="no">
-        <name>IW_STD_NEW_H</name>
+      <memberdef kind="define" id="_bx_type_8hpp_1a296bb48f120950a45410b9994c7d64d1" prot="public" static="no">
+        <name>_BX_OPERATOR_NEW_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="314" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="314" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="_bx_type_8hpp_1a7c71b794f0badaceccc8c0afe790fe34" prot="public" static="no">
-        <name>__PLACEMENT_NEW_INLINE</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="315" column="10" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="315" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="319" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="319" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a2160f60eac88968e86fba68a5f0e6c21" prot="public" static="no">
         <name>NEW_SIZE_T</name>
@@ -573,7 +577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="319" column="15" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="319" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="323" column="13" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="323" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1a5bf49514a4396e7f66408641b0e22794" prot="public" static="no">
         <name>__BX_DECLARE_IsTypePointer</name>
@@ -583,7 +587,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="333" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="333" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="333" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="333" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_type_8hpp_1ae79d6f8846cbb2b52dbd0bb7ff262117" prot="public" static="no">
         <name>try</name>
@@ -596,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="348" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="348" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="348" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="348" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -624,7 +628,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="62" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="62" bodyend="62"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="62" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a8e06b05c63fcf005c9a76ef270adc178" prot="public" static="no">
         <name>syseventtype</name>
@@ -676,7 +680,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="85" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="85" bodyend="85"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="85" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a47eb21335a27fa31a82e3e1c139ddfd9" prot="public" static="no">
         <name>syseventset</name>
@@ -707,7 +711,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="86" bodyend="86"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="86" bodyend="86"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a4ff7e793f26c23e40d9a0d43b8b1548b" prot="public" static="no">
         <name>syseventresult</name>
@@ -731,7 +735,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="87" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="87" bodyend="87"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="87" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="87" bodyend="87"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a4784b56121243aea28449c13c63fc83c" prot="public" static="no">
         <name>sysupdateresult</name>
@@ -773,7 +777,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="88" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="88" bodyend="88"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="88" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="88" bodyend="88"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1afaaf07a84de9ff1ee466140ea9d360b3" prot="public" static="no">
         <name>sysmethod</name>
@@ -797,7 +801,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="89" bodyend="89"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="89" bodyend="89"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a8b5fb5162d249863ed473dec60eeac9e" prot="public" static="no">
         <name>sysrequest</name>
@@ -835,7 +839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="90" bodyend="90"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="90" bodyend="90"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a4e51b60f97d46ad3894009582220c24f" prot="public" static="no">
         <name>syskeytype</name>
@@ -873,7 +877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="91" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="91" bodyend="91"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="91" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="91" bodyend="91"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1ada8f0d617284b72f029279ed83bbd4cc" prot="public" static="no">
         <name>systouchtype</name>
@@ -911,7 +915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="92" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="92" bodyend="92"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="92" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="92" bodyend="92"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a95029e2b65c28890c23021e8fc64acbe" prot="public" static="no">
         <name>sysbuttontype</name>
@@ -949,7 +953,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="93" bodyend="93"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="93" bodyend="93"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1ae5677d049cdc58a946a283a3ddcdf534" prot="public" static="no">
         <name>compare</name>
@@ -999,7 +1003,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="94" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="94" bodyend="94"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="94" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="94" bodyend="94"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a94011ee059f7903111450bf8097ec102" prot="public" static="no">
         <name>keyword</name>
@@ -1052,7 +1056,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="95" bodyend="95"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1ad8f7b02b003357151e768ef5170c7e93" prot="public" static="no">
         <name>form</name>
@@ -1091,7 +1095,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="96" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="96" bodyend="96"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="96" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="96" bodyend="96"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1aa091e4edd4b04bd9673f6f2b59844378" prot="public" static="no">
         <name>outline</name>
@@ -1144,7 +1148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="97" bodyend="97"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="97" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="97" bodyend="97"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a7c8a22fb5c1644be96aac6212f52fac9" prot="public" static="no">
         <name>motion</name>
@@ -1274,7 +1278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="98" bodyend="103"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="98" bodyend="103"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a5d3df03a327115a1c2e1ecd104aed035" prot="public" static="no">
         <name>layer</name>
@@ -1313,7 +1317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="104" bodyend="104"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="104" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="104" bodyend="104"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a39d037222f4b7bc88a67424811346a62" prot="public" static="no">
         <name>maskoperate</name>
@@ -1367,7 +1371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="105" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="105" bodyend="105"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="105" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="105" bodyend="105"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a0537030c12a0ee8a846a6651c804d1fc" prot="public" static="no">
         <name>maskflag</name>
@@ -1414,7 +1418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="106" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="106" bodyend="106"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="106" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="106" bodyend="106"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a1467f342244c0df3c0b1761082d76504" prot="public" static="no">
         <name>drawturn</name>
@@ -1487,7 +1491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="107" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="107" bodyend="107"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="107" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="107" bodyend="107"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1aaaee3086de9b8bb9bf489d4ba254ef52" prot="public" static="no">
         <name>drawblend</name>
@@ -1645,7 +1649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="109" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="108" bodyend="114"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="109" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="108" bodyend="114"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1addd332bed7c9026793a1d772ecea2ddc" prot="public" static="no">
         <name>drawstyle</name>
@@ -1739,7 +1743,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="116" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="115" bodyend="120"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="116" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="115" bodyend="120"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a2eb50e3d6646a63e98355c7d914a8aa3" prot="public" static="no">
         <name>surtype</name>
@@ -1763,7 +1767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="121" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="121" bodyend="121"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="121" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="121" bodyend="121"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a44ec82ce053dc8ae93c63632a6d97863" prot="public" static="no">
         <name>dirtype</name>
@@ -1808,7 +1812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="122" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="122" bodyend="122"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="122" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="122" bodyend="122"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a30860b4a9c7804af982e682dd18f5e98" prot="public" static="no">
         <name>keystate</name>
@@ -1850,7 +1854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="123" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="123" bodyend="123"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="123" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="123" bodyend="123"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331fa" prot="public" static="no">
         <name>keykind</name>
@@ -2434,7 +2438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="125" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="124" bodyend="144"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="125" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="124" bodyend="144"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a8b6c9805575b8204581f42e97a08bbf0" prot="public" static="no">
         <name>fonttype</name>
@@ -2465,7 +2469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="145" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="145" bodyend="145"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="145" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="145" bodyend="145"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a93a47caa637e5b920e087e5261db0be2" prot="public" static="no">
         <name>fontarea</name>
@@ -2496,7 +2500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="146" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="146" bodyend="146"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="146" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="146" bodyend="146"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1ace1fb01b906a3312017e31670569db42" prot="public" static="no">
         <name>fontoption</name>
@@ -2527,7 +2531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="147" bodyend="147"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="147" bodyend="147"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1ae9ad8adeb233d7c44ce869967d47de82" prot="public" static="no">
         <name>fontoptionvalue</name>
@@ -2601,7 +2605,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="149" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="148" bodyend="153"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="149" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="148" bodyend="153"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1afe32a50afea4742667580d20a91f9a52" prot="public" static="no">
         <name>fontcomponent</name>
@@ -2632,7 +2636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="154" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="154" bodyend="154"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="154" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="154" bodyend="154"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1acda75c9b7c2474abb24a468fcb61373a" prot="public" static="no">
         <name>fontkorgroup</name>
@@ -2666,7 +2670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="155" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="155" bodyend="155"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="155" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="155" bodyend="155"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a5936e25f9ba0fb609850e763ca3c3925" prot="public" static="no">
         <name>fontencoding</name>
@@ -2704,7 +2708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="156" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="156" bodyend="156"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="156" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="156" bodyend="156"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a2a94bbea254c856fdb2002b9bc867e34" prot="public" static="no">
         <name>fontsort</name>
@@ -2777,7 +2781,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="157" bodyend="157"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="157" bodyend="157"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1acec36d1565a24cab34391d9998667bb4" prot="public" static="no">
         <name>socketstate</name>
@@ -2822,7 +2826,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="158" bodyend="158"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="158" bodyend="158"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7be" prot="public" static="no">
         <name>connectresult</name>
@@ -2890,9 +2894,17 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea329405b6a260e49f67fb976d4f8e3249" prot="public">
+          <name>connect_error_wrong_address</name>
+          <initializer>= -6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea772385a33b2a6a8f5e4869b12d643703" prot="public">
           <name>connect_error_unknown</name>
-          <initializer>= -6</initializer>
+          <initializer>= -7</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -2904,7 +2916,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="159" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="159" bodyend="161"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="159" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="159" bodyend="161"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a6cad29f76803e213a3caec20d856992d" prot="public" static="no">
         <name>autobuffer</name>
@@ -2928,7 +2940,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="162" bodyend="162"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="162" bodyend="162"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1aa737e8be14406386246352a22a3c3317" prot="public" static="no">
         <name>autorelease</name>
@@ -2952,7 +2964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="163" bodyend="163"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="163" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="163" bodyend="163"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a5ad7c18eacc0f4f68282cbfb3275801c" prot="public" static="no">
         <name>oskeyboardtype</name>
@@ -2997,7 +3009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="164" bodyend="164"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="164" bodyend="164"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1a21266540362c051ffc3d187a4f8b3ec1" prot="public" static="no">
         <name>rendermode</name>
@@ -3028,7 +3040,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="165" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="165" bodyend="165"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="165" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="165" bodyend="165"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_type_8hpp_1aa01d84025dab49dc7218a1bd30f67db7" prot="public" static="no">
         <name>bindstate</name>
@@ -3066,7 +3078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="166" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="166" bodyend="166"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="166" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="166" bodyend="166"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -3081,7 +3093,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="51" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="51" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="51" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ade4cad33d336aee7210e42dcfc7f96a1" prot="public" static="no">
         <type>long long</type>
@@ -3094,7 +3106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="52" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="52" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1aac10f99b5c431f63aeab8f986f7bdd18" prot="public" static="no">
         <type>unsigned long long</type>
@@ -3107,7 +3119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="53" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ab95f123a6c9bcfee6a343170ef8c5f69" prot="public" static="no">
         <type>unsigned short</type>
@@ -3120,7 +3132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="54" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="54" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="54" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1abbadc35b786b60c71fe7e77fa565acf4" prot="public" static="no">
         <type>int</type>
@@ -3133,7 +3145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="55" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a0c8186d9b9b7880309c27230bbb5e69d" prot="public" static="no">
         <type>unsigned char</type>
@@ -3146,7 +3158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="56" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ae1723d0165a6b98801055d2cd1ae9c40" prot="public" static="no">
         <type>unsigned short</type>
@@ -3159,7 +3171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="66" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a5e44f3bcf0fecb369d378f1eadede738" prot="public" static="no">
         <type>unsigned short</type>
@@ -3172,7 +3184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="67" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="67" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="67" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a02380a9d6dfd469ac4b1cfce93312977" prot="public" static="no">
         <type>unsigned int</type>
@@ -3185,7 +3197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="68" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="68" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="68" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a845a8e2a081317281522847038823045" prot="public" static="no">
         <type>unsigned int</type>
@@ -3198,7 +3210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="69" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="69" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="69" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ae9d69708677fe1684ce817725d4f8a38" prot="public" static="no">
         <type>color_x888</type>
@@ -3211,7 +3223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="78" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="78" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1af827a0bc0f2466279c3708c2c7f1de77" prot="public" static="no">
         <type>color_a888</type>
@@ -3224,7 +3236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="79" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="79" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="79" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ada40c4d7729e28ec90d47dc27af889b9" prot="public" static="no">
         <type>const char *</type>
@@ -3237,7 +3249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="169" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1abda1b2ecabaf4b248addea3dcb6e72c6" prot="public" static="no">
         <type>unsigned char</type>
@@ -3250,7 +3262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="170" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="170" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="170" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a1b9f47f542ebf1e186d8efff8dc8f38b" prot="public" static="no">
         <type>unsigned char</type>
@@ -3263,7 +3275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="171" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a570e111805d8e719540a013bc219bef6" prot="public" static="no">
         <type>int</type>
@@ -3276,7 +3288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="172" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="172" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="172" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a037886b0e863287921a4bf20d0902965" prot="public" static="no">
         <type>const char *</type>
@@ -3289,7 +3301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="173" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="173" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="173" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a778ee68949d136eb3bc8ca1aaa679391" prot="public" static="no">
         <type>char *</type>
@@ -3302,7 +3314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="174" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="174" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="174" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a66ccb29808450eb791b21ebb85ac9aa6" prot="public" static="no">
         <type>const ushort *</type>
@@ -3315,7 +3327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="175" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="175" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="175" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a40b1c9496c72f9adf230d5dbf4fcc329" prot="public" static="no">
         <type>ushort *</type>
@@ -3328,7 +3340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="176" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="176" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="176" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a28c0083ab45bd4162f7487ff7bc3399d" prot="public" static="no">
         <type>ushort</type>
@@ -3341,7 +3353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="177" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="177" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="177" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a0b2e7b8131f1ec7b2acba5c87e216314" prot="public" static="no">
         <type>const char *__restrict</type>
@@ -3354,7 +3366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="178" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="178" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="178" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a28fd2aeb6127a5e35a8f2ab5e8ab8127" prot="public" static="no">
         <type>char *__restrict</type>
@@ -3367,7 +3379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="179" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="179" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="179" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a96a1fcff7b3505bb710a3f624a6e9a27" prot="public" static="no">
         <type>const ushort *__restrict</type>
@@ -3380,7 +3392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="180" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="180" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="180" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a78b024917ed01ea5c2f3aa59014ab921" prot="public" static="no">
         <type>ushort *__restrict</type>
@@ -3393,7 +3405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="181" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="181" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="181" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1abc9e36332ee3746d18ff525266622a55" prot="public" static="no">
         <type>struct <ref refid="structpoint" kindref="compound">point</ref></type>
@@ -3406,7 +3418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="189" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="189" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ac72b4c9ea3be039488466ecc555a4908" prot="public" static="no">
         <type>struct <ref refid="structpointf" kindref="compound">pointf</ref></type>
@@ -3419,7 +3431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="191" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="191" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ae6fa477a6f3455f296f7d785faeb3ee3" prot="public" static="no">
         <type>struct <ref refid="structsize" kindref="compound">size</ref></type>
@@ -3432,7 +3444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="200" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="200" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1afe36d1626c1b3521460c4c710c3dda5a" prot="public" static="no">
         <type>struct <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -3445,7 +3457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="209" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="209" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a7caa3a6d0fb3180bd3b138bae1c24478" prot="public" static="no">
         <type>struct <ref refid="structrectf" kindref="compound">rectf</ref></type>
@@ -3458,7 +3470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="211" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="211" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1aa10a28e071c5f0d24f7496bca82499b7" prot="public" static="no">
         <type>struct <ref refid="structvertex" kindref="compound">vertex</ref></type>
@@ -3471,7 +3483,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="213" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="213" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a981f29fa791345bf6478dc83ffd8bbb4" prot="public" static="no">
         <type>struct <ref refid="structquater" kindref="compound">quater</ref></type>
@@ -3484,7 +3496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="215" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="215" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a05ae27b35bd67f69c0c020470b407305" prot="public" static="no">
         <type>struct <ref refid="structuv" kindref="compound">uv</ref></type>
@@ -3497,7 +3509,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="217" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="217" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a7a6e1c1bb48b09879d7ed733e7cc0f3c" prot="public" static="no">
         <type>struct <ref refid="structface" kindref="compound">face</ref></type>
@@ -3510,7 +3522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="219" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="219" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a617664950923f06d9e397392b30e69f1" prot="public" static="no">
         <type>struct <ref refid="structmatrix" kindref="compound">matrix</ref></type>
@@ -3523,7 +3535,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="221" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="221" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a2fe6482d689a30966142107f7a2a110d" prot="public" static="no">
         <type>struct <ref refid="structarea" kindref="compound">area</ref></type>
@@ -3536,7 +3548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="223" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="223" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1abb7a43dfea045bb1a798574717c70c23" prot="public" static="no">
         <type>struct <ref refid="structpoints" kindref="compound">points</ref></type>
@@ -3549,7 +3561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="225" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="225" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a9f04628cf781a62e10feaf69823a1be9" prot="public" static="no">
         <type>struct <ref refid="structvertexs" kindref="compound">vertexs</ref></type>
@@ -3562,7 +3574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="227" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="227" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ae27a69c054b001b4145a207fb01a64d2" prot="public" static="no">
         <type>void *</type>
@@ -3575,7 +3587,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="229" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="229" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="229" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a046b4c195d7c2087f3ec6c0eeabb008d" prot="public" static="no">
         <type>void *</type>
@@ -3588,7 +3600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="230" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a103072479936f954fa5c416bee280428" prot="public" static="no">
         <type>void *</type>
@@ -3601,7 +3613,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="231" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="231" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="231" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a7cbf09da4ecaadc92539f2d00258b082" prot="public" static="no">
         <type>void *</type>
@@ -3614,7 +3626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="232" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="232" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="232" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a788c54f583f108f70dc60a55f28c01fa" prot="public" static="no">
         <type>void *</type>
@@ -3627,7 +3639,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="233" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a7e44d7014e0be2d91864adaa76065d20" prot="public" static="no">
         <type>void *</type>
@@ -3640,7 +3652,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="234" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ac2aca295ea60ca29def70699fc385a84" prot="public" static="no">
         <type>void *</type>
@@ -3653,7 +3665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="235" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="235" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="235" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a4f86ea0d8d23738d4b7d89d5c372983c" prot="public" static="no">
         <type>void *</type>
@@ -3666,7 +3678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="236" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="236" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="236" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1abc6e0396c8408ec774449c86bfdb6d9c" prot="public" static="no">
         <type>void *</type>
@@ -3679,7 +3691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="237" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a560e826887e1abff7df42ce7d7d88db9" prot="public" static="no">
         <type>void *</type>
@@ -3692,7 +3704,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="238" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="238" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="238" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="238" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a9468053fc99c7249d0a27b0c7e394799" prot="public" static="no">
         <type>void *</type>
@@ -3705,7 +3717,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="239" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="239" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="239" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_bx_type_8hpp_1a1e624b7cf08766e728b4da72bb6832c0" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* id_thread</definition>
+        <argsstring></argsstring>
+        <name>id_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="240" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_bx_type_8hpp_1a47022fedbd964a614dd947a3eaef41e9" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* id_mutex</definition>
+        <argsstring></argsstring>
+        <name>id_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="241" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="241" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a387774b386e52cf47029e6d3cb639c30" prot="public" static="no">
         <type>bool</type>
@@ -3718,7 +3756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="240" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="240" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="242" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a63a1319aa9bf8dfd191174cec23a13a6" prot="public" static="no">
         <type>struct <ref refid="structsysevent" kindref="compound">sysevent</ref></type>
@@ -3731,7 +3769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="251" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="253" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a13e8bf7843c0e9a8041a4219be41085a" prot="public" static="no">
         <type>bool(*</type>
@@ -3744,7 +3782,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="253" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="253" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="255" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ad135553c79d2e53a3c14edaeddacf71f" prot="public" static="no">
         <type>void(*</type>
@@ -3757,7 +3795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="255" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="255" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="257" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a3d9a48d4a1f5ca4f8131e45023e78523" prot="public" static="no">
         <type>int(*</type>
@@ -3770,7 +3808,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="257" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="257" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="259" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a878216dbe0135994ee1d397baee9eb11" prot="public" static="no">
         <type>void(*</type>
@@ -3783,7 +3821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="259" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="259" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="261" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="261" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1accd871dcefdc20dcae5168185d1d780d" prot="public" static="no">
         <type>bool(*</type>
@@ -3796,7 +3834,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="261" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="261" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="263" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="263" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1af3abc9f3517054ed5490b39523876462" prot="public" static="no">
         <type>void(*</type>
@@ -3809,7 +3847,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="263" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="263" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="265" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1af27373baed57949a36589a9bbd81517c" prot="public" static="no">
         <type>bool(*</type>
@@ -3822,7 +3860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="265" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="265" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="267" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="267" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1ad0db018921b55b5b7980081985416a72" prot="public" static="no">
         <type>void(*</type>
@@ -3835,7 +3873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="267" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="267" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="269" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="269" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="_bx_type_8hpp_1a71df78a2afab516694bdc9e6275cd6bb" prot="public" static="no">
         <type>void(*</type>
@@ -3848,20 +3886,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="269" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="269" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="271" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_bx_type_8hpp_1a71ad8e36aa4f175706808fa82215e43c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* callback_thread)(void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>callback_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="273" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="273" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="_bx_type_8hpp_1a3d4760828e445c0a3efacceee81a7cea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="_bx_type_8hpp_1a4f31b8cf4f4de955bc8fb5f6ab6242a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void *</type>
         <definition>void* operator new</definition>
-        <argsstring>(NEW_SIZE_T, void *ptr)</argsstring>
+        <argsstring>(NEW_SIZE_T, int ptr)</argsstring>
         <name>operator new</name>
         <param>
           <type>NEW_SIZE_T</type>
         </param>
         <param>
-          <type>void *</type>
+          <type>int</type>
           <declname>ptr</declname>
         </param>
         <briefdescription>
@@ -3870,18 +3921,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="321" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="321" bodyend="321"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="325" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="325" bodyend="325"/>
       </memberdef>
-      <memberdef kind="function" id="_bx_type_8hpp_1ad82832ac8965e316138da4604acc57c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="_bx_type_8hpp_1afb258a8bc8677aa66e5e50c7261a1eb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void *</type>
         <definition>void* operator new[]</definition>
-        <argsstring>(NEW_SIZE_T, void *ptr)</argsstring>
+        <argsstring>(NEW_SIZE_T, int ptr)</argsstring>
         <name>operator new[]</name>
         <param>
           <type>NEW_SIZE_T</type>
         </param>
         <param>
-          <type>void *</type>
+          <type>int</type>
           <declname>ptr</declname>
         </param>
         <briefdescription>
@@ -3890,18 +3941,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="322" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="322" bodyend="322"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="326" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="326" bodyend="326"/>
       </memberdef>
-      <memberdef kind="function" id="_bx_type_8hpp_1a41d83e8020f1d841b254be6ebeda92d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="_bx_type_8hpp_1a463e39b6c8cc52452736adb3a3672180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void operator delete</definition>
-        <argsstring>(void *, void *)</argsstring>
+        <argsstring>(void *, int)</argsstring>
         <name>operator delete</name>
         <param>
           <type>void *</type>
         </param>
         <param>
-          <type>void *</type>
+          <type>int</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -3909,18 +3960,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="323" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="323" bodyend="323"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="327" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="327" bodyend="327"/>
       </memberdef>
-      <memberdef kind="function" id="_bx_type_8hpp_1afea8decef8f286c8d73c89a1a81d4555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="_bx_type_8hpp_1a48aa89171dedc4a2201337f115359785" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void operator delete[]</definition>
-        <argsstring>(void *, void *)</argsstring>
+        <argsstring>(void *, int)</argsstring>
         <name>operator delete[]</name>
         <param>
           <type>void *</type>
         </param>
         <param>
-          <type>void *</type>
+          <type>int</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -3928,7 +3979,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="324" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="324" bodyend="324"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="328" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="328" bodyend="328"/>
       </memberdef>
       <memberdef kind="function" id="_bx_type_8hpp_1a9d3dd89539ee0d0f06dcb3fc1fd2b192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3949,7 +4000,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="335" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="335" bodyend="335"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="335" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="335" bodyend="335"/>
       </memberdef>
       <memberdef kind="function" id="_bx_type_8hpp_1a47ca80be6b3a0861c2bc5d312a78b983" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3970,7 +4021,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="337" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="337" bodyend="337"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="337" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="337" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="_bx_type_8hpp_1acf988dd9effb4b48eeff6b361e0c41ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3988,7 +4039,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" line="339" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp" bodystart="339" bodyend="344"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" line="339" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp" bodystart="339" bodyend="344"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -4144,7 +4195,7 @@
 <codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>socketstate:byte<sp/>{socketstate_null,<sp/>socketstate_created,<sp/>socketstate_connecting,<sp/>socketstate_connected,<sp/>socketstate_disconnected};</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>connectresult:</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{connect_connected<sp/>=<sp/>2,<sp/>connect_connecting<sp/>=<sp/>1,<sp/>connect_disconnected<sp/>=<sp/>0,</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>connect_error_param<sp/>=<sp/>-1,<sp/>connect_error_already<sp/>=<sp/>-2,<sp/>connect_error_netdown<sp/>=<sp/>-3,</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>connect_error_timeout<sp/>=<sp/>-4,<sp/>connect_error_refused<sp/>=<sp/>-5,<sp/>connect_error_unknown<sp/>=<sp/>-6};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>connect_error_timeout<sp/>=<sp/>-4,<sp/>connect_error_refused<sp/>=<sp/>-5,<sp/>connect_error_wrong_address<sp/>=<sp/>-6,<sp/>connect_error_unknown<sp/>=<sp/>-7};</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>autobuffer:byte<sp/>{autobuffer_sound,<sp/>autobuffer_user};</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>autorelease:byte<sp/>{autorelease_global,<sp/>autorelease_user};</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>oskeyboardtype:byte<sp/>{oskeyboardtype_base,<sp/>oskeyboardtype_email,<sp/>oskeyboardtype_number,<sp/>oskeyboardtype_password,<sp/>oskeyboardtype_url};</highlight></codeline>
@@ -4210,95 +4261,95 @@
 <codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>id_opengl_outline;</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>id_static;</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>id_zip;</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>delete_me;</highlight></codeline>
-<codeline lineno="242" refid="structsysevent" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref></highlight></codeline>
-<codeline lineno="243"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>syseventtype<sp/>type;</highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{uint<sp/>w;<sp/>uint<sp/>h;}<sp/>init;</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{}<sp/>quit;</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{uint<sp/>w;<sp/>uint<sp/>h;}<sp/>resize;</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{syskeytype<sp/>type;<sp/>keykind<sp/>code;}<sp/>key;</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{systouchtype<sp/>type;<sp/>uint<sp/>id;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;}<sp/>touch;</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{sysbuttontype<sp/>type;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name;<sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>field;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;}<sp/>button;</highlight></codeline>
-<codeline lineno="251"><highlight class="normal">}<sp/><ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>;</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프레임</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*callback_frame)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-이벤트</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_event)(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isautocall,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>param);</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-JNI</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*callback_jni)(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1_str256,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param2);</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-EDK</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_edk)(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1_str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param2);</highlight></codeline>
-<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프로시저</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*callback_procedure)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sleep);</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프로세스</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_process)(callback_procedure<sp/>yield);</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프로그레스(pos가<sp/>-1이면<sp/>len은<sp/>yield시간을<sp/>의미)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*callback_progress)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-직렬화</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_serialize)(bindstate<sp/>state,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>comment);</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-파일검색</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_filesearch)(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isdirname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>name,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"></highlight></codeline>
-<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//<sp/>상수</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight></codeline>
-<codeline lineno="273"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ox100000000<sp/>0x100000000LL</highlight></codeline>
-<codeline lineno="274"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>__ARMCC_VERSION</highlight></codeline>
-<codeline lineno="275"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ox100000000<sp/>0x100000000LL</highlight></codeline>
-<codeline lineno="276"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
-<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ox100000000<sp/>0x100000000i64</highlight></codeline>
-<codeline lineno="278"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="279"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//<sp/>매크로</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ItoF(A)<sp/>((fint)<sp/>((A)<sp/>&lt;&lt;<sp/>16))</highlight></codeline>
-<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FtoI(A)<sp/>((int)<sp/>((A)<sp/>&gt;&gt;<sp/>16))</highlight></codeline>
-<codeline lineno="283"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FtoR(A)<sp/>((int)<sp/>(((A)<sp/>+<sp/>0x8000)<sp/>&gt;&gt;<sp/>16))</highlight></codeline>
-<codeline lineno="284"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REV4(A)<sp/>((((A)<sp/>&amp;<sp/>0xFF000000)<sp/>&gt;&gt;<sp/>24)<sp/>|<sp/>(((A)<sp/>&amp;<sp/>0x00FF0000)<sp/>&gt;&gt;<sp/>8)<sp/>|<sp/>(((A)<sp/>&amp;<sp/>0x0000FF00)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((A)<sp/>&amp;<sp/>0x000000FF)<sp/>&lt;&lt;<sp/>24))</highlight></codeline>
-<codeline lineno="285"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VAL4(A,<sp/>B,<sp/>C,<sp/>D)<sp/>((((A)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>0)<sp/>|<sp/>(((B)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((C)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((D)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>24))</highlight></codeline>
-<codeline lineno="286"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CASE64(A)<sp/>{<sp/>\</highlight></codeline>
-<codeline lineno="287"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x00:<sp/>A<sp/>case<sp/>0x01:<sp/>A<sp/>case<sp/>0x02:<sp/>A<sp/>case<sp/>0x03:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="288"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x04:<sp/>A<sp/>case<sp/>0x05:<sp/>A<sp/>case<sp/>0x06:<sp/>A<sp/>case<sp/>0x07:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="289"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x08:<sp/>A<sp/>case<sp/>0x09:<sp/>A<sp/>case<sp/>0x0A:<sp/>A<sp/>case<sp/>0x0B:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="290"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x0C:<sp/>A<sp/>case<sp/>0x0D:<sp/>A<sp/>case<sp/>0x0E:<sp/>A<sp/>case<sp/>0x0F:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="291"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x10:<sp/>A<sp/>case<sp/>0x11:<sp/>A<sp/>case<sp/>0x12:<sp/>A<sp/>case<sp/>0x13:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="292"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x14:<sp/>A<sp/>case<sp/>0x15:<sp/>A<sp/>case<sp/>0x16:<sp/>A<sp/>case<sp/>0x17:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="293"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x18:<sp/>A<sp/>case<sp/>0x19:<sp/>A<sp/>case<sp/>0x1A:<sp/>A<sp/>case<sp/>0x1B:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="294"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x1C:<sp/>A<sp/>case<sp/>0x1D:<sp/>A<sp/>case<sp/>0x1E:<sp/>A<sp/>case<sp/>0x1F:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="295"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x20:<sp/>A<sp/>case<sp/>0x21:<sp/>A<sp/>case<sp/>0x22:<sp/>A<sp/>case<sp/>0x23:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="296"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x24:<sp/>A<sp/>case<sp/>0x25:<sp/>A<sp/>case<sp/>0x26:<sp/>A<sp/>case<sp/>0x27:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="297"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x28:<sp/>A<sp/>case<sp/>0x29:<sp/>A<sp/>case<sp/>0x2A:<sp/>A<sp/>case<sp/>0x2B:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="298"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x2C:<sp/>A<sp/>case<sp/>0x2D:<sp/>A<sp/>case<sp/>0x2E:<sp/>A<sp/>case<sp/>0x2F:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="299"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x30:<sp/>A<sp/>case<sp/>0x31:<sp/>A<sp/>case<sp/>0x32:<sp/>A<sp/>case<sp/>0x33:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="300"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x34:<sp/>A<sp/>case<sp/>0x35:<sp/>A<sp/>case<sp/>0x36:<sp/>A<sp/>case<sp/>0x37:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="301"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x38:<sp/>A<sp/>case<sp/>0x39:<sp/>A<sp/>case<sp/>0x3A:<sp/>A<sp/>case<sp/>0x3B:<sp/>A<sp/>\</highlight></codeline>
-<codeline lineno="302"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x3C:<sp/>A<sp/>case<sp/>0x3D:<sp/>A<sp/>case<sp/>0x3E:<sp/>A<sp/>case<sp/>0x3F:<sp/>A}</highlight></codeline>
-<codeline lineno="303"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="304"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ASSERT선언</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="305"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__BX_DEBUG_ASSERT_POPUP</highlight></codeline>
-<codeline lineno="306"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">BxCore<sp/>{</highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">System<sp/>{</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1a1afedf60a29f8013d6d46205eb702526" kindref="member" tooltip="디버깅코드(Macro함수인 BxAssert로 사용권장) ">Assert</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>IsIgnore,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linenumber);}}</highlight></codeline>
-<codeline lineno="307"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BxAssert(STRING,<sp/>CHECK)<sp/>do{global_data<sp/>bool<sp/>IsIgnore<sp/>=<sp/>false;<sp/>BxCore::System::Assert(STRING,<sp/>IsIgnore,<sp/>(CHECK)<sp/>!=<sp/>0,<sp/>__FILE__,<sp/>__LINE__);}<sp/>while(false)</highlight></codeline>
-<codeline lineno="308"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
-<codeline lineno="309"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BxAssert(STRING,<sp/>CHECK)<sp/>do{}<sp/>while(false)</highlight></codeline>
-<codeline lineno="310"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="311"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="312"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NEW/DELETE관련</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(IW_STD_NEW_H)<sp/>&amp;&amp;<sp/>!defined(__PLACEMENT_NEW_INLINE)</highlight></codeline>
-<codeline lineno="314"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>IW_STD_NEW_H</highlight></codeline>
-<codeline lineno="315"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>__PLACEMENT_NEW_INLINE</highlight></codeline>
-<codeline lineno="316"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>__BX_USED_LONG_SIZET</highlight></codeline>
-<codeline lineno="317"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>NEW_SIZE_T<sp/>unsigned<sp/>long</highlight></codeline>
-<codeline lineno="318"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight></codeline>
-<codeline lineno="319"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>NEW_SIZE_T<sp/>unsigned<sp/>int</highlight></codeline>
-<codeline lineno="320"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
-<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(NEW_SIZE_T,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr;}</highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">[](NEW_SIZE_T,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr;}</highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{}</highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>{}</highlight></codeline>
-<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>defined<sp/>_MSC_VER<sp/>&amp;&amp;<sp/>_MSC_VER<sp/>&lt;=<sp/>1200</highlight></codeline>
-<codeline lineno="326"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">[](NEW_SIZE_T);</highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
-<codeline lineno="329"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>id_thread;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>id_mutex;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>delete_me;</highlight></codeline>
+<codeline lineno="244" refid="structsysevent" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>syseventtype<sp/>type;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{uint<sp/>w;<sp/>uint<sp/>h;}<sp/>init;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{}<sp/>quit;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{uint<sp/>w;<sp/>uint<sp/>h;}<sp/>resize;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{syskeytype<sp/>type;<sp/>keykind<sp/>code;}<sp/>key;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{systouchtype<sp/>type;<sp/>uint<sp/>id;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;}<sp/>touch;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{sysbuttontype<sp/>type;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name;<sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>field;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;}<sp/>button;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}<sp/><ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프레임</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*callback_frame)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-이벤트</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_event)(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isautocall,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>param);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-JNI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*callback_jni)(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1_str256,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param2);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-EDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_edk)(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1_str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param2);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프로시저</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*callback_procedure)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sleep);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프로세스</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_process)(callback_procedure<sp/>yield);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-프로그레스(pos가<sp/>-1이면<sp/>len은<sp/>yield시간을<sp/>의미)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*callback_progress)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-직렬화</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_serialize)(bindstate<sp/>state,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>comment);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-파일검색</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_filesearch)(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isdirname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>name,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/>콜백-스레드</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*callback_thread)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//<sp/>상수</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ox100000000<sp/>0x100000000LL</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>__ARMCC_VERSION</highlight></codeline>
+<codeline lineno="279"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ox100000000<sp/>0x100000000LL</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ox100000000<sp/>0x100000000i64</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">//<sp/>매크로</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ItoF(A)<sp/>((fint)<sp/>((A)<sp/>&lt;&lt;<sp/>16))</highlight></codeline>
+<codeline lineno="286"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FtoI(A)<sp/>((int)<sp/>((A)<sp/>&gt;&gt;<sp/>16))</highlight></codeline>
+<codeline lineno="287"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FtoR(A)<sp/>((int)<sp/>(((A)<sp/>+<sp/>0x8000)<sp/>&gt;&gt;<sp/>16))</highlight></codeline>
+<codeline lineno="288"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REV4(A)<sp/>((((A)<sp/>&amp;<sp/>0xFF000000)<sp/>&gt;&gt;<sp/>24)<sp/>|<sp/>(((A)<sp/>&amp;<sp/>0x00FF0000)<sp/>&gt;&gt;<sp/>8)<sp/>|<sp/>(((A)<sp/>&amp;<sp/>0x0000FF00)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((A)<sp/>&amp;<sp/>0x000000FF)<sp/>&lt;&lt;<sp/>24))</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VAL4(A,<sp/>B,<sp/>C,<sp/>D)<sp/>((((A)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>0)<sp/>|<sp/>(((B)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((C)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((D)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>24))</highlight></codeline>
+<codeline lineno="290"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CASE64(A)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x00:<sp/>A<sp/>case<sp/>0x01:<sp/>A<sp/>case<sp/>0x02:<sp/>A<sp/>case<sp/>0x03:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="292"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x04:<sp/>A<sp/>case<sp/>0x05:<sp/>A<sp/>case<sp/>0x06:<sp/>A<sp/>case<sp/>0x07:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="293"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x08:<sp/>A<sp/>case<sp/>0x09:<sp/>A<sp/>case<sp/>0x0A:<sp/>A<sp/>case<sp/>0x0B:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x0C:<sp/>A<sp/>case<sp/>0x0D:<sp/>A<sp/>case<sp/>0x0E:<sp/>A<sp/>case<sp/>0x0F:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x10:<sp/>A<sp/>case<sp/>0x11:<sp/>A<sp/>case<sp/>0x12:<sp/>A<sp/>case<sp/>0x13:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x14:<sp/>A<sp/>case<sp/>0x15:<sp/>A<sp/>case<sp/>0x16:<sp/>A<sp/>case<sp/>0x17:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="297"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x18:<sp/>A<sp/>case<sp/>0x19:<sp/>A<sp/>case<sp/>0x1A:<sp/>A<sp/>case<sp/>0x1B:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x1C:<sp/>A<sp/>case<sp/>0x1D:<sp/>A<sp/>case<sp/>0x1E:<sp/>A<sp/>case<sp/>0x1F:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="299"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x20:<sp/>A<sp/>case<sp/>0x21:<sp/>A<sp/>case<sp/>0x22:<sp/>A<sp/>case<sp/>0x23:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="300"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x24:<sp/>A<sp/>case<sp/>0x25:<sp/>A<sp/>case<sp/>0x26:<sp/>A<sp/>case<sp/>0x27:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="301"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x28:<sp/>A<sp/>case<sp/>0x29:<sp/>A<sp/>case<sp/>0x2A:<sp/>A<sp/>case<sp/>0x2B:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x2C:<sp/>A<sp/>case<sp/>0x2D:<sp/>A<sp/>case<sp/>0x2E:<sp/>A<sp/>case<sp/>0x2F:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="303"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x30:<sp/>A<sp/>case<sp/>0x31:<sp/>A<sp/>case<sp/>0x32:<sp/>A<sp/>case<sp/>0x33:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x34:<sp/>A<sp/>case<sp/>0x35:<sp/>A<sp/>case<sp/>0x36:<sp/>A<sp/>case<sp/>0x37:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x38:<sp/>A<sp/>case<sp/>0x39:<sp/>A<sp/>case<sp/>0x3A:<sp/>A<sp/>case<sp/>0x3B:<sp/>A<sp/>\</highlight></codeline>
+<codeline lineno="306"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>case<sp/>0x3C:<sp/>A<sp/>case<sp/>0x3D:<sp/>A<sp/>case<sp/>0x3E:<sp/>A<sp/>case<sp/>0x3F:<sp/>A}</highlight></codeline>
+<codeline lineno="307"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ASSERT선언</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__BX_DEBUG_ASSERT_POPUP</highlight></codeline>
+<codeline lineno="310"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">BxCore<sp/>{</highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">System<sp/>{</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1a446e8c7a3fafffa3750a42378abbf87f" kindref="member" tooltip="디버깅코드(Macro함수인 BxAssert로 사용권장) ">Assert</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);}}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BxAssert(STRING,<sp/>QUERY)<sp/>do{global_data<sp/>bool<sp/>IsIgnore<sp/>=<sp/>false;<sp/>\</highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::System::Assert(STRING,<sp/>#QUERY,<sp/>IsIgnore,<sp/>(QUERY)<sp/>!=<sp/>0,<sp/>__FILE__,<sp/>__LINE__,<sp/>__FUNCTION__);}<sp/>while(false)</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="314"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BxAssert(STRING,<sp/>CHECK)<sp/>do{}<sp/>while(false)</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NEW/DELETE관련</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_BX_OPERATOR_NEW_</highlight></codeline>
+<codeline lineno="319"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BX_OPERATOR_NEW_</highlight></codeline>
+<codeline lineno="320"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>__BX_USED_LONG_SIZET</highlight></codeline>
+<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>NEW_SIZE_T<sp/>unsigned<sp/>long</highlight></codeline>
+<codeline lineno="322"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>NEW_SIZE_T<sp/>unsigned<sp/>int</highlight></codeline>
+<codeline lineno="324"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(NEW_SIZE_T,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ptr)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>ptr;}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">[](NEW_SIZE_T,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ptr)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>ptr;}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/>int)<sp/>{}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/>int)<sp/>{}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="330"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">//<sp/>타입분석관련</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__BX_DECLARE_IsTypePointer</highlight></codeline>
@@ -4321,6 +4372,6 @@
 <codeline lineno="349"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxType.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxType.hpp"/>
   </compounddef>
 </doxygen>

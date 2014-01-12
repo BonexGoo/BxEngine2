@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="221" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="221" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="221" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a94666bc30e72eaefa290f8f5300b5a18" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend <ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref> *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="222" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="222" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="223" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="223" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1adba310bf84c1af5709c56edad817c36d" prot="private" static="no" mutable="no">
         <type><ref refid="class_bx_dynamic_1_1_resource" kindref="compound">Resource</ref> *</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="224" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a8c735d0db18e7028dfa16a29872934c4" prot="private" static="no" mutable="no">
         <type>Pool *</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="225" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="225" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="225" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="225" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="226" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="226" bodyend="226"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="226" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="226" bodyend="226"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1aee847d64954696276c7b071e83fc0836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="227" bodyend="227"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="227" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="227" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a69b7395438c3d72140b5cbb615983cf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="228" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="228" bodyend="228"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="228" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="228" bodyend="228"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1af1c0b45dedf50b4fce38739b9789b488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="233" bodyend="233"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="233" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a5f9d6676359a6984cf98256f418d68dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref> *</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="234" bodyend="244"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="234" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1ab10859251bdcb1309b0085ef59d24054" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>rsid</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="245" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="245" bodyend="245"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="245" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="245" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a684680544b3c376b2981a1a0cad1beb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_dynamic_1_1_resource" kindref="compound">Resource</ref> *</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="246" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="246" bodyend="246"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="246" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="246" bodyend="246"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a85f482fe05b2e7b5da8a08af69c23d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Pool *</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="247" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="247" bodyend="247"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="247" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="247" bodyend="247"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a777b3cb6b25dbc43c2784b18236cc763" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Pool *</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="248" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="248" bodyend="248"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="248" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="248" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a004c7b55af28d84684405dc684cb8f29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref> *</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="249" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="249" bodyend="249"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="249" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="249" bodyend="249"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a2d238f95aa0e0d6a7a9e14c3ea6c813b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref> *</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="250" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="250" bodyend="250"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="250" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="250" bodyend="250"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="229" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="229" bodyend="229"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="229" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="229" bodyend="229"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1ad9e9650ca8789ffd37851567741439cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="230" bodyend="230"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="230" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a91147f7de9c2136248834c00d547c0cb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="231" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="231" bodyend="231"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="231" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="231" bodyend="231"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -318,7 +318,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" line="220" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="219" bodyend="251"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" line="220" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp" bodystart="219" bodyend="251"/>
     <listofallmembers>
       <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a3b2c2433ed1a4eb499f22d7315862b94" prot="public" virt="non-virtual"><scope>BxDynamic::Resource::BindPool</scope><name>Add</name></member>
       <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a777b3cb6b25dbc43c2784b18236cc763" prot="public" virt="non-virtual"><scope>BxDynamic::Resource::BindPool</scope><name>AddLinker</name></member>

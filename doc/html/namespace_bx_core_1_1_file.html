@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.7.0</span>
+   &#160;<span id="projectnumber">2.8.0</span>
    </div>
   </td>
  </tr>
@@ -111,9 +111,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a0b223eda0b9a76c839171ba70fe300d1"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1">Read</a> (id_file file, void *buffer, uint length, callback_progress progress=nullptr)</td></tr>
 <tr class="memdesc:a0b223eda0b9a76c839171ba70fe300d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일에서 읽기  <a href="#a0b223eda0b9a76c839171ba70fe300d1">More...</a><br/></td></tr>
 <tr class="separator:a0b223eda0b9a76c839171ba70fe300d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74accb21bf2f405effb1968424bc7127"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a74accb21bf2f405effb1968424bc7127">ReadVariable</a> (id_file file, uhuge *variable, const byte additionkey=0x00, callback_progress progress=nullptr)</td></tr>
+<tr class="memdesc:a74accb21bf2f405effb1968424bc7127"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일에서 가변정수읽기  <a href="#a74accb21bf2f405effb1968424bc7127">More...</a><br/></td></tr>
+<tr class="separator:a74accb21bf2f405effb1968424bc7127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb50947274e3627df003a64bff23c0f0"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0">Write</a> (id_file file, const void *buffer, uint length, callback_progress progress=nullptr)</td></tr>
 <tr class="memdesc:abb50947274e3627df003a64bff23c0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일로 쓰기  <a href="#abb50947274e3627df003a64bff23c0f0">More...</a><br/></td></tr>
 <tr class="separator:abb50947274e3627df003a64bff23c0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324b09bd397a44d8031fc989178f232e"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a324b09bd397a44d8031fc989178f232e">WriteVariable</a> (id_file file, const uhuge variable, const byte additionkey=0x00, callback_progress progress=nullptr)</td></tr>
+<tr class="memdesc:a324b09bd397a44d8031fc989178f232e"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일로 가변정수쓰기  <a href="#a324b09bd397a44d8031fc989178f232e">More...</a><br/></td></tr>
+<tr class="separator:a324b09bd397a44d8031fc989178f232e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41dce6f617e445367761b3216b98ef44"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44">WriteString</a> (id_file file, string buffer, callback_progress progress=nullptr)</td></tr>
 <tr class="memdesc:a41dce6f617e445367761b3216b98ef44"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일로 스트링쓰기  <a href="#a41dce6f617e445367761b3216b98ef44">More...</a><br/></td></tr>
 <tr class="separator:a41dce6f617e445367761b3216b98ef44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,6 +449,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a74accb21bf2f405effb1968424bc7127"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint BxCore::File::ReadVariable </td>
+          <td>(</td>
+          <td class="paramtype">id_file&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uhuge *&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const byte&#160;</td>
+          <td class="paramname"><em>additionkey</em> = <code>0x00</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">callback_progress&#160;</td>
+          <td class="paramname"><em>progress</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>파일에서 가변정수읽기 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>: 파일ID </td></tr>
+    <tr><td class="paramname">variable</td><td>: 가변정수를 읽을 메모리 </td></tr>
+    <tr><td class="paramname">additionkey</td><td>: 입력보정을 위한 덧셈키 </td></tr>
+    <tr><td class="paramname">progress</td><td>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>읽은 바이트길이 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6e174bc48590d33a8389aa627ead540a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -687,10 +743,60 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a324b09bd397a44d8031fc989178f232e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint BxCore::File::WriteVariable </td>
+          <td>(</td>
+          <td class="paramtype">id_file&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uhuge&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const byte&#160;</td>
+          <td class="paramname"><em>additionkey</em> = <code>0x00</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">callback_progress&#160;</td>
+          <td class="paramname"><em>progress</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>파일로 가변정수쓰기 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>: 파일ID </td></tr>
+    <tr><td class="paramname">variable</td><td>: 파일에 쓸 가변정수 </td></tr>
+    <tr><td class="paramname">additionkey</td><td>: 출력보정을 위한 덧셈키 </td></tr>
+    <tr><td class="paramname">progress</td><td>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>쓴 바이트길이 </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 26 2013 03:14:08 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 13 2014 00:27:29 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

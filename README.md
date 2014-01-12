@@ -1,4 +1,4 @@
-BxEngine 2.7.0 For Marmalade 7.0.0
+BxEngine 2.8.0 For Marmalade 7.0.0
 ==================================
 
 안녕하세요. github로 서비스하는 BxEngine입니다.

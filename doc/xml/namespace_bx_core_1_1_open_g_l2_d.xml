@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_open_g_l2_d" kind="namespace">
+    <compoundname>BxCore::OpenGL2D</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a2d0fbdde5d725cc27be11f501402994e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1032" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1431" bodyend="1439"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a81c7dd7ff9209977d559ad65c7b85355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Quit</definition>
+        <argsstring>()</argsstring>
+        <name>Quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1033" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1441" bodyend="1445"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a3a01ef19ca788fb3a8886f382a6887fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1034" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1447" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a5bbfc4a018be50c5a4f8539b4e24cccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::SetPerspective</definition>
+        <argsstring>(const int mul, const int far, const int near)</argsstring>
+        <name>SetPerspective</name>
+        <param>
+          <type>const int</type>
+          <declname>mul</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>far</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>near</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1036" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1452" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1adaa2bbe7c4e4b494a8e655073af8f795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::SetOrthogonal</definition>
+        <argsstring>(const int width, const int height, const int far, const int near)</argsstring>
+        <name>SetOrthogonal</name>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>far</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>near</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1037" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1458" bodyend="1461"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a0476b4aa00b5ca61ec767ada7b806fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewTrans</definition>
+        <argsstring>(int x, int y, int z)</argsstring>
+        <name>AddViewTrans</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1038" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1463" bodyend="1470"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1afc2038db9dcf7eea8700e707bfb8900a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewRotX</definition>
+        <argsstring>(fint angle)</argsstring>
+        <name>AddViewRotX</name>
+        <param>
+          <type>fint</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1039" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1472" bodyend="1477"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1aa781fb4c7d44c4e598d1532f2034fe5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewRotY</definition>
+        <argsstring>(fint angle)</argsstring>
+        <name>AddViewRotY</name>
+        <param>
+          <type>fint</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1040" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1479" bodyend="1484"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a5aab06845a507269e5238610d64ee70e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewRotZ</definition>
+        <argsstring>(fint angle)</argsstring>
+        <name>AddViewRotZ</name>
+        <param>
+          <type>fint</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1041" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1486" bodyend="1491"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a096ea22f096ece0b7d391646ea916e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_opengl_form</type>
+        <definition>id_opengl_form BxCore::OpenGL2D::MakeForm_TextureMaterial</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>MakeForm_TextureMaterial</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1043" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1493" bodyend="1510"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a9a4f589335975ff2a951cdf51b4733b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_opengl_form</type>
+        <definition>id_opengl_form BxCore::OpenGL2D::MakeForm_TextureMaterial</definition>
+        <argsstring>(color_a888 *image, const int width, const int height, const int pitch)</argsstring>
+        <name>MakeForm_TextureMaterial</name>
+        <param>
+          <type>color_a888 *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1044" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1512" bodyend="1529"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1af73508f353c0650205c6b4881025b68c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_opengl_form</type>
+        <definition>id_opengl_form BxCore::OpenGL2D::MakeForm_ColorAmbient</definition>
+        <argsstring>(const color_x888 color)</argsstring>
+        <name>MakeForm_ColorAmbient</name>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1045" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1531" bodyend="1550"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a08ecf1f8745b09161a013cb9dff68b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::FreeForm</definition>
+        <argsstring>(id_opengl_form form)</argsstring>
+        <name>FreeForm</name>
+        <param>
+          <type>id_opengl_form</type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1046" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1552" bodyend="1557"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ae943eb5d38c17c9279fc7cc78f2900db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_opengl_outline</type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_VertexUV</definition>
+        <argsstring>(const rect &amp;r, const rect &amp;uvclip)</argsstring>
+        <name>MakeOutline_VertexUV</name>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>uvclip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1047" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1559" bodyend="1578"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a7c581dcf9bceb70e7cf90e562cf996be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_opengl_outline</type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_PolyVertexUV</definition>
+        <argsstring>(const points &amp;p, const rect &amp;uvclip)</argsstring>
+        <name>MakeOutline_PolyVertexUV</name>
+        <param>
+          <type>const <ref refid="structpoints" kindref="compound">points</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>uvclip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1048" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1580" bodyend="1610"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a41b268d59f03b177cc8f8c94f578cd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_opengl_outline</type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_PolyVertexUV3D</definition>
+        <argsstring>(const vertexs &amp;v, const points &amp;uv)</argsstring>
+        <name>MakeOutline_PolyVertexUV3D</name>
+        <param>
+          <type>const <ref refid="structvertexs" kindref="compound">vertexs</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoints" kindref="compound">points</ref> &amp;</type>
+          <declname>uv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1049" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1612" bodyend="1628"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1abe86daad5e7b366115160147ab94843d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::FreeOutline</definition>
+        <argsstring>(id_opengl_outline outline)</argsstring>
+        <name>FreeOutline</name>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1050" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1630" bodyend="1635"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a71a2291ca8339fe2d9eb0e8f39d1b63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>color_x888</type>
+        <definition>color_x888 BxCore::OpenGL2D::Form_ColorAmbient_GetColor</definition>
+        <argsstring>(id_opengl_form form)</argsstring>
+        <name>Form_ColorAmbient_GetColor</name>
+        <param>
+          <type>id_opengl_form</type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1052" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1637" bodyend="1642"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a88a4d89f469795a44c171928b0fc8b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_VertexUV_SetScale</definition>
+        <argsstring>(id_opengl_outline outline, fint hoz, fint ver)</argsstring>
+        <name>Outline_VertexUV_SetScale</name>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>hoz</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>ver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1053" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1644" bodyend="1655"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1aef2b26c9fdce55eaa60c830b32949b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_VertexUV_SetRotate</definition>
+        <argsstring>(id_opengl_outline outline, int angle1024, bool doFlip)</argsstring>
+        <name>Outline_VertexUV_SetRotate</name>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle1024</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doFlip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1054" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1657" bodyend="1678"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ae7490b1c339ff3c480899b4427868be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_PolyVertexUV_SetScale</definition>
+        <argsstring>(id_opengl_outline outline, fint hoz, fint ver)</argsstring>
+        <name>Outline_PolyVertexUV_SetScale</name>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>hoz</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>ver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1055" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1680" bodyend="1691"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a7814d24c44b6d72823f6d2cd0c7f06c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_PolyVertexUV_SetRotate</definition>
+        <argsstring>(id_opengl_outline outline, int angle1024, bool doFlip)</argsstring>
+        <name>Outline_PolyVertexUV_SetRotate</name>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle1024</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doFlip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1056" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1693" bodyend="1714"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a4ba87315049dff4c0d9107d5f3d5daef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Render</definition>
+        <argsstring>(id_opengl_form form, id_opengl_outline outline, int x, int y, const byte opacity, const color_x888 color)</argsstring>
+        <name>Render</name>
+        <param>
+          <type>id_opengl_form</type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1058" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1716" bodyend="1724"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a996f444283f9cbcd441d3a2cb7dd8dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Render3D</definition>
+        <argsstring>(id_opengl_form form, id_opengl_outline outline, int x, int y, int z, const byte opacity, const color_x888 color)</argsstring>
+        <name>Render3D</name>
+        <param>
+          <type>id_opengl_form</type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type>id_opengl_outline</type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1059" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1726" bodyend="1732"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ac4e47adab45dcc3fd549fded7440b29d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Clip</definition>
+        <argsstring>(rect r)</argsstring>
+        <name>Clip</name>
+        <param>
+          <type><ref refid="structrect" kindref="compound">rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1061" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1734" bodyend="1738"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a0d01bdfb74bfc4ce9c968ff9677c29eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxCore::OpenGL2D::GetTextureMargin</definition>
+        <argsstring>()</argsstring>
+        <name>GetTextureMargin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1063" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="617" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a58f576b8a1326ff364da4be247dbebf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool BxCore::OpenGL2D::DoTextureInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>DoTextureInterpolation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1064" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="625" bodyend="631"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OpenGL2D파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="1031" column="1"/>
+  </compounddef>
+</doxygen>

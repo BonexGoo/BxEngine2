@@ -6,71 +6,71 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="102">
+      <node id="172">
         <label>stdarg.h</label>
       </node>
-      <node id="100">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="103" relation="include">
-        </childnode>
-      </node>
-      <node id="99">
-        <label>BxDynamic.hpp</label>
-        <link refid="BxDynamic.hpp"/>
-        <childnode refid="100" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-        <childnode refid="108" relation="include">
-        </childnode>
-      </node>
-      <node id="106">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="100" relation="include">
-        </childnode>
-      </node>
-      <node id="101">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="102" relation="include">
-        </childnode>
-      </node>
-      <node id="103">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="104" relation="include">
-        </childnode>
-      </node>
-      <node id="104">
+      <node id="174">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="101" relation="include">
+        <childnode refid="171" relation="include">
         </childnode>
       </node>
-      <node id="107">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="100" relation="include">
+      <node id="170">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="171" relation="include">
         </childnode>
-        <childnode refid="106" relation="include">
+        <childnode refid="173" relation="include">
         </childnode>
       </node>
-      <node id="105">
+      <node id="169">
+        <label>BxDynamic.hpp</label>
+        <link refid="BxDynamic.hpp"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="106" relation="include">
+        <childnode refid="176" relation="include">
         </childnode>
-        <childnode refid="107" relation="include">
+        <childnode refid="177" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="178">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="100" relation="include">
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+        <childnode refid="172" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -421,6 +421,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxlib/BxDynamic.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

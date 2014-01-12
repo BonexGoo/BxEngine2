@@ -135,7 +135,7 @@ public:
 	*/
 	global_func TYPE* MakeClass()
 	{
-		return new(Make()) TYPE;
+		return new((int) Make()) TYPE;
 	}
 
 	/*!

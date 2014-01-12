@@ -1,7 +1,7 @@
 #pragma once
 #include <BxPool.hpp>
 
-#define throw(...) (BxThrow(), __VA_ARGS__)
+#define Throw(...) (BxThrow(), __VA_ARGS__)
 
 //! \brief 가변인자 제공
 class BxThrow
@@ -143,8 +143,8 @@ private:
 	public:
 		global_func const void* StaticTablePtr()
 		{
-			global_data const PtrUnit Uint;
-			return ((const void**) &Uint)[0];
+			global_data const PtrUnit Unit;
+			return ((const void**) &Unit)[0];
 		}
 	};
 	HeadUnit List;

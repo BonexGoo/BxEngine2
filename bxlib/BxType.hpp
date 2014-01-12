@@ -158,7 +158,7 @@ enum fontsort:byte {fontsort_pad1, fontsort_pad2, fontsort_pad3, fontsort_pad4, 
 enum socketstate:byte {socketstate_null, socketstate_created, socketstate_connecting, socketstate_connected, socketstate_disconnected};
 enum connectresult:int {connect_connected = 2, connect_connecting = 1, connect_disconnected = 0,
 	connect_error_param = -1, connect_error_already = -2, connect_error_netdown = -3,
-	connect_error_timeout = -4, connect_error_refused = -5, connect_error_unknown = -6};
+	connect_error_timeout = -4, connect_error_refused = -5, connect_error_wrong_address = -6, connect_error_unknown = -7};
 enum autobuffer:byte {autobuffer_sound, autobuffer_user};
 enum autorelease:byte {autorelease_global, autorelease_user};
 enum oskeyboardtype:byte {oskeyboardtype_base, oskeyboardtype_email, oskeyboardtype_number, oskeyboardtype_password, oskeyboardtype_url};
@@ -237,6 +237,8 @@ typedef void* id_opengl_form;
 typedef void* id_opengl_outline;
 typedef void* id_static;
 typedef void* id_zip;
+typedef void* id_thread;
+typedef void* id_mutex;
 typedef bool delete_me;
 //! \brief OnEvent()의 이벤트파라미터
 typedef struct sysevent
@@ -267,6 +269,8 @@ typedef bool (*callback_progress)(int pos, int len);
 typedef void (*callback_serialize)(bindstate state, string comment);
 // 콜백-파일검색
 typedef void (*callback_filesearch)(bool isdirname, string _tmp_ name, void* data);
+// 콜백-스레드
+typedef void (*callback_thread)(void* data);
 
 // 상수
 #ifdef __GNUC__
@@ -303,29 +307,25 @@ typedef void (*callback_filesearch)(bool isdirname, string _tmp_ name, void* dat
 
 // ASSERT선언
 #ifdef __BX_DEBUG_ASSERT_POPUP
-	namespace BxCore {namespace System {void Assert(string name, bool& IsIgnore, bool flag, string filename, int linenumber);}}
-	#define BxAssert(STRING, CHECK) do{global_data bool IsIgnore = false; BxCore::System::Assert(STRING, IsIgnore, (CHECK) != 0, __FILE__, __LINE__);} while(false)
+	namespace BxCore {namespace System {void Assert(string, string, bool&, bool, string, int, string);}}
+	#define BxAssert(STRING, QUERY) do{global_data bool IsIgnore = false; \
+		BxCore::System::Assert(STRING, #QUERY, IsIgnore, (QUERY) != 0, __FILE__, __LINE__, __FUNCTION__);} while(false)
 #else
 	#define BxAssert(STRING, CHECK) do{} while(false)
 #endif
 
 // NEW/DELETE관련
-#if !defined(IW_STD_NEW_H) && !defined(__PLACEMENT_NEW_INLINE)
-	#define IW_STD_NEW_H
-	#define __PLACEMENT_NEW_INLINE
-		#ifdef __BX_USED_LONG_SIZET
-			#define NEW_SIZE_T unsigned long
-		#else
-			#define NEW_SIZE_T unsigned int
-		#endif
-	inline void* operator new(NEW_SIZE_T, void* ptr) {return ptr;}
-	inline void* operator new[](NEW_SIZE_T, void* ptr) {return ptr;}
-	inline void operator delete(void*, void*) {}
-	inline void operator delete[](void*, void*) {}
-	#if defined _MSC_VER && _MSC_VER <= 1200
-		void* operator new[](NEW_SIZE_T);
-		void operator delete[](void*);
+#ifndef _BX_OPERATOR_NEW_
+#define _BX_OPERATOR_NEW_
+	#ifdef __BX_USED_LONG_SIZET
+		#define NEW_SIZE_T unsigned long
+	#else
+		#define NEW_SIZE_T unsigned int
 	#endif
+	inline void* operator new(NEW_SIZE_T, int ptr) {return (void*) ptr;}
+	inline void* operator new[](NEW_SIZE_T, int ptr) {return (void*) ptr;}
+	inline void operator delete(void*, int) {}
+	inline void operator delete[](void*, int) {}
 #endif
 
 // 타입분석관련

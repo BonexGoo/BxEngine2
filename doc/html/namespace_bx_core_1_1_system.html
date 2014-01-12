@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.7.0</span>
+   &#160;<span id="projectnumber">2.8.0</span>
    </div>
   </td>
  </tr>
@@ -160,9 +160,9 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#aa3061377ddfe3bbfbd8d81198d958b4f">DoSimulatorMinimize</a> ()</td></tr>
 <tr class="memdesc:aa3061377ddfe3bbfbd8d81198d958b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">시뮬레이터 최소화하기(데스크탑 빌드전용) <br/></td></tr>
 <tr class="separator:aa3061377ddfe3bbfbd8d81198d958b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1afedf60a29f8013d6d46205eb702526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a1afedf60a29f8013d6d46205eb702526">Assert</a> (string name, bool &amp;IsIgnore, bool flag, string filename, int linenumber)</td></tr>
-<tr class="memdesc:a1afedf60a29f8013d6d46205eb702526"><td class="mdescLeft">&#160;</td><td class="mdescRight">디버깅코드(Macro함수인 BxAssert로 사용권장)  <a href="#a1afedf60a29f8013d6d46205eb702526">More...</a><br/></td></tr>
-<tr class="separator:a1afedf60a29f8013d6d46205eb702526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446e8c7a3fafffa3750a42378abbf87f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a446e8c7a3fafffa3750a42378abbf87f">Assert</a> (string name, string query, bool &amp;IsIgnore, bool flag, string file, int line, string func)</td></tr>
+<tr class="memdesc:a446e8c7a3fafffa3750a42378abbf87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">디버깅코드(Macro함수인 BxAssert로 사용권장)  <a href="#a446e8c7a3fafffa3750a42378abbf87f">More...</a><br/></td></tr>
+<tr class="separator:a446e8c7a3fafffa3750a42378abbf87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33066078113affd381b6fe4d2024dacc"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a33066078113affd381b6fe4d2024dacc">GetOSName</a> ()</td></tr>
 <tr class="memdesc:a33066078113affd381b6fe4d2024dacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS이름 구하기  <a href="#a33066078113affd381b6fe4d2024dacc">More...</a><br/></td></tr>
 <tr class="separator:a33066078113affd381b6fe4d2024dacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,7 +306,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 
 </div>
 </div>
-<a class="anchor" id="a1afedf60a29f8013d6d46205eb702526"></a>
+<a class="anchor" id="a446e8c7a3fafffa3750a42378abbf87f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -315,6 +315,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -332,13 +338,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
+          <td class="paramname"><em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>linenumber</em>&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -352,9 +364,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>: 에러내용 </td></tr>
+    <tr><td class="paramname">query</td><td>: 질의내용 </td></tr>
+    <tr><td class="paramname">IsIgnore</td><td>: 무시여부 </td></tr>
     <tr><td class="paramname">flag</td><td>: 정상동작여부(true-정상동작, false-오류동작) </td></tr>
-    <tr><td class="paramname">filename</td><td>: 해당파일명(<b>FILE</b>을 사용) </td></tr>
-    <tr><td class="paramname">linenumber</td><td>: 해당줄번호(<b>LINE</b>을 사용) </td></tr>
+    <tr><td class="paramname">file</td><td>: 해당파일명(<b>FILE</b>을 사용) </td></tr>
+    <tr><td class="paramname">line</td><td>: 해당줄번호(<b>LINE</b>을 사용) </td></tr>
+    <tr><td class="paramname">func</td><td>: 해당줄번호(<b>FUNCTION</b>를 사용) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1216,7 +1231,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 26 2013 03:14:08 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 13 2014 00:27:29 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

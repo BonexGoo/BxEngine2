@@ -45,6 +45,9 @@ files
 	(../bxcore)
 	BxCore.hpp
 	BxCoreForS3E.cpp
+	BxCoreForS3E.hpp
+	BxCoreImpl.cpp
+	BxCoreImpl.hpp
 
 	["BxLib"]
 	(../bxlib)
@@ -125,8 +128,8 @@ deployments
 	caption='Test1'
 	long-caption='Test1'
 	provider='Bonex'
-	version='270'
-	version-string='2.7.0'
+	version='280'
+	version-string='2.8.0'
 	app-icf="data/app.icf"
 	embed-icf=1
 	assets="Data"

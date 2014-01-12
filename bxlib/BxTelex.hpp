@@ -355,7 +355,7 @@ class BxTelex
 			global_data const int Length = 32;
 			global_data int Offset = 4;
 			byte* Bytes = nullptr;
-			BxSINGLETON(Bytes, Length);
+			BxSINGLETON(Bytes, byte, Length);
 			if(0 < length)
 			{
 				if(Length < Offset + length)

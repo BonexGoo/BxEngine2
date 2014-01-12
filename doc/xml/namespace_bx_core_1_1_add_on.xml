@@ -3,9 +3,9 @@
   <compounddef id="namespace_bx_core_1_1_add_on" kind="namespace">
     <compoundname>BxCore::AddOn</compoundname>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ad8d45ac71de83456a7b5aa27ffa647ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a4315a261d16a4efcbccfc6cb5deb54f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const byte *</type>
-        <definition>const byte* BxCore::AddOn::JPGToBMP</definition>
+        <definition>const byte * BxCore::AddOn::JPGToBMP</definition>
         <argsstring>(const byte *jpg)</argsstring>
         <name>JPGToBMP</name>
         <param>
@@ -28,11 +28,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="545" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="558" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="538" bodyend="541"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aeb819fb3335b1d32fd0b3278ee2b00eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1af17ee227494d6911f4d5394d28c4f85b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const byte *</type>
-        <definition>const byte* BxCore::AddOn::GIFToBMP</definition>
+        <definition>const byte * BxCore::AddOn::GIFToBMP</definition>
         <argsstring>(const byte *gif, const int length, int _out_ numpage)</argsstring>
         <name>GIFToBMP</name>
         <param>
@@ -77,11 +77,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="555" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="568" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="543" bodyend="546"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aa59974382fefad3d3c37561219e64e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a0e5c95dfe4c4b4f70864dfea29068c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const byte *</type>
-        <definition>const byte* BxCore::AddOn::HQXToBMP</definition>
+        <definition>const byte * BxCore::AddOn::HQXToBMP</definition>
         <argsstring>(const byte *bmp, int scale)</argsstring>
         <name>HQXToBMP</name>
         <param>
@@ -115,7 +115,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="564" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="577" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="548" bodyend="551"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a7e5afd2b177cb0dfa7ad9cdc7a00ad7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string _tmp_</type>
@@ -152,7 +152,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="572" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="585" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="553" bodyend="556"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>id_zip</type>
@@ -213,7 +213,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="583" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="596" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="558" bodyend="561"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -239,11 +239,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="590" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="603" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="563" bodyend="566"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1aa47dc2d509f9a450e143d488af753d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a46ac0ae27223a96b93d1eaee33e98e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const byte *</type>
-        <definition>const byte* BxCore::AddOn::ZIPToFILE</definition>
+        <definition>const byte * BxCore::AddOn::ZIPToFILE</definition>
         <argsstring>(id_zip zip, const int fileindex, int _out_ filesize)</argsstring>
         <name>ZIPToFILE</name>
         <param>
@@ -288,7 +288,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="600" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="613" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="568" bodyend="571"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string _tmp_</type>
@@ -421,7 +421,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="616" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="629" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="573" bodyend="578"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -446,13 +446,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="624" column="1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="637" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="580" bodyend="583"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>AddOn파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine270ForMarmalade700/bxcore/BxCore.hpp" line="538" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="551" column="1"/>
   </compounddef>
 </doxygen>

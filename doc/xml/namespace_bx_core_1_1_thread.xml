@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespace_bx_core_1_1_thread" kind="namespace">
+    <compoundname>BxCore::Thread</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_thread</type>
+        <definition>id_thread BxCore::Thread::Create</definition>
+        <argsstring>(callback_thread threadCB, void *data=nullptr)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>callback_thread</type>
+          <declname>threadCB</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>스레드 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threadCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달할 데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>생성된 스레드ID </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="962" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1369" bodyend="1373"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Thread::Release</definition>
+        <argsstring>(id_thread thread, bool dokill=false, bool dowait=false)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>id_thread</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dokill</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dowait</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>스레드 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>thread</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스레드ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dokill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 강제로 종료시킬지의 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dowait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 종료때까지 대기할지의 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kindref="member">Create</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="971" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1375" bodyend="1382"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_mutex</type>
+        <definition>id_mutex BxCore::Thread::OpenMutex</definition>
+        <argsstring>()</argsstring>
+        <name>OpenMutex</name>
+        <briefdescription>
+<para>뮤텍스 열기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>생성된 뮤텍스ID </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" kindref="member">CloseMutex</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="978" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1384" bodyend="1388"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Thread::CloseMutex</definition>
+        <argsstring>(id_mutex mutex)</argsstring>
+        <name>CloseMutex</name>
+        <param>
+          <type>id_mutex</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>뮤텍스 닫기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 뮤텍스ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" kindref="member">OpenMutex</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="985" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1390" bodyend="1394"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Thread::Lock</definition>
+        <argsstring>(id_mutex mutex)</argsstring>
+        <name>Lock</name>
+        <param>
+          <type>id_mutex</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>뮤텍스 잠금 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 뮤텍스ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" kindref="member">Unlock</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="992" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1396" bodyend="1400"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Thread::Unlock</definition>
+        <argsstring>(id_mutex mutex)</argsstring>
+        <name>Unlock</name>
+        <param>
+          <type>id_mutex</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>뮤텍스 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 뮤텍스ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" kindref="member">Lock</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="999" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1402" bodyend="1406"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Thread파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="954" column="1"/>
+  </compounddef>
+</doxygen>
