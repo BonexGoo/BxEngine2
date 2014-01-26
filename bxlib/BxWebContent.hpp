@@ -1,8 +1,8 @@
-#pragma once
+ï»¿#pragma once
 #include <BxString.hpp>
 #include <BxVarVector.hpp>
 
-//! \brief HTTP±â¹İ Äõ¸®¼Û¼ö½Å, ÆÄÀÏ´Ù¿î·Îµå
+//! \brief HTTPê¸°ë°˜ ì¿¼ë¦¬ì†¡ìˆ˜ì‹ , íŒŒì¼ë‹¤ìš´ë¡œë“œ
 class BxWebContent
 {
 	byte* ResponseBytes;
@@ -12,7 +12,7 @@ private:
 	class CachePool
 	{
 	public:
-		string Path;
+		string_rw Path;
 		uint Size;
 		uhuge Date;
 		CachePool() : Path(nullptr), Size(0), Date(0) {}
@@ -24,7 +24,7 @@ private:
 	global_func macro int& PoolSumSize() {global_data int _PoolSumSize = 0; return _PoolSumSize;}
 	global_func void OnFileSearch(bool isdirname, string _tmp_ name, void* data)
 	{
-		BxString Name(name); // ¾ÈÀüÀ» À§ÇØ Àç±ÍÃ³¸®´Â »õ·Î¿î °ø°£ÇÒ´çÀÌ ÇÊ¿ä
+		BxString Name(name); // ì•ˆì „ì„ ìœ„í•´ ì¬ê·€ì²˜ë¦¬ëŠ” ìƒˆë¡œìš´ ê³µê°„í• ë‹¹ì´ í•„ìš”
 		if(!isdirname)
 		{
 			if(Name.GetFileExt().CompareNoCase("downloading") != same)
@@ -42,66 +42,66 @@ public:
 	~BxWebContent() {BxFree(ResponseBytes);}
 
 	/*!
-	\brief Ä³½ÃÆú´õÀÌ¸§ ¹Ş±â
-	\return Ä³½ÃÆú´õÀÌ¸§
+	\brief ìºì‹œí´ë”ì´ë¦„ ë°›ê¸°
+	\return ìºì‹œí´ë”ì´ë¦„
 	*/
 	global_func inline string GetCachePath() {return ".webcontent_cache";}
 
 	/*!
-	\brief Äõ¸®°á°ú ¹Ş±â
-	\return Äõ¸®°á°ú ¹ÙÀÌÆ®¹è¿­
+	\brief ì¿¼ë¦¬ê²°ê³¼ ë°›ê¸°
+	\return ì¿¼ë¦¬ê²°ê³¼ ë°”ì´íŠ¸ë°°ì—´
 	*/
 	inline const byte* _tmp_ GetBytes() {return ResponseBytes;}
 
 	/*!
-	\brief Äõ¸®°á°úÀÇ »çÀÌÁî¾ò±â(µ¥ÀÌÅÍ)
-	\return ¹ÙÀÌÆ®±æÀÌ
+	\brief ì¿¼ë¦¬ê²°ê³¼ì˜ ì‚¬ì´ì¦ˆì–»ê¸°(ë°ì´í„°)
+	\return ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	inline int GetDataLength() {return ResponseLength;}
 
 	/*!
-	\brief Äõ¸®°á°úÀÇ »çÀÌÁî¾ò±â(½ºÆ®¸µ)
-	\return ¹ÙÀÌÆ®±æÀÌ
+	\brief ì¿¼ë¦¬ê²°ê³¼ì˜ ì‚¬ì´ì¦ˆì–»ê¸°(ìŠ¤íŠ¸ë§)
+	\return ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	inline int GetTextLength() {return BxUtilGlobal::StrLenEx((string) ResponseBytes);}
 
 	/*!
-	\brief HTTPÄõ¸®½ÇÇà
-	\param Domain : Á¢¼ÓÇÒ ¼­¹ö(¿¹: "www.naver.com")
-	\param Port : Æ÷Æ®¹øÈ£(HTTP´Â º¸Åë 80¹øÆ÷Æ®)
-	\param Path : ´Ù¿î¹ŞÀ» ÆÄÀÏ ¶Ç´Â ½ÇÇàÇÒ ¼­ºí¸´ÀÇ °æ·Î(¿¹: "Update/Run.aspx")
-	\param Arguments : ¼­ºí¸´ÀÇ °æ¿ì Àü´ŞÇÒ ÀÎÀÚµé(¿¹: "Data0=aaa&Data1=bbb&Data2=ccc")
-	\param Timeout : °¢ ´Ü°èº° Áö¿¬Çã¿ë½Ã°£
-	\param Progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş
-	\return ¼Û¼ö½Å ¼º°ø¿©ºÎ
+	\brief HTTPì¿¼ë¦¬ì‹¤í–‰
+	\param Domain : ì ‘ì†í•  ì„œë²„(ì˜ˆ: "www.naver.com")
+	\param Port : í¬íŠ¸ë²ˆí˜¸(HTTPëŠ” ë³´í†µ 80ë²ˆí¬íŠ¸)
+	\param Path : ë‹¤ìš´ë°›ì„ íŒŒì¼ ë˜ëŠ” ì‹¤í–‰í•  ì„œë¸”ë¦¿ì˜ ê²½ë¡œ(ì˜ˆ: "Update/Run.aspx")
+	\param Arguments : ì„œë¸”ë¦¿ì˜ ê²½ìš° ì „ë‹¬í•  ì¸ìë“¤(ì˜ˆ: "Data0=aaa&Data1=bbb&Data2=ccc")
+	\param Timeout : ê° ë‹¨ê³„ë³„ ì§€ì—°í—ˆìš©ì‹œê°„
+	\param Progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬
+	\return ì†¡ìˆ˜ì‹  ì„±ê³µì—¬ë¶€
 	*/
 	bool Query(string Domain, ushort Port, string Path, string Arguments = nullptr, int Timeout = -1, callback_progress Progress = nullptr)
 	{
 		if(Timeout < 0) Timeout = 5000;
-		// ¼ÒÄÏ¿¬°á, Äõ¸®Á¦ÀÛ ¹× Àü¼Û
+		// ì†Œì¼“ì—°ê²°, ì¿¼ë¦¬ì œì‘ ë° ì „ì†¡
 		id_socket Socket = BxCore::Socket::Create();
 		if(connect_connected == BxCore::Socket::Connect(Socket, Domain, Port, Timeout, Progress))
 		{
-			char RequestChars[4096];
-			BxCore::Util::SnPrintf(RequestChars, 4096,
-				"GET /%s%s%s HTTP/1.1\r\n"
-				"Accept: text/html, application/xhtml+xml, */*\r\n"
-				"Accept-Language: ko-KR\r\n"
-				"User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)\r\n"
-				"Accept-Encoding: deflate\r\n"//"Accept-Encoding: gzip, deflate\r\n"
-				"Host: %s\r\n"
-				"Connection: Keep-Alive\r\n"
-				"\r\n", Path, (!Arguments || !*Arguments)? "" : "?", (!Arguments)? "" : Arguments, Domain);
+			int RequestCharsLength = 0;
+			string _tmp_ RequestChars = BxCore::Util::Print(
+				"<>:GET /<A><A><A> HTTP/1.1<R><N>"
+				"Accept: text/html, application/xhtml+xml, */*<R><N>"
+				"Accept-Language: ko-KR<R><N>"
+				"User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)<R><N>"
+				"Accept-Encoding: deflate<R><N>"//"Accept-Encoding: gzip, deflate<R><N>"
+				"Host: <A><R><N>"
+				"Connection: Keep-Alive<R><N>"
+				"<R><N>", BxTHROW(Path, (!Arguments || !*Arguments)? "" : "?", (!Arguments)? "" : Arguments, Domain),
+				&RequestCharsLength);
 			int SendResult = 0, SendedLength = 0;
-			const int RequestCharsLength = BxUtilGlobal::StrLen(RequestChars);
 			do
 			{
-				if(Progress && !Progress(-1, 0)) return false; // ¾÷µ¥ÀÌÆ®
+				if(Progress && !Progress(-1, 0)) return false; // ì—…ë°ì´íŠ¸
 				SendResult = BxCore::Socket::Send(Socket, RequestChars + SendedLength, RequestCharsLength - SendedLength);
 				if(SendResult < 0)
 				{
 					BxCore::Socket::Release(Socket);
-					return false; // ¼Û½Å½ÇÆĞ
+					return false; // ì†¡ì‹ ì‹¤íŒ¨
 				}
 			}
 			while((SendedLength += SendResult) < RequestCharsLength);
@@ -110,10 +110,10 @@ public:
 		else
 		{
 			BxCore::Socket::Release(Socket);
-			return false; // ¿¬°á½ÇÆĞ
+			return false; // ì—°ê²°ì‹¤íŒ¨
 		}
 
-		// HTTPÇì´õ ¼ö½Å
+		// HTTPí—¤ë” ìˆ˜ì‹ 
 		char ResponseChars[4096];
 		char* EndCodeSearchFocus = ResponseChars;
 		int RecvResult = 0, RecvedLength = 0;
@@ -121,14 +121,14 @@ public:
 		const int HTMLEndCodeLength = BxUtilGlobal::StrLen("\r\n\r\n");
 		while(0 <= (RecvResult = BxCore::Socket::Recv(Socket, ResponseChars + RecvedLength, (4096 - 1) - RecvedLength)))
 		{
-			if(Progress && !Progress(-1, 0)) return false; // ¾÷µ¥ÀÌÆ®
+			if(Progress && !Progress(-1, 0)) return false; // ì—…ë°ì´íŠ¸
 			RecvedLength += RecvResult;
-			// ¹ŞÀº ³»¿ëÀÌ ÀÖÀ» °æ¿ì
+			// ë°›ì€ ë‚´ìš©ì´ ìˆì„ ê²½ìš°
 			if(0 < RecvResult)
 			{
 				ErrorTime = 0;
 				SleepTime >>= 1;
-				// HTMLÇì´õ Á¾·áÄÚµå °Ë»ö
+				// HTMLí—¤ë” ì¢…ë£Œì½”ë“œ ê²€ìƒ‰
 				if(HTMLEndCodeLength < RecvedLength)
 				{
 					ResponseChars[RecvedLength] = '\0';
@@ -136,12 +136,12 @@ public:
 					if(*EndCodeSearchFocus)
 					{
 						EndCodeSearchFocus += HTMLEndCodeLength;
-						// µ¥ÀÌÅÍ»çÀÌÁî Á¶»ç
+						// ë°ì´í„°ì‚¬ì´ì¦ˆ ì¡°ì‚¬
 						char* ContentLengthSearchFocus = ResponseChars;
 						while(++ContentLengthSearchFocus < EndCodeSearchFocus && BxUtilGlobal::StrSameCount(ContentLengthSearchFocus, "Content-Length:") != 15);
 						if(ContentLengthSearchFocus == EndCodeSearchFocus)
 						{
-							// Content-Length°¡ ¾øÀ» °æ¿ì 5MByte·Î Àâ´Â´Ù
+							// Content-Lengthê°€ ì—†ì„ ê²½ìš° 5MByteë¡œ ì¡ëŠ”ë‹¤
 							ResponseLength = 1024 * 1024 * 5;
 						}
 						else
@@ -149,67 +149,69 @@ public:
 							ContentLengthSearchFocus += 15;
 							ResponseLength = BxUtilGlobal::AtoI(ContentLengthSearchFocus, EndCodeSearchFocus - ContentLengthSearchFocus);
 						}
-						// ¹öÆÛÈ®º¸
+						// ë²„í¼í™•ë³´
 						BxFree(ResponseBytes);
 						ResponseBytes = (byte*) BxAlloc(ResponseLength + 1);
 						break;
 					}
-					else EndCodeSearchFocus = (char*) BxUtilGlobal::Max((int) ResponseChars, (int)(EndCodeSearchFocus - HTMLEndCodeLength));
+                    else if(ResponseChars < EndCodeSearchFocus - HTMLEndCodeLength)
+                        EndCodeSearchFocus = EndCodeSearchFocus - HTMLEndCodeLength;
+                    else EndCodeSearchFocus = ResponseChars;
 				}
 			}
-			// ¹ŞÀº ³»¿ëÀÌ ¾øÀ» °æ¿ì
+			// ë°›ì€ ë‚´ìš©ì´ ì—†ì„ ê²½ìš°
 			else if(Timeout < (ErrorTime += SleepTime))
 			{
 				BxCore::Socket::Release(Socket);
-				return false; // ´ë±â½Ã°£ÃÊ°ú
+				return false; // ëŒ€ê¸°ì‹œê°„ì´ˆê³¼
 			}
 			else BxCore::System::Sleep(BxUtilGlobal::Min(SleepTime++, Timeout >> 6));
 		}
 		if(RecvResult < 0)
 		{
 			BxCore::Socket::Release(Socket);
-			return false; // ¼ö½Å½ÇÆĞ
+			return false; // ìˆ˜ì‹ ì‹¤íŒ¨
 		}
 
-		// µ¥ÀÌÅÍ ÀÌ°ü
+		// ë°ì´í„° ì´ê´€
 		RecvedLength = ResponseChars + RecvedLength - EndCodeSearchFocus;
-		BxCore::Util::MemMove(ResponseBytes, EndCodeSearchFocus, RecvedLength);
-		if(Progress && !Progress(RecvedLength, ResponseLength)) // ÇÁ·Î±×·¹½º
+		BxCore::Util::MemCpy(ResponseBytes, EndCodeSearchFocus, RecvedLength);
+		if(Progress && !Progress(RecvedLength, ResponseLength)) // í”„ë¡œê·¸ë ˆìŠ¤
 			return false;
 
-		// µ¥ÀÌÅÍ ¼ö½Å
+		// ë°ì´í„° ìˆ˜ì‹ 
 		RecvResult = 0;
 		if(RecvedLength < ResponseLength)
 		{
-			// Ãß°¡¼ö½Å
+			// ì¶”ê°€ìˆ˜ì‹ 
 			ErrorTime = 0, SleepTime = 0;
 			while(0 <= (RecvResult = BxCore::Socket::Recv(Socket, ResponseBytes + RecvedLength, ResponseLength - RecvedLength)))
 			{
 				RecvedLength += RecvResult;
-				if(Progress && !Progress(RecvedLength, ResponseLength)) // ÇÁ·Î±×·¹½º
+				if(Progress && !Progress(RecvedLength, ResponseLength)) // í”„ë¡œê·¸ë ˆìŠ¤
 					return false;
-				// ¹ŞÀº ³»¿ëÀÌ ÀÖÀ» °æ¿ì
+				// ë°›ì€ ë‚´ìš©ì´ ìˆì„ ê²½ìš°
 				if(0 < RecvResult)
 				{
 					ErrorTime = 0;
 					SleepTime >>= 1;
-					// Ãß°¡¼ö½Å¿Ï·á1 : Á¤»óÀûÀÎ ÆÄÀÏ
+					// ì¶”ê°€ìˆ˜ì‹ ì™„ë£Œ1 : ì •ìƒì ì¸ íŒŒì¼
 					if(RecvedLength == ResponseLength)
 						break;
-					// Ãß°¡¼ö½Å¿Ï·á2 : Content-Length°¡ ¾ø´Â HTMLÆÄÀÏ
+					// ì¶”ê°€ìˆ˜ì‹ ì™„ë£Œ2 : Content-Lengthê°€ ì—†ëŠ” HTMLíŒŒì¼
 					else if(BxUtilGlobal::StrSameCount((string) &ResponseBytes[RecvedLength - 5], "0\r\n\r\n") == 5)
 					{
 						ResponseLength = RecvedLength;
-						if(Progress && !Progress(RecvedLength, ResponseLength)) // ÇÁ·Î±×·¹½º
+						if(Progress && !Progress(RecvedLength, ResponseLength)) // í”„ë¡œê·¸ë ˆìŠ¤
 							return false;
 						break;
 					}
 				}
-				// ¹ŞÀº ³»¿ëÀÌ ¾øÀ» °æ¿ì
+				// ë°›ì€ ë‚´ìš©ì´ ì—†ì„ ê²½ìš°
 				else if(Timeout < (ErrorTime += SleepTime))
 				{
 					BxCore::Socket::Release(Socket);
-					return false; // ´ë±â½Ã°£ÃÊ°ú
+					return false; // ëŒ€ê¸°ì‹œê°„ì´ˆê³¼
 				}
 				else BxCore::System::Sleep(BxUtilGlobal::Min(SleepTime++, Timeout >> 6));
 			}
@@ -219,28 +221,28 @@ public:
 		{
 			BxFree(ResponseBytes);
 			ResponseLength = 0;
-			return false; // ¼ö½Å½ÇÆĞ
+			return false; // ìˆ˜ì‹ ì‹¤íŒ¨
 		}
 		ResponseBytes[ResponseLength] = '\0';
 		return true;
 	}
 
 	/*!
-	\brief Ä³½ÃÆÄÀÏ ·Îµå(¾øÀ¸¸é »ı¼º)
-	\param Domain : Á¢¼ÓÇÒ ¼­¹ö(¿¹: "www.naver.com")
-	\param Port : Æ÷Æ®¹øÈ£(HTTP´Â º¸Åë 80¹øÆ÷Æ®)
-	\param FilePath : ´Ù¿î¹ŞÀ» ÆÄÀÏ°æ·Î(¿¹: "Update/Abc.bmp")
-	\param DoLoad : ¸Ş¸ğ¸®¿¡ ·ÎµùÇÒÁöÀÇ ¿©ºÎ, false¸é ´Ù¿î·Îµå¿©ºÎ È®ÀÎ¸¸ ÇÏ°Ú´Ù´Â ÀÇ¹Ì
-	\param Progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş
-	\return Ä³½Ã·Îµå ¼º°ø¿©ºÎ
+	\brief ìºì‹œíŒŒì¼ ë¡œë“œ(ì—†ìœ¼ë©´ ìƒì„±)
+	\param Domain : ì ‘ì†í•  ì„œë²„(ì˜ˆ: "www.naver.com")
+	\param Port : í¬íŠ¸ë²ˆí˜¸(HTTPëŠ” ë³´í†µ 80ë²ˆí¬íŠ¸)
+	\param FilePath : ë‹¤ìš´ë°›ì„ íŒŒì¼ê²½ë¡œ(ì˜ˆ: "Update/Abc.bmp")
+	\param DoLoad : ë©”ëª¨ë¦¬ì— ë¡œë”©í• ì§€ì˜ ì—¬ë¶€, falseë©´ ë‹¤ìš´ë¡œë“œì—¬ë¶€ í™•ì¸ë§Œ í•˜ê² ë‹¤ëŠ” ì˜ë¯¸
+	\param Progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬
+	\return ìºì‹œë¡œë“œ ì„±ê³µì—¬ë¶€
 	*/
 	bool Cache(string Domain, ushort Port, string FilePath, bool DoLoad = true, callback_progress Progress = nullptr)
 	{
 		global_data const int CacheCountSumMax = BxCore::System::GetConfigNumber("Bx.WebContent.CacheCountSumMax", -1);
 		global_data const int CacheSizeSumMax = BxCore::System::GetConfigNumber("Bx.WebContent.CacheSizeSumMax", -1);
 
-		// Ä³½Ã·Îµå
-		BxString CacheFileName("%s/%s", nullptr, GetCachePath(), FilePath);
+		// ìºì‹œë¡œë“œ
+		BxString CacheFileName("<>:<A><FS><A>", BxTHROW(GetCachePath(), FilePath));
 		int FindedPos = -1;
 		while((FindedPos = CacheFileName.Find('?')) != -1)
 			CacheFileName[FindedPos] = '_';
@@ -270,28 +272,28 @@ public:
 			BxCore::File::Close(CacheFile);
 		}
 
-		// Äõ¸®½ÇÇà
+		// ì¿¼ë¦¬ì‹¤í–‰
 		if(!Query(Domain, Port, FilePath, nullptr, -1, Progress))
 			return false;
 
-		// Ä³½ÃÇ® ÃÊ±â¼öÁı
+		// ìºì‹œí’€ ì´ˆê¸°ìˆ˜ì§‘
 		if(!IsInitPool() && (CacheCountSumMax != -1 || CacheSizeSumMax != -1))
 		{
 			IsInitPool() = true;
 			BxCore::File::SearchFiles(GetCachePath(), OnFileSearch, nullptr);
 		}
 
-		// Ä³½ÃÀúÀå
+		// ìºì‹œì €ì¥
 		BxCore::File::MakeDirectory(CacheFileName.GetFilePath());
-		// ´Ù¿î·ÎµåÁß »ı¼º
+		// ë‹¤ìš´ë¡œë“œì¤‘ ìƒì„±
 		id_file DownloadingFile = BxCore::File::Open(CacheFileName + ".downloading", "wb");
 		BxCore::File::Write(DownloadingFile, &ResponseLength, 4);
 		BxCore::File::Close(DownloadingFile);
-		// ½ÇÁ¦ÆÄÀÏ »ı¼º
+		// ì‹¤ì œíŒŒì¼ ìƒì„±
 		id_file CacheFile = BxCore::File::Open(CacheFileName, "wb");
 		BxCore::File::Write(CacheFile, ResponseBytes, ResponseLength);
 		BxCore::File::Close(CacheFile);
-		// ´Ù¿î·ÎµåÁß »èÁ¦
+		// ë‹¤ìš´ë¡œë“œì¤‘ ì‚­ì œ
 		BxCore::File::RemoveFile(CacheFileName + ".downloading");
 		if(!DoLoad)
 		{
@@ -300,10 +302,10 @@ public:
 			ResponseBytes = nullptr;
 		}
 
-		// Ä³½ÃÇ® ¿î¿µ
+		// ìºì‹œí’€ ìš´ì˜
 		if(IsInitPool())
 		{
-			// Á¦ÇÑÃ³¸®
+			// ì œí•œì²˜ë¦¬
 			const int NewFileSize = BxCore::File::GetSize(CacheFileName);
 			while((CacheCountSumMax != -1 && 0 < Pool().Length() && CacheCountSumMax < Pool().Length() + 1) ||
 				(CacheSizeSumMax != -1 && 0 < PoolSumSize() && CacheSizeSumMax < PoolSumSize() + NewFileSize))
@@ -316,12 +318,12 @@ public:
 						iBest = i;
 						BestDate = Pool()[i].Date;
 					}
-				// RemoveFile·Î Áö¿öÁöÁö ¾Ê´Â ÆÄÀÏÀÌ¶ó°í ÇØµµ Ä³½Ã°ü¸® Æ¯¼º»ó Áö¿öÁ³´Ù°í ÆÇ´ÜÇÔ
+				// RemoveFileë¡œ ì§€ì›Œì§€ì§€ ì•ŠëŠ” íŒŒì¼ì´ë¼ê³  í•´ë„ ìºì‹œê´€ë¦¬ íŠ¹ì„±ìƒ ì§€ì›Œì¡Œë‹¤ê³  íŒë‹¨í•¨
 				BxCore::File::RemoveFile(Pool()[iBest].Path, true);
 				PoolSumSize() -= Pool()[iBest].Size;
 				Pool().Delete(iBest);
 			}
-			// Ç×¸ñÃß°¡
+			// í•­ëª©ì¶”ê°€
 			Pool()[LAST].Path = BxUtilGlobal::StrCpyWithAlloc(CacheFileName);
 			Pool()[END].Size = NewFileSize;
 			Pool()[END].Date = BxCore::File::GetDate(CacheFileName);

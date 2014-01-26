@@ -1,4 +1,4 @@
-#include <BxScene.hpp>
+﻿#include <BxScene.hpp>
 #include "TestList.hpp"
 
 FRAMEWORK_SCENE(TestListClass, "Test-List")
@@ -63,7 +63,7 @@ sysupdateresult OnUpdate(TestListClass& Data)
 
 void OnRender(TestListClass& Data, BxDraw& Draw)
 {
-	try(Draw, COLOR(160, 160, 192))
+	BxTRY(Draw, COLOR(160, 160, 192))
 	{
 		Draw.Rectangle(FILL, XYWH(0, 0, Draw.Width(), Draw.Height()));
 
@@ -79,7 +79,7 @@ void OnRender(TestListClass& Data, BxDraw& Draw)
 		for(int i = 0; i < TestListClass::ButtonLength; ++i)
 		{
 			int PosX = (Draw.Width() - ButtonWidth) / 2, PosY = PosYBegin + (ButtonHeight + 10) * i;
-			try(Draw, CLIP(XYWH(PosX, PosY, ButtonWidth, ButtonHeight)), ButtonID[i])
+			BxTRY(Draw, CLIP(XYWH(PosX, PosY, ButtonWidth, ButtonHeight)), ButtonID[i])
 			{
 				Draw.Rectangle(FILL, XYWH(0, 0, Draw.Width() - 0, Draw.Height() - 0), (Data.IsButtonPushed[i])? COLOR(255, 255, 255, 50) : COLOR(0, 0, 0, 50));
 				Draw.Rectangle(FILL, XYWH(0, 0, Draw.Width() - 1, Draw.Height() - 1), (Data.IsButtonPushed[i])? COLOR(0, 0, 0, 50) : COLOR(255, 255, 255, 50));
@@ -91,12 +91,11 @@ void OnRender(TestListClass& Data, BxDraw& Draw)
 		}
 
 		BxCore::Font::SetSort(fontsort_pad5);
-		BxString Date;
-		Date.Format("[%s, %s]", __DATE__, __TIME__);
+		BxString Date("<>:[<A>, <A>]", BxTHROW(__DATE__, __TIME__));
 		BxCore::Font::Draw(Data.font2, Date, XY(0, Draw.Height() - 10 - 30),
 			WH(Draw.Width(), 30), RGB32(255, 255, 0), 128);
 
-		try(Draw, CLIP(XYWH(Draw.Width() - 10 - 30, (50 - 30) / 2, 30, 30)), "Exit")
+		BxTRY(Draw, CLIP(XYWH(Draw.Width() - 10 - 30, (50 - 30) / 2, 30, 30)), "Exit")
 		{
 			Draw.Rectangle(FILL, XYWH(0, 0, Draw.Width() - 0, Draw.Height() - 0), (Data.IsExitButtonPushed)? COLOR(255, 255, 255, 50) : COLOR(0, 0, 0, 50));
 			Draw.Rectangle(FILL, XYWH(0, 0, Draw.Width() - 1, Draw.Height() - 1), (Data.IsExitButtonPushed)? COLOR(0, 0, 0, 50) : COLOR(255, 255, 255, 50));

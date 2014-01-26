@@ -6,51 +6,44 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
+      <node id="171">
+        <label>BxDynamic.hpp</label>
+        <link refid="BxDynamic.hpp"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
       <node id="172">
-        <label>stdarg.h</label>
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
       </node>
       <node id="174">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="171" relation="include">
-        </childnode>
-      </node>
-      <node id="170">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="171" relation="include">
-        </childnode>
-        <childnode refid="173" relation="include">
-        </childnode>
-      </node>
-      <node id="169">
-        <label>BxDynamic.hpp</label>
-        <link refid="BxDynamic.hpp"/>
-        <childnode refid="170" relation="include">
-        </childnode>
         <childnode refid="175" relation="include">
         </childnode>
-        <childnode refid="178" relation="include">
-        </childnode>
-      </node>
-      <node id="176">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="170" relation="include">
-        </childnode>
-      </node>
-      <node id="175">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
         <childnode refid="176" relation="include">
-        </childnode>
-        <childnode refid="177" relation="include">
-        </childnode>
-      </node>
-      <node id="178">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="170" relation="include">
         </childnode>
       </node>
       <node id="173">
@@ -60,18 +53,21 @@
         </childnode>
       </node>
       <node id="177">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="170" relation="include">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="178" relation="include">
         </childnode>
-        <childnode refid="176" relation="include">
+        <childnode refid="179" relation="include">
         </childnode>
       </node>
-      <node id="171">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
+      <node id="178">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="172" relation="include">
         </childnode>
+      </node>
+      <node id="176">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="class_bx_dynamic_1_1_resource" prot="public">BxDynamic::Resource</innerclass>
@@ -85,8 +81,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxCore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxCore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxUtil.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVarMap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
@@ -163,7 +159,7 @@
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AllocCache(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BufferSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UsingCacheSize)</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;이미<sp/>할당된<sp/>버퍼가<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBuffer<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;이미<sp/>할당된<sp/>버퍼가<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBuffer<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CachePoolSize<sp/>=<sp/>GetCachePoolSize(GetCachePoolName());</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CachePoolUsed<sp/>=<sp/>GetCachePoolUsed(GetCachePoolName());</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>확보</highlight><highlight class="normal"></highlight></codeline>
@@ -171,7 +167,7 @@
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>CurBinder<sp/>=<sp/>HeadBinder-&gt;GetNext();</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(CachePoolSize<sp/>&lt;<sp/>CachePoolUsed<sp/>+<sp/>UsingCacheSize<sp/>||<sp/>!(mBuffer<sp/>=<sp/>(byte*)<sp/>BxAlloc(BufferSize)))</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;관련된<sp/>모든<sp/>캐시를<sp/>비웠지만<sp/>버퍼<sp/>할당에<sp/>실패하였습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CurBinder<sp/>!=<sp/>HeadBinder);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;관련된<sp/>모든<sp/>캐시를<sp/>비웠지만<sp/>버퍼<sp/>할당에<sp/>실패하였습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CurBinder<sp/>!=<sp/>HeadBinder);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_dynamic_1_1_resource" kindref="compound" tooltip="리소스 관리 ">Resource</ref>*<sp/>CurResource<sp/>=<sp/>CurBinder-&gt;GetData();</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CurResource-&gt;mBuffer<sp/>&amp;&amp;<sp/>CurResource-&gt;mLockCount<sp/>==<sp/>0)</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -198,12 +194,12 @@
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UnlockCache()</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;LockCount를<sp/>초과한<sp/>Unlock입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;<sp/>mLockCount);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;LockCount를<sp/>초과한<sp/>Unlock입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;<sp/>mLockCount);</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>--mLockCount;</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateCache()</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;등록되지<sp/>않은<sp/>캐시입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBinder<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDynamic::Resource&lt;등록되지<sp/>않은<sp/>캐시입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>mBinder<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>버퍼가<sp/>존재하지<sp/>않으면<sp/>작업취소</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!mBuffer)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>스코어갱신</highlight><highlight class="normal"></highlight></codeline>
@@ -351,8 +347,8 @@
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetData(callback_serialize<sp/>CB<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Comment<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParamCB<sp/>=<sp/>CB;</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParamComment<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(ParamComment);</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Comment)<sp/>ParamComment<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(Comment);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParamComment<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(ParamComment);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Comment)<sp/>ParamComment<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(Comment);</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ParamCB<sp/>&amp;&amp;<sp/>ParentBinder<sp/>&amp;&amp;<sp/>ParentBinder-&gt;ParamData)</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParamCB(bindstate_binded,<sp/>ParamComment);</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -421,6 +417,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxDynamic.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

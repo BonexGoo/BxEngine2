@@ -1,4 +1,4 @@
-#include <BxScene.hpp>
+Ôªø#include <BxScene.hpp>
 #include "BxSimulator.hpp"
 
 FRAMEWORK_SCENE(BxSimulator, "BxSimulator")
@@ -68,7 +68,7 @@ sysupdateresult OnUpdate(BxSimulator& Data)
 	const point CursorPos = BxCore::System::GetSimulatorCursorPos();
 	Data.CursorPos.x = CursorPos.x - WindowPos.x;
 	Data.CursorPos.y = CursorPos.y - WindowPos.y;
-	// æ˜µ•¿Ã∆Æ º”µµ∞ËªÍ
+	// ÏóÖÎç∞Ïù¥Ìä∏ ÏÜçÎèÑÍ≥ÑÏÇ∞
 	global_data uhuge LastTime = BxCore::System::GetTimeMilliSecond();
 	global_data int UpdateTime[16] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 	global_data int UpdateTimeFocus = -1;
@@ -91,16 +91,16 @@ sysupdateresult OnUpdate(BxSimulator& Data)
 
 void OnRender(BxSimulator& Data, BxDraw& Draw)
 {
-	// ªÛ¿ß
+	// ÏÉÅÏúÑ
 	const int TitleHeight = 38;
-	try(Draw, CLIP(XYWH(0, 0, Draw.Width(), TitleHeight)), "SimulatorFrame:TitleBar")
+	BxTRY(Draw, CLIP(XYWH(0, 0, Draw.Width(), TitleHeight)), "SimulatorFrame:TitleBar")
 	{
 		for(int x = 0; x < Draw.Width(); x += 64)
 			Draw.Area(x, 0, FORM(&Data.GUIImage, Data.GUIImageRect[1]));
 		Draw.Area(0, 0, FORM(&Data.GUIImage, Data.GUIImageRect[0]));
 		Draw.Area(Draw.Width() - Data.GUIImageRect[2].width(), 0, FORM(&Data.GUIImage, Data.GUIImageRect[2]));
-		// √÷º“»≠πˆ∆∞
-		try(Draw, CLIP(XYWH(Draw.Width() - 39 - 27, 10, 27, 20)), "SimulatorFrame:Min")
+		// ÏµúÏÜåÌôîÎ≤ÑÌäº
+		BxTRY(Draw, CLIP(XYWH(Draw.Width() - 39 - 27, 10, 27, 20)), "SimulatorFrame:Min")
 		{
 			const bool IsFocus = (BxDrawGlobal::_DrawOption::CurClipRect().r <= Data.CursorPos.x
 				|| BxDrawGlobal::_DrawOption::CurClipRect().b <= Data.CursorPos.y
@@ -108,8 +108,8 @@ void OnRender(BxSimulator& Data, BxDraw& Draw)
 				|| Data.CursorPos.y < BxDrawGlobal::_DrawOption::CurClipRect().t)? false : true;
 			Draw.Area(0, 0, FORM(&Data.GUIImage, Data.GUIImageRect[Data.IsDown[0]? 10 : (IsFocus? 9 : 8)]));
 		}
-		// ¡æ∑·πˆ∆∞
-		try(Draw, CLIP(XYWH(Draw.Width() - 9 - 27, 10, 27, 20)), "SimulatorFrame:Exit")
+		// Ï¢ÖÎ£åÎ≤ÑÌäº
+		BxTRY(Draw, CLIP(XYWH(Draw.Width() - 9 - 27, 10, 27, 20)), "SimulatorFrame:Exit")
 		{
 			const bool IsFocus = (BxDrawGlobal::_DrawOption::CurClipRect().r <= Data.CursorPos.x
 				|| BxDrawGlobal::_DrawOption::CurClipRect().b <= Data.CursorPos.y
@@ -118,33 +118,33 @@ void OnRender(BxSimulator& Data, BxDraw& Draw)
 			Draw.Area(0, 0, FORM(&Data.GUIImage, Data.GUIImageRect[Data.IsDown[1]? 13 : (IsFocus? 12 : 11)]));
 		}
 	}
-	// «¡∑π¿”ºˆ
+	// ÌîÑÎ†àÏûÑÏàò
 	BxCore::Font::SetSort(fontsort_pad6);
-	BxCore::Font::Draw(Data.GUIFontMini, BxString("%dF, %d%%", nullptr, Data.AvgFrameTime, Data.AvgFrameRate),
+	BxCore::Font::Draw(Data.GUIFontMini, BxString::Parse("<>:<A>F, <A>%", BxTHROW(Data.AvgFrameTime, Data.AvgFrameRate)),
 		XY(Draw.Width() - Data.GUIImageRect[2].width() - BxCore::Main::GetCurrentGUIMargin().r - size::max, 0 - BxCore::Main::GetCurrentGUIMargin().t),
 		WH(size::max, TitleHeight), RGB32(96, 64, 64));
-	// ¡¶∏Ò
+	// Ï†úÎ™©
 	BxCore::Font::SetSort(fontsort_pad4);
-	BxCore::Font::Draw(Data.GUIFont, BxString("%s.%s", nullptr, BxCore::System::GetConfigString("Bx.Currently.Title", "Untitle"), BxScene::GetName(BxScene::GetCount() - 1)),
+	BxCore::Font::Draw(Data.GUIFont, BxString::Parse("<>:<A>.<A>", BxTHROW(BxCore::System::GetConfigString("Bx.Currently.Title", "Untitle"), BxScene::GetName(BxScene::GetCount() - 1))),
 		XY(Data.GUIImageRect[0].width() - BxCore::Main::GetCurrentGUIMargin().l, 0 - BxCore::Main::GetCurrentGUIMargin().t), WH(size::max, TitleHeight), RGB32(255, 0, 0));
-	// ¡ﬂ∞£
+	// Ï§ëÍ∞Ñ
 	for(int y = TitleHeight; y < Draw.Height(); y += 64)
 	{
 		Draw.Area(0, y, FORM(&Data.GUIImage, Data.GUIImageRect[3]));
 		Draw.Area(Draw.Width() - Data.GUIImageRect[4].width(), y, FORM(&Data.GUIImage, Data.GUIImageRect[4]));
 	}
-	// æ∆∑°
+	// ÏïÑÎûò
 	for(int x = 0; x < Draw.Width(); x += 64)
 		Draw.Area(x, Draw.Height() - Data.GUIImageRect[6].height(), FORM(&Data.GUIImage, Data.GUIImageRect[6]));
 	Draw.Area(0, Draw.Height() - Data.GUIImageRect[5].height(), FORM(&Data.GUIImage, Data.GUIImageRect[5]));
 	Draw.Area(Draw.Width() - Data.GUIImageRect[7].width(), Draw.Height() - Data.GUIImageRect[7].height(), FORM(&Data.GUIImage, Data.GUIImageRect[7]));
 
 	if(0 < Data.LicenseFrameCount)
-	try(Draw, OPACITY(Data.LicenseFrameCount * 0xFF / Data.LicenseFrameCountMax))
+	BxTRY(Draw, OPACITY(Data.LicenseFrameCount * 0xFF / Data.LicenseFrameCountMax))
 	{
-		// øˆ≈Õ∏∂≈©
+		// ÏõåÌÑ∞ÎßàÌÅ¨
 		Draw.Area(Draw.Width() / 2, Draw.Height() / 2, FORM(&Data.GUIWaterMark));
-		// ∂Û¿ÃºæΩ∫
+		// ÎùºÏù¥ÏÑºÏä§
 		Draw.Area(Draw.Width() / 2, Draw.Height() - 10, FORM(&Data.GUILicense));
 	}
 }

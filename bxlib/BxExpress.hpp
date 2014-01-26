@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <BxType.hpp>
 
 #define BxInteger(VALUE)  (BxExpress::Integer::Make<(int)(VALUE)>())
@@ -6,7 +6,7 @@
 #define BxFloat(VALUE)    (BxExpress::Float::Make<(fint)((VALUE) * ItoF(1))>())
 #define BxFloatX(VALUE)   (BxExpress::FloatX::Make<(fint)((VALUE) * ItoF(1))>())
 
-//! \brief °í¼ÓÃ³¸®
+//! \brief ê³ ì†ì²˜ë¦¬
 namespace BxExpress
 {
 	class _Integer;
@@ -71,10 +71,10 @@ namespace BxExpress
 		friend Float   operator*(const _Float& v1,   const _Integer& v2);
 		friend Integer operator/(const _Integer& v1, const IntegerX& v2);
 		friend Float   operator/(const _Integer& v1, const FloatX& v2  );
-		// »ı¼ºÀÚ
+		// ìƒì„±ì
 		private: _Integer() {}
 		private: explicit _Integer(const int v) : Value(v) {}
-		// ¿¬»êÀÚ
+		// ì—°ì‚°ì
 		public:  inline bool operator<(const _Integer& v) const {return Value < v.Value;}
 		public:  inline bool operator>(const _Integer& v) const {return Value > v.Value;}
 		public:  inline bool operator<=(const _Integer& v) const {return Value <= v.Value;}
@@ -82,7 +82,7 @@ namespace BxExpress
 		public:  inline bool operator==(const _Integer& v) const {return Value == v.Value;}
 		public:  inline bool operator!=(const _Integer& v) const {return Value != v.Value;}
 		public:  inline operator int() const {return Value;}
-		// µ¥ÀÌÅÍ
+		// ë°ì´í„°
 		private: int Value;
 	};
 	class Integer : public _Integer
@@ -101,17 +101,17 @@ namespace BxExpress
 		friend Integer operator/(const int v1,       const IntegerX& v2);
 		friend Integer operator/(const huge v1,      const IntegerX& v2);
 		friend Integer operator/(const _Integer& v1, const IntegerX& v2);
-		// »ı¼ºÀÚ
+		// ìƒì„±ì
 		public:  Integer() {}
 		public:  Integer(const Integer& v) : _Integer(v.Value) {}
 		public:  explicit Integer(const _Integer& v) : _Integer(v.Value) {}
 		private: explicit Integer(const int v, void*) : _Integer(v) {}
-		// ¿¬»êÀÚ
+		// ì—°ì‚°ì
 		public:  inline Integer operator-() const {return Integer(-Value, nullptr);}
 		public:  inline Integer operator<<(const int v) const {return Integer(Value << v, nullptr);}
 		public:  inline Integer operator>>(const int v) const {return Integer(Value >> v, nullptr);}
 		public:  inline Integer& operator=(const _Integer& v) {Value = v.Value; return *this;}
-		// ÇÒ´çÀÚ
+		// í• ë‹¹ì
 		public:  template<int VALUE> global_func const Integer& Make() {global_data const Integer Result(VALUE, nullptr); return Result;}
 	};
 	class IntegerX : public _Integer
@@ -122,20 +122,20 @@ namespace BxExpress
 		friend Integer operator/(const huge v1,      const IntegerX& v2);
 		friend Integer operator/(const _Integer& v1, const IntegerX& v2);
 		friend Float   operator/(const _Float& v1,   const IntegerX& v2);
-		// »ı¼ºÀÚ
+		// ìƒì„±ì
 		public:  IntegerX() {}
 		public:  IntegerX(const IntegerX& v) : _Integer(v.Value), InverseFF(v.InverseFF) {}
 		public:  explicit IntegerX(const Integer& v) : _Integer(v.Value), InverseFF(0) {}
 		private: explicit IntegerX(const int v, void*) : _Integer(v), InverseFF(0) {}
-		// ¿¬»êÀÚ
+		// ì—°ì‚°ì
 		public:  inline operator int() const {return Value;}
 		private: inline IntegerX& operator=(const Integer& v) {Value = v.Value; InverseFF = 0; return *this;}
 		public:  inline IntegerX& operator=(const IntegerX& v) {Value = v.Value; InverseFF = v.InverseFF; return *this;}
-		// °­Á¦ÃÊ±âÈ­
+		// ê°•ì œì´ˆê¸°í™”
 		public:  void Reset(const Integer& v) {Value = v.Value; InverseFF = 0;}
-		// ÇÒ´çÀÚ
+		// í• ë‹¹ì
 		public:  template<int VALUE> global_func const IntegerX& Make() {global_data const IntegerX Result(VALUE, nullptr); return Result;}
-		// µ¥ÀÌÅÍ
+		// ë°ì´í„°
 		private: mutable fint InverseFF;
 		private: inline fint GetInverseFF() const {return (InverseFF)? InverseFF : (InverseFF = (fint)(ox100000000 / Value));}
 	};
@@ -161,22 +161,22 @@ namespace BxExpress
 		friend Float   operator*(const _Float& v1,   const _Float& v2  );
 		friend Float   operator/(const _Float& v1,   const IntegerX& v2);
 		friend Float   operator/(const _Float& v1,   const FloatX& v2  );
-		// »ı¼ºÀÚ
+		// ìƒì„±ì
 		private: _Float() {}
 		private: explicit _Float(const fint v) : ValueF(v) {}
-		// ¿¬»êÀÚ
+		// ì—°ì‚°ì
 		public:  inline bool operator<(const _Float& v) const {return ValueF < v.ValueF;}
 		public:  inline bool operator>(const _Float& v) const {return ValueF > v.ValueF;}
 		public:  inline bool operator<=(const _Float& v) const {return ValueF <= v.ValueF;}
 		public:  inline bool operator>=(const _Float& v) const {return ValueF >= v.ValueF;}
 		public:  inline bool operator==(const _Float& v) const {return ValueF == v.ValueF;}
 		public:  inline bool operator!=(const _Float& v) const {return ValueF != v.ValueF;}
-		// ±âÅ¸
+		// ê¸°íƒ€
 		public:  inline fint ToFixFloat() const {return ValueF;}
 		public:  inline int ToInt() const {return FtoI(ValueF);}
 		public:  inline Integer ToInteger() const {return Integer(FtoI(ValueF), nullptr);}
 		public:  inline IntegerX ToIntegerX() const {return IntegerX(FtoI(ValueF), nullptr);}
-		// µ¥ÀÌÅÍ
+		// ë°ì´í„°
 		private: fint ValueF;
 	};
 	class Float : public _Float
@@ -201,19 +201,19 @@ namespace BxExpress
 		friend Float   operator/(const _Integer& v1, const FloatX& v2  );
 		friend Float   operator/(const _Float& v1,   const IntegerX& v2);
 		friend Float   operator/(const _Float& v1,   const FloatX& v2  );
-		// »ı¼ºÀÚ
+		// ìƒì„±ì
 		public:  Float() {}
 		public:  Float(const Float& v) : _Float(v.ValueF) {}
 		public:  explicit Float(const _Float& v) : _Float(v.ValueF) {}
 		public:  explicit Float(const _Integer& v) : _Float(ItoF(v.Value)) {}
 		private: explicit Float(const fint v, void*) : _Float(v) {}
-		// ¿¬»êÀÚ
+		// ì—°ì‚°ì
 		public:  inline Float operator-() const {return Float(-ValueF, nullptr);}
 		public:  inline Float operator<<(const int v) const {return Float(ValueF << v, nullptr);}
 		public:  inline Float operator>>(const int v) const {return Float(ValueF >> v, nullptr);}
 		public:  inline Float& operator=(const _Float& v) {ValueF = v.ValueF; return *this;}
 		public:  inline Float& operator=(const _Integer& v) {ValueF = ItoF(v.Value); return *this;}
-		// ÇÒ´çÀÚ
+		// í• ë‹¹ì
 		public:  template<fint VALUE> global_func const Float& Make() {global_data const Float Result(VALUE, nullptr); return Result;}
 	};
 	class FloatX : public _Float
@@ -222,23 +222,23 @@ namespace BxExpress
 		friend Float   operator/(const huge v1,      const FloatX& v2  );
 		friend Float   operator/(const _Integer& v1, const FloatX& v2  );
 		friend Float   operator/(const _Float& v1,   const FloatX& v2  );
-		// »ı¼ºÀÚ
+		// ìƒì„±ì
 		public:  FloatX(const FloatX& v) : _Float(v.ValueF), InverseF(v.InverseF) {}
 		public:  explicit FloatX(const Float& v) : _Float(v.ValueF), InverseF(0) {}
 		public:  explicit FloatX(const Integer& v) : _Float(ItoF(v.Value)), InverseF(0) {}
 		public:  explicit FloatX(const IntegerX& v) : _Float(ItoF(v.Value)), InverseF(0) {}
 		private: explicit FloatX(const fint v, void*) : _Float(v), InverseF(0) {}
-		// ¿¬»êÀÚ
+		// ì—°ì‚°ì
 		private: inline FloatX& operator=(const Float& v) {ValueF = v.ValueF; InverseF = 0; return *this;}
 		public:  inline FloatX& operator=(const FloatX& v) {ValueF = v.ValueF; InverseF = v.InverseF; return *this;}
 		private: inline FloatX& operator=(const Integer& v) {ValueF = ItoF(v.Value); InverseF = 0; return *this;}
 		private: inline FloatX& operator=(const IntegerX& v) {ValueF = ItoF(v.Value); InverseF = 0; return *this;}
-		// °­Á¦ÃÊ±âÈ­
+		// ê°•ì œì´ˆê¸°í™”
 		public:  void Reset(const Float& v) {ValueF = v.ValueF; InverseF = 0;}
 		public:  void Reset(const Integer& v) {ValueF = ItoF(v.Value); InverseF = 0;}
-		// ÇÒ´çÀÚ
+		// í• ë‹¹ì
 		public:  template<fint VALUE> global_func const FloatX& Make() {global_data const FloatX Result(VALUE, nullptr); return Result;}
-		// µ¥ÀÌÅÍ
+		// ë°ì´í„°
 		private: mutable fint InverseF;
 		private: inline fint GetInverseF() const {return (InverseF)? InverseF : (InverseF = (fint)(ox100000000 / ValueF));}
 	};

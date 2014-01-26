@@ -1,13 +1,13 @@
-#pragma once
+ï»¿#pragma once
 #include <BxMemory.hpp>
 #include <BxSingleton.hpp>
 
-//! \brief BxUtil°ü·Ã ±Û·Î¹úÇÔ¼ö
+//! \brief BxUtilê´€ë ¨ ê¸€ë¡œë²Œí•¨ìˆ˜
 namespace BxUtilGlobal
 {
 	/*!
-	\brief ÆÄÀÌ°ª ±¸ÇÏ±â
-	\return ÆÄÀÌ°ª(3.141592...)
+	\brief íŒŒì´ê°’ êµ¬í•˜ê¸°
+	\return íŒŒì´ê°’(3.141592...)
 	*/
 	static inline fint Pi()
 	{
@@ -15,8 +15,8 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ¹Ğ¸®ÃÊ¿¡ µû¸¥ ÇÁ·¹ÀÓ¼ö ±¸ÇÏ±â
-	\return ÇÁ·¹ÀÓ¼ö
+	\brief ë°€ë¦¬ì´ˆì— ë”°ë¥¸ í”„ë ˆì„ìˆ˜ êµ¬í•˜ê¸°
+	\return í”„ë ˆì„ìˆ˜
 	*/
 	static inline int Fps(const int ms)
 	{
@@ -24,10 +24,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ÃÖ¼Ò°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\param B : ÀÎ¼öB
-	\return ÃÖ¼Ò°ª
+	\brief ìµœì†Œê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\param B : ì¸ìˆ˜B
+	\return ìµœì†Œê°’
 	\see Max
 	*/
 	static inline const int Min(const int A, const int B)
@@ -37,10 +37,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ÃÖ´ë°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\param B : ÀÎ¼öB
-	\return ÃÖ´ë°ª
+	\brief ìµœëŒ€ê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\param B : ì¸ìˆ˜B
+	\return ìµœëŒ€ê°’
 	\see Min
 	*/
 	static inline const int Max(const int A, const int B)
@@ -50,11 +50,11 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ÃÖ¼ÒÃÖ´ë ÇÑ°è¼³Á¤
-	\param MinValue : ÃÖ¼Ò°ª
-	\param Value : ÀÔ·Â°ª
-	\param MaxValue : ÃÖ´ë°ª
-	\return ÃÖ¼ÒÃÖ´ë ÇÑ°è¼³Á¤À» Àû¿ëÇÑ ÀÔ·Â°ª
+	\brief ìµœì†ŒìµœëŒ€ í•œê³„ì„¤ì •
+	\param MinValue : ìµœì†Œê°’
+	\param Value : ì…ë ¥ê°’
+	\param MaxValue : ìµœëŒ€ê°’
+	\return ìµœì†ŒìµœëŒ€ í•œê³„ì„¤ì •ì„ ì ìš©í•œ ì…ë ¥ê°’
 	\see Min
 	*/
 	static inline const int MinMax(const int MinValue, const int Value, const int MaxValue)
@@ -63,9 +63,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief Àı´ë°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\return Àı´ë°ª
+	\brief ì ˆëŒ€ê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\return ì ˆëŒ€ê°’
 	*/
 	static inline int Abs(const int A)
 	{
@@ -74,9 +74,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief Á¦°ö°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\return Á¦°ö°ª
+	\brief ì œê³±ê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\return ì œê³±ê°’
 	*/
 	static inline const int Pow(const int A)
 	{
@@ -84,9 +84,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief 64ºñÆ® Á¦°ö°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\return 64ºñÆ® Á¦°ö°ª
+	\brief 64ë¹„íŠ¸ ì œê³±ê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\return 64ë¹„íŠ¸ ì œê³±ê°’
 	*/
 	static inline const huge Pow64(const int A)
 	{
@@ -94,9 +94,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief Á¦°ö±Ù°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\return Á¦°ö±Ù°ª
+	\brief ì œê³±ê·¼ê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\return ì œê³±ê·¼ê°’
 	*/
 	static const int Sqrt(const int A)
 	{
@@ -108,9 +108,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief 64ºñÆ® Á¦°ö±Ù°ª ±¸ÇÏ±â
-	\param A : ÀÎ¼öA
-	\return 64ºñÆ® Á¦°ö±Ù°ª
+	\brief 64ë¹„íŠ¸ ì œê³±ê·¼ê°’ êµ¬í•˜ê¸°
+	\param A : ì¸ìˆ˜A
+	\return 64ë¹„íŠ¸ ì œê³±ê·¼ê°’
 	*/
 	static const int Sqrt64(const huge A)
 	{
@@ -122,121 +122,121 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ±æÀÌ ±¸ÇÏ±â
-	\param String : ½ºÆ®¸µ
-	\return ½ºÆ®¸µÀÇ ¹ÙÀÌÆ®±æÀÌ
+	\brief ìŠ¤íŠ¸ë§ê¸¸ì´ êµ¬í•˜ê¸°
+	\param String : ìŠ¤íŠ¸ë§
+	\return ìŠ¤íŠ¸ë§ì˜ ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	static int StrLen(string String)
 	{
-		BxAssert("BxUtil", String);
+		BxASSERT("BxUtil", String);
 		int i = -1;
 		while(String[++i] != '\0');
 		return i;
 	}
 
 	/*!
-	\brief ÅÛÇÃ¸´Å¸ÀÔ ½ºÆ®¸µ±æÀÌ ±¸ÇÏ±â
-	\param String : ½ºÆ®¸µ
-	\return ½ºÆ®¸µÀÇ ¹è¿­¼ö·®
+	\brief í…œí”Œë¦¿íƒ€ì… ìŠ¤íŠ¸ë§ê¸¸ì´ êµ¬í•˜ê¸°
+	\param String : ìŠ¤íŠ¸ë§
+	\return ìŠ¤íŠ¸ë§ì˜ ë°°ì—´ìˆ˜ëŸ‰
 	*/
 	template<typename TYPE>
 	static int StrLenT(const TYPE* String)
 	{
-		BxAssert("BxUtil", String);
+		BxASSERT("BxUtil", String);
 		int i = -1;
 		while(String[++i]);
 		return i;
 	}
 
 	/*!
-	\brief È®ÀåµÈ ½ºÆ®¸µ±æÀÌ ±¸ÇÏ±â(\r°ú \nµµ ÀÎ½Ä)
-	\param String : ½ºÆ®¸µ
-	\return ½ºÆ®¸µÀÇ ¹ÙÀÌÆ®±æÀÌ
+	\brief í™•ì¥ëœ ìŠ¤íŠ¸ë§ê¸¸ì´ êµ¬í•˜ê¸°(\rê³¼ \në„ ì¸ì‹)
+	\param String : ìŠ¤íŠ¸ë§
+	\return ìŠ¤íŠ¸ë§ì˜ ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	static int StrLenEx(string String)
 	{
-		BxAssert("BxUtil", String);
+		BxASSERT("BxUtil", String);
 		int i = -1;
 		while(String[++i] != '\0' && String[i] != '\r' && String[i] != '\n');
 		return i;
 	}
 
 	/*!
-	\brief È®ÀåµÈ ½ºÆ®¸µ±æÀÌ ±¸ÇÏ±â(»ç¿ëÀÚÀÇ ³¡¹®ÀÚ)
-	\param String : ½ºÆ®¸µ
-	\param ExitCode : Á¾·á¹®ÀÚ
-	\return ½ºÆ®¸µÀÇ ¹ÙÀÌÆ®±æÀÌ
+	\brief í™•ì¥ëœ ìŠ¤íŠ¸ë§ê¸¸ì´ êµ¬í•˜ê¸°(ì‚¬ìš©ìì˜ ëë¬¸ì)
+	\param String : ìŠ¤íŠ¸ë§
+	\param ExitCode : ì¢…ë£Œë¬¸ì
+	\return ìŠ¤íŠ¸ë§ì˜ ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	static int StrLenEx(string String, char ExitCode)
 	{
-		BxAssert("BxUtil", String);
+		BxASSERT("BxUtil", String);
 		int i = -1;
 		while(String[++i] != '\0' && String[i] != ExitCode);
 		return i;
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ ÇÒ´ç
-	\param SrcLength : ÇÒ´çÇÒ »çÀÌÁî(NULL¹®ÀÚ°¡ ´õÇØÁü)
+	\brief ìŠ¤íŠ¸ë§ í• ë‹¹
+	\param SrcLength : í• ë‹¹í•  ì‚¬ì´ì¦ˆ(NULLë¬¸ìê°€ ë”í•´ì§)
 	\see StrFree
 	*/
-	static string StrAlloc(int SrcLength)
+	static string_rw StrAlloc(int SrcLength)
 	{
-		string_rw AllocedString = (string_rw) BxCore::Util::Malloc(SrcLength + 1);
+		string_rw AllocedString = (string_rw) BxCore::Util::Alloc(SrcLength + 1);
 		AllocedString[0] = '\0';
 		AllocedString[SrcLength] = '\0';
 		return AllocedString;
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ ÇØÁ¦
-	\param AllocedString : ÇÒ´çµÈ ½ºÆ®¸µ
-	\return °£ÆíÇÑ »ç¿ëÀ» À§ÇÑ nullptr°ª ¸®ÅÏ
+	\brief ìŠ¤íŠ¸ë§ í•´ì œ
+	\param AllocedString : í• ë‹¹ëœ ìŠ¤íŠ¸ë§
+	\return ê°„í¸í•œ ì‚¬ìš©ì„ ìœ„í•œ nullptrê°’ ë¦¬í„´
 	\see StrAlloc, StrCpyWithAlloc
 	*/
-	static string StrFree(string AllocedString)
+	static string_rw StrFree(string_rw AllocedString)
 	{
-		BxCore::Util::Free((id_memory) AllocedString);
+		BxCore::Util::Free(AllocedString);
 		return nullptr;
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ º¹»çÇÏ±â
-	\param DstString : º¹»çÇÒ ½ºÆ®¸µ(restrict¼Ó¼º)
-	\param SrcString : °¡Á®¿Ã ½ºÆ®¸µ(restrict¼Ó¼º)
-	\param SrcLength : º¹»çµÉ »çÀÌÁî(StringSrcÀÇ ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return º¹»çµÈ »çÀÌÁî(NULL¹®ÀÚ Á¦¿Ü)
+	\brief ìŠ¤íŠ¸ë§ ë³µì‚¬í•˜ê¸°
+	\param DstString : ë³µì‚¬í•  ìŠ¤íŠ¸ë§(restrictì†ì„±)
+	\param SrcString : ê°€ì ¸ì˜¬ ìŠ¤íŠ¸ë§(restrictì†ì„±)
+	\param SrcLength : ë³µì‚¬ë  ì‚¬ì´ì¦ˆ(StringSrcì˜ ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return ë³µì‚¬ëœ ì‚¬ì´ì¦ˆ(NULLë¬¸ì ì œì™¸)
 	*/
 	static int StrCpy(string_rw_prm DstString, string_prm SrcString, int SrcLength = -1)
 	{
 		const int SrcLen = (SrcLength < 0)? StrLen(SrcString) : SrcLength;
-		BxCore::Util::MemMove(DstString, SrcString, SrcLen);
+		BxCore::Util::MemCpy(DstString, SrcString, SrcLen);
 		DstString[SrcLen] = '\0';
 		return SrcLen;
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ ÇÒ´ç ¹× º¹»çÇÏ±â
-	\param SrcString : °¡Á®¿Ã ½ºÆ®¸µ
-	\param SrcLength : º¹»çµÉ »çÀÌÁî(StringSrcÀÇ ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return ÇÒ´ç ¹× º¹»çµÈ ½ºÆ®¸µ
+	\brief ìŠ¤íŠ¸ë§ í• ë‹¹ ë° ë³µì‚¬í•˜ê¸°
+	\param SrcString : ê°€ì ¸ì˜¬ ìŠ¤íŠ¸ë§
+	\param SrcLength : ë³µì‚¬ë  ì‚¬ì´ì¦ˆ(StringSrcì˜ ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return í• ë‹¹ ë° ë³µì‚¬ëœ ìŠ¤íŠ¸ë§
 	\see StrFree
 	*/
-	static string StrCpyWithAlloc(string SrcString, int SrcLength = -1)
+	static string_rw StrCpyWithAlloc(string SrcString, int SrcLength = -1)
 	{
 		const int SrcLen = (SrcLength < 0)? StrLen(SrcString) : SrcLength;
-		string_rw AllocedString = (string_rw) BxCore::Util::Malloc(SrcLen + 1);
-		BxCore::Util::MemMove(AllocedString, SrcString, SrcLen);
+		string_rw AllocedString = (string_rw) BxCore::Util::Alloc(SrcLen + 1);
+		BxCore::Util::MemCpy(AllocedString, SrcString, SrcLen);
 		AllocedString[SrcLen] = '\0';
 		return AllocedString;
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ ºñ±³ÇÏ±â
-	\param StringA : ½ºÆ®¸µA(restrict¼Ó¼º)
-	\param StringB : ½ºÆ®¸µB(restrict¼Ó¼º)
-	\param FixedLength : °íÁ¤½Ä ºñ±³±¸°£(»ç¿ë¾ÈÇÔ : -1)
-	\return same-°°À½, b_is_more-½ºÆ®¸µB°¡ Å­, b_is_less-½ºÆ®¸µB°¡ ÀÛÀ½
+	\brief ìŠ¤íŠ¸ë§ ë¹„êµí•˜ê¸°
+	\param StringA : ìŠ¤íŠ¸ë§A(restrictì†ì„±)
+	\param StringB : ìŠ¤íŠ¸ë§B(restrictì†ì„±)
+	\param FixedLength : ê³ ì •ì‹ ë¹„êµêµ¬ê°„(ì‚¬ìš©ì•ˆí•¨ : -1)
+	\return same-ê°™ìŒ, b_is_more-ìŠ¤íŠ¸ë§Bê°€ í¼, b_is_less-ìŠ¤íŠ¸ë§Bê°€ ì‘ìŒ
 	*/
 	static compare StrCmp(string_prm StringA, string_prm StringB, int FixedLength = -1)
 	{
@@ -256,11 +256,11 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ´ë¼Ò¹®ÀÚ ±¸ºĞ¾øÀÌ ½ºÆ®¸µ ºñ±³ÇÏ±â
-	\param StringA : ½ºÆ®¸µA(restrict¼Ó¼º)
-	\param StringB : ½ºÆ®¸µB(restrict¼Ó¼º)
-	\param FixedLength : °íÁ¤½Ä ºñ±³±¸°£(»ç¿ë¾ÈÇÔ : -1)
-	\return same-°°À½, b_is_more-½ºÆ®¸µB°¡ Å­, b_is_less-½ºÆ®¸µB°¡ ÀÛÀ½
+	\brief ëŒ€ì†Œë¬¸ì êµ¬ë¶„ì—†ì´ ìŠ¤íŠ¸ë§ ë¹„êµí•˜ê¸°
+	\param StringA : ìŠ¤íŠ¸ë§A(restrictì†ì„±)
+	\param StringB : ìŠ¤íŠ¸ë§B(restrictì†ì„±)
+	\param FixedLength : ê³ ì •ì‹ ë¹„êµêµ¬ê°„(ì‚¬ìš©ì•ˆí•¨ : -1)
+	\return same-ê°™ìŒ, b_is_more-ìŠ¤íŠ¸ë§Bê°€ í¼, b_is_less-ìŠ¤íŠ¸ë§Bê°€ ì‘ìŒ
 	*/
 	static compare StrICmp(string_prm StringA, string_prm StringB, int FixedLength = -1)
 	{
@@ -288,10 +288,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°£ µ¿ÀÏ±¸¿ªÀÇ ±æÀÌ ±¸ÇÏ±â
-	\param StringA : ½ºÆ®¸µA(restrict¼Ó¼º)
-	\param StringB : ½ºÆ®¸µB(restrict¼Ó¼º)
-	\return ¹ÙÀÌÆ®±æÀÌ
+	\brief ìŠ¤íŠ¸ë§ê°„ ë™ì¼êµ¬ì—­ì˜ ê¸¸ì´ êµ¬í•˜ê¸°
+	\param StringA : ìŠ¤íŠ¸ë§A(restrictì†ì„±)
+	\param StringB : ìŠ¤íŠ¸ë§B(restrictì†ì„±)
+	\return ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	static int StrSameCount(string_prm StringA, string_prm StringB)
 	{
@@ -302,10 +302,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ºü¸¥ ½ºÆ®¸µºñ±³¸¦ À§ÇÑ ÇØ½ÃÄÚµå ¸¸µé±â
-	\param String : ½ºÆ®¸µ
-	\param SrcLength : ½ºÆ®¸µ »çÀÌÁî(String ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return ÇØ½ÃÄÚµå
+	\brief ë¹ ë¥¸ ìŠ¤íŠ¸ë§ë¹„êµë¥¼ ìœ„í•œ í•´ì‹œì½”ë“œ ë§Œë“¤ê¸°
+	\param String : ìŠ¤íŠ¸ë§
+	\param SrcLength : ìŠ¤íŠ¸ë§ ì‚¬ì´ì¦ˆ(String ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return í•´ì‹œì½”ë“œ
 	*/
 	static uint StrHash(string String, int SrcLength = -1)
 	{
@@ -322,12 +322,12 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°Ë»ö
-	\param DstString : ´ë»ó½ºÆ®¸µ
-	\param SrcString : Ã£À» ½ºÆ®¸µ
-	\param SrcSearchMap : Ã£À» ½ºÆ®¸µÀÇ °Ë»ö¸Ê
-	\param DstLength : ´ë»ó½ºÆ®¸µ »çÀÌÁî(DstString ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return Ã£Àº À§Ä¡(¹ÙÀÌÆ®´ÜÀ§), °Ë»ö½ÇÆĞ½Ã -1
+	\brief ìŠ¤íŠ¸ë§ê²€ìƒ‰
+	\param DstString : ëŒ€ìƒìŠ¤íŠ¸ë§
+	\param SrcString : ì°¾ì„ ìŠ¤íŠ¸ë§
+	\param SrcSearchMap : ì°¾ì„ ìŠ¤íŠ¸ë§ì˜ ê²€ìƒ‰ë§µ
+	\param DstLength : ëŒ€ìƒìŠ¤íŠ¸ë§ ì‚¬ì´ì¦ˆ(DstString ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return ì°¾ì€ ìœ„ì¹˜(ë°”ì´íŠ¸ë‹¨ìœ„), ê²€ìƒ‰ì‹¤íŒ¨ì‹œ -1
 	*/
 	static int StrSearch(string DstString, string SrcString, const int (&SrcSearchMap)[256], int DstLength = -1)
 	{
@@ -350,9 +350,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°Ë»öÀ» À§ÇÑ °Ë»ö¸Ê ¸¸µé±â
-	\param String : ½ºÆ®¸µ
-	\param SearchMap : ¸¸µé¾îÁú °Ë»ö¸Ê
+	\brief ìŠ¤íŠ¸ë§ê²€ìƒ‰ì„ ìœ„í•œ ê²€ìƒ‰ë§µ ë§Œë“¤ê¸°
+	\param String : ìŠ¤íŠ¸ë§
+	\param SearchMap : ë§Œë“¤ì–´ì§ˆ ê²€ìƒ‰ë§µ
 	*/
 	static void StrSearchMap(string String, int (_out_ SearchMap)[256])
 	{
@@ -364,10 +364,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ÇØ´ç ½ºÆ®¸µÀÌ ¼ıÀÚÀÎÁöÀÇ ¿©ºÎ
-	\param String : ½ºÆ®¸µ
-	\param SrcLength : ½ºÆ®¸µ »çÀÌÁî(String ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return true-¼ıÀÚ, false-¼ıÀÚ¾Æ´Ô
+	\brief í•´ë‹¹ ìŠ¤íŠ¸ë§ì´ ìˆ«ìì¸ì§€ì˜ ì—¬ë¶€
+	\param String : ìŠ¤íŠ¸ë§
+	\param SrcLength : ìŠ¤íŠ¸ë§ ì‚¬ì´ì¦ˆ(String ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return true-ìˆ«ì, false-ìˆ«ìì•„ë‹˜
 	*/
 	static bool IsNumeric(string String, int StringLength = -1)
 	{
@@ -382,10 +382,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ½ºÆ®¸µÀ» Á¤¼ö·Î º¯È¯
-	\param String : ½ºÆ®¸µ
-	\param StringLength : Ã³¸®µÉ »çÀÌÁî(StringÀÇ ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return º¯È¯µÈ Á¤¼ö
+	\brief ìŠ¤íŠ¸ë§ì„ ì •ìˆ˜ë¡œ ë³€í™˜
+	\param String : ìŠ¤íŠ¸ë§
+	\param StringLength : ì²˜ë¦¬ë  ì‚¬ì´ì¦ˆ(Stringì˜ ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return ë³€í™˜ëœ ì •ìˆ˜
 	*/
 	static int AtoI(string String, int StringLength = -1)
 	{
@@ -410,14 +410,15 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief Á¤¼ö¸¦ ½ºÆ®¸µÀ¸·Î º¯È¯
-	\param Value : Á¤¼ö
-	\return º¯È¯µÈ ½ºÆ®¸µ
+	\brief ì •ìˆ˜ë¥¼ ìŠ¤íŠ¸ë§ìœ¼ë¡œ ë³€í™˜
+	\param Value : ì •ìˆ˜
+	\return ë³€í™˜ëœ ìŠ¤íŠ¸ë§
 	*/
 	static string _tmp_ ItoA(int Value)
 	{
 		const int Length = 255;
-		global_data char Result[Length + 1];
+		thread_storage _ = sizeof(char) * (Length + 1);
+		char* Result = (char*) BxCore::Thread::BindStorage(&_);
 		Result[Length] = '\0';
 		const bool IsMinus = (Value < 0);
 		uint UValue = (uint)((IsMinus)? -Value : Value);
@@ -439,10 +440,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief Çí»ç´ıÇÁ¸¦ ¾ç¼ö·Î º¯È¯
-	\param Hex : Çí»ç´ıÇÁ
-	\param HexLength : Ã³¸®µÉ »çÀÌÁî(StringÀÇ ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
-	\return º¯È¯µÈ ¾ç¼ö
+	\brief í—¥ì‚¬ë¤í”„ë¥¼ ì–‘ìˆ˜ë¡œ ë³€í™˜
+	\param Hex : í—¥ì‚¬ë¤í”„
+	\param HexLength : ì²˜ë¦¬ë  ì‚¬ì´ì¦ˆ(Stringì˜ ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return ë³€í™˜ëœ ì–‘ìˆ˜
 	*/
 	static uint HtoI(string Hex, int HexLength = -1)
 	{
@@ -470,32 +471,58 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief ¾ç¼ö¸¦ Çí»ç´ıÇÁ·Î º¯È¯
-	\param Value : ¾ç¼ö
-	\param IsUpper : ´ë¹®ÀÚ¿©ºÎ(true-´ë¹®ÀÚ, false-¼Ò¹®ÀÚ)
-	\return º¯È¯µÈ Çí»ç´ıÇÁ
+	\brief ì–‘ìˆ˜ë¥¼ í—¥ì‚¬ë¤í”„ë¡œ ë³€í™˜
+	\param IsUpper : ëŒ€ë¬¸ìì—¬ë¶€(true-ëŒ€ë¬¸ì, false-ì†Œë¬¸ì)
+	\param Value : ì–‘ìˆ˜
+	\return ë³€í™˜ëœ í—¥ì‚¬ë¤í”„
 	*/
-	static string _tmp_ ItoH(uint Value, bool IsUpper)
+	static string _tmp_ ItoH(bool IsUpper, uint Value)
 	{
-		const int Length = 255;
-		global_data char Result[Length + 1];
+		const int Length = 8;
+		thread_storage _ = sizeof(char) * (Length + 1);
+		char* Result = (char*) BxCore::Thread::BindStorage(&_);
 		Result[Length] = '\0';
 		for(int i = Length - 1; 0 <= i; --i)
 		{
-			if((Value & 0xF) < 10)
-				Result[i] = '0' + (Value & 0xF);
+			if((Value & 0xF) < 10) Result[i] = '0' + (Value & 0xF);
 			else Result[i] = ((IsUpper)? 'A' : 'a') + (Value & 0xF) - 10;
-			Value >>= 4;
-			if(Value == 0)
-				return &Result[i];
+			if((Value >>= 4) == 0) return &Result[i];
 		}
-		return &Result[Length];
+		return Result;
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå(char)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\return ·ÎµåÇÑ °ª
+	\brief ìŠ¤íŠ¸ë§ì„ ëŒ€ì†Œë¬¸ì ìŠ¤íŠ¸ë§ìœ¼ë¡œ ë³€í™˜
+	\param IsUpper : ëŒ€ë¬¸ìì—¬ë¶€(true-ëŒ€ë¬¸ì, false-ì†Œë¬¸ì)
+	\param String : ìŠ¤íŠ¸ë§
+	\param StringLength : ì²˜ë¦¬ë  ì‚¬ì´ì¦ˆ(Stringì˜ ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
+	\return ë³€í™˜ëœ ìŠ¤íŠ¸ë§
+	*/
+	static string _tmp_ AtoA(bool IsUpper, string String, int StringLength = -1)
+	{
+		const int StringLen = (StringLength < 0)? StrLenEx(String) : StringLength;
+		string_rw Result = nullptr;
+		BxSINGLETON(Result, StringLen + 1);
+		StrCpy(Result, String, StringLen);
+		if(IsUpper)
+		{
+			for(int i = 0; i < StringLen; ++i)
+				if('a' <= Result[i] && Result[i] <= 'z')
+					Result[i] = Result[i] + 'A' - 'a';
+		}
+		else
+		{
+			for(int i = 0; i < StringLen; ++i)
+				if('A' <= Result[i] && Result[i] <= 'Z')
+					Result[i] = Result[i] + 'a' - 'A';
+		}
+		return Result;
+	}
+
+	/*!
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ(char)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static inline char LoadInt8(byte*& Resource)
 	{
@@ -505,9 +532,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå(short)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\return ·ÎµåÇÑ °ª
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ(short)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static inline short LoadInt16(byte*& Resource)
 	{
@@ -517,9 +544,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå(int)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\return ·ÎµåÇÑ °ª
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ(int)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static inline int LoadInt32(byte*& Resource)
 	{
@@ -529,9 +556,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå(byte)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\return ·ÎµåÇÑ °ª
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ(byte)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static inline byte LoadUint8(byte*& Resource)
 	{
@@ -541,9 +568,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå(ushort)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\return ·ÎµåÇÑ °ª
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ(ushort)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static inline ushort LoadUint16(byte*& Resource)
 	{
@@ -553,9 +580,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå(uint)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\return ·ÎµåÇÑ °ª
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ(uint)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static inline uint LoadUint32(byte*& Resource)
 	{
@@ -565,23 +592,23 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ¹ÙÀÌÆ®¹è¿­ ·Îµå(uint)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\param Dest : ¾µ µ¥ÀÌÅÍ
-	\param Length : ¾µ ¹ÙÀÌÆ®±æÀÌ
+	\brief ë°ì´í„°ì—ì„œ ë°”ì´íŠ¸ë°°ì—´ ë¡œë“œ(uint)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\param Dest : ì“¸ ë°ì´í„°
+	\param Length : ì“¸ ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	static inline void LoadBytes(byte*& Resource, void* Dest, uint Length)
 	{
-		BxCore::Util::MemMove(Dest, Resource, Length);
+		BxCore::Util::MemCpy(Dest, Resource, Length);
 		Resource += Length;
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ºñÆ®¹è¿­ ·Îµå(uint)
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\param CurrentBit : ÇöÀç ºñÆ®
-	\param BitCount : ÀĞÀ» ºñÆ®±æÀÌ
-	\return ·ÎµåÇÑ °ª
+	\brief ë°ì´í„°ì—ì„œ ë¹„íŠ¸ë°°ì—´ ë¡œë“œ(uint)
+	\param Resource : ì½ì„ ë°ì´í„°
+	\param CurrentBit : í˜„ì¬ ë¹„íŠ¸
+	\param BitCount : ì½ì„ ë¹„íŠ¸ê¸¸ì´
+	\return ë¡œë“œí•œ ê°’
 	*/
 	static uint LoadBits(byte*& Resource, int& CurrentBit, const int BitCount)
 	{
@@ -599,10 +626,10 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ÀÓÀÇ¹è¿­ ·Îµå
-	\param Resource : ÀĞÀ» µ¥ÀÌÅÍ
-	\param TypeLen : ÀĞÀ» ¹ÙÀÌÆ®±æÀÌ
-	\return ·ÎµåÇÑ µ¥ÀÌÅÍ
+	\brief ë°ì´í„°ì—ì„œ ì„ì˜ë°°ì—´ ë¡œë“œ
+	\param Resource : ì½ì„ ë°ì´í„°
+	\param TypeLen : ì½ì„ ë°”ì´íŠ¸ê¸¸ì´
+	\return ë¡œë“œí•œ ë°ì´í„°
 	*/
 	static inline byte* LoadType(byte*& Resource, uint TypeLen)
 	{
@@ -612,9 +639,9 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ½ºÆ®¸µ ·Îµå
-	\param Resource : uint16À¸·Î ½ºÆ®¸µ»çÀÌÁî¸¦ ¾òÀº ´ÙÀ½, ÇØ´ç ½ºÆ®¸µÀ» ·Îµå
-	\return ·ÎµåÇÑ ½ºÆ®¸µ
+	\brief ë°ì´í„°ì—ì„œ ìŠ¤íŠ¸ë§ ë¡œë“œ
+	\param Resource : uint16ìœ¼ë¡œ ìŠ¤íŠ¸ë§ì‚¬ì´ì¦ˆë¥¼ ì–»ì€ ë‹¤ìŒ, í•´ë‹¹ ìŠ¤íŠ¸ë§ì„ ë¡œë“œ
+	\return ë¡œë“œí•œ ìŠ¤íŠ¸ë§
 	*/
 	static inline string LoadString(byte*& Resource)
 	{
@@ -626,11 +653,11 @@ namespace BxUtilGlobal
 	}
 
 	/*!
-	\brief »ó¼ö³ª¿­·Î ¹è¿­À» ÃÊ±âÈ­
-	\param Dst : ÃÊ±âÈ­ÇÒ ¹è¿­
-	\param Count : »ó¼ö³ª¿­±æÀÌ
-	\param Value : Ã¹¹øÂ° »ó¼ö°ª
-	\param ... : »ó¼ö°ªµé
+	\brief ìƒìˆ˜ë‚˜ì—´ë¡œ ë°°ì—´ì„ ì´ˆê¸°í™”
+	\param Dst : ì´ˆê¸°í™”í•  ë°°ì—´
+	\param Count : ìƒìˆ˜ë‚˜ì—´ê¸¸ì´
+	\param Value : ì²«ë²ˆì§¸ ìƒìˆ˜ê°’
+	\param ... : ìƒìˆ˜ê°’ë“¤
 	*/
 	template<typename TYPE>
 	static inline void SetArray(TYPE* Dst, const BxThrow& Src)
@@ -640,13 +667,13 @@ namespace BxUtilGlobal
 	}
 }
 
-//! \brief °¢Á¾ ¼öÇĞ/¹°¸®¸ğµâ Á¦°ø
+//! \brief ê°ì¢… ìˆ˜í•™/ë¬¼ë¦¬ëª¨ë“ˆ ì œê³µ
 class BxUtil
 {
 public:
 	/*!
-	\brief ·£´ıÇÔ¼ö ÃÊ±âÈ­
-	\param Seed : ÃÊ±âÈ­°ª
+	\brief ëœë¤í•¨ìˆ˜ ì´ˆê¸°í™”
+	\param Seed : ì´ˆê¸°í™”ê°’
 	\see BxCore::System::GetTimerMs
 	*/
 	global_func void SetRandom(const uint Seed)
@@ -657,9 +684,9 @@ public:
 	}
 
 	/*!
-	\brief ·£´ı°ª ±¸ÇÏ±â
-	\param Key : ·£´ıÅ×ÀÌºí ÀÎµ¦½º°ª, -1Àº ½Ç ·£´ı°ª
-	\return °á°ú°ª
+	\brief ëœë¤ê°’ êµ¬í•˜ê¸°
+	\param Key : ëœë¤í…Œì´ë¸” ì¸ë±ìŠ¤ê°’, -1ì€ ì‹¤ ëœë¤ê°’
+	\return ê²°ê³¼ê°’
 	*/
 	global_func inline uint GetRandom(const int Key = -1)
 	{
@@ -668,11 +695,11 @@ public:
 	}
 
 	/*!
-	\brief ±¸°£³» ·£´ı°ª ±¸ÇÏ±â
-	\param MinValue : ÃÖ¼Ò°ª
-	\param MaxValue : ÃÖ´ë°ª
-	\param Key : ·£´ıÅ×ÀÌºí ÀÎµ¦½º°ª, -1Àº ½Ç ·£´ı°ª
-	\return ÃÖ¼Ò°ª(Æ÷ÇÔ)¿¡¼­ ÃÖ´ë°ª(Æ÷ÇÔ)»çÀÌÀÇ °á°ú°ª
+	\brief êµ¬ê°„ë‚´ ëœë¤ê°’ êµ¬í•˜ê¸°
+	\param MinValue : ìµœì†Œê°’
+	\param MaxValue : ìµœëŒ€ê°’
+	\param Key : ëœë¤í…Œì´ë¸” ì¸ë±ìŠ¤ê°’, -1ì€ ì‹¤ ëœë¤ê°’
+	\return ìµœì†Œê°’(í¬í•¨)ì—ì„œ ìµœëŒ€ê°’(í¬í•¨)ì‚¬ì´ì˜ ê²°ê³¼ê°’
 	*/
 	global_func inline int GetValue(const int MinValue, const int MaxValue, int Key = -1)
 	{
@@ -680,11 +707,11 @@ public:
 	}
 
 	/*!
-	\brief °¢µµ³» ·£´ı°ª ±¸ÇÏ±â
-	\param MinValue : ÃÖ¼Ò°¢µµ°ª
-	\param MaxValue : ÃÖ´ë°¢µµ°ª
-	\param Key : ·£´ıÅ×ÀÌºí ÀÎµ¦½º°ª, -1Àº ½Ç ·£´ı°ª
-	\return ÃÖ¼Ò°ª(Æ÷ÇÔ)¿¡¼­ ÃÖ´ë°ª(Æ÷ÇÔ)»çÀÌÀÇ °á°ú°ª
+	\brief ê°ë„ë‚´ ëœë¤ê°’ êµ¬í•˜ê¸°
+	\param MinValue : ìµœì†Œê°ë„ê°’
+	\param MaxValue : ìµœëŒ€ê°ë„ê°’
+	\param Key : ëœë¤í…Œì´ë¸” ì¸ë±ìŠ¤ê°’, -1ì€ ì‹¤ ëœë¤ê°’
+	\return ìµœì†Œê°’(í¬í•¨)ì—ì„œ ìµœëŒ€ê°’(í¬í•¨)ì‚¬ì´ì˜ ê²°ê³¼ê°’
 	*/
 	global_func inline int GetValueAngle(const int MinValue, const int MaxValue, int Key = -1)
 	{
@@ -694,9 +721,9 @@ public:
 	}
 
 	/*!
-	\brief Cos°ª ±¸ÇÏ±â
-	\param Angle1024 : °¢µµ°ª
-	\return Cos°ª
+	\brief Cosê°’ êµ¬í•˜ê¸°
+	\param Angle1024 : ê°ë„ê°’
+	\return Cosê°’
 	*/
 	global_func inline fint Cos(int Angle1024)
 	{
@@ -706,9 +733,9 @@ public:
 	}
 
 	/*!
-	\brief Sin°ª ±¸ÇÏ±â
-	\param Angle1024 : °¢µµ°ª
-	\return Sin°ª
+	\brief Sinê°’ êµ¬í•˜ê¸°
+	\param Angle1024 : ê°ë„ê°’
+	\return Sinê°’
 	*/
 	global_func inline fint Sin(int Angle1024)
 	{
@@ -716,10 +743,10 @@ public:
 	}
 
 	/*!
-	\brief ¹æÇâÀ¸·Î °¢µµ ±¸ÇÏ±â
-	\param VectorX : ¹æÇâX
-	\param VectorY : ¹æÇâY
-	\return °¢µµ°ª
+	\brief ë°©í–¥ìœ¼ë¡œ ê°ë„ êµ¬í•˜ê¸°
+	\param VectorX : ë°©í–¥X
+	\param VectorY : ë°©í–¥Y
+	\return ê°ë„ê°’
 	*/
 	global_func int GetAngle1024(const int VectorX, const int VectorY)
 	{
@@ -731,11 +758,11 @@ public:
 	}
 
 	/*!
-	\brief Á¡ 3°³ÀÇ ¹æÇâ¼º °ªÀ» È®ÀÎ
-	\param Start : Ã¹Á¡
-	\param End : µÑÂ°Á¡
-	\param Src : ºñ±³ÇÒ ¼ÂÂ°Á¡
-	\return À½¼ö : ½Ã°è¹æÇâ, ¾ç¼ö : ¹İ½Ã°è¹æÇâ, 0 : Áß¸³
+	\brief ì  3ê°œì˜ ë°©í–¥ì„± ê°’ì„ í™•ì¸
+	\param Start : ì²«ì 
+	\param End : ë‘˜ì§¸ì 
+	\param Src : ë¹„êµí•  ì…‹ì§¸ì 
+	\return ìŒìˆ˜ : ì‹œê³„ë°©í–¥, ì–‘ìˆ˜ : ë°˜ì‹œê³„ë°©í–¥, 0 : ì¤‘ë¦½
 	*/
 	global_func inline const int GetClockwiseValue(const point& Start, const point& End, const point& Src)
 	{
@@ -743,8 +770,8 @@ public:
 	}
 
 	/*!
-	\brief ´ÜÀ§Çà·ÄÈ­
-	\param Dst : Àû¿ëµÉ Çà·Ä
+	\brief ë‹¨ìœ„í–‰ë ¬í™”
+	\param Dst : ì ìš©ë  í–‰ë ¬
 	*/
 	global_func inline void MatrixInit(matrix _out_ Dst)
 	{
@@ -753,9 +780,9 @@ public:
 	}
 
 	/*!
-	\brief Çà·Ä¿¡ Çà·Ä°öÇÏ±â
-	\param Dst : Àû¿ëµÉ Çà·Ä
-	\param Src : °öÇÒ Çà·Ä
+	\brief í–‰ë ¬ì— í–‰ë ¬ê³±í•˜ê¸°
+	\param Dst : ì ìš©ë  í–‰ë ¬
+	\param Src : ê³±í•  í–‰ë ¬
 	*/
 	global_func inline void MatrixCombine(matrix _inout_ Dst, const matrix _in_ Src)
 	{
@@ -825,13 +852,13 @@ public:
 		Result.m[3][3] += (Dst.m[3][1] * (huge) Src.m[1][3]) >> 16;
 		Result.m[3][3] += (Dst.m[3][2] * (huge) Src.m[2][3]) >> 16;
 		Result.m[3][3] += (Dst.m[3][3] * (huge) Src.m[3][3]) >> 16;
-		BxCore::Util::MemMove(&Dst, &Result, sizeof(matrix));
+		BxCore::Util::MemCpy(&Dst, &Result, sizeof(matrix));
 	}
 
 	/*!
-	\brief Çà·Ä¿¡ Çà·Ä°öÇÏ±â
-	\param Dst : Àû¿ëµÉ Çà·Ä
-	\param Src00 : °öÇÒ Çà·Ä
+	\brief í–‰ë ¬ì— í–‰ë ¬ê³±í•˜ê¸°
+	\param Dst : ì ìš©ë  í–‰ë ¬
+	\param Src00 : ê³±í•  í–‰ë ¬
 	*/
 	global_func inline void MatrixCombine(matrix _inout_ Dst,
 		const fint _in_ Src00, const fint _in_ Src10, const fint _in_ Src20, const fint _in_ Src30,
@@ -905,13 +932,13 @@ public:
 		Result.m[3][3] += (Dst.m[3][1] * (huge) Src13) >> 16;
 		Result.m[3][3] += (Dst.m[3][2] * (huge) Src23) >> 16;
 		Result.m[3][3] += (Dst.m[3][3] * (huge) Src33) >> 16;
-		BxCore::Util::MemMove(&Dst, &Result, sizeof(matrix));
+		BxCore::Util::MemCpy(&Dst, &Result, sizeof(matrix));
 	}
 
 	/*!
-	\brief Çà·ÄÀÇ È¸Àüº¯È¯(ÄõÅÍ´Ï¾ğ)
-	\param Dst : Àû¿ëµÉ Çà·Ä
-	\param Src : È¸ÀüÇÒ ÄõÅÍ´Ï¾ğ
+	\brief í–‰ë ¬ì˜ íšŒì „ë³€í™˜(ì¿¼í„°ë‹ˆì–¸)
+	\param Dst : ì ìš©ë  í–‰ë ¬
+	\param Src : íšŒì „í•  ì¿¼í„°ë‹ˆì–¸
 	*/
 	global_func inline void MatrixRotateQ(matrix _inout_ Dst, const quater _in_ Src)
 	{
@@ -932,9 +959,9 @@ public:
 	}
 
 	/*!
-	\brief ¹öÅØ½º¿¡ Çà·Ä°öÇÏ±â
-	\param Dst : Àû¿ëµÉ ¹öÅØ½º
-	\param Src : °öÇÒ Çà·Ä
+	\brief ë²„í…ìŠ¤ì— í–‰ë ¬ê³±í•˜ê¸°
+	\param Dst : ì ìš©ë  ë²„í…ìŠ¤
+	\param Src : ê³±í•  í–‰ë ¬
 	*/
 	global_func inline void MatrixApply(vertex _inout_ Dst, const matrix _in_ Src)
 	{
@@ -942,16 +969,16 @@ public:
 		Result.x = FtoI(Src.m[0][0] * Dst.x + Src.m[0][1] * Dst.y + Src.m[0][2] * Dst.z + Src.m[0][3]);
 		Result.y = FtoI(Src.m[1][0] * Dst.x + Src.m[1][1] * Dst.y + Src.m[1][2] * Dst.z + Src.m[1][3]);
 		Result.z = FtoI(Src.m[2][0] * Dst.x + Src.m[2][1] * Dst.y + Src.m[2][2] * Dst.z + Src.m[2][3]);
-		BxCore::Util::MemMove(&Dst, &Result, sizeof(vertex));
+		BxCore::Util::MemCpy(&Dst, &Result, sizeof(vertex));
 	}
 
 	/*!
-	\brief CP949¸¦ UTF16À¸·Î ÀüÈ¯
-	\param cp949 : º¯È¯ÇÒ CP949½ºÆ®¸µ
-	\param cp949length : º¯È¯ÇÒ CP949½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
-	\param utf16 : ¹ŞÀ» UTF16½ºÆ®¸µ
-	\param utf16length : ¹ŞÀ» UTF16½ºÆ®¸µ ¹è¿­¼ö·®
-	\return º¯È¯µÈ ¹è¿­¼ö·®
+	\brief CP949ë¥¼ UTF16ìœ¼ë¡œ ì „í™˜
+	\param cp949 : ë³€í™˜í•  CP949ìŠ¤íŠ¸ë§
+	\param cp949length : ë³€í™˜í•  CP949ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(NULLë¬¸ìì œì™¸, -1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
+	\param utf16 : ë°›ì„ UTF16ìŠ¤íŠ¸ë§
+	\param utf16length : ë°›ì„ UTF16ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(NULLë¬¸ìì œì™¸)
+	\return ë³€í™˜ëœ ë°°ì—´ìˆ˜ëŸ‰
 	*/
 	global_func int CP949ToUTF16(string cp949, int cp949length, wstring_rw utf16, int utf16length)
 	{
@@ -980,12 +1007,12 @@ public:
 	}
 
 	/*!
-	\brief UTF16¸¦ CP949·Î ÀüÈ¯
-	\param utf16 : º¯È¯ÇÒ UTF16½ºÆ®¸µ
-	\param utf16length : º¯È¯ÇÒ UTF16½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
-	\param cp949 : ¹ŞÀ» CP949½ºÆ®¸µ
-	\param cp949length : ¹ŞÀ» CP949½ºÆ®¸µ ¹è¿­¼ö·®
-	\return º¯È¯µÈ ¹è¿­¼ö·®
+	\brief UTF16ë¥¼ CP949ë¡œ ì „í™˜
+	\param utf16 : ë³€í™˜í•  UTF16ìŠ¤íŠ¸ë§
+	\param utf16length : ë³€í™˜í•  UTF16ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(NULLë¬¸ìì œì™¸, -1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
+	\param cp949 : ë°›ì„ CP949ìŠ¤íŠ¸ë§
+	\param cp949length : ë°›ì„ CP949ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(NULLë¬¸ìì œì™¸)
+	\return ë³€í™˜ëœ ë°°ì—´ìˆ˜ëŸ‰
 	*/
 	global_func int UTF16ToCP949(wstring utf16, int utf16length, string_rw cp949, const int cp949length)
 	{
@@ -1005,10 +1032,10 @@ public:
 	}
 
 	/*!
-	\brief UTF16¸¦ UTF8·Î ÀüÈ¯
-	\param utf16 : º¯È¯ÇÒ UTF16½ºÆ®¸µ
-	\param utf16length : º¯È¯ÇÒ UTF16½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
-	\param utf8 : ¹ŞÀ» UTF8½ºÆ®¸µ
+	\brief UTF16ë¥¼ UTF8ë¡œ ì „í™˜
+	\param utf16 : ë³€í™˜í•  UTF16ìŠ¤íŠ¸ë§
+	\param utf16length : ë³€í™˜í•  UTF16ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(NULLë¬¸ìì œì™¸, -1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
+	\param utf8 : ë°›ì„ UTF8ìŠ¤íŠ¸ë§
 	\see BxUtil::GetLengthForUTF8
 	*/
 	global_func void UTF16ToUTF8(wstring utf16, int utf16length, string_rw utf8)
@@ -1042,10 +1069,10 @@ public:
 	}
 
 	/*!
-	\brief UTF8À» UTF16À¸·Î ÀüÈ¯
-	\param utf8 : º¯È¯ÇÒ UTF8½ºÆ®¸µ
-	\param utf8length : º¯È¯ÇÒ UTF8½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
-	\param utf16 : ¹ŞÀ» UTF16½ºÆ®¸µ
+	\brief UTF8ì„ UTF16ìœ¼ë¡œ ì „í™˜
+	\param utf8 : ë³€í™˜í•  UTF8ìŠ¤íŠ¸ë§
+	\param utf8length : ë³€í™˜í•  UTF8ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(NULLë¬¸ìì œì™¸, -1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
+	\param utf16 : ë°›ì„ UTF16ìŠ¤íŠ¸ë§
 	\see BxUtil::GetLengthForUTF16
 	*/
 	global_func void UTF8ToUTF16(string utf8, int utf8length, wstring_rw utf16)
@@ -1078,10 +1105,10 @@ public:
 	}
 
 	/*!
-	\brief UTF16À» UTF8·Î ÀüÈ¯½Ã ÇÊ¿äÇÑ UTF8ÀÇ ¹ÙÀÌÆ®±æÀÌ
-	\param utf16 : º¯È¯ÇÒ UTF16½ºÆ®¸µ
-	\param utf16length : º¯È¯ÇÒ UTF16½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
-	\return ÇÊ¿äÇÑ ¹ÙÀÌÆ®±æÀÌ
+	\brief UTF16ì„ UTF8ë¡œ ì „í™˜ì‹œ í•„ìš”í•œ UTF8ì˜ ë°”ì´íŠ¸ê¸¸ì´
+	\param utf16 : ë³€í™˜í•  UTF16ìŠ¤íŠ¸ë§
+	\param utf16length : ë³€í™˜í•  UTF16ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(-1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
+	\return í•„ìš”í•œ ë°”ì´íŠ¸ê¸¸ì´
 	*/
 	global_func int GetLengthForUTF8(wstring utf16, int utf16length)
 	{
@@ -1105,10 +1132,10 @@ public:
 	}
 
 	/*!
-	\brief UTF8À» UTF16À¸·Î ÀüÈ¯½Ã ÇÊ¿äÇÑ UTF16ÀÇ ¹è¿­¼ö·®
-	\param utf8 : º¯È¯ÇÒ UTF8½ºÆ®¸µ
-	\param utf8length : º¯È¯ÇÒ UTF8½ºÆ®¸µ ¹è¿­¼ö·®(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
-	\return ÇÊ¿äÇÑ UTF16ÀÇ ¹è¿­¼ö·®
+	\brief UTF8ì„ UTF16ìœ¼ë¡œ ì „í™˜ì‹œ í•„ìš”í•œ UTF16ì˜ ë°°ì—´ìˆ˜ëŸ‰
+	\param utf8 : ë³€í™˜í•  UTF8ìŠ¤íŠ¸ë§
+	\param utf8length : ë³€í™˜í•  UTF8ìŠ¤íŠ¸ë§ ë°°ì—´ìˆ˜ëŸ‰(-1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
+	\return í•„ìš”í•œ UTF16ì˜ ë°°ì—´ìˆ˜ëŸ‰
 	*/
 	global_func int GetLengthForUTF16(string utf8, int utf8length)
 	{
@@ -1138,16 +1165,17 @@ public:
 	}
 
 	/*!
-	\brief ±³Â÷Å×½ºÆ®ÈÄ ±³Â÷Á¡À» ±¸ÇÔ
-	\param DstB : ¼±ºĞ1 Ã¹Á¡
-	\param DstE : ¼±ºĞ1 ³¡Á¡
-	\param SrcB : ¼±ºĞ2 Ã¹Á¡
-	\param SrcE : ¼±ºĞ2 ³¡Á¡
-	\return ±³Â÷½Ã ±³Â÷Á¤º¸¸¦ ¸®ÅÏÇÔ
+	\brief êµì°¨í…ŒìŠ¤íŠ¸í›„ êµì°¨ì ì„ êµ¬í•¨
+	\param DstB : ì„ ë¶„1 ì²«ì 
+	\param DstE : ì„ ë¶„1 ëì 
+	\param SrcB : ì„ ë¶„2 ì²«ì 
+	\param SrcE : ì„ ë¶„2 ëì 
+	\return êµì°¨ì‹œ êµì°¨ì •ë³´ë¥¼ ë¦¬í„´í•¨
 	*/
 	global_func const point* GetDotByLineCross(const point& DstB, const point& DstE, const point& SrcB, const point& SrcE)
 	{
-		global_data point Result = {0, 0};
+		thread_storage _ = sizeof(point);
+		point& Result = *((point*) BxCore::Thread::BindStorage(&_));
 		if(BxUtilGlobal::Max(SrcB.x, SrcE.x) < BxUtilGlobal::Min(DstB.x, DstE.x)
 			|| BxUtilGlobal::Max(DstB.x, DstE.x) < BxUtilGlobal::Min(SrcB.x, SrcE.x)
 			|| BxUtilGlobal::Max(SrcB.y, SrcE.y) < BxUtilGlobal::Min(DstB.y, DstE.y)
@@ -1160,7 +1188,7 @@ public:
 		if((ResultA1 == 0 || ResultB1 == 0 || (ResultA1 < 0 && 0 < ResultB1) || (0 < ResultA1 && ResultB1 < 0))
 			&& (ResultA2 == 0 || ResultB2 == 0 || (ResultA2 < 0 && 0 < ResultB2) || (0 < ResultA2 && ResultB2 < 0)))
 		{
-			// ¼öÁ÷
+			// ìˆ˜ì§
 			if(DstB.x == DstE.x && SrcB.x == SrcE.x)
 			{
 				Result.x = DstB.x;
@@ -1185,7 +1213,7 @@ public:
 					else Result.y = (SrcB.y < SrcE.y)? DstE.y : DstB.y;
 				}
 			}
-			// ¼öÆò
+			// ìˆ˜í‰
 			else if(DstB.y == DstE.y && SrcB.y == SrcE.y)
 			{
 				Result.y = DstB.y;
@@ -1210,7 +1238,7 @@ public:
 					else Result.x = (SrcB.x < SrcE.x)? DstE.x : DstB.x;
 				}
 			}
-			// Á÷±³
+			// ì§êµ
 			else if(DstB.x == DstE.x && SrcB.y == SrcE.y)
 			{
 				Result.x = DstB.x;
@@ -1221,27 +1249,27 @@ public:
 				Result.x = SrcB.x;
 				Result.y = DstB.y;
 			}
-			// ²ÀÁöÁ¡´êÀ½
+			// ê¼­ì§€ì ë‹¿ìŒ
 			else if((DstB.x == SrcB.x && DstB.y == SrcB.y) || (DstE.x == SrcE.x && DstE.y == SrcE.y)
 				|| (DstB.x == SrcE.x && DstB.y == SrcE.y) || (DstE.x == SrcB.x && DstE.y == SrcB.y))
 				return nullptr;
 			else
 			{
-				// Á÷¼±A
+				// ì§ì„ A
 				fint A_A = ItoF(DstB.y - DstE.y);
 				fint A_B = ItoF(DstE.x - DstB.x);
 				const fint A_Distance = BxUtilGlobal::Sqrt64(BxUtilGlobal::Pow64(A_A) + BxUtilGlobal::Pow64(A_B));
 				A_A = (((huge) A_A) << 16) / A_Distance;
 				A_B = (((huge) A_B) << 16) / A_Distance;
 				const fint A_C = A_A * DstB.x + A_B * DstB.y;
-				// Á÷¼±B
+				// ì§ì„ B
 				fint B_A = ItoF(SrcB.y - SrcE.y);
 				fint B_B = ItoF(SrcE.x - SrcB.x);
 				const fint B_Distance = BxUtilGlobal::Sqrt64(BxUtilGlobal::Pow64(B_A) + BxUtilGlobal::Pow64(B_B));
 				B_A = (((huge) B_A) << 16) / B_Distance;
 				B_B = (((huge) B_B) << 16) / B_Distance;
 				const fint B_C = B_A * SrcB.x + B_B * SrcB.y;
-				// ±³Á¡±¸ÇÏ±â
+				// êµì êµ¬í•˜ê¸°
 				const fint Rate = ((A_B * (huge) B_A) >> 16) - ((A_A * (huge) B_B) >> 16);
 				Result.x = FtoI((A_B * (huge) B_C - B_B * (huge) A_C) / Rate);
 				Result.y = FtoI((A_A * (huge) B_C - B_A * (huge) A_C) / -Rate);
@@ -1255,22 +1283,18 @@ private:
 	enum {Angle90 = 256, Angle180 = 512, Angle270 = 768};
 
 	global_func inline uint& RandomTable(int Index)
-	{
-		global_data uint _RandomTable[256] = {0};
-		return _RandomTable[Index];
-	}
+	{thread_storage _ = sizeof(uint) * 256; return ((uint*) BxCore::Thread::BindStorage(&_))[Index];}
 
-	global_func const wchar CP949ToUTF16_Search(const char cp949a, const char cp949b = ' ')
+	global_func const wchar CP949ToUTF16_Search(const char cp949a, const char cp949b = '\0')
 	{
-		global_data const int Length = 98 + 51 + 2350;
-		global_data wchar CP949[Length];
-		global_data wchar UTF16[Length];
-		global_data bool DoCopyAndSortByCP949 = true;
-		if(DoCopyAndSortByCP949)
+		const int Length = 98 + 51 + 2350;
+		thread_storage _ = sizeof(wchar) * (Length + Length);
+		wchar* CP949 = (wchar*) BxCore::Thread::BindStorage(&_);
+		wchar* UTF16 = CP949 + Length;
+		if(!CP949[0])
 		{
-			DoCopyAndSortByCP949 = false;
-			BxCore::Util::MemMove(CP949, BxCore::Util::CP949Table(), sizeof(wchar) * Length);
-			BxCore::Util::MemMove(UTF16, BxCore::Util::UTF16Table(), sizeof(wchar) * Length);
+			BxCore::Util::MemCpy(CP949, BxCore::Util::CP949Table(), sizeof(wchar) * Length);
+			BxCore::Util::MemCpy(UTF16, BxCore::Util::UTF16Table(), sizeof(wchar) * Length);
 			for(int i = 0; i < Length - 1; ++i)
 			{
 				int iBest = i;
@@ -1299,20 +1323,19 @@ private:
 				Lower = Middle + 1;
 			else Upper = Middle - 1;
 		}
-		return (const wchar) L'\x25A1';
+		return (const wchar) *(_W2("\x25A1"));
 	}
 
 	global_func string UTF16ToCP949_Search(const wchar utf16)
 	{
-		global_data const int Length = 98 + 51 + 2350;
-		global_data wchar UTF16[Length];
-		global_data wchar CP949[Length];
-		global_data bool DoCopyAndSortByUTF16 = true;
-		if(DoCopyAndSortByUTF16)
+		const int Length = 98 + 51 + 2350;
+		thread_storage _ = sizeof(wchar) * (Length + Length);
+		wchar* UTF16 = (wchar*) BxCore::Thread::BindStorage(&_);
+		wchar* CP949 = UTF16 + Length;
+		if(!UTF16[0])
 		{
-			DoCopyAndSortByUTF16 = false;
-			BxCore::Util::MemMove(UTF16, BxCore::Util::UTF16Table(), sizeof(wchar) * Length);
-			BxCore::Util::MemMove(CP949, BxCore::Util::CP949Table(), sizeof(wchar) * Length);
+			BxCore::Util::MemCpy(UTF16, BxCore::Util::UTF16Table(), sizeof(wchar) * Length);
+			BxCore::Util::MemCpy(CP949, BxCore::Util::CP949Table(), sizeof(wchar) * Length);
 			for(int i = 0; i < Length - 1; ++i)
 			{
 				int iBest = i;
@@ -1341,13 +1364,13 @@ private:
 				Lower = Middle + 1;
 			else Upper = Middle - 1;
 		}
-		return (string) "¡à";
+		return (string) _W2("\xE0A1");
 	}
 
 	global_func inline uint& _RandValue()
 	{
-		global_data uint RandValue = 0;
-		return RandValue;
+		thread_storage _ = sizeof(uint);
+		return *((uint*) BxCore::Thread::BindStorage(&_));
 	}
 
 	global_func inline void _SetRand(const uint Key)

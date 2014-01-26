@@ -40,7 +40,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="962" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1369" bodyend="1373"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="919" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1298" bodyend="1302"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -90,7 +90,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="971" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1375" bodyend="1382"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="928" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1304" bodyend="1311"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>id_mutex</type>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="978" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1384" bodyend="1388"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="935" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1313" bodyend="1317"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="985" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1390" bodyend="1394"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="942" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1319" bodyend="1323"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -157,7 +157,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="992" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1396" bodyend="1400"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="949" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1325" bodyend="1329"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -183,13 +183,54 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="999" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1402" bodyend="1406"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="956" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1331" bodyend="1335"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * BxCore::Thread::BindStorage</definition>
+        <argsstring>(int *storagekey)</argsstring>
+        <name>BindStorage</name>
+        <param>
+          <type>int *</type>
+          <declname>storagekey</declname>
+        </param>
+        <briefdescription>
+<para>현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storagekey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: thread_storage를 통해서 선언된 연결변수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>저장소의 버퍼주소(처음 생성시 모든 값은 0으로 초기화됨) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" kindref="member">UnbindStorageAll</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="964" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1337" bodyend="1347"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Thread::UnbindStorageAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnbindStorageAll</name>
+        <briefdescription>
+<para>현 스레드상의 저장소 전체종료 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member">BindStorage</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="970" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp" bodystart="1349" bodyend="1354"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Thread파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCore.hpp" line="954" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCore.hpp" line="911" column="1"/>
   </compounddef>
 </doxygen>

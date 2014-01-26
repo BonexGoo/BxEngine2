@@ -1,55 +1,48 @@
-#pragma once
-#include <BxCore.hpp>
-#include <BxMemory.hpp>
+Ôªø#pragma once
+#include <BxType.hpp>
 
-#define BxSINGLETON(RET, TYPE, ...) \
+/// @cond SECTION_NAME
+namespace BxCore
+{
+	namespace Thread
+	{
+		void* BindStorage(int* storagekey);
+	}
+}
+/// @endcond
+
+// BxSINGLETON-Î™®Îìà
+#define BxSINGLETON(RET, LEN) \
 	do { \
-		static TYPE* Value = nullptr; \
-		static uint Count = BxSingleton::Link(Value, Count); \
-		RET = BxSingleton::Bind(Value, Count, __VA_ARGS__); \
+		if(LEN == 0) {RET = nullptr; break;} \
+		thread_storage Key = sizeof(decltype(RET)) + sizeof(int); \
+		decltype(RET)* Value = (decltype(RET)*) BxCore::Thread::BindStorage(&Key); \
+		int* Count = (int*) &Value[1]; \
+		if(!*Count) *Count = BxSingleton::Link(Value, Count __DEBUG_MCR__); \
+		RET = BxSingleton::Bind(Value, Count, LEN); \
 	} while(false)
 
-//! \brief ΩÃ±€≈Ê¿ŒΩ∫≈œΩ∫µÈ¿« ¿œ∞˝º“∏Í¿ª ¿ß«— µµ±∏
+//! \brief Ïã±Í∏ÄÌÜ§Ïù∏Ïä§ÌÑ¥Ïä§Îì§Ïùò ÏùºÍ¥ÑÏÜåÎ©∏ÏùÑ ÏúÑÌïú ÎèÑÍµ¨
 class BxSingleton
 {
 	public: template<typename TYPE>
-	global_func uint Link(TYPE*& value, uint& count)
+	global_func int Link(TYPE** value, int* count __DEBUG_PRM__)
 	{
-		return List::Link(value, count);
+		return List::Link(value, count __DEBUG_ARG__);
 	}
 
 	public: template<typename TYPE>
-	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount)
+	global_func inline TYPE* Bind(TYPE** value, int* count, const int newcount)
 	{
-		if(count == newcount) return value;
-		return Transfer(value, count, (0 < newcount)? BxNew_Array(TYPE, newcount) : nullptr, newcount);
+		BxASSERT("BxSingleton<Ïã±Í∏ÄÌÜ§Ïùò ÏöîÏ≤≠ÏàòÎüâÏùÄ 0Ïù¥ Îê† Ïàò ÏóÜÏäµÎãàÎã§>", 0 < newcount);
+		if(*count == newcount) return *value;
+		return Transfer(value, count, new TYPE[newcount], newcount);
 	}
 
-	public: template<typename TYPE, typename P1>
-	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1)
-	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1) : nullptr, newcount);}
-	public: template<typename TYPE, typename P1, typename P2>
-	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2)
-	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2) : nullptr, newcount);}
-	public: template<typename TYPE, typename P1, typename P2, typename P3>
-	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2, P3 v3)
-	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3) : nullptr, newcount);}
-	public: template<typename TYPE, typename P1, typename P2, typename P3, typename P4>
-	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2, P3 v3, P4 v4)
-	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3, v4) : nullptr, newcount);}
-	public: template<typename TYPE, typename P1, typename P2, typename P3, typename P4, typename P5>
-	global_func inline TYPE* Bind(TYPE*& value, uint& count, const uint newcount, P1 v1, P2 v2, P3 v3, P4 v4, P5 v5)
-	{if(count == newcount) return value;
-	return Transfer(value, count, (0 < newcount)? BxNew_ArrayParam(TYPE, newcount, v1, v2, v3, v4, v5) : nullptr, newcount);}
-
 	public: template<typename TYPE>
-	global_func inline void Rebind(const TYPE* value, const uint newcount)
+	global_func inline void Rebind(const TYPE* value, const int newcount)
 	{
-		List::Rebind(value, (0 < newcount)? BxNew_Array(TYPE, newcount) : nullptr, newcount);
+		List::Rebind(value, (0 < newcount)? new TYPE[newcount] : nullptr, newcount);
 	}
 
 	public: global_func inline void Unbind(const void* value)
@@ -57,27 +50,27 @@ class BxSingleton
 		List::Unbind(value);
 	}
 
-	public: global_func inline void UnbindAll()
+	public: global_func inline void UnbindAll(bool dokill)
 	{
-		List::UnbindAll();
+		List::UnbindAll(dokill);
 	}
 
 	private: template<typename TYPE>
-	global_func TYPE* Transfer(TYPE*& value, uint& count, TYPE* newvalue, const uint newcount)
+	global_func TYPE* Transfer(TYPE** value, int* count, TYPE* newvalue, const int newcount)
 	{
-		for(uint i = 0, iend = (count < newcount)? count : newcount; i < iend; ++i)
-			newvalue[i] = value[i];
-		BxDelete_Array(value);
-		value = newvalue;
-		count = newcount;
-		return value;
+		for(int i = 0, iend = (*count < newcount)? *count : newcount; i < iend; ++i)
+			newvalue[i] = (*value)[i];
+		delete[] *value;
+		*value = newvalue;
+		*count = newcount;
+		return *value;
 	}
 
 	private: class Element
 	{
 		protected: void** ValuePtr;
-		protected: uint* CountPtr;
-		public: Element(void** value_ptr, uint* count_ptr) : ValuePtr(value_ptr), CountPtr(count_ptr) {}
+		protected: int* CountPtr;
+		public: Element(void** value_ptr, int* count_ptr) : ValuePtr(value_ptr), CountPtr(count_ptr) {}
 		public: virtual ~Element() {}
 		public: inline bool IsSame(const void* RHS) {return (*ValuePtr == RHS);}
 	};
@@ -85,18 +78,21 @@ class BxSingleton
 	private: template<typename TYPE>
 	class Value : public Element
 	{
-		public: Value(TYPE** value, uint* count) : Element((void**) value, count) {}
-		public: ~Value() {BxDelete_ArrayByType(TYPE, *ValuePtr); *CountPtr = 0;}
-		public: inline void Rebind(TYPE* newvalue, const uint newcount)
-		{Transfer(*((TYPE**) ValuePtr), *CountPtr, newvalue, newcount);}
+		__DEBUG_VAL__
+		public: Value(TYPE** value, int* count __DEBUG_PRM__)
+			: Element((void**) value, count) __DEBUG_INT__ {}
+		public: ~Value() {delete[] (TYPE*) *ValuePtr; *ValuePtr = nullptr; *CountPtr = 0;}
+		public: inline void Rebind(TYPE* newvalue, const int newcount)
+		{Transfer((TYPE**) ValuePtr, CountPtr, newvalue, newcount);}
 	};
 
 	private: class List
 	{
 		private: Element* Unit;
 		private: List* Next;
-		private: global_func List* Head() {global_data List _; return &_;}
-		private: List(Element* unit = nullptr)
+		private: global_func inline List* Head()
+		{thread_storage _ = sizeof(List); return (List*) BxCore::Thread::BindStorage(&_);}
+		private: List(Element* unit)
 		{
 			Unit = unit;
 			Next = nullptr;
@@ -104,18 +100,20 @@ class BxSingleton
 		private: ~List()
 		{
 			delete Unit;
-			BxAssert("BxSingleton<∞¥√º∞° «ÿ¡¶µ«¡ˆ ∏¯«— √§∑Œ «¡∑Œ±◊∑•¿Ã ¡æ∑·µÀ¥œ¥Ÿ>", !Next);
+			BxASSERT("BxSingleton<Í∞ùÏ≤¥Í∞Ä Ìï¥Ï†úÎêòÏßÄ Î™ªÌïú Ï±ÑÎ°ú Ïä§Î†àÎìúÍ∞Ä Ï¢ÖÎ£åÎê©ÎãàÎã§>", Next == nullptr);
+			Unit = nullptr;
+			Next = nullptr;
 		}
 		public: template<typename TYPE>
-		global_func uint Link(TYPE*& value, uint& count)
+		global_func int Link(TYPE** value, int* count __DEBUG_PRM__)
 		{
-			List* NewList = new List(new Value<TYPE>(&value, &count));
+			List* NewList = new List(new Value<TYPE>(value, count __DEBUG_ARG__));
 			NewList->Next = Head()->Next;
 			Head()->Next = NewList;
 			return 0;
 		}
 		public: template<typename TYPE>
-		global_func void Rebind(const TYPE* value, TYPE* newvalue, const uint newcount)
+		global_func void Rebind(const TYPE* value, TYPE* newvalue, const int newcount)
 		{
 			List* CurList = Head();
 			while(CurList = CurList->Next)
@@ -143,7 +141,7 @@ class BxSingleton
 				CurList = CurListNext;
 			}
 		}
-		public: global_func void UnbindAll()
+		public: global_func void UnbindAll(bool dokill)
 		{
 			List* CurList = Head()->Next;
 			Head()->Next = nullptr;
@@ -154,6 +152,8 @@ class BxSingleton
 				delete CurList;
 				CurList = CurListNext;
 			}
+			if(dokill)
+				Head()->~List();
 		}
 	};
 };

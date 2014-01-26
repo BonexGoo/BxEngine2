@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <BxSingleton.hpp>
 #include <BxThrow.hpp>
 #include <BxMemory.hpp>
@@ -6,7 +6,7 @@
 #include <BxVarMap.hpp>
 #include <BxVarVector.hpp>
 
-//! \brief HQ¼­¹ö¿¬µ¿ Àüº¸½Ã½ºÅÛ
+//! \brief HQì„œë²„ì—°ë™ ì „ë³´ì‹œìŠ¤í…œ
 class BxTelex
 {
 	public: class HQ;
@@ -20,25 +20,25 @@ class BxTelex
 
 	public: void UpdateReportValue(Report* report, string value)
 	{
-		BxAssert("BxTelex<ÇØ´ç Report°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", ReportValues.Access((uint) report));
+		BxASSERT("BxTelex<í•´ë‹¹ Reportê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", ReportValues.Access((uint) report));
 		ReportValues[(uint) report].SetValue(value, true);
 	}
 
 	public: string _tmp_ GetReportValue(Report* report, bool doFlush)
 	{
-		BxAssert("BxTelex<ÇØ´ç Report°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", ReportValues.Access((uint) report));
+		BxASSERT("BxTelex<í•´ë‹¹ Reportê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", ReportValues.Access((uint) report));
 		return ReportValues[(uint) report].GetValue(doFlush);
 	}
 
 	public: string _tmp_ GetDifferentedValue(Report* report)
 	{
-		BxAssert("BxTelex<ÇØ´ç Report°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", ReportValues.Access((uint) report));
+		BxASSERT("BxTelex<í•´ë‹¹ Reportê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", ReportValues.Access((uint) report));
 		return ReportValues[(uint) report].GetDifferentedValue(report->GetDefault());
 	}
 
 	public: string _tmp_ GetCommandValue(Command* command)
 	{
-		BxAssert("BxTelex<ÇØ´ç Command°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", CommandValues.Access((uint) command));
+		BxASSERT("BxTelex<í•´ë‹¹ Commandê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", CommandValues.Access((uint) command));
 		return CommandValues[(uint) command].GetValue(false);
 	}
 
@@ -56,7 +56,7 @@ class BxTelex
 	{
 		friend class BxVarMap<UpdatedValue>;
 		private: bool IsUpdated;
-		private: string Value;
+		private: string_rw Value;
 		private: UpdatedValue() : IsUpdated(false), Value(nullptr) {}
 		private: ~UpdatedValue() {Value = BxUtilGlobal::StrFree(Value);}
 		public: inline void SetValue(string _tmp_ value, bool doUpdate)
@@ -89,15 +89,15 @@ class BxTelex
 
 	friend class BxMemory;
 	private: int TelexID;
-	private: string ProjectName;
-	private: string PeerName;
+	private: string_rw ProjectName;
+	private: string_rw PeerName;
 	private: BxVarMap<UpdatedValue> ReportValues;
 	private: BxVarVector<uint, 4> ReportIDs;
 	private: BxVarMap<UpdatedValue> CommandValues;
 	private: BxVarVector<uint, 4> CommandIDs;
 	private: UpdateCommandCB CB;
 	private: void* CBData;
-	// »ı¼ºÀÚ, ¼Ò¸êÀÚ
+	// ìƒì„±ì, ì†Œë©¸ì
 	private: BxTelex() {HQ::Bind(this);}
 	private: ~BxTelex()
 	{
@@ -105,7 +105,7 @@ class BxTelex
 		ProjectName = BxUtilGlobal::StrFree(ProjectName);
 		PeerName = BxUtilGlobal::StrFree(PeerName);
 	}
-	// ÀÎ½ºÅÏ½º°ü¸®
+	// ì¸ìŠ¤í„´ìŠ¤ê´€ë¦¬
 	public: global_func BxTelex* Create(string projectname, string peername, const BxThrow& reports, const BxThrow& commands, UpdateCommandCB cb, void* cbdata)
 	{
 		global_data int LastTelexID = 0;
@@ -116,7 +116,7 @@ class BxTelex
 		for(int i = 0; i < reports.Length(); ++i)
 		{
 			Report** OneReport = reports.Access<Report*>(i);
-			BxAssert("BxTelex<reportsÆÄ¶ó¹ÌÅÍ Å¸ÀÔ¸ÅÄª ½ÇÆĞ>", OneReport);
+			BxASSERT("BxTelex<reportsíŒŒë¼ë¯¸í„° íƒ€ì…ë§¤ì¹­ ì‹¤íŒ¨>", OneReport);
 			if(OneReport)
 			{
 				Result->ReportValues[(uint) *OneReport].SetValue((*OneReport)->GetDefault(), false);
@@ -126,7 +126,7 @@ class BxTelex
 		for(int i = 0; i < commands.Length(); ++i)
 		{
 			Command** OneCommand = commands.Access<Command*>(i);
-			BxAssert("BxTelex<commandsÆÄ¶ó¹ÌÅÍ Å¸ÀÔ¸ÅÄª ½ÇÆĞ>", OneCommand);
+			BxASSERT("BxTelex<commandsíŒŒë¼ë¯¸í„° íƒ€ì…ë§¤ì¹­ ì‹¤íŒ¨>", OneCommand);
 			if(OneCommand)
 			{
 				Result->CommandValues[(uint) *OneCommand].SetValue((*OneCommand)->GetDefault(), false);
@@ -139,30 +139,30 @@ class BxTelex
 	}
 	public: void DestroyMe(BxTelex*& me)
 	{
-		BxAssert("BxTelex<ÆÄ¶ó¹ÌÅÍ ¿À·ù>", this == me);
+		BxASSERT("BxTelex<íŒŒë¼ë¯¸í„° ì˜¤ë¥˜>", this == me);
 		BxDelete(me);
 	}
 
 	public: class HQ
 	{
 		friend class BxPool<HQ>;
-		private: string Domain;
+		private: string_rw Domain;
 		private: int Port;
 		private: int Freq;
 		private: id_socket Sock;
 		private: uhuge TransTime;
 		private: BxVarVector<BxTelex*, 16> TransPeers;
 		private: BxVarVector<int, 4> DestroyedTelexIDs;
-		// »ı¼ºÀÚ, ¼Ò¸êÀÚ, Ç®
+		// ìƒì„±ì, ì†Œë©¸ì, í’€
 		private: HQ() {}
 		private: ~HQ()
 		{
 			Domain = BxUtilGlobal::StrFree(Domain);
 			BxCore::Socket::Release(Sock);
-			BxAssert("BxTelex::HQ<¾ÆÁ÷ ¿¬°áµÈ Peer°¡ ÀÖ½À´Ï´Ù>", TransPeers.Length() == 0);
+			BxASSERT("BxTelex::HQ<ì•„ì§ ì—°ê²°ëœ Peerê°€ ìˆìŠµë‹ˆë‹¤>", TransPeers.Length() == 0);
 		}
 		private: global_func BxVarHQ& Pool() {global_data BxVarHQ _; return _;}
-		// ÀÎ½ºÅÏ½º°ü¸®
+		// ì¸ìŠ¤í„´ìŠ¤ê´€ë¦¬
 		public: global_func void Attach(string domain, int port, int freq)
 		{
 			Pool()[LAST].Domain = BxUtilGlobal::StrCpyWithAlloc(domain);
@@ -176,7 +176,7 @@ class BxTelex
 			if(Pool().Length()) Pool().Delete(END);
 			return (0 < Pool().Length());
 		}
-		// ¹ÙÀÎµù°ü·Ã
+		// ë°”ì¸ë”©ê´€ë ¨
 		public: global_func void Bind(BxTelex* Peer)
 		{
 			global_data int Turn = 0;
@@ -197,19 +197,19 @@ class BxTelex
 						return;
 					}
 			}
-			BxAssert("BxTelex::HQ<Peer¸¦ Ã£Áö ¸øÇÏ¿´½À´Ï´Ù>", Pool().Length() == 0);
+			BxASSERT("BxTelex::HQ<Peerë¥¼ ì°¾ì§€ ëª»í•˜ì˜€ìŠµë‹ˆë‹¤>", Pool().Length() == 0);
 		}
 
-		// Æ®·£Àè¼Ç½Ãµµ
-		// ¡á ¾÷µ¥ÀÌÆ®(»ı¼º, Á¾·á, º¯°æ)
-		// ÇÇ¾î»ı¼º(Å¬¡æHQ) : [4:INIT][4:»çÀÌÁî] - [4:ÅÚ·º½ºID][S:ÇÁ·ÎÁ§Æ®¸í][S:ÇÇ¾î¸í]{[4:·Î±×PTR]...}
-		// ÇÇ¾îÁ¾·á(Å¬¡æHQ) : [4:EXIT][4:»çÀÌÁî] - {[4:ÅÚ·º½ºID]...}
-		// ·Î±×º¯°æ(Å¬¡æHQ, HQ¡æÅ¬) : [4:LOGU][4:»çÀÌÁî] - [4:ÅÚ·º½ºID]{[4:·Î±×PTR][S:°ª]...}
-		// ¸ğµç¾÷µ¥ÀÌÆ®¿Ï·á(Å¬¡æHQ, HQ¡æÅ¬) : [4:DONE][4:0]
-		// ¡á ·Î±×Á¤º¸
-		// ·Î±×Á¤º¸¿äÃ»(HQ¡æÅ¬) : [4:LOGQ][4:»çÀÌÁî] - {[4:·Î±×PTR]...}
-		// ·Î±×Á¤º¸Á¦°ø(Å¬¡æHQ) : [4:LOGA][4:»çÀÌÁî] - [4:·Î±×PTR][4:Å¸ÀÔID][S:ÀÌ¸§][S:µğÆúÆ®°ª]
-		// ¡Ú »çÀÌÁîÇÊµåÀÇ °ªÀº 1024ÀÌÇÏ¸¸ °¡´É
+		// íŠ¸ëœì­ì…˜ì‹œë„
+		// â–  ì—…ë°ì´íŠ¸(ìƒì„±, ì¢…ë£Œ, ë³€ê²½)
+		// í”¼ì–´ìƒì„±(í´â†’HQ) : [4:INIT][4:ì‚¬ì´ì¦ˆ] - [4:í…”ë ‰ìŠ¤ID][S:í”„ë¡œì íŠ¸ëª…][S:í”¼ì–´ëª…]{[4:ë¡œê·¸PTR]...}
+		// í”¼ì–´ì¢…ë£Œ(í´â†’HQ) : [4:EXIT][4:ì‚¬ì´ì¦ˆ] - {[4:í…”ë ‰ìŠ¤ID]...}
+		// ë¡œê·¸ë³€ê²½(í´â†’HQ, HQâ†’í´) : [4:LOGU][4:ì‚¬ì´ì¦ˆ] - [4:í…”ë ‰ìŠ¤ID]{[4:ë¡œê·¸PTR][S:ê°’]...}
+		// ëª¨ë“ ì—…ë°ì´íŠ¸ì™„ë£Œ(í´â†’HQ, HQâ†’í´) : [4:DONE][4:0]
+		// â–  ë¡œê·¸ì •ë³´
+		// ë¡œê·¸ì •ë³´ìš”ì²­(HQâ†’í´) : [4:LOGQ][4:ì‚¬ì´ì¦ˆ] - {[4:ë¡œê·¸PTR]...}
+		// ë¡œê·¸ì •ë³´ì œê³µ(í´â†’HQ) : [4:LOGA][4:ì‚¬ì´ì¦ˆ] - [4:ë¡œê·¸PTR][4:íƒ€ì…ID][S:ì´ë¦„][S:ë””í´íŠ¸ê°’]
+		// â˜… ì‚¬ì´ì¦ˆí•„ë“œì˜ ê°’ì€ 1024ì´í•˜ë§Œ ê°€ëŠ¥
 		public: global_func void TryTransaction()
 		{
 			#define SEND_PACKET(HQ, NAME) for(bool _try_ = HQ._SendBegin(NAME); _try_; _try_ = HQ._SendEnd())
@@ -220,7 +220,7 @@ class BxTelex
 				if(CurHQ.TransTime < BxCore::System::GetTimeMilliSecond())
 				{
 					CurHQ.TransTime = BxCore::System::GetTimeMilliSecond() + CurHQ.Freq;
-					// ¿¬°á»óÅÂ Ã¼Å©
+					// ì—°ê²°ìƒíƒœ ì²´í¬
 					bool IsReconnected = false;
 					if(BxCore::Socket::GetState(CurHQ.Sock) != socketstate_connected)
 					{
@@ -229,40 +229,40 @@ class BxTelex
 						CurHQ.Sock = BxCore::Socket::Create();
 						BxCore::Socket::Connect(CurHQ.Sock, CurHQ.Domain, CurHQ.Port, 3000);
 					}
-					// ¾÷µ¥ÀÌÆ®
+					// ì—…ë°ì´íŠ¸
 					if(BxCore::Socket::GetState(CurHQ.Sock) == socketstate_connected)
 					{
-						// ¿¹¾àµÈ ÆĞÅ¶
+						// ì˜ˆì•½ëœ íŒ¨í‚·
 						if(0 < CurHQ.DestroyedTelexIDs.Length() && !IsReconnected)
 						{
-							// ÇÇ¾îÁ¾·á
+							// í”¼ì–´ì¢…ë£Œ
 							SEND_PACKET(CurHQ, 'EXIT')
 							{
 								for(int j = 0; j < CurHQ.DestroyedTelexIDs.Length(); ++j)
-									CurHQ._SendInt4(CurHQ.DestroyedTelexIDs[j]); // [4:ÅÚ·º½ºID]
+									CurHQ._SendInt4(CurHQ.DestroyedTelexIDs[j]); // [4:í…”ë ‰ìŠ¤ID]
 							}
 						}
 						CurHQ.DestroyedTelexIDs.Reset();
-						// ÇÇ¾îº° ÆĞÅ¶
+						// í”¼ì–´ë³„ íŒ¨í‚·
 						for(int j = 0; j < CurHQ.TransPeers.Length(); ++j)
 						{
 							BxTelex* CurPeer = CurHQ.TransPeers[j];
-							// ÇÇ¾î»ı¼º
+							// í”¼ì–´ìƒì„±
 							if(CurPeer->TelexID < 0 || IsReconnected)
 							{
 								CurPeer->TelexID = BxUtilGlobal::Abs(CurPeer->TelexID);
 								SEND_PACKET(CurHQ, 'INIT')
 								{
-									CurHQ._SendInt4(CurPeer->TelexID); // [4:ÅÚ·º½ºID]
-									CurHQ._SendString4(CurPeer->ProjectName); // [S:ÇÁ·ÎÁ§Æ®¸í]
-									CurHQ._SendString4(CurPeer->PeerName); // [S:ÇÇ¾î¸í]
+									CurHQ._SendInt4(CurPeer->TelexID); // [4:í…”ë ‰ìŠ¤ID]
+									CurHQ._SendString4(CurPeer->ProjectName); // [S:í”„ë¡œì íŠ¸ëª…]
+									CurHQ._SendString4(CurPeer->PeerName); // [S:í”¼ì–´ëª…]
 									for(int p = 0; p < CurPeer->ReportIDs.Length(); ++p)
-										CurHQ._SendInt4(CurPeer->ReportIDs[p]); // [4:·Î±×PTR]
+										CurHQ._SendInt4(CurPeer->ReportIDs[p]); // [4:ë¡œê·¸PTR]
 									for(int p = 0; p < CurPeer->CommandIDs.Length(); ++p)
-										CurHQ._SendInt4(CurPeer->CommandIDs[p]); // [4:·Î±×PTR]
+										CurHQ._SendInt4(CurPeer->CommandIDs[p]); // [4:ë¡œê·¸PTR]
 								}
 							}
-							// ¸®Æ÷Æ®¾÷µ¥ÀÌÆ®
+							// ë¦¬í¬íŠ¸ì—…ë°ì´íŠ¸
 							bool IsSomethingUpdated = false;
 							for(int r = 0; r < CurPeer->ReportIDs.Length(); ++r)
 							{
@@ -274,17 +274,17 @@ class BxTelex
 									{
 										IsSomethingUpdated = true;
 										CurHQ._SendBegin('LOGU');
-										CurHQ._SendInt4(CurPeer->TelexID); // [4:ÅÚ·º½ºID]
+										CurHQ._SendInt4(CurPeer->TelexID); // [4:í…”ë ‰ìŠ¤ID]
 									}
-									CurHQ._SendInt4((int) CurPeer->ReportIDs[r]); // [4:·Î±×PTR]
-									CurHQ._SendString4(ReportValue); // [S:°ª]
+									CurHQ._SendInt4((int) CurPeer->ReportIDs[r]); // [4:ë¡œê·¸PTR]
+									CurHQ._SendString4(ReportValue); // [S:ê°’]
 								}
 							}
 							if(IsSomethingUpdated) CurHQ._SendEnd();
 						}
-						// ¾÷µ¥ÀÌÆ®¿Ï·á
+						// ì—…ë°ì´íŠ¸ì™„ë£Œ
 						SEND_PACKET(CurHQ, 'DONE');
-						// ¸®½Ãºê
+						// ë¦¬ì‹œë¸Œ
 						uint RecvHeader[2] = {0, 0};
 						int RecvHeaderResult = 0, TempID = 0;
 						while((RecvHeaderResult = BxCore::Socket::RecvFully(CurHQ.Sock, (byte*) RecvHeader, 8, 3000, false)) == 8)
@@ -326,7 +326,7 @@ class BxTelex
 											if(BxCore::Socket::RecvFully(CurHQ.Sock, (byte*) &ValueLength, 2, 3000, false) == 2)
 											{
 												RecvHeader[1] -= 2;
-												string Value = BxUtilGlobal::StrAlloc(ValueLength);
+												string_rw Value = BxUtilGlobal::StrAlloc(ValueLength);
 												if(BxCore::Socket::RecvFully(CurHQ.Sock, (byte*) Value, ValueLength, 3000, false) == ValueLength)
 												{
 													RecvHeader[1] -= ValueLength;
@@ -345,7 +345,7 @@ class BxTelex
 						if(RecvHeaderResult != 8)
 							BxCore::Socket::Disconnect(CurHQ.Sock);
 					}
-					break; // ÇÁ·¹ÀÓ´ç Ã³¸®Á¦ÇÑ
+					break; // í”„ë ˆì„ë‹¹ ì²˜ë¦¬ì œí•œ
 				}
 			}
 			#undef SEND_PACKET
@@ -355,12 +355,12 @@ class BxTelex
 			global_data const int Length = 32;
 			global_data int Offset = 4;
 			byte* Bytes = nullptr;
-			BxSINGLETON(Bytes, byte, Length);
+			BxSINGLETON(Bytes, Length);
 			if(0 < length)
 			{
 				if(Length < Offset + length)
 					BxSingleton::Rebind(Bytes, (Offset + length + 0xF) & ~0xF);
-				BxCore::Util::MemMove(Bytes + Offset, data, length);
+				BxCore::Util::MemCpy(Bytes + Offset, data, length);
 				Offset += length;
 			}
 			else
@@ -378,7 +378,7 @@ class BxTelex
 		}
 		private: bool _SendEnd()
 		{
-			// ½ºÆ®¸²¸¶°¨
+			// ìŠ¤íŠ¸ë¦¼ë§ˆê°
 			if(Sock)
 			{
 				byte* Bytes = nullptr;
@@ -408,9 +408,9 @@ class BxTelex
 	{
 		friend class BxPool<Log>;
 		protected: BxTelex::Type Type;
-		protected: string Name;
-		protected: string Default;
-		// »ı¼ºÀÚ, ¼Ò¸êÀÚ
+		protected: string_rw Name;
+		protected: string_rw Default;
+		// ìƒì„±ì, ì†Œë©¸ì
 		protected: Log() {}
 		protected: Log(BxTelex::Type type, string name, string defaultValue) : Type(type)
 		{
@@ -431,7 +431,7 @@ class BxTelex
 					Pool.RemoveData(i, &OneData);
 					return true;
 				}
-			BxAssert("BxTelex::Log<Pool¿¡¼­ This¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù>", false);
+			BxASSERT("BxTelex::Log<Poolì—ì„œ Thisë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", false);
 			return false;
 		}
 		public: virtual uint GetType() = 0;
@@ -443,12 +443,12 @@ class BxTelex
 	{
 		friend class BxPool<Report>;
 		friend class BxMemory;
-		// »ı¼ºÀÚ, ¼Ò¸êÀÚ, Ç®
+		// ìƒì„±ì, ì†Œë©¸ì, í’€
 		private: Report() {}
 		private: Report(BxTelex::Type type, string name, string defaultValue) : Log(type, name, defaultValue) {}
 		private: ~Report() {}
 		private: global_func BxVarReport& Pool() {global_data BxVarReport _; return _;}
-		// ÀÎ½ºÅÏ½º°ü¸®
+		// ì¸ìŠ¤í„´ìŠ¤ê´€ë¦¬
 		public: global_func Report* Create(BxTelex::Type type, string name, string defaultValue)
 		{
 			Report* Result = BxNew_Param(Report, type, name, defaultValue);
@@ -457,7 +457,7 @@ class BxTelex
 		}
 		public: void DestroyMe(Report*& me)
 		{
-			BxAssert("BxTelex::Report<ÆÄ¶ó¹ÌÅÍ ¿À·ù>", this == me);
+			BxASSERT("BxTelex::Report<íŒŒë¼ë¯¸í„° ì˜¤ë¥˜>", this == me);
 			if(RemoveByPool(Pool())) BxDelete(me);
 		}
 		public: virtual uint GetType() {return 0 + ((uint) Type);}
@@ -467,12 +467,12 @@ class BxTelex
 	{
 		friend class BxPool<Command>;
 		friend class BxMemory;
-		// »ı¼ºÀÚ, ¼Ò¸êÀÚ, Ç®
+		// ìƒì„±ì, ì†Œë©¸ì, í’€
 		private: Command() {}
 		private: Command(BxTelex::Type type, string name, string defaultValue) : Log(type, name, defaultValue) {}
 		private: ~Command() {}
 		private: global_func BxVarCommand& Pool() {global_data BxVarCommand _; return _;}
-		// ÀÎ½ºÅÏ½º°ü¸®
+		// ì¸ìŠ¤í„´ìŠ¤ê´€ë¦¬
 		public: global_func Command* Create(BxTelex::Type type, string name, string defaultValue)
 		{
 			Command* Result = BxNew_Param(Command, type, name, defaultValue);
@@ -481,7 +481,7 @@ class BxTelex
 		}
 		public: void DestroyMe(Command*& me)
 		{
-			BxAssert("BxTelex::Command<ÆÄ¶ó¹ÌÅÍ ¿À·ù>", this == me);
+			BxASSERT("BxTelex::Command<íŒŒë¼ë¯¸í„° ì˜¤ë¥˜>", this == me);
 			if(RemoveByPool(Pool())) BxDelete(me);
 		}
 		public: virtual uint GetType() {return 4 + ((uint) Type);}

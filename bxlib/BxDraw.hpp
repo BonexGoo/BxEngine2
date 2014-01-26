@@ -1,8 +1,11 @@
-#pragma once
+ï»¿#pragma once
 #include <BxUtil.hpp>
 #include <BxExpress.hpp>
 
-//! \brief »õ·Î¿î Æû°³¹ßÀ» À§ÇÑ ÀÎÅÍÆäÀÌ½º
+// BxTRY-ëª¨ë“ˆ
+#define BxTRY(DRAW, ...) for(bool _ = DRAW.AddStyleByIf(__VA_ARGS__); _; _ = DRAW.SubStyle())
+
+//! \brief ìƒˆë¡œìš´ í¼ê°œë°œì„ ìœ„í•œ ì¸í„°í˜ì´ìŠ¤
 class BxDrawForm
 {
 public:
@@ -92,7 +95,7 @@ protected:
 	#endif
 };
 
-//! \brief BxDraw°ü·Ã ±Û·Î¹úÇÔ¼ö
+//! \brief BxDrawê´€ë ¨ ê¸€ë¡œë²Œí•¨ìˆ˜
 namespace BxDrawGlobal
 {
 	class StyleStack
@@ -107,7 +110,7 @@ namespace BxDrawGlobal
 		StyleStack(const StyleStack& RHS1, const StyleStack& RHS2) {Depth = RHS1.Depth + RHS2.Depth;}
 	public:
 		inline StyleStack operator>>(const StyleStack& RHS) const {return StyleStack(*this, RHS);}
-		inline const StyleStack& operator++() {++Depth; return *this;} // ÀüÄ¡¿¬»ê
+		inline const StyleStack& operator++() {++Depth; return *this;} // ì „ì¹˜ì—°ì‚°
 		inline bool operator>(unsigned int RHS) const {return Depth > RHS;}
 		inline bool operator==(const StyleStack& RHS) const {return Depth == RHS.Depth;}
 	public:
@@ -118,10 +121,10 @@ namespace BxDrawGlobal
 	enum option {FILL, DRAW};
 
 	/*!
-	\brief À§Ä¡Á¦ÀÛ
-	\param x : À§Ä¡X
-	\param y : À§Ä¡Y
-	\return À§Ä¡
+	\brief ìœ„ì¹˜ì œì‘
+	\param x : ìœ„ì¹˜X
+	\param y : ìœ„ì¹˜Y
+	\return ìœ„ì¹˜
 	*/
 	static inline const point XY(int x, int y)
 	{
@@ -135,10 +138,10 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief Å©±âÁ¦ÀÛ
-	\param w : ³Êºñ
-	\param h : ³ôÀÌ
-	\return Å©±â
+	\brief í¬ê¸°ì œì‘
+	\param w : ë„ˆë¹„
+	\param h : ë†’ì´
+	\return í¬ê¸°
 	*/
 	static inline const size WH(int w, int h)
 	{
@@ -147,124 +150,125 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ¿µ¿ªÁ¦ÀÛ
-	\param x : ½ÃÀÛÀ§Ä¡X
-	\param y : ½ÃÀÛÀ§Ä¡Y
-	\param w : ³Êºñ
-	\param h : ³ôÀÌ
-	\return ¿µ¿ª
+	\brief ì˜ì—­ì œì‘
+	\param x : ì‹œì‘ìœ„ì¹˜X
+	\param y : ì‹œì‘ìœ„ì¹˜Y
+	\param w : ë„ˆë¹„
+	\param h : ë†’ì´
+	\return ì˜ì—­
 	*/
 	static inline const rect XYWH(int x, int y, int w = size::max, int h = size::max)
 	{
 		const rect Result = {x, y, x + w, y + h};
-		BxAssert("BxDraw<°¡·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.r - Result.l <= size::max);
-		BxAssert("BxDraw<¼¼·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.b - Result.t <= size::max);
+		BxASSERT("BxDraw<ê°€ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.r - Result.l <= size::max);
+		BxASSERT("BxDraw<ì„¸ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
 	/*!
-	\brief ¿µ¿ªÁ¦ÀÛ
-	\param x1 : ½ÃÀÛÀ§Ä¡X
-	\param y1 : ½ÃÀÛÀ§Ä¡Y
-	\param x2 : ³¡À§Ä¡X
-	\param y2 : ³¡À§Ä¡Y
-	\return ¿µ¿ª
+	\brief ì˜ì—­ì œì‘
+	\param x1 : ì‹œì‘ìœ„ì¹˜X
+	\param y1 : ì‹œì‘ìœ„ì¹˜Y
+	\param x2 : ëìœ„ì¹˜X
+	\param y2 : ëìœ„ì¹˜Y
+	\return ì˜ì—­
 	*/
 	static inline const rect XYXY(int x1, int y1, int x2, int y2)
 	{
 		const rect Result = {x1, y1, x2, y2};
-		BxAssert("BxDraw<°¡·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.r - Result.l <= size::max);
-		BxAssert("BxDraw<¼¼·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.b - Result.t <= size::max);
+		BxASSERT("BxDraw<ê°€ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.r - Result.l <= size::max);
+		BxASSERT("BxDraw<ì„¸ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
 	/*!
-	\brief ÁßÁ¡½Ä ¿µ¿ªÁ¦ÀÛ
-	\param x : Áß½ÉÀ§Ä¡X
-	\param y : Áß½ÉÀ§Ä¡Y
-	\param r : ¹İÁö¸§
-	\return ¿µ¿ª
+	\brief ì¤‘ì ì‹ ì˜ì—­ì œì‘
+	\param x : ì¤‘ì‹¬ìœ„ì¹˜X
+	\param y : ì¤‘ì‹¬ìœ„ì¹˜Y
+	\param r : ë°˜ì§€ë¦„
+	\return ì˜ì—­
 	*/
 	static inline const rect XYR(int x, int y, int r)
 	{
 		const rect Result = {x - r, y - r, x + r, y + r};
-		BxAssert("BxDraw<°¡·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.r - Result.l <= size::max);
-		BxAssert("BxDraw<¼¼·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.b - Result.t <= size::max);
+		BxASSERT("BxDraw<ê°€ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.r - Result.l <= size::max);
+		BxASSERT("BxDraw<ì„¸ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
 	/*!
-	\brief ÁßÁ¡½Ä ¿µ¿ªÁ¦ÀÛ
-	\param x : Áß½ÉÀ§Ä¡X
-	\param y : Áß½ÉÀ§Ä¡Y
-	\param wr : °¡·Î ¹İÁö¸§
-	\param hr : ¼¼·Î ¹İÁö¸§
-	\return ¿µ¿ª
+	\brief ì¤‘ì ì‹ ì˜ì—­ì œì‘
+	\param x : ì¤‘ì‹¬ìœ„ì¹˜X
+	\param y : ì¤‘ì‹¬ìœ„ì¹˜Y
+	\param wr : ê°€ë¡œ ë°˜ì§€ë¦„
+	\param hr : ì„¸ë¡œ ë°˜ì§€ë¦„
+	\return ì˜ì—­
 	*/
 	static inline const rect XYRR(int x, int y, int wr, int hr)
 	{
 		const rect Result = {x - wr, y - hr, x + wr, y + hr};
-		BxAssert("BxDraw<°¡·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.r - Result.l <= size::max);
-		BxAssert("BxDraw<¼¼·Î±æÀÌ°¡ MAXSIZE¸¦ ÃÊ°úÇÕ´Ï´Ù>", Result.b - Result.t <= size::max);
+		BxASSERT("BxDraw<ê°€ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.r - Result.l <= size::max);
+		BxASSERT("BxDraw<ì„¸ë¡œê¸¸ì´ê°€ MAXSIZEë¥¼ ì´ˆê³¼í•©ë‹ˆë‹¤>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
 	/*!
-	\brief °¡º¯ÀÎÀÚ½Ä ´Ù°¢¿µ¿ªÁ¦ÀÛ
-	\param count : ²ÀÁöÁ¡ÀÇ ¼ö·®
-	\param x : ²ÀÁöÁ¡X
-	\param y : ²ÀÁöÁ¡Y
-	\return ´Ù°¢¿µ¿ª
+	\brief ê°€ë³€ì¸ìì‹ ë‹¤ê°ì˜ì—­ì œì‘
+	\param x : ê¼­ì§€ì X
+	\param y : ê¼­ì§€ì Y
+	\return ë‹¤ê°ì˜ì—­
 	*/
-	static inline const points& XYS(uint count, int x, int y, ...) // ¼öÁ¤¿ä¸Á
+	static inline const points& XYS(const BxThrow& x, const BxThrow& y)
 	{
-		global_data points Result = {0,};
-		Result.count = count;
-		Result.pt[0].x = x;
-		Result.pt[0].y = y;
-		va_list List;
-        va_start(List, y);
-		for(uint i = 1; i < count; ++i)
+		BxASSERT("BxDraw<ê°€ë³€ì¸ìì˜ ê¸¸ì´ê°€ ì„œë¡œ ë‹¤ë¦…ë‹ˆë‹¤>", x.Length() == y.Length());
+		thread_storage _ = sizeof(points);
+		points& Result = *((points*) BxCore::Thread::BindStorage(&_));
+		Result.count = x.Length();
+		for(int i = 0; i < Result.count; ++i)
 		{
-			Result.pt[i].x = va_arg(List, int);
-			Result.pt[i].y = va_arg(List, int);
+			const int* ArgX = x.Access<int>(i);
+			const int* ArgY = y.Access<int>(i);
+			BxASSERT("BxDraw<ê°€ë³€ì¸ì xì— intê°€ ì•„ë‹Œ ê°’ì´ ì¡´ì¬í•©ë‹ˆë‹¤>", ArgX);
+			BxASSERT("BxDraw<ê°€ë³€ì¸ì yì— intê°€ ì•„ë‹Œ ê°’ì´ ì¡´ì¬í•©ë‹ˆë‹¤>", ArgY);
+			Result.pt[i].x = *ArgX;
+			Result.pt[i].y = *ArgY;
 		}
-		va_end(List);
 		return Result;
 	}
 
 	/*!
-	\brief °¡º¯ÀÎÀÚ½Ä 3D´Ù°¢¿µ¿ªÁ¦ÀÛ
-	\param count : ²ÀÁöÁ¡ÀÇ ¼ö·®
-	\param x : ²ÀÁöÁ¡X
-	\param y : ²ÀÁöÁ¡Y
-	\param z : ²ÀÁöÁ¡Z
-	\return 3D´Ù°¢¿µ¿ª
+	\brief ê°€ë³€ì¸ìì‹ 3Dë‹¤ê°ì˜ì—­ì œì‘
+	\param x : ê¼­ì§€ì X
+	\param y : ê¼­ì§€ì Y
+	\param z : ê¼­ì§€ì Z
+	\return 3Dë‹¤ê°ì˜ì—­
 	*/
-	static inline const vertexs& XYZS(uint count, int x, int y, int z, ...) // ¼öÁ¤¿ä¸Á
+	static inline const vertexs& XYZS(const BxThrow& x, const BxThrow& y, const BxThrow& z)
 	{
-		global_data vertexs Result = {0,};
-		Result.count = count;
-		Result.vt[0].x = x;
-		Result.vt[0].y = y;
-		Result.vt[0].z = z;
-		va_list List;
-        va_start(List, z);
-		for(uint i = 1; i < count; ++i)
+		BxASSERT("BxDraw<ê°€ë³€ì¸ìì˜ ê¸¸ì´ê°€ ì„œë¡œ ë‹¤ë¦…ë‹ˆë‹¤>", x.Length() == y.Length() && x.Length() == z.Length());
+		thread_storage _ = sizeof(vertexs);
+		vertexs& Result = *((vertexs*) BxCore::Thread::BindStorage(&_));
+		Result.count = x.Length();
+		for(int i = 0; i < Result.count; ++i)
 		{
-			Result.vt[i].x = va_arg(List, int);
-			Result.vt[i].y = va_arg(List, int);
-			Result.vt[i].z = va_arg(List, int);
+			const int* ArgX = x.Access<int>(i);
+			const int* ArgY = y.Access<int>(i);
+			const int* ArgZ = z.Access<int>(i);
+			BxASSERT("BxDraw<ê°€ë³€ì¸ì xì— intê°€ ì•„ë‹Œ ê°’ì´ ì¡´ì¬í•©ë‹ˆë‹¤>", ArgX);
+			BxASSERT("BxDraw<ê°€ë³€ì¸ì yì— intê°€ ì•„ë‹Œ ê°’ì´ ì¡´ì¬í•©ë‹ˆë‹¤>", ArgY);
+			BxASSERT("BxDraw<ê°€ë³€ì¸ì zì— intê°€ ì•„ë‹Œ ê°’ì´ ì¡´ì¬í•©ë‹ˆë‹¤>", ArgZ);
+			Result.vt[i].x = *ArgX;
+			Result.vt[i].y = *ArgY;
+			Result.vt[i].z = *ArgZ;
 		}
-		va_end(List);
 		return Result;
 	}
 
 	/*!
-	\brief ¹è¿­½Ä ´Ù°¢¿µ¿ªÁ¦ÀÛ
-	\param count : ²ÀÁöÁ¡ÀÇ ¼ö·®
-	\param xy : ²ÀÁöÁ¡¹è¿­
-	\return ´Ù°¢¿µ¿ª
+	\brief ë°°ì—´ì‹ ë‹¤ê°ì˜ì—­ì œì‘
+	\param count : ê¼­ì§€ì ì˜ ìˆ˜ëŸ‰
+	\param xy : ê¼­ì§€ì ë°°ì—´
+	\return ë‹¤ê°ì˜ì—­
 	*/
 	static inline const points& XYARRAY(uint count, int* xy)
 	{
@@ -279,10 +283,10 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ¹è¿­½Ä 3D´Ù°¢¿µ¿ªÁ¦ÀÛ
-	\param count : ²ÀÁöÁ¡ÀÇ ¼ö·®
-	\param xy : ²ÀÁöÁ¡¹è¿­
-	\return 3D´Ù°¢¿µ¿ª
+	\brief ë°°ì—´ì‹ 3Dë‹¤ê°ì˜ì—­ì œì‘
+	\param count : ê¼­ì§€ì ì˜ ìˆ˜ëŸ‰
+	\param xy : ê¼­ì§€ì ë°°ì—´
+	\return 3Dë‹¤ê°ì˜ì—­
 	*/
 	static inline const vertexs& XYZARRAY(uint count, int* xyz)
 	{
@@ -298,11 +302,11 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief 32ºñÆ® »ö»óÁ¦ÀÛ
-	\param r : »¡°­
-	\param g : ÃÊ·Ï
-	\param b : ÆÄ¶û
-	\return »ö»ó
+	\brief 32ë¹„íŠ¸ ìƒ‰ìƒì œì‘
+	\param r : ë¹¨ê°•
+	\param g : ì´ˆë¡
+	\param b : íŒŒë‘
+	\return ìƒ‰ìƒ
 	*/
 	static inline const color_x888 RGB32(const byte r, const byte g, const byte b)
 	{
@@ -310,11 +314,11 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief 16ºñÆ® »ö»óÁ¦ÀÛ
-	\param r : »¡°­
-	\param g : ÃÊ·Ï
-	\param b : ÆÄ¶û
-	\return »ö»ó
+	\brief 16ë¹„íŠ¸ ìƒ‰ìƒì œì‘
+	\param r : ë¹¨ê°•
+	\param g : ì´ˆë¡
+	\param b : íŒŒë‘
+	\return ìƒ‰ìƒ
 	*/
 	static inline const color_565 RGB16(const byte r, const byte g, const byte b)
 	{
@@ -322,11 +326,11 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ½ºÇÁ¶óÀÌÆ® ºí·»µù
-	\param dst : ¹ÙÅÁ
-	\param src : Åõ¸í»öÀÌ ÀÖ´Â ¼Ò½º
-	\param table : ¼±°è»ê Å×ÀÌºí
-	\return °è»êµÈ ¹ÙÅÁ»ö
+	\brief ìŠ¤í”„ë¼ì´íŠ¸ ë¸”ë Œë”©
+	\param dst : ë°”íƒ•
+	\param src : íˆ¬ëª…ìƒ‰ì´ ìˆëŠ” ì†ŒìŠ¤
+	\param table : ì„ ê³„ì‚° í…Œì´ë¸”
+	\return ê³„ì‚°ëœ ë°”íƒ•ìƒ‰
 	*/
 	static inline const pixel_dst SpriteBlending(const pixel_dst dst, const pixel_src src, const byte* table)
 	{
@@ -342,11 +346,11 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ¾ËÆÄ ºí·»µù
-	\param dst : ¹ÙÅÁ
-	\param src : Åõ¸íµµ°¡ ÀÖ´Â ¼Ò½º
-	\param table : ¼±°è»ê Å×ÀÌºí
-	\return °è»êµÈ ¹ÙÅÁ»ö
+	\brief ì•ŒíŒŒ ë¸”ë Œë”©
+	\param dst : ë°”íƒ•
+	\param src : íˆ¬ëª…ë„ê°€ ìˆëŠ” ì†ŒìŠ¤
+	\param table : ì„ ê³„ì‚° í…Œì´ë¸”
+	\return ê³„ì‚°ëœ ë°”íƒ•ìƒ‰
 	*/
 	static inline const pixel_dst AlphaBlending(const pixel_dst dst, const pixel_src src, const byte* table)
 	{
@@ -362,9 +366,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ºÒÅõ¸íµµ°ª ÃßÃâ(M555_A444)
-	\param color : ¿øº»»ö»ó
-	\return ºÒÅõ¸íµµ
+	\brief ë¶ˆíˆ¬ëª…ë„ê°’ ì¶”ì¶œ(M555_A444)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ë¶ˆíˆ¬ëª…ë„
 	*/
 	static inline const color_m555_a444 OpacityBitByM555A444(const color_m555_a444 color)
 	{
@@ -372,9 +376,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ºÒÅõ¸íµµ°ª ÃßÃâ(A888)
-	\param color : ¿øº»»ö»ó
-	\return ºÒÅõ¸íµµ
+	\brief ë¶ˆíˆ¬ëª…ë„ê°’ ì¶”ì¶œ(A888)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ë¶ˆíˆ¬ëª…ë„
 	*/
 	static inline const color_a888 OpacityBitByA888(const color_a888 color)
 	{
@@ -382,11 +386,11 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief »ö»óÀüÈ¯(RGB¡æHLS)
-	\param r : »¡°­
-	\param g : ÃÊ·Ï
-	\param b : ÆÄ¶û
-	\return HLS»ö»ó
+	\brief ìƒ‰ìƒì „í™˜(RGBâ†’HLS)
+	\param r : ë¹¨ê°•
+	\param g : ì´ˆë¡
+	\param b : íŒŒë‘
+	\return HLSìƒ‰ìƒ
 	*/
 	static inline const color_x888 ColorRGBToHLS(const byte r, const byte g, const byte b)
 	{
@@ -409,11 +413,11 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief »ö»óÀüÈ¯(HLS¡æRGB)
-	\param h : »öÁ¶
-	\param l : ÈÖµµ
-	\param s : Ã¤µµ
-	\return RGB»ö»ó
+	\brief ìƒ‰ìƒì „í™˜(HLSâ†’RGB)
+	\param h : ìƒ‰ì¡°
+	\param l : íœ˜ë„
+	\param s : ì±„ë„
+	\return RGBìƒ‰ìƒ
 	*/
 	static inline const color_x888 ColorHLSToRGB(const byte h, const byte l, const byte s)
 	{
@@ -441,9 +445,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief »ö»óÀüÈ¯(M555_A444¡æ565)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ìƒ‰ìƒì „í™˜(M555_A444â†’565)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const color_565 ColorM555A444To565(const color_m555_a444 color)
 	{
@@ -454,9 +458,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief »ö»óÀüÈ¯(M555_A444¡æA888)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ìƒ‰ìƒì „í™˜(M555_A444â†’A888)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const color_a888 ColorM555A444ToA888(const color_m555_a444 color)
 	{
@@ -469,9 +473,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief »ö»óÀüÈ¯(A888¡æX888)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ìƒ‰ìƒì „í™˜(A888â†’X888)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const color_x888 ColorA888ToX888(const color_a888 color)
 	{
@@ -479,9 +483,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¹ÙÅÁÀ¸·Î »ö»óÀüÈ¯(565¡æNativeDst)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œë°”íƒ•ìœ¼ë¡œ ìƒ‰ìƒì „í™˜(565â†’NativeDst)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_dst Color565ToNativeDst(const color_565 color)
 	{
@@ -495,9 +499,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¼Ò½º·Î »ö»óÀüÈ¯(565¡æNativeSrc)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œì†ŒìŠ¤ë¡œ ìƒ‰ìƒì „í™˜(565â†’NativeSrc)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_src Color565ToNativeSrc(const color_565 color, const color_m555_a444 opacity_bit = 0x8000)
 	{
@@ -514,9 +518,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¹ÙÅÁÀ¸·Î »ö»óÀüÈ¯(M555_A444¡æNativeDst)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œë°”íƒ•ìœ¼ë¡œ ìƒ‰ìƒì „í™˜(M555_A444â†’NativeDst)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_dst ColorM555A444ToNativeDst(const color_m555_a444 color)
 	{
@@ -524,9 +528,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¼Ò½º·Î »ö»óÀüÈ¯(M555_A444¡æNativeSrc)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œì†ŒìŠ¤ë¡œ ìƒ‰ìƒì „í™˜(M555_A444â†’NativeSrc)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_src ColorM555A444ToNativeSrc(const color_m555_a444 color)
 	{
@@ -534,9 +538,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¹ÙÅÁÀ¸·Î »ö»óÀüÈ¯(X888¡æNativeDst)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œë°”íƒ•ìœ¼ë¡œ ìƒ‰ìƒì „í™˜(X888â†’NativeDst)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_dst ColorX888ToNativeDst(const color_x888 color)
 	{
@@ -548,9 +552,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¼Ò½º·Î »ö»óÀüÈ¯(X888¡æNativeSrc)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œì†ŒìŠ¤ë¡œ ìƒ‰ìƒì „í™˜(X888â†’NativeSrc)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_src ColorX888ToNativeSrc(const color_x888 color, const color_a888 opacity_bit = 0xFF000000)
 	{
@@ -564,9 +568,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¹ÙÅÁÀ¸·Î »ö»óÀüÈ¯(A888¡æNativeDst)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œë°”íƒ•ìœ¼ë¡œ ìƒ‰ìƒì „í™˜(A888â†’NativeDst)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_dst ColorA888ToNativeDst(const color_a888 color)
 	{
@@ -574,9 +578,9 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ³×ÀÌÆ¼ºê¼Ò½º·Î »ö»óÀüÈ¯(A888¡æNativeSrc)
-	\param color : ¿øº»»ö»ó
-	\return °á°ú»ö»ó
+	\brief ë„¤ì´í‹°ë¸Œì†ŒìŠ¤ë¡œ ìƒ‰ìƒì „í™˜(A888â†’NativeSrc)
+	\param color : ì›ë³¸ìƒ‰ìƒ
+	\return ê²°ê³¼ìƒ‰ìƒ
 	*/
 	static inline const pixel_src ColorA888ToNativeSrc(const color_a888 color)
 	{
@@ -584,11 +588,11 @@ namespace BxDrawGlobal
 	}
 
 	/// @cond SECTION_NAME
-	// ¿É¼Ç°ü¸®
+	// ì˜µì…˜ê´€ë¦¬
 	class _DrawOption
 	{
 	public:
-		// Å×ÀÌºí¸µ
+		// í…Œì´ë¸”ë§
 		global_func inline uint GetBlend(const drawblend blend, const uint dst, const uint src, const uint indexMax)
 		{
 			const uint fullLen = indexMax + 1, halfLen = fullLen / 2;
@@ -681,7 +685,7 @@ namespace BxDrawGlobal
 			return Table[blend];
 		}
 		#endif
-		// ÇöÀç½ºÅ¸ÀÏ
+		// í˜„ì¬ìŠ¤íƒ€ì¼
 		global_func inline rect& CurClipRect() {global_data rect ClipRect; return ClipRect;}
 		global_func inline int& CurHotspotX() {global_data int HotspotX; return HotspotX;}
 		global_func inline int& CurHotspotY() {global_data int HotspotY; return HotspotY;}
@@ -709,7 +713,7 @@ namespace BxDrawGlobal
 	/// @endcond
 
 	/// @cond SECTION_NAME
-	// µğÆúÆ® ÆûÅ¬·¡½º
+	// ë””í´íŠ¸ í¼í´ë˜ìŠ¤
 	class _BxColorMap : public BxDrawForm
 	{
 	public:
@@ -819,7 +823,7 @@ namespace BxDrawGlobal
 	/// @endcond
 
 	/// @cond SECTION_NAME
-	// ½ºÅÃ°ü¸®
+	// ìŠ¤íƒê´€ë¦¬
 	class _DrawStack
 	{
 	public:
@@ -829,7 +833,7 @@ namespace BxDrawGlobal
 		int CountFocus;
 		drawstyle Order[MAX * drawstyle_max];
 		int OrderFocus;
-		// ½ºÅ¸ÀÏ
+		// ìŠ¤íƒ€ì¼
 		struct {rect Rect; point Offset; size Size;} Clip[MAX];
 		struct {maskoperate Operate; maskflag Flag;} Mask[MAX];
 		struct {drawturn Turn; byte Angle;} Rotate[MAX];
@@ -841,90 +845,90 @@ namespace BxDrawGlobal
 		struct {BxDrawForm* Form; rect Rect;} Form[MAX];
 		vertex Move3D[MAX];
 		int StyleFocus[drawstyle_max];
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		void Init(const int Width, const int Height)
 		{
-			// ½ºÅÃ°ü¸®
+			// ìŠ¤íƒê´€ë¦¬
 			CountFocus = -1;
 			OrderFocus = -1;
-			// °³º°½ºÅÃ
+			// ê°œë³„ìŠ¤íƒ
 			Clip[0].Rect.l = 0;
 			Clip[0].Rect.t = 0;
 			Clip[0].Rect.r = Width;
 			Clip[0].Rect.b = Height;
-			_DrawOption::CurClipRect() = Clip[0].Rect; // ÇöÀçÅ¬¸®ÇÎ
-			Clip[0].Offset.x = _DrawOption::CurHotspotX() = 0; // ÇöÀç±âÁØÀ§Ä¡X
-			Clip[0].Offset.y = _DrawOption::CurHotspotY() = 0; // ÇöÀç±âÁØÀ§Ä¡Y
-			Clip[0].Size.w = _DrawOption::CurAreaWidth() = Width; // ÇöÀç¿µ¿ª»çÀÌÁîW
-			Clip[0].Size.h = _DrawOption::CurAreaHeight() = Height; // ÇöÀç¿µ¿ª»çÀÌÁîH
+			_DrawOption::CurClipRect() = Clip[0].Rect; // í˜„ì¬í´ë¦¬í•‘
+			Clip[0].Offset.x = _DrawOption::CurHotspotX() = 0; // í˜„ì¬ê¸°ì¤€ìœ„ì¹˜X
+			Clip[0].Offset.y = _DrawOption::CurHotspotY() = 0; // í˜„ì¬ê¸°ì¤€ìœ„ì¹˜Y
+			Clip[0].Size.w = _DrawOption::CurAreaWidth() = Width; // í˜„ì¬ì˜ì—­ì‚¬ì´ì¦ˆW
+			Clip[0].Size.h = _DrawOption::CurAreaHeight() = Height; // í˜„ì¬ì˜ì—­ì‚¬ì´ì¦ˆH
 			Mask[0].Operate = _DrawOption::CurMaskOperate() = maskoperate_all_print;
 			Mask[0].Flag = _DrawOption::CurMaskFlag() = maskflag_no_write;
-			Rotate[0].Turn = _DrawOption::CurTurn() = turn_0; // ÇöÀçÅÏ
-			Rotate[0].Angle = _DrawOption::CurAngle() = 0; // ÇöÀç°¢µµ
-			Scale[0].Horizon = _DrawOption::CurScaleHor() = 0x10000; // ÇöÀç¼öÆò¹èÀ²
-			Scale[0].Vertical = _DrawOption::CurScaleVer() = 0x10000; // ÇöÀç¼öÁ÷¹èÀ²
+			Rotate[0].Turn = _DrawOption::CurTurn() = turn_0; // í˜„ì¬í„´
+			Rotate[0].Angle = _DrawOption::CurAngle() = 0; // í˜„ì¬ê°ë„
+			Scale[0].Horizon = _DrawOption::CurScaleHor() = 0x10000; // í˜„ì¬ìˆ˜í‰ë°°ìœ¨
+			Scale[0].Vertical = _DrawOption::CurScaleVer() = 0x10000; // í˜„ì¬ìˆ˜ì§ë°°ìœ¨
 			Color[0].R = 0xFF;
 			Color[0].G = 0xFF;
 			Color[0].B = 0xFF;
 			Color[0].Sum = 0;
-			Color[0].Color = _DrawOption::CurColor() = RGB32(Color[0].R, Color[0].G, Color[0].B); // ÇöÀç»ö»ó
+			Color[0].Color = _DrawOption::CurColor() = RGB32(Color[0].R, Color[0].G, Color[0].B); // í˜„ì¬ìƒ‰ìƒ
 			Hue[0] = 0;
 			Opacity[0].Opacity255 = 255;
-			Opacity[0].Opacity7 = _DrawOption::CurOpacity7() = 7; // ÇöÀçºÒÅõ¸íµµ
-			Blend[0] = _DrawOption::CurBlend() = blend_normal; // ÇöÀçºí·£µå
+			Opacity[0].Opacity7 = _DrawOption::CurOpacity7() = 7; // í˜„ì¬ë¶ˆíˆ¬ëª…ë„
+			Blend[0] = _DrawOption::CurBlend() = blend_normal; // í˜„ì¬ë¸”ëœë“œ
 			#ifndef __BX_OPENGL
 			_DrawOption::CurSpriteTable() = _DrawOption::GetSpriteTable(blend_normal);
 			_DrawOption::CurAlphaTable() = _DrawOption::GetAlphaTable(blend_normal);
 			#endif
-			Form[0].Form = _DrawOption::CurForm() = _BxColorMap::GetClass(); // ÇöÀçÆû
-			Form[0].Rect = _DrawOption::CurFormRect() = XYWH(0, 0, size::max, size::max); // ÇöÀçÆû¿µ¿ª
-			Move3D[0].x = _DrawOption::CurMoveX3D() = 0; // ÇöÀçÀÌµ¿À§Ä¡X3D
-			Move3D[0].y = _DrawOption::CurMoveY3D() = 0; // ÇöÀçÀÌµ¿À§Ä¡Y3D
-			Move3D[0].z = _DrawOption::CurMoveZ3D() = 0; // ÇöÀçÀÌµ¿À§Ä¡Z3D
-			// ½ºÅÃÆ÷Ä¿½º
+			Form[0].Form = _DrawOption::CurForm() = _BxColorMap::GetClass(); // í˜„ì¬í¼
+			Form[0].Rect = _DrawOption::CurFormRect() = XYWH(0, 0, size::max, size::max); // í˜„ì¬í¼ì˜ì—­
+			Move3D[0].x = _DrawOption::CurMoveX3D() = 0; // í˜„ì¬ì´ë™ìœ„ì¹˜X3D
+			Move3D[0].y = _DrawOption::CurMoveY3D() = 0; // í˜„ì¬ì´ë™ìœ„ì¹˜Y3D
+			Move3D[0].z = _DrawOption::CurMoveZ3D() = 0; // í˜„ì¬ì´ë™ìœ„ì¹˜Z3D
+			// ìŠ¤íƒí¬ì»¤ìŠ¤
 			for(int i = 0; i < drawstyle_max; ++i)
 				StyleFocus[i] = 0;
 		}
-		// Á¦°Å
+		// ì œê±°
 		void Sub()
 		{
-			BxAssert("BxDraw", 0 <= CountFocus);
+			BxASSERT("BxDraw", 0 <= CountFocus);
 			for(uint i = 0; Count[CountFocus] > i; ++i)
 			{
-				BxAssert("BxDraw", 0 <= OrderFocus);
-				BxAssert("BxDraw", 0 < StyleFocus[Order[OrderFocus]]);
+				BxASSERT("BxDraw", 0 <= OrderFocus);
+				BxASSERT("BxDraw", 0 < StyleFocus[Order[OrderFocus]]);
 				const int Focus = --StyleFocus[Order[OrderFocus]];
 				switch(Order[OrderFocus--])
 				{
 				case drawstyle_clip:
-					_DrawOption::CurClipRect() = Clip[Focus].Rect; // ÇöÀçÅ¬¸®ÇÎ
-					_DrawOption::CurHotspotX() = Clip[Focus].Offset.x; _DrawOption::CurHotspotY() = Clip[Focus].Offset.y; // ÇöÀç±âÁØÀ§Ä¡
-					_DrawOption::CurAreaWidth() = Clip[Focus].Size.w; _DrawOption::CurAreaHeight() = Clip[Focus].Size.h; // ÇöÀç¿µ¿ª»çÀÌÁî
+					_DrawOption::CurClipRect() = Clip[Focus].Rect; // í˜„ì¬í´ë¦¬í•‘
+					_DrawOption::CurHotspotX() = Clip[Focus].Offset.x; _DrawOption::CurHotspotY() = Clip[Focus].Offset.y; // í˜„ì¬ê¸°ì¤€ìœ„ì¹˜
+					_DrawOption::CurAreaWidth() = Clip[Focus].Size.w; _DrawOption::CurAreaHeight() = Clip[Focus].Size.h; // í˜„ì¬ì˜ì—­ì‚¬ì´ì¦ˆ
 					#ifdef __BX_OPENGL
 					BxCore::OpenGL2D::Clip(_DrawOption::CurClipRect());
 					#endif
 					break;
 				case drawstyle_mask:
-					_DrawOption::CurMaskOperate() = Mask[Focus].Operate; // ÇöÀç¸¶½ºÅ·Á¶ÀÛ°è
-					_DrawOption::CurMaskFlag() = Mask[Focus].Flag; // ÇöÀç¸¶½ºÅ·ÇÃ·¡±×
+					_DrawOption::CurMaskOperate() = Mask[Focus].Operate; // í˜„ì¬ë§ˆìŠ¤í‚¹ì¡°ì‘ê³„
+					_DrawOption::CurMaskFlag() = Mask[Focus].Flag; // í˜„ì¬ë§ˆìŠ¤í‚¹í”Œë˜ê·¸
 					break;
-				case drawstyle_rotate: _DrawOption::CurTurn() = Rotate[Focus].Turn; _DrawOption::CurAngle() = Rotate[Focus].Angle; break; // ÇöÀçÅÏ, ÇöÀç°¢µµ
-				case drawstyle_scale: _DrawOption::CurScaleHor() = Scale[Focus].Horizon; _DrawOption::CurScaleVer() = Scale[Focus].Vertical; break; // ÇöÀç¹èÀ²
-				case drawstyle_color: _DrawOption::CurColor() = Color[Focus].Color; break; // ÇöÀç»ö»ó
+				case drawstyle_rotate: _DrawOption::CurTurn() = Rotate[Focus].Turn; _DrawOption::CurAngle() = Rotate[Focus].Angle; break; // í˜„ì¬í„´, í˜„ì¬ê°ë„
+				case drawstyle_scale: _DrawOption::CurScaleHor() = Scale[Focus].Horizon; _DrawOption::CurScaleVer() = Scale[Focus].Vertical; break; // í˜„ì¬ë°°ìœ¨
+				case drawstyle_color: _DrawOption::CurColor() = Color[Focus].Color; break; // í˜„ì¬ìƒ‰ìƒ
 				case drawstyle_hue: break;
-				case drawstyle_opacity: _DrawOption::CurOpacity7() = Opacity[Focus].Opacity7; break; // ÇöÀçºÒÅõ¸íµµ
-				case drawstyle_blend: _DrawOption::CurBlend() = Blend[Focus]; // ÇöÀçºí·£µå
+				case drawstyle_opacity: _DrawOption::CurOpacity7() = Opacity[Focus].Opacity7; break; // í˜„ì¬ë¶ˆíˆ¬ëª…ë„
+				case drawstyle_blend: _DrawOption::CurBlend() = Blend[Focus]; // í˜„ì¬ë¸”ëœë“œ
 					#ifndef __BX_OPENGL
 					_DrawOption::CurSpriteTable() = _DrawOption::GetSpriteTable(Blend[Focus]);
 					_DrawOption::CurAlphaTable() = _DrawOption::GetAlphaTable(Blend[Focus]);
 					#endif
 					break;
 				case drawstyle_form:
-					_DrawOption::CurForm() = Form[Focus].Form; // ÇöÀçÆû
-					_DrawOption::CurFormRect() = Form[Focus].Rect; // ÇöÀçÆû¿µ¿ª
+					_DrawOption::CurForm() = Form[Focus].Form; // í˜„ì¬í¼
+					_DrawOption::CurFormRect() = Form[Focus].Rect; // í˜„ì¬í¼ì˜ì—­
 					break;
 				case drawstyle_event: break;
-				case drawstyle_move3d: // ÇöÀçÀÌµ¿À§Ä¡3D
+				case drawstyle_move3d: // í˜„ì¬ì´ë™ìœ„ì¹˜3D
 					_DrawOption::CurMoveX3D() = Move3D[Focus].x;
 					_DrawOption::CurMoveY3D() = Move3D[Focus].y;
 					_DrawOption::CurMoveZ3D() = Move3D[Focus].z;
@@ -941,26 +945,26 @@ namespace BxDrawGlobal
 	/// @endcond
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-Å¬¸®ÇÎ
-	\param r : ¿µ¿ª
-	\param hx : ¿µ¿ª±âÁØ ÁßÁ¡X
-	\param hy : ¿µ¿ª±âÁØ ÁßÁ¡Y
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-í´ë¦¬í•‘
+	\param r : ì˜ì—­
+	\param hx : ì˜ì—­ê¸°ì¤€ ì¤‘ì X
+	\param hy : ì˜ì—­ê¸°ì¤€ ì¤‘ì Y
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack CLIP(rect r, int hx = 0, int hy = 0)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_clip];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		Stack().Clip[Focus].Rect.l = BxUtilGlobal::Max(Stack().Clip[Focus - 1].Rect.l, Stack().Clip[Focus - 1].Offset.x + r.l);
 		Stack().Clip[Focus].Rect.t = BxUtilGlobal::Max(Stack().Clip[Focus - 1].Rect.t, Stack().Clip[Focus - 1].Offset.y + r.t);
 		Stack().Clip[Focus].Rect.r = BxUtilGlobal::Min(Stack().Clip[Focus - 1].Rect.r, Stack().Clip[Focus - 1].Offset.x + r.r);
 		Stack().Clip[Focus].Rect.b = BxUtilGlobal::Min(Stack().Clip[Focus - 1].Rect.b, Stack().Clip[Focus - 1].Offset.y + r.b);
 		_DrawOption::CurClipRect() = Stack().Clip[Focus].Rect;
-		Stack().Clip[Focus].Offset.x = _DrawOption::CurHotspotX() = Stack().Clip[Focus - 1].Offset.x + ((r.l != -size::max / 2)? r.l : 0) + hx; // ÇöÀç±âÁØÀ§Ä¡X
-		Stack().Clip[Focus].Offset.y = _DrawOption::CurHotspotY() = Stack().Clip[Focus - 1].Offset.y + ((r.t != -size::max / 2)? r.t : 0) + hy; // ÇöÀç±âÁØÀ§Ä¡Y
-		Stack().Clip[Focus].Size.w = _DrawOption::CurAreaWidth() = r.r - r.l; // ÇöÀç¿µ¿ª»çÀÌÁîW
-		Stack().Clip[Focus].Size.h = _DrawOption::CurAreaHeight() = r.b - r.t; // ÇöÀç¿µ¿ª»çÀÌÁîH
-		// ½ºÅÃÁõ°¡
+		Stack().Clip[Focus].Offset.x = _DrawOption::CurHotspotX() = Stack().Clip[Focus - 1].Offset.x + ((r.l != -size::max / 2)? r.l : 0) + hx; // í˜„ì¬ê¸°ì¤€ìœ„ì¹˜X
+		Stack().Clip[Focus].Offset.y = _DrawOption::CurHotspotY() = Stack().Clip[Focus - 1].Offset.y + ((r.t != -size::max / 2)? r.t : 0) + hy; // í˜„ì¬ê¸°ì¤€ìœ„ì¹˜Y
+		Stack().Clip[Focus].Size.w = _DrawOption::CurAreaWidth() = r.r - r.l; // í˜„ì¬ì˜ì—­ì‚¬ì´ì¦ˆW
+		Stack().Clip[Focus].Size.h = _DrawOption::CurAreaHeight() = r.b - r.t; // í˜„ì¬ì˜ì—­ì‚¬ì´ì¦ˆH
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_clip;
 		++Stack().CountCurrently;
 		#ifdef __BX_OPENGL
@@ -970,10 +974,10 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-ÁßÁ¡ÀÌµ¿
-	\param hx : ÁßÁ¡X
-	\param hy : ÁßÁ¡Y
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ì¤‘ì ì´ë™
+	\param hx : ì¤‘ì X
+	\param hy : ì¤‘ì Y
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack HOTSPOT(int hx, int hy)
 	{
@@ -981,66 +985,66 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-¸¶½ºÅ©
-	\param operate : Ãâ·Â¿©ºÎ¸¦ °áÁ¤ÇÒ ¸¶½ºÅ©°ª
-	\param flag : Ãâ·ÂÈÄ ¸¶½ºÅ©¸¦ ±â·ÏÇÏ´Â ¹æ¹ı
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ë§ˆìŠ¤í¬
+	\param operate : ì¶œë ¥ì—¬ë¶€ë¥¼ ê²°ì •í•  ë§ˆìŠ¤í¬ê°’
+	\param flag : ì¶œë ¥í›„ ë§ˆìŠ¤í¬ë¥¼ ê¸°ë¡í•˜ëŠ” ë°©ë²•
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack MASK(maskoperate operate = maskoperate_default, maskflag flag = maskflag_default)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_mask];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		Stack().Mask[Focus].Operate = _DrawOption::CurMaskOperate() = (operate != maskoperate_default)? operate : Stack().Mask[Focus - 1].Operate;
 		Stack().Mask[Focus].Flag = _DrawOption::CurMaskFlag() = (flag != maskflag_default)? flag : Stack().Mask[Focus - 1].Flag;
-		// ½ºÅÃÁõ°¡
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_mask;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-È¸Àü
-	\param angle1024 : 1024µµ±âÁØ È¸Àü°ª
-	\param doFlip : ÁÂ¿ì´ëÄª¿©ºÎ(È¸Àüº¸´Ù ¸ÕÀú Àû¿ë)
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-íšŒì „
+	\param angle1024 : 1024ë„ê¸°ì¤€ íšŒì „ê°’
+	\param doFlip : ì¢Œìš°ëŒ€ì¹­ì—¬ë¶€(íšŒì „ë³´ë‹¤ ë¨¼ì € ì ìš©)
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack ROTATE(int angle1024, bool doFlip = false)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_rotate];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		angle1024 += (Stack().Rotate[Focus - 1].Turn / 2) * 256 + Stack().Rotate[Focus - 1].Angle;
 		angle1024 = (angle1024 + (1024 << 16)) % 1024;
-		Stack().Rotate[Focus].Turn = _DrawOption::CurTurn() = (drawturn)(angle1024 / 256 * 2 + ((Stack().Rotate[Focus - 1].Turn + doFlip) % 2)); // ÇöÀçÅÏ
+		Stack().Rotate[Focus].Turn = _DrawOption::CurTurn() = (drawturn)(angle1024 / 256 * 2 + ((Stack().Rotate[Focus - 1].Turn + doFlip) % 2)); // í˜„ì¬í„´
 		Stack().Rotate[Focus].Angle = _DrawOption::CurAngle() = angle1024 & 0xFF;
-		// ½ºÅÃÁõ°¡
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_rotate;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-È®´ëÀ²(fint)
-	\param hor : ¼öÆò
-	\param ver : ¼öÁ÷
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-í™•ëŒ€ìœ¨(fint)
+	\param hor : ìˆ˜í‰
+	\param ver : ìˆ˜ì§
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack SCALE(fint hor, fint ver)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_scale];
-		BxAssert("BxDraw", Focus < Stack().MAX);
-		Stack().Scale[Focus].Horizon = _DrawOption::CurScaleHor() = (fint)((((huge) Stack().Scale[Focus - 1].Horizon) * hor) >> 16); // ÇöÀç¼öÆò¹èÀ²
-		Stack().Scale[Focus].Vertical = _DrawOption::CurScaleVer() = (fint)((((huge) Stack().Scale[Focus - 1].Vertical) * ver) >> 16); // ÇöÀç¼öÁ÷¹èÀ²
-		// ½ºÅÃÁõ°¡
+		BxASSERT("BxDraw", Focus < Stack().MAX);
+		Stack().Scale[Focus].Horizon = _DrawOption::CurScaleHor() = (fint)((((huge) Stack().Scale[Focus - 1].Horizon) * hor) >> 16); // í˜„ì¬ìˆ˜í‰ë°°ìœ¨
+		Stack().Scale[Focus].Vertical = _DrawOption::CurScaleVer() = (fint)((((huge) Stack().Scale[Focus - 1].Vertical) * ver) >> 16); // í˜„ì¬ìˆ˜ì§ë°°ìœ¨
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_scale;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-È®´ëÀ²(double)
-	\param hor : ¼öÆò
-	\param ver : ¼öÁ÷
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-í™•ëŒ€ìœ¨(double)
+	\param hor : ìˆ˜í‰
+	\param ver : ìˆ˜ì§
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack SCALE(double hor, double ver)
 	{
@@ -1048,33 +1052,33 @@ namespace BxDrawGlobal
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-ÄÃ·¯¸µ(byte)
-	\param r : »¡°­
-	\param g : ÃÊ·Ï
-	\param b : ÆÄ¶û
-	\param rate : ÀÌÀü ÄÃ·¯¸µ°ú È¥ÇÕÀ» À§ÇÑ ¿µÇâ·Â°ª
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ì»¬ëŸ¬ë§(byte)
+	\param r : ë¹¨ê°•
+	\param g : ì´ˆë¡
+	\param b : íŒŒë‘
+	\param rate : ì´ì „ ì»¬ëŸ¬ë§ê³¼ í˜¼í•©ì„ ìœ„í•œ ì˜í–¥ë ¥ê°’
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack COLOR(byte r, byte g, byte b, uint rate = 100)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_color];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		Stack().Color[Focus].R = (Stack().Color[Focus - 1].R * Stack().Color[Focus - 1].Sum + r * rate) / (Stack().Color[Focus - 1].Sum + rate);
 		Stack().Color[Focus].G = (Stack().Color[Focus - 1].G * Stack().Color[Focus - 1].Sum + g * rate) / (Stack().Color[Focus - 1].Sum + rate);
 		Stack().Color[Focus].B = (Stack().Color[Focus - 1].B * Stack().Color[Focus - 1].Sum + b * rate) / (Stack().Color[Focus - 1].Sum + rate);
 		Stack().Color[Focus].Sum = Stack().Color[Focus - 1].Sum + rate;
-		Stack().Color[Focus].Color = _DrawOption::CurColor() = RGB32(Stack().Color[Focus].R, Stack().Color[Focus].G, Stack().Color[Focus].B); // ÇöÀç»ö»ó
-		// ½ºÅÃÁõ°¡
+		Stack().Color[Focus].Color = _DrawOption::CurColor() = RGB32(Stack().Color[Focus].R, Stack().Color[Focus].G, Stack().Color[Focus].B); // í˜„ì¬ìƒ‰ìƒ
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_color;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-ÄÃ·¯¸µ(color_x888)
-	\param rgb : »ö»ó
-	\param rate : ÀÌÀü ÄÃ·¯¸µ°ú È¥ÇÕÀ» À§ÇÑ ¿µÇâ·Â°ª
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ì»¬ëŸ¬ë§(color_x888)
+	\param rgb : ìƒ‰ìƒ
+	\param rate : ì´ì „ ì»¬ëŸ¬ë§ê³¼ í˜¼í•©ì„ ìœ„í•œ ì˜í–¥ë ¥ê°’
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack COLOR(color_x888 rgb, uint rate = 100)
 	{
@@ -1085,9 +1089,9 @@ namespace BxDrawGlobal
 	static StyleStack HUE(byte hue)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_hue];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		Stack().Hue[Focus] = Stack().Hue[Focus - 1] + hue;
-		// ½ºÅÃÁõ°¡
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_hue;
 		++Stack().CountCurrently;
 		return StyleStack::One();
@@ -1095,54 +1099,54 @@ namespace BxDrawGlobal
 	/// @endcond
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-ºÒÅõ¸íµµ
-	\param opa : Â£Àº Á¤µµ
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ë¶ˆíˆ¬ëª…ë„
+	\param opa : ì§™ì€ ì •ë„
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack OPACITY(byte opa)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_opacity];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		Stack().Opacity[Focus].Opacity255 = Stack().Opacity[Focus - 1].Opacity255 * opa / 255;
-		Stack().Opacity[Focus].Opacity7 = _DrawOption::CurOpacity7() = 8 * Stack().Opacity[Focus].Opacity255 / 255 - 1; // ÇöÀçºÒÅõ¸íµµ
-		// ½ºÅÃÁõ°¡
+		Stack().Opacity[Focus].Opacity7 = _DrawOption::CurOpacity7() = 8 * Stack().Opacity[Focus].Opacity255 / 255 - 1; // í˜„ì¬ë¶ˆíˆ¬ëª…ë„
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_opacity;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-ºí·»µù
-	\param blend : ºí·»µù¸Ş¼Òµå(20°¡Áö)
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ë¸”ë Œë”©
+	\param blend : ë¸”ë Œë”©ë©”ì†Œë“œ(20ê°€ì§€)
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack BLEND(drawblend blend)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_blend];
-		BxAssert("BxDraw", Focus < Stack().MAX);
-		Stack().Blend[Focus] = _DrawOption::CurBlend() = blend; // ÇöÀçºí·£µå
+		BxASSERT("BxDraw", Focus < Stack().MAX);
+		Stack().Blend[Focus] = _DrawOption::CurBlend() = blend; // í˜„ì¬ë¸”ëœë“œ
 		#ifndef __BX_OPENGL
 		_DrawOption::CurSpriteTable() = _DrawOption::GetSpriteTable(blend);
 		_DrawOption::CurAlphaTable() = _DrawOption::GetAlphaTable(blend);
 		#endif
-		// ½ºÅÃÁõ°¡
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_blend;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-Ã¤¿ì±â
-	\param form : From°´Ã¼(BxDrawForm»ó¼ÓÀ¸·Î »ç¿ëÀÚFrom Á¦ÀÛ°¡´É)
-	\param r : ·ÎµåÇÒ ±¸¿ª
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-ì±„ìš°ê¸°
+	\param form : Fromê°ì²´(BxDrawFormìƒì†ìœ¼ë¡œ ì‚¬ìš©ìFrom ì œì‘ê°€ëŠ¥)
+	\param r : ë¡œë“œí•  êµ¬ì—­
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack FORM(BxDrawForm* form = nullptr, rect r = XYWH(0, 0, size::max, size::max))
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_form];
-		BxAssert("BxDraw", Focus < Stack().MAX);
+		BxASSERT("BxDraw", Focus < Stack().MAX);
 		if(!form) form = _BxColorMap::GetClass();
-		// ¾Ö´Ï¸ŞÀÌ¼Ç
+		// ì• ë‹ˆë©”ì´ì…˜
 		else if(1 < form->GetPage())
 		{
 			const int NumPage = form->GetPage();
@@ -1151,59 +1155,59 @@ namespace BxDrawGlobal
 			const int PageHeight = BxUtilGlobal::Min(r.b - r.t, form->Height() / NumPage);
 			r.b = (r.t += PageOffset) + PageHeight;
 		}
-		Stack().Form[Focus].Form = _DrawOption::CurForm() = form; // ÇöÀçÆû
-		Stack().Form[Focus].Rect = _DrawOption::CurFormRect() = r; // ÇöÀçÆû¿µ¿ª
-		// ½ºÅÃÁõ°¡
+		Stack().Form[Focus].Form = _DrawOption::CurForm() = form; // í˜„ì¬í¼
+		Stack().Form[Focus].Rect = _DrawOption::CurFormRect() = r; // í˜„ì¬í¼ì˜ì—­
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_form;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ-3D¸ğµ¨ÀÌµ¿
-	\param x : ÀÌµ¿X
-	\param y : ÀÌµ¿Y
-	\param z : ÀÌµ¿Z
-	\return ½ºÅÃÃ³¸®¼ö·®(¹«Á¶°Ç 1), ¿©·¯°¡Áö ½ºÅ¸ÀÏÀ» +·Î º¹ÇÕ»ç¿ëÇÏ±â À§ÇÔ
+	\brief ìŠ¤íƒ€ì¼-3Dëª¨ë¸ì´ë™
+	\param x : ì´ë™X
+	\param y : ì´ë™Y
+	\param z : ì´ë™Z
+	\return ìŠ¤íƒì²˜ë¦¬ìˆ˜ëŸ‰(ë¬´ì¡°ê±´ 1), ì—¬ëŸ¬ê°€ì§€ ìŠ¤íƒ€ì¼ì„ +ë¡œ ë³µí•©ì‚¬ìš©í•˜ê¸° ìœ„í•¨
 	*/
 	static StyleStack MOVE3D(int x, int y, int z)
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_move3d];
-		BxAssert("BxDraw", Focus < Stack().MAX);
-		Stack().Move3D[Focus].x = _DrawOption::CurMoveX3D() = Stack().Move3D[Focus - 1].x + x; // ÇöÀçÀÌµ¿À§Ä¡3D
+		BxASSERT("BxDraw", Focus < Stack().MAX);
+		Stack().Move3D[Focus].x = _DrawOption::CurMoveX3D() = Stack().Move3D[Focus - 1].x + x; // í˜„ì¬ì´ë™ìœ„ì¹˜3D
 		Stack().Move3D[Focus].y = _DrawOption::CurMoveY3D() = Stack().Move3D[Focus - 1].y + y;
 		Stack().Move3D[Focus].z = _DrawOption::CurMoveZ3D() = Stack().Move3D[Focus - 1].z + z;
-		// ½ºÅÃÁõ°¡
+		// ìŠ¤íƒì¦ê°€
 		Stack().Order[++Stack().OrderFocus] = drawstyle_move3d;
 		++Stack().CountCurrently;
 		return StyleStack::One();
 	}
 }
 
-//! \brief OpenGL/SW·£´õ¸µ±â¹İ ±×¸®±âµµ±¸
+//! \brief OpenGL/SWëœë”ë§ê¸°ë°˜ ê·¸ë¦¬ê¸°ë„êµ¬
 class BxDraw
 {
 	global_func inline bool& IsActivated() {global_data bool isActivated = false; return isActivated;}
 
 public:
 	/*!
-	\brief ±âº»»ı¼ºÀÚ
+	\brief ê¸°ë³¸ìƒì„±ì
 	*/
 	BxDraw() : FigureMapWidthFix(32), FigureMapWidthLevel(5)
 	{
-		BxAssert("BxDraw<»ı¼º¼ö·®ÀÌ Çã¿ëÄ¡ÀÎ 1À» ÃÊ°úÇÕ´Ï´Ù>", !IsActivated());
+		BxASSERT("BxDraw<ìƒì„±ìˆ˜ëŸ‰ì´ í—ˆìš©ì¹˜ì¸ 1ì„ ì´ˆê³¼í•©ë‹ˆë‹¤>", !IsActivated());
 		IsActivated() = true;
 		#ifdef __BX_OPENGL
 		BxCore::OpenGL2D::Init();
 		#endif
 		BxCore::Surface::Init();
-		// ¹öÆ°ÀÌº¥Æ®ÃÊ±âÈ­
+		// ë²„íŠ¼ì´ë²¤íŠ¸ì´ˆê¸°í™”
 		ButtonLength = 0;
 		DoClearButtonEvent = false;
-		// µµÇü¹öÆÛÃÊ±âÈ­
+		// ë„í˜•ë²„í¼ì´ˆê¸°í™”
 		FigureMapHeight = 0;
 		FigureMap = nullptr;
-		// ¹é¹öÆÛ ÃÊ±âÈ­
+		// ë°±ë²„í¼ ì´ˆê¸°í™”
 		BackBufferWidth = 0;
 		BackBufferHeight = 0;
 		BackBufferPtr = nullptr;
@@ -1211,21 +1215,21 @@ public:
 	}
 
 	/*!
-	\brief ¼Ò¸êÀÚ
+	\brief ì†Œë©¸ì
 	*/
 	~BxDraw()
 	{
-		// ¹é¹öÆÛ Á¦°Å
+		// ë°±ë²„í¼ ì œê±°
 		BxDelete_Array(BackBufferPtr);
-		// µµÇü¹öÆÛ Á¦°Å
+		// ë„í˜•ë²„í¼ ì œê±°
 		FigureMapHeight = 0;
 		BxDelete_Array(FigureMap);
 		IsActivated() = false;
 	}
 
 	/*!
-	\brief ÇöÀç XÃà ±âÁØÁÂÇ¥¾ò±â
-	\return XÃà ±âÁØÁÂÇ¥
+	\brief í˜„ì¬ Xì¶• ê¸°ì¤€ì¢Œí‘œì–»ê¸°
+	\return Xì¶• ê¸°ì¤€ì¢Œí‘œ
 	*/
 	inline int TranslateX()
 	{
@@ -1233,8 +1237,8 @@ public:
 	}
 
 	/*!
-	\brief ÇöÀç YÃà ±âÁØÁÂÇ¥¾ò±â
-	\return YÃà ±âÁØÁÂÇ¥
+	\brief í˜„ì¬ Yì¶• ê¸°ì¤€ì¢Œí‘œì–»ê¸°
+	\return Yì¶• ê¸°ì¤€ì¢Œí‘œ
 	*/
 	inline int TranslateY()
 	{
@@ -1242,9 +1246,9 @@ public:
 	}
 
 	/*!
-	\brief ÇöÀç ³Êºñ¾ò±â
-	\param isScreen : true-½ºÅ©¸°, false-ÇöÀçÅ¬¸®ÇÎ
-	\return ³Êºñ
+	\brief í˜„ì¬ ë„ˆë¹„ì–»ê¸°
+	\param isScreen : true-ìŠ¤í¬ë¦°, false-í˜„ì¬í´ë¦¬í•‘
+	\return ë„ˆë¹„
 	*/
 	inline int Width(bool isScreen = false)
 	{
@@ -1253,9 +1257,9 @@ public:
 	}
 
 	/*!
-	\brief ÇöÀç ³ôÀÌ¾ò±â
-	\param isScreen : true-½ºÅ©¸°, false-ÇöÀçÅ¬¸®ÇÎ
-	\return ³ôÀÌ
+	\brief í˜„ì¬ ë†’ì´ì–»ê¸°
+	\param isScreen : true-ìŠ¤í¬ë¦°, false-í˜„ì¬í´ë¦¬í•‘
+	\return ë†’ì´
 	*/
 	inline int Height(bool isScreen = false)
 	{
@@ -1264,27 +1268,27 @@ public:
 	}
 
 	/*!
-	\brief ¹é¹öÆÛ ÁÖ¼Ò¾ò±â
-	\return ¹é¹öÆÛ ¸Ş¸ğ¸®ÁÖ¼Ò
+	\brief ë°±ë²„í¼ ì£¼ì†Œì–»ê¸°
+	\return ë°±ë²„í¼ ë©”ëª¨ë¦¬ì£¼ì†Œ
 	*/
 	inline pixel_dst* GetBackBufferPtr() {return BackBufferPtr;}
 
 	/*!
-	\brief ¹é¹öÆÛ ÇÇÄ¡Á¤º¸¾ò±â
-	\return °¡·Î ÇÑÁÙÀÇ ¹è¿­±æÀÌ(¹ÙÀÌÆ®±æÀÌ°¡ ¾Æ´Ô)
+	\brief ë°±ë²„í¼ í”¼ì¹˜ì •ë³´ì–»ê¸°
+	\return ê°€ë¡œ í•œì¤„ì˜ ë°°ì—´ê¸¸ì´(ë°”ì´íŠ¸ê¸¸ì´ê°€ ì•„ë‹˜)
 	*/
 	inline int GetBackBufferPitch() {return BackBufferWidth;}
 
 	/*!
-	\brief Çü½Ä¾ø´Â ±âº»Ãâ·Â
-	\param x : Ãâ·ÂÀ§Ä¡X
-	\param y : Ãâ·ÂÀ§Ä¡Y
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç(ÀÌ¹ÌÁö´Â FORMÀ¸·Î °¡´É), ´ÙÁß¼³Á¤½Ã >>»ç¿ë
+	\brief í˜•ì‹ì—†ëŠ” ê¸°ë³¸ì¶œë ¥
+	\param x : ì¶œë ¥ìœ„ì¹˜X
+	\param y : ì¶œë ¥ìœ„ì¹˜Y
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜(ì´ë¯¸ì§€ëŠ” FORMìœ¼ë¡œ ê°€ëŠ¥), ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
 	*/
 	void Area(int x, int y, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
 	{
 		if(!VisibleTest(count)) return;
-		// ¹«Á¶°Ç ÀÌ°ü
+		// ë¬´ì¡°ê±´ ì´ê´€
 		area FormArea = *BxDrawGlobal::_DrawOption::CurForm()->GetArea();
 		rect FormRect = BxDrawGlobal::_DrawOption::CurFormRect();
 		FormArea.w = BxUtilGlobal::Min(FormArea.w, FormRect.r - FormRect.l);
@@ -1308,22 +1312,22 @@ public:
 	}
 
 	/*!
-	\brief »ç°¢ÇüÃâ·Â
-	\param opt : FILL-Ã¤¿ò±×¸®±â, DRAW-Æ²±×¸®±â
-	\param r : Ãâ·Â¿µ¿ª
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç, ´ÙÁß¼³Á¤½Ã >>»ç¿ë
+	\brief ì‚¬ê°í˜•ì¶œë ¥
+	\param opt : FILL-ì±„ì›€ê·¸ë¦¬ê¸°, DRAW-í‹€ê·¸ë¦¬ê¸°
+	\param r : ì¶œë ¥ì˜ì—­
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜, ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
 	*/
 	void Rectangle(BxDrawGlobal::option opt, rect r, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
 	{
 		if(!VisibleTest(count)) return;
 		#ifdef __BX_OPENGL
-		// Á¶°Ç ÀÌ°ü
+		// ì¡°ê±´ ì´ê´€
 		if(0 < BxDrawGlobal::_DrawOption::CurAngle())
 		{
-			PolygonSt(opt, BxDrawGlobal::XYS(4, r.l, r.t, r.l, r.b, r.r, r.b, r.r, r.t), count);
+			PolygonSt(opt, BxDrawGlobal::XYS(BxTHROW(r.l, r.l, r.r, r.r), BxTHROW(r.t, r.b, r.b, r.t)), count);
 			return;
 		}
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(AddStyleByIf(count))
 		{
 			const BxExpress::IntegerX& FormWidth = BxDrawGlobal::_DrawOption::CurForm()->ExpressWidth();
@@ -1350,13 +1354,13 @@ public:
 			SubStyle();
 		}
 		#else
-		// Á¶°Ç ÀÌ°ü
+		// ì¡°ê±´ ì´ê´€
 		if(0 < BxDrawGlobal::_DrawOption::CurAngle())
 		{
-			PolygonSt(opt, BxDrawGlobal::XYS(4, r.l, r.t, r.r - 1, r.t, r.r - 1, r.b - 1, r.l, r.b - 1), count);
+			PolygonSt(opt, BxDrawGlobal::XYS(BxTHROW(r.l, r.r - 1, r.r - 1, r.l), BxTHROW(r.t, r.t, r.b, r.b)), count);
 			return;
 		}
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(!AddStyleByIf(count)) return;
 		const drawturn Turn = BxDrawGlobal::_DrawOption::CurTurn();
 		const bool IsFlip90 = (Turn == turn_90 || Turn == turn_x90 || Turn == turn_270 || Turn == turn_x270);
@@ -1385,7 +1389,7 @@ public:
 			BxUtilGlobal::Min(BxDrawGlobal::_DrawOption::CurClipRect().b, Bottom)};
 		if(0 < Rect.r - Rect.l && 0 < Rect.b - Rect.t)
 		{
-			// ¸ğµâ¸µÁØºñ
+			// ëª¨ë“ˆë§ì¤€ë¹„
 			const drawturn Turn = BxDrawGlobal::_DrawOption::CurTurn();
 			const area& FormArea = *BxDrawGlobal::_DrawOption::CurForm()->GetArea();
 			const bool IsFlip90 = (Turn == turn_90 || Turn == turn_x90 || Turn == turn_270 || Turn == turn_x270);
@@ -1399,7 +1403,7 @@ public:
 			const fint YVec = (!IsFlip90)? 0 : ((Turn == turn_x270 || Turn == turn_270)? DescaleX : -DescaleX);
 			const fint XAdd = (!IsFlip90)? 0 : ((Turn == turn_90 || Turn == turn_x270)? DescaleY : -DescaleY);
 			const fint YAdd = (IsFlip90)? 0 : ((Turn == turn_0 || Turn == turn_x0)? DescaleY : -DescaleY);
-			// ºí·»µùÁØºñ
+			// ë¸”ë Œë”©ì¤€ë¹„
 			pixel_dst* ScreenPtr = GetBackBufferPtr();
 			pixel_dst* Dst = &ScreenPtr[Rect.l + Rect.t * GetBackBufferPitch()];
 			const uint DstPitch = GetBackBufferPitch();
@@ -1411,7 +1415,7 @@ public:
 				const byte* BlendSpriteTable = &BxDrawGlobal::_DrawOption::CurSpriteTable()[BxDrawGlobal::_DrawOption::CurOpacity7() << (8 + 8)];
 				const byte* BlendAlphaTable = &BxDrawGlobal::_DrawOption::CurAlphaTable()[BxDrawGlobal::_DrawOption::CurOpacity7() << (3 + 8 + 8)];
 			#endif
-			// ¹é¹öÆÛÄ«ÇÇ
+			// ë°±ë²„í¼ì¹´í”¼
 			BxDrawForm& FormClass = *BxDrawGlobal::_DrawOption::CurForm();
 			rect FormRect = BxDrawGlobal::_DrawOption::CurFormRect();
 			BxDrawForm::OnFormMethod FormMethod = BxDrawGlobal::_DrawOption::CurForm()->GetFormMethod
@@ -1432,14 +1436,14 @@ public:
 	{
 		if(!VisibleTest(count)) return;
 		#ifdef __BX_OPENGL
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(AddStyleByIf(count))
 		{
 			/////////////////////////////////
 			SubStyle();
 		}
 		#else
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(!AddStyleByIf(count)) return;
 		const int PosX = BxDrawGlobal::_DrawOption::CurHotspotX();
 		const int PosY = BxDrawGlobal::_DrawOption::CurHotspotY();
@@ -1447,7 +1451,7 @@ public:
 		const int Y1 = PosY + r.t;
 		const int X2 = PosX + r.r;
 		const int Y2 = PosY + r.b;
-		// ¼öÁ¤Áß...///////////////////////////////////////////
+		// ìˆ˜ì •ì¤‘...///////////////////////////////////////////
 		if(Y1 != Y2)
 		{
 			#ifdef __BX_PIXEL16
@@ -1474,9 +1478,9 @@ public:
 				const int xend = BxUtilGlobal::Min((x1 > x2)? x1 : x2, BxDrawGlobal::_DrawOption::CurClipRect().r - 1);
 				if(xbegin <= xend)
 				{
-					// ºí·»µùÁØºñ
+					// ë¸”ë Œë”©ì¤€ë¹„
 					pixel_dst* Dst = &ScreenPtr[xbegin + y * GetBackBufferPitch()];
-					// ¹é¹öÆÛÄ«ÇÇ
+					// ë°±ë²„í¼ì¹´í”¼
 					FormMethod(FormClass, FormRect, Dst, xend - xbegin, ItoF(xbegin), ItoF(y), ItoF(1), ItoF(0), BlendSpriteTable, BlendAlphaTable);
 				}
 			}
@@ -1491,14 +1495,14 @@ public:
 	{
 		if(!VisibleTest(count)) return;
 		#ifdef __BX_OPENGL
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(AddStyleByIf(count))
 		{
 			/////////////////////////////////
 			SubStyle();
 		}
 		#else
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(!AddStyleByIf(count)) return;
 		SubStyle();
 		#endif
@@ -1506,16 +1510,16 @@ public:
 	/// @endcond
 
 	/*!
-	\brief Æú¸®°ïÃâ·Â
-	\param opt : FILL-Ã¤¿ò±×¸®±â, DRAW-Æ²±×¸®±â
-	\param p : Ãâ·Â¿µ¿ª(XYS, XYARRAY·Î »ı¼º)
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç, ´ÙÁß¼³Á¤½Ã >>»ç¿ë
+	\brief í´ë¦¬ê³¤ì¶œë ¥
+	\param opt : FILL-ì±„ì›€ê·¸ë¦¬ê¸°, DRAW-í‹€ê·¸ë¦¬ê¸°
+	\param p : ì¶œë ¥ì˜ì—­(XYS, XYARRAYë¡œ ìƒì„±)
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜, ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
 	*/
 	void PolygonSt(BxDrawGlobal::option opt, points p, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
 	{
 		if(!VisibleTest(count)) return;
 		#ifdef __BX_OPENGL
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(AddStyleByIf(count))
 		{
 			const int FormWidth = BxDrawGlobal::_DrawOption::CurForm()->Width();
@@ -1542,7 +1546,7 @@ public:
 			SubStyle();
 		}
 		#else
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(!AddStyleByIf(count)) return;
 		const bool DoFlip = (BxDrawGlobal::_DrawOption::CurTurn() % 2 == 1);
 		const int Angle1 = ((1024 << 16) + (BxDrawGlobal::_DrawOption::CurAngle() + BxDrawGlobal::_DrawOption::CurTurn() / 2 * 256)) % 1024;
@@ -1557,8 +1561,8 @@ public:
 		const int PosY = BxDrawGlobal::_DrawOption::CurHotspotY();
 		const fint Half = 0x10000 / 2;
 
-		// Å¬¸®ÇÎ
-		BxAssert("BxDraw", p.count <= 256);
+		// í´ë¦¬í•‘
+		BxASSERT("BxDraw", p.count <= 256);
 		point Vertex[256] = {{0,},};
 		rect VertexArea = {0,};
 		const int VertexCount = p.count;
@@ -1578,7 +1582,7 @@ public:
 		VertexArea.r = BxUtilGlobal::Min(PosX + VertexArea.r, BxDrawGlobal::_DrawOption::CurClipRect().r);
 		VertexArea.b = BxUtilGlobal::Min(PosY + VertexArea.b, BxDrawGlobal::_DrawOption::CurClipRect().b);
 
-		// ¸ÅÇÎÃÊ±âÈ­
+		// ë§¤í•‘ì´ˆê¸°í™”
 		for(int v = VertexArea.t; v < VertexArea.b; ++v)
 		{
 			FigureMap[(v << FigureMapWidthLevel) | 0] = 3;
@@ -1586,7 +1590,7 @@ public:
 			FigureMap[(v << FigureMapWidthLevel) | 2] = VertexArea.l;
 			FigureMap[(v << FigureMapWidthLevel) | 3] = VertexArea.r - 1;
 		}
-		// ¸ÅÇÎ
+		// ë§¤í•‘
 		for(int p = 0, last_index = 0; p < VertexCount; ++p)
 		{
 			const int next_p = (p + 1 < VertexCount)? p + 1 : last_index;
@@ -1621,7 +1625,7 @@ public:
 				last_index = BxUtilGlobal::Min(++p + 1, VertexCount - 1);
 		}
 
-		// Ãâ·Â
+		// ì¶œë ¥
 		const area& FormArea = *BxDrawGlobal::_DrawOption::CurForm()->GetArea();
 		const huge DeHor = ox100000000 / Hor;
 		const huge DeVer = ox100000000 / Ver;
@@ -1668,14 +1672,14 @@ public:
 	{
 		if(!VisibleTest(count)) return;
 		#ifdef __BX_OPENGL
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(AddStyleByIf(count))
 		{
 			/////////////////////////////////
 			SubStyle();
 		}
 		#else
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		if(!AddStyleByIf(count)) return;
 		const bool DoFlip = (BxDrawGlobal::_DrawOption::CurTurn() % 2 == 1);
 		const int Angle1 = ((1024 << 16) + (BxDrawGlobal::_DrawOption::CurAngle() + BxDrawGlobal::_DrawOption::CurTurn() / 2 * 256)) % 1024;
@@ -1690,8 +1694,8 @@ public:
 		const int PosY = BxDrawGlobal::_DrawOption::CurHotspotY();
 		const fint Half = 0x10000 / 2;
 
-		// Å¬¸®ÇÎ
-		BxAssert("BxDraw", p.count <= 256);
+		// í´ë¦¬í•‘
+		BxASSERT("BxDraw", p.count <= 256);
 		point Vertex[256] = {{0,},};
 		rect VertexArea = {0,};
 		const int VertexCount = p.count;
@@ -1711,7 +1715,7 @@ public:
 		VertexArea.r = BxUtilGlobal::Min(PosX + VertexArea.r, BxDrawGlobal::_DrawOption::CurClipRect().r);
 		VertexArea.b = BxUtilGlobal::Min(PosY + VertexArea.b, BxDrawGlobal::_DrawOption::CurClipRect().b);
 
-		// ¸ÅÇÎÃÊ±âÈ­
+		// ë§¤í•‘ì´ˆê¸°í™”
 		for(int v = VertexArea.t; v < VertexArea.b; ++v)
 		{
 			FigureMap[(v << FigureMapWidthLevel) | 0] = 3;
@@ -1719,7 +1723,7 @@ public:
 			FigureMap[(v << FigureMapWidthLevel) | 2] = VertexArea.l;
 			FigureMap[(v << FigureMapWidthLevel) | 3] = VertexArea.r - 1;
 		}
-		// ¸ÅÇÎ
+		// ë§¤í•‘
 		for(int l = 1, last_index = 0; l <= VertexCount; ++l)
 		{
 			if(l < VertexCount && (Vertex[l].x != Vertex[last_index].x || Vertex[l].y != Vertex[last_index].y))
@@ -1770,7 +1774,7 @@ public:
 			last_index = ++l;
 		}
 
-		// Ãâ·Â
+		// ì¶œë ¥
 		const area& FormArea = *BxDrawGlobal::_DrawOption::CurForm()->GetArea();
 		const huge DeHor = ox100000000 / Hor;
 		const huge DeVer = ox100000000 / Ver;
@@ -1814,10 +1818,10 @@ public:
 	/// @endcond
 
 	/*!
-	\brief 3DÆú¸®°ïÃâ·Â
-	\param v : 3Â÷¿ø Ãâ·Â¿µ¿ª(XYZS, XYZARRAY·Î »ı¼º)
-	\param uv : ÅØ½ºÃÄÀÇ UV°ª(1 << 12 ±âÁØ)
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç, ´ÙÁß¼³Á¤½Ã >>»ç¿ë
+	\brief 3Dí´ë¦¬ê³¤ì¶œë ¥
+	\param v : 3ì°¨ì› ì¶œë ¥ì˜ì—­(XYZS, XYZARRAYë¡œ ìƒì„±)
+	\param uv : í…ìŠ¤ì³ì˜ UVê°’(1 << 12 ê¸°ì¤€)
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜, ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
 	*/
 	void Polygon3D(vertexs v, points uv, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
 	{
@@ -1842,18 +1846,18 @@ public:
 	}
 
 	/*!
-	\brief ÅØ½ºÆ®Ãâ·Â
-	\param font : ÆùÆ®ID
-	\param str : ½ºÆ®¸µ
-	\param r : Ãâ·Â¿µ¿ª
-	\param sort : ¼ıÀÚÅ°ÆĞµå ¹æ½Ä
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç, ´ÙÁß¼³Á¤½Ã >>»ç¿ë
+	\brief í…ìŠ¤íŠ¸ì¶œë ¥
+	\param font : í°íŠ¸ID
+	\param str : ìŠ¤íŠ¸ë§
+	\param r : ì¶œë ¥ì˜ì—­
+	\param sort : ìˆ«ìí‚¤íŒ¨ë“œ ë°©ì‹
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜, ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
 	*/
 	void Text(id_font font, string str, rect r, fontsort sort, BxDrawGlobal::StyleStack count = BxDrawGlobal::StyleStack::Zero())
 	{
 		if(!VisibleTest(count)) return;
 		if(!AddStyleByIf(count)) return;
-		// ¸ğµâ
+		// ëª¨ë“ˆ
 		r.l += BxDrawGlobal::_DrawOption::CurClipRect().l;
 		r.t += BxDrawGlobal::_DrawOption::CurClipRect().t;
 		r.r = BxUtilGlobal::Min(r.r + BxDrawGlobal::_DrawOption::CurClipRect().l, BxDrawGlobal::_DrawOption::CurClipRect().r);
@@ -1866,16 +1870,16 @@ public:
 	}
 
 	/*!
-	\brief ¹é¹öÆÛ¸¦ È­¸é¿¡ Ãâ·Â
-	\param initOnly : Ãâ·Â¾øÀÌ ¹öÆÛ°ü·Ã ÃÊ±âÈ­¸¸ ¼öÇà
+	\brief ë°±ë²„í¼ë¥¼ í™”ë©´ì— ì¶œë ¥
+	\param initOnly : ì¶œë ¥ì—†ì´ ë²„í¼ê´€ë ¨ ì´ˆê¸°í™”ë§Œ ìˆ˜í–‰
 	*/
 	void Flush(bool initOnly = false)
 	{
 		if(!initOnly)
 			BxCore::Surface::Flush(BackBufferPtr, sizeof(pixel_dst) * BackBufferWidth, BackBufferHeight, sizeof(pixel_dst) * GetBackBufferPitch());
-		// ¹öÆ°ÀÌº¥Æ® ÃÊ±âÈ­Áö½Ã
+		// ë²„íŠ¼ì´ë²¤íŠ¸ ì´ˆê¸°í™”ì§€ì‹œ
 		DoClearButtonEvent = true;
-		// ¹é¹öÆÛ ÃÊ±âÈ­
+		// ë°±ë²„í¼ ì´ˆê¸°í™”
 		if(BackBufferWidth != BxCore::Surface::GetWidth(nullptr, false) || BackBufferHeight != BxCore::Surface::GetHeight(nullptr, false))
 		{
 			BackBufferWidth = BxCore::Surface::GetWidth(nullptr, false);
@@ -1885,34 +1889,34 @@ public:
 				BackBufferPtr = BxNew_Array(pixel_dst, BackBufferWidth * BackBufferHeight);
 			#endif
 		}
-		// µµÇü¹öÆÛ ÀçÇÒ´ç
+		// ë„í˜•ë²„í¼ ì¬í• ë‹¹
 		if(FigureMapHeight != BackBufferHeight)
 		{
 			FigureMapHeight = BackBufferHeight;
 			BxDelete_Array(FigureMap);
 			FigureMap = BxNew_Array(int, FigureMapWidthFix * FigureMapHeight);
 		}
-		// ½ºÅÃ ÃÊ±âÈ­
+		// ìŠ¤íƒ ì´ˆê¸°í™”
 		BxDrawGlobal::Stack().CountCurrently = BxDrawGlobal::StyleStack::Zero();
 		SubStyle(true);
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ¿É¼Ç ½ºÅÃÃß°¡
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç, ´ÙÁß¼³Á¤½Ã >>»ç¿ë
+	\brief ìŠ¤íƒ€ì¼ì˜µì…˜ ìŠ¤íƒì¶”ê°€
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜, ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
 	*/
 	void AddStyle(BxDrawGlobal::StyleStack count)
 	{
-		BxAssert("BxDraw", count == BxDrawGlobal::Stack().CountCurrently);
+		BxASSERT("BxDraw", count == BxDrawGlobal::Stack().CountCurrently);
 		BxDrawGlobal::Stack().Count[++BxDrawGlobal::Stack().CountFocus] = count;
 		BxDrawGlobal::Stack().CountCurrently = BxDrawGlobal::StyleStack::Zero();
 	}
 
 	/*!
-	\brief Å¬¸®ÇÎ°í·Á ½ºÅ¸ÀÏ¿É¼Ç ½ºÅÃÃß°¡(if¾È¿¡¼­ »ç¿ë±ÇÀå)
-	\param count : ½ºÅ¸ÀÏ¿É¼Ç, ´ÙÁß¼³Á¤½Ã >>»ç¿ë
-	\param buttonName : ¹öÆ°¸í, ÀÛ¼º½Ã ÇöÀç Å¬¸®ÇÎ¿µ¿ªÀ¸·Î GUIÀÌº¥Æ® ÀÛµ¿
-	\return true-Á¤»óÃ³¸®, false-Å¬¸®ÇÎµÇ¾î Ãâ·ÂÇÒ °ÍÀÌ ¾øÀ½(SubStyle ÀÚµ¿Ã³¸®)
+	\brief í´ë¦¬í•‘ê³ ë ¤ ìŠ¤íƒ€ì¼ì˜µì…˜ ìŠ¤íƒì¶”ê°€(ifì•ˆì—ì„œ ì‚¬ìš©ê¶Œì¥)
+	\param count : ìŠ¤íƒ€ì¼ì˜µì…˜, ë‹¤ì¤‘ì„¤ì •ì‹œ >>ì‚¬ìš©
+	\param buttonName : ë²„íŠ¼ëª…, ì‘ì„±ì‹œ í˜„ì¬ í´ë¦¬í•‘ì˜ì—­ìœ¼ë¡œ GUIì´ë²¤íŠ¸ ì‘ë™
+	\return true-ì •ìƒì²˜ë¦¬, false-í´ë¦¬í•‘ë˜ì–´ ì¶œë ¥í•  ê²ƒì´ ì—†ìŒ(SubStyle ìë™ì²˜ë¦¬)
 	*/
 	bool AddStyleByIf(BxDrawGlobal::StyleStack count, string buttonName = nullptr)
 	{
@@ -1930,20 +1934,20 @@ public:
 				ButtonLength = 0;
 				DoClearButtonEvent = false;
 			}
-			BxAssert("BxDraw", ButtonLength < sizeof(ButtonEvent) / sizeof(ButtonEvent[0]));
+			BxASSERT("BxDraw", ButtonLength < sizeof(ButtonEvent) / sizeof(ButtonEvent[0]));
 			ButtonEvent[ButtonLength++].SetEvent(buttonName, BxDrawGlobal::_DrawOption::CurClipRect());
 		}
 		return true;
 	}
 
 	/*!
-	\brief ½ºÅ¸ÀÏ¿É¼Ç ½ºÅÃÇØÁ¦
-	\param doAll : true-ÀüÃ¼½ºÅÃÇØÁ¦, false-1È¸ÇØÁ¦
-	\return try¸ğµâÀ» À§ÇÑ falseÀü´Ş
+	\brief ìŠ¤íƒ€ì¼ì˜µì…˜ ìŠ¤íƒí•´ì œ
+	\param doAll : true-ì „ì²´ìŠ¤íƒí•´ì œ, false-1íšŒí•´ì œ
+	\return TRYëª¨ë“ˆì„ ìœ„í•œ falseì „ë‹¬
 	*/
 	bool SubStyle(bool doAll = false)
 	{
-		BxAssert("BxDraw", BxDrawGlobal::Stack().CountCurrently == BxDrawGlobal::StyleStack::Zero());
+		BxASSERT("BxDraw", BxDrawGlobal::Stack().CountCurrently == BxDrawGlobal::StyleStack::Zero());
 		if(doAll) BxDrawGlobal::Stack().Init(BackBufferWidth, BackBufferHeight);
 		else BxDrawGlobal::Stack().Sub();
 		return false;
@@ -1951,7 +1955,7 @@ public:
 
 public:
 	/// @cond SECTION_NAME
-	// ¹öÆ°ÀÌº¥Æ®
+	// ë²„íŠ¼ì´ë²¤íŠ¸
 	class _ButtonEvent
 	{
 	public:
@@ -1964,8 +1968,8 @@ public:
 		void SetEvent(string name, rect field)
 		{
 			const int Length = BxUtilGlobal::StrLen(name);
-			BxAssert("BxDraw", Length + 1 <= 32);
-			BxCore::Util::MemMove(Name, name, Length + 1);
+			BxASSERT("BxDraw", Length + 1 <= 32);
+			BxCore::Util::MemCpy(Name, name, Length + 1);
 			Field.l = field.l - BxCore::Main::GetCurrentGUIMargin().l;
 			Field.t = field.t - BxCore::Main::GetCurrentGUIMargin().t;
 			Field.r = field.r - BxCore::Main::GetCurrentGUIMargin().l;
@@ -1985,11 +1989,11 @@ public:
 
 protected:
 	/// @cond SECTION_NAME
-	// ¹é¹öÆÛÁ¤º¸
+	// ë°±ë²„í¼ì •ë³´
 	int BackBufferWidth;
 	int BackBufferHeight;
 	pixel_dst* _arr_ BackBufferPtr;
-	// µµÇü¹öÆÛ
+	// ë„í˜•ë²„í¼
 	const int FigureMapWidthFix;
 	const int FigureMapWidthLevel;
 	int FigureMapHeight;

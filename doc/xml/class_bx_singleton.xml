@@ -7,23 +7,23 @@
     <innerclass refid="class_bx_singleton_1_1_list" prot="private">BxSingleton::List</innerclass>
     <innerclass refid="class_bx_singleton_1_1_value" prot="private">BxSingleton::Value</innerclass>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_bx_singleton_1a24a53dca22ef0120d582a04b004ae723" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1a9908f2cd91b1304edddc5520a20e220d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename TYPE</type>
           </param>
         </templateparamlist>
-        <type>global_func uint</type>
-        <definition>global_func uint BxSingleton::Link</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count)</argsstring>
+        <type>global_func int</type>
+        <definition>global_func int BxSingleton::Link</definition>
+        <argsstring>(TYPE **value, int *count __DEBUG_PRM__)</argsstring>
         <name>Link</name>
         <param>
-          <type>TYPE *&amp;</type>
+          <type>TYPE **</type>
           <declname>value</declname>
         </param>
         <param>
-          <type>uint &amp;</type>
-          <declname>count</declname>
+          <type>int *count</type>
+          <declname>__DEBUG_PRM__</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -31,9 +31,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="16" bodyend="19"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="29" bodyend="32"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1a8d9a5f4d579c646b2a6c2fcb1c9b765e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1ade24df0a7a72811d112bd7b1cdce3959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename TYPE</type>
@@ -41,18 +41,18 @@
         </templateparamlist>
         <type>global_func TYPE *</type>
         <definition>global_func TYPE* BxSingleton::Bind</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, const uint newcount)</argsstring>
+        <argsstring>(TYPE **value, int *count, const int newcount)</argsstring>
         <name>Bind</name>
         <param>
-          <type>TYPE *&amp;</type>
+          <type>TYPE **</type>
           <declname>value</declname>
         </param>
         <param>
-          <type>uint &amp;</type>
+          <type>int *</type>
           <declname>count</declname>
         </param>
         <param>
-          <type>const uint</type>
+          <type>const int</type>
           <declname>newcount</declname>
         </param>
         <briefdescription>
@@ -61,264 +61,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="22" bodyend="26"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="35" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="35" bodyend="40"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1ad65d0bd1a20b9ea2ab991de3efab7776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename TYPE</type>
-          </param>
-          <param>
-            <type>typename P1</type>
-          </param>
-        </templateparamlist>
-        <type>global_func TYPE *</type>
-        <definition>global_func TYPE* BxSingleton::Bind</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, const uint newcount, P1 v1)</argsstring>
-        <name>Bind</name>
-        <param>
-          <type>TYPE *&amp;</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>uint &amp;</type>
-          <declname>count</declname>
-        </param>
-        <param>
-          <type>const uint</type>
-          <declname>newcount</declname>
-        </param>
-        <param>
-          <type>P1</type>
-          <declname>v1</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="29" bodyend="31"/>
-      </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1a2f76cd1bad62601392fb0c04d507db14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename TYPE</type>
-          </param>
-          <param>
-            <type>typename P1</type>
-          </param>
-          <param>
-            <type>typename P2</type>
-          </param>
-        </templateparamlist>
-        <type>global_func TYPE *</type>
-        <definition>global_func TYPE* BxSingleton::Bind</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, const uint newcount, P1 v1, P2 v2)</argsstring>
-        <name>Bind</name>
-        <param>
-          <type>TYPE *&amp;</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>uint &amp;</type>
-          <declname>count</declname>
-        </param>
-        <param>
-          <type>const uint</type>
-          <declname>newcount</declname>
-        </param>
-        <param>
-          <type>P1</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>P2</type>
-          <declname>v2</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="33" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="33" bodyend="35"/>
-      </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1a4e87116131b8731fa4bcb2a88101d7f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename TYPE</type>
-          </param>
-          <param>
-            <type>typename P1</type>
-          </param>
-          <param>
-            <type>typename P2</type>
-          </param>
-          <param>
-            <type>typename P3</type>
-          </param>
-        </templateparamlist>
-        <type>global_func TYPE *</type>
-        <definition>global_func TYPE* BxSingleton::Bind</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, const uint newcount, P1 v1, P2 v2, P3 v3)</argsstring>
-        <name>Bind</name>
-        <param>
-          <type>TYPE *&amp;</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>uint &amp;</type>
-          <declname>count</declname>
-        </param>
-        <param>
-          <type>const uint</type>
-          <declname>newcount</declname>
-        </param>
-        <param>
-          <type>P1</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>P2</type>
-          <declname>v2</declname>
-        </param>
-        <param>
-          <type>P3</type>
-          <declname>v3</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="37" bodyend="39"/>
-      </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1ac20a3ca90c2d58262bd2700a60d0967a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename TYPE</type>
-          </param>
-          <param>
-            <type>typename P1</type>
-          </param>
-          <param>
-            <type>typename P2</type>
-          </param>
-          <param>
-            <type>typename P3</type>
-          </param>
-          <param>
-            <type>typename P4</type>
-          </param>
-        </templateparamlist>
-        <type>global_func TYPE *</type>
-        <definition>global_func TYPE* BxSingleton::Bind</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, const uint newcount, P1 v1, P2 v2, P3 v3, P4 v4)</argsstring>
-        <name>Bind</name>
-        <param>
-          <type>TYPE *&amp;</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>uint &amp;</type>
-          <declname>count</declname>
-        </param>
-        <param>
-          <type>const uint</type>
-          <declname>newcount</declname>
-        </param>
-        <param>
-          <type>P1</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>P2</type>
-          <declname>v2</declname>
-        </param>
-        <param>
-          <type>P3</type>
-          <declname>v3</declname>
-        </param>
-        <param>
-          <type>P4</type>
-          <declname>v4</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="41" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="41" bodyend="43"/>
-      </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1a16cd019a75ed247d340812dfdd3f6ab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename TYPE</type>
-          </param>
-          <param>
-            <type>typename P1</type>
-          </param>
-          <param>
-            <type>typename P2</type>
-          </param>
-          <param>
-            <type>typename P3</type>
-          </param>
-          <param>
-            <type>typename P4</type>
-          </param>
-          <param>
-            <type>typename P5</type>
-          </param>
-        </templateparamlist>
-        <type>global_func TYPE *</type>
-        <definition>global_func TYPE* BxSingleton::Bind</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, const uint newcount, P1 v1, P2 v2, P3 v3, P4 v4, P5 v5)</argsstring>
-        <name>Bind</name>
-        <param>
-          <type>TYPE *&amp;</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>uint &amp;</type>
-          <declname>count</declname>
-        </param>
-        <param>
-          <type>const uint</type>
-          <declname>newcount</declname>
-        </param>
-        <param>
-          <type>P1</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>P2</type>
-          <declname>v2</declname>
-        </param>
-        <param>
-          <type>P3</type>
-          <declname>v3</declname>
-        </param>
-        <param>
-          <type>P4</type>
-          <declname>v4</declname>
-        </param>
-        <param>
-          <type>P5</type>
-          <declname>v5</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="45" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="45" bodyend="47"/>
-      </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1a458a992435b04c4d8421437d9d97f7c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1a2e313e8f92f5bcf269cd66feea7865d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename TYPE</type>
@@ -326,14 +71,14 @@
         </templateparamlist>
         <type>global_func void</type>
         <definition>global_func void BxSingleton::Rebind</definition>
-        <argsstring>(const TYPE *value, const uint newcount)</argsstring>
+        <argsstring>(const TYPE *value, const int newcount)</argsstring>
         <name>Rebind</name>
         <param>
           <type>const TYPE *</type>
           <declname>value</declname>
         </param>
         <param>
-          <type>const uint</type>
+          <type>const int</type>
           <declname>newcount</declname>
         </param>
         <briefdescription>
@@ -342,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="50" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="50" bodyend="53"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="43" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="43" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1a06a4e09e52dfd1cd9c13759d3448a6be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -359,24 +104,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="55" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="55" bodyend="58"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="48" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="48" bodyend="51"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1a14ab6d2637a1bae96cde75ed173f1150" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1a9f0d7f7ea33d9dee12d745553c3be9bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
         <definition>global_func void BxSingleton::UnbindAll</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(bool dokill)</argsstring>
         <name>UnbindAll</name>
+        <param>
+          <type>bool</type>
+          <declname>dokill</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="60" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="60" bodyend="63"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="53" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="53" bodyend="56"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="class_bx_singleton_1a4be3488d66e86a42d292434df26d6906" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1ab714d286e1b67720bdf0716f1acf2228" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename TYPE</type>
@@ -384,14 +133,14 @@
         </templateparamlist>
         <type>global_func TYPE *</type>
         <definition>global_func TYPE* BxSingleton::Transfer</definition>
-        <argsstring>(TYPE *&amp;value, uint &amp;count, TYPE *newvalue, const uint newcount)</argsstring>
+        <argsstring>(TYPE **value, int *count, TYPE *newvalue, const int newcount)</argsstring>
         <name>Transfer</name>
         <param>
-          <type>TYPE *&amp;</type>
+          <type>TYPE **</type>
           <declname>value</declname>
         </param>
         <param>
-          <type>uint &amp;</type>
+          <type>int *</type>
           <declname>count</declname>
         </param>
         <param>
@@ -399,7 +148,7 @@
           <declname>newvalue</declname>
         </param>
         <param>
-          <type>const uint</type>
+          <type>const int</type>
           <declname>newcount</declname>
         </param>
         <briefdescription>
@@ -408,26 +157,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="66" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="66" bodyend="74"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="59" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="59" bodyend="67"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>싱글톤인스턴스들의 일괄소멸을 위한 도구 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="14" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="13" bodyend="159"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="26" bodyend="159"/>
     <listofallmembers>
-      <member refid="class_bx_singleton_1a8d9a5f4d579c646b2a6c2fcb1c9b765e" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
-      <member refid="class_bx_singleton_1ad65d0bd1a20b9ea2ab991de3efab7776" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
-      <member refid="class_bx_singleton_1a2f76cd1bad62601392fb0c04d507db14" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
-      <member refid="class_bx_singleton_1a4e87116131b8731fa4bcb2a88101d7f1" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
-      <member refid="class_bx_singleton_1ac20a3ca90c2d58262bd2700a60d0967a" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
-      <member refid="class_bx_singleton_1a16cd019a75ed247d340812dfdd3f6ab4" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
-      <member refid="class_bx_singleton_1a24a53dca22ef0120d582a04b004ae723" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Link</name></member>
-      <member refid="class_bx_singleton_1a458a992435b04c4d8421437d9d97f7c6" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Rebind</name></member>
-      <member refid="class_bx_singleton_1a4be3488d66e86a42d292434df26d6906" prot="private" virt="non-virtual"><scope>BxSingleton</scope><name>Transfer</name></member>
+      <member refid="class_bx_singleton_1ade24df0a7a72811d112bd7b1cdce3959" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
+      <member refid="class_bx_singleton_1a9908f2cd91b1304edddc5520a20e220d" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Link</name></member>
+      <member refid="class_bx_singleton_1a2e313e8f92f5bcf269cd66feea7865d8" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Rebind</name></member>
+      <member refid="class_bx_singleton_1ab714d286e1b67720bdf0716f1acf2228" prot="private" virt="non-virtual"><scope>BxSingleton</scope><name>Transfer</name></member>
       <member refid="class_bx_singleton_1a06a4e09e52dfd1cd9c13759d3448a6be" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Unbind</name></member>
-      <member refid="class_bx_singleton_1a14ab6d2637a1bae96cde75ed173f1150" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>UnbindAll</name></member>
+      <member refid="class_bx_singleton_1a9f0d7f7ea33d9dee12d745553c3be9bf" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>UnbindAll</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

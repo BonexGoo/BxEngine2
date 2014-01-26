@@ -6,136 +6,132 @@
     <includes refid="_bx_singleton_8hpp" local="no">BxSingleton.hpp</includes>
     <includes refid="_bx_telex_8hpp" local="no">BxTelex.hpp</includes>
     <incdepgraph>
-      <node id="244">
-        <label>stdarg.h</label>
-      </node>
-      <node id="253">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="247" relation="include">
-        </childnode>
-      </node>
-      <node id="246">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-      </node>
-      <node id="242">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="251">
-        <label>BxTelex.hpp</label>
-        <link refid="_bx_telex_8hpp_source"/>
-        <childnode refid="248" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="252" relation="include">
-        </childnode>
-        <childnode refid="253" relation="include">
-        </childnode>
-      </node>
-      <node id="241">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-      </node>
-      <node id="247">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="248" relation="include">
-        </childnode>
-      </node>
-      <node id="252">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-      </node>
-      <node id="239">
+      <node id="240">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="247" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
         <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
         </childnode>
       </node>
       <node id="250">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-      </node>
-      <node id="237">
-        <label>BxMain.cpp</label>
-        <link refid="BxMain.cpp"/>
-        <childnode refid="238" relation="include">
-        </childnode>
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
         <childnode refid="248" relation="include">
         </childnode>
         <childnode refid="251" relation="include">
         </childnode>
       </node>
-      <node id="249">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="247" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
-        </childnode>
-      </node>
-      <node id="238">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="239" relation="include">
-        </childnode>
+      <node id="252">
+        <label>BxTelex.hpp</label>
+        <link refid="_bx_telex_8hpp_source"/>
         <childnode refid="249" relation="include">
         </childnode>
-      </node>
-      <node id="245">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="246" relation="include">
+        <childnode refid="244" relation="include">
         </childnode>
-      </node>
-      <node id="248">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="242" relation="include">
         </childnode>
         <childnode refid="241" relation="include">
         </childnode>
-      </node>
-      <node id="240">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="253" relation="include">
         </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="246" relation="include">
         </childnode>
       </node>
       <node id="243">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
         <childnode refid="244" relation="include">
         </childnode>
+      </node>
+      <node id="239">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="245">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>BxMain.cpp</label>
+        <link refid="BxMain.cpp"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -143,7 +139,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;BxScene.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#include<sp/>&lt;<ref refid="class_bx_scene" kindref="compound" tooltip="씬관리 ">BxScene</ref>.hpp&gt;</highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxSingleton.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxTelex.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
@@ -226,73 +222,68 @@
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>BxDelete(Draw);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>전역객체<sp/>해제</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>BxSingleton::UnbindAll();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>BxSingleton::UnbindAll(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>메모리해제확인</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(BxMemory::DoMemLogger())</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Test<sp/>=<sp/>BxAlloc(1);<sp/></highlight><highlight class="comment">//<sp/>메모리해제확인중...</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(Test);<sp/></highlight><highlight class="comment">//<sp/>메모리해제확인중...</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(10);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="101"></codeline>
-<codeline lineno="103"><highlight class="normal">local_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ProcedureWithYield(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sleep)</highlight></codeline>
-<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>global_data<sp/>uhuge<sp/>LastTime<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>();</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhuge<sp/>LimitTime<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>()<sp/>+<sp/>sleep;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kindref="member" tooltip="어플종료 요청여부 ">BxCore::System::IsQuit</ref>())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhuge<sp/>CurTime<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>();</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(LastTime<sp/>+<sp/>BxCore::Main::GetCurrentFrameTime()<sp/>&lt;<sp/>CurTime)</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LastTime<sp/>=<sp/>CurTime<sp/>-<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>(CurTime<sp/>-<sp/>(LastTime<sp/>+<sp/>BxCore::Main::GetCurrentFrameTime())),</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::Main::GetCurrentFrameTime());</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(0);</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Procedure())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sleep)<sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(1);</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>()<sp/>&lt;<sp/>LimitTime);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="124"></codeline>
-<codeline lineno="126"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Procedure()</highlight></codeline>
-<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kindref="member" tooltip="어플종료 요청여부 ">BxCore::System::IsQuit</ref>()<sp/>||<sp/>BxScene::__GetActiveSceneAllCount__()<sp/>&lt;=<sp/>0)</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a3055494eac4b2e5797611cd67d7447b9" kindref="member" tooltip="콜순번 초기화 ">BxCore::Util::SetCallCount</ref>(0);</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoRender<sp/>=<sp/>BxScene::__OnEventUpdateRender__(*Draw);</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>Draw-&gt;<ref refid="class_bx_draw_1a52abea75c29b2a54bdf024e19d92be7e" kindref="member" tooltip="백버퍼를 화면에 출력 ">Flush</ref>();</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>__BX_OPENGL</highlight></codeline>
-<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>BxCore::OpenGL2D::Flush();</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
-<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>통합콜백처리</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>BxCore::System::ForSystem_CallbackRun();</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>자식프로세스의<sp/>실행</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsChildProcessRun<sp/>&amp;&amp;<sp/>BxCore::System::ForSystem_HasChildProcess())</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsChildProcessRun<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::System::ForSystem_RunChildProcess(ProcedureWithYield);</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::System::ForSystem_ClearChildProcess();</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsChildProcessRun<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>텔렉스<sp/>트랜잭션시도</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>BxTelex::HQ::TryTransaction();</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>프레임카운트<sp/>진행</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>++BxCore::Main::ForMain_LetUpdateCount();</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DoRender)<sp/>++BxCore::Main::ForMain_LetRenderCount();</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>풀링객체<sp/>해제</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>BxPoolGlobal::UnbindAll();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>스레드저장소<sp/>해제</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" kindref="member" tooltip="현 스레드상의 저장소 전체종료 ">BxCore::Thread::UnbindStorageAll</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"></codeline>
+<codeline lineno="100"><highlight class="normal">local_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ProcedureWithYield(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sleep)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>global_data<sp/>uhuge<sp/>LastTime<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhuge<sp/>LimitTime<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>()<sp/>+<sp/>sleep;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kindref="member" tooltip="어플종료 요청여부 ">BxCore::System::IsQuit</ref>())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhuge<sp/>CurTime<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(LastTime<sp/>+<sp/>BxCore::Main::GetCurrentFrameTime()<sp/>&lt;<sp/>CurTime)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LastTime<sp/>=<sp/>CurTime<sp/>-<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>(CurTime<sp/>-<sp/>(LastTime<sp/>+<sp/>BxCore::Main::GetCurrentFrameTime())),</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::Main::GetCurrentFrameTime());</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(0);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Procedure())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sleep)<sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(1);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>()<sp/>&lt;<sp/>LimitTime);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"></codeline>
+<codeline lineno="123"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Procedure()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kindref="member" tooltip="어플종료 요청여부 ">BxCore::System::IsQuit</ref>()<sp/>||<sp/>BxScene::__GetActiveSceneAllCount__()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoRender<sp/>=<sp/>BxScene::__OnEventUpdateRender__(*Draw);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>Draw-&gt;<ref refid="class_bx_draw_1a52abea75c29b2a54bdf024e19d92be7e" kindref="member" tooltip="백버퍼를 화면에 출력 ">Flush</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>__BX_OPENGL</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>BxCore::OpenGL2D::Flush();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>통합콜백처리</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>BxCore::System::ForSystem_CallbackRun();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>자식프로세스의<sp/>실행</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsChildProcessRun<sp/>&amp;&amp;<sp/>BxCore::System::ForSystem_HasChildProcess())</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsChildProcessRun<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::System::ForSystem_RunChildProcess(ProcedureWithYield);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::System::ForSystem_ClearChildProcess();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsChildProcessRun<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>텔렉스<sp/>트랜잭션시도</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>BxTelex::HQ::TryTransaction();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>프레임카운트<sp/>진행</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>++BxCore::Main::ForMain_LetUpdateCount();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DoRender)<sp/>++BxCore::Main::ForMain_LetRenderCount();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxMain.cpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxMain.cpp"/>
   </compounddef>
 </doxygen>

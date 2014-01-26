@@ -5,90 +5,86 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="550">
-        <label>stdarg.h</label>
-      </node>
-      <node id="544">
-        <label>BxXml.hpp</label>
-        <link refid="BxXml.hpp"/>
-        <childnode refid="545" relation="include">
+      <node id="538">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="539" relation="include">
         </childnode>
-      </node>
-      <node id="552">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="549" relation="include">
+        <childnode refid="546" relation="include">
         </childnode>
-      </node>
-      <node id="548">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="549" relation="include">
-        </childnode>
-        <childnode refid="551" relation="include">
+        <childnode refid="547" relation="include">
         </childnode>
       </node>
       <node id="547">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="548" relation="include">
-        </childnode>
-      </node>
-      <node id="553">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="547" relation="include">
-        </childnode>
-        <childnode refid="554" relation="include">
-        </childnode>
-      </node>
-      <node id="545">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="546" relation="include">
-        </childnode>
-        <childnode refid="553" relation="include">
-        </childnode>
-        <childnode refid="554" relation="include">
-        </childnode>
-      </node>
-      <node id="551">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="552" relation="include">
-        </childnode>
-      </node>
-      <node id="554">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="548" relation="include">
+        <childnode refid="544" relation="include">
         </childnode>
-        <childnode refid="547" relation="include">
+      </node>
+      <node id="541">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="542" relation="include">
+        </childnode>
+      </node>
+      <node id="539">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>BxXml.hpp</label>
+        <link refid="BxXml.hpp"/>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="544">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="543">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="543" relation="include">
         </childnode>
       </node>
       <node id="546">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="540" relation="include">
+        </childnode>
         <childnode refid="547" relation="include">
         </childnode>
-        <childnode refid="552" relation="include">
+      </node>
+      <node id="540">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="541" relation="include">
         </childnode>
       </node>
-      <node id="549">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="550" relation="include">
-        </childnode>
+      <node id="545">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="555">
+      <node id="548">
         <label>BxXml.hpp</label>
         <link refid="BxXml.hpp"/>
-        <childnode refid="556" relation="include">
+        <childnode refid="549" relation="include">
         </childnode>
       </node>
-      <node id="556">
+      <node id="549">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
@@ -100,8 +96,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxString.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxString.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="class_bx_xml" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_xml" kindref="compound" tooltip="XML 관리 ">BxXml</ref></highlight></codeline>
 <codeline lineno="6"><highlight class="normal">{</highlight></codeline>
@@ -111,18 +107,18 @@
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DEFINE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefineTag(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tagName)</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].TagName<sp/>=<sp/>tagName;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefineAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>attbName,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intDefault)</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbName[attbID]<sp/>=<sp/>attbName;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbValue[attbID].Format(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>intDefault);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefineAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>attbName,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>strDefault)</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbName[attbID]<sp/>=<sp/>attbName;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbValue[attbID]<sp/>=<sp/>strDefault;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -130,7 +126,7 @@
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>READ</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadBegin(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName)</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(fileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(File)</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -147,7 +143,7 @@
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReadEnd()</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TagStack.Reset();</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete_Array(Xml);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Xml<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -157,7 +153,7 @@
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NextTag(State*<sp/>state<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TagStack.Reset();</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Focus<sp/>=<sp/>TagStack[0].Read(Xml,<sp/>Focus,<sp/>state);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>CompareName<sp/>=<sp/>TagStack[0].TagName;</highlight></codeline>
@@ -168,7 +164,7 @@
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>intValue)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagID<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>Tag[TagID];</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneTag.AttbName.Length()<sp/>&lt;=<sp/>attbID)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -184,7 +180,7 @@
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>&amp;<sp/>strValue)</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagID<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>Tag[TagID];</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneTag.AttbName.Length()<sp/>&lt;=<sp/>attbID)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -200,7 +196,7 @@
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;byte&gt;</ref>&amp;<sp/>hexValue)</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagID<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>Tag[TagID];</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneTag.AttbName.Length()<sp/>&lt;=<sp/>attbID)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -216,7 +212,7 @@
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadContent(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>&amp;<sp/>content)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>READ);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagID<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>Tag[TagID];</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>=<sp/>TagStack[0].Content;</highlight></codeline>
@@ -226,7 +222,7 @@
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WRITE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>WriteBegin(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(fileName,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!File)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mode<sp/>=<sp/>WRITE;</highlight></codeline>
@@ -234,7 +230,7 @@
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteEnd()</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(File)</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(File);</highlight></codeline>
@@ -245,7 +241,7 @@
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PushTag(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagID)</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
@@ -259,7 +255,7 @@
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PopTag()</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
@@ -270,7 +266,7 @@
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intValue)</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
@@ -279,7 +275,7 @@
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>strValue)</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
@@ -288,7 +284,7 @@
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;byte&gt;</ref>&amp;<sp/>hexValue)</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
@@ -304,7 +300,7 @@
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteContent(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>content)</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>WRITE);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
@@ -463,63 +459,62 @@
 <codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OPEN:</highlight></codeline>
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OPENCLOSE:</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kindref="member" tooltip="sprintf형태로 스트링 생성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;%s&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>TagName);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(TagName));</highlight></codeline>
 <codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
 <codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>AttbName.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kindref="member" tooltip="sprintf형태로 스트링 생성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>%s=\&quot;%s\&quot;&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>AttbName[i],<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>AttbValue[i]);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:<sp/>&lt;A&gt;=&lt;DQ&gt;&lt;A&gt;&lt;DQ&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(AttbName[i],<sp/>AttbValue[i]));</highlight></codeline>
 <codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
 <codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kindref="member" tooltip="sprintf형태로 스트링 생성 ">Format</ref>((state<sp/>==<sp/>OPEN)?<sp/></highlight><highlight class="stringliteral">&quot;&gt;%s&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;/&gt;%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(Content.GetLength())?<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Content<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
-<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CLOSE:</highlight></codeline>
-<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1a49d7bab9efab049b76b36df70dd759cd" kindref="member" tooltip="sprintf형태로 스트링 생성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;/%s&gt;\r\n&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>TagName);</highlight></codeline>
-<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
-<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(file,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Sum,<sp/>Sum.<ref refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kindref="member" tooltip="길이 구하기 ">GetLength</ref>());</highlight></codeline>
-<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>&lt;<sp/>Content.GetLength());</highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AtoH(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>&amp;<sp/>strValue,<sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;byte&gt;</ref>&amp;<sp/>hexValue)</highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hexValue.Reset();</highlight></codeline>
-<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>String<sp/>=<sp/>strValue;</highlight></codeline>
-<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length<sp/>=<sp/>strValue.<ref refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kindref="member" tooltip="길이 구하기 ">GetLength</ref>();</highlight></codeline>
-<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>Length;<sp/>i<sp/>+=<sp/>2)</highlight></codeline>
-<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hexValue[LAST]<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i<sp/>-<sp/>1;<sp/>j<sp/>&lt;=<sp/>i;<sp/>++j)</highlight></codeline>
-<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OneValue<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>String[j]<sp/>&amp;&amp;<sp/>String[j]<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneValue<sp/>=<sp/>String[j]<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>String[j]<sp/>&amp;&amp;<sp/>String[j]<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneValue<sp/>=<sp/>String[j]<sp/>-<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>+<sp/>10;</highlight></codeline>
-<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>String[j]<sp/>&amp;&amp;<sp/>String[j]<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneValue<sp/>=<sp/>String[j]<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>+<sp/>10;</highlight></codeline>
-<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hexValue[END]<sp/>=<sp/>(hexValue[END]<sp/>&lt;&lt;<sp/>4)<sp/>|<sp/>OneValue;</highlight></codeline>
-<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="411"><highlight class="normal"></highlight></codeline>
-<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{DEFINE,<sp/>READ,<sp/>WRITE}<sp/>Mode;</highlight></codeline>
-<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;Unit&gt;</ref><sp/>Tag;</highlight></codeline>
-<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;Unit&gt;</ref><sp/>TagStack;</highlight></codeline>
-<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Xml;</highlight></codeline>
-<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Focus;</highlight></codeline>
-<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TagID;</highlight></codeline>
-<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>id_file<sp/>File;</highlight></codeline>
-<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsWriting;</highlight></codeline>
-<codeline lineno="420"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW((state<sp/>==<sp/>OPEN)?<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;/&gt;&quot;</highlight><highlight class="normal">,<sp/>(Content.GetLength())?<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Content<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CLOSE:</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;FS&gt;&lt;A&gt;&gt;&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(TagName));</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(file,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Sum,<sp/>Sum.<ref refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kindref="member" tooltip="길이 구하기 ">GetLength</ref>());</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>&lt;<sp/>Content.GetLength());</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AtoH(<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>&amp;<sp/>strValue,<sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;byte&gt;</ref>&amp;<sp/>hexValue)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hexValue.Reset();</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>String<sp/>=<sp/>strValue;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length<sp/>=<sp/>strValue.<ref refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kindref="member" tooltip="길이 구하기 ">GetLength</ref>();</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>Length;<sp/>i<sp/>+=<sp/>2)</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hexValue[LAST]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i<sp/>-<sp/>1;<sp/>j<sp/>&lt;=<sp/>i;<sp/>++j)</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OneValue<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>String[j]<sp/>&amp;&amp;<sp/>String[j]<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneValue<sp/>=<sp/>String[j]<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>String[j]<sp/>&amp;&amp;<sp/>String[j]<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneValue<sp/>=<sp/>String[j]<sp/>-<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>+<sp/>10;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>String[j]<sp/>&amp;&amp;<sp/>String[j]<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneValue<sp/>=<sp/>String[j]<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>+<sp/>10;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hexValue[END]<sp/>=<sp/>(hexValue[END]<sp/>&lt;&lt;<sp/>4)<sp/>|<sp/>OneValue;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{DEFINE,<sp/>READ,<sp/>WRITE}<sp/>Mode;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;Unit&gt;</ref><sp/>Tag;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;Unit&gt;</ref><sp/>TagStack;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Xml;</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Focus;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TagID;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>id_file<sp/>File;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsWriting;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxXml.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxXml.hpp"/>
   </compounddef>
 </doxygen>

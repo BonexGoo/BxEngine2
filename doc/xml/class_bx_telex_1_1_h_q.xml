@@ -14,13 +14,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="81" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="148" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="81" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="148" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1aa6b7c1320c391b6dc051eae92fbe83fc" prot="private" static="no" mutable="no">
-        <type>string</type>
-        <definition>string BxTelex::HQ::Domain</definition>
+      <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1a7bd8ea00c518a71e00f4810f85f01d4e" prot="private" static="no" mutable="no">
+        <type>string_rw</type>
+        <definition>string_rw BxTelex::HQ::Domain</definition>
         <argsstring></argsstring>
         <name>Domain</name>
         <briefdescription>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="149" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="149" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="149" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1a02db609beabeaed0758ca1d4660b3fab" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="150" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="150" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="150" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1aba3327a3af96b1a3d42e1275813400e9" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="151" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="151" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="151" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1a6c18faa8c0e706fb7db9b8330e56409b" prot="private" static="no" mutable="no">
         <type>id_socket</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="152" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="152" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="152" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1afbd213baa3222adbdfa429ff5a412f07" prot="private" static="no" mutable="no">
         <type>uhuge</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="153" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="153" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="153" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1a3f42e0450beb69cb0971fcc5a2e1df95" prot="private" static="no" mutable="no">
         <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="class_bx_telex" kindref="compound">BxTelex</ref> *, 16 &gt;</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="154" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="154" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="154" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_telex_1_1_h_q_1a8007cf23d3229fff2509e7ee390ad1bd" prot="private" static="no" mutable="no">
         <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; int, 4 &gt;</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="155" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="155" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="155" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="155" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="157" bodyend="157"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="157" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a8531fe1066c7aa939f1930fd49798ea0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="158" bodyend="163"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="158" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="158" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a71474d67474f0927bb6322bbcc8bcb80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func <ref refid="class_bx_var" kindref="compound">BxVarHQ</ref> &amp;</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="164" bodyend="164"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="164" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="164" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a0c46ae09a5d8a6e84aace4f61cf33873" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="353" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="353" bodyend="372"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="353" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="353" bodyend="372"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1ad4386c8abab7f158aa412cf0e4d0eafa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="373" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="373" bodyend="378"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="373" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="373" bodyend="378"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a2b0d772ff323d9d69bd8f4f05a7b4d98" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="379" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="379" bodyend="390"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="379" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="379" bodyend="390"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1ac1d97f9c9ef1dc4d1541e990c0109358" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="391" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="391" bodyend="395"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="391" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="391" bodyend="395"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1ac7c71f757d0e234bce2c95f18ec1b4a1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -233,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="396" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="396" bodyend="404"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="396" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="396" bodyend="404"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="166" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="166" bodyend="173"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="166" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="166" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a8592375484787de06b933a5602049321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool</type>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="174" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="174" bodyend="178"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="174" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="174" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1ad25f16a81bc7e62c596019251e5413db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="180" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="180" bodyend="185"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="180" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="180" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a0aac58ba10ae3a1fd0135ef1046fad0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="186" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="186" bodyend="201"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="186" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="186" bodyend="201"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_telex_1_1_h_q_1a052ddb8bbc8bb44c31390e483a38037f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -320,14 +320,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="213" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="213" bodyend="352"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="213" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="213" bodyend="352"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" bodystart="146" bodyend="405"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="147" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" bodystart="146" bodyend="405"/>
     <listofallmembers>
       <member refid="class_bx_telex_1_1_h_q_1a0c46ae09a5d8a6e84aace4f61cf33873" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>_PushByteStream</name></member>
       <member refid="class_bx_telex_1_1_h_q_1ad4386c8abab7f158aa412cf0e4d0eafa" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>_SendBegin</name></member>
@@ -339,7 +339,7 @@
       <member refid="class_bx_telex_1_1_h_q_1a1199314c018340ad8e34312fa80835c3" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>BxPool&lt; HQ &gt;</name></member>
       <member refid="class_bx_telex_1_1_h_q_1a8007cf23d3229fff2509e7ee390ad1bd" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>DestroyedTelexIDs</name></member>
       <member refid="class_bx_telex_1_1_h_q_1a8592375484787de06b933a5602049321" prot="public" virt="non-virtual"><scope>BxTelex::HQ</scope><name>Detach</name></member>
-      <member refid="class_bx_telex_1_1_h_q_1aa6b7c1320c391b6dc051eae92fbe83fc" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>Domain</name></member>
+      <member refid="class_bx_telex_1_1_h_q_1a7bd8ea00c518a71e00f4810f85f01d4e" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>Domain</name></member>
       <member refid="class_bx_telex_1_1_h_q_1aba3327a3af96b1a3d42e1275813400e9" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>Freq</name></member>
       <member refid="class_bx_telex_1_1_h_q_1a2922e1459300cdbd7e792e818b827fd9" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>HQ</name></member>
       <member refid="class_bx_telex_1_1_h_q_1a71474d67474f0927bb6322bbcc8bcb80" prot="private" virt="non-virtual"><scope>BxTelex::HQ</scope><name>Pool</name></member>

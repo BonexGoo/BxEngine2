@@ -1,11 +1,10 @@
-#pragma once
-#include <BxType.hpp>
+ï»¿#pragma once
 #include <BxThrow.hpp>
 
 //! \brief BxEngine Core-API
 namespace BxCore
 {
-	//! \brief MainÆÄÆ®
+	//! \brief MainíŒŒíŠ¸
 	namespace Main
 	{
 		void EventAttach(void* drawclass);
@@ -19,526 +18,484 @@ namespace BxCore
 		void PullFrameDelay();
 	}
 
-	//! \brief SystemÆÄÆ®
+	//! \brief SystemíŒŒíŠ¸
 	namespace System
 	{
 		/*!
-		\brief ¾îÇÃÁ¾·á ¿äÃ»¿©ºÎ
-		\return true-Á¾·á°¡ ¿äÃ»µÊ, false-Á¾·á¿äÃ» ¾øÀ½
+		\brief ì–´í”Œì¢…ë£Œ ìš”ì²­ì—¬ë¶€
+		\return true-ì¢…ë£Œê°€ ìš”ì²­ë¨, false-ì¢…ë£Œìš”ì²­ ì—†ìŒ
 		\see DoQuit
 		*/
 		bool IsQuit();
 
 		/*!
-		\brief ¾îÇÃÁ¾·á ¿äÃ»
+		\brief ì–´í”Œì¢…ë£Œ ìš”ì²­
 		\see IsQuit
 		*/
 		void DoQuit();
 
 		/*!
-		\brief ÇÁ·Î¼¼½º ½½¸³(¹Ğ¸° ¼ÒÄÏ/Å°ÀÌº¥Æ®µî Ã³¸®)
-		\param ms : ½¯ ½Ã°£(1/1000ÃÊ)
+		\brief í”„ë¡œì„¸ìŠ¤ ìŠ¬ë¦½(ë°€ë¦° ì†Œì¼“/í‚¤ì´ë²¤íŠ¸ë“± ì²˜ë¦¬)
+		\param ms : ì‰´ ì‹œê°„(1/1000ì´ˆ)
 		*/
 		void Sleep(int ms);
 
 		/*!
-		\brief ÇöÀç½Ã°£À» ¹Ğ¸®ÃÊ·Î ±¸ÇÏ±â(ÃµºĞÀÇ 1ÃÊ)
-		\return 1/1,000ÃÊ ´ÜÀ§·Î °è»êµÈ ÇöÀç½Ã°£(UTC±âÁØ)
+		\brief í˜„ì¬ì‹œê°„ì„ ë°€ë¦¬ì´ˆë¡œ êµ¬í•˜ê¸°(ì²œë¶„ì˜ 1ì´ˆ)
+		\return 1/1,000ì´ˆ ë‹¨ìœ„ë¡œ ê³„ì‚°ëœ í˜„ì¬ì‹œê°„(UTCê¸°ì¤€)
 		*/
 		uhuge GetTimeMilliSecond();
 
 		/*!
-		\brief ÇöÀç½Ã°£À» ³ª³ëÃÊ·Î ±¸ÇÏ±â(10¾ïºĞÀÇ 1ÃÊ)
-		\return 1/1,000,000,000ÃÊ ´ÜÀ§·Î °è»êµÈ ÇöÀç½Ã°£
+		\brief í˜„ì¬ì‹œê°„ì„ ë‚˜ë…¸ì´ˆë¡œ êµ¬í•˜ê¸°(10ì–µë¶„ì˜ 1ì´ˆ)
+		\return 1/1,000,000,000ì´ˆ ë‹¨ìœ„ë¡œ ê³„ì‚°ëœ í˜„ì¬ì‹œê°„
 		*/
 		uhuge GetTimeNanoSecond();
 
 		/*!
-		\brief ÇöÀç½Ã°£À» À¯»ç ¸¶ÀÌÅ©·ÎÃÊ(³ª³ëÃÊ>>10)·Î ±¸ÇÏ±â
-		\return 1/976,562ÃÊ ´ÜÀ§·Î °è»êµÈ ÇöÀç½Ã°£
+		\brief í˜„ì¬ì‹œê°„ì„ ìœ ì‚¬ ë§ˆì´í¬ë¡œì´ˆ(ë‚˜ë…¸ì´ˆ>>10)ë¡œ êµ¬í•˜ê¸°
+		\return 1/976,562ì´ˆ ë‹¨ìœ„ë¡œ ê³„ì‚°ëœ í˜„ì¬ì‹œê°„
 		*/
 		uhuge GetTimeSimilarMicroSecond();
 
 		/*!
-		\brief ¸ÖÆ¼ÅÍÄ¡ °¡´É¿©ºÎ
-		\return true-°¡´É, false-ºÒ°¡´É
+		\brief ë©€í‹°í„°ì¹˜ ê°€ëŠ¥ì—¬ë¶€
+		\return true-ê°€ëŠ¥, false-ë¶ˆê°€ëŠ¥
 		*/
 		bool IsMultiTouchAvailable();
 
 		/*!
-		\brief ÅÍÄ¡ÀÇ ÇöÀç ´©¸§¿©ºÎ
-		\return true-´­·¯Áü, false-¾È´­·¯Áü
+		\brief í„°ì¹˜ì˜ í˜„ì¬ ëˆ„ë¦„ì—¬ë¶€
+		\return true-ëˆŒëŸ¬ì§, false-ì•ˆëˆŒëŸ¬ì§
 		*/
 		bool IsTouchDown();
 
 		/*!
-		\brief ÅÍÄ¡ÀÌº¥Æ® Á¦ÀÛ
-		\param type : ÀÌº¥Æ®Å¸ÀÔ
-		\param x : XÁÂÇ¥°ª
-		\param y : YÁÂÇ¥°ª
+		\brief í„°ì¹˜ì´ë²¤íŠ¸ ì œì‘
+		\param type : ì´ë²¤íŠ¸íƒ€ì…
+		\param x : Xì¢Œí‘œê°’
+		\param y : Yì¢Œí‘œê°’
 		*/
 		void MakeTouchEvent(systouchtype type, int x, int y);
 
 		/*!
-		\brief Æ¯Á¤ Å°ÀÇ ÇöÀç ´©¸§¿©ºÎ
-		\param key : È®ÀÎÇÒ Å°°ª
-		\return true-´­·¯Áü, false-¾È´­·¯Áü
+		\brief íŠ¹ì • í‚¤ì˜ í˜„ì¬ ëˆ„ë¦„ì—¬ë¶€
+		\param key : í™•ì¸í•  í‚¤ê°’
+		\return true-ëˆŒëŸ¬ì§, false-ì•ˆëˆŒëŸ¬ì§
 		*/
 		bool IsKeyDown(keykind key);
 
 		/*!
-		\brief È¯°æ¼³Á¤°ª Á¸Àç¿©ºÎ
-		\param type : º¯¼öÅ¸ÀÔ
-		\param name : º¯¼ö¸í
-		\return true-ÀÖÀ½, false-¾øÀ½
+		\brief í™˜ê²½ì„¤ì •ê°’ ì¡´ì¬ì—¬ë¶€
+		\param type : ë³€ìˆ˜íƒ€ì…
+		\param name : ë³€ìˆ˜ëª…
+		\return true-ìˆìŒ, false-ì—†ìŒ
 		*/
 		bool IsExistConfig(keyword type, string name);
 
 		/*!
-		\brief CheckÇü È¯°æ¼³Á¤°ª ºÒ·¯¿À±â
-		\param name : º¯¼ö¸í
-		\param defaultCheck : µğÆúÆ®°ª
-		\return ÇØ´ç ¼³Á¤°ª
+		\brief Checkí˜• í™˜ê²½ì„¤ì •ê°’ ë¶ˆëŸ¬ì˜¤ê¸°
+		\param name : ë³€ìˆ˜ëª…
+		\param defaultCheck : ë””í´íŠ¸ê°’
+		\return í•´ë‹¹ ì„¤ì •ê°’
 		*/
 		bool GetConfigCheck(string name, bool defaultCheck);
 
 		/*!
-		\brief NumberÇü È¯°æ¼³Á¤°ª ºÒ·¯¿À±â
-		\param name : º¯¼ö¸í
-		\param defaultNumber : µğÆúÆ®°ª
-		\return ÇØ´ç ¼³Á¤°ª
+		\brief Numberí˜• í™˜ê²½ì„¤ì •ê°’ ë¶ˆëŸ¬ì˜¤ê¸°
+		\param name : ë³€ìˆ˜ëª…
+		\param defaultNumber : ë””í´íŠ¸ê°’
+		\return í•´ë‹¹ ì„¤ì •ê°’
 		*/
 		int GetConfigNumber(string name, int defaultNumber);
 
 		/*!
-		\brief StringÇü È¯°æ¼³Á¤°ª ºÒ·¯¿À±â
-		\param name : º¯¼ö¸í
-		\param defaultString : µğÆúÆ®°ª
-		\return ÇØ´ç ¼³Á¤°ª
+		\brief Stringí˜• í™˜ê²½ì„¤ì •ê°’ ë¶ˆëŸ¬ì˜¤ê¸°
+		\param name : ë³€ìˆ˜ëª…
+		\param defaultString : ë””í´íŠ¸ê°’
+		\return í•´ë‹¹ ì„¤ì •ê°’
 		*/
 		string _tmp_ GetConfigString(string name, string defaultString);
 
 		/*!
-		\brief ¸¶¸Ö·¹ÀÌµåÀÇ NumberÇü È¯°æ¼³Á¤°ª(icf/s3e) ºÒ·¯¿À±â
-		\param name : º¯¼ö¸í
-		\return ÇØ´ç ¼³Á¤°ª
+		\brief ë§ˆë©€ë ˆì´ë“œì˜ Numberí˜• í™˜ê²½ì„¤ì •ê°’(icf/s3e) ë¶ˆëŸ¬ì˜¤ê¸°
+		\param name : ë³€ìˆ˜ëª…
+		\return í•´ë‹¹ ì„¤ì •ê°’
 		*/
 		int GetPlatformConfigNumber(string name);
 
 		/*!
-		\brief ¸¶¸Ö·¹ÀÌµåÀÇ StringÇü È¯°æ¼³Á¤°ª(icf/s3e) ºÒ·¯¿À±â
-		\param name : º¯¼ö¸í
-		\return ÇØ´ç ¼³Á¤°ª
+		\brief ë§ˆë©€ë ˆì´ë“œì˜ Stringí˜• í™˜ê²½ì„¤ì •ê°’(icf/s3e) ë¶ˆëŸ¬ì˜¤ê¸°
+		\param name : ë³€ìˆ˜ëª…
+		\return í•´ë‹¹ ì„¤ì •ê°’
 		*/
 		string _tmp_ GetPlatformConfigString(string name);
 
 		/*!
-		\brief ½Ã¹Ä·¹ÀÌÅÍ À©µµ¿ìÀ§Ä¡¼³Á¤(µ¥½ºÅ©Å¾ ºôµåÀü¿ë)
-		\param x : À§Ä¡°ªX
-		\param y : À§Ä¡°ªY
+		\brief ì‹œë®¬ë ˆì´í„° ìœˆë„ìš°ìœ„ì¹˜ì„¤ì •(ë°ìŠ¤í¬íƒ‘ ë¹Œë“œì „ìš©)
+		\param x : ìœ„ì¹˜ê°’X
+		\param y : ìœ„ì¹˜ê°’Y
 		*/
 		void SetSimulatorWindowPos(int x, int y);
 
 		/*!
-		\brief ½Ã¹Ä·¹ÀÌÅÍ À©µµ¿ìÀ§Ä¡¾ò±â(µ¥½ºÅ©Å¾ ºôµåÀü¿ë)
-		\return À§Ä¡°ª
+		\brief ì‹œë®¬ë ˆì´í„° ìœˆë„ìš°ìœ„ì¹˜ì–»ê¸°(ë°ìŠ¤í¬íƒ‘ ë¹Œë“œì „ìš©)
+		\return ìœ„ì¹˜ê°’
 		*/
 		point GetSimulatorWindowPos();
 
 		/*!
-		\brief ½Ã¹Ä·¹ÀÌÅÍ Ä¿¼­À§Ä¡¾ò±â(µ¥½ºÅ©Å¾ ºôµåÀü¿ë)
-		\return À§Ä¡°ª
+		\brief ì‹œë®¬ë ˆì´í„° ì»¤ì„œìœ„ì¹˜ì–»ê¸°(ë°ìŠ¤í¬íƒ‘ ë¹Œë“œì „ìš©)
+		\return ìœ„ì¹˜ê°’
 		*/
 		point GetSimulatorCursorPos();
 
 		/*!
-		\brief ½Ã¹Ä·¹ÀÌÅÍ ÃÖ¼ÒÈ­ÇÏ±â(µ¥½ºÅ©Å¾ ºôµåÀü¿ë)
+		\brief ì‹œë®¬ë ˆì´í„° ìµœì†Œí™”í•˜ê¸°(ë°ìŠ¤í¬íƒ‘ ë¹Œë“œì „ìš©)
 		*/
 		void DoSimulatorMinimize();
 
 		/*!
-		\brief µğ¹ö±ëÄÚµå(MacroÇÔ¼öÀÎ BxAssert·Î »ç¿ë±ÇÀå)
-		\param name : ¿¡·¯³»¿ë
-		\param query : ÁúÀÇ³»¿ë
-		\param IsIgnore : ¹«½Ã¿©ºÎ
-		\param flag : Á¤»óµ¿ÀÛ¿©ºÎ(true-Á¤»óµ¿ÀÛ, false-¿À·ùµ¿ÀÛ)
-		\param file : ÇØ´çÆÄÀÏ¸í(__FILE__À» »ç¿ë)
-		\param line : ÇØ´çÁÙ¹øÈ£(__LINE__À» »ç¿ë)
-		\param func : ÇØ´çÁÙ¹øÈ£(__FUNCTION__¸¦ »ç¿ë)
+		\brief ì‹¤í–‰ì¤‘ì§€(Macroí•¨ìˆ˜ì¸ BxASSERTë¡œ ì‚¬ìš©ê¶Œì¥)
+		\param name : ì—ëŸ¬ë‚´ìš©
+		\param query : ì§ˆì˜ë‚´ìš©
+		\return ì•ìœ¼ë¡œë„ ë³¸ ì¤‘ì§€ë¥¼ ê³„ì† ìˆ˜í–‰í• ì§€ì˜ ì—¬ë¶€(true-ìˆ˜í–‰, false-ë¬´ì‹œ)
 		*/
-		void Assert(string name, string query, bool& IsIgnore, bool flag, string file, int line, string func);
+		bool Break(string name, string query __DEBUG_PRM__);
 
 		/*!
-		\brief OSÀÌ¸§ ±¸ÇÏ±â
-		\return ÀÚ±â ÇÃ·§ÆûÀÇ OSÀÌ¸§(¿¹: SYMBIAN, BREW, WINDOWS, WINMOBILE, LINUX, WIPI, IPHONE, ANDROID)
+		\brief ì¶œë ¥ì°½ì— ìŠ¤íŠ¸ë§ê¸°ë¡(Macroí•¨ìˆ˜ì¸ BxTRACEë¡œ ì‚¬ìš©ê¶Œì¥)
+		\param map : ìŠ¤íŠ¸ë§ë§µ ìŠ¤í¬ë¦½íŠ¸(ì‹ë³„ë¬¸ìëŠ” "<>:")
+		\param args : mapì— ì“°ì¼ ê°€ë³€ì¸ì
+		*/
+		void Trace(string map, const BxThrow& args = BxThrow::zero());
+
+		/*!
+		\brief CP949 ìŠ¤íŠ¸ë§ìƒìˆ˜ë¡œë¶€í„° UTF8 ìŠ¤íŠ¸ë§ìƒìˆ˜ì–»ê¸° (Macroí•¨ìˆ˜ì¸ W1ì„ ì‚¬ìš©ê¶Œì¥)
+		\param cp949 : CP949 ìŠ¤íŠ¸ë§ìƒìˆ˜
+		\param size : cp949ì˜ ë°”ì´íŠ¸ì‚¬ì´ì¦ˆ
+		\return UTF8 ìŠ¤íŠ¸ë§ìƒìˆ˜
+		*/
+		string const GetUTF8LiteralByCP949(string const cp949, const int size);
+
+		/*!
+		\brief UTF8 ìŠ¤íŠ¸ë§ìƒìˆ˜ë¡œë¶€í„° CP949 ìŠ¤íŠ¸ë§ìƒìˆ˜ì–»ê¸° (Macroí•¨ìˆ˜ì¸ MBë¥¼ ì‚¬ìš©ê¶Œì¥)
+		\param utf8 : UTF8 ìŠ¤íŠ¸ë§ìƒìˆ˜
+		\param size : utf8ì˜ ë°”ì´íŠ¸ì‚¬ì´ì¦ˆ
+		\return CP949 ìŠ¤íŠ¸ë§ìƒìˆ˜
+		*/
+		string const GetCP949LiteralByUTF8(string const utf8, const int size);
+
+		/*!
+		\brief OSì´ë¦„ êµ¬í•˜ê¸°
+		\return ìê¸° í”Œë«í¼ì˜ OSì´ë¦„(ì˜ˆ: SYMBIAN, BREW, WINDOWS, WINMOBILE, LINUX, WIPI, IPHONE, ANDROID)
 		*/
 		string _tmp_ GetOSName();
 
 		/*!
-		\brief ¾ÆÅ°ÅØÃÄÀÌ¸§ ±¸ÇÏ±â
-		\return ÄÄÆÄÀÏµÈ ¾ÆÅ°ÅØÃÄÀÌ¸§(¿¹: ARM4T, ARM4, ARM5T, ARM5TE, ARM5TEJ, ARM6, ARM6K, ARM6T2, ARM6Z, ARM7, X86, PPC, AMD64, MIPS)
+		\brief ì•„í‚¤í…ì³ì´ë¦„ êµ¬í•˜ê¸°
+		\return ì»´íŒŒì¼ëœ ì•„í‚¤í…ì³ì´ë¦„(ì˜ˆ: ARM4T, ARM4, ARM5T, ARM5TE, ARM5TEJ, ARM6, ARM6K, ARM6T2, ARM6Z, ARM7, X86, PPC, AMD64, MIPS)
 		*/
 		string _tmp_ GetArchName();
 
 		/*!
-		\brief ÀåÄ¡ID ±¸ÇÏ±â
-		\param integerid : Á¤¼öÅ¸ÀÔ ÀåÄ¡ID ¹Ş±â
-		\return ½ºÆ®¸µÅ¸ÀÔ ÀåÄ¡ID
+		\brief ì¥ì¹˜ID êµ¬í•˜ê¸°
+		\param integerid : ì •ìˆ˜íƒ€ì… ì¥ì¹˜ID ë°›ê¸°
+		\return ìŠ¤íŠ¸ë§íƒ€ì… ì¥ì¹˜ID
 		*/
 		string _tmp_ GetDeviceID(int* integerid = nullptr);
 
 		/*!
-		\brief ÈŞ´ëÆù¹øÈ£ ±¸ÇÏ±â
-		\return ÀÚ½ÅÀÇ ÈŞ´ëÆù¹øÈ£(¿¹: 01022223333)
+		\brief íœ´ëŒ€í°ë²ˆí˜¸ êµ¬í•˜ê¸°
+		\return ìì‹ ì˜ íœ´ëŒ€í°ë²ˆí˜¸(ì˜ˆ: 01022223333)
 		*/
 		string _tmp_ GetPhoneNumber();
 
 		/*!
-		\brief ¾îÇÃÆĞÅ°Áö ±¸ÇÏ±â
-		\return ÀÚ½ÅÀÇ ¾îÇÃÆĞÅ°Áö(¿¹: com.bx.game)
+		\brief ì–´í”ŒíŒ¨í‚¤ì§€ êµ¬í•˜ê¸°
+		\return ìì‹ ì˜ ì–´í”ŒíŒ¨í‚¤ì§€(ì˜ˆ: com.bx.game)
 		*/
 		string _tmp_ GetAppPackage();
 
 		/*!
-		\brief ¾îÇÃÆĞÅ°Áö ÆÄÀÏÈ®ÀåÀÚ ±¸ÇÏ±â
-		\return ÆÄÀÏÈ®ÀåÀÚ(¿¹: .apk)
+		\brief ì–´í”ŒíŒ¨í‚¤ì§€ íŒŒì¼í™•ì¥ì êµ¬í•˜ê¸°
+		\return íŒŒì¼í™•ì¥ì(ì˜ˆ: .apk)
 		*/
 		string _tmp_ GetAppPackageExt();
 
 		/*!
-		\brief ¾îÇÃ¹öÀü ±¸ÇÏ±â
-		\return ÀÚ½ÅÀÇ ¾îÇÃ¹öÀü(¿¹: 1.0.0)
+		\brief ì–´í”Œë²„ì „ êµ¬í•˜ê¸°
+		\return ìì‹ ì˜ ì–´í”Œë²„ì „(ì˜ˆ: 1.0.0)
 		*/
 		string _tmp_ GetAppVersion();
 
 		/*!
-		\brief ¾îÇÃÀÇ Á¸Àç¿©ºÎ
-		\param packagename : ÆĞÅ°Áö¸í
-		\return Á¸Àç½Ã true, ¾øÀ»½Ã false
+		\brief ì–´í”Œì˜ ì¡´ì¬ì—¬ë¶€
+		\param packagename : íŒ¨í‚¤ì§€ëª…
+		\return ì¡´ì¬ì‹œ true, ì—†ì„ì‹œ false
 		\see GetAppPackage
 		*/
 		bool IsExistApp(string packagename);
 
 		/*!
-		\brief À¥ÆäÀÌÁö¿¬°á
-		\param url : ¿¬°áÇÒ À¥ÁÖ¼Ò(¿¹: market://search?q=pname:com.popcap.pvz, tstore://PRODUCT_VIEW/0000252470/1)
-		\param exitme : ÇöÀç ÇÁ·Î±×·¥ÀÇ Á¾·á¿©ºÎ
+		\brief ì›¹í˜ì´ì§€ì—°ê²°
+		\param url : ì—°ê²°í•  ì›¹ì£¼ì†Œ(ì˜ˆ: market://search?q=pname:com.popcap.pvz, tstore://PRODUCT_VIEW/0000252470/1)
+		\param exitme : í˜„ì¬ í”„ë¡œê·¸ë¨ì˜ ì¢…ë£Œì—¬ë¶€
 		*/
 		void PopupOSExecute(string url, bool exitme);
 
 		/*!
-		\brief °¡»óÅ°º¸µå·Î ½ºÆ®¸µ¾ò±â
-		\param result_str256 : ¾òÀ» ½ºÆ®¸µ(256Â¥¸® ¹è¿­±ÇÀå)
-		\param default_str : Ã³À½ ¿¡µğÅÍ¿¡ º¸ÀÏ ½ºÆ®¸µ
-		\param keyboard_name : °¡»óÅ°º¸µåÀÇ ÀÌ¸§
-		\param type : Å°º¸µåÁ¾·ù(±âº», ÀÌ¸ŞÀÏ, ¼ıÀÚ, ºñ¹ø, À¥ÁÖ¼Ò)
-		\return ¼º°ø¿©ºÎ(¹ÌÁö¿ø OS¸¦ °í·Á)
+		\brief ê°€ìƒí‚¤ë³´ë“œë¡œ ìŠ¤íŠ¸ë§ì–»ê¸°
+		\param result_str256 : ì–»ì„ ìŠ¤íŠ¸ë§(256ì§œë¦¬ ë°°ì—´ê¶Œì¥)
+		\param default_str : ì²˜ìŒ ì—ë””í„°ì— ë³´ì¼ ìŠ¤íŠ¸ë§
+		\param keyboard_name : ê°€ìƒí‚¤ë³´ë“œì˜ ì´ë¦„
+		\param type : í‚¤ë³´ë“œì¢…ë¥˜(ê¸°ë³¸, ì´ë©”ì¼, ìˆ«ì, ë¹„ë²ˆ, ì›¹ì£¼ì†Œ)
+		\return ì„±ê³µì—¬ë¶€(ë¯¸ì§€ì› OSë¥¼ ê³ ë ¤)
 		*/
 		bool PopupOSKeyboard(string_rw result_str256, string default_str = "", string keyboard_name = "", oskeyboardtype type = oskeyboardtype_base);
 
 		/*!
-		\brief ÇÁ·¹ÀÓ´ÜÀ§ Á¤±âÀû Äİ¹éµî·Ï(ÂüÁ¶½Ä)
-		\param method : Äİ¹éÇÔ¼ö(È£ÃâµÈ Äİ¹éÇÔ¼ö¿¡¼­ false¸®ÅÏ½Ã ÇØÁ¦)
-		\param data : µ¥ÀÌÅÍ¿øº»
-		\param datasize : -1Àº ÂüÁ¶½Ä, 0º¸´Ù °°°Å³ª Å©¸é º¹»ç½Ä(false¸®ÅÏ½Ã ÇÔ²² ÇØÁ¦)
+		\brief í”„ë ˆì„ë‹¨ìœ„ ì •ê¸°ì  ì½œë°±ë“±ë¡(ì°¸ì¡°ì‹)
+		\param method : ì½œë°±í•¨ìˆ˜(í˜¸ì¶œëœ ì½œë°±í•¨ìˆ˜ì—ì„œ falseë¦¬í„´ì‹œ í•´ì œ)
+		\param data : ë°ì´í„°ì›ë³¸
+		\param datasize : -1ì€ ì°¸ì¡°ì‹, 0ë³´ë‹¤ ê°™ê±°ë‚˜ í¬ë©´ ë³µì‚¬ì‹(falseë¦¬í„´ì‹œ í•¨ê»˜ í•´ì œ)
 		*/
 		void AddCallback(callback_frame method, int value, void* data, int datasize = -1);
 
 		/*!
-		\brief ÀÚ½ÄÇÁ·Î¼¼½ºÀÇ ½ÇÇà
-		\param process : ÇÁ·Î¼¼½º¸¦ ÁøÇà½ÃÅ³ Äİ¹éÇÔ¼ö
-		\return ½ÇÇà¿©ºÎ(¿©·¯°³ÀÇ ÀÚ½ÄÇÁ·Î¼¼½º°¡ ½ÇÇàµÉ ¼ø ¾øÀ¸¹Ç·Î falseÀÌ¸é ½ÇÇà°ÅÀı)
+		\brief ìì‹í”„ë¡œì„¸ìŠ¤ì˜ ì‹¤í–‰
+		\param process : í”„ë¡œì„¸ìŠ¤ë¥¼ ì§„í–‰ì‹œí‚¬ ì½œë°±í•¨ìˆ˜
+		\return ì‹¤í–‰ì—¬ë¶€(ì—¬ëŸ¬ê°œì˜ ìì‹í”„ë¡œì„¸ìŠ¤ê°€ ì‹¤í–‰ë  ìˆœ ì—†ìœ¼ë¯€ë¡œ falseì´ë©´ ì‹¤í–‰ê±°ì ˆ)
 		*/
 		bool BeginChildProcess(callback_process process);
 
 		/*!
-		\brief JAVAÅ¬·¡½º Á¸ÀçÈ®ÀÎ
-		\param classpath : Å¬·¡½ºÁÖ¼Ò(¿¹: com/abc/ABC)
-		\return Á¸Àç½Ã true, ¾øÀ»½Ã false
+		\brief JAVAí´ë˜ìŠ¤ ì¡´ì¬í™•ì¸
+		\param classpath : í´ë˜ìŠ¤ì£¼ì†Œ(ì˜ˆ: com/abc/ABC)
+		\return ì¡´ì¬ì‹œ true, ì—†ì„ì‹œ false
 		*/
 		bool IsExistClassJNI(string classpath);
 
 		/*!
-		\brief C¡æJAVA Á¤ÀûÇÔ¼öÈ£Ãâ
-		\param classpath : Å¬·¡½ºÁÖ¼Ò(¿¹: com/abc/ABC)
-		\param methodname : ÇÔ¼öÀÌ¸§
-		\param param1_str1024 : Àü´ŞÇÒ ½ºÆ®¸µ
-		\param param2 : Àü´ŞÇÒ »ó¼ö
-		\return JAVAÇÔ¼ö¸®ÅÏ°ª, -90001¿¡¼­ -90002´Â JNI¿¬°á½ÇÆĞ, -90003Àº classpath¾øÀ½
+		\brief Câ†’JAVA ì •ì í•¨ìˆ˜í˜¸ì¶œ
+		\param classpath : í´ë˜ìŠ¤ì£¼ì†Œ(ì˜ˆ: com/abc/ABC)
+		\param methodname : í•¨ìˆ˜ì´ë¦„
+		\param param1_str1024 : ì „ë‹¬í•  ìŠ¤íŠ¸ë§
+		\param param2 : ì „ë‹¬í•  ìƒìˆ˜
+		\return JAVAí•¨ìˆ˜ë¦¬í„´ê°’, -90001ì—ì„œ -90002ëŠ” JNIì—°ê²°ì‹¤íŒ¨, -90003ì€ classpathì—†ìŒ
 		*/
 		int CallStaticMethodJNI(string classpath, string methodname, string param1_str1024, int param2);
 
 		/*!
-		\brief JAVA¡æC Äİ¹éµî·Ï(ÃÖ´ë 8°³±îÁö µî·Ï)
-		\param classpath : Å¬·¡½ºÁÖ¼Ò(¿¹: com/abc/ABC)
-		\param methodname : ÇÔ¼öÀÌ¸§
-		\param methodCB : Äİ¹éÇÔ¼ö
-		\return 0-¼º°ø, -90001¿¡¼­ -90002´Â JNI¿¬°á½ÇÆĞ, -90003Àº classpath¾øÀ½, -90004´Â methodname¾øÀ½, -90005´Â Äİ¹éµî·Ï¼ö·®ÃÊ°ú
+		\brief JAVAâ†’C ì½œë°±ë“±ë¡(ìµœëŒ€ 8ê°œê¹Œì§€ ë“±ë¡)
+		\param classpath : í´ë˜ìŠ¤ì£¼ì†Œ(ì˜ˆ: com/abc/ABC)
+		\param methodname : í•¨ìˆ˜ì´ë¦„
+		\param methodCB : ì½œë°±í•¨ìˆ˜
+		\return 0-ì„±ê³µ, -90001ì—ì„œ -90002ëŠ” JNIì—°ê²°ì‹¤íŒ¨, -90003ì€ classpathì—†ìŒ, -90004ëŠ” methodnameì—†ìŒ, -90005ëŠ” ì½œë°±ë“±ë¡ìˆ˜ëŸ‰ì´ˆê³¼
 		*/
 		int AddCallbackJNI(string classpath, string methodname, callback_jni methodCB);
 
 		/*!
-		\brief EDK¼ö½Å¿ë Äİ¹éµî·Ï(¾î¶² ½º·¹µå¿¡¼­ È£Ãâ´çÇÏ´øÁö ¿£Áø½º·¹µå·Î ºñµ¿±â¼ö½Å)
-		\param methodCB : Äİ¹éÇÔ¼ö
-		\return EDK¼ö½Å¿ë ³»ºÎÇÔ¼ö Àü´Ş
+		\brief EDKìˆ˜ì‹ ìš© ì½œë°±ë“±ë¡(ì–´ë–¤ ìŠ¤ë ˆë“œì—ì„œ í˜¸ì¶œë‹¹í•˜ë˜ì§€ ì—”ì§„ìŠ¤ë ˆë“œë¡œ ë¹„ë™ê¸°ìˆ˜ì‹ )
+		\param methodCB : ì½œë°±í•¨ìˆ˜
+		\return EDKìˆ˜ì‹ ìš© ë‚´ë¶€í•¨ìˆ˜ ì „ë‹¬
 		*/
 		callback_edk SetCallbackEDK(callback_edk methodCB);
 	}
 
-	//! \brief SurfaceÆÄÆ®
+	//! \brief SurfaceíŒŒíŠ¸
 	namespace Surface
 	{
 		/*!
-		\brief È­¸é»ı¼º
+		\brief í™”ë©´ìƒì„±
 		*/
 		void Init();
 
 		/*!
-		\brief ¾÷µ¥ÀÌÆ® ¹× ¹é¹öÆÛ¸¦ È­¸é¿¡ Ãâ·Â
-		\param ptr : È­¸é¿¡ Ãâ·ÂÇÒ ÀÌ¹ÌÁöÀÇ Æ÷ÀÎÅÍ
-		\param row : ÀÌ¹ÌÁöÀÇ ³ÊºñÀÇ ¹ÙÀÌÆ®±æÀÌ
-		\param height : ÀÌ¹ÌÁöÀÇ ÇÈ¼¿³ôÀÌ
-		\param pitch : ÀÌ¹ÌÁöÀÇ ´õ¹Ì¸¦ Æ÷ÇÔÇÑ ³ÊºñÀÇ ¹ÙÀÌÆ®±æÀÌ
+		\brief ì—…ë°ì´íŠ¸ ë° ë°±ë²„í¼ë¥¼ í™”ë©´ì— ì¶œë ¥
+		\param ptr : í™”ë©´ì— ì¶œë ¥í•  ì´ë¯¸ì§€ì˜ í¬ì¸í„°
+		\param row : ì´ë¯¸ì§€ì˜ ë„ˆë¹„ì˜ ë°”ì´íŠ¸ê¸¸ì´
+		\param height : ì´ë¯¸ì§€ì˜ í”½ì…€ë†’ì´
+		\param pitch : ì´ë¯¸ì§€ì˜ ë”ë¯¸ë¥¼ í¬í•¨í•œ ë„ˆë¹„ì˜ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		void Flush(void* ptr, const int row, const int height, const int pitch);
 
 		/*!
-		\brief Áß°£ ¾÷µ¥ÀÌÆ®
+		\brief ì¤‘ê°„ ì—…ë°ì´íŠ¸
 		*/
 		void MiddleFlush();
 
 		/*!
-		\brief È­¸é³Êºñ ±¸ÇÏ±â
-		\param isfixedvalue : icfÀÇ SurfaceWidthBx¸¦ Àû¿ëÇÑ °íÁ¤»çÀÌÁî ¿©ºÎÁ¶»ç(nullptrÀÌ¸é »ı·«)
-		\param usemargin : Margin°ª Àû¿ë¿©ºÎ
-		\return ³ÊºñÀÇ ÇÈ¼¿±æÀÌ
+		\brief í™”ë©´ë„ˆë¹„ êµ¬í•˜ê¸°
+		\param isfixedvalue : icfì˜ SurfaceWidthBxë¥¼ ì ìš©í•œ ê³ ì •ì‚¬ì´ì¦ˆ ì—¬ë¶€ì¡°ì‚¬(nullptrì´ë©´ ìƒëµ)
+		\param usemargin : Marginê°’ ì ìš©ì—¬ë¶€
+		\return ë„ˆë¹„ì˜ í”½ì…€ê¸¸ì´
 		*/
 		int GetWidth(bool* isfixedvalue = nullptr, bool usemargin = true);
 
 		/*!
-		\brief È­¸é³ôÀÌ ±¸ÇÏ±â
-		\param isfixedvalue : icfÀÇ SurfaceHeightBx¸¦ Àû¿ëÇÑ °íÁ¤»çÀÌÁî ¿©ºÎÁ¶»ç(nullptrÀÌ¸é »ı·«)
-		\param usemargin : Margin°ª Àû¿ë¿©ºÎ
-		\return ³ôÀÌÀÇ ÇÈ¼¿±æÀÌ
+		\brief í™”ë©´ë†’ì´ êµ¬í•˜ê¸°
+		\param isfixedvalue : icfì˜ SurfaceHeightBxë¥¼ ì ìš©í•œ ê³ ì •ì‚¬ì´ì¦ˆ ì—¬ë¶€ì¡°ì‚¬(nullptrì´ë©´ ìƒëµ)
+		\param usemargin : Marginê°’ ì ìš©ì—¬ë¶€
+		\return ë†’ì´ì˜ í”½ì…€ê¸¸ì´
 		*/
 		int GetHeight(bool* isfixedvalue = nullptr, bool usemargin = true);
 
 		/*!
-		\brief ÇÏµå¿ş¾îÀû È­¸é³Êºñ ±¸ÇÏ±â
-		\param usemargin : Margin°ª Àû¿ë¿©ºÎ
-		\return ³ÊºñÀÇ ÇÈ¼¿±æÀÌ
+		\brief í•˜ë“œì›¨ì–´ì  í™”ë©´ë„ˆë¹„ êµ¬í•˜ê¸°
+		\param usemargin : Marginê°’ ì ìš©ì—¬ë¶€
+		\return ë„ˆë¹„ì˜ í”½ì…€ê¸¸ì´
 		*/
 		int GetWidthHW(bool usemargin = true);
 
 		/*!
-		\brief ÇÏµå¿ş¾îÀû È­¸é³ôÀÌ ±¸ÇÏ±â
-		\param usemargin : Margin°ª Àû¿ë¿©ºÎ
-		\return ³ôÀÌÀÇ ÇÈ¼¿±æÀÌ
+		\brief í•˜ë“œì›¨ì–´ì  í™”ë©´ë†’ì´ êµ¬í•˜ê¸°
+		\param usemargin : Marginê°’ ì ìš©ì—¬ë¶€
+		\return ë†’ì´ì˜ í”½ì…€ê¸¸ì´
 		*/
 		int GetHeightHW(bool usemargin = true);
 
 		/*!
-		\brief ¸¶Áø°í·ÁÇÑ Width/Height°ªÀÇ ÀÛµ¿¿©ºÎ
-		\param enable : ÀÛµ¿¿©ºÎ
-		\return ÀÛµ¿¿©ºÎ
+		\brief ë§ˆì§„ê³ ë ¤í•œ Width/Heightê°’ì˜ ì‘ë™ì—¬ë¶€
+		\param enable : ì‘ë™ì—¬ë¶€
+		\return ì‘ë™ì—¬ë¶€
 		*/
 		bool SetMarginMode(bool enable);
 	}
 
-	//! \brief SoundÆÄÆ®
+	//! \brief SoundíŒŒíŠ¸
 	namespace Sound
 	{
 		/*!
-		\brief »ç¿îµåID ÇÒ´ç(icf»óÀÇ [game]SoundCacheSize³»¿¡¼­ ÇÒ´ç)
-		\param filename : ÆÄÀÏ¸í(mid, mp3, aac, qcp, wav)
-		\param autoload : ÀÚµ¿·ÎµùÇØÁ¦½Ã½ºÅÛ
-		\return »ç¿îµåID(nullptrÀº ½ÇÆĞ)
+		\brief ì‚¬ìš´ë“œID í• ë‹¹(icfìƒì˜ [game]SoundCacheSizeë‚´ì—ì„œ í• ë‹¹)
+		\param filename : íŒŒì¼ëª…(mid, mp3, aac, qcp, wav)
+		\param autoload : ìë™ë¡œë”©í•´ì œì‹œìŠ¤í…œ
+		\return ì‚¬ìš´ë“œID(nullptrì€ ì‹¤íŒ¨)
 		\see Release
 		*/
 		id_sound Create(string filename, bool autoload = true);
 
 		/*!
-		\brief »ç¿îµåID ¹İÈ¯
-		\param sound : »ç¿îµåID
+		\brief ì‚¬ìš´ë“œID ë°˜í™˜
+		\param sound : ì‚¬ìš´ë“œID
 		\see Create
 		*/
 		void Release(id_sound sound);
 
 		/*!
-		\brief ¹è°æÀ½ Ãâ·Â
-		\param sound : »ç¿îµåID(ÆÄ³ë¶ó¸¶½Ã Ã¹¹øÂ° »ç¿îµåID)
-		\param interrupt : Ãâ·ÂÁßÀÎ »ç¿îµåID¸¦ Áï½Ã ÁßÁö½ÃÅ°°í »õ·Î Ãâ·Â
-		\param panorama : ÆÄ³ë¶ó¸¶·Î Ãß°¡µÉ »ç¿îµåIDµé
+		\brief ë°°ê²½ìŒ ì¶œë ¥
+		\param sound : ì‚¬ìš´ë“œID(íŒŒë…¸ë¼ë§ˆì‹œ ì²«ë²ˆì§¸ ì‚¬ìš´ë“œID)
+		\param interrupt : ì¶œë ¥ì¤‘ì¸ ì‚¬ìš´ë“œIDë¥¼ ì¦‰ì‹œ ì¤‘ì§€ì‹œí‚¤ê³  ìƒˆë¡œ ì¶œë ¥
+		\param panorama : íŒŒë…¸ë¼ë§ˆë¡œ ì¶”ê°€ë  ì‚¬ìš´ë“œIDë“¤
 		\see StopMusic
 		*/
 		void PlayMusic(id_sound sound, bool interrupt = false, const BxThrow& panorama = BxThrow::zero());
 
 		/*!
-		\brief ¹è°æÀ½ ÁßÁö
+		\brief ë°°ê²½ìŒ ì¤‘ì§€
 		\see PlayMusic
 		*/
 		void StopMusic();
 
 		/*!
-		\brief ¹è°æÀ½ º¼·ı
-		\param percent : ¹éºĞÀ²(µğÆúÆ®°ª 100)
+		\brief ë°°ê²½ìŒ ë³¼ë¥¨
+		\param percent : ë°±ë¶„ìœ¨(ë””í´íŠ¸ê°’ 100)
 		*/
 		void SetMusicVolume(uint percent);
 
 		/*!
-		\brief È¿°úÀ½ Ãâ·Â
-		\param sound : »ç¿îµåID
-		\param interrupt : Ãâ·ÂÁßÀÎ È¿°úÀ½Áß µ¿ÀÏÇÑ »ç¿îµåID°¡ ÀÖÀ»¶§ Áï½Ã ÁßÁö½ÃÅ°°í »õ·Î Ãâ·Â
+		\brief íš¨ê³¼ìŒ ì¶œë ¥
+		\param sound : ì‚¬ìš´ë“œID
+		\param interrupt : ì¶œë ¥ì¤‘ì¸ íš¨ê³¼ìŒì¤‘ ë™ì¼í•œ ì‚¬ìš´ë“œIDê°€ ìˆì„ë•Œ ì¦‰ì‹œ ì¤‘ì§€ì‹œí‚¤ê³  ìƒˆë¡œ ì¶œë ¥
 		\see StopEffect
 		*/
 		void PlayEffect(id_sound sound, bool interrupt = false);
 
 		/*!
-		\brief ¸ğµç È¿°úÀ½ ÁßÁö
+		\brief ëª¨ë“  íš¨ê³¼ìŒ ì¤‘ì§€
 		\see PlayEffect
 		*/
 		void StopEffect();
 
 		/*!
-		\brief È¿°úÀ½ º¼·ı
-		\param percent : ¹éºĞÀ²(µğÆúÆ®°ª 100)
+		\brief íš¨ê³¼ìŒ ë³¼ë¥¨
+		\param percent : ë°±ë¶„ìœ¨(ë””í´íŠ¸ê°’ 100)
 		*/
 		void SetEffectVolume(uint percent);
 
 		/*!
-		\brief ÀüÃ¼ ¹è°æÀ½/È¿°úÀ½ ÀÏ½ÃÁ¤Áö
+		\brief ì „ì²´ ë°°ê²½ìŒ/íš¨ê³¼ìŒ ì¼ì‹œì •ì§€
 		*/
 		void PauseAll();
 
 		/*!
-		\brief ÀüÃ¼ ¹è°æÀ½/È¿°úÀ½ ÀÏ½ÃÁ¤Áö ÇØÁ¦
+		\brief ì „ì²´ ë°°ê²½ìŒ/íš¨ê³¼ìŒ ì¼ì‹œì •ì§€ í•´ì œ
 		*/
 		void ResumeAll();
 	}
 
-	//! \brief UtilÆÄÆ®
+	//! \brief UtilíŒŒíŠ¸
 	namespace Util
 	{
 		/*!
-		\brief ¸Ş¸ğ¸®ÇÒ´ç
-		\param size : ¿äÃ»ÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\return ÇÒ´çµÈ ¸Ş¸ğ¸®ID, ½ÇÆĞ½Ã 0
-		\see Free, GetPtr
+		\brief ë©”ëª¨ë¦¬í• ë‹¹
+		\param size : ìš”ì²­í•  ë°”ì´íŠ¸ê¸¸ì´
+		\return í• ë‹¹ëœ ë©”ëª¨ë¦¬, ì‹¤íŒ¨ì‹œ nullptr
+		\see Free
 		*/
-		id_memory Malloc(int size);
+		void* Alloc(int size);
 
 		/*!
-		\brief ¸Ş¸ğ¸®¹İÈ¯
-		\param item : ¹İÈ¯ÇÒ ¸Ş¸ğ¸®ID
-		\see Malloc
+		\brief ë©”ëª¨ë¦¬ë°˜í™˜
+		\param item : ë°˜í™˜í•  ë©”ëª¨ë¦¬
+		\see Alloc
 		*/
-		void Free(id_memory item);
+		void Free(void* buf);
 
 		/*!
-		\brief ¸Ş¸ğ¸®IDÀÇ ½ÇÁ¦ ¸Ş¸ğ¸®¹øÁö ±¸ÇÏ±â
-		\param item : ¿äÃ»ÇÒ ¸Ş¸ğ¸®ID
-		\return ÇØ´ç ¸Ş¸ğ¸®IDÀÇ ¸Ş¸ğ¸®¹øÁö
-		\see Malloc
+		\brief ë©”ëª¨ë¦¬ ì´ˆê¸°í™”
+		\param dst : ì´ˆê¸°í™”í•  ì‹œì‘ ë©”ëª¨ë¦¬ë²ˆì§€
+		\param value : ì´ˆê¸°í™”ì‹œí‚¬ ê°’
+		\param length : ì´ˆê¸°í™”í•  ë°”ì´íŠ¸ê¸¸ì´
 		*/
-		void* GetPtr(id_memory item);
+		void MemSet(void* dst, byte value, int length);
 
 		/*!
-		\brief ¸Ş¸ğ¸® º¹»ç
-		\param dst : ºÙ¿©³ÖÀ» ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param src : º¹»çÇÒ ¿øº»ÀÇ ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param length : º¹»çÇÒ ¹ÙÀÌÆ®±æÀÌ
+		\brief ë©”ëª¨ë¦¬ ë³µì‚¬
+		\param dst : ë¶™ì—¬ë„£ì„ ì‹œì‘ ë©”ëª¨ë¦¬ë²ˆì§€
+		\param src : ë³µì‚¬í•  ì›ë³¸ì˜ ì‹œì‘ ë©”ëª¨ë¦¬ë²ˆì§€
+		\param length : ë³µì‚¬í•  ë°”ì´íŠ¸ê¸¸ì´
 		*/
-		void MemMove(const void* dst, const void* src, int length);
+		void MemCpy(void* dst, const void* src, int length);
 
 		/*!
-		\brief ¸Ş¸ğ¸® ÃÊ±âÈ­
-		\param dst : ÃÊ±âÈ­ÇÒ ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param value : ÃÊ±âÈ­½ÃÅ³ °ª
-		\param length : ÃÊ±âÈ­ÇÒ ¹ÙÀÌÆ®±æÀÌ
-		*/
-		void MemSet(const void* dst, byte value, int length);
-
-		/*!
-		\brief ¸Ş¸ğ¸® ºñ±³
-		\param dst : ºñ±³´ë»ó ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param src : ºñ±³ÁÖÃ¼ ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param length : ºñ±³ÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\return µ¿ÀÏÇÏ¸é 0, ´Ù¸£¸é 0ÀÌ ¾Æ´Ô
+		\brief ë©”ëª¨ë¦¬ ë¹„êµ
+		\param dst : ë¹„êµëŒ€ìƒ ì‹œì‘ ë©”ëª¨ë¦¬ë²ˆì§€
+		\param src : ë¹„êµì£¼ì²´ ì‹œì‘ ë©”ëª¨ë¦¬ë²ˆì§€
+		\param length : ë¹„êµí•  ë°”ì´íŠ¸ê¸¸ì´
+		\return ë™ì¼í•˜ë©´ 0, ë‹¤ë¥´ë©´ 0ì´ ì•„ë‹˜
 		*/
 		int MemCmp(const void* dst, const void* src, int length);
 
 		/*!
-		\brief ½ºÆ®¸µ±¸¼º
-		\param src : "<A>"Çü½ÄÀÇ ½ºÅ©¸³Æ®
-		\param args : src¿¡ ¾²ÀÏ °¡º¯ÀÎÀÚ
-		\param length : ±¸¼ºµÈ ½ºÆ®¸µÀÇ ±æÀÌ
-		\return ±¸¼ºµÈ ½ºÆ®¸µ
+		\brief ìŠ¤íŠ¸ë§êµ¬ì„±
+		\param map : ìŠ¤íŠ¸ë§ë§µ ìŠ¤í¬ë¦½íŠ¸(ì‹ë³„ë¬¸ìëŠ” "<>:")
+		<A> : ê°€ë³€ì¸ìˆ˜ì°¸ì¡°
+		<X...> : 16ì§„ìˆ˜ì…ë ¥
+		<B> : ê³µë°±ë¬¸ì
+		<T> : íƒ­ë¬¸ì
+		<N> : ë‰´ë¼ì¸ë¬¸ì
+		<R> : ë¦¬í„´ë¬¸ì
+		<Z> : ë„ë¬¸ì
+		<FS> : ìŠ¬ë˜ì‹œ
+		<RS> : ì—­ìŠ¬ë˜ì‹œ
+		<DQ> : ìŒë”°ì˜´í‘œ
+		<SQ> : ì‘ì€ë”°ì˜´í‘œ
+		\param args : mapì— ì“°ì¼ ê°€ë³€ì¸ì
+		\param length : êµ¬ì„±ëœ ìŠ¤íŠ¸ë§ì˜ ê¸¸ì´
+		\return êµ¬ì„±ëœ ìŠ¤íŠ¸ë§
 		*/
-		string _tmp_ Print(string src, const BxThrow& args = BxThrow::zero(), int* length = nullptr);
-
-		/*!
-		\brief Ãâ·ÂÃ¢¿¡ ½ºÆ®¸µ±â·Ï(Releaseµµ »ç¿ëÇÏ·Á¸é mkbÀÇ defines{}¿¡ IW_USE_TRACINGÃß°¡)
-		\param src : printf¾ç½ÄÀÇ ¸Ê(%d/%s/...)
-		\param ... : src¿¡ ¾²ÀÏ °¡º¯ÀÎÀÚ
-		\return ±â·ÏµÈ ¹ÙÀÌÆ®±æÀÌ
-		*/
-		int Printf(string src, ...);
-
-		/*!
-		\brief ½ºÆ®¸µ¿¡ ½ºÆ®¸µ±â·Ï
-		\param dst : ±â·ÏÇÒ ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param length : dstÀÇ ±æÀÌ
-		\param src : sprintf¾ç½ÄÀÇ ¸Ê(%d/%s/...)
-		\param ... : src¿¡ ¾²ÀÏ °¡º¯ÀÎÀÚ
-		\return ±â·ÏµÈ ¹ÙÀÌÆ®±æÀÌ
-		*/
-		int SnPrintf(string_rw dst, int length, string src, ...);
-
-		/*!
-		\brief ½ºÆ®¸µ¿¡ va_list½Ä ½ºÆ®¸µ±â·Ï
-		\param dst : ±â·ÏÇÒ ½ÃÀÛ ¸Ş¸ğ¸®¹øÁö
-		\param length : dstÀÇ ±æÀÌ
-		\param src : sprintf¾ç½ÄÀÇ ¸Ê(%d/%s/...)
-		\param list : src¿¡ ¾²ÀÏ va_listÇü °¡º¯ÀÎÀÚ
-		\return ±â·ÏµÈ ¹ÙÀÌÆ®±æÀÌ
-		*/
-		int VsnPrintf(string_rw dst, int length, string src, va_list list);
-
-		/*!
-		\brief ÇöÀç ÇÔ¼öÀÇ Äİ±íÀÌÁ¶»ç
-		\return Äİ±íÀÌ
-		*/
-		uint GetCurrentCallDepth();
-
-		/*!
-		\brief ÇöÀç ÇÔ¼öÀÇ ½ÃÀÛÁÖ¼ÒÁ¶»ç
-		\return ½ÃÀÛÁÖ¼Ò
-		*/
-		void* GetCurrentCallAddress();
-
-		/*!
-		\brief ÇöÀç ÇÔ¼öÀÇ Äİ¼ø¹øÁ¶»ç
-		\return Äİ¼ø¹ø
-		*/
-		uint GetCurrentCallCount();
-
-		/*!
-		\brief Äİ¼ø¹ø ÃÊ±âÈ­
-		\param value : Äİ¼ø¹ø
-		*/
-		void SetCallCount(uint value);
-
-		/*!
-		\brief Äİ±íÀÌ ´õÇÏ±â
-		\see PopCallDepthAndLog
-		*/
-		void PushCallDepthAndLog(string file, const int line, string func);
-
-		/*!
-		\brief Äİ±íÀÌ »©±â
-		\see PushCallDepthAndLog
-		*/
-		void PopCallDepthAndLog(string file, const int line);
+		string _tmp_ Print(string map, const BxThrow& args = BxThrow::zero(), int* length = nullptr);
 
 		const int* Cos1024Table();
 		const int* Tan1024Table();
@@ -546,487 +503,501 @@ namespace BxCore
 		wstring CP949Table();
 	}
 
-	//! \brief AddOnÆÄÆ®
+	//! \brief AddOníŒŒíŠ¸
 	namespace AddOn
 	{
 		/*!
-		\brief JPGÀÌ¹ÌÁö·Î BMP¸¦ Á¦ÀÛ
-		\param jpg : JPG¸®¼Ò½º
-		\return BMP¸®¼Ò½º(Release·Î ÇØÁ¦)
+		\brief JPGì´ë¯¸ì§€ë¡œ BMPë¥¼ ì œì‘
+		\param jpg : JPGë¦¬ì†ŒìŠ¤
+		\return BMPë¦¬ì†ŒìŠ¤(Releaseë¡œ í•´ì œ)
 		\see Release
 		*/
 		const byte* JPGToBMP(const byte* jpg);
 
 		/*!
-		\brief GIFÀÌ¹ÌÁö·Î BMP¸¦ Á¦ÀÛ
-		\param gif : GIF¸®¼Ò½º
-		\param length : GIF¸®¼Ò½ºÀÇ ¹ÙÀÌÆ®±æÀÌ
-		\param numpage : Àå¸é¼ö
-		\return ¸ğµç Àå¸éÀÌ ¼¼·Î·Î ¿¬°áµÈ BMP¸®¼Ò½º(Release·Î ÇØÁ¦)
+		\brief GIFì´ë¯¸ì§€ë¡œ BMPë¥¼ ì œì‘
+		\param gif : GIFë¦¬ì†ŒìŠ¤
+		\param length : GIFë¦¬ì†ŒìŠ¤ì˜ ë°”ì´íŠ¸ê¸¸ì´
+		\param numpage : ì¥ë©´ìˆ˜
+		\return ëª¨ë“  ì¥ë©´ì´ ì„¸ë¡œë¡œ ì—°ê²°ëœ BMPë¦¬ì†ŒìŠ¤(Releaseë¡œ í•´ì œ)
 		\see Release
 		*/
 		const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage);
 
 		/*!
-		\brief HQX¹æ½ÄÀ¸·Î Àç°¡°øµÈ BMP¸¦ Á¦ÀÛ
-		\param bmp : BMP¸®¼Ò½º
-		\param scale : HQX¿É¼Ç(2, 3, 4Áß ¼±ÅÃ)
-		\return Àç°¡°øµÈ BMP¸®¼Ò½º(Release·Î ÇØÁ¦)
+		\brief HQXë°©ì‹ìœ¼ë¡œ ì¬ê°€ê³µëœ BMPë¥¼ ì œì‘
+		\param bmp : BMPë¦¬ì†ŒìŠ¤
+		\param scale : HQXì˜µì…˜(2, 3, 4ì¤‘ ì„ íƒ)
+		\return ì¬ê°€ê³µëœ BMPë¦¬ì†ŒìŠ¤(Releaseë¡œ í•´ì œ)
 		\see Release
 		*/
 		const byte* HQXToBMP(const byte* bmp, int scale);
 
 		/*!
-		\brief µ¥ÀÌÅÍ¹öÆÛ¸¦ ÅëÇØ MD5ÇØ½Ã½ºÆ®¸µÀ» Á¦ÀÛ
-		\param buffer : µ¥ÀÌÅÍ¹öÆÛ
-		\param length : µ¥ÀÌÅÍ¹öÆÛÀÇ ¹ÙÀÌÆ®±æÀÌ
-		\return MD5ÇØ½Ã½ºÆ®¸µ(¹«Á¶°Ç 32¹ÙÀÌÆ®)
+		\brief ë°ì´í„°ë²„í¼ë¥¼ í†µí•´ MD5í•´ì‹œìŠ¤íŠ¸ë§ì„ ì œì‘
+		\param buffer : ë°ì´í„°ë²„í¼
+		\param length : ë°ì´í„°ë²„í¼ì˜ ë°”ì´íŠ¸ê¸¸ì´
+		\return MD5í•´ì‹œìŠ¤íŠ¸ë§(ë¬´ì¡°ê±´ 32ë°”ì´íŠ¸)
 		*/
 		string _tmp_ BUFToMD5(const byte* buffer, const int length);
 
 		/*!
-		\brief ZIPÆÄÀÏÀÇ µğÄÚµùÀ» À§ÇÑ °´Ã¼ »ı¼º
-		\param zip : ZIP¸®¼Ò½º
-		\param length : ZIP¸®¼Ò½ºÀÇ ¹ÙÀÌÆ®±æÀÌ
-		\param numfile : ÆÄÀÏ¼ö
-		\param password : ºñ¹Ğ¹øÈ£
-		\return ZIP°´Ã¼
+		\brief ZIPíŒŒì¼ì˜ ë””ì½”ë”©ì„ ìœ„í•œ ê°ì²´ ìƒì„±
+		\param zip : ZIPë¦¬ì†ŒìŠ¤
+		\param length : ZIPë¦¬ì†ŒìŠ¤ì˜ ë°”ì´íŠ¸ê¸¸ì´
+		\param numfile : íŒŒì¼ìˆ˜
+		\param password : ë¹„ë°€ë²ˆí˜¸
+		\return ZIPê°ì²´
 		\see ReleaseZIP
 		*/
 		id_zip CreateZIP(const byte* zip, const int length, int _out_ numfile, string password = nullptr);
 
 		/*!
-		\brief ZIP°´Ã¼ Á¦°Å
-		\param zip : ZIP°´Ã¼
+		\brief ZIPê°ì²´ ì œê±°
+		\param zip : ZIPê°ì²´
 		\see CreateZIP
 		*/
 		void ReleaseZIP(id_zip zip);
 
 		/*!
-		\brief ZIP°´Ã¼¿¡¼­ ¿äÃ» ¼ø¹øÀÇ ÆÄÀÏÀ» ·Îµå
-		\param zip : ZIP°´Ã¼
-		\param fileindex : ¿äÃ» ¼ø¹ø
-		\param filesize : ÆÄÀÏ»çÀÌÁî
-		\return ¿äÃ» ¼ø¹øÀÇ ÆÄÀÏ¸®¼Ò½º(Release·Î ÇØÁ¦)
+		\brief ZIPê°ì²´ì—ì„œ ìš”ì²­ ìˆœë²ˆì˜ íŒŒì¼ì„ ë¡œë“œ
+		\param zip : ZIPê°ì²´
+		\param fileindex : ìš”ì²­ ìˆœë²ˆ
+		\param filesize : íŒŒì¼ì‚¬ì´ì¦ˆ
+		\return ìš”ì²­ ìˆœë²ˆì˜ íŒŒì¼ë¦¬ì†ŒìŠ¤(Releaseë¡œ í•´ì œ)
 		\see Release
 		*/
 		const byte* ZIPToFILE(id_zip zip, const int fileindex, int _out_ filesize);
 
 		/*!
-		\brief ZIP°´Ã¼¿¡¼­ ¿äÃ» ¼ø¹øÀÇ ÆÄÀÏÁ¤º¸¸¦ ·Îµå
-		\param zip : ZIP°´Ã¼
-		\param fileindex : ¿äÃ» ¼ø¹ø
-		\param isdir : Æú´õÀÎÁöÀÇ ¿©ºÎ
-		\param ctime : »ı¼º½Ã°£(UTC±âÁØ)
-		\param mtime : ¼öÁ¤½Ã°£(UTC±âÁØ)
-		\param atime : Á¢±Ù½Ã°£(UTC±âÁØ)
-		\param archive : ÀúÀå¼Ó¼º ¿©ºÎ
-		\param hidden : ¼û±è¼Ó¼º ¿©ºÎ
-		\param readonly : ÀĞ±âÀü¿ë¼Ó¼º ¿©ºÎ
-		\param system : ½Ã½ºÅÛ¼Ó¼º ¿©ºÎ
-		\return ¿äÃ» ¼ø¹øÀÇ ÆÄÀÏ¸í
+		\brief ZIPê°ì²´ì—ì„œ ìš”ì²­ ìˆœë²ˆì˜ íŒŒì¼ì •ë³´ë¥¼ ë¡œë“œ
+		\param zip : ZIPê°ì²´
+		\param fileindex : ìš”ì²­ ìˆœë²ˆ
+		\param isdir : í´ë”ì¸ì§€ì˜ ì—¬ë¶€
+		\param ctime : ìƒì„±ì‹œê°„(UTCê¸°ì¤€)
+		\param mtime : ìˆ˜ì •ì‹œê°„(UTCê¸°ì¤€)
+		\param atime : ì ‘ê·¼ì‹œê°„(UTCê¸°ì¤€)
+		\param archive : ì €ì¥ì†ì„± ì—¬ë¶€
+		\param hidden : ìˆ¨ê¹€ì†ì„± ì—¬ë¶€
+		\param readonly : ì½ê¸°ì „ìš©ì†ì„± ì—¬ë¶€
+		\param system : ì‹œìŠ¤í…œì†ì„± ì—¬ë¶€
+		\return ìš”ì²­ ìˆœë²ˆì˜ íŒŒì¼ëª…
 		*/
 		string _tmp_ ZIPToINFO(id_zip zip, const int fileindex,
 			bool* isdir = nullptr, uhuge* ctime = nullptr, uhuge* mtime = nullptr, uhuge* atime = nullptr,
 			bool* archive = nullptr, bool* hidden = nullptr, bool* readonly = nullptr, bool* system = nullptr);
 
 		/*!
-		\brief AddOn¸®¼Ò½º ÇØÁ¦
-		\param buf : AddOnÇÔ¼ö·Î »ı¼ºÇÑ ¸Ş¸ğ¸®
+		\brief AddOnë¦¬ì†ŒìŠ¤ í•´ì œ
+		\param buf : AddOní•¨ìˆ˜ë¡œ ìƒì„±í•œ ë©”ëª¨ë¦¬
 		*/
 		void Release(const byte* buf);
 	}
 
-	//! \brief FileÆÄÆ®
+	//! \brief FileíŒŒíŠ¸
 	namespace File
 	{
 		/*!
-		\brief ÆÄÀÏÀÇ Á¸Àç¿©ºÎ
-		\param filename : ÆÄÀÏ¸í
-		\return Á¸Àç½Ã true, ¾øÀ»½Ã false
+		\brief íŒŒì¼ì˜ ì¡´ì¬ì—¬ë¶€
+		\param filename : íŒŒì¼ëª…
+		\return ì¡´ì¬ì‹œ true, ì—†ì„ì‹œ false
 		\see Open
 		*/
 		bool IsExist(string filename);
 
 		/*!
-		\brief ÆÄÀÏ¿­±â
-		\param filename : ÆÄÀÏ¸í
-		\param mode : ¿­±â¿É¼Ç(Àü:"r"/"w"/"a"/"r+"/"w+"/"a+", ÈÄ:"t"/"b"/"U")
-		\return ¿­·ÁÁø ÆÄÀÏID, ½ÇÆĞ½Ã 0
+		\brief íŒŒì¼ì—´ê¸°
+		\param filename : íŒŒì¼ëª…
+		\param mode : ì—´ê¸°ì˜µì…˜(ì „:"r"/"w"/"a"/"r+"/"w+"/"a+", í›„:"t"/"b"/"U")
+		\return ì—´ë ¤ì§„ íŒŒì¼ID, ì‹¤íŒ¨ì‹œ 0
 		\see IsExist, Close, Attach
 		*/
 		id_file Open(string filename, string mode);
 
 		/*!
-		\brief ÆÄÀÏ´İ±â
-		\param file : ¿­¸° ÆÄÀÏID
+		\brief íŒŒì¼ë‹«ê¸°
+		\param file : ì—´ë¦° íŒŒì¼ID
 		\see Open
 		*/
 		void Close(id_file file);
 
 		/*!
-		\brief ÆÄÀÏ¿¡¼­ ÀĞ±â
-		\param file : ÆÄÀÏID
-		\param buffer : ÀĞÀº ³»¿ëÀ» ÀúÀåÇÒ ¸Ş¸ğ¸®
-		\param length : ÀĞ±â¿äÃ»ÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\param progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş(¾÷µ¥ÀÌÆ®Àü¿ë, progress(-1, 0)·Î È£Ãâ)
-		\return ÀĞÀº ¹ÙÀÌÆ®±æÀÌ
+		\brief íŒŒì¼ì—ì„œ ì½ê¸°
+		\param file : íŒŒì¼ID
+		\param buffer : ì½ì€ ë‚´ìš©ì„ ì €ì¥í•  ë©”ëª¨ë¦¬
+		\param length : ì½ê¸°ìš”ì²­í•  ë°”ì´íŠ¸ê¸¸ì´
+		\param progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬(ì—…ë°ì´íŠ¸ì „ìš©, progress(-1, 0)ë¡œ í˜¸ì¶œ)
+		\return ì½ì€ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		uint Read(id_file file, void* buffer, uint length, callback_progress progress = nullptr);
 
 		/*!
-		\brief ÆÄÀÏ¿¡¼­ °¡º¯Á¤¼öÀĞ±â
-		\param file : ÆÄÀÏID
-		\param variable : °¡º¯Á¤¼ö¸¦ ÀĞÀ» ¸Ş¸ğ¸®
-		\param additionkey : ÀÔ·Âº¸Á¤À» À§ÇÑ µ¡¼ÀÅ°
-		\param progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş(¾÷µ¥ÀÌÆ®Àü¿ë, progress(-1, 0)·Î È£Ãâ)
-		\return ÀĞÀº ¹ÙÀÌÆ®±æÀÌ
+		\brief íŒŒì¼ì—ì„œ ê°€ë³€ì •ìˆ˜ì½ê¸°
+		\param file : íŒŒì¼ID
+		\param variable : ê°€ë³€ì •ìˆ˜ë¥¼ ì½ì„ ë©”ëª¨ë¦¬
+		\param additionkey : ì…ë ¥ë³´ì •ì„ ìœ„í•œ ë§ì…ˆí‚¤
+		\param progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬(ì—…ë°ì´íŠ¸ì „ìš©, progress(-1, 0)ë¡œ í˜¸ì¶œ)
+		\return ì½ì€ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		uint ReadVariable(id_file file, uhuge* variable, const byte additionkey = 0x00, callback_progress progress = nullptr);
 
 		/*!
-		\brief ÆÄÀÏ·Î ¾²±â
-		\param file : ÆÄÀÏID
-		\param buffer : ¾µ ³»¿ëÀ» ´ã°í ÀÖ´Â ¸Ş¸ğ¸®
-		\param length : ¾²±â¿äÃ»ÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\param progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş(¾÷µ¥ÀÌÆ®Àü¿ë, progress(-1, 0)·Î È£Ãâ)
-		\return ¾´ ¹ÙÀÌÆ®±æÀÌ
+		\brief íŒŒì¼ë¡œ ì“°ê¸°
+		\param file : íŒŒì¼ID
+		\param buffer : ì“¸ ë‚´ìš©ì„ ë‹´ê³  ìˆëŠ” ë©”ëª¨ë¦¬
+		\param length : ì“°ê¸°ìš”ì²­í•  ë°”ì´íŠ¸ê¸¸ì´
+		\param progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬(ì—…ë°ì´íŠ¸ì „ìš©, progress(-1, 0)ë¡œ í˜¸ì¶œ)
+		\return ì“´ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		uint Write(id_file file, const void* buffer, uint length, callback_progress progress = nullptr);
 
 		/*!
-		\brief ÆÄÀÏ·Î °¡º¯Á¤¼ö¾²±â
-		\param file : ÆÄÀÏID
-		\param variable : ÆÄÀÏ¿¡ ¾µ °¡º¯Á¤¼ö
-		\param additionkey : Ãâ·Âº¸Á¤À» À§ÇÑ µ¡¼ÀÅ°
-		\param progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş(¾÷µ¥ÀÌÆ®Àü¿ë, progress(-1, 0)·Î È£Ãâ)
-		\return ¾´ ¹ÙÀÌÆ®±æÀÌ
+		\brief íŒŒì¼ë¡œ ê°€ë³€ì •ìˆ˜ì“°ê¸°
+		\param file : íŒŒì¼ID
+		\param variable : íŒŒì¼ì— ì“¸ ê°€ë³€ì •ìˆ˜
+		\param additionkey : ì¶œë ¥ë³´ì •ì„ ìœ„í•œ ë§ì…ˆí‚¤
+		\param progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬(ì—…ë°ì´íŠ¸ì „ìš©, progress(-1, 0)ë¡œ í˜¸ì¶œ)
+		\return ì“´ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		uint WriteVariable(id_file file, const uhuge variable, const byte additionkey = 0x00, callback_progress progress = nullptr);
 
 		/*!
-		\brief ÆÄÀÏ·Î ½ºÆ®¸µ¾²±â
-		\param file : ÆÄÀÏID
-		\param buffer : ¾µ ³»¿ëÀ» ´ã°í ÀÖ´Â ½ºÆ®¸µ
-		\param progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş(¾÷µ¥ÀÌÆ®Àü¿ë, progress(-1, 0)·Î È£Ãâ)
-		\return ¾´ ¹ÙÀÌÆ®±æÀÌ
+		\brief íŒŒì¼ë¡œ ìŠ¤íŠ¸ë§ì“°ê¸°
+		\param file : íŒŒì¼ID
+		\param buffer : ì“¸ ë‚´ìš©ì„ ë‹´ê³  ìˆëŠ” ìŠ¤íŠ¸ë§
+		\param progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬(ì—…ë°ì´íŠ¸ì „ìš©, progress(-1, 0)ë¡œ í˜¸ì¶œ)
+		\return ì“´ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		uint WriteString(id_file file, string buffer, callback_progress progress = nullptr);
 
 		/*!
-		\brief ÆÄÀÏÀ§Ä¡ ½ºÅµÇÏ±â
-		\param file : ÆÄÀÏID
-		\param length : ½ºÅµ¿äÃ»ÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\return °á°ú ÆÄÀÏÀ§Ä¡
+		\brief íŒŒì¼ìœ„ì¹˜ ìŠ¤í‚µí•˜ê¸°
+		\param file : íŒŒì¼ID
+		\param length : ìŠ¤í‚µìš”ì²­í•  ë°”ì´íŠ¸ê¸¸ì´
+		\return ê²°ê³¼ íŒŒì¼ìœ„ì¹˜
 		*/
 		int Skip(id_file file, uint length);
 
 		/*!
-		\brief ÆÄÀÏÀÇ ÀüÃ¼±æÀÌ ¾ò±â
-		\param file : ÆÄÀÏID
-		\return ÀüÃ¼ ¹ÙÀÌÆ®±æÀÌ
+		\brief íŒŒì¼ì˜ ì „ì²´ê¸¸ì´ ì–»ê¸°
+		\param file : íŒŒì¼ID
+		\return ì „ì²´ ë°”ì´íŠ¸ê¸¸ì´
 		*/
 		int GetSize(id_file file);
 
 		/*!
-		\brief ÆÄÀÏÀÇ ÀüÃ¼±æÀÌ ¾ò±â
-		\param filename : ÆÄÀÏ¸í
-		\return ÀüÃ¼ ¹ÙÀÌÆ®±æÀÌ(ÆÄÀÏÀÌ ¾øÀ¸¸é -1)
+		\brief íŒŒì¼ì˜ ì „ì²´ê¸¸ì´ ì–»ê¸°
+		\param filename : íŒŒì¼ëª…
+		\return ì „ì²´ ë°”ì´íŠ¸ê¸¸ì´(íŒŒì¼ì´ ì—†ìœ¼ë©´ -1)
 		*/
 		int GetSize(string filename);
 
 		/*!
-		\brief ÆÄÀÏÀÇ ¸¶Áö¸· ¼öÁ¤³¯Â¥ ¾ò±â
-		\param filename : ÆÄÀÏ¸í
-		\return ¸¶Áö¸· ¼öÁ¤³¯Â¥(1970³â1¿ù1ÀÏ±âÁØ ¹Ğ¸®ÃÊÈ¯»ê°ª)
+		\brief íŒŒì¼ì˜ ë§ˆì§€ë§‰ ìˆ˜ì •ë‚ ì§œ ì–»ê¸°
+		\param filename : íŒŒì¼ëª…
+		\return ë§ˆì§€ë§‰ ìˆ˜ì •ë‚ ì§œ(1970ë…„1ì›”1ì¼ê¸°ì¤€ ë°€ë¦¬ì´ˆí™˜ì‚°ê°’)
 		*/
 		uhuge GetDate(string filename);
 
 		/*!
-		\brief DZ¾ĞÃàÆÄÀÏÀÇ ¿¬µ¿(¿©·¯¹ø AttachÇÏ¸é ¸¶Áö¸· Attach°¡ ÃÖ¿ì¼±¼øÀ§)
-		\param archivename : ¾ĞÃàÆÄÀÏ¸í
-		\return ¿¬µ¿ÀÇ ¼º°ø¿©ºÎ
+		\brief DZì••ì¶•íŒŒì¼ì˜ ì—°ë™(ì—¬ëŸ¬ë²ˆ Attachí•˜ë©´ ë§ˆì§€ë§‰ Attachê°€ ìµœìš°ì„ ìˆœìœ„)
+		\param archivename : ì••ì¶•íŒŒì¼ëª…
+		\return ì—°ë™ì˜ ì„±ê³µì—¬ë¶€
 		\see Detach
 		*/
 		bool Attach(string archivename);
 
 		/*!
-		\brief DZ¾ĞÃàÆÄÀÏÀÇ ¿¬µ¿ÇØÁ¦(Attach¿¡ ¼º°øÇÑ È½¼ö¸¸Å­ ÇØÁ¦)
+		\brief DZì••ì¶•íŒŒì¼ì˜ ì—°ë™í•´ì œ(Attachì— ì„±ê³µí•œ íšŸìˆ˜ë§Œí¼ í•´ì œ)
 		\see Attach
 		*/
 		void Detach();
 
 		/*!
-		\brief Æú´õ¸¸µé±â
-		\param dirname : Æú´õ¸í
-		\param isFile : dirnameÀÌ ÆÄÀÏÀÎÁöÀÇ ¿©ºÎ
+		\brief í´ë”ë§Œë“¤ê¸°
+		\param dirname : í´ë”ëª…
+		\param isFile : dirnameì´ íŒŒì¼ì¸ì§€ì˜ ì—¬ë¶€
 		*/
 		void MakeDirectory(string dirname, bool isFile = false);
 
 		/*!
-		\brief ÆÄÀÏ°Ë»ö
-		\param dirname : Æú´õ¸í
-		\param resultCB : °á°ú¹ŞÀ» Äİ¹éÇÔ¼ö
-		\param data : Äİ¹éÇÔ¼ö¿¡ Àü´ŞÇÒ µ¥ÀÌÅÍ
-		\return °Ë»öµÈ ¼ö·®
+		\brief íŒŒì¼ê²€ìƒ‰
+		\param dirname : í´ë”ëª…
+		\param resultCB : ê²°ê³¼ë°›ì„ ì½œë°±í•¨ìˆ˜
+		\param data : ì½œë°±í•¨ìˆ˜ì— ì „ë‹¬í•  ë°ì´í„°
+		\return ê²€ìƒ‰ëœ ìˆ˜ëŸ‰
 		*/
 		uint SearchFiles(string dirname, callback_filesearch resultCB, void* data);
 
 		/*!
-		\brief ÆÄÀÏ»èÁ¦
-		\param filename : ÆÄÀÏ¸í
-		\param doRemoveBlankedDirectory : ºó Æú´õ°¡ »ı±â´Â °æ¿ì Æú´õ±îÁö »èÁ¦ÇÒÁö ¿©ºÎ
-		\return ¼º°ø¿©ºÎ
+		\brief íŒŒì¼ì‚­ì œ
+		\param filename : íŒŒì¼ëª…
+		\param doRemoveBlankedDirectory : ë¹ˆ í´ë”ê°€ ìƒê¸°ëŠ” ê²½ìš° í´ë”ê¹Œì§€ ì‚­ì œí• ì§€ ì—¬ë¶€
+		\return ì„±ê³µì—¬ë¶€
 		*/
 		bool RemoveFile(string filename, bool doRemoveBlankedDirectory = false);
 
 		/*!
-		\brief ÆÄÀÏÀÇ ÀÌ¸§º¯°æ
-		\param srcname : ´ë»ó ÆÄÀÏ¸í
-		\param dstname : º¯°æÇÏ°íÀÚ ÇÏ´Â ÆÄÀÏ¸í
-		\return ¼º°ø¿©ºÎ
+		\brief íŒŒì¼ì˜ ì´ë¦„ë³€ê²½
+		\param srcname : ëŒ€ìƒ íŒŒì¼ëª…
+		\param dstname : ë³€ê²½í•˜ê³ ì í•˜ëŠ” íŒŒì¼ëª…
+		\return ì„±ê³µì—¬ë¶€
 		*/
 		bool RenameFile(string srcname, string dstname);
 	}
 
-	//! \brief SocketÆÄÆ®
+	//! \brief SocketíŒŒíŠ¸
 	namespace Socket
 	{
 		/*!
-		\brief ¼ÒÄÏID ÇÒ´ç
-		\return ¼ÒÄÏID(nullptrÀº ½ÇÆĞ)
+		\brief ì†Œì¼“ID í• ë‹¹
+		\return ì†Œì¼“ID(nullptrì€ ì‹¤íŒ¨)
 		\see Release, Connect
 		*/
 		id_socket Create();
 
 		/*!
-		\brief ¼ÒÄÏID ¹İÈ¯, Á¢¼ÓÁ¾·á
-		\param sock : ¼ÒÄÏID
+		\brief ì†Œì¼“ID ë°˜í™˜, ì ‘ì†ì¢…ë£Œ
+		\param sock : ì†Œì¼“ID
 		\see Create
 		*/
 		void Release(id_socket sock);
 
 		/*!
-		\brief ¼ÒÄÏ »óÅÂ
-		\param sock : ¼ÒÄÏID
-		\return ÇØ´ç ¼ÒÄÏÀÇ »óÅÂ
+		\brief ì†Œì¼“ ìƒíƒœ
+		\param sock : ì†Œì¼“ID
+		\return í•´ë‹¹ ì†Œì¼“ì˜ ìƒíƒœ
 		*/
 		socketstate GetState(id_socket sock);
 
 		/*!
-		\brief ¼­¹ö·Î Á¢¼Ó
-		\param sock : ¼ÒÄÏID
-		\param addr : µµ¸ŞÀÎ ¶Ç´Â IP
-		\param port : Æ÷Æ®¹øÈ£
-		\param timeout : °á°ú¸¦ ±â´Ù¸± ½Ã°£
-		\param progress : ÇÁ·Î±×·¹½ºÀÇ Àü´Ş(¾÷µ¥ÀÌÆ®Àü¿ë, progress(-1, 0)·Î È£Ãâ)
-		\return °á°ú¸¦ ±â´Ù¸± °æ¿ì dowait_connected/dowait_disconnected, ¾È ±â´Ù¸± °æ¿ì connecting
+		\brief ì„œë²„ë¡œ ì ‘ì†
+		\param sock : ì†Œì¼“ID
+		\param addr : ë„ë©”ì¸ ë˜ëŠ” IP
+		\param port : í¬íŠ¸ë²ˆí˜¸
+		\param timeout : ê²°ê³¼ë¥¼ ê¸°ë‹¤ë¦´ ì‹œê°„
+		\param progress : í”„ë¡œê·¸ë ˆìŠ¤ì˜ ì „ë‹¬(ì—…ë°ì´íŠ¸ì „ìš©, progress(-1, 0)ë¡œ í˜¸ì¶œ)
+		\return ê²°ê³¼ë¥¼ ê¸°ë‹¤ë¦´ ê²½ìš° dowait_connected/dowait_disconnected, ì•ˆ ê¸°ë‹¤ë¦´ ê²½ìš° connecting
 		\see Disconnect, GetState
 		*/
 		connectresult Connect(id_socket sock, string addr, ushort port, uint timeout = 0, callback_progress progress = nullptr);
 
 		/*!
-		\brief ¼­¹ö¿ÍÀÇ Á¢¼ÓÁ¾·á
-		\param sock : ¼ÒÄÏID
+		\brief ì„œë²„ì™€ì˜ ì ‘ì†ì¢…ë£Œ
+		\param sock : ì†Œì¼“ID
 		\see Connect, GetState
 		*/
 		void Disconnect(id_socket sock);
 
 		/*!
-		\brief µ¥ÀÌÅÍ ¼Û½Å
-		\param sock : ¼ÒÄÏID
-		\param buffer : ¼Û½ÅÇÒ ¹öÆÛ
-		\param len : ¼Û½ÅÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\return ¼Û½ÅµÈ ¹ÙÀÌÆ®±æÀÌ(À½¼ö´Â ¼ö½Å¿¡·¯ÄÚµå, ÀÌ¶§ GetState·Î Create/Connect¸¦ ÆÇ´Ü)
+		\brief ë°ì´í„° ì†¡ì‹ 
+		\param sock : ì†Œì¼“ID
+		\param buffer : ì†¡ì‹ í•  ë²„í¼
+		\param len : ì†¡ì‹ í•  ë°”ì´íŠ¸ê¸¸ì´
+		\return ì†¡ì‹ ëœ ë°”ì´íŠ¸ê¸¸ì´(ìŒìˆ˜ëŠ” ìˆ˜ì‹ ì—ëŸ¬ì½”ë“œ, ì´ë•Œ GetStateë¡œ Create/Connectë¥¼ íŒë‹¨)
 		\see GetState
 		*/
 		int Send(id_socket sock, const void* buffer, int len);
 
 		/*!
-		\brief µ¥ÀÌÅÍ ¼ö½Å
-		\param sock : ¼ÒÄÏID
-		\param buffer : ¼ö½ÅÇÒ ¹öÆÛ
-		\param len : ¹öÆÛÀÇ ¹ÙÀÌÆ®±æÀÌ
-		\return ¼ö½ÅµÈ ¹ÙÀÌÆ®±æÀÌ(À½¼ö´Â ¼ö½Å¿¡·¯ÄÚµå, ÀÌ¶§ GetState·Î Create/Connect¸¦ ÆÇ´Ü)
+		\brief ë°ì´í„° ìˆ˜ì‹ 
+		\param sock : ì†Œì¼“ID
+		\param buffer : ìˆ˜ì‹ í•  ë²„í¼
+		\param len : ë²„í¼ì˜ ë°”ì´íŠ¸ê¸¸ì´
+		\return ìˆ˜ì‹ ëœ ë°”ì´íŠ¸ê¸¸ì´(ìŒìˆ˜ëŠ” ìˆ˜ì‹ ì—ëŸ¬ì½”ë“œ, ì´ë•Œ GetStateë¡œ Create/Connectë¥¼ íŒë‹¨)
 		\see GetState
 		*/
 		int Recv(id_socket sock, void* buffer, int len);
 
 		/*!
-		\brief µ¥ÀÌÅÍ °­Á¦¼ö½Å
-		\param sock : ¼ÒÄÏID
-		\param buffer : ¼ö½ÅÇÒ ¹öÆÛ
-		\param len : ¼ö½ÅÇÒ ¹ÙÀÌÆ®±æÀÌ
-		\param timeout : °á°ú¸¦ ±â´Ù¸± ½Ã°£(-1Àº µğÆúÆ®°ª)
-		\param cancelmode : Å»Ãâ°¡´É¿©ºÎ(ÇöÀç ¼ö½ÅµÈ µ¥ÀÌÅÍ°¡ 0ÀÏ °æ¿ì¸¸ ÀÛµ¿)
-		\return ¼ö½ÅµÈ ¹ÙÀÌÆ®±æÀÌ(À½¼ö´Â ¼ö½Å¿¡·¯ÄÚµå, ÀÌ¶§ GetState·Î Create/Connect¸¦ ÆÇ´Ü)
+		\brief ë°ì´í„° ê°•ì œìˆ˜ì‹ 
+		\param sock : ì†Œì¼“ID
+		\param buffer : ìˆ˜ì‹ í•  ë²„í¼
+		\param len : ìˆ˜ì‹ í•  ë°”ì´íŠ¸ê¸¸ì´
+		\param timeout : ê²°ê³¼ë¥¼ ê¸°ë‹¤ë¦´ ì‹œê°„(-1ì€ ë””í´íŠ¸ê°’)
+		\param cancelmode : íƒˆì¶œê°€ëŠ¥ì—¬ë¶€(í˜„ì¬ ìˆ˜ì‹ ëœ ë°ì´í„°ê°€ 0ì¼ ê²½ìš°ë§Œ ì‘ë™)
+		\return ìˆ˜ì‹ ëœ ë°”ì´íŠ¸ê¸¸ì´(ìŒìˆ˜ëŠ” ìˆ˜ì‹ ì—ëŸ¬ì½”ë“œ, ì´ë•Œ GetStateë¡œ Create/Connectë¥¼ íŒë‹¨)
 		\see GetState
 		*/
 		int RecvFully(id_socket sock, byte* buffer, int len, int timeout, bool cancelmode);
 
 		/*!
-		\brief ÇÎ½Ã°£ ÃøÁ¤(ICMPÇÁ·ÎÅäÄİ)
-		\param addr : µµ¸ŞÀÎ ¶Ç´Â IP
-		\param timeout : °á°ú¸¦ ±â´Ù¸± ½Ã°£
-		\return ÇÎ½Ã°£(¹Ğ¸®ÃÊ, À½¼ö¸é ½ÇÆĞ)
+		\brief í•‘ì‹œê°„ ì¸¡ì •(ICMPí”„ë¡œí† ì½œ)
+		\param addr : ë„ë©”ì¸ ë˜ëŠ” IP
+		\param timeout : ê²°ê³¼ë¥¼ ê¸°ë‹¤ë¦´ ì‹œê°„
+		\return í•‘ì‹œê°„(ë°€ë¦¬ì´ˆ, ìŒìˆ˜ë©´ ì‹¤íŒ¨)
 		*/
 		int Ping(string addr, uint timeout);
 	}
 
-	//! \brief FontÆÄÆ®
+	//! \brief FontíŒŒíŠ¸
 	namespace Font
 	{
 		/*!
-		\brief ÆùÆ®¿­±â(ÆÄÀÏ)
-		\param filename : TTFÆÄÀÏ¸í
-		\param pointsize : ±ÛÀÚÅ©±â
-		\param numCacheGlyphs : ºü¸¥Ãâ·ÂÀ» À§ÇÑ Ä³½Ã¼ö(icfÀÇ [gxfont] CacheTextureMaxSizeº¸´Ù ÀÛ¾Æ¾ß ÇÔ, -1Àº ÀÚµ¿Ã³¸®)
-		\return ÆùÆ®ID(nullptrÀº ½ÇÆĞ)
+		\brief í°íŠ¸ì—´ê¸°(íŒŒì¼)
+		\param filename : TTFíŒŒì¼ëª…
+		\param pointsize : ê¸€ìí¬ê¸°
+		\param numCacheGlyphs : ë¹ ë¥¸ì¶œë ¥ì„ ìœ„í•œ ìºì‹œìˆ˜(icfì˜ [gxfont] CacheTextureMaxSizeë³´ë‹¤ ì‘ì•„ì•¼ í•¨, -1ì€ ìë™ì²˜ë¦¬)
+		\return í°íŠ¸ID(nullptrì€ ì‹¤íŒ¨)
 		\see Close
 		*/
 		id_font Open(string filename, const int pointsize, const int numCacheGlyphs = -1);
 
 		/*!
-		\brief ÆùÆ®¿­±â(¹öÆÛ)
-		\param buffer : TTF¹öÆÛ
-		\param buffersize : TTF¹öÆÛ»çÀÌÁî
-		\param pointsize : ±ÛÀÚÅ©±â
-		\param numCacheGlyphs : ºü¸¥Ãâ·ÂÀ» À§ÇÑ Ä³½Ã¼ö(icfÀÇ [gxfont] CacheTextureMaxSizeº¸´Ù ÀÛ¾Æ¾ß ÇÔ, -1Àº ÀÚµ¿Ã³¸®)
-		\return ÆùÆ®ID(nullptrÀº ½ÇÆĞ)
+		\brief í°íŠ¸ì—´ê¸°(ë²„í¼)
+		\param buffer : TTFë²„í¼
+		\param buffersize : TTFë²„í¼ì‚¬ì´ì¦ˆ
+		\param pointsize : ê¸€ìí¬ê¸°
+		\param numCacheGlyphs : ë¹ ë¥¸ì¶œë ¥ì„ ìœ„í•œ ìºì‹œìˆ˜(icfì˜ [gxfont] CacheTextureMaxSizeë³´ë‹¤ ì‘ì•„ì•¼ í•¨, -1ì€ ìë™ì²˜ë¦¬)
+		\return í°íŠ¸ID(nullptrì€ ì‹¤íŒ¨)
 		\see Close
 		*/
 		id_font Open(const byte* buffer, const int buffersize, const int pointsize, const int numCacheGlyphs = -1);
 
 		/*!
-		\brief ÆùÆ®´İ±â
-		\param font : ÆùÆ®ID
+		\brief í°íŠ¸ë‹«ê¸°
+		\param font : í°íŠ¸ID
 		\see Open
 		*/
 		void Close(id_font font);
 
 		/*!
-		\brief ÀÎÄÚµù¹æ½Ä ¼³Á¤
-		\param encoding : ÀÎÄÚµù ÄÚµå
+		\brief ì¸ì½”ë”©ë°©ì‹ ì„¤ì •
+		\param encoding : ì¸ì½”ë”© ì½”ë“œ
 		\see SetSort, SetStyle, GetSize
 		*/
 		void SetEncoding(fontencoding encoding);
 
 		/*!
-		\brief Á¤·Ä¹æ½Ä ¼³Á¤
-		\param sort : ¼ıÀÚÅ°ÆĞµå ¹æ½Ä
-		\return Á¤·Ä¹æ½Ä ÀÌÀü°ª
+		\brief ì •ë ¬ë°©ì‹ ì„¤ì •
+		\param sort : ìˆ«ìí‚¤íŒ¨ë“œ ë°©ì‹
+		\return ì •ë ¬ë°©ì‹ ì´ì „ê°’
 		\see SetEncoding, SetStyle, GetSize
 		*/
 		fontsort SetSort(fontsort sort);
 
 		/*!
-		\brief ½ºÅ¸ÀÏ ¼³Á¤
-		\param underline : ¹ØÁÙ ¿©ºÎ
-		\param italic : ÀÌÅÅ¸¯Ã¼ ¿©ºÎ
+		\brief ìŠ¤íƒ€ì¼ ì„¤ì •
+		\param underline : ë°‘ì¤„ ì—¬ë¶€
+		\param italic : ì´íƒ¤ë¦­ì²´ ì—¬ë¶€
 		\see SetEncoding, SetSort, GetSize
 		*/
 		void SetStyle(bool underline, bool italic);
 
 		/*!
-		\brief »çÀÌÁî ¾ò±â
-		\param font : ÆùÆ®ID
-		\param str : ½ºÆ®¸µ
-		\param s : ÁöÁ¤°ø°£
-		\return ÇØ´ç ½ºÆ®¸µÀÇ Ãâ·Â»çÀÌÁî
+		\brief ì‚¬ì´ì¦ˆ ì–»ê¸°
+		\param font : í°íŠ¸ID
+		\param str : ìŠ¤íŠ¸ë§
+		\param s : ì§€ì •ê³µê°„
+		\return í•´ë‹¹ ìŠ¤íŠ¸ë§ì˜ ì¶œë ¥ì‚¬ì´ì¦ˆ
 		\see SetEncoding, SetSort, SetStyle
 		*/
 		size GetSize(id_font font, string str, const size s = size::full());
 
 		/*!
-		\brief ½ºÆ®¸µ Ãâ·Â
-		\param font : ÆùÆ®ID
-		\param str : ½ºÆ®¸µ
-		\param p : Ãâ·ÂÀ§Ä¡
-		\param s : ÁöÁ¤°ø°£
-		\param color : »ö»ó
-		\param opacity : ºÒÅõ¸íµµ
+		\brief ìŠ¤íŠ¸ë§ ì¶œë ¥
+		\param font : í°íŠ¸ID
+		\param str : ìŠ¤íŠ¸ë§
+		\param p : ì¶œë ¥ìœ„ì¹˜
+		\param s : ì§€ì •ê³µê°„
+		\param color : ìƒ‰ìƒ
+		\param opacity : ë¶ˆíˆ¬ëª…ë„
 		*/
 		void Draw(id_font font, string str, const point p, const size s = size::full(), const color_x888 color = 0, const byte opacity = 0xFF);
 	}
 
-	//! \brief ThreadÆÄÆ®
+	//! \brief ThreadíŒŒíŠ¸
 	namespace Thread
 	{
 		/*!
-		\brief ½º·¹µå »ı¼º
-		\param threadCB : Äİ¹éÇÔ¼ö
-		\param data : Àü´ŞÇÒ µ¥ÀÌÅÍ
-		\return »ı¼ºµÈ ½º·¹µåID
+		\brief ìŠ¤ë ˆë“œ ìƒì„±
+		\param threadCB : ì½œë°±í•¨ìˆ˜
+		\param data : ì „ë‹¬í•  ë°ì´í„°
+		\return ìƒì„±ëœ ìŠ¤ë ˆë“œID
 		\see Release
 		*/
 		id_thread Create(callback_thread threadCB, void* data = nullptr);
 
 		/*!
-		\brief ½º·¹µå ÇØÁ¦
-		\param thread : ½º·¹µåID
-		\param dokill : °­Á¦·Î Á¾·á½ÃÅ³ÁöÀÇ ¿©ºÎ
-		\param dowait : Á¾·á¶§±îÁö ´ë±âÇÒÁöÀÇ ¿©ºÎ
+		\brief ìŠ¤ë ˆë“œ í•´ì œ
+		\param thread : ìŠ¤ë ˆë“œID
+		\param dokill : ê°•ì œë¡œ ì¢…ë£Œì‹œí‚¬ì§€ì˜ ì—¬ë¶€
+		\param dowait : ì¢…ë£Œë•Œê¹Œì§€ ëŒ€ê¸°í• ì§€ì˜ ì—¬ë¶€
 		\see Create
 		*/
 		void Release(id_thread thread, bool dokill = false, bool dowait = false);
 
 		/*!
-		\brief ¹ÂÅØ½º ¿­±â
-		\return »ı¼ºµÈ ¹ÂÅØ½ºID
+		\brief ë®¤í…ìŠ¤ ì—´ê¸°
+		\return ìƒì„±ëœ ë®¤í…ìŠ¤ID
 		\see CloseMutex
 		*/
 		id_mutex OpenMutex();
 		
 		/*!
-		\brief ¹ÂÅØ½º ´İ±â
-		\param mutex : ¹ÂÅØ½ºID
+		\brief ë®¤í…ìŠ¤ ë‹«ê¸°
+		\param mutex : ë®¤í…ìŠ¤ID
 		\see OpenMutex
 		*/
 		void CloseMutex(id_mutex mutex);
 		
 		/*!
-		\brief ¹ÂÅØ½º Àá±İ
-		\param mutex : ¹ÂÅØ½ºID
+		\brief ë®¤í…ìŠ¤ ì ê¸ˆ
+		\param mutex : ë®¤í…ìŠ¤ID
 		\see Unlock
 		*/
 		void Lock(id_mutex mutex);
 		
 		/*!
-		\brief ¹ÂÅØ½º ÇØÁ¦
-		\param mutex : ¹ÂÅØ½ºID
+		\brief ë®¤í…ìŠ¤ í•´ì œ
+		\param mutex : ë®¤í…ìŠ¤ID
 		\see Lock
 		*/
 		void Unlock(id_mutex mutex);
+
+		/*!
+		\brief í˜„ ìŠ¤ë ˆë“œìƒì˜ ì €ì¥ì†Œ ê°œë³„ì—°ê²°(ìŠ¤ë ˆë“œìˆ˜ëŸ‰ x ì •ì ë³€ìˆ˜ìˆ˜ëŸ‰)
+		\param storagekey : thread_storageë¥¼ í†µí•´ì„œ ì„ ì–¸ëœ ì—°ê²°ë³€ìˆ˜
+		\return ì €ì¥ì†Œì˜ ë²„í¼ì£¼ì†Œ(ì²˜ìŒ ìƒì„±ì‹œ ëª¨ë“  ê°’ì€ 0ìœ¼ë¡œ ì´ˆê¸°í™”ë¨)
+		\see UnbindStorageAll
+		*/
+		void* BindStorage(int* storagekey);
+
+		/*!
+		\brief í˜„ ìŠ¤ë ˆë“œìƒì˜ ì €ì¥ì†Œ ì „ì²´ì¢…ë£Œ
+		\see BindStorage
+		*/
+		void UnbindStorageAll();
 	}
 
-	//! \brief LibraryÆÄÆ®
+	//! \brief LibraryíŒŒíŠ¸
 	namespace Library
 	{
 		/*!
-		\brief ¶óÀÌºê·¯¸® ¿­±â
-		\param filename : ÆÄÀÏ¸í
-		\return ¶óÀÌºê·¯¸®ID(nullptrÀº ½ÇÆĞ)
+		\brief ë¼ì´ë¸ŒëŸ¬ë¦¬ ì—´ê¸°
+		\param filename : íŒŒì¼ëª…
+		\return ë¼ì´ë¸ŒëŸ¬ë¦¬ID(nullptrì€ ì‹¤íŒ¨)
 		\see Close
 		*/
 		id_library Open(string filename);
 
 		/*!
-		\brief ¶óÀÌºê·¯¸® ´İ±â
-		\param handle : ¶óÀÌºê·¯¸®ID
+		\brief ë¼ì´ë¸ŒëŸ¬ë¦¬ ë‹«ê¸°
+		\param handle : ë¼ì´ë¸ŒëŸ¬ë¦¬ID
 		\see Open
 		*/
 		void Close(id_library handle);
 
 		/*!
-		\brief ÇÔ¼ö¿¬°á
-		\param handle : ¶óÀÌºê·¯¸®ID
-		\param name : ÇÔ¼ö¸í
-		\see ÇÔ¼öÆ÷ÀÎÅÍ
+		\brief í•¨ìˆ˜ì—°ê²°
+		\param handle : ë¼ì´ë¸ŒëŸ¬ë¦¬ID
+		\param name : í•¨ìˆ˜ëª…
+		\see í•¨ìˆ˜í¬ì¸í„°
 		*/
 		void* Link(id_library handle, string name);
 	}
 
-	//! \brief OpenGL2DÆÄÆ®
+	//! \brief OpenGL2DíŒŒíŠ¸
 	namespace OpenGL2D
 	{
 		void Init();

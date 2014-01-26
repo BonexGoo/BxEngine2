@@ -1,4 +1,4 @@
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+Ôªø// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 #include <BxMemory.hpp>
 
 namespace BxCore
@@ -11,7 +11,7 @@ namespace BxCore
 local_func const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage);
 local_func bool BindingCore() {BxCore::AddOn::ForExtend_GIFToBMP() = (void*) GIFToBMP; return true;}
 local_data bool Unknown = BindingCore();
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 
 /*
  * Copyright 2004 Richard Wilson <richard.wilson@netsurf-browser.org>
@@ -117,7 +117,7 @@ gif_result gif_initialise(gif_animation *gif, size_t size, const unsigned char *
 gif_result gif_decode_frame(gif_animation *gif, unsigned int frame);
 void gif_finalise(gif_animation *gif);
 
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 void* bitmap_create(int width, int height)
 {
 	return BxAlloc(width * height * 4);
@@ -126,30 +126,30 @@ void* bitmap_create(int width, int height)
 void bitmap_set_opaque(void* bitmap, bool opaque)
 {
 	(void) opaque;
-	BxAssert("BxCore::ThirdParty<NSGIF003¿« ø¿µø¿€¿‘¥œ¥Ÿ>", bitmap);
+	BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò Ïò§ÎèôÏûëÏûÖÎãàÎã§>", bitmap);
 }
 
 bool bitmap_test_opaque(void* bitmap)
 {
-	BxAssert("BxCore::ThirdParty<NSGIF003¿« ø¿µø¿€¿‘¥œ¥Ÿ>", bitmap);
+	BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò Ïò§ÎèôÏûëÏûÖÎãàÎã§>", bitmap);
 	return false;
 }
 
 byte* bitmap_get_buffer(void* bitmap)
 {
-	BxAssert("BxCore::ThirdParty<NSGIF003¿« ø¿µø¿€¿‘¥œ¥Ÿ>", bitmap);
+	BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò Ïò§ÎèôÏûëÏûÖÎãàÎã§>", bitmap);
 	return (byte*) bitmap;
 }
 
 void bitmap_destroy(void* bitmap)
 {
-	BxAssert("BxCore::ThirdParty<NSGIF003¿« ø¿µø¿€¿‘¥œ¥Ÿ>", bitmap);
+	BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò Ïò§ÎèôÏûëÏûÖÎãàÎã§>", bitmap);
 	BxFree(bitmap);
 }
 
 void bitmap_modified(void* bitmap)
 {
-	BxAssert("BxCore::ThirdParty<NSGIF003¿« ø¿µø¿€¿‘¥œ¥Ÿ>", bitmap);
+	BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò Ïò§ÎèôÏûëÏûÖÎãàÎã§>", bitmap);
 	return;
 }
 
@@ -176,13 +176,13 @@ const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 		code = gif_initialise(&gifani, length, gif);
 		if(code != GIF_OK && code != GIF_WORKING)
 		{
-			BxAssert("BxCore::ThirdParty<NSGIF003¿« ∏µ‚ª˝º∫ø° Ω«∆–«œø¥Ω¿¥œ¥Ÿ>", false);
+			BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò Î™®ÎìàÏÉùÏÑ±Ïóê Ïã§Ìå®ÌïòÏòÄÏäµÎãàÎã§>", false);
 			return nullptr;
 		}
 	}
 	while(code != GIF_OK);
 
-	// ∫Ò∆Æ∏ ±∏º∫
+	// ÎπÑÌä∏ÎßµÍµ¨ÏÑ±
 	typedef struct {uint Size; ushort Reserved1; ushort Reserved2; uint OffBits;} BITMAPFILEHEADER;
 	typedef struct {uint Size; int Width; int Height; ushort Planes; ushort BitCount; uint Compression;
 		uint SizeImage; int XPelsPerMeter; int YPelsPerMeter; uint ClrUsed; uint ClrImportant;} BITMAPINFOHEADER;
@@ -221,7 +221,7 @@ const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 		code = gif_decode_frame(&gifani, i);
 		if(code != GIF_OK)
 		{
-			BxAssert("BxCore::ThirdParty<NSGIF003¿« µƒ⁄µ˘ø° Ω«∆–«œø¥Ω¿¥œ¥Ÿ>", false);
+			BxASSERT("BxCore::ThirdParty<NSGIF003Ïùò ÎîîÏΩîÎî©Ïóê Ïã§Ìå®ÌïòÏòÄÏäµÎãàÎã§>", false);
 			BxFree(Bmp);
 			return nullptr;
 		}
@@ -255,7 +255,7 @@ const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 	gif_finalise(&gifani);
 	return Bmp;
 }
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 
 /*	READING GIF FILES
 	=================

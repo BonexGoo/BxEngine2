@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -72,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -160,9 +159,18 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#aa3061377ddfe3bbfbd8d81198d958b4f">DoSimulatorMinimize</a> ()</td></tr>
 <tr class="memdesc:aa3061377ddfe3bbfbd8d81198d958b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">시뮬레이터 최소화하기(데스크탑 빌드전용) <br/></td></tr>
 <tr class="separator:aa3061377ddfe3bbfbd8d81198d958b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446e8c7a3fafffa3750a42378abbf87f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a446e8c7a3fafffa3750a42378abbf87f">Assert</a> (string name, string query, bool &amp;IsIgnore, bool flag, string file, int line, string func)</td></tr>
-<tr class="memdesc:a446e8c7a3fafffa3750a42378abbf87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">디버깅코드(Macro함수인 BxAssert로 사용권장)  <a href="#a446e8c7a3fafffa3750a42378abbf87f">More...</a><br/></td></tr>
-<tr class="separator:a446e8c7a3fafffa3750a42378abbf87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1378bb03a6217f9098f0386b4668f2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#af1378bb03a6217f9098f0386b4668f2e">Break</a> (string name, string query __DEBUG_PRM__)</td></tr>
+<tr class="memdesc:af1378bb03a6217f9098f0386b4668f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">실행중지(Macro함수인 BxASSERT로 사용권장)  <a href="#af1378bb03a6217f9098f0386b4668f2e">More...</a><br/></td></tr>
+<tr class="separator:af1378bb03a6217f9098f0386b4668f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cbcef13cd061545c46900a5a1de6ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a32cbcef13cd061545c46900a5a1de6ce">Trace</a> (string map, const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;args=<a class="el" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68">BxThrow::zero</a>())</td></tr>
+<tr class="memdesc:a32cbcef13cd061545c46900a5a1de6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">출력창에 스트링기록(Macro함수인 BxTRACE로 사용권장)  <a href="#a32cbcef13cd061545c46900a5a1de6ce">More...</a><br/></td></tr>
+<tr class="separator:a32cbcef13cd061545c46900a5a1de6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f936d990916aa107105ba54247fd22"><td class="memItemLeft" align="right" valign="top">string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a90f936d990916aa107105ba54247fd22">GetUTF8LiteralByCP949</a> (string const cp949, const int <a class="el" href="structsize.html">size</a>)</td></tr>
+<tr class="memdesc:a90f936d990916aa107105ba54247fd22"><td class="mdescLeft">&#160;</td><td class="mdescRight">CP949 스트링상수로부터 UTF8 스트링상수얻기 (Macro함수인 W1을 사용권장)  <a href="#a90f936d990916aa107105ba54247fd22">More...</a><br/></td></tr>
+<tr class="separator:a90f936d990916aa107105ba54247fd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d560a109b110c57e7398d39b0479dc"><td class="memItemLeft" align="right" valign="top">string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#af0d560a109b110c57e7398d39b0479dc">GetCP949LiteralByUTF8</a> (string const utf8, const int <a class="el" href="structsize.html">size</a>)</td></tr>
+<tr class="memdesc:af0d560a109b110c57e7398d39b0479dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF8 스트링상수로부터 CP949 스트링상수얻기 (Macro함수인 MB를 사용권장)  <a href="#af0d560a109b110c57e7398d39b0479dc">More...</a><br/></td></tr>
+<tr class="separator:af0d560a109b110c57e7398d39b0479dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33066078113affd381b6fe4d2024dacc"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a33066078113affd381b6fe4d2024dacc">GetOSName</a> ()</td></tr>
 <tr class="memdesc:a33066078113affd381b6fe4d2024dacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS이름 구하기  <a href="#a33066078113affd381b6fe4d2024dacc">More...</a><br/></td></tr>
 <tr class="separator:a33066078113affd381b6fe4d2024dacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,76 +314,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 
 </div>
 </div>
-<a class="anchor" id="a446e8c7a3fafffa3750a42378abbf87f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BxCore::System::Assert </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>query</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool &amp;&#160;</td>
-          <td class="paramname"><em>IsIgnore</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>flag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>디버깅코드(Macro함수인 BxAssert로 사용권장) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>: 에러내용 </td></tr>
-    <tr><td class="paramname">query</td><td>: 질의내용 </td></tr>
-    <tr><td class="paramname">IsIgnore</td><td>: 무시여부 </td></tr>
-    <tr><td class="paramname">flag</td><td>: 정상동작여부(true-정상동작, false-오류동작) </td></tr>
-    <tr><td class="paramname">file</td><td>: 해당파일명(<b>FILE</b>을 사용) </td></tr>
-    <tr><td class="paramname">line</td><td>: 해당줄번호(<b>LINE</b>을 사용) </td></tr>
-    <tr><td class="paramname">func</td><td>: 해당줄번호(<b>FUNCTION</b>를 사용) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="aaed9632d5a8e7c639d4da18fafdf8e0e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -398,6 +336,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>실행여부(여러개의 자식프로세스가 실행될 순 없으므로 false이면 실행거절) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af1378bb03a6217f9098f0386b4668f2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BxCore::System::Break </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string query&#160;</td>
+          <td class="paramname"><em>__DEBUG_PRM__</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>실행중지(Macro함수인 BxASSERT로 사용권장) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>: 에러내용 </td></tr>
+    <tr><td class="paramname">query</td><td>: 질의내용 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>앞으로도 본 중지를 계속 수행할지의 여부(true-수행, false-무시) </dd></dl>
 
 </div>
 </div>
@@ -649,6 +623,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 
 </div>
 </div>
+<a class="anchor" id="af0d560a109b110c57e7398d39b0479dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string const BxCore::System::GetCP949LiteralByUTF8 </td>
+          <td>(</td>
+          <td class="paramtype">string const&#160;</td>
+          <td class="paramname"><em>utf8</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UTF8 스트링상수로부터 CP949 스트링상수얻기 (Macro함수인 MB를 사용권장) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">utf8</td><td>: UTF8 스트링상수 </td></tr>
+    <tr><td class="paramname">size</td><td>: utf8의 바이트사이즈 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CP949 스트링상수 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa0aec579b20508c545e741183592e89c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -847,6 +857,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 
 <p>현재시간을 유사 마이크로초(나노초&gt;&gt;10)로 구하기 </p>
 <dl class="section return"><dt>Returns</dt><dd>1/976,562초 단위로 계산된 현재시간 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90f936d990916aa107105ba54247fd22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string const BxCore::System::GetUTF8LiteralByCP949 </td>
+          <td>(</td>
+          <td class="paramtype">string const&#160;</td>
+          <td class="paramname"><em>cp949</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CP949 스트링상수로부터 UTF8 스트링상수얻기 (Macro함수인 W1을 사용권장) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp949</td><td>: CP949 스트링상수 </td></tr>
+    <tr><td class="paramname">size</td><td>: cp949의 바이트사이즈 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>UTF8 스트링상수 </dd></dl>
 
 </div>
 </div>
@@ -1228,10 +1274,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 
 </div>
 </div>
+<a class="anchor" id="a32cbcef13cd061545c46900a5a1de6ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BxCore::System::Trace </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em> = <code><a class="el" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68">BxThrow::zero</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>출력창에 스트링기록(Macro함수인 BxTRACE로 사용권장) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>: 스트링맵 스크립트(식별문자는 "&lt;&gt;:") </td></tr>
+    <tr><td class="paramname">args</td><td>: map에 쓰일 가변인자 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:29 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:48 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -1,4 +1,4 @@
-#include <BxScene.hpp>
+ï»¿#include <BxScene.hpp>
 #include <BxSingleton.hpp>
 #include <BxTelex.hpp>
 
@@ -30,10 +30,10 @@ namespace BxCore
 /// @cond SECTION_NAME
 int main()
 {
-	// Draw°´Ã¼ ÇÒ´ç
+	// Drawê°ì²´ í• ë‹¹
 	Draw = BxNew(BxDraw);
 
-	// ÀÌº¥Æ®µî·Ï
+	// ì´ë²¤íŠ¸ë“±ë¡
 	BxCore::Main::EventAttach(Draw);
 
 	// Add GUIScene
@@ -62,7 +62,7 @@ int main()
 	uhuge CheckTime = BxCore::System::GetTimeMilliSecond();
 	while(Procedure())
 	{
-		// ÇÁ·¹ÀÓ½½¸³Ã³¸®
+		// í”„ë ˆì„ìŠ¬ë¦½ì²˜ë¦¬
 		const int SleepTime = BxCore::Main::GetCurrentFrameTime() - (int) (BxCore::System::GetTimeMilliSecond() - CheckTime) - 1;
 		BxCore::System::Sleep(BxUtilGlobal::Max(0, SleepTime));
 		while((int) (BxCore::System::GetTimeMilliSecond() - CheckTime) < BxCore::Main::GetCurrentFrameTime())
@@ -79,22 +79,19 @@ int main()
 	while((OneScene = OneScene->Next) != nullptr)
 		OneScene->GetData(sysmethod_remove);
 
-	// ÀÌº¥Æ®ÇØÁ¦
+	// ì´ë²¤íŠ¸í•´ì œ
 	BxCore::Main::EventDetach();
 
-	// Draw°´Ã¼ ÇØÁ¦
+	// Drawê°ì²´ í•´ì œ
 	BxDelete(Draw);
 
-	// Àü¿ª°´Ã¼ ÇØÁ¦
-	BxSingleton::UnbindAll();
+	// ì „ì—­ê°ì²´ í•´ì œ
+	BxSingleton::UnbindAll(true);
 
-	// ¸Ş¸ğ¸®ÇØÁ¦È®ÀÎ
-	while(BxMemory::DoMemLogger())
-	{
-		void* Test = BxAlloc(1); // ¸Ş¸ğ¸®ÇØÁ¦È®ÀÎÁß...
-		BxFree(Test); // ¸Ş¸ğ¸®ÇØÁ¦È®ÀÎÁß...
-		BxCore::System::Sleep(10);
-	}
+	// í’€ë§ê°ì²´ í•´ì œ
+	BxPoolGlobal::UnbindAll();
+	// ìŠ¤ë ˆë“œì €ì¥ì†Œ í•´ì œ
+	BxCore::Thread::UnbindStorageAll();
 	return 0;
 }
 /// @endcond
@@ -128,18 +125,16 @@ bool Procedure()
 	if(BxCore::System::IsQuit() || BxScene::__GetActiveSceneAllCount__() <= 0)
 		return false;
 
-	BxCore::Util::SetCallCount(0);
-
 	const bool DoRender = BxScene::__OnEventUpdateRender__(*Draw);
 	Draw->Flush();
 	#ifdef __BX_OPENGL
 	BxCore::OpenGL2D::Flush();
 	#endif
 
-	// ÅëÇÕÄİ¹éÃ³¸®
+	// í†µí•©ì½œë°±ì²˜ë¦¬
 	BxCore::System::ForSystem_CallbackRun();
 
-	// ÀÚ½ÄÇÁ·Î¼¼½ºÀÇ ½ÇÇà
+	// ìì‹í”„ë¡œì„¸ìŠ¤ì˜ ì‹¤í–‰
 	if(!IsChildProcessRun && BxCore::System::ForSystem_HasChildProcess())
 	{
 		IsChildProcessRun = true;
@@ -148,10 +143,10 @@ bool Procedure()
 		IsChildProcessRun = false;
 	}
 
-	// ÅÚ·º½º Æ®·£Àè¼Ç½Ãµµ
+	// í…”ë ‰ìŠ¤ íŠ¸ëœì­ì…˜ì‹œë„
 	BxTelex::HQ::TryTransaction();
 
-	// ÇÁ·¹ÀÓÄ«¿îÆ® ÁøÇà
+	// í”„ë ˆì„ì¹´ìš´íŠ¸ ì§„í–‰
 	++BxCore::Main::ForMain_LetUpdateCount();
 	if(DoRender) ++BxCore::Main::ForMain_LetRenderCount();
 	return true;

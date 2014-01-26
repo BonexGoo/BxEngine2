@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">BxImage.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxDraw.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxDraw.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="class_bx_image.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bx_image.html" title="이미지 운영 ">BxImage</a> : <span class="keyword">public</span> <a class="code" href="class_bx_draw_form.html" title="새로운 폼개발을 위한 인터페이스 ">BxDrawForm</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
@@ -195,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span>        BxDelete_Array(Bits);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        Bits = BxNew_Array(pixel_src, AreaWidth * AreaHeight);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Bits, 0, <span class="keyword">sizeof</span>(pixel_src) * AreaWidth * AreaHeight);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Bits, 0, <span class="keyword">sizeof</span>(pixel_src) * AreaWidth * AreaHeight);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno"><a class="code" href="class_bx_image.html#ad8cf3a1291116f0dc05d51b2daa4cf5a">  163</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bx_image.html#ad8cf3a1291116f0dc05d51b2daa4cf5a" title="복사식 이미지 생성 ">Create</a>(<a class="code" href="class_bx_image.html" title="이미지 운영 ">BxImage</a>&amp; Src, <span class="keyword">const</span> <span class="keywordtype">int</span> X, <span class="keyword">const</span> <span class="keywordtype">int</span> Y, <span class="keyword">const</span> <span class="keywordtype">int</span> Width, <span class="keyword">const</span> <span class="keywordtype">int</span> Height, hotspot Hotspot = PAD7)</div>
@@ -248,7 +247,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> AreaWidthSrc = BxDrawForm::CalcTextureSize(Src.Area.w);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> CopyLength = <span class="keyword">sizeof</span>(pixel_src) * (SrcX2 - SrcX);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y = Y, srcy = SrcY; srcy &lt; SrcY2; ++y, ++srcy)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;Bits[X + y * AreaWidth], &amp;Src.Bits[SrcX + srcy * AreaWidthSrc], CopyLength);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;Bits[X + y * AreaWidth], &amp;Src.Bits[SrcX + srcy * AreaWidthSrc], CopyLength);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00236"></a><span class="lineno"><a class="code" href="class_bx_image.html#a713d62bb72baec2908aaf1e35059790d">  236</a></span>&#160;    <span class="keyword">virtual</span> OnFormMethod <a class="code" href="class_bx_image.html#a713d62bb72baec2908aaf1e35059790d" title="폼모듈용 콜백함수 얻기 ">GetFormMethod</a>(maskoperate operate, maskflag flag)</div>
@@ -373,7 +372,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> WidthByMargin = BxCore::OpenGL2D::GetTextureMargin() + Width() + BxCore::OpenGL2D::GetTextureMargin();</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> HeightByMargin = BxCore::OpenGL2D::GetTextureMargin() + Height() + BxCore::OpenGL2D::GetTextureMargin();</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        color_a888* TextureImage = BxNew_Array(color_a888, WidthByMargin * HeightByMargin);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(TextureImage, 0, <span class="keyword">sizeof</span>(color_a888) * WidthByMargin * HeightByMargin);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(TextureImage, 0, <span class="keyword">sizeof</span>(color_a888) * WidthByMargin * HeightByMargin);</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> TextureRow = WidthByMargin;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> TextureMargin = BxCore::OpenGL2D::GetTextureMargin() + TextureRow * BxCore::OpenGL2D::GetTextureMargin();</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> BitsRow = BxDrawForm::CalcTextureSize(Width());</div>
@@ -447,8 +446,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <a class="code" href="structcolor__bgra.html" title="color_bgra구조체 : b, g, r, a ">color_bgra</a> BitmapPalette[256] = {{0,},};</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        BITMAPFILEHEADER BitmapFileHeader;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        BITMAPINFOHEADER BitmapInfoHeader;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;BitmapFileHeader, <a class="code" href="namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f" title="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</a>(ResourcePtr, <span class="keyword">sizeof</span>(BITMAPFILEHEADER)), <span class="keyword">sizeof</span>(BITMAPFILEHEADER));</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;BitmapInfoHeader, <a class="code" href="namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f" title="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</a>(ResourcePtr, <span class="keyword">sizeof</span>(BITMAPINFOHEADER)), <span class="keyword">sizeof</span>(BITMAPINFOHEADER));</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;BitmapFileHeader, <a class="code" href="namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f" title="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</a>(ResourcePtr, <span class="keyword">sizeof</span>(BITMAPFILEHEADER)), <span class="keyword">sizeof</span>(BITMAPFILEHEADER));</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;BitmapInfoHeader, <a class="code" href="namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f" title="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</a>(ResourcePtr, <span class="keyword">sizeof</span>(BITMAPINFOHEADER)), <span class="keyword">sizeof</span>(BITMAPINFOHEADER));</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">if</span>(0 &lt; BitmapInfoHeader.ClrUsed)</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            <a class="code" href="namespace_bx_util_global.html#ad1297c7c4fa7a887810713a0ab541400" title="데이터에서 바이트배열 로드(uint) ">BxUtilGlobal::LoadBytes</a>(ResourcePtr, BitmapPalette, BitmapInfoHeader.ClrUsed * <span class="keyword">sizeof</span>(<a class="code" href="structcolor__bgra.html" title="color_bgra구조체 : b, g, r, a ">color_bgra</a>));</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(0 &lt; BitmapFileHeader.OffBits - 54)</div>
@@ -690,7 +689,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            <span class="comment">// MGSPng클래스는 인터레이스를 지원하지 않는다</span></div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            <span class="keywordflow">if</span>(0 &lt; GetByte())</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            {</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxImage&lt;인터레이스가 들어간 PNG는 지원하지 않습니다&gt;&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxImage&lt;인터레이스가 들어간 PNG는 지원하지 않습니다&gt;&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            }</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
@@ -739,7 +738,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            uint BMPDataWidth = (ImageWidth * BytePerPixel + 3) &amp; ~3;</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            BMPSize = 56 + ImageHeight * BMPDataWidth;</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            BMPData = BxNew_Array(byte, BMPSize);</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(BMPData, 0xff, BMPSize);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(BMPData, 0xff, BMPSize);</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            SetBMPInfo(BMPData, ImageWidth, ImageHeight, BytePerPixel);</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;            <span class="comment">// IDAT 청크</span></div>
@@ -781,8 +780,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            byte* RowBuffers[2];</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;            RowBuffers[0] = BxNew_Array(byte, RowBufferWidth);</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            RowBuffers[1] = BxNew_Array(byte, RowBufferWidth);</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(RowBuffers[0], 0x00, RowBufferWidth);</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(RowBuffers[1], 0x00, RowBufferWidth);</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(RowBuffers[0], 0x00, RowBufferWidth);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(RowBuffers[1], 0x00, RowBufferWidth);</div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;            <span class="comment">// 첫 블럭헤더 디코딩</span></div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;            DecodeBlockHeader();</div>
@@ -1173,7 +1172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;                    <span class="keyword">const</span> uint DistancesNum = GetBits(5) + 1;</div>
 <div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;                    <span class="keyword">const</span> uint LengthsNum = GetBits(4) + 4;</div>
 <div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;                    uint Lengths[19];</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Lengths, 0, <span class="keyword">sizeof</span>(uint) * 19);</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Lengths, 0, <span class="keyword">sizeof</span>(uint) * 19);</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;                    <span class="keywordflow">for</span>(uint i = 0; i &lt; LengthsNum; ++i)</div>
 <div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;                        Lengths[PngLengthOrder[i]] = GetBits(3);</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                    BuildTable(2, 19, Lengths);</div>
@@ -1325,7 +1324,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:27 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

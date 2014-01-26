@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_memory" kind="class" prot="public">
+    <compoundname>BxMemory</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_memory_1a5f21a817163cc1f581a32bfd0df1c553" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxMemory::DoMemLogger</definition>
+        <argsstring>()</argsstring>
+        <name>DoMemLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxMemory.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxMemory.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxMemory.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxMemory.hpp" bodystart="15" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_bx_memory_1a5f21a817163cc1f581a32bfd0df1c553" prot="public" virt="non-virtual"><scope>BxMemory</scope><name>DoMemLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

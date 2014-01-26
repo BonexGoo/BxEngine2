@@ -5,57 +5,46 @@
     <includes refid="_bx_keyword_8hpp" local="no">BxKeyword.hpp</includes>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="139">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="BxCoreImpl.hpp"/>
-        <childnode refid="140" relation="include">
+      <node id="143">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="149" relation="include">
         </childnode>
       </node>
       <node id="146">
-        <label>stdarg.h</label>
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
       </node>
       <node id="148">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="145" relation="include">
-        </childnode>
-      </node>
-      <node id="144">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="145" relation="include">
-        </childnode>
-        <childnode refid="147" relation="include">
-        </childnode>
-      </node>
-      <node id="143">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="144" relation="include">
-        </childnode>
-      </node>
-      <node id="149">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="143" relation="include">
-        </childnode>
-        <childnode refid="150" relation="include">
-        </childnode>
-      </node>
-      <node id="141">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="142" relation="include">
-        </childnode>
         <childnode refid="149" relation="include">
         </childnode>
         <childnode refid="150" relation="include">
-        </childnode>
-      </node>
-      <node id="140">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="141" relation="include">
         </childnode>
       </node>
       <node id="147">
@@ -64,27 +53,34 @@
         <childnode refid="148" relation="include">
         </childnode>
       </node>
-      <node id="150">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="144" relation="include">
-        </childnode>
+      <node id="142">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
         <childnode refid="143" relation="include">
         </childnode>
       </node>
-      <node id="142">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="143" relation="include">
+      <node id="151">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="145" relation="include">
         </childnode>
-        <childnode refid="148" relation="include">
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="BxCoreImpl.hpp"/>
+        <childnode refid="142" relation="include">
         </childnode>
       </node>
       <node id="145">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="146" relation="include">
         </childnode>
+      </node>
+      <node id="150">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -96,158 +92,157 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxKeyword.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">BxCore</highlight></codeline>
-<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Main</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetUpdateCount()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UpdateCount<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UpdateCount;}</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetRenderCount()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RenderCount<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RenderCount;}</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetFrameTime()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FrameTime<sp/>=<sp/>50;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FrameTime;}</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetFrameDelay()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FrameDelay<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FrameDelay;}</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>ForMain_LetGUIMargin()<sp/>{global_data<sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>GUIMargin<sp/>=<sp/>{0,<sp/>0,<sp/>0,<sp/>0};<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GUIMargin;}</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">System</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_CertifyConfigLoad()</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsLoaded<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsLoaded)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>LoadResult<sp/>=<sp/>BxKeyword::Load(</highlight><highlight class="stringliteral">&quot;config/default.key&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::System&lt;config/default.key파일을<sp/>로드할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>LoadResult);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsLoaded<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CallbackList</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>callback_frame<sp/>Method;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsDataRef;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Value;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Data;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList*<sp/>Next;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList(callback_frame<sp/>method,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>datasize)</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Method<sp/>=<sp/>method;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>=<sp/>value;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsDataRef<sp/>=<sp/>(datasize<sp/>&lt;=<sp/>-1);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsDataRef)</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>datasize<sp/>&amp;&amp;<sp/>data)</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>=<sp/>BxAlloc(datasize);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(Data,<sp/>data,<sp/>datasize);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Data<sp/>=<sp/>data;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~CallbackList()</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsDataRef<sp/>&amp;&amp;<sp/>Data)<sp/>BxFree(Data);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Next)<sp/>BxDelete(Next);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_func<sp/>CallbackList*<sp/>GetFirst()</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/>CallbackList<sp/>First(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;First;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="70"></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForSystem_CallbackRun()</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList*<sp/>List<sp/>=<sp/>CallbackList::GetFirst();</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(List-&gt;Next)</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!List-&gt;Next-&gt;Method(List-&gt;Next-&gt;Value,<sp/>List-&gt;Next-&gt;Data))</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList*<sp/>DeleteList<sp/>=<sp/>List-&gt;Next;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List-&gt;Next<sp/>=<sp/>DeleteList-&gt;Next;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DeleteList-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete(DeleteList);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>List<sp/>=<sp/>List-&gt;Next;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="88"></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_func<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>callback_process&amp;<sp/>_ChildProcess()<sp/>{global_data<sp/>callback_process<sp/>ChildProcess<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ChildProcess;}</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForSystem_ClearChildProcess()</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ChildProcess()<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ForSystem_HasChildProcess()</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(_ChildProcess()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForSystem_RunChildProcess(callback_procedure<sp/>yield)</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::System::_RunChildProcess&lt;등록된<sp/>ChildProcess가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>_ChildProcess());</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ChildProcess()(yield);</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="105"></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_func<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>callback_edk&amp;<sp/>_EDKClient()<sp/>{global_data<sp/>callback_edk<sp/>EDKClient<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EDKClient;}</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_EDKCallback(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data)</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_EDKClient())</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_EDKClient()((string)<sp/>data,<sp/>value);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_EDKReceiver(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1_str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param2)</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_system_1ac2473ebfc86c3766155c7193893b0ce3" kindref="member" tooltip="프레임단위 정기적 콜백등록(참조식) ">AddCallback</ref>(_EDKCallback,<sp/>param2,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>param1_str,<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(param1_str)<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">AddOn</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreJPGToBMP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultJPGToBMP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*)</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>JPGToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_JPGToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultJPGToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="129"></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreGIFToBMP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_);</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultGIFToBMP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_)</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>GIFToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_GIFToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultGIFToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="136"></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreHQXToBMP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/>int);</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultHQXToBMP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>HQXToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_HQXToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultHQXToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="143"></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>(*CoreBUFToMD5)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int);</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>DefaultBUFToMD5(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>BUFToMD5확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_BUFToMD5()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultBUFToMD5;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="150"></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>id_zip<sp/>(*CoreCreateZIP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/>string);</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_zip<sp/>DefaultCreateZIP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>CreateZIP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_CreateZIP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultCreateZIP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="157"></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*CoreReleaseZIP)(id_zip);</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefaultReleaseZIP(id_zip)</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ReleaseZIP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);}</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ReleaseZIP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultReleaseZIP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="164"></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreZIPToFILE)(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_);</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultZIPToFILE(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_)</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ZIPToFILE확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ZIPToFILE()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultZIPToFILE;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="171"></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>(*CoreZIPToINFO)(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/>uhuge*,<sp/>uhuge*,<sp/>uhuge*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*);</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>DefaultZIPToINFO(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/>uhuge*,<sp/>uhuge*,<sp/>uhuge*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*)</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxAssert(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ZIPToINFO확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ZIPToINFO()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultZIPToINFO;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxKeyword.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">BxCore</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Main</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetUpdateCount()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UpdateCount<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UpdateCount;}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetRenderCount()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RenderCount<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RenderCount;}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetFrameTime()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FrameTime<sp/>=<sp/>50;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FrameTime;}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>ForMain_LetFrameDelay()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FrameDelay<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FrameDelay;}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>ForMain_LetGUIMargin()<sp/>{global_data<sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>GUIMargin<sp/>=<sp/>{0,<sp/>0,<sp/>0,<sp/>0};<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GUIMargin;}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">System</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_CertifyConfigLoad()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsLoaded<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsLoaded)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>LoadResult<sp/>=<sp/>BxKeyword::Load(</highlight><highlight class="stringliteral">&quot;config/default.key&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::System&lt;config/default.key파일을<sp/>로드할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>LoadResult);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsLoaded<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CallbackList</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>callback_frame<sp/>Method;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsDataRef;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Value;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Data;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList*<sp/>Next;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList(callback_frame<sp/>method,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>datasize)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Method<sp/>=<sp/>method;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsDataRef<sp/>=<sp/>(datasize<sp/>&lt;=<sp/>-1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsDataRef)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>datasize<sp/>&amp;&amp;<sp/>data)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>=<sp/>BxAlloc(datasize);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(Data,<sp/>data,<sp/>datasize);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Data<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~CallbackList()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsDataRef<sp/>&amp;&amp;<sp/>Data)<sp/>BxFree(Data);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Next)<sp/>BxDelete(Next);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_func<sp/>CallbackList*<sp/>GetFirst()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/>CallbackList<sp/>First(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>0,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;First;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForSystem_CallbackRun()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList*<sp/>List<sp/>=<sp/>CallbackList::GetFirst();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(List-&gt;Next)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!List-&gt;Next-&gt;Method(List-&gt;Next-&gt;Value,<sp/>List-&gt;Next-&gt;Data))</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallbackList*<sp/>DeleteList<sp/>=<sp/>List-&gt;Next;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List-&gt;Next<sp/>=<sp/>DeleteList-&gt;Next;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DeleteList-&gt;Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete(DeleteList);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>List<sp/>=<sp/>List-&gt;Next;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_func<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>callback_process&amp;<sp/>_ChildProcess()<sp/>{global_data<sp/>callback_process<sp/>ChildProcess<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ChildProcess;}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForSystem_ClearChildProcess()</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ChildProcess()<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ForSystem_HasChildProcess()</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(_ChildProcess()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForSystem_RunChildProcess(callback_procedure<sp/>yield)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::System::_RunChildProcess&lt;등록된<sp/>ChildProcess가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>_ChildProcess());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ChildProcess()(yield);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_func<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>callback_edk&amp;<sp/>_EDKClient()<sp/>{global_data<sp/>callback_edk<sp/>EDKClient<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EDKClient;}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_EDKCallback(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_EDKClient())</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_EDKClient()((string)<sp/>data,<sp/>value);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_EDKReceiver(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>param1_str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param2)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_system_1ac2473ebfc86c3766155c7193893b0ce3" kindref="member" tooltip="프레임단위 정기적 콜백등록(참조식) ">AddCallback</ref>(_EDKCallback,<sp/>param2,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>param1_str,<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(param1_str)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">AddOn</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreJPGToBMP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultJPGToBMP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>JPGToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_JPGToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultJPGToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="128"></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreGIFToBMP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultGIFToBMP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>GIFToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_GIFToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultGIFToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="135"></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreHQXToBMP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/>int);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultHQXToBMP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>HQXToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_HQXToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultHQXToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="142"></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>(*CoreBUFToMD5)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>DefaultBUFToMD5(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>BUFToMD5확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_BUFToMD5()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultBUFToMD5;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="149"></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>id_zip<sp/>(*CoreCreateZIP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/>string);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_zip<sp/>DefaultCreateZIP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>CreateZIP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_CreateZIP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultCreateZIP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="156"></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*CoreReleaseZIP)(id_zip);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefaultReleaseZIP(id_zip)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ReleaseZIP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ReleaseZIP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultReleaseZIP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="163"></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreZIPToFILE)(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultZIPToFILE(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ZIPToFILE확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ZIPToFILE()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultZIPToFILE;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="170"></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>(*CoreZIPToINFO)(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/>uhuge*,<sp/>uhuge*,<sp/>uhuge*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>DefaultZIPToINFO(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/>uhuge*,<sp/>uhuge*,<sp/>uhuge*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ZIPToINFO확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ZIPToINFO()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultZIPToINFO;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxcore/BxCoreImpl.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreImpl.hpp"/>
   </compounddef>
 </doxygen>

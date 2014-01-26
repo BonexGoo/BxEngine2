@@ -1,8 +1,8 @@
-#pragma once
+ï»¿#pragma once
 #include <BxCore.hpp>
 #include <BxMemory.hpp>
 
-//! \brief »ç¿ëÀÚ¸ğµâÀ» À§ÇÑ ½Ç½Ã°£·Îµùµµ±¸
+//! \brief ì‚¬ìš©ìëª¨ë“ˆì„ ìœ„í•œ ì‹¤ì‹œê°„ë¡œë”©ë„êµ¬
 template<autobuffer AUTOBUFFER_ID>
 class BxAutoBuffer
 {
@@ -64,33 +64,33 @@ protected:
 	{
 		if(doLock) ++LockCountByUse;
 		while(SecureBuffer(size));
-		BxAssert("BxAutoBuffer<ÀÌ¹Ì Buffer°¡ Á¸ÀçÇÕ´Ï´Ù>", !Buffer);
+		BxASSERT("BxAutoBuffer<ì´ë¯¸ Bufferê°€ ì¡´ì¬í•©ë‹ˆë‹¤>", !Buffer);
 		LastTimeByUse = BxCore::System::GetTimeMilliSecond();
-		// Ç®¿¡ Ãß°¡
+		// í’€ì— ì¶”ê°€
 		BufferPoolUsed() += size;
 		List* AddPool = BxNew_Param(List, this, size);
 		AddPool->Next = BufferPoolFirst()->Next;
 		BufferPoolFirst()->Next = AddPool;
-		// ¹öÆÛÈ®º¸
+		// ë²„í¼í™•ë³´
 		Buffer = BxAlloc(size);
 		return Buffer;
 	}
 	void Free()
 	{
-		BxAssert("BxAutoBuffer<ÇØÁ¦ÇÒ Buffer°¡ ¾ø½À´Ï´Ù>", Buffer);
-		BxAssert("BxAutoBuffer<Buffer°¡ Lock»óÅÂÀÔ´Ï´Ù>", LockCountByUse == 0);
+		BxASSERT("BxAutoBuffer<í•´ì œí•  Bufferê°€ ì—†ìŠµë‹ˆë‹¤>", Buffer);
+		BxASSERT("BxAutoBuffer<Bufferê°€ Lockìƒíƒœì…ë‹ˆë‹¤>", LockCountByUse == 0);
 		LastTimeByUse = 0;
-		// Ç®°Ë»ö
+		// í’€ê²€ìƒ‰
 		List* FindPool = BufferPoolFirst();
 		while(FindPool->Next->Data != this)
 			FindPool = FindPool->Next;
-		// Ç®¿¡¼­ Á¦¿Ü
+		// í’€ì—ì„œ ì œì™¸
 		BufferPoolUsed() -= FindPool->Next->Size;
 		List* SubPool = FindPool->Next;
 		FindPool->Next = SubPool->Next;
 		SubPool->Next = nullptr;
 		BxDelete(SubPool);
-		// ¹öÆÛÇØÁ¦
+		// ë²„í¼í•´ì œ
 		BxFree(Buffer);
 		Buffer = nullptr;
 	}
@@ -102,13 +102,13 @@ protected:
 	}
 	inline void Lock()
 	{
-		BxAssert("BxAutoBuffer<Lock½ÃÅ³ Buffer°¡ ¾ø½À´Ï´Ù>", Buffer);
+		BxASSERT("BxAutoBuffer<Lockì‹œí‚¬ Bufferê°€ ì—†ìŠµë‹ˆë‹¤>", Buffer);
 		++LockCountByUse;
 	}
 	inline void Unlock()
 	{
-		BxAssert("BxAutoBuffer<Unlock½ÃÅ³ Buffer°¡ ¾ø½À´Ï´Ù>", Buffer);
-		BxAssert("BxAutoBuffer<LockÀÇ ¼ö¸¦ ³Ñ¾î¼± UnlockÀÔ´Ï´Ù>", 0 < LockCountByUse);
+		BxASSERT("BxAutoBuffer<Unlockì‹œí‚¬ Bufferê°€ ì—†ìŠµë‹ˆë‹¤>", Buffer);
+		BxASSERT("BxAutoBuffer<Lockì˜ ìˆ˜ë¥¼ ë„˜ì–´ì„  Unlockì…ë‹ˆë‹¤>", 0 < LockCountByUse);
 		--LockCountByUse;
 	}
 	inline void SetAutoRelease(bool isAutoRelease)
@@ -136,7 +136,7 @@ private:
 					LastTimeMax = FindPool->Data->LastTimeByUse;
 				}
 			}
-			BxAssert("BxAutoBuffer<»õ BufferÀÇ °ø°£À» ÇÒ´çÇÒ ¼ö ¾ø½À´Ï´Ù>", SubPool);
+			BxASSERT("BxAutoBuffer<ìƒˆ Bufferì˜ ê³µê°„ì„ í• ë‹¹í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", SubPool);
 			SubPool->Data->Free();
 			return true;
 		}

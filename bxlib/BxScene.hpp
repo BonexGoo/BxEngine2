@@ -1,25 +1,25 @@
-#pragma once
+ï»¿#pragma once
 #include <BxString.hpp>
 #include <BxDraw.hpp>
 using namespace BxUtilGlobal;
 using namespace BxDrawGlobal;
 
-//! \brief ¾À°ü¸®
+//! \brief ì”¬ê´€ë¦¬
 class BxScene
 {
 public:
 	/*!
-	\brief ¾ÀÈ°¼ºÈ­ ¿äÃ»
-	\param Name : ¾ÀÀÌ¸§
-	\param Order : Ãß°¡µÉ Ãâ·Â¼ø¹ø(-1Àº ÃÖ»ó´Ü, -2´Â GUI)
+	\brief ì”¬í™œì„±í™” ìš”ì²­
+	\param Name : ì”¬ì´ë¦„
+	\param Order : ì¶”ê°€ë  ì¶œë ¥ìˆœë²ˆ(-1ì€ ìµœìƒë‹¨, -2ëŠ” GUI)
 	\see SubRequest
 	*/
 	global_func void AddRequest(string Name, int Order = -1)
 	{
 		AllScene* FindedScene = __FindAllScene__(Name);
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§ÀÇ ¾ÀÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", FindedScene != nullptr);
-		BxAssert("BxScene<ÀÌ¹Ì È°¼ºÈ­µÈ ¾ÀÀÔ´Ï´Ù>", __FindActiveScene__(Name) == nullptr);
-		BxAssert("BxScene<ÇØ´ç ¾ÀÀº ÀÌ¹Ì ¿äÃ»ÁßÀÔ´Ï´Ù>", __FindActiveSceneRequest__(FindedScene) == nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ì˜ ì”¬ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", FindedScene != nullptr);
+		BxASSERT("BxScene<ì´ë¯¸ í™œì„±í™”ëœ ì”¬ì…ë‹ˆë‹¤>", __FindActiveScene__(Name) == nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì”¬ì€ ì´ë¯¸ ìš”ì²­ì¤‘ì…ë‹ˆë‹¤>", __FindActiveSceneRequest__(FindedScene) == nullptr);
 		// New Request(Add)
 		ActiveSceneRequest* NewActiveSceneRequest = BxNew_Param(ActiveSceneRequest, sysrequest_add, Order, BxNew_Param(ActiveScene, FindedScene));
 		NewActiveSceneRequest->Next = __GetActiveSceneRequest__().Next;
@@ -28,16 +28,16 @@ public:
 	}
 
 	/*!
-	\brief È°¼º¾À Á¦°Å
-	\param Name : ¾ÀÀÌ¸§
+	\brief í™œì„±ì”¬ ì œê±°
+	\param Name : ì”¬ì´ë¦„
 	\see AddRequest
 	*/
 	global_func void SubRequest(string Name)
 	{
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§ÀÇ ¾ÀÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", __FindAllScene__(Name) != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ì˜ ì”¬ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§À¸·Î È°¼ºÈ­µÈ ¾ÀÀÌ ¾ø½À´Ï´Ù>", FindedScene != nullptr);
-		BxAssert("BxScene<ÇØ´ç ¾ÀÀº ÀÌ¹Ì ¿äÃ»ÁßÀÔ´Ï´Ù>", __FindActiveSceneRequest__(FindedScene) == nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ìœ¼ë¡œ í™œì„±í™”ëœ ì”¬ì´ ì—†ìŠµë‹ˆë‹¤>", FindedScene != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì”¬ì€ ì´ë¯¸ ìš”ì²­ì¤‘ì…ë‹ˆë‹¤>", __FindActiveSceneRequest__(FindedScene) == nullptr);
 		// Find Loop
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
 		while(OneActiveScene->Scene != FindedScene)
@@ -50,16 +50,16 @@ public:
 	}
 
 	/*!
-	\brief È°¼º¾À Ãâ·Â¼ø¹øº¯°æ
-	\param Name : ¾ÀÀÌ¸§
-	\param Order : º¯°æµÉ Ãâ·Â¼ø¹ø
+	\brief í™œì„±ì”¬ ì¶œë ¥ìˆœë²ˆë³€ê²½
+	\param Name : ì”¬ì´ë¦„
+	\param Order : ë³€ê²½ë  ì¶œë ¥ìˆœë²ˆ
 	*/
 	global_func void SetRequest(string Name, uint Order)
 	{
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§ÀÇ ¾ÀÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", __FindAllScene__(Name) != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ì˜ ì”¬ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§À¸·Î È°¼ºÈ­µÈ ¾ÀÀÌ ¾ø½À´Ï´Ù>", FindedScene != nullptr);
-		BxAssert("BxScene<ÇØ´ç ¾ÀÀº ÀÌ¹Ì ¿äÃ»ÁßÀÔ´Ï´Ù>", __FindActiveSceneRequest__(FindedScene) == nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ìœ¼ë¡œ í™œì„±í™”ëœ ì”¬ì´ ì—†ìŠµë‹ˆë‹¤>", FindedScene != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì”¬ì€ ì´ë¯¸ ìš”ì²­ì¤‘ì…ë‹ˆë‹¤>", __FindActiveSceneRequest__(FindedScene) == nullptr);
 		// Find Loop
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
 		while(OneActiveScene->Scene != FindedScene)
@@ -139,7 +139,7 @@ public:
 	/// @endcond
 
 	/*!
-	\brief È°¼º¾À ¼ö·®¾ò±â
+	\brief í™œì„±ì”¬ ìˆ˜ëŸ‰ì–»ê¸°
 	*/
 	global_func uint GetCount()
 	{
@@ -147,13 +147,13 @@ public:
 	}
 
 	/*!
-	\brief È°¼º¾À Ãâ·Â¼ø¹ø¾ò±â
-	\param Name : ¾ÀÀÌ¸§
-	\return Ãâ·Â¼ø¹ø
+	\brief í™œì„±ì”¬ ì¶œë ¥ìˆœë²ˆì–»ê¸°
+	\param Name : ì”¬ì´ë¦„
+	\return ì¶œë ¥ìˆœë²ˆ
 	*/
 	global_func uint GetOrder(string Name)
 	{
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§ÀÇ ¾ÀÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", __FindAllScene__(Name) != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ì˜ ì”¬ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", __FindAllScene__(Name) != nullptr);
 		uint Count = (uint) __GetActiveSceneAllCount__() - 1;
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
 		while((OneActiveScene = OneActiveScene->Next) != nullptr)
@@ -166,13 +166,13 @@ public:
 	}
 
 	/*!
-	\brief ÇØ´çÃâ·Â¼ø¹øÀÇ È°¼º¾À ÀÌ¸§¾ò±â
-	\param Order : Ãâ·Â¼ø¹ø
-	\return ¾ÀÀÌ¸§
+	\brief í•´ë‹¹ì¶œë ¥ìˆœë²ˆì˜ í™œì„±ì”¬ ì´ë¦„ì–»ê¸°
+	\param Order : ì¶œë ¥ìˆœë²ˆ
+	\return ì”¬ì´ë¦„
 	*/
 	global_func string GetName(uint Order)
 	{
-		BxAssert("BxScene<°Ë»öÇÒ ¾ÀÀÇ ¼ø¹øÀÌ ³Ê¹« Å®´Ï´Ù>", Order < (uint) __GetActiveSceneAllCount__());
+		BxASSERT("BxScene<ê²€ìƒ‰í•  ì”¬ì˜ ìˆœë²ˆì´ ë„ˆë¬´ í½ë‹ˆë‹¤>", Order < (uint) __GetActiveSceneAllCount__());
 		uint Count = (uint) __GetActiveSceneAllCount__() - 1;
 		ActiveScene* OneActiveScene = &__GetActiveScene__();
 		while((OneActiveScene = OneActiveScene->Next) != nullptr)
@@ -185,34 +185,34 @@ public:
 	}
 
 	/*!
-	\brief ÇØ´ç ¾ÀÀÇ È°¼ºÈ­ »óÅÂ¾ò±â
-	\param Name : ¾ÀÀÌ¸§
-	\return È°¼ºÈ­¿©ºÎ
+	\brief í•´ë‹¹ ì”¬ì˜ í™œì„±í™” ìƒíƒœì–»ê¸°
+	\param Name : ì”¬ì´ë¦„
+	\return í™œì„±í™”ì—¬ë¶€
 	*/
 	global_func bool IsActivity(string Name)
 	{
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§ÀÇ ¾ÀÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", __FindAllScene__(Name) != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ì˜ ì”¬ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
 		return (FindedScene != nullptr);
 	}
 
 	/*!
-	\brief È°¼º¾ÀÀÇ µ¥ÀÌÅÍ¾ò±â
-	\param Name : ¾ÀÀÌ¸§
-	\return µ¥ÀÌÅÍ
+	\brief í™œì„±ì”¬ì˜ ë°ì´í„°ì–»ê¸°
+	\param Name : ì”¬ì´ë¦„
+	\return ë°ì´í„°
 	*/
 	global_func void* GetData(string Name)
 	{
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§ÀÇ ¾ÀÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù>", __FindAllScene__(Name) != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ì˜ ì”¬ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", __FindAllScene__(Name) != nullptr);
 		AllScene* FindedScene = __FindActiveScene__(Name);
-		BxAssert("BxScene<ÇØ´ç ÀÌ¸§À¸·Î È°¼ºÈ­µÈ ¾ÀÀÌ ¾ø½À´Ï´Ù>", FindedScene != nullptr);
+		BxASSERT("BxScene<í•´ë‹¹ ì´ë¦„ìœ¼ë¡œ í™œì„±í™”ëœ ì”¬ì´ ì—†ìŠµë‹ˆë‹¤>", FindedScene != nullptr);
 		return FindedScene->GetData(sysmethod_get);
 	}
 
 	/// @cond SECTION_NAME
 	global_func bool __Create__(string Name, EventCB Event, UpdateCB Update, RenderCB Render, GetDataCB GetData)
 	{
-		BxAssert("BxScene<°°Àº ¾ÀÀÌ¸§À» °¡Áø ÆÄÀÏÀÌ ÀÌ¹Ì Á¸ÀçÇÕ´Ï´Ù>", __FindAllScene__(Name) == nullptr);
+		BxASSERT("BxScene<ê°™ì€ ì”¬ì´ë¦„ì„ ê°€ì§„ íŒŒì¼ì´ ì´ë¯¸ ì¡´ì¬í•©ë‹ˆë‹¤>", __FindAllScene__(Name) == nullptr);
 		AllScene* NewScene = BxNew_Param(AllScene, Name, Event, Update, Render, GetData);
 		NewScene->Next = __GetAllScene__().Next;
 		__GetAllScene__().Next = NewScene;
@@ -224,8 +224,8 @@ public:
 	global_func void __AddEvent__(sysevent& Event, syseventset Set)
 	{
 		EventQueue* NewEvent = new EventQueue();
-		BxCore::Util::MemMove(&NewEvent->Event, &Event, sizeof(sysevent));
-		BxCore::Util::MemMove(&NewEvent->Set, &Set, sizeof(syseventset));
+		BxCore::Util::MemCpy(&NewEvent->Event, &Event, sizeof(sysevent));
+		BxCore::Util::MemCpy(&NewEvent->Set, &Set, sizeof(syseventset));
 		EventQueue* CurNode = EventQueue::Top();
 		while(CurNode->Next) CurNode = CurNode->Next;
 		CurNode->Next = NewEvent;
@@ -322,7 +322,7 @@ public:
 					}
 					break;
 				}
-				// ÀÌº¥Æ®Ã³¸®
+				// ì´ë²¤íŠ¸ì²˜ë¦¬
 				ActiveScene* OneActiveScene = &__GetActiveScene__();
 				while((OneActiveScene = OneActiveScene->Next) != nullptr)
 				{
@@ -343,9 +343,9 @@ public:
 					}
 					if(OneActiveScene->Scene->Event(OneActiveScene->Scene->GetData(sysmethod_get), Event) == syseventresult_done)
 					{
-						BxAssert("BxScene<ÇØ´ç ÀÌº¥Æ®´Â µ¶Á¡ÇÒ ¼ö ¾ø½À´Ï´Ù>", Event.type != syseventtype_init);
-						BxAssert("BxScene<ÇØ´ç ÀÌº¥Æ®´Â µ¶Á¡ÇÒ ¼ö ¾ø½À´Ï´Ù>", Event.type != syseventtype_quit);
-						BxAssert("BxScene<ÇØ´ç ÀÌº¥Æ®´Â µ¶Á¡ÇÒ ¼ö ¾ø½À´Ï´Ù>", Event.type != syseventtype_resize);
+						BxASSERT("BxScene<í•´ë‹¹ ì´ë²¤íŠ¸ëŠ” ë…ì í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", Event.type != syseventtype_init);
+						BxASSERT("BxScene<í•´ë‹¹ ì´ë²¤íŠ¸ëŠ” ë…ì í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", Event.type != syseventtype_quit);
+						BxASSERT("BxScene<í•´ë‹¹ ì´ë²¤íŠ¸ëŠ” ë…ì í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", Event.type != syseventtype_resize);
 						while((OneActiveScene = OneActiveScene->Next) != nullptr)
 						{
 							switch(Event.type)
@@ -415,12 +415,12 @@ public:
 	/// @cond SECTION_NAME
 	global_func void __UpdateActiveScene__()
 	{
-		// ¿äÃ»Á¤¸®
+		// ìš”ì²­ì •ë¦¬
 		const int ActiveSceneRequestCount = __GetActiveSceneRequestCount__();
 		__GetActiveSceneRequestCount__() = 0;
 		ActiveSceneRequest* OldActiveSceneRequest = __GetActiveSceneRequest__().Next;
 		__GetActiveSceneRequest__().Next = nullptr;
-		// ¿äÃ»½ÇÇà
+		// ìš”ì²­ì‹¤í–‰
 		sysevent Event;
 		BxCore::Util::MemSet(&Event, 0, sizeof(sysevent));
 		for(int i = ActiveSceneRequestCount - 1; 0 <= i; --i)
@@ -436,7 +436,7 @@ public:
 					ActiveScene* NewActiveScene = OneActiveSceneRequest->Data;
 					const int Order = (0 <= OneActiveSceneRequest->Option)? __GetActiveSceneAllCount__() - OneActiveSceneRequest->Option
 						: ((OneActiveSceneRequest->Option == -2)? 0 : __GetActiveSceneGUICount__());
-					BxAssert("BxScene<Ãß°¡ÇÒ ¾ÀÀÇ ¼ø¹øÀÌ ³Ê¹« Å®´Ï´Ù>", 0 <= Order);
+					BxASSERT("BxScene<ì¶”ê°€í•  ì”¬ì˜ ìˆœë²ˆì´ ë„ˆë¬´ í½ë‹ˆë‹¤>", 0 <= Order);
 					ActiveScene* PrevNewActiveScene = &__GetActiveScene__();
 					for(int i = 0; i < Order; ++i)
 						PrevNewActiveScene = PrevNewActiveScene->Next;
@@ -481,7 +481,7 @@ public:
 					// Set
 					ActiveScene* CurActiveScene = OneActiveSceneRequest->Data;
 					const int Order = __GetActiveSceneAllCount__() - OneActiveSceneRequest->Option;
-					BxAssert("BxScene<Ãß°¡ÇÒ ¾ÀÀÇ ¼ø¹øÀÌ ³Ê¹« Å®´Ï´Ù>", 0 <= Order);
+					BxASSERT("BxScene<ì¶”ê°€í•  ì”¬ì˜ ìˆœë²ˆì´ ë„ˆë¬´ í½ë‹ˆë‹¤>", 0 <= Order);
 					ActiveScene* PrevSetActiveScene = &__GetActiveScene__();
 					for(int i = 0; i < Order; ++i)
 						PrevSetActiveScene = PrevSetActiveScene->Next;

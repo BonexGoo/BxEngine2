@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <BxImage.hpp>
 #include <BxWebContent.hpp>
@@ -27,8 +27,8 @@ public:
 		BxWebContent Web;
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"))
 		{
-			GUIFont = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 8);
-			GUIFontMini = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 6);
+			GUIFont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxTHROW(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 8);
+			GUIFontMini = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxTHROW(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 6);
 		}
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.IMG-01-BONEC-000000.popup.png"))
 		{

@@ -1,547 +1,574 @@
-#pragma once
+ï»¿#pragma once
 #include <BxCore.hpp>
 
-/*!
-\defgroup BxNew
-\brief #define BxNew(TYPE)
-\brief ¸Ş¸ğ¸® ±âº»ÇÒ´ç
-\param TYPE : Å¬·¡½ºÅ¸ÀÔ
-\return Å¬·¡½ºÅ¸ÀÔ Æ÷ÀÎÅÍ
-*/
-#define BxNew(TYPE)                        new((int) BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE
-
-/*!
-\defgroup BxNew_Param
-\brief #define BxNew_Param(TYPE, ...)
-\brief ¸Ş¸ğ¸® ÀÎ¼öÇÒ´ç
-\param TYPE : Å¬·¡½ºÅ¸ÀÔ
-\param ... : Àü´ŞÇÒ ÀÎ¼ö
-\return Å¬·¡½ºÅ¸ÀÔ Æ÷ÀÎÅÍ
-*/
-#define BxNew_Param(TYPE, ...)             new((int) BxMemory::_Alloc(sizeof(TYPE), 1, __FILE__, __LINE__, __FUNCTION__)) TYPE(__VA_ARGS__)
-
-/*!
-\defgroup BxNew_Array
-\brief #define BxNew_Array(TYPE, COUNT)
-\brief ¸Ş¸ğ¸® ¹è¿­ÇÒ´ç
-\param TYPE : Å¬·¡½ºÅ¸ÀÔ
-\param COUNT : ¼ö·®
-\return Å¬·¡½ºÅ¸ÀÔ ¹è¿­Æ÷ÀÎÅÍ
-*/
-#define BxNew_Array(TYPE, COUNT)           BxMemory::_NewArray<TYPE>(COUNT, 2, __FILE__, __LINE__, __FUNCTION__)
-
-/*!
-\defgroup BxNew_ArrayParam
-\brief #define BxNew_ArrayParam(TYPE, COUNT, ...)
-\brief ¸Ş¸ğ¸® ¹è¿­ÀÎ¼öÇÒ´ç
-\param TYPE : Å¬·¡½ºÅ¸ÀÔ
-\param COUNT : ¼ö·®
-\param ... : Àü´ŞÇÒ ÀÎ¼ö
-\return Å¬·¡½ºÅ¸ÀÔ ¹è¿­Æ÷ÀÎÅÍ
-*/
-#define BxNew_ArrayParam(TYPE, COUNT, ...) BxMemory::_NewArrayParam<TYPE>(COUNT, 2, __FILE__, __LINE__, __FUNCTION__, __VA_ARGS__)
-
-/*!
-\defgroup BxDelete
-\brief #define BxDelete(PTR)
-\brief ¸Ş¸ğ¸® ±âº»¼Ò¸ê
-\param PTR : ÇØ´ç Å¬·¡½ºÅ¸ÀÔ Æ÷ÀÎÅÍ
-*/
-#define BxDelete(PTR)                      do{BxMemory::_Delete(PTR, 1, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
-
-/*!
-\defgroup BxDelete_ByType
-\brief #define BxDelete_ByType(TYPE, PTR)
-\brief ¸Ş¸ğ¸® Çüº¯È¯½Ä ¼Ò¸ê
-\param TYPE : Çüº¯È¯½ÃÅ³ Å¬·¡½ºÅ¸ÀÔ
-\param PTR : ÇØ´ç Æ÷ÀÎÅÍ
-*/
-#define BxDelete_ByType(TYPE, PTR)         do{BxMemory::_Delete((TYPE*) PTR, 1, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
-
-/*!
-\defgroup BxDelete_Array
-\brief #define BxDelete_Array(PTR)
-\brief ¸Ş¸ğ¸® ¹è¿­¼Ò¸ê
-\param PTR : ÇØ´ç Å¬·¡½ºÅ¸ÀÔ ¹è¿­Æ÷ÀÎÅÍ
-*/
-#define BxDelete_Array(PTR)                do{BxMemory::_DeleteArray(PTR, 2, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
-
-/*!
-\defgroup BxDelete_ArrayByType
-\brief #define BxDelete_ArrayByType(TYPE, PTR)
-\brief ¸Ş¸ğ¸® Çüº¯È¯½Ä ¹è¿­¼Ò¸ê
-\param TYPE : Çüº¯È¯½ÃÅ³ Å¬·¡½ºÅ¸ÀÔ
-\param PTR : ÇØ´ç ¹è¿­Æ÷ÀÎÅÍ
-*/
-#define BxDelete_ArrayByType(TYPE, PTR)    do{BxMemory::_DeleteArray((TYPE*) PTR, 2, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
-
-/*!
-\defgroup BxAlloc
-\brief #define BxAlloc(LENGTH)
-\brief ¸Ş¸ğ¸®´ıÇÁ ÇÒ´ç
-\param LENGTH : ¹ÙÀÌÆ®±æÀÌ
-\return ¸Ş¸ğ¸®´ıÇÁ Æ÷ÀÎÅÍ
-*/
-#define BxAlloc(LENGTH)                    BxMemory::_Alloc(LENGTH, 0, __FILE__, __LINE__, __FUNCTION__)
-
-/*!
-\defgroup BxFree
-\brief #define BxFree(PTR)
-\brief ¸Ş¸ğ¸®´ıÇÁ ¼Ò¸í
-\param PTR : ¸Ş¸ğ¸®´ıÇÁ Æ÷ÀÎÅÍ
-*/
-#define BxFree(PTR)                        do{BxMemory::_Free(PTR, 0, __FILE__, __LINE__, __FUNCTION__); PTR = nullptr;} while(false)
-
-/// @cond SECTION_NAME
-class BxMemory
-{
-public:
-	template<typename TYPE>
-	global_func TYPE* _NewArray(const uint count, int type, string file, const int line, string func)
+#ifndef __BX_MEMORY
+	#define BxNew(TYPE)                        new TYPE
+	#define BxNew_Param(TYPE, ...)             new TYPE(__VA_ARGS__)
+	#define BxNew_Array(TYPE, COUNT)           new TYPE[COUNT]
+	#define BxNew_ArrayParam(TYPE, COUNT, ...) new TYPE[COUNT]
+	#define BxDelete(PTR)                      do{delete PTR; PTR = nullptr;} while(false)
+	#define BxDelete_ByType(TYPE, PTR)         do{delete (TYPE*) (PTR); PTR = nullptr;} while(false)
+	#define BxDelete_Array(PTR)                do{delete[] PTR; PTR = nullptr;} while(false)
+	#define BxDelete_ArrayByType(TYPE, PTR)    do{delete[] (TYPE*) (PTR); PTR = nullptr;} while(false)
+	#define BxAlloc(LENGTH)                    new byte[LENGTH]
+	#define BxFree(PTR)                        do{delete[] (byte*) (PTR); PTR = nullptr;} while(false)
+	class BxMemory
 	{
-		uint* DataArray = (uint*) _Alloc(sizeof(int) + Max(sizeof(uint), sizeof(TYPE) * count), type, file, line, func);
-		DataArray[0] = count;
-		TYPE* ClassArray = (TYPE*) &DataArray[1];
-		for(uint i = 0; i < count; ++i)
-			new((int) &ClassArray[i]) TYPE;
-		return ClassArray;
-	}
+	public:
+		global_func inline bool DoMemLogger() {return false;}
+	};
+#else
+	/*!
+	\defgroup BxNew
+	\brief #define BxNew(TYPE)
+	\brief ë©”ëª¨ë¦¬ ê¸°ë³¸í• ë‹¹
+	\param TYPE : í´ë˜ìŠ¤íƒ€ì…
+	\return í´ë˜ìŠ¤íƒ€ì… í¬ì¸í„°
+	*/
+	#define BxNew(TYPE)                        new((mint) BxMemory::_Alloc(sizeof(TYPE), 1 __DEBUG_MCR__)) TYPE
 
-	template<typename TYPE>
-	global_func void _Delete(const TYPE* ptr, int type, string file, const int line, string func)
-	{
-		if(ptr == nullptr) return;
-		ptr->~TYPE();
-		_Free(ptr, type, file, line, func);
-	}
+	/*!
+	\defgroup BxNew_Param
+	\brief #define BxNew_Param(TYPE, ...)
+	\brief ë©”ëª¨ë¦¬ ì¸ìˆ˜í• ë‹¹
+	\param TYPE : í´ë˜ìŠ¤íƒ€ì…
+	\param ... : ì „ë‹¬í•  ì¸ìˆ˜
+	\return í´ë˜ìŠ¤íƒ€ì… í¬ì¸í„°
+	*/
+	#define BxNew_Param(TYPE, ...)             new((mint) BxMemory::_Alloc(sizeof(TYPE), 1 __DEBUG_MCR__)) TYPE(__VA_ARGS__)
 
-	template<typename TYPE>
-	global_func void _DeleteArray(const TYPE* ptr, int type, string file, const int line, string func)
-	{
-		if(ptr == nullptr) return;
-		const uint* DataArray = &((const uint*) ptr)[-1];
-		for(uint i = 0, count = DataArray[0]; i < count; ++i)
-			ptr[i].~TYPE();
-		_Free(DataArray, type, file, line, func);
-	}
+	/*!
+	\defgroup BxNew_Array
+	\brief #define BxNew_Array(TYPE, COUNT)
+	\brief ë©”ëª¨ë¦¬ ë°°ì—´í• ë‹¹
+	\param TYPE : í´ë˜ìŠ¤íƒ€ì…
+	\param COUNT : ìˆ˜ëŸ‰
+	\return í´ë˜ìŠ¤íƒ€ì… ë°°ì—´í¬ì¸í„°
+	*/
+	#define BxNew_Array(TYPE, COUNT)           BxMemory::_NewArray<TYPE>(COUNT, 2 __DEBUG_MCR__)
 
-	global_func inline void* _Alloc(const uint length, int type, string file, const int line, string func)
-	{
-		void* Ptr = MakeMethod()(length, type);
-		LogMethod()(0, file, line, func);
-		return Ptr;
-	}
+	/*!
+	\defgroup BxNew_ArrayParam
+	\brief #define BxNew_ArrayParam(TYPE, COUNT, ...)
+	\brief ë©”ëª¨ë¦¬ ë°°ì—´ì¸ìˆ˜í• ë‹¹
+	\param TYPE : í´ë˜ìŠ¤íƒ€ì…
+	\param COUNT : ìˆ˜ëŸ‰
+	\param ... : ì „ë‹¬í•  ì¸ìˆ˜
+	\return í´ë˜ìŠ¤íƒ€ì… ë°°ì—´í¬ì¸í„°
+	*/
+	#define BxNew_ArrayParam(TYPE, COUNT, ...) BxMemory::_NewArrayParam<TYPE>(COUNT, 2 __DEBUG_MCR__, __VA_ARGS__)
 
-	global_func inline void _Free(const void* ptr, int type, string file, const int line, string func)
-	{
-		if(ptr == nullptr) return;
-		LogMethod()(1, file, line, func);
-		FreeMethod()(ptr, type);
-	}
+	/*!
+	\defgroup BxDelete
+	\brief #define BxDelete(PTR)
+	\brief ë©”ëª¨ë¦¬ ê¸°ë³¸ì†Œë©¸
+	\param PTR : í•´ë‹¹ í´ë˜ìŠ¤íƒ€ì… í¬ì¸í„°
+	*/
+	#define BxDelete(PTR)                      do{BxMemory::_Delete(PTR, 1 __DEBUG_MCR__); PTR = nullptr;} while(false)
 
-	#define BXMEMORY_ARRAY_CORE(...) \
-		uint* DataArray = (uint*) _Alloc(sizeof(int) + Max(sizeof(uint), sizeof(TYPE) * count), type, file, line, func); \
-		DataArray[0] = count; \
-		TYPE* ClassArray = (TYPE*) &DataArray[1]; \
-		for(uint i = 0; i < count; ++i) \
-			new(&ClassArray[i]) TYPE(__VA_ARGS__); \
-		return ClassArray
-	template<typename TYPE, typename PARAM1>
-	global_func TYPE* _NewArrayParam(const uint count, int type, string file, const int line, string func, PARAM1 value1)
-	{BXMEMORY_ARRAY_CORE(value1);}
-	template<typename TYPE, typename PARAM1, typename PARAM2>
-	global_func TYPE* _NewArrayParam(const uint count, int type, string file, const int line, string func, PARAM1 value1, PARAM2 value2)
-	{BXMEMORY_ARRAY_CORE(value1, value2);}
-	template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3>
-	global_func TYPE* _NewArrayParam(const uint count, int type, string file, const int line, string func, PARAM1 value1, PARAM2 value2, PARAM3 value3)
-	{BXMEMORY_ARRAY_CORE(value1, value2, value3);}
-	template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3, typename PARAM4>
-	global_func TYPE* _NewArrayParam(const uint count, int type, string file, const int line, string func, PARAM1 value1, PARAM2 value2, PARAM3 value3, PARAM4 value4)
-	{BXMEMORY_ARRAY_CORE(value1, value2, value3, value4);}
-	template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3, typename PARAM4, typename PARAM5>
-	global_func TYPE* _NewArrayParam(const uint count, int type, string file, const int line, string func, PARAM1 value1, PARAM2 value2, PARAM3 value3, PARAM4 value4, PARAM4 value5)
-	{BXMEMORY_ARRAY_CORE(value1, value2, value3, value4, value5);}
-	global_func inline bool DoMemLogger() {return (DLLHandle() != nullptr);}
+	/*!
+	\defgroup BxDelete_ByType
+	\brief #define BxDelete_ByType(TYPE, PTR)
+	\brief ë©”ëª¨ë¦¬ í˜•ë³€í™˜ì‹ ì†Œë©¸
+	\param TYPE : í˜•ë³€í™˜ì‹œí‚¬ í´ë˜ìŠ¤íƒ€ì…
+	\param PTR : í•´ë‹¹ í¬ì¸í„°
+	*/
+	#define BxDelete_ByType(TYPE, PTR)         do{BxMemory::_Delete((TYPE*) PTR, 1 __DEBUG_MCR__); PTR = nullptr;} while(false)
 
-private:
-	template<typename TYPE> global_func inline TYPE* GetModel() {global_data TYPE Type; return &Type;}
-	global_func inline id_library& DLLHandle() {global_data id_library Handle = nullptr; return Handle;}
-	typedef int (*LogType)(int type, string file, int line, string func);
-	typedef void* (*MakeType)(uint size, int type);
-	typedef void (*FreeType)(const void* ptr, int type);
-	global_func inline LogType& LogMethod() {global_data LogType Log = BeginLog; return Log;}
-	global_func inline MakeType& MakeMethod() {global_data MakeType Make = BeginMake; return Make;}
-	global_func inline FreeType& FreeMethod() {global_data FreeType Free = BeginFree; return Free;}
-	global_func int BeginLog(int type, string file, int line, string func)
-	{
-		InitMemory();
-		return LogMethod()(type, file, line, func);
-	}
-	global_func int NullLog(int type, string file, int line, string func)
-	{
-		return 0;
-	}
-	global_func void* BeginMake(uint size, int type)
-	{
-		InitMemory();
-		return MakeMethod()(size, type);
-	}
-	global_func void BeginFree(const void* ptr, int type)
-	{
-		BxAssert("BxMemory", false);
-	}
-	global_func void InitMemory()
-	{
-		global_data bool IsInit = false;
-		if(IsInit) return;
-		IsInit = true;
-		#if defined(_MSC_VER) && defined(I3D_ARCH_X86) && defined(__BX_DEBUG_MEMORY_DLL)
-			DLLHandle() = BxCore::Library::Open("../../../bxtool/CodeLogger2.dll");
-			if(DLLHandle())
-			{
-				const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
-				id_memory Pool = BxCore::Util::Malloc(MemSize); // µ¿ÀÏÇÑ Á¶°Ç
-				typedef bool (*LoggerOnType)(string sysname, uint memorysizebykb, string projname, string filename);
-				LoggerOnType LoggerOnMethod = (LoggerOnType) BxCore::Library::Link(DLLHandle(), "BxMemLoggerOn");
-				if(LoggerOnMethod("BxMemoryFast", MemSize / 1024, "BxMemory", __FILE__))
-				{
-					LogMethod() = (LogType) BxCore::Library::Link(DLLHandle(), "BxLog");
-					MakeMethod() = (MakeType) BxCore::Library::Link(DLLHandle(), "BxMake");
-					FreeMethod() = (FreeType) BxCore::Library::Link(DLLHandle(), "BxFree");
-					return;
-				}
-				else BxCore::Util::Free(Pool);
-			}
-		#endif
-		if(DLLHandle() != nullptr)
-		{
-			BxCore::Library::Close(DLLHandle());
-			DLLHandle() = nullptr;
-		}
-		LogMethod() = NullLog;
-		MakeMethod() = MakePack;
-		FreeMethod() = FreePack;
-	}
+	/*!
+	\defgroup BxDelete_Array
+	\brief #define BxDelete_Array(PTR)
+	\brief ë©”ëª¨ë¦¬ ë°°ì—´ì†Œë©¸
+	\param PTR : í•´ë‹¹ í´ë˜ìŠ¤íƒ€ì… ë°°ì—´í¬ì¸í„°
+	*/
+	#define BxDelete_Array(PTR)                do{BxMemory::_DeleteArray(PTR, 2 __DEBUG_MCR__); PTR = nullptr;} while(false)
 
-// BxMemoryPack
-private:
-	// BxMemoryPack
-	#define BXMEMORY_MEMSET_ON						(0)
-	// FLAG
-	// ¼Ò¿ë·®Ã»Å©(1024ÀÌÇÏ) : [Ã»Å©Çì´õ:4][ÆÑÁ¤º¸:4][ÆÑÆ÷Ä¿½º:4][À¯´ÏÆ®µé]
-	// ´ë¿ë·®Ã»Å© : [Ã»Å©Çì´õ:4][µ¥ÀÌÅÍ]
-	#define BXMEMORY_CHUNK_HEADER_USEDFLAG			(0x80000000) // »ç¿ë¿©ºÎ
-	#define BXMEMORY_CHUNK_HEADER_PACKFLAG			(0x40000000) // ÆÑÅ¸ÀÔ¿©ºÎ
-	#define BXMEMORY_CHUNK_HEADER_SIZEAREA			(0x3FFFFFFF) // Ã»Å©»çÀÌÁî(1ÀÌ 4¹ÙÀÌÆ®¸¦ ÀÇ¹Ì)
-	#define BXMEMORY_PACK_HEADER_IDAREA				(0xFF000000) // ÆÑID(0~255, 4¹ÙÀÌÆ®~1024¹ÙÀÌÆ®)
-	#define BXMEMORY_PACK_HEADER_COUNTAREA			(0x00FFF000) // ÆÑ³» ÀüÃ¼ À¯´ÏÆ®¼ö·®
-	#define BXMEMORY_PACK_HEADER_FREEAREA			(0x00000FFF) // ÆÑ³» ³²Àº À¯´ÏÆ®¼ö·®
-	#define BXMEMORY_UNITSIZE						(sizeof(MemUint))
-	// CHUNK HEADER
-	#define BXMEMORY_IS_USED(CHUNK_PTR)				(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_USEDFLAG) // »ç¿ëµÇ°í ÀÖ´Â Ã»Å©ÀÎÁö
-	#define BXMEMORY_IS_PACK(CHUNK_PTR)				(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_PACKFLAG) // ÆÑÅ¸ÀÔÀÇ Ã»Å©ÀÎÁö
-	#define BXMEMORY_GET_SIZE(CHUNK_PTR)			(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_SIZEAREA) // Ã»Å©ÀÇ »çÀÌÁî(4¹ÙÀÌÆ®±âÁØ)
-	#define BXMEMORY_SET_USED(CHUNK_PTR)			(*(CHUNK_PTR) |= BXMEMORY_CHUNK_HEADER_USEDFLAG) // »ç¿ëÇÔ Ç¥±â
-	#define BXMEMORY_SET_FREE(CHUNK_PTR)			(*(CHUNK_PTR) &= ~BXMEMORY_CHUNK_HEADER_USEDFLAG) // »ç¿ë¾ÈÇÔ Ç¥±â
-	#define BXMEMORY_SET_PACK(CHUNK_PTR)			(*(CHUNK_PTR) |= BXMEMORY_CHUNK_HEADER_PACKFLAG) // ÆÑÅ¸ÀÔÀÓÀ» Ç¥±â
-	// PACK HEADER
-	#define BXMEMORY_GET_PACK_ID(PACK_PTR)			((*(PACK_PTR) & BXMEMORY_PACK_HEADER_IDAREA) >> 24) // ÆÑID(0~255)
-	#define BXMEMORY_GET_PACK_COUNT(PACK_PTR)		((*(PACK_PTR) & BXMEMORY_PACK_HEADER_COUNTAREA) >> 12) // ÀüÃ¼ À¯´ÏÆ®¼ö·®
-	#define BXMEMORY_GET_PACK_FREE(PACK_PTR)		(*(PACK_PTR) & BXMEMORY_PACK_HEADER_FREEAREA) // ³²Àº À¯´ÏÆ®¼ö·®
-	#define BXMEMORY_SET_PACK_FREE(PACK_PTR, NUM)	((*(PACK_PTR) & (BXMEMORY_PACK_HEADER_IDAREA | BXMEMORY_PACK_HEADER_COUNTAREA)) | ((NUM) & BXMEMORY_PACK_HEADER_FREEAREA)) // ³²Àº À¯´ÏÆ®¼ö·® º¯°æ
-	// ETC
-	#define BXMEMORY_NEXT_CHUNK(CHUNK_PTR)			((CHUNK_PTR) + BXMEMORY_GET_SIZE(CHUNK_PTR)) // ´ÙÀ½Ã»Å©ÀÇ ÁÖ¼Ò
-	#define BXMEMORY_PACK_INFO(CHUNK_PTR)			(*((CHUNK_PTR) + BXMEMORY_CHUNK_HEADER_SIZE)) // ÆÑÁ¤º¸°ª
-	#define BXMEMORY_PACK_FOCUS(PACK_PTR)			(*((PACK_PTR) + BXMEMORY_PACK_HEADER_INFO_SIZE)) // ÆÑÆ÷Ä¿½º°ª
-	#define BXMEMORY_PACK_UNIT_PTR(PACK_PTR)		((PACK_PTR) + BXMEMORY_PACK_HEADER_INFO_SIZE + BXMEMORY_PACK_HEADER_FOCUS_SIZE) // À¯´ÏÆ®ÀÇ ½ÃÀÛÁÖ¼Ò
-	#define BXMEMORY_CHUNK_HEADER_SIZE				(1)
-	#define BXMEMORY_PACK_HEADER_INFO_SIZE			(1)
-	#define BXMEMORY_PACK_HEADER_FOCUS_SIZE			(1)
-	#define BXMEMORY_RECENT_COUNT					(4)
+	/*!
+	\defgroup BxDelete_ArrayByType
+	\brief #define BxDelete_ArrayByType(TYPE, PTR)
+	\brief ë©”ëª¨ë¦¬ í˜•ë³€í™˜ì‹ ë°°ì—´ì†Œë©¸
+	\param TYPE : í˜•ë³€í™˜ì‹œí‚¬ í´ë˜ìŠ¤íƒ€ì…
+	\param PTR : í•´ë‹¹ ë°°ì—´í¬ì¸í„°
+	*/
+	#define BxDelete_ArrayByType(TYPE, PTR)    do{BxMemory::_DeleteArray((TYPE*) PTR, 2 __DEBUG_MCR__); PTR = nullptr;} while(false)
 
-	typedef unsigned MemUint;
+	/*!
+	\defgroup BxAlloc
+	\brief #define BxAlloc(LENGTH)
+	\brief ë©”ëª¨ë¦¬ë¤í”„ í• ë‹¹
+	\param LENGTH : ë°”ì´íŠ¸ê¸¸ì´
+	\return ë©”ëª¨ë¦¬ë¤í”„ í¬ì¸í„°
+	*/
+	#define BxAlloc(LENGTH)                    BxMemory::_Alloc(LENGTH, 0 __DEBUG_MCR__)
+
+	/*!
+	\defgroup BxFree
+	\brief #define BxFree(PTR)
+	\brief ë©”ëª¨ë¦¬ë¤í”„ ì†Œëª…
+	\param PTR : ë©”ëª¨ë¦¬ë¤í”„ í¬ì¸í„°
+	*/
+	#define BxFree(PTR)                        do{BxMemory::_Free(PTR, 0 __DEBUG_MCR__); PTR = nullptr;} while(false)
+
 	/// @cond SECTION_NAME
-	typedef struct
+	class BxMemory
 	{
-		MemUint* Recent[BXMEMORY_RECENT_COUNT];
-		unsigned NumPack;
-		unsigned TotalCountUnit;
-		unsigned TotalFreeUnit;
-	} PackState;
-	/// @endcond
-	enum {PackMaximum = 256};
-	enum {UnitSizeMinimum = 32};
-	enum {UnitCountMaximum = 4095};
-	// PACK
-	global_func inline PackState& Pack(const int index) {global_data PackState _Pack[PackMaximum]; return _Pack[index];}
-	global_func inline unsigned& NumChunk() {global_data unsigned _NumChunk = 0; return _NumChunk;}
-	// POOL
-	global_func inline MemUint*& Pool() {global_data MemUint* _Pool = nullptr; return _Pool;}
-	global_func inline unsigned& PoolLength() {global_data unsigned _PoolLength = 0; return _PoolLength;}
-	// MIN/MAX
-	template <class TYPE> global_func inline const TYPE& Min(const TYPE& A, const TYPE& B) {return (A < B)? A : B;}
-	template <class TYPE> global_func inline const TYPE& Max(const TYPE& A, const TYPE& B) {return (A > B)? A : B;}
-
-	// PtrÀ» Æ÷ÇÔÇÏ´Â Ã»Å© °Ë»ö
-	global_func MemUint* FindChunk(MemUint* Ptr)
-	{
-		if(Ptr < Pool() || Pool() + PoolLength() <= Ptr)
-			return nullptr;
-		MemUint* ChunkFocus = Pool();
-		while(BXMEMORY_NEXT_CHUNK(ChunkFocus) <= Ptr)
-			ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
-		return ChunkFocus;
-	}
-
-	// ½Å±ÔÃ»Å© È®º¸
-	global_func MemUint* LockChunk(unsigned Size, unsigned AddCount)
-	{
-		const unsigned PackID = Size - 1; // Size°¡ 256±îÁö¶ó¼­ 1¹ÙÀÌÆ®¿¡ ±â·ÏµÉ ¼ö ÀÖ°Ô ÇÔ
-		const unsigned PackCount = Max((unsigned) 1, AddCount); // ÆÑÀÇ ÃÖ¼Ò¼ö·®
-		const bool IsPack = (Size <= PackMaximum);
-		unsigned NeedSize = BXMEMORY_CHUNK_HEADER_SIZE + ((!IsPack)? Size
-			: BXMEMORY_PACK_HEADER_INFO_SIZE + BXMEMORY_PACK_HEADER_FOCUS_SIZE + Size * PackCount);
-		// °ø°£°Ë»ö
-		MemUint* ChunkFocus = Pool();
-		const MemUint* PoolEnd = Pool() + PoolLength();
-		unsigned SumFreeChunkSize = 0;
-		unsigned SumFreeChunkCount = 0;
-		while(BXMEMORY_IS_USED(ChunkFocus) || BXMEMORY_GET_SIZE(ChunkFocus) < NeedSize)
+	public:
+		template<typename TYPE>
+		global_func TYPE* _NewArray(const uint count, int type __DEBUG_PRM__)
 		{
-			if(!BXMEMORY_IS_USED(ChunkFocus))
-			{
-				if(!SumFreeChunkSize || SumFreeChunkSize + BXMEMORY_GET_SIZE(ChunkFocus) < NeedSize)
+			mint* DataArray = (mint*) _Alloc(sizeof(mint) + Max(sizeof(mint), sizeof(TYPE) * count), type __DEBUG_ARG__);
+			DataArray[0] = count;
+			TYPE* ClassArray = (TYPE*) &DataArray[1];
+			for(uint i = 0; i < count; ++i)
+				new((mint) &ClassArray[i]) TYPE;
+			return ClassArray;
+		}
+
+		template<typename TYPE>
+		global_func void _Delete(const TYPE* ptr, int type __DEBUG_PRM__)
+		{
+			if(ptr == nullptr) return;
+			ptr->~TYPE();
+			_Free(ptr, type __DEBUG_ARG__);
+		}
+
+		template<typename TYPE>
+		global_func void _DeleteArray(const TYPE* ptr, int type __DEBUG_PRM__)
+		{
+			if(ptr == nullptr) return;
+			const mint* DataArray = &((const mint*) ptr)[-1];
+			for(uint i = 0, count = DataArray[0]; i < count; ++i)
+				ptr[i].~TYPE();
+			_Free(DataArray, type __DEBUG_ARG__);
+		}
+
+		global_func inline void* _Alloc(const uint length, int type __DEBUG_PRM__)
+		{
+			void* Ptr = MakeMethod()(length, type);
+			LogMethod()(0, __DEBUG_FILE__, __DEBUG_LINE__, __DEBUG_FUNC__);
+			return Ptr;
+		}
+
+		global_func inline void _Free(const void* ptr, int type __DEBUG_PRM__)
+		{
+			if(ptr == nullptr) return;
+			LogMethod()(1, __DEBUG_FILE__, __DEBUG_LINE__, __DEBUG_FUNC__);
+			FreeMethod()(ptr, type);
+		}
+
+		#define BXMEMORY_ARRAY_CORE(...) \
+			uint* DataArray = (uint*) _Alloc(sizeof(int) + Max(sizeof(uint), sizeof(TYPE) * count), type __DEBUG_ARG__); \
+			DataArray[0] = count; \
+			TYPE* ClassArray = (TYPE*) &DataArray[1]; \
+			for(uint i = 0; i < count; ++i) \
+				new(&ClassArray[i]) TYPE(__VA_ARGS__); \
+			return ClassArray
+		template<typename TYPE, typename PARAM1>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, PARAM1 value1)
+		{BXMEMORY_ARRAY_CORE(value1);}
+		template<typename TYPE, typename PARAM1, typename PARAM2>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, PARAM1 value1, PARAM2 value2)
+		{BXMEMORY_ARRAY_CORE(value1, value2);}
+		template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, PARAM1 value1, PARAM2 value2, PARAM3 value3)
+		{BXMEMORY_ARRAY_CORE(value1, value2, value3);}
+		template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3, typename PARAM4>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, PARAM1 value1, PARAM2 value2, PARAM3 value3, PARAM4 value4)
+		{BXMEMORY_ARRAY_CORE(value1, value2, value3, value4);}
+		template<typename TYPE, typename PARAM1, typename PARAM2, typename PARAM3, typename PARAM4, typename PARAM5>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, PARAM1 value1, PARAM2 value2, PARAM3 value3, PARAM4 value4, PARAM4 value5)
+		{BXMEMORY_ARRAY_CORE(value1, value2, value3, value4, value5);}
+		global_func inline bool DoMemLogger() {return (DLLHandle() != nullptr);}
+
+	private:
+		global_func inline id_library& DLLHandle() {global_data id_library Handle = nullptr; return Handle;}
+		typedef int (*LogType)(int type, string file, const int line, string func);
+		typedef void* (*MakeType)(uint size, int type);
+		typedef void (*FreeType)(const void* ptr, int type);
+		global_func inline LogType& LogMethod() {global_data LogType Log = BeginLog; return Log;}
+		global_func inline MakeType& MakeMethod() {global_data MakeType Make = BeginMake; return Make;}
+		global_func inline FreeType& FreeMethod() {global_data FreeType Free = BeginFree; return Free;}
+		global_func int BeginLog(int type, string file, const int line, string func)
+		{
+			InitMemory();
+			return LogMethod()(type, file, line, func);
+		}
+		global_func int NullLog(int type, string file, const int line, string func)
+		{
+			return 0;
+		}
+		global_func void* BeginMake(uint size, int type)
+		{
+			InitMemory();
+			return MakeMethod()(size, type);
+		}
+		global_func void BeginFree(const void* ptr, int type)
+		{
+			BxASSERT("BxMemory", false);
+		}
+		global_func void InitMemory()
+		{
+			global_data bool IsInit = false;
+			if(IsInit) return;
+			IsInit = true;
+			#if defined(_MSC_VER) && defined(I3D_ARCH_X86) && defined(__BX_DEBUG)
+				DLLHandle() = BxCore::Library::Open("../../../bxtool/CodeLogger2.dll");
+				if(DLLHandle())
 				{
-					SumFreeChunkSize += BXMEMORY_GET_SIZE(ChunkFocus);
-					++SumFreeChunkCount;
+					const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
+					void* Pool = BxCore::Util::Alloc(MemSize); // ë™ì¼í•œ ì¡°ê±´
+					typedef bool (*LoggerOnType)(string sysname, uint memorysizebykb, string projname, string filename);
+					LoggerOnType LoggerOnMethod = (LoggerOnType) BxCore::Library::Link(DLLHandle(), "BxMemLoggerOn");
+					if(LoggerOnMethod("BxMemoryFast", MemSize / 1024, "BxMemory", __FILE__))
+					{
+						LogMethod() = (LogType) BxCore::Library::Link(DLLHandle(), "BxLog");
+						MakeMethod() = (MakeType) BxCore::Library::Link(DLLHandle(), "BxMake");
+						FreeMethod() = (FreeType) BxCore::Library::Link(DLLHandle(), "BxFree");
+						return;
+					}
+					else BxCore::Util::Free(Pool);
 				}
-				// °ø°£ÇÒ´çÀ» À§ÇÑ Ã»Å©º´ÇÕ
+			#endif
+			if(DLLHandle() != nullptr)
+			{
+				BxCore::Library::Close(DLLHandle());
+				DLLHandle() = nullptr;
+			}
+			LogMethod() = NullLog;
+			MakeMethod() = MakePack;
+			FreeMethod() = FreePack;
+		}
+
+	// BxMemoryPack
+	private:
+		// BxMemoryPack
+		#define BXMEMORY_MEMSET_ON						(0)
+		// FLAG
+		// ì†Œìš©ëŸ‰ì²­í¬(1024ì´í•˜) : [ì²­í¬í—¤ë”:4][íŒ©ì •ë³´:4][íŒ©í¬ì»¤ìŠ¤:4][ìœ ë‹ˆíŠ¸ë“¤]
+		// ëŒ€ìš©ëŸ‰ì²­í¬ : [ì²­í¬í—¤ë”:4][ë°ì´í„°]
+		#define BXMEMORY_CHUNK_HEADER_USEDFLAG			(0x80000000) // ì‚¬ìš©ì—¬ë¶€
+		#define BXMEMORY_CHUNK_HEADER_PACKFLAG			(0x40000000) // íŒ©íƒ€ì…ì—¬ë¶€
+		#define BXMEMORY_CHUNK_HEADER_SIZEAREA			(0x3FFFFFFF) // ì²­í¬ì‚¬ì´ì¦ˆ(1ì´ 4ë°”ì´íŠ¸ë¥¼ ì˜ë¯¸)
+		#define BXMEMORY_PACK_HEADER_IDAREA				(0xFF000000) // íŒ©ID(0~255, 4ë°”ì´íŠ¸~1024ë°”ì´íŠ¸)
+		#define BXMEMORY_PACK_HEADER_COUNTAREA			(0x00FFF000) // íŒ©ë‚´ ì „ì²´ ìœ ë‹ˆíŠ¸ìˆ˜ëŸ‰
+		#define BXMEMORY_PACK_HEADER_FREEAREA			(0x00000FFF) // íŒ©ë‚´ ë‚¨ì€ ìœ ë‹ˆíŠ¸ìˆ˜ëŸ‰
+		#define BXMEMORY_UNITSIZE						(sizeof(mint))
+		// CHUNK HEADER
+		#define BXMEMORY_IS_USED(CHUNK_PTR)				(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_USEDFLAG) // ì‚¬ìš©ë˜ê³  ìˆëŠ” ì²­í¬ì¸ì§€
+		#define BXMEMORY_IS_PACK(CHUNK_PTR)				(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_PACKFLAG) // íŒ©íƒ€ì…ì˜ ì²­í¬ì¸ì§€
+		#define BXMEMORY_GET_SIZE(CHUNK_PTR)			(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_SIZEAREA) // ì²­í¬ì˜ ì‚¬ì´ì¦ˆ(4ë°”ì´íŠ¸ê¸°ì¤€)
+		#define BXMEMORY_SET_USED(CHUNK_PTR)			(*(CHUNK_PTR) |= BXMEMORY_CHUNK_HEADER_USEDFLAG) // ì‚¬ìš©í•¨ í‘œê¸°
+		#define BXMEMORY_SET_FREE(CHUNK_PTR)			(*(CHUNK_PTR) &= ~BXMEMORY_CHUNK_HEADER_USEDFLAG) // ì‚¬ìš©ì•ˆí•¨ í‘œê¸°
+		#define BXMEMORY_SET_PACK(CHUNK_PTR)			(*(CHUNK_PTR) |= BXMEMORY_CHUNK_HEADER_PACKFLAG) // íŒ©íƒ€ì…ì„ì„ í‘œê¸°
+		// PACK HEADER
+		#define BXMEMORY_GET_PACK_ID(PACK_PTR)			((*(PACK_PTR) & BXMEMORY_PACK_HEADER_IDAREA) >> 24) // íŒ©ID(0~255)
+		#define BXMEMORY_GET_PACK_COUNT(PACK_PTR)		((*(PACK_PTR) & BXMEMORY_PACK_HEADER_COUNTAREA) >> 12) // ì „ì²´ ìœ ë‹ˆíŠ¸ìˆ˜ëŸ‰
+		#define BXMEMORY_GET_PACK_FREE(PACK_PTR)		(*(PACK_PTR) & BXMEMORY_PACK_HEADER_FREEAREA) // ë‚¨ì€ ìœ ë‹ˆíŠ¸ìˆ˜ëŸ‰
+		#define BXMEMORY_SET_PACK_FREE(PACK_PTR, NUM)	((*(PACK_PTR) & (BXMEMORY_PACK_HEADER_IDAREA | BXMEMORY_PACK_HEADER_COUNTAREA)) | ((NUM) & BXMEMORY_PACK_HEADER_FREEAREA)) // ë‚¨ì€ ìœ ë‹ˆíŠ¸ìˆ˜ëŸ‰ ë³€ê²½
+		// ETC
+		#define BXMEMORY_NEXT_CHUNK(CHUNK_PTR)			((CHUNK_PTR) + BXMEMORY_GET_SIZE(CHUNK_PTR)) // ë‹¤ìŒì²­í¬ì˜ ì£¼ì†Œ
+		#define BXMEMORY_PACK_INFO(CHUNK_PTR)			(*((CHUNK_PTR) + BXMEMORY_CHUNK_HEADER_SIZE)) // íŒ©ì •ë³´ê°’
+		#define BXMEMORY_PACK_FOCUS(PACK_PTR)			(*((PACK_PTR) + BXMEMORY_PACK_HEADER_INFO_SIZE)) // íŒ©í¬ì»¤ìŠ¤ê°’
+		#define BXMEMORY_PACK_UNIT_PTR(PACK_PTR)		((PACK_PTR) + BXMEMORY_PACK_HEADER_INFO_SIZE + BXMEMORY_PACK_HEADER_FOCUS_SIZE) // ìœ ë‹ˆíŠ¸ì˜ ì‹œì‘ì£¼ì†Œ
+		#define BXMEMORY_CHUNK_HEADER_SIZE				(1)
+		#define BXMEMORY_PACK_HEADER_INFO_SIZE			(1)
+		#define BXMEMORY_PACK_HEADER_FOCUS_SIZE			(1)
+		#define BXMEMORY_RECENT_COUNT					(4)
+
+		/// @cond SECTION_NAME
+		typedef struct
+		{
+			mint* Recent[BXMEMORY_RECENT_COUNT];
+			unsigned NumPack;
+			unsigned TotalCountUnit;
+			unsigned TotalFreeUnit;
+		} PackState;
+		/// @endcond
+		enum {PackMaximum = 256};
+		enum {UnitSizeMinimum = 32};
+		enum {UnitCountMaximum = 4095};
+		// PACK
+		global_func inline PackState& Pack(const int index) {global_data PackState _[PackMaximum]; return _[index];}
+		global_func inline unsigned& NumChunk() {global_data unsigned _ = 0; return _;}
+		// POOL
+		global_func inline mint*& Pool() {global_data mint* _ = nullptr; return _;}
+		global_func inline unsigned& PoolLength() {global_data unsigned _ = 0; return _;}
+		// MUTEX
+		global_func inline id_mutex& Mutex() {global_data id_mutex _ = BxCore::Thread::OpenMutex(); return _;}
+		// MIN/MAX
+		template <class TYPE> global_func inline const TYPE& Min(const TYPE& A, const TYPE& B) {return (A < B)? A : B;}
+		template <class TYPE> global_func inline const TYPE& Max(const TYPE& A, const TYPE& B) {return (A > B)? A : B;}
+
+		// Ptrì„ í¬í•¨í•˜ëŠ” ì²­í¬ ê²€ìƒ‰
+		global_func mint* FindChunk(mint* Ptr)
+		{
+			if(Ptr < Pool() || Pool() + PoolLength() <= Ptr)
+				return nullptr;
+			mint* ChunkFocus = Pool();
+			while(BXMEMORY_NEXT_CHUNK(ChunkFocus) <= Ptr)
+				ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
+			return ChunkFocus;
+		}
+
+		// ì‹ ê·œì²­í¬ í™•ë³´
+		global_func mint* LockChunk(unsigned Size, unsigned AddCount)
+		{
+			const unsigned PackID = Size - 1; // Sizeê°€ 256ê¹Œì§€ë¼ì„œ 1ë°”ì´íŠ¸ì— ê¸°ë¡ë  ìˆ˜ ìˆê²Œ í•¨
+			const unsigned PackCount = Max((unsigned) 1, AddCount); // íŒ©ì˜ ìµœì†Œìˆ˜ëŸ‰
+			const bool IsPack = (Size <= PackMaximum);
+			unsigned NeedSize = BXMEMORY_CHUNK_HEADER_SIZE + ((!IsPack)? Size
+				: BXMEMORY_PACK_HEADER_INFO_SIZE + BXMEMORY_PACK_HEADER_FOCUS_SIZE + Size * PackCount);
+			// ê³µê°„ê²€ìƒ‰
+			mint* ChunkFocus = Pool();
+			const mint* PoolEnd = Pool() + PoolLength();
+			unsigned SumFreeChunkSize = 0;
+			unsigned SumFreeChunkCount = 0;
+			while(BXMEMORY_IS_USED(ChunkFocus) || BXMEMORY_GET_SIZE(ChunkFocus) < NeedSize)
+			{
+				if(!BXMEMORY_IS_USED(ChunkFocus))
+				{
+					if(!SumFreeChunkSize || SumFreeChunkSize + BXMEMORY_GET_SIZE(ChunkFocus) < NeedSize)
+					{
+						SumFreeChunkSize += BXMEMORY_GET_SIZE(ChunkFocus);
+						++SumFreeChunkCount;
+					}
+					// ê³µê°„í• ë‹¹ì„ ìœ„í•œ ì²­í¬ë³‘í•©
+					else
+					{
+						*(ChunkFocus - SumFreeChunkSize) = SumFreeChunkSize + BXMEMORY_GET_SIZE(ChunkFocus);
+						ChunkFocus -= SumFreeChunkSize;
+						break;
+					}
+				}
 				else
 				{
-					*(ChunkFocus - SumFreeChunkSize) = SumFreeChunkSize + BXMEMORY_GET_SIZE(ChunkFocus);
-					ChunkFocus -= SumFreeChunkSize;
-					break;
+					// ê²€ìƒ‰ì†ë„ë¥¼ ìœ„í•œ ì²­í¬ë³‘í•©
+					if(1 < SumFreeChunkCount)
+						*(ChunkFocus - SumFreeChunkSize) = SumFreeChunkSize;
+					SumFreeChunkSize = 0;
+					SumFreeChunkCount = 0;
 				}
-			}
-			else
-			{
-				// °Ë»ö¼Óµµ¸¦ À§ÇÑ Ã»Å©º´ÇÕ
-				if(1 < SumFreeChunkCount)
-					*(ChunkFocus - SumFreeChunkSize) = SumFreeChunkSize;
-				SumFreeChunkSize = 0;
-				SumFreeChunkCount = 0;
-			}
-			ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
-			if(ChunkFocus == PoolEnd)
-			{
-				BxAssert("BxMemory<¸Ş¸ğ¸®°¡ ºÎÁ·ÇÕ´Ï´Ù>", false); // ¸Ş¸ğ¸®ºÎÁ·
-				return nullptr;
-			}
-		}
-		// °ø°£ºĞÇÒ
-		if(BXMEMORY_CHUNK_HEADER_SIZE < BXMEMORY_GET_SIZE(ChunkFocus) - NeedSize)
-			*(ChunkFocus + NeedSize) = BXMEMORY_GET_SIZE(ChunkFocus) - NeedSize;
-		else NeedSize = BXMEMORY_GET_SIZE(ChunkFocus);
-		*(ChunkFocus) = NeedSize;
-		BXMEMORY_SET_USED(ChunkFocus);
-		#if(BXMEMORY_MEMSET_ON == 1)
-			BxCore::Util::MemSet(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE, 0, BXMEMORY_BXMEMORY_UNITSIZE * (NeedSize - BXMEMORY_CHUNK_HEADER_SIZE));
-		#endif
-		// ÆÑ±¸¼º
-		if(IsPack)
-		{
-			// Ã»Å©Çì´õ¿¡ ÆÑ¿©ºÎ±âÀÔ ¹× ÆÑÇì´õ±¸¼º
-			BXMEMORY_SET_PACK(ChunkFocus);
-			BXMEMORY_PACK_INFO(ChunkFocus) =
-				((PackID << 24) & BXMEMORY_PACK_HEADER_IDAREA) |
-				((PackCount << 12) & BXMEMORY_PACK_HEADER_COUNTAREA) |
-				(PackCount & BXMEMORY_PACK_HEADER_FREEAREA);
-			BXMEMORY_PACK_FOCUS(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE) = (MemUint) BXMEMORY_PACK_UNIT_PTR(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE);
-			// À¯´ÏÆ®¼ÂÆÃ
-			MemUint* DataPtr = BXMEMORY_PACK_UNIT_PTR(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE);
-			for(unsigned Focus = 0; Focus < PackCount; ++Focus)
-			{
-				if(Focus < PackCount - 1)
-					*(DataPtr) = (MemUint) (DataPtr + Size);
-				else *(DataPtr) = (MemUint) nullptr;
-				DataPtr = (MemUint*) *(DataPtr);
-			}
-		}
-		// Ã»Å©Á¤º¸ Ã³¸®
-		++NumChunk();
-		return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
-	}
-
-	// ÇØ´çÃ»Å© ¹İÈ¯
-	global_func void UnlockChunk(MemUint* ChunkPtr)
-	{
-		// Á¸ÀçÀ¯¹«
-		if(BXMEMORY_IS_USED(ChunkPtr))
-		{
-			BXMEMORY_SET_FREE(ChunkPtr);
-			// Ã»Å©Á¤º¸ Ã³¸®
-			--NumChunk();
-		}
-	}
-
-	// ÇØ´çÆÑ °Ë»ö
-	global_func MemUint* FindPack(unsigned PackID)
-	{
-		MemUint* ChunkFocus = Pool();
-		const MemUint* PoolEnd = Pool() + PoolLength();
-		while(ChunkFocus != PoolEnd)
-		{
-			if(BXMEMORY_IS_USED(ChunkFocus) && BXMEMORY_IS_PACK(ChunkFocus)
-				&& BXMEMORY_GET_PACK_ID(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE) == PackID
-				&& 0 < BXMEMORY_GET_PACK_FREE(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE))
-				return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
-			ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
-		}
-		return nullptr;
-	}
-
-	// ÆÑ³» ½Å±ÔÀ¯´ÏÆ® È®º¸
-	global_func MemUint* LockUnit(MemUint* PackPtr)
-	{
-		const unsigned PackID = BXMEMORY_GET_PACK_ID(PackPtr);
-		const unsigned PackCount = BXMEMORY_GET_PACK_COUNT(PackPtr);
-		const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
-		MemUint* PackFocus = (MemUint*) BXMEMORY_PACK_FOCUS(PackPtr);
-		BxAssert("BxMemory<PackÁ¤º¸¿À·ù>", 0 < PackCount && 0 < PackFree && PackFree <= PackCount && PackFocus);
-		BxAssert("BxMemory<PackFocus°¡ ÇØ´ç ÆÑÀÇ ¹üÀ§³»¿¡ ¾ø½À´Ï´Ù>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
-
-		// ÆÑÁ¤º¸ Ã³¸®
-		*(PackPtr) = BXMEMORY_SET_PACK_FREE(PackPtr, PackFree - 1);
-		// ÆÑÇöÈ² Ã³¸®
-		--Pack(PackID).TotalFreeUnit;
-		// Æ÷Ä¿½º ÀÌµ¿
-		BXMEMORY_PACK_FOCUS(PackPtr) = *(PackFocus);
-		return PackFocus;
-	}
-
-	// ÆÑ³» ÇØ´çÀ¯´ÏÆ® ¹İÈ¯
-	global_func bool UnlockUnit(MemUint* PackPtr, MemUint* Ptr)
-	{
-		const unsigned PackID = BXMEMORY_GET_PACK_ID(PackPtr);
-		const unsigned PackCount = BXMEMORY_GET_PACK_COUNT(PackPtr);
-		const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
-		MemUint* PackFocus = (MemUint*) BXMEMORY_PACK_FOCUS(PackPtr);
-		BxAssert("BxMemory<PackÁ¤º¸¿À·ù>", 0 < PackCount && PackFree < PackCount);
-		BxAssert("BxMemory<PackFocus°¡ ÇØ´ç ÆÑÀÇ ¹üÀ§³»¿¡ ¾ø½À´Ï´Ù>", PackFocus == nullptr || (BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount));
-		BxAssert("BxMemory<PtrÀÌ ÇØ´ç ÆÑÀÇ ¹üÀ§³»¿¡ ¾ø½À´Ï´Ù>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= Ptr && Ptr < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
-		BxAssert("BxMemory<PtrÀÌ ÇØ´ç À¯´ÏÆ®ÀÇ ½ÃÀÛÁÖ¼Ò°¡ ¾Æ´Õ´Ï´Ù>", (Ptr - BXMEMORY_PACK_UNIT_PTR(PackPtr)) % (PackID + 1) == 0);
-
-		// ÆÑÁ¤º¸ Ã³¸®
-		*(PackPtr) = BXMEMORY_SET_PACK_FREE(PackPtr, PackFree + 1);
-		// ÆÑÇöÈ² Ã³¸®
-		++Pack(PackID).TotalFreeUnit;
-		// Æ÷Ä¿½º ÀÌµ¿
-		*(Ptr) = (MemUint) PackFocus;
-		BXMEMORY_PACK_FOCUS(PackPtr) = (MemUint) Ptr;
-		return (PackFree + 1 == PackCount); // ¸ğµç À¯´ÏÆ® ¹İÈ¯¿©ºÎ
-	}
-
-	global_func void* MakePack(unsigned size, int)
-	{
-		// ÃÊ±âÈ­
-		global_data bool IsInitial = false;
-		if(!IsInitial)
-		{
-			IsInitial = true;
-			const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
-			PoolLength() = MemSize / BXMEMORY_UNITSIZE;
-			Pool() = (MemUint*) BxCore::Util::Malloc(BXMEMORY_UNITSIZE * PoolLength());
-			BxCore::Util::MemSet(&Pack(0), 0, sizeof(PackState) * PackMaximum);
-			BxCore::Util::MemSet(Pool(), 0, BXMEMORY_UNITSIZE * PoolLength());
-			Pool()[0] = PoolLength();
-		}
-		const unsigned Size = (size + BXMEMORY_UNITSIZE - 1) / BXMEMORY_UNITSIZE;
-		// ´ë¿ë·®µ¥ÀÌÅÍ Ã³¸®(non packed)
-		if(PackMaximum < Size)
-			return LockChunk(Size, 0);
-		// ¼Ò¿ë·®µ¥ÀÌÅÍ Ã³¸®(packed)
-		if(0 < Size)
-		{
-			MemUint* NewPack = nullptr;
-			const unsigned PackID = Size - 1; // Size°¡ 256±îÁö¶ó¼­ 1¹ÙÀÌÆ®¿¡ ±â·ÏµÉ ¼ö ÀÖ°Ô ÇÔ
-			PackState* PackInfo = &Pack(PackID);
-			int RecentFocus = BXMEMORY_RECENT_COUNT;
-			// ½Å±ÔÃ»Å© È®º¸
-			if(PackInfo->TotalFreeUnit == 0)
-			{
-				unsigned AddCount = Min(Max((unsigned)(UnitSizeMinimum * 2 / Size),
-					(unsigned)(PackInfo->TotalCountUnit - PackInfo->TotalFreeUnit)), (unsigned)(UnitCountMaximum * 2));
-				while(!(NewPack = LockChunk(Size, AddCount /= 2)))
-					if(AddCount == 0)
-					{
-						BxAssert("BxMemory<¸Ş¸ğ¸®°¡ ºÎÁ·ÇÕ´Ï´Ù>", false); // ¸Ş¸ğ¸®ºÎÁ·
-						return nullptr;
-					}
-				// ÆÑÁ¤º¸ Ã³¸®
-				++PackInfo->NumPack;
-				// ÆÑÇöÈ² Ã³¸®
-				PackInfo->TotalCountUnit += BXMEMORY_GET_PACK_COUNT(NewPack);
-				PackInfo->TotalFreeUnit += BXMEMORY_GET_PACK_FREE(NewPack);
-			}
-			// ±âÁ¸Ã»Å© Á¢±Ù
-			else
-			{
-				// ´ë»óÆÑ ¼±Á¤
-				for(RecentFocus = 0; RecentFocus < BXMEMORY_RECENT_COUNT && !NewPack; ++RecentFocus)
-					if(PackInfo->Recent[RecentFocus] && BXMEMORY_GET_PACK_FREE(PackInfo->Recent[RecentFocus]))
-						NewPack = PackInfo->Recent[RecentFocus];
-				// ´ë»óÆÑ °Ë»ö
-				if(!NewPack) NewPack = FindPack(PackID);
-				BxAssert("BxMemory<TotalFreeUnitÁ¤º¸ ºÒÀÏÄ¡>", NewPack != nullptr);
-			}
-			// ¿ì¼±¼øÀ§ Ã³¸®
-			for(int i = RecentFocus - 1; 0 < i; --i)
-				PackInfo->Recent[i] = PackInfo->Recent[i - 1];
-			PackInfo->Recent[0] = NewPack;
-			// °á°ú°ª ¹İÈ¯
-			return LockUnit(NewPack);
-		}
-		// size¿äÃ»ÀÌ 0ÀÏ °æ¿ìÀÇ Ã³¸®
-		return nullptr;
-	}
-
-	global_func void FreePack(const void* ptr, int)
-	{
-		// Ã»Å© °Ë»ö
-		MemUint* DelChunk = FindChunk((MemUint*) ptr);
-		if(DelChunk && BXMEMORY_IS_USED(DelChunk))
-		{
-			// ÇØ´çÀ¯´ÏÆ® ¹İÈ¯
-			if(BXMEMORY_IS_PACK(DelChunk))
-			{
-				MemUint* DelPack = DelChunk + BXMEMORY_CHUNK_HEADER_SIZE;
-				const unsigned PackID = BXMEMORY_GET_PACK_ID(DelPack);
-				PackState* PackInfo = &Pack(PackID);
-				if(UnlockUnit(DelPack, (MemUint*) ptr))
+				ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
+				if(ChunkFocus == PoolEnd)
 				{
-					// ÆÑ¸®¼¾Æ® »èÁ¦
-					int RecentFocus = -1;
-					while(++RecentFocus < BXMEMORY_RECENT_COUNT)
-						if(PackInfo->Recent[RecentFocus] == DelPack)
-						{
-							PackInfo->Recent[RecentFocus] = nullptr;
-							// ¿ì¼±¼øÀ§ ÀçÁ¤·Ä
-							for(int i = RecentFocus; i < BXMEMORY_RECENT_COUNT - 1; ++i)
-								PackInfo->Recent[i] = PackInfo->Recent[i + 1];
-							break;
-						}
-					// ÆÑÁ¤º¸ Ã³¸®
-					--PackInfo->NumPack;
-					// ÆÑÇöÈ² Ã³¸®
-					PackInfo->TotalCountUnit -= BXMEMORY_GET_PACK_COUNT(DelPack);
-					PackInfo->TotalFreeUnit -= BXMEMORY_GET_PACK_FREE(DelPack);
+					BxASSERT("BxMemory<ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤>", false); // ë©”ëª¨ë¦¬ë¶€ì¡±
+					return nullptr;
 				}
-				// ¾ÆÁ÷ »ç¿ëÁßÀÎ À¯´ÏÆ®°¡ Á¸Àç
-				else return;
 			}
-			// Ã»Å© ¹İÈ¯
-			UnlockChunk(DelChunk);
+			// ê³µê°„ë¶„í• 
+			if(BXMEMORY_CHUNK_HEADER_SIZE < BXMEMORY_GET_SIZE(ChunkFocus) - NeedSize)
+				*(ChunkFocus + NeedSize) = BXMEMORY_GET_SIZE(ChunkFocus) - NeedSize;
+			else NeedSize = BXMEMORY_GET_SIZE(ChunkFocus);
+			*(ChunkFocus) = NeedSize;
+			BXMEMORY_SET_USED(ChunkFocus);
+			#if(BXMEMORY_MEMSET_ON == 1)
+				BxCore::Util::MemSet(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE, 0, BXMEMORY_BXMEMORY_UNITSIZE * (NeedSize - BXMEMORY_CHUNK_HEADER_SIZE));
+			#endif
+			// íŒ©êµ¬ì„±
+			if(IsPack)
+			{
+				// ì²­í¬í—¤ë”ì— íŒ©ì—¬ë¶€ê¸°ì… ë° íŒ©í—¤ë”êµ¬ì„±
+				BXMEMORY_SET_PACK(ChunkFocus);
+				BXMEMORY_PACK_INFO(ChunkFocus) =
+					((PackID << 24) & BXMEMORY_PACK_HEADER_IDAREA) |
+					((PackCount << 12) & BXMEMORY_PACK_HEADER_COUNTAREA) |
+					(PackCount & BXMEMORY_PACK_HEADER_FREEAREA);
+				BXMEMORY_PACK_FOCUS(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE) = (mint) BXMEMORY_PACK_UNIT_PTR(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE);
+				// ìœ ë‹ˆíŠ¸ì…‹íŒ…
+				mint* DataPtr = BXMEMORY_PACK_UNIT_PTR(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE);
+				for(unsigned Focus = 0; Focus < PackCount; ++Focus)
+				{
+					if(Focus < PackCount - 1)
+						*(DataPtr) = (mint) (DataPtr + Size);
+					else *(DataPtr) = (mint) nullptr;
+					DataPtr = (mint*) *(DataPtr);
+				}
+			}
+			// ì²­í¬ì •ë³´ ì²˜ë¦¬
+			++NumChunk();
+			return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
 		}
-	}
-};
+
+		// í•´ë‹¹ì²­í¬ ë°˜í™˜
+		global_func void UnlockChunk(mint* ChunkPtr)
+		{
+			// ì¡´ì¬ìœ ë¬´
+			if(BXMEMORY_IS_USED(ChunkPtr))
+			{
+				BXMEMORY_SET_FREE(ChunkPtr);
+				// ì²­í¬ì •ë³´ ì²˜ë¦¬
+				--NumChunk();
+			}
+		}
+
+		// í•´ë‹¹íŒ© ê²€ìƒ‰
+		global_func mint* FindPack(unsigned PackID)
+		{
+			mint* ChunkFocus = Pool();
+			const mint* PoolEnd = Pool() + PoolLength();
+			while(ChunkFocus != PoolEnd)
+			{
+				if(BXMEMORY_IS_USED(ChunkFocus) && BXMEMORY_IS_PACK(ChunkFocus)
+					&& BXMEMORY_GET_PACK_ID(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE) == PackID
+					&& 0 < BXMEMORY_GET_PACK_FREE(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE))
+					return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
+				ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
+			}
+			return nullptr;
+		}
+
+		// íŒ©ë‚´ ì‹ ê·œìœ ë‹ˆíŠ¸ í™•ë³´
+		global_func mint* LockUnit(mint* PackPtr)
+		{
+			const unsigned PackID = BXMEMORY_GET_PACK_ID(PackPtr);
+			const unsigned PackCount = BXMEMORY_GET_PACK_COUNT(PackPtr);
+			const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
+			mint* PackFocus = (mint*) BXMEMORY_PACK_FOCUS(PackPtr);
+			BxASSERT("BxMemory<Packì •ë³´ì˜¤ë¥˜>", 0 < PackCount && 0 < PackFree && PackFree <= PackCount && PackFocus);
+			BxASSERT("BxMemory<PackFocusê°€ í•´ë‹¹ íŒ©ì˜ ë²”ìœ„ë‚´ì— ì—†ìŠµë‹ˆë‹¤>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
+
+			// íŒ©ì •ë³´ ì²˜ë¦¬
+			*(PackPtr) = BXMEMORY_SET_PACK_FREE(PackPtr, PackFree - 1);
+			// íŒ©í˜„í™© ì²˜ë¦¬
+			--Pack(PackID).TotalFreeUnit;
+			// í¬ì»¤ìŠ¤ ì´ë™
+			BXMEMORY_PACK_FOCUS(PackPtr) = *(PackFocus);
+			return PackFocus;
+		}
+
+		// íŒ©ë‚´ í•´ë‹¹ìœ ë‹ˆíŠ¸ ë°˜í™˜
+		global_func bool UnlockUnit(mint* PackPtr, mint* Ptr)
+		{
+			const unsigned PackID = BXMEMORY_GET_PACK_ID(PackPtr);
+			const unsigned PackCount = BXMEMORY_GET_PACK_COUNT(PackPtr);
+			const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
+			mint* PackFocus = (mint*) BXMEMORY_PACK_FOCUS(PackPtr);
+			BxASSERT("BxMemory<Packì •ë³´ì˜¤ë¥˜>", 0 < PackCount && PackFree < PackCount);
+			BxASSERT("BxMemory<PackFocusê°€ í•´ë‹¹ íŒ©ì˜ ë²”ìœ„ë‚´ì— ì—†ìŠµë‹ˆë‹¤>", PackFocus == nullptr || (BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount));
+			BxASSERT("BxMemory<Ptrì´ í•´ë‹¹ íŒ©ì˜ ë²”ìœ„ë‚´ì— ì—†ìŠµë‹ˆë‹¤>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= Ptr && Ptr < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
+			BxASSERT("BxMemory<Ptrì´ í•´ë‹¹ ìœ ë‹ˆíŠ¸ì˜ ì‹œì‘ì£¼ì†Œê°€ ì•„ë‹™ë‹ˆë‹¤>", (Ptr - BXMEMORY_PACK_UNIT_PTR(PackPtr)) % (PackID + 1) == 0);
+
+			// íŒ©ì •ë³´ ì²˜ë¦¬
+			*(PackPtr) = BXMEMORY_SET_PACK_FREE(PackPtr, PackFree + 1);
+			// íŒ©í˜„í™© ì²˜ë¦¬
+			++Pack(PackID).TotalFreeUnit;
+			// í¬ì»¤ìŠ¤ ì´ë™
+			*(Ptr) = (mint) PackFocus;
+			BXMEMORY_PACK_FOCUS(PackPtr) = (mint) Ptr;
+			return (PackFree + 1 == PackCount); // ëª¨ë“  ìœ ë‹ˆíŠ¸ ë°˜í™˜ì—¬ë¶€
+		}
+
+		global_func void* MakePack(unsigned size, int)
+		{
+			BxCore::Thread::Lock(Mutex());
+			void* Result = nullptr;
+			// ì´ˆê¸°í™”
+			global_data bool IsInitial = false;
+			if(!IsInitial)
+			{
+				IsInitial = true;
+				const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
+				PoolLength() = MemSize / BXMEMORY_UNITSIZE;
+				Pool() = (mint*) BxCore::Util::Alloc(BXMEMORY_UNITSIZE * PoolLength());
+				BxCore::Util::MemSet(&Pack(0), 0, sizeof(PackState) * PackMaximum);
+				BxCore::Util::MemSet(Pool(), 0, BXMEMORY_UNITSIZE * PoolLength());
+				Pool()[0] = PoolLength();
+			}
+			const unsigned Size = (size + BXMEMORY_UNITSIZE - 1) / BXMEMORY_UNITSIZE;
+			// ëŒ€ìš©ëŸ‰ë°ì´í„° ì²˜ë¦¬(non packed)
+			if(PackMaximum < Size)
+				Result = LockChunk(Size, 0);
+			// ì†Œìš©ëŸ‰ë°ì´í„° ì²˜ë¦¬(packed)
+			else if(0 < Size)
+			{
+				mint* NewPack = nullptr;
+				const unsigned PackID = Size - 1; // Sizeê°€ 256ê¹Œì§€ë¼ì„œ 1ë°”ì´íŠ¸ì— ê¸°ë¡ë  ìˆ˜ ìˆê²Œ í•¨
+				PackState* PackInfo = &Pack(PackID);
+				int RecentFocus = BXMEMORY_RECENT_COUNT;
+				// ì‹ ê·œì²­í¬ í™•ë³´
+				if(PackInfo->TotalFreeUnit == 0)
+				{
+					unsigned AddCount = Min(Max((unsigned)(UnitSizeMinimum * 2 / Size),
+						(unsigned)(PackInfo->TotalCountUnit - PackInfo->TotalFreeUnit)), (unsigned)(UnitCountMaximum * 2));
+					while(!(NewPack = LockChunk(Size, AddCount /= 2)))
+						if(AddCount == 0)
+						{
+							BxASSERT("BxMemory<ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤>", false); // ë©”ëª¨ë¦¬ë¶€ì¡±
+							BxCore::Thread::Unlock(Mutex());
+							return nullptr;
+						}
+					// íŒ©ì •ë³´ ì²˜ë¦¬
+					++PackInfo->NumPack;
+					// íŒ©í˜„í™© ì²˜ë¦¬
+					PackInfo->TotalCountUnit += BXMEMORY_GET_PACK_COUNT(NewPack);
+					PackInfo->TotalFreeUnit += BXMEMORY_GET_PACK_FREE(NewPack);
+				}
+				// ê¸°ì¡´ì²­í¬ ì ‘ê·¼
+				else
+				{
+					// ëŒ€ìƒíŒ© ì„ ì •
+					for(RecentFocus = 0; RecentFocus < BXMEMORY_RECENT_COUNT && !NewPack; ++RecentFocus)
+						if(PackInfo->Recent[RecentFocus] && BXMEMORY_GET_PACK_FREE(PackInfo->Recent[RecentFocus]))
+							NewPack = PackInfo->Recent[RecentFocus];
+					// ëŒ€ìƒíŒ© ê²€ìƒ‰
+					if(!NewPack) NewPack = FindPack(PackID);
+					BxASSERT("BxMemory<TotalFreeUnitì •ë³´ ë¶ˆì¼ì¹˜>", NewPack != nullptr);
+				}
+				// ìš°ì„ ìˆœìœ„ ì²˜ë¦¬
+				for(int i = RecentFocus - 1; 0 < i; --i)
+					PackInfo->Recent[i] = PackInfo->Recent[i - 1];
+				PackInfo->Recent[0] = NewPack;
+				// ê²°ê³¼ê°’ ë°˜í™˜
+				Result = LockUnit(NewPack);
+			}
+			BxCore::Thread::Unlock(Mutex());
+			return Result;
+		}
+
+		global_func void FreePack(const void* ptr, int)
+		{
+			BxCore::Thread::Lock(Mutex());
+			// ì²­í¬ ê²€ìƒ‰
+			mint* DelChunk = FindChunk((mint*) ptr);
+			if(DelChunk && BXMEMORY_IS_USED(DelChunk))
+			{
+				// í•´ë‹¹ìœ ë‹ˆíŠ¸ ë°˜í™˜
+				if(BXMEMORY_IS_PACK(DelChunk))
+				{
+					mint* DelPack = DelChunk + BXMEMORY_CHUNK_HEADER_SIZE;
+					const unsigned PackID = BXMEMORY_GET_PACK_ID(DelPack);
+					PackState* PackInfo = &Pack(PackID);
+					if(UnlockUnit(DelPack, (mint*) ptr))
+					{
+						// íŒ©ë¦¬ì„¼íŠ¸ ì‚­ì œ
+						int RecentFocus = -1;
+						while(++RecentFocus < BXMEMORY_RECENT_COUNT)
+							if(PackInfo->Recent[RecentFocus] == DelPack)
+							{
+								PackInfo->Recent[RecentFocus] = nullptr;
+								// ìš°ì„ ìˆœìœ„ ì¬ì •ë ¬
+								for(int i = RecentFocus; i < BXMEMORY_RECENT_COUNT - 1; ++i)
+									PackInfo->Recent[i] = PackInfo->Recent[i + 1];
+								break;
+							}
+						// íŒ©ì •ë³´ ì²˜ë¦¬
+						--PackInfo->NumPack;
+						// íŒ©í˜„í™© ì²˜ë¦¬
+						PackInfo->TotalCountUnit -= BXMEMORY_GET_PACK_COUNT(DelPack);
+						PackInfo->TotalFreeUnit -= BXMEMORY_GET_PACK_FREE(DelPack);
+					}
+					// ì•„ì§ ì‚¬ìš©ì¤‘ì¸ ìœ ë‹ˆíŠ¸ê°€ ì¡´ì¬
+					else
+					{
+						BxCore::Thread::Unlock(Mutex());
+						return;
+					}
+				}
+				// ì²­í¬ ë°˜í™˜
+				UnlockChunk(DelChunk);
+			}
+			BxCore::Thread::Unlock(Mutex());
+		}
+	};
+#endif
 /// @endcond

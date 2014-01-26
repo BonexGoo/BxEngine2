@@ -10,94 +10,90 @@
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includedby refid="_bx_main_8cpp" local="no">BxMain.cpp</includedby>
     <incdepgraph>
-      <node id="386">
-        <label>stdarg.h</label>
-      </node>
-      <node id="392">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="389" relation="include">
-        </childnode>
-        <childnode refid="393" relation="include">
-        </childnode>
-      </node>
-      <node id="388">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="385" relation="include">
-        </childnode>
-      </node>
-      <node id="384">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="385" relation="include">
-        </childnode>
-        <childnode refid="387" relation="include">
-        </childnode>
-      </node>
-      <node id="382">
+      <node id="376">
         <label>BxTelex.hpp</label>
         <link refid="BxTelex.hpp"/>
-        <childnode refid="383" relation="include">
+        <childnode refid="377" relation="include">
         </childnode>
-        <childnode refid="387" relation="include">
+        <childnode refid="379" relation="include">
         </childnode>
-        <childnode refid="389" relation="include">
+        <childnode refid="382" relation="include">
         </childnode>
-        <childnode refid="390" relation="include">
-        </childnode>
-        <childnode refid="391" relation="include">
-        </childnode>
-        <childnode refid="392" relation="include">
-        </childnode>
-      </node>
-      <node id="389">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="384" relation="include">
         </childnode>
-      </node>
-      <node id="393">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="389" relation="include">
+        <childnode refid="385" relation="include">
         </childnode>
-        <childnode refid="383" relation="include">
+        <childnode refid="386" relation="include">
         </childnode>
       </node>
-      <node id="391">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="384" relation="include">
-        </childnode>
-      </node>
-      <node id="387">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="388" relation="include">
+      <node id="377">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="378" relation="include">
         </childnode>
       </node>
       <node id="383">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="384" relation="include">
-        </childnode>
-        <childnode refid="389" relation="include">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="379" relation="include">
         </childnode>
       </node>
-      <node id="390">
+      <node id="384">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="389" relation="include">
+        <childnode refid="382" relation="include">
         </childnode>
-        <childnode refid="388" relation="include">
+        <childnode refid="380" relation="include">
         </childnode>
       </node>
       <node id="385">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="386" relation="include">
+      </node>
+      <node id="380">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="378" relation="include">
         </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="class_bx_telex" prot="public">BxTelex</innerclass>
@@ -118,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp" line="215" column="12"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp" line="215" column="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -126,8 +122,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxSingleton.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxSingleton.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxThrow.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxMemory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVar.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -147,25 +143,25 @@
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateReportValue(<ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>*<sp/>report,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Report가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ReportValues.Access((uint)<sp/>report));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Report가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ReportValues.Access((uint)<sp/>report));</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReportValues[(uint)<sp/>report].SetValue(value,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>GetReportValue(<ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>*<sp/>report,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlush)</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Report가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ReportValues.Access((uint)<sp/>report));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Report가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ReportValues.Access((uint)<sp/>report));</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ReportValues[(uint)<sp/>report].GetValue(doFlush);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>GetDifferentedValue(<ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>*<sp/>report)</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Report가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ReportValues.Access((uint)<sp/>report));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Report가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ReportValues.Access((uint)<sp/>report));</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ReportValues[(uint)<sp/>report].GetDifferentedValue(report-&gt;GetDefault());</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>GetCommandValue(<ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>*<sp/>command)</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Command가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CommandValues.Access((uint)<sp/>command));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;해당<sp/>Command가<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CommandValues.Access((uint)<sp/>command));</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CommandValues[(uint)<sp/>command].GetValue(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
@@ -183,14 +179,14 @@
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_var_map" kindref="compound" tooltip="map식 가변배열 제공 ">BxVarMap</ref>&lt;UpdatedValue&gt;;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsUpdated;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Value;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>string_rw<sp/>Value;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>UpdatedValue()<sp/>:<sp/>IsUpdated(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>Value(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>~UpdatedValue()<sp/>{Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Value);}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>~UpdatedValue()<sp/>{Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Value);}</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetValue(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>value,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doUpdate)</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(doUpdate)<sp/>IsUpdated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Value);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(value);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Value);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(value);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>GetValue(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlush)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -214,10 +210,10 @@
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BxMemory;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_memory" kindref="compound">BxMemory</ref>;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TelexID;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ProjectName;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>PeerName;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>string_rw<sp/>ProjectName;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>string_rw<sp/>PeerName;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_var_map" kindref="compound">BxVarMap&lt;UpdatedValue&gt;</ref><sp/>ReportValues;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_var_vector" kindref="compound">BxVarVector&lt;uint, 4&gt;</ref><sp/>ReportIDs;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_var_map" kindref="compound">BxVarMap&lt;UpdatedValue&gt;</ref><sp/>CommandValues;</highlight></codeline>
@@ -229,8 +225,8 @@
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>~<ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>()</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HQ::Unbind(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProjectName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(ProjectName);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PeerName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(PeerName);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProjectName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(ProjectName);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PeerName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(PeerName);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>인스턴스관리</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>global_func<sp/><ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>*<sp/>Create(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>projectname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>peername,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>reports,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>commands,<sp/>UpdateCommandCB<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cbdata)</highlight></codeline>
@@ -238,12 +234,12 @@
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>LastTelexID<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>*<sp/>Result<sp/>=<sp/>BxNew(<ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;TelexID<sp/>=<sp/>--LastTelexID;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;ProjectName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(projectname);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;PeerName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(peername);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;ProjectName<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(projectname);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;PeerName<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(peername);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>reports.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();<sp/>++i)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>**<sp/>OneReport<sp/>=<sp/>reports.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>*&gt;(i);</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;reports파라미터<sp/>타입매칭<sp/>실패&gt;&quot;</highlight><highlight class="normal">,<sp/>OneReport);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;reports파라미터<sp/>타입매칭<sp/>실패&gt;&quot;</highlight><highlight class="normal">,<sp/>OneReport);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneReport)</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;ReportValues[(uint)<sp/>*OneReport].SetValue((*OneReport)-&gt;GetDefault(),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
@@ -253,7 +249,7 @@
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>commands.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();<sp/>++i)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>**<sp/>OneCommand<sp/>=<sp/>commands.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>*&gt;(i);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;commands파라미터<sp/>타입매칭<sp/>실패&gt;&quot;</highlight><highlight class="normal">,<sp/>OneCommand);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;commands파라미터<sp/>타입매칭<sp/>실패&gt;&quot;</highlight><highlight class="normal">,<sp/>OneCommand);</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneCommand)</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;CommandValues[(uint)<sp/>*OneCommand].SetValue((*OneCommand)-&gt;GetDefault(),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
@@ -266,14 +262,14 @@
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DestroyMe(<ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>*&amp;<sp/>me)</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;파라미터<sp/>오류&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>me);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;파라미터<sp/>오류&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>me);</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete(me);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146" refid="class_bx_telex_1_1_h_q" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_telex_1_1_h_q" kindref="compound">HQ</ref></highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_pool" kindref="compound" tooltip="사용자모듈을 위한 풀링도구 ">BxPool</ref>&lt;HQ&gt;;</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>string_rw<sp/>Domain;</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Port;</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Freq;</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>id_socket<sp/>Sock;</highlight></codeline>
@@ -284,15 +280,15 @@
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>HQ()<sp/>{}</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>~HQ()</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Domain<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Domain);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Domain<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Domain);</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Sock);</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex::HQ&lt;아직<sp/>연결된<sp/>Peer가<sp/>있습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>TransPeers.Length()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex::HQ&lt;아직<sp/>연결된<sp/>Peer가<sp/>있습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>TransPeers.Length()<sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>global_func<sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVarHQ</ref>&amp;<sp/>Pool()<sp/>{global_data<sp/><ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVarHQ</ref><sp/>_;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_;}</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>인스턴스관리</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Attach(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>domain,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>freq)</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[LAST].Domain<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(domain);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[LAST].Domain<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(domain);</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Port<sp/>=<sp/>port;</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Freq<sp/>=<sp/>freq;</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Sock<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -324,7 +320,7 @@
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex::HQ&lt;Peer를<sp/>찾지<sp/>못하였습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Pool().Length()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex::HQ&lt;Peer를<sp/>찾지<sp/>못하였습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Pool().Length()<sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>트랜잭션시도</highlight><highlight class="normal"></highlight></codeline>
@@ -453,14 +449,14 @@
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kindref="member" tooltip="데이터 강제수신 ">BxCore::Socket::RecvFully</ref>(CurHQ.Sock,<sp/>(byte*)<sp/>&amp;ValueLength,<sp/>2,<sp/>3000,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>==<sp/>2)</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvHeader[1]<sp/>-=<sp/>2;</highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1ad27a75813b9a9bf993a96c31fa738b63" kindref="member" tooltip="스트링 할당 ">BxUtilGlobal::StrAlloc</ref>(ValueLength);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string_rw<sp/>Value<sp/>=<sp/><ref refid="namespace_bx_util_global_1ad0d73de4f241c8cd6b2a89cf95570d43" kindref="member" tooltip="스트링 할당 ">BxUtilGlobal::StrAlloc</ref>(ValueLength);</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kindref="member" tooltip="데이터 강제수신 ">BxCore::Socket::RecvFully</ref>(CurHQ.Sock,<sp/>(byte*)<sp/>Value,<sp/>ValueLength,<sp/>3000,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>==<sp/>ValueLength)</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvHeader[1]<sp/>-=<sp/>ValueLength;</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CurPeer<sp/>&amp;&amp;<sp/>CurPeer-&gt;CommandValues.Access((uint)<sp/>TempID))</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurPeer-&gt;CommandValues[(uint)<sp/>TempID].SetValue(Value,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Value);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Value);</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -482,12 +478,12 @@
 <codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length<sp/>=<sp/>32;</highlight></codeline>
 <codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Offset<sp/>=<sp/>4;</highlight></codeline>
 <codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte*<sp/>Bytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxSINGLETON(Bytes,<sp/>byte,<sp/>Length);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxSINGLETON(Bytes,<sp/>Length);</highlight></codeline>
 <codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>length)</highlight></codeline>
 <codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Length<sp/>&lt;<sp/>Offset<sp/>+<sp/>length)</highlight></codeline>
 <codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxSingleton::Rebind(Bytes,<sp/>(Offset<sp/>+<sp/>length<sp/>+<sp/>0xF)<sp/>&amp;<sp/>~0xF);</highlight></codeline>
-<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(Bytes<sp/>+<sp/>Offset,<sp/>data,<sp/>length);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(Bytes<sp/>+<sp/>Offset,<sp/>data,<sp/>length);</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Offset<sp/>+=<sp/>length;</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
@@ -535,19 +531,19 @@
 <codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_pool" kindref="compound" tooltip="사용자모듈을 위한 풀링도구 ">BxPool</ref>&lt;Log&gt;;</highlight></codeline>
 <codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/>BxTelex::Type<sp/>Type;</highlight></codeline>
-<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name;</highlight></codeline>
-<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Default;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/>string_rw<sp/>Name;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/>string_rw<sp/>Default;</highlight></codeline>
 <codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자,<sp/>소멸자</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/>Log()<sp/>{}</highlight></codeline>
 <codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/>Log(BxTelex::Type<sp/>type,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>defaultValue)<sp/>:<sp/>Type(type)</highlight></codeline>
 <codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(name);</highlight></codeline>
-<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Default<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(defaultValue);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(name);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Default<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(defaultValue);</highlight></codeline>
 <codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Log()</highlight></codeline>
 <codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
-<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Default<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Default);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Name);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Default<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Default);</highlight></codeline>
 <codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TYPE&gt;<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RemoveByPool(<ref refid="class_bx_var" kindref="compound" tooltip="가변배열 제공 ">BxVar&lt;TYPE&gt;</ref>&amp;<sp/>Pool)</highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -558,7 +554,7 @@
 <codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool.RemoveData(i,<sp/>&amp;OneData);</highlight></codeline>
 <codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex::Log&lt;Pool에서<sp/>This를<sp/>찾을<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex::Log&lt;Pool에서<sp/>This를<sp/>찾을<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint<sp/>GetType()<sp/>=<sp/>0;</highlight></codeline>
@@ -569,7 +565,7 @@
 <codeline lineno="442" refid="class_bx_telex_1_1_report" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Log</highlight></codeline>
 <codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_pool" kindref="compound" tooltip="사용자모듈을 위한 풀링도구 ">BxPool</ref>&lt;Report&gt;;</highlight></codeline>
-<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BxMemory;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_memory" kindref="compound">BxMemory</ref>;</highlight></codeline>
 <codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자,<sp/>소멸자,<sp/>풀</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>Report()<sp/>{}</highlight></codeline>
 <codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>Report(BxTelex::Type<sp/>type,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>defaultValue)<sp/>:<sp/>Log(type,<sp/>name,<sp/>defaultValue)<sp/>{}</highlight></codeline>
@@ -584,7 +580,7 @@
 <codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DestroyMe(Report*&amp;<sp/>me)</highlight></codeline>
 <codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex::Report&lt;파라미터<sp/>오류&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>me);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex::Report&lt;파라미터<sp/>오류&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>me);</highlight></codeline>
 <codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RemoveByPool(Pool()))<sp/>BxDelete(me);</highlight></codeline>
 <codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint<sp/>GetType()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<sp/>+<sp/>((uint)<sp/>Type);}</highlight></codeline>
@@ -593,7 +589,7 @@
 <codeline lineno="466" refid="class_bx_telex_1_1_command" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Log</highlight></codeline>
 <codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_pool" kindref="compound" tooltip="사용자모듈을 위한 풀링도구 ">BxPool</ref>&lt;Command&gt;;</highlight></codeline>
-<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BxMemory;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_memory" kindref="compound">BxMemory</ref>;</highlight></codeline>
 <codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>생성자,<sp/>소멸자,<sp/>풀</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>Command()<sp/>{}</highlight></codeline>
 <codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>Command(BxTelex::Type<sp/>type,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>defaultValue)<sp/>:<sp/>Log(type,<sp/>name,<sp/>defaultValue)<sp/>{}</highlight></codeline>
@@ -608,13 +604,13 @@
 <codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DestroyMe(Command*&amp;<sp/>me)</highlight></codeline>
 <codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxTelex::Command&lt;파라미터<sp/>오류&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>me);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex::Command&lt;파라미터<sp/>오류&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>me);</highlight></codeline>
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RemoveByPool(Pool()))<sp/>BxDelete(me);</highlight></codeline>
 <codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint<sp/>GetType()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4<sp/>+<sp/>((uint)<sp/>Type);}</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="489"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxTelex.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxTelex.hpp"/>
   </compounddef>
 </doxygen>

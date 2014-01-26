@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">BxPathFind.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxVarVector.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxVarVector.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;BxUtil.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;BxDraw.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
@@ -476,7 +475,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">public</span>: <span class="keywordtype">void</span> Add(<span class="keyword">const</span> <a class="code" href="structpoints.html" title="points구조체 : count, {x, y}, ... ">points</a>&amp; polygon, <span class="keyword">const</span> <span class="keywordtype">bool</span> isBoundLine = <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            BxAssert(<span class="stringliteral">&quot;Object가 추가된 Hurdle은 Add를 지원하지 않습니다&gt;&quot;</span>, ObjectBeginID == -1);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            BxASSERT(<span class="stringliteral">&quot;Object가 추가된 Hurdle은 Add를 지원하지 않습니다&gt;&quot;</span>, ObjectBeginID == -1);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            <a class="code" href="structrect.html" title="rect구조체 : l, t, r, b ">rect</a> Bound = {polygon.pt[0].x, polygon.pt[0].y, polygon.pt[0].x, polygon.pt[0].y};</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; polygon.count; ++i)</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            {</div>
@@ -490,7 +489,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keyword">const</span> <a class="code" href="structpoints.html" title="points구조체 : count, {x, y}, ... ">points</a>* Result = MERGE_POLYGON(List[i], polygon, Bound, isBoundLine);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                <span class="keywordflow">if</span>(Result)</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                {</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;polygon, Result, <span class="keyword">sizeof</span>(<a class="code" href="structpoints.html" title="points구조체 : count, {x, y}, ... ">points</a>));</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;polygon, Result, <span class="keyword">sizeof</span>(<a class="code" href="structpoints.html" title="points구조체 : count, {x, y}, ... ">points</a>));</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                    <a class="code" href="structpoints.html" title="points구조체 : count, {x, y}, ... ">points</a>* DeleteNode = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                    List.Delete(i, &amp;DeleteNode);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                    BxFree(DeleteNode);</div>
@@ -515,7 +514,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keyword">public</span>: <a class="code" href="class_bx_path_find_1_1_map.html">Map</a>* BuildMap(<span class="keyword">const</span> <a class="code" href="structrect.html" title="rect구조체 : l, t, r, b ">rect</a>&amp; boundBox)</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        {</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            BxAssert(<span class="stringliteral">&quot;Object가 추가된 Hurdle은 BuildMap을 지원하지 않습니다&gt;&quot;</span>, ObjectBeginID == -1);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            BxASSERT(<span class="stringliteral">&quot;Object가 추가된 Hurdle은 BuildMap을 지원하지 않습니다&gt;&quot;</span>, ObjectBeginID == -1);</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            <a class="code" href="structpoints.html" title="points구조체 : count, {x, y}, ... ">points</a> BoundPolygon;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            BoundPolygon.count = 4;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            BoundPolygon.pt[0] = <a class="code" href="namespace_bx_draw_global.html#a7a20db367ef4dc6b10017de45ed32c6b" title="위치제작 ">BxDrawGlobal::XY</a>(boundBox.l, boundBox.t);</div>
@@ -543,20 +542,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <span class="keywordflow">if</span>(!IsBoundLine &amp;&amp; BestDstI == -1 &amp;&amp; (Dst.pt[i].x &lt; SrcBound.l || Dst.pt[i].y &lt; SrcBound.t))</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                    BestDstI = i;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            }</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxPathFind&lt;Src는 Dst의 우측하단에 위치하여야 안전합니다&gt;&quot;</span>, IsBoundLine || BestDstI != -1);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxPathFind&lt;Src는 Dst의 우측하단에 위치하여야 안전합니다&gt;&quot;</span>, IsBoundLine || BestDstI != -1);</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            <span class="keywordflow">if</span>(IsL || IsT || IsR || IsB) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            <span class="comment">// 교차검사 수집데이터(최소한 Dst의 0번 정점은 Src에 포함되지 않아야 함)</span></div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> CollectDstB[1024];</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> CollectDstE[1024];</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            <span class="keywordtype">int</span> CollectDstLength = Dst.count;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(CollectDstB, &amp;Dst.pt[0], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * CollectDstLength);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(CollectDstE, &amp;Dst.pt[1], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * (CollectDstLength - 1));</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(CollectDstB, &amp;Dst.pt[0], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * CollectDstLength);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(CollectDstE, &amp;Dst.pt[1], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * (CollectDstLength - 1));</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            CollectDstE[CollectDstLength - 1] = Dst.pt[0];</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> CollectSrcB[1024];</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> CollectSrcE[1024];</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            <span class="keywordtype">int</span> CollectSrcLength = Src.count;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(CollectSrcB, &amp;Src.pt[0], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * CollectSrcLength);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(CollectSrcE, &amp;Src.pt[1], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * (CollectSrcLength - 1));</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(CollectSrcB, &amp;Src.pt[0], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * CollectSrcLength);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(CollectSrcE, &amp;Src.pt[1], <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>) * (CollectSrcLength - 1));</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            CollectSrcE[CollectSrcLength - 1] = Src.pt[0];</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> d = 0; d &lt; CollectDstLength; ++d)</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> s = 0; s &lt; CollectSrcLength; ++s)</div>
@@ -576,7 +575,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                        CollectSrcE[CollectSrcLength] = CollectSrcE[s];</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                        CollectSrcB[CollectSrcLength++] = (CollectSrcE[s] = *CrossDot);</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                    }</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                    BxAssert(<span class="stringliteral">&quot;BxPathFind&lt;계산상 오류입니다&gt;&quot;</span>, CollectDstLength &lt; 1024 &amp;&amp; CollectSrcLength &lt; 1024);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                    BxASSERT(<span class="stringliteral">&quot;BxPathFind&lt;계산상 오류입니다&gt;&quot;</span>, CollectDstLength &lt; 1024 &amp;&amp; CollectSrcLength &lt; 1024);</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                }</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            }</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="keywordflow">if</span>(CollectDstLength == Dst.count)</div>
@@ -594,7 +593,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                    Result.pt[0] = CollectDstB[d];</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                }</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxPathFind&lt;계산상 오류입니다&gt;&quot;</span>, Result.pt[0].x != 0 || Result.pt[0].y != 0);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxPathFind&lt;계산상 오류입니다&gt;&quot;</span>, Result.pt[0].x != 0 || Result.pt[0].y != 0);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            }</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;            <span class="keywordflow">else</span> Result.pt[0] = Dst.pt[BestDstI];</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            <span class="keywordflow">do</span></div>
@@ -615,7 +614,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                        SrcIndex = s;</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                    }</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxPathFind&lt;계산상 오류입니다&gt;&quot;</span>, DstIndex != -1 || SrcIndex != -1);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxPathFind&lt;계산상 오류입니다&gt;&quot;</span>, DstIndex != -1 || SrcIndex != -1);</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> SelectedDot;</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                <span class="keywordflow">if</span>(DstIndex != -1 &amp;&amp; SrcIndex != -1 &amp;&amp; 0 &lt; Result.count)</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                {</div>
@@ -706,7 +705,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:27 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

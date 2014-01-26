@@ -1,11 +1,11 @@
-#pragma once
+Ôªø#pragma once
 #include <BxXml.hpp>
 #include <BxVarMap.hpp>
 #include <BxDraw.hpp>
 #include <BxWebContent.hpp>
 #include <BxImage.hpp>
 
-//! \brief GUI∞¥√º øÓøµ
+//! \brief GUIÍ∞ùÏ≤¥ Ïö¥ÏòÅ
 class BxGUI
 {
 	enum
@@ -85,7 +85,7 @@ public:
 	global_func callback_event& Callback() {global_data callback_event _Callback; return _Callback;}
 	global_func bool DownloadCache(string url, BxWebContent _out_ Content, int _out_ FileSize, string _out_ FilePath, bool DoLoad)
 	{
-		BxString QueryArg("subject=%s&file=%s&version=%d", nullptr, (string) BxGUI::Subject(), url, BxGUI::Version());
+		BxString QueryArg("<>:subject=<A>&file=<A>&version=<A>", BxTHROW(BxGUI::Subject(), url, BxGUI::Version()));
 		BxWebContent Web;
 		if(Web.Query(BxGUI::Domain(), 80, "update/res_download_cdn.aspx", QueryArg))
 		{
@@ -94,7 +94,7 @@ public:
 			if(QueryResults.Length() == 3 && BxUtilGlobal::AtoI(QueryResults[0]) == 1)
 			{
 				FileSize = BxUtilGlobal::AtoI(QueryResults[1]);
-				BxString FilePathString("update/%s", nullptr, (string) QueryResults[2]);
+				BxString FilePathString("<>:update<FS><A>", BxTHROW((string) QueryResults[2]));
 				if(Content.Cache(BxGUI::Domain(), 80, FilePathString, DoLoad))
 					return true;
 			}
@@ -187,7 +187,7 @@ public:
 		Layout.Reset();
 		Content.Reset();
 		Map.Reset();
-		// øπæ‡æÓ µÓ∑œ
+		// ÏòàÏïΩÏñ¥ Îì±Î°ù
 		Content[0].AddNull(Map, "");
 		Content[0].AddValue(Map, "pos.left", CodeLeft);
 		Content[0].AddValue(Map, "pos.top", CodeTop);
@@ -210,7 +210,7 @@ public:
 		Content[0].AddValue(Map, "vector.numpad9", CodeNumpad9);
 		Content[0].AddValue(Map, "line.single", CodeSingle);
 		Content[0].AddValue(Map, "line.multi", CodeMulti);
-		// XML∆ƒΩÃ
+		// XMLÌååÏã±
 		BxXml XMLParser;
 		GetParser(XMLParser);
 		if(XMLParser.ReadBegin(FileName))
@@ -219,7 +219,7 @@ public:
 			while(State != BxXml::ENDOFFILE && State != BxXml::ERROR)
 			{
 				const int TAG = XMLParser.NextTag(&State);
-				// ¥ÎªÛ±∏∞£
+				// ÎåÄÏÉÅÍµ¨Í∞Ñ
 				if(State == BxXml::OPEN)
 				{
 					switch(TAG)
@@ -262,7 +262,7 @@ public:
 						continue;
 					}
 				}
-				// ∑π¿Ãæ∆øÙ
+				// Î†àÏù¥ÏïÑÏõÉ
 				if(CurSection == InLayout)
 				{
 					if(State == BxXml::OPEN || State == BxXml::OPENCLOSE)
@@ -320,7 +320,7 @@ public:
 						Layout[END].Pull();
 					}
 				}
-				// ƒ¡≈Ÿ∆Æ
+				// Ïª®ÌÖêÌä∏
 				else if(CurSection == InContent)
 				{
 					if(State == BxXml::OPEN || State == BxXml::OPENCLOSE)
@@ -406,17 +406,17 @@ public:
 				}
 			}
 			XMLParser.ReadEnd();
-			// ∞°∞¯¿€æ˜(1¥‹∞Ë)
+			// Í∞ÄÍ≥µÏûëÏóÖ(1Îã®Í≥Ñ)
 			for(int i = 0; i < Layout.Length(); ++i)
 				Layout[i].PreProcessing();
 			for(int i = 0; i < Content.Length(); ++i)
 				Content[i].PreProcessing(Map);
-			// ∞°∞¯¿€æ˜(2¥‹∞Ë)
+			// Í∞ÄÍ≥µÏûëÏóÖ(2Îã®Í≥Ñ)
 			for(int i = 0; i < Layout.Length(); ++i)
 				Layout[i].Processing();
 			for(int i = 0; i < Content.Length(); ++i)
 				Content[i].Processing(Map);
-			// ªÛ»£ø¨∞·
+			// ÏÉÅÌò∏Ïó∞Í≤∞
 			for(int i = 0; i < Layout.Length(); ++i)
 				Layout[i].Linking(Map);
 			for(int i = 0; i < Content.Length(); ++i)
@@ -459,27 +459,24 @@ public:
 		return true;
 	}
 
-	bool AdjustTextFormat(string TextName, ...)
+	bool AdjustTextFormat(string TextName, const BxThrow& Args)
 	{
 		if(!Map.Access(TextName)) return false;
 		Content::Text* TextElement = (Content::Text*) *Map.Access(TextName);
 		if(!TextElement || TextElement->GetType() != TypeText) return false;
-		va_list List;
-		va_start(List, TextName);
-		TextElement->AdjustFormat(true, List, &Map, nullptr);
-		va_end(List);
+		TextElement->AdjustFormat(&Map, nullptr, Args);
 		return true;
 	}
 
 	int GetImageWidth(string ImageName)
 	{
-		Element* ValueElement = *Map.Access(BxString("%s.width", nullptr, ImageName));
+		Element* ValueElement = *Map.Access(BxString::Parse("<>:<A>.width", BxTHROW(ImageName)));
 		return (ValueElement)? ValueElement->GetValue() : 0;
 	}
 
 	int GetImageHeight(string ImageName)
 	{
-		Element* ValueElement = *Map.Access(BxString("%s.height", nullptr, ImageName));
+		Element* ValueElement = *Map.Access(BxString::Parse("<>:<A>.height", BxTHROW(ImageName)));
 		return (ValueElement)? ValueElement->GetValue() : 0;
 	}
 
@@ -528,12 +525,12 @@ protected:
 		ElementType GetType() {return Type;}
 		const int GetValue()
 		{
-			BxAssert("BxGUI<∞™∫∏∞¸øÎ ø§∏Æ∏’∆Æ∞° æ∆¥’¥œ¥Ÿ>", Type == TypeValue);
+			BxASSERT("BxGUI<Í∞íÎ≥¥Í¥ÄÏö© ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÏïÑÎãôÎãàÎã§>", Type == TypeValue);
 			return Value;
 		}
 		void SetValue(const int SecondValue)
 		{
-			BxAssert("BxGUI<∞™∫∏∞¸øÎ ø§∏Æ∏’∆Æ∞° æ∆¥’¥œ¥Ÿ>", Type == TypeValue);
+			BxASSERT("BxGUI<Í∞íÎ≥¥Í¥ÄÏö© ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÏïÑÎãôÎãàÎã§>", Type == TypeValue);
 			Value = SecondValue;
 		}
 	public:
@@ -541,10 +538,10 @@ protected:
 		{
 			switch(StepOrder)
 			{
-			case StepNamed: BxAssert("BxGUI<»£√‚¥‹∞Ë∞° ¿ﬂ∏¯µ«æ˙Ω¿¥œ¥Ÿ>", Step == StepAlloced); break;
-			case StepPreProcessed: BxAssert("BxGUI<»£√‚¥‹∞Ë∞° ¿ﬂ∏¯µ«æ˙Ω¿¥œ¥Ÿ>", Step == StepNamed); break;
-			case StepProcessed: BxAssert("BxGUI<»£√‚¥‹∞Ë∞° ¿ﬂ∏¯µ«æ˙Ω¿¥œ¥Ÿ>", Step == StepPreProcessed); break;
-			case StepLinked: BxAssert("BxGUI<»£√‚¥‹∞Ë∞° ¿ﬂ∏¯µ«æ˙Ω¿¥œ¥Ÿ>", Step == StepProcessed); break;
+			case StepNamed: BxASSERT("BxGUI<Ìò∏Ï∂úÎã®Í≥ÑÍ∞Ä ÏûòÎ™ªÎêòÏóàÏäµÎãàÎã§>", Step == StepAlloced); break;
+			case StepPreProcessed: BxASSERT("BxGUI<Ìò∏Ï∂úÎã®Í≥ÑÍ∞Ä ÏûòÎ™ªÎêòÏóàÏäµÎãàÎã§>", Step == StepNamed); break;
+			case StepProcessed: BxASSERT("BxGUI<Ìò∏Ï∂úÎã®Í≥ÑÍ∞Ä ÏûòÎ™ªÎêòÏóàÏäµÎãàÎã§>", Step == StepPreProcessed); break;
+			case StepLinked: BxASSERT("BxGUI<Ìò∏Ï∂úÎã®Í≥ÑÍ∞Ä ÏûòÎ™ªÎêòÏóàÏäµÎãàÎã§>", Step == StepProcessed); break;
 			}
 			Step = StepOrder;
 		}
@@ -606,7 +603,7 @@ protected:
 		rect RenderingTree(const Element::VarMapPtr& Map, BxDraw& Draw, rect Rect)
 		{
 			rect OutRect = Rect, InRect = Rect;
-			try(Draw, CLIP(Rect, -Rect.l, -Rect.t))
+			BxTRY(Draw, BxDrawGlobal::CLIP(Rect, -Rect.l, -Rect.t))
 			{
 				if(Parent) OutRect = Rendering(Map, Draw, Rect, InRect);
 				for(int i = 0; i < Child.Length(); ++i)
@@ -699,11 +696,11 @@ protected:
 				SetStep(StepLinked);
 				BxVar<BxString::Parse> ColorNames;
 				BxString::Parse::Division(ColorNames, Colors);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ¿Ø»ø«— ø§∏Æ∏’∆Æ∞° «œ≥™µµ æ¯Ω¿¥œ¥Ÿ>", ColorNames.Length());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë Ïú†Ìö®Ìïú ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÌïòÎÇòÎèÑ ÏóÜÏäµÎãàÎã§>", ColorNames.Length());
 				for(int i = 0; i < ColorNames.Length(); ++i)
 				{
-					BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(ColorNames[i]) && *Map.Access(ColorNames[i]));
-					BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(ColorNames[i]))->GetType() == TypeColor);
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(ColorNames[i]) && *Map.Access(ColorNames[i]));
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(ColorNames[i]))->GetType() == TypeColor);
 					ColorValues[i] = *Map.Access(ColorNames[i]);
 				}
 			}
@@ -757,16 +754,16 @@ protected:
 					CacheImage.SetHotspot(0, 0);
 				}
 				else IsValidDownload() = false;
-				// ∞°∑Œ±Ê¿Ã √ﬂ∞°µÓ∑œ
-				BxString WidthName("%s.width", nullptr, (string) Name);
-				BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map->Access(WidthName));
+				// Í∞ÄÎ°úÍ∏∏Ïù¥ Ï∂îÍ∞ÄÎì±Î°ù
+				BxString WidthName("<>:<A>.width", BxTHROW(Name));
+				BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map->Access(WidthName));
 				Element* NewData1 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Width() : 0);
 				Elements->Insert(LAST, (*Map)[WidthName] = NewData1);
 				NewData1->SetStep(StepNamed);
 				NewData1->PreProcessing(nullptr, nullptr);
-				// ºº∑Œ±Ê¿Ã √ﬂ∞°µÓ∑œ
-				BxString HeightName("%s.height", nullptr, (string) Name);
-				BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map->Access(HeightName));
+				// ÏÑ∏Î°úÍ∏∏Ïù¥ Ï∂îÍ∞ÄÎì±Î°ù
+				BxString HeightName("<>:<A>.height", BxTHROW(Name));
+				BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map->Access(HeightName));
 				Element* NewData2 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Height() : 0);
 				Elements->Insert(LAST, (*Map)[HeightName] = NewData2);
 				NewData2->SetStep(StepNamed);
@@ -775,7 +772,7 @@ protected:
 			virtual void Filling(BxDraw& Draw, rect Rect)
 			{
 				if(CacheImage.IsExist())
-				try(Draw, CLIP(Rect))
+				BxTRY(Draw, BxDrawGlobal::CLIP(Rect))
 					Draw.Area(0, 0, BxDrawGlobal::FORM(&CacheImage));
 			}
 		};
@@ -807,11 +804,11 @@ protected:
 				SetStep(StepLinked);
 				BxVar<BxString::Parse> ImageNames;
 				BxString::Parse::Division(ImageNames, Images);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ¿Ø»ø«— ø§∏Æ∏’∆Æ∞° «œ≥™µµ æ¯Ω¿¥œ¥Ÿ>", ImageNames.Length());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë Ïú†Ìö®Ìïú ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÌïòÎÇòÎèÑ ÏóÜÏäµÎãàÎã§>", ImageNames.Length());
 				for(int i = 0; i < ImageNames.Length(); ++i)
 				{
-					BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(ImageNames[i]) && *Map.Access(ImageNames[i]));
-					BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(ImageNames[i]))->GetType() == TypeImage);
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(ImageNames[i]) && *Map.Access(ImageNames[i]));
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(ImageNames[i]))->GetType() == TypeImage);
 					ImageValues[i] = *Map.Access(ImageNames[i]);
 				}
 			}
@@ -890,32 +887,20 @@ protected:
 				Format = BxUtilGlobal::StrCpyWithAlloc(format);
 				Font = BxUtilGlobal::StrCpyWithAlloc(font);
 				Color = BxUtilGlobal::StrCpyWithAlloc(color);
-				Vector = BxUtilGlobal::StrCpyWithAlloc(BxString("vector.") + vector);
-				Line = BxUtilGlobal::StrCpyWithAlloc(BxString("line.") + line);
+				Vector = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:vector.<A>", BxTHROW(vector)));
+				Line = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:line.<A>", BxTHROW(line)));
 			}
-			void AdjustFormatNoList(Element::VarMapPtr* Map, BxVar<Element>* Elements, ...)
-			{
-				va_list List;
-				va_start(List, Elements);
-				AdjustFormat(false, List, Map, Elements);
-				va_end(List);
-			}
-			void AdjustFormat(bool dosprint, va_list list, Element::VarMapPtr* Map, BxVar<Element>* Elements)
+			void AdjustFormat(Element::VarMapPtr* Map, BxVar<Element>* Elements, const BxThrow& Args = BxThrow::zero())
 			{
 				FormatGen = BxUtilGlobal::StrFree(FormatGen);
-				if(dosprint)
-				{
-					const int FormatGenLen = BxCore::Util::VsnPrintf(nullptr, 0, Format, list);
-					BxAssert("BxGUI<FormatGen¿« øπªÛ±Ê¿Ã∏¶ æÚ¥¬µ• Ω«∆–«œø¥Ω¿¥œ¥Ÿ>", 0 <= FormatGenLen);
-					FormatGen = BxUtilGlobal::StrAlloc(FormatGenLen);
-					BxCore::Util::VsnPrintf((string_rw) FormatGen, FormatGenLen + 1, Format, list);
-				}
+				if(Format[0] == '<' && Format[1] == '>' && Format[2] == ':')
+					FormatGen = BxUtilGlobal::StrCpyWithAlloc(BxCore::Util::Print(Format, Args));
 				else FormatGen = BxUtilGlobal::StrCpyWithAlloc(Format);
 				if(Map)
 				{
-					const size TextSize = (FontValue->GetCacheFont())? BxCore::Font::GetSize(FontValue->GetCacheFont(), FormatGen) : WH(0, 0);
-					// ∞°∑Œ±Ê¿Ã √ﬂ∞°µÓ∑œ
-					BxString WidthName("%s.width", nullptr, (string) Name);
+					const size TextSize = (FontValue->GetCacheFont())? BxCore::Font::GetSize(FontValue->GetCacheFont(), FormatGen) : BxDrawGlobal::WH(0, 0);
+					// Í∞ÄÎ°úÍ∏∏Ïù¥ Ï∂îÍ∞ÄÎì±Î°ù
+					BxString WidthName("<>:<A>.width", BxTHROW(Name));
 					if(Map->Access(WidthName)) (*Map->Access(WidthName))->SetValue(TextSize.w);
 					else if(Elements)
 					{
@@ -924,8 +909,8 @@ protected:
 						NewData->SetStep(StepNamed);
 						NewData->PreProcessing(nullptr, nullptr);
 					}
-					// ºº∑Œ±Ê¿Ã √ﬂ∞°µÓ∑œ
-					BxString HeightName("%s.height", nullptr, (string) Name);
+					// ÏÑ∏Î°úÍ∏∏Ïù¥ Ï∂îÍ∞ÄÎì±Î°ù
+					BxString HeightName("<>:<A>.height", BxTHROW(Name));
 					if(Map->Access(HeightName)) (*Map->Access(HeightName))->SetValue(TextSize.h);
 					else if(Elements)
 					{
@@ -940,20 +925,20 @@ protected:
 			virtual void Processing(Element::VarMapPtr* Map, BxVar<Element>* Elements)
 			{
 				SetStep(StepProcessed);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map->Access(Font) && *Map->Access(Font));
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map->Access(Font))->GetType() == TypeFont);
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map->Access(Font) && *Map->Access(Font));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map->Access(Font))->GetType() == TypeFont);
 				FontValue = (Content::Font*) *Map->Access(Font);
-				AdjustFormatNoList(Map, Elements);
+				AdjustFormat(Map, Elements);
 			}
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Color) && *Map.Access(Color));
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(Color))->GetType() == TypeColor);
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Color) && *Map.Access(Color));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(Color))->GetType() == TypeColor);
 				ColorValue = (Content::Color*) *Map.Access(Color);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Vector) && *Map.Access(Vector));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Vector) && *Map.Access(Vector));
 				VectorValue = (ReserveCode) (*Map.Access(Vector))->GetValue();
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Line) && *Map.Access(Line));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Line) && *Map.Access(Line));
 				LineValue = (ReserveCode) (*Map.Access(Line))->GetValue();
 			}
 			virtual void Filling(BxDraw& Draw, rect Rect)
@@ -961,7 +946,7 @@ protected:
 				const int RectWidth = Rect.r - Rect.l;
 				const int RectHeight = Rect.b - Rect.t;
 				if(0 < RectWidth && 0 < RectHeight && FontValue->GetCacheFont())
-				try(Draw, CLIP(Rect))
+				BxTRY(Draw, BxDrawGlobal::CLIP(Rect))
 				{
 					switch(VectorValue)
 					{
@@ -1043,19 +1028,19 @@ protected:
 				SetStep(StepLinked);
 				BxVar<BxString::Parse> ImageNames;
 				BxString::Parse::Division(ImageNames, Images);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ¿Ø»ø«— ø§∏Æ∏’∆Æ∞° «œ≥™µµ æ¯Ω¿¥œ¥Ÿ>", ImageNames.Length());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë Ïú†Ìö®Ìïú ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÌïòÎÇòÎèÑ ÏóÜÏäµÎãàÎã§>", ImageNames.Length());
 				for(int i = 0; i < ImageNames.Length(); ++i)
 				{
-					BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(ImageNames[i]) && *Map.Access(ImageNames[i]));
-					BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(ImageNames[i]))->GetType() == TypeImage);
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(ImageNames[i]) && *Map.Access(ImageNames[i]));
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(ImageNames[i]))->GetType() == TypeImage);
 					ImageValues[i] = *Map.Access(ImageNames[i]);
 				}
 				BxVar<BxString::Parse> EdgeNames;
 				BxString::Parse::Division(EdgeNames, Edges);
 				for(int i = 0; i < EdgeNames.Length(); ++i)
 				{
-					BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(EdgeNames[i]) && *Map.Access(EdgeNames[i]));
-					BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(EdgeNames[i]))->GetType() == TypeEdge);
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(EdgeNames[i]) && *Map.Access(EdgeNames[i]));
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(EdgeNames[i]))->GetType() == TypeEdge);
 					EdgeValues[i] = *Map.Access(EdgeNames[i]);
 				}
 			}
@@ -1130,16 +1115,16 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Text) && *Map.Access(Text));
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(Text))->GetType() == TypeText);
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Text) && *Map.Access(Text));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(Text))->GetType() == TypeText);
 				TextValue = *Map.Access(Text);
 				BxVar<BxString::Parse> ColorNames;
 				BxString::Parse::Division(ColorNames, Colors);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ¿Ø»ø«— ø§∏Æ∏’∆Æ∞° «œ≥™µµ æ¯Ω¿¥œ¥Ÿ>", ColorNames.Length());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë Ïú†Ìö®Ìïú ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÌïòÎÇòÎèÑ ÏóÜÏäµÎãàÎã§>", ColorNames.Length());
 				for(int i = 0; i < ColorNames.Length(); ++i)
 				{
-					BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(ColorNames[i]) && *Map.Access(ColorNames[i]));
-					BxAssert("BxGUI<ø¨∞·¿€æ˜¡ﬂ ≈∏¿‘¿Ã ¿œƒ°«œ¡ˆ æ Ω¿¥œ¥Ÿ>", (*Map.Access(ColorNames[i]))->GetType() == TypeColor);
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(ColorNames[i]) && *Map.Access(ColorNames[i]));
+					BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏ§ë ÌÉÄÏûÖÏù¥ ÏùºÏπòÌïòÏßÄ ÏïäÏäµÎãàÎã§>", (*Map.Access(ColorNames[i]))->GetType() == TypeColor);
 					ColorValues[i] = *Map.Access(ColorNames[i]);
 				}
 			}
@@ -1176,70 +1161,70 @@ protected:
 		}
 		void AddNull(Element::VarMapPtr& Map, string Name)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Element* NewData = BxNew(Element);
 			Elements.Insert(LAST, Map[Name] = NewData);
 			NewData->SetStep(StepNamed);
 		}
 		void AddValue(Element::VarMapPtr& Map, string Name, int Value)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Element* NewData = BxNew_Param(Element, Value);
 			Elements.Insert(LAST, Map[Name] = NewData);
 			NewData->SetStep(StepNamed);
 		}
 		void AddColor(Element::VarMapPtr& Map, string Name, string Argb)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Color* NewData = BxNew(Color);
 			NewData->SetAttb(Name, Argb);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddEdge(Element::VarMapPtr& Map, string Name, string Colors)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Edge* NewData = BxNew(Edge);
 			NewData->SetAttb(Name, Colors);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddImage(Element::VarMapPtr& Map, string Name, string Url)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Image* NewData = BxNew(Image);
 			NewData->SetAttb(Name, Url);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddSprite(Element::VarMapPtr& Map, string Name, string Images, string Delay)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Sprite* NewData = BxNew(Sprite);
 			NewData->SetAttb(Name, Images, Delay);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddFont(Element::VarMapPtr& Map, string Name, string Size, string Url)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Font* NewData = BxNew(Font);
 			NewData->SetAttb(Name, Size, Url);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddText(Element::VarMapPtr& Map, string Name, string Format, string Font, string Color, string Vector, string Line)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Text* NewData = BxNew(Text);
 			NewData->SetAttb(Name, Format, Font, Color, Vector, Line);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddButton(Element::VarMapPtr& Map, string Name, string Images, string Edges, string Event, string Link)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			Button* NewData = BxNew(Button);
 			NewData->SetAttb(Name, Images, Edges, Event, Link);
 			Elements.Insert(LAST, Map[Name] = NewData);
 		}
 		void AddEditBox(Element::VarMapPtr& Map, string Name, string Text, string Colors)
 		{
-			BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+			BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 			EditBox* NewData = BxNew(EditBox);
 			NewData->SetAttb(Name, Text, Colors);
 			Elements.Insert(LAST, Map[Name] = NewData);
@@ -1279,7 +1264,7 @@ protected:
 			{
 				SetStep(StepNamed);
 				Name = BxUtilGlobal::StrCpyWithAlloc(name);
-				Pos = BxUtilGlobal::StrCpyWithAlloc(BxString("pos.") + pos);
+				Pos = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:pos.<A>", BxTHROW(pos)));
 				Size = BxUtilGlobal::StrCpyWithAlloc(size);
 				Fill = BxUtilGlobal::StrCpyWithAlloc(fill);
 			}
@@ -1291,10 +1276,10 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Pos) && *Map.Access(Pos));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Pos) && *Map.Access(Pos));
 				PosValue = (ReserveCode) (*Map.Access(Pos))->GetValue();
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Fill) && *Map.Access(Fill));
-				BxAssert("BxGUI<FILLøÎ ø§∏Æ∏’∆Æ∞° æ∆¥’¥œ¥Ÿ>", (*Map.Access(Fill))->IsValidFill());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Fill) && *Map.Access(Fill));
+				BxASSERT("BxGUI<FILLÏö© ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÏïÑÎãôÎãàÎã§>", (*Map.Access(Fill))->IsValidFill());
 				FillValue = *Map.Access(Fill);
 			}
 			virtual rect Rendering(const Element::VarMapPtr& Map, BxDraw& Draw, rect Rect, rect _out_ InRect)
@@ -1305,7 +1290,7 @@ protected:
 				const int RectHeight = Rect.b - Rect.t;
 				if(0 < RectWidth && 0 < RectHeight)
 				{
-					// µø¿˚µ•¿Ã≈Õ
+					// ÎèôÏ†ÅÎç∞Ïù¥ÌÑ∞
 					int WidthValue = 0, HeightValue = 0;
 					if(Map.Access(Size)) WidthValue = (*Map.Access(Size))->GetValue();
 					else WidthValue = BxUtilGlobal::AtoI(Size) * ((Size[BxUtilGlobal::StrLen(Size) - 1] == '%')? -1 : 1);
@@ -1315,7 +1300,7 @@ protected:
 					if(HeightValue < 0) HeightValue = RectHeight * -HeightValue / 100;
 					const int AddWidthValue = RectWidth * AddSize1024Gen / 1024;
 					const int AddHeightValue = RectHeight * AddSize1024Gen / 1024;
-					// ±∏»π¿€æ˜
+					// Íµ¨ÌöçÏûëÏóÖ
 					switch(PosValue)
 					{
 					case CodeLeft: OutRect.l = InRect.r = InRect.l + BxUtilGlobal::MinMax(0, WidthValue + AddWidthValue, RectWidth); break;
@@ -1362,9 +1347,9 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxAssert("BxGUI<outline/sizeø°º≠¥¬ πÈ∫–¿≤¿Ã ªÁøÎµ… ºˆ æ¯Ω¿¥œ¥Ÿ>", Size[BxUtilGlobal::StrLen(Size) - 1] != '%');
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Fill) && *Map.Access(Fill));
-				BxAssert("BxGUI<FILLøÎ ø§∏Æ∏’∆Æ∞° æ∆¥’¥œ¥Ÿ>", (*Map.Access(Fill))->IsValidFill());
+				BxASSERT("BxGUI<outline/sizeÏóêÏÑúÎäî Î∞±Î∂ÑÏú®Ïù¥ ÏÇ¨Ïö©Îê† Ïàò ÏóÜÏäµÎãàÎã§>", Size[BxUtilGlobal::StrLen(Size) - 1] != '%');
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Fill) && *Map.Access(Fill));
+				BxASSERT("BxGUI<FILLÏö© ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÏïÑÎãôÎãàÎã§>", (*Map.Access(Fill))->IsValidFill());
 				FillValue = *Map.Access(Fill);
 			}
 			virtual rect Rendering(const Element::VarMapPtr& Map, BxDraw& Draw, rect Rect, rect _out_ InRect)
@@ -1375,22 +1360,22 @@ protected:
 				const int RectHeight = Rect.b - Rect.t;
 				if(0 < RectWidth && 0 < RectHeight)
 				{
-					// µø¿˚µ•¿Ã≈Õ
+					// ÎèôÏ†ÅÎç∞Ïù¥ÌÑ∞
 					int SizeValue = 0;
 					if(Map.Access(Size)) SizeValue = (*Map.Access(Size))->GetValue();
 					else SizeValue = BxUtilGlobal::AtoI(Size);
-					// ±∏»π¿€æ˜
+					// Íµ¨ÌöçÏûëÏóÖ
 					const int OutRectWidth = BxUtilGlobal::Max(0, RectWidth - SizeValue * 2);
 					const int OutRectHeight = BxUtilGlobal::Max(0, RectHeight - SizeValue * 2);
 					OutRect.r = (OutRect.l += SizeValue) + OutRectWidth;
 					OutRect.b = (OutRect.t += SizeValue) + OutRectHeight;
 					rect ChildRect[4] = {Rect, Rect, Rect, Rect};
-					ChildRect[0].b = OutRect.t; // ªÛ√¯
-					ChildRect[1].t = OutRect.b; // «œ√¯
-					ChildRect[2].r = OutRect.l; // ªÛ«œªÁ¿Ãø° ≥§ ¡¬√¯
+					ChildRect[0].b = OutRect.t; // ÏÉÅÏ∏°
+					ChildRect[1].t = OutRect.b; // ÌïòÏ∏°
+					ChildRect[2].r = OutRect.l; // ÏÉÅÌïòÏÇ¨Ïù¥Ïóê ÎÇÄ Ï¢åÏ∏°
 					ChildRect[2].t = OutRect.t;
 					ChildRect[2].b = OutRect.b;
-					ChildRect[3].l = OutRect.r; // ªÛ«œªÁ¿Ãø° ≥§ øÏ√¯
+					ChildRect[3].l = OutRect.r; // ÏÉÅÌïòÏÇ¨Ïù¥Ïóê ÎÇÄ Ïö∞Ï∏°
 					ChildRect[3].t = OutRect.t;
 					ChildRect[3].b = OutRect.b;
 					for(int i = 0; i < 4; ++i)
@@ -1436,8 +1421,8 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Fill) && *Map.Access(Fill));
-				BxAssert("BxGUI<FILLøÎ ø§∏Æ∏’∆Æ∞° æ∆¥’¥œ¥Ÿ>", (*Map.Access(Fill))->IsValidFill());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Fill) && *Map.Access(Fill));
+				BxASSERT("BxGUI<FILLÏö© ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÏïÑÎãôÎãàÎã§>", (*Map.Access(Fill))->IsValidFill());
 				FillValue = *Map.Access(Fill);
 			}
 			virtual rect Rendering(const Element::VarMapPtr& Map, BxDraw& Draw, rect Rect, rect _out_ InRect)
@@ -1448,7 +1433,7 @@ protected:
 				const int RectHeight = Rect.b - Rect.t;
 				if(0 < RectWidth && 0 < RectHeight)
 				{
-					// µø¿˚µ•¿Ã≈Õ
+					// ÎèôÏ†ÅÎç∞Ïù¥ÌÑ∞
 					int WidthValue = 0, HeightValue = 0;
 					if(Map.Access(Width)) WidthValue = (*Map.Access(Width))->GetValue();
 					else WidthValue = BxUtilGlobal::AtoI(Width) * ((Width[BxUtilGlobal::StrLen(Width) - 1] == '%')? -1 : 1);
@@ -1456,18 +1441,18 @@ protected:
 					else HeightValue = BxUtilGlobal::AtoI(Height) * ((Height[BxUtilGlobal::StrLen(Height) - 1] == '%')? -1 : 1);
 					if(WidthValue < 0) WidthValue = RectWidth * -WidthValue / 100;
 					if(HeightValue < 0) HeightValue = RectHeight * -HeightValue / 100;
-					// ±∏»π¿€æ˜
+					// Íµ¨ÌöçÏûëÏóÖ
 					const int OutRectWidth = BxUtilGlobal::MinMax(0, WidthValue, RectWidth);
 					const int OutRectHeight = BxUtilGlobal::MinMax(0, HeightValue, RectHeight);
 					OutRect.r = (OutRect.l += (RectWidth - OutRectWidth) / 2) + OutRectWidth;
 					OutRect.b = (OutRect.t += (RectHeight - OutRectHeight) / 2) + OutRectHeight;
 					rect ChildRect[4] = {Rect, Rect, Rect, Rect};
-					ChildRect[0].b = OutRect.t; // ªÛ√¯
-					ChildRect[1].t = OutRect.b; // «œ√¯
-					ChildRect[2].r = OutRect.l; // ªÛ«œªÁ¿Ãø° ≥§ ¡¬√¯
+					ChildRect[0].b = OutRect.t; // ÏÉÅÏ∏°
+					ChildRect[1].t = OutRect.b; // ÌïòÏ∏°
+					ChildRect[2].r = OutRect.l; // ÏÉÅÌïòÏÇ¨Ïù¥Ïóê ÎÇÄ Ï¢åÏ∏°
 					ChildRect[2].t = OutRect.t;
 					ChildRect[2].b = OutRect.b;
-					ChildRect[3].l = OutRect.r; // ªÛ«œªÁ¿Ãø° ≥§ øÏ√¯
+					ChildRect[3].l = OutRect.r; // ÏÉÅÌïòÏÇ¨Ïù¥Ïóê ÎÇÄ Ïö∞Ï∏°
 					ChildRect[3].t = OutRect.t;
 					ChildRect[3].b = OutRect.b;
 					for(int i = 0; i < 4; ++i)
@@ -1522,11 +1507,11 @@ protected:
 			{
 				SetStep(StepNamed);
 				Name = BxUtilGlobal::StrCpyWithAlloc(name);
-				PosX = BxUtilGlobal::StrCpyWithAlloc(BxString("posx.") + posx);
-				PosY = BxUtilGlobal::StrCpyWithAlloc(BxString("posy.") + posy);
+				PosX = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:posx.<A>", BxTHROW(posx)));
+				PosY = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:posy.<A>", BxTHROW(posy)));
 				Width = BxUtilGlobal::StrCpyWithAlloc(width);
 				Height = BxUtilGlobal::StrCpyWithAlloc(height);
-				Scroll = BxUtilGlobal::StrCpyWithAlloc(BxString("scroll.") + scroll);
+				Scroll = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:scroll.<A>", BxTHROW(scroll)));
 				Fill = BxUtilGlobal::StrCpyWithAlloc(fill);
 			}
 			void AdjustScroll(int posx, int posy)
@@ -1545,14 +1530,14 @@ protected:
 			virtual void Linking(const Element::VarMapPtr& Map)
 			{
 				SetStep(StepLinked);
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(PosX) && *Map.Access(PosX));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(PosX) && *Map.Access(PosX));
 				PosXValue = (ReserveCode) (*Map.Access(PosX))->GetValue();
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(PosY) && *Map.Access(PosY));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(PosY) && *Map.Access(PosY));
 				PosYValue = (ReserveCode) (*Map.Access(PosY))->GetValue();
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Scroll) && *Map.Access(Scroll));
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Scroll) && *Map.Access(Scroll));
 				ScrollValue = (ReserveCode) (*Map.Access(Scroll))->GetValue();
-				BxAssert("BxGUI<ø¨∞·¿€æ˜ø° Ω«∆–«ﬂΩ¿¥œ¥Ÿ>", Map.Access(Fill) && *Map.Access(Fill));
-				BxAssert("BxGUI<FILLøÎ ø§∏Æ∏’∆Æ∞° æ∆¥’¥œ¥Ÿ>", (*Map.Access(Fill))->IsValidFill());
+				BxASSERT("BxGUI<Ïó∞Í≤∞ÏûëÏóÖÏóê Ïã§Ìå®ÌñàÏäµÎãàÎã§>", Map.Access(Fill) && *Map.Access(Fill));
+				BxASSERT("BxGUI<FILLÏö© ÏóòÎ¶¨Î®ºÌä∏Í∞Ä ÏïÑÎãôÎãàÎã§>", (*Map.Access(Fill))->IsValidFill());
 				FillValue = *Map.Access(Fill);
 			}
 			virtual rect Rendering(const Element::VarMapPtr& Map, BxDraw& Draw, rect Rect, rect _out_ InRect)
@@ -1563,7 +1548,7 @@ protected:
 				const int RectHeight = Rect.b - Rect.t;
 				if(0 < RectWidth && 0 < RectHeight)
 				{
-					// µø¿˚µ•¿Ã≈Õ
+					// ÎèôÏ†ÅÎç∞Ïù¥ÌÑ∞
 					int WidthValue = 0, HeightValue = 0;
 					if(Map.Access(Width)) WidthValue = (*Map.Access(Width))->GetValue();
 					else WidthValue = BxUtilGlobal::AtoI(Width) * ((Width[BxUtilGlobal::StrLen(Width) - 1] == '%')? -1 : 1);
@@ -1573,7 +1558,7 @@ protected:
 					if(HeightValue < 0) HeightValue = RectHeight * -HeightValue / 100;
 					InRect.l -= AddPosXGen;
 					InRect.t -= AddPosYGen;
-					// ±∏»π¿€æ˜
+					// Íµ¨ÌöçÏûëÏóÖ
 					switch(PosXValue)
 					{
 					case CodeLeft: InRect.r = InRect.l + BxUtilGlobal::Max(0, WidthValue); break;
@@ -1584,11 +1569,11 @@ protected:
 					case CodeTop: InRect.b = InRect.t + BxUtilGlobal::Max(0, HeightValue); break;
 					case CodeBottom: InRect.t = InRect.b - BxUtilGlobal::Max(0, HeightValue); break;
 					}
-					// ªÛ≈¬±‚∑œ
+					// ÏÉÅÌÉúÍ∏∞Î°ù
 					IsVisibleGen = true;
-					OutSizeGen = WH(OutRect.r - OutRect.l, OutRect.b - OutRect.t);
-					InSizeGen = WH(InRect.r - InRect.l, InRect.b - InRect.t);
-					// ƒ•«œ±‚
+					OutSizeGen = BxDrawGlobal::WH(OutRect.r - OutRect.l, OutRect.b - OutRect.t);
+					InSizeGen = BxDrawGlobal::WH(InRect.r - InRect.l, InRect.b - InRect.t);
+					// Ïπ†ÌïòÍ∏∞
 					if(FillValue && FillValue->GetType() != TypeNull)
 						FillValue->Filling(Draw, InRect);
 				}
@@ -1633,7 +1618,7 @@ protected:
 			CurFocus->AddChild(NewData);
 			if(*Name)
 			{
-				BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+				BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 				Map[Name] = NewData;
 			}
 		}
@@ -1644,7 +1629,7 @@ protected:
 			CurFocus->AddChild(NewData);
 			if(*Name)
 			{
-				BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+				BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 				Map[Name] = NewData;
 			}
 		}
@@ -1655,7 +1640,7 @@ protected:
 			CurFocus->AddChild(NewData);
 			if(*Name)
 			{
-				BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+				BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 				Map[Name] = NewData;
 			}
 		}
@@ -1666,7 +1651,7 @@ protected:
 			CurFocus->AddChild(NewData);
 			if(*Name)
 			{
-				BxAssert("BxGUI<¡ﬂ∫πµ» ƒ¡≈Ÿ∆Æ∏Ì¿‘¥œ¥Ÿ>", !Map.Access(Name));
+				BxASSERT("BxGUI<Ï§ëÎ≥µÎêú Ïª®ÌÖêÌä∏Î™ÖÏûÖÎãàÎã§>", !Map.Access(Name));
 				Map[Name] = NewData;
 			}
 		}

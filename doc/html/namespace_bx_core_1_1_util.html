@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -72,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,54 +98,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae33cb5b0c5e2af137d9a32c85dd75f87"><td class="memItemLeft" align="right" valign="top">id_memory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#ae33cb5b0c5e2af137d9a32c85dd75f87">Malloc</a> (int <a class="el" href="structsize.html">size</a>)</td></tr>
-<tr class="memdesc:ae33cb5b0c5e2af137d9a32c85dd75f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리할당  <a href="#ae33cb5b0c5e2af137d9a32c85dd75f87">More...</a><br/></td></tr>
-<tr class="separator:ae33cb5b0c5e2af137d9a32c85dd75f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f81a8d7cf5960dcf082672afbfb486b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a4f81a8d7cf5960dcf082672afbfb486b">Free</a> (id_memory item)</td></tr>
-<tr class="memdesc:a4f81a8d7cf5960dcf082672afbfb486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리반환  <a href="#a4f81a8d7cf5960dcf082672afbfb486b">More...</a><br/></td></tr>
-<tr class="separator:a4f81a8d7cf5960dcf082672afbfb486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a57bb094d32039831bd41c2057c6708"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a6a57bb094d32039831bd41c2057c6708">GetPtr</a> (id_memory item)</td></tr>
-<tr class="memdesc:a6a57bb094d32039831bd41c2057c6708"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리ID의 실제 메모리번지 구하기  <a href="#a6a57bb094d32039831bd41c2057c6708">More...</a><br/></td></tr>
-<tr class="separator:a6a57bb094d32039831bd41c2057c6708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0371fbafa905afeb67c09fca85741db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0">MemMove</a> (const void *dst, const void *src, int length)</td></tr>
-<tr class="memdesc:a0371fbafa905afeb67c09fca85741db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리 복사  <a href="#a0371fbafa905afeb67c09fca85741db0">More...</a><br/></td></tr>
-<tr class="separator:a0371fbafa905afeb67c09fca85741db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26da9f030a69c9db36aa84b0b23c2dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2">MemSet</a> (const void *dst, byte value, int length)</td></tr>
-<tr class="memdesc:a26da9f030a69c9db36aa84b0b23c2dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리 초기화  <a href="#a26da9f030a69c9db36aa84b0b23c2dd2">More...</a><br/></td></tr>
-<tr class="separator:a26da9f030a69c9db36aa84b0b23c2dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacaf23bed9737504410d309578cdc7a8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8">Alloc</a> (int <a class="el" href="structsize.html">size</a>)</td></tr>
+<tr class="memdesc:aacaf23bed9737504410d309578cdc7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리할당  <a href="#aacaf23bed9737504410d309578cdc7a8">More...</a><br/></td></tr>
+<tr class="separator:aacaf23bed9737504410d309578cdc7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe79bf4d20f42ce940b4d4e7d58b7a1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#abe79bf4d20f42ce940b4d4e7d58b7a1d">Free</a> (void *buf)</td></tr>
+<tr class="memdesc:abe79bf4d20f42ce940b4d4e7d58b7a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리반환  <a href="#abe79bf4d20f42ce940b4d4e7d58b7a1d">More...</a><br/></td></tr>
+<tr class="separator:abe79bf4d20f42ce940b4d4e7d58b7a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d9f355240f547de643ac1dcbb2ed08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08">MemSet</a> (void *dst, byte value, int length)</td></tr>
+<tr class="memdesc:a86d9f355240f547de643ac1dcbb2ed08"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리 초기화  <a href="#a86d9f355240f547de643ac1dcbb2ed08">More...</a><br/></td></tr>
+<tr class="separator:a86d9f355240f547de643ac1dcbb2ed08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d8a11236853f4cbb3207c80cf5b4fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">MemCpy</a> (void *dst, const void *src, int length)</td></tr>
+<tr class="memdesc:aa1d8a11236853f4cbb3207c80cf5b4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리 복사  <a href="#aa1d8a11236853f4cbb3207c80cf5b4fc">More...</a><br/></td></tr>
+<tr class="separator:aa1d8a11236853f4cbb3207c80cf5b4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad732eb2a2948cdab353d9291533cbe14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#ad732eb2a2948cdab353d9291533cbe14">MemCmp</a> (const void *dst, const void *src, int length)</td></tr>
 <tr class="memdesc:ad732eb2a2948cdab353d9291533cbe14"><td class="mdescLeft">&#160;</td><td class="mdescRight">메모리 비교  <a href="#ad732eb2a2948cdab353d9291533cbe14">More...</a><br/></td></tr>
 <tr class="separator:ad732eb2a2948cdab353d9291533cbe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d19a71790c1618490e526fb0a12ed27"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a7d19a71790c1618490e526fb0a12ed27">Print</a> (string src, const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;args=<a class="el" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68">BxThrow::zero</a>(), int *length=nullptr)</td></tr>
-<tr class="memdesc:a7d19a71790c1618490e526fb0a12ed27"><td class="mdescLeft">&#160;</td><td class="mdescRight">스트링구성  <a href="#a7d19a71790c1618490e526fb0a12ed27">More...</a><br/></td></tr>
-<tr class="separator:a7d19a71790c1618490e526fb0a12ed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41880400f45728f06bf82d985191af63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a41880400f45728f06bf82d985191af63">Printf</a> (string src,...)</td></tr>
-<tr class="memdesc:a41880400f45728f06bf82d985191af63"><td class="mdescLeft">&#160;</td><td class="mdescRight">출력창에 스트링기록(Release도 사용하려면 mkb의 defines{}에 IW_USE_TRACING추가)  <a href="#a41880400f45728f06bf82d985191af63">More...</a><br/></td></tr>
-<tr class="separator:a41880400f45728f06bf82d985191af63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb919367d4ddcaf86284146ce9237c2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#acb919367d4ddcaf86284146ce9237c2e">SnPrintf</a> (string_rw dst, int length, string src,...)</td></tr>
-<tr class="memdesc:acb919367d4ddcaf86284146ce9237c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">스트링에 스트링기록  <a href="#acb919367d4ddcaf86284146ce9237c2e">More...</a><br/></td></tr>
-<tr class="separator:acb919367d4ddcaf86284146ce9237c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac70cec443af515775e1715fb098d4ebd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#ac70cec443af515775e1715fb098d4ebd">VsnPrintf</a> (string_rw dst, int length, string src, va_list list)</td></tr>
-<tr class="memdesc:ac70cec443af515775e1715fb098d4ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">스트링에 va_list식 스트링기록  <a href="#ac70cec443af515775e1715fb098d4ebd">More...</a><br/></td></tr>
-<tr class="separator:ac70cec443af515775e1715fb098d4ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2042ce6755beb730b5b9d6500cec38d"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#ad2042ce6755beb730b5b9d6500cec38d">GetCurrentCallDepth</a> ()</td></tr>
-<tr class="memdesc:ad2042ce6755beb730b5b9d6500cec38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 함수의 콜깊이조사  <a href="#ad2042ce6755beb730b5b9d6500cec38d">More...</a><br/></td></tr>
-<tr class="separator:ad2042ce6755beb730b5b9d6500cec38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab26b2b689b53617f387422e8f01e9c2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#aab26b2b689b53617f387422e8f01e9c2">GetCurrentCallAddress</a> ()</td></tr>
-<tr class="memdesc:aab26b2b689b53617f387422e8f01e9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 함수의 시작주소조사  <a href="#aab26b2b689b53617f387422e8f01e9c2">More...</a><br/></td></tr>
-<tr class="separator:aab26b2b689b53617f387422e8f01e9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cccf069af739d413adb8437bb16544d"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a2cccf069af739d413adb8437bb16544d">GetCurrentCallCount</a> ()</td></tr>
-<tr class="memdesc:a2cccf069af739d413adb8437bb16544d"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 함수의 콜순번조사  <a href="#a2cccf069af739d413adb8437bb16544d">More...</a><br/></td></tr>
-<tr class="separator:a2cccf069af739d413adb8437bb16544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3055494eac4b2e5797611cd67d7447b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a3055494eac4b2e5797611cd67d7447b9">SetCallCount</a> (uint value)</td></tr>
-<tr class="memdesc:a3055494eac4b2e5797611cd67d7447b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">콜순번 초기화  <a href="#a3055494eac4b2e5797611cd67d7447b9">More...</a><br/></td></tr>
-<tr class="separator:a3055494eac4b2e5797611cd67d7447b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef2e02010c31fe1e7f01fa970f6816d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a9ef2e02010c31fe1e7f01fa970f6816d">PushCallDepthAndLog</a> (string file, const int line, string func)</td></tr>
-<tr class="memdesc:a9ef2e02010c31fe1e7f01fa970f6816d"><td class="mdescLeft">&#160;</td><td class="mdescRight">콜깊이 더하기  <a href="#a9ef2e02010c31fe1e7f01fa970f6816d">More...</a><br/></td></tr>
-<tr class="separator:a9ef2e02010c31fe1e7f01fa970f6816d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18ac655e1fd93ba753360dad4e9f8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#aa18ac655e1fd93ba753360dad4e9f8d3">PopCallDepthAndLog</a> (string file, const int line)</td></tr>
-<tr class="memdesc:aa18ac655e1fd93ba753360dad4e9f8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">콜깊이 빼기  <a href="#aa18ac655e1fd93ba753360dad4e9f8d3">More...</a><br/></td></tr>
-<tr class="separator:aa18ac655e1fd93ba753360dad4e9f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39339febd9159aca9926f2a400bb0617"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_util.html#a39339febd9159aca9926f2a400bb0617">Print</a> (string map, const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;args=<a class="el" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68">BxThrow::zero</a>(), int *length=nullptr)</td></tr>
+<tr class="memdesc:a39339febd9159aca9926f2a400bb0617"><td class="mdescLeft">&#160;</td><td class="mdescRight">스트링구성  <a href="#a39339febd9159aca9926f2a400bb0617">More...</a><br/></td></tr>
+<tr class="separator:a39339febd9159aca9926f2a400bb0617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ec381ceb5fbce7d4074c674a9b763d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64ec381ceb5fbce7d4074c674a9b763d"></a>
 const int *&#160;</td><td class="memItemRight" valign="bottom"><b>Cos1024Table</b> ()</td></tr>
 <tr class="separator:a64ec381ceb5fbce7d4074c674a9b763d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,117 +132,12 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Util파트 </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a4f81a8d7cf5960dcf082672afbfb486b"></a>
+<a class="anchor" id="aacaf23bed9737504410d309578cdc7a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BxCore::Util::Free </td>
-          <td>(</td>
-          <td class="paramtype">id_memory&#160;</td>
-          <td class="paramname"><em>item</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>메모리반환 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">item</td><td>: 반환할 메모리ID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#ae33cb5b0c5e2af137d9a32c85dd75f87" title="메모리할당 ">Malloc</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aab26b2b689b53617f387422e8f01e9c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * BxCore::Util::GetCurrentCallAddress </td>
-          <td>(</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>현재 함수의 시작주소조사 </p>
-<dl class="section return"><dt>Returns</dt><dd>시작주소 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2cccf069af739d413adb8437bb16544d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint BxCore::Util::GetCurrentCallCount </td>
-          <td>(</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>현재 함수의 콜순번조사 </p>
-<dl class="section return"><dt>Returns</dt><dd>콜순번 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad2042ce6755beb730b5b9d6500cec38d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint BxCore::Util::GetCurrentCallDepth </td>
-          <td>(</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>현재 함수의 콜깊이조사 </p>
-<dl class="section return"><dt>Returns</dt><dd>콜깊이 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6a57bb094d32039831bd41c2057c6708"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * BxCore::Util::GetPtr </td>
-          <td>(</td>
-          <td class="paramtype">id_memory&#160;</td>
-          <td class="paramname"><em>item</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>메모리ID의 실제 메모리번지 구하기 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">item</td><td>: 요청할 메모리ID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>해당 메모리ID의 메모리번지 </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#ae33cb5b0c5e2af137d9a32c85dd75f87" title="메모리할당 ">Malloc</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae33cb5b0c5e2af137d9a32c85dd75f87"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">id_memory BxCore::Util::Malloc </td>
+          <td class="memname">void * BxCore::Util::Alloc </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>size</em>)</td><td></td>
@@ -289,8 +153,33 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>할당된 메모리ID, 실패시 0 </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#a4f81a8d7cf5960dcf082672afbfb486b" title="메모리반환 ">Free</a>, <a class="el" href="namespace_bx_core_1_1_util.html#a6a57bb094d32039831bd41c2057c6708" title="메모리ID의 실제 메모리번지 구하기 ">GetPtr</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>할당된 메모리, 실패시 nullptr </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#abe79bf4d20f42ce940b4d4e7d58b7a1d" title="메모리반환 ">Free</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe79bf4d20f42ce940b4d4e7d58b7a1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BxCore::Util::Free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>메모리반환 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>: 반환할 메모리 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8" title="메모리할당 ">Alloc</a> </dd></dl>
 
 </div>
 </div>
@@ -337,14 +226,14 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
 
 </div>
 </div>
-<a class="anchor" id="a0371fbafa905afeb67c09fca85741db0"></a>
+<a class="anchor" id="aa1d8a11236853f4cbb3207c80cf5b4fc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BxCore::Util::MemMove </td>
+          <td class="memname">void BxCore::Util::MemCpy </td>
           <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -379,14 +268,14 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
 
 </div>
 </div>
-<a class="anchor" id="a26da9f030a69c9db36aa84b0b23c2dd2"></a>
+<a class="anchor" id="a86d9f355240f547de643ac1dcbb2ed08"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void BxCore::Util::MemSet </td>
           <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -421,36 +310,7 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
 
 </div>
 </div>
-<a class="anchor" id="aa18ac655e1fd93ba753360dad4e9f8d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BxCore::Util::PopCallDepthAndLog </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>line</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>콜깊이 빼기 </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#a9ef2e02010c31fe1e7f01fa970f6816d" title="콜깊이 더하기 ">PushCallDepthAndLog</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7d19a71790c1618490e526fb0a12ed27"></a>
+<a class="anchor" id="a39339febd9159aca9926f2a400bb0617"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -458,7 +318,7 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
           <td class="memname">string _tmp_ BxCore::Util::Print </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramname"><em>map</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -483,215 +343,20 @@ wstring&#160;</td><td class="memItemRight" valign="bottom"><b>CP949Table</b> ()<
 <p>스트링구성 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src</td><td>: "&lt;A&gt;"형식의 스크립트 </td></tr>
-    <tr><td class="paramname">args</td><td>: src에 쓰일 가변인자 </td></tr>
-    <tr><td class="paramname">length</td><td>: 구성된 스트링의 길이 </td></tr>
+    <tr><td class="paramname">map</td><td>: 스트링맵 스크립트(식별문자는 "&lt;&gt;:")  : 가변인수참조 &lt;X...&gt; : 16진수입력 <b> : 공백문자 &lt;T&gt; : 탭문자 &lt;N&gt; : 뉴라인문자 &lt;R&gt; : 리턴문자 &lt;Z&gt; : 널문자 &lt;FS&gt; : 슬래시 &lt;RS&gt; : 역슬래시 &lt;DQ&gt; : 쌍따옴표 &lt;SQ&gt; : 작은따옴표 </b></td></tr>
+    <tr><td class="paramname">args</td><td><b>: map에 쓰일 가변인자 </b></td></tr>
+    <tr><td class="paramname">length</td><td><b>: 구성된 스트링의 길이 </b></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>구성된 스트링 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a41880400f45728f06bf82d985191af63"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int BxCore::Util::Printf </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>출력창에 스트링기록(Release도 사용하려면 mkb의 defines{}에 IW_USE_TRACING추가) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">src</td><td>: printf양식의 맵(d/s/...) </td></tr>
-    <tr><td class="paramname">...</td><td>: src에 쓰일 가변인자 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>기록된 바이트길이 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9ef2e02010c31fe1e7f01fa970f6816d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BxCore::Util::PushCallDepthAndLog </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>콜깊이 더하기 </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_util.html#aa18ac655e1fd93ba753360dad4e9f8d3" title="콜깊이 빼기 ">PopCallDepthAndLog</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3055494eac4b2e5797611cd67d7447b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BxCore::Util::SetCallCount </td>
-          <td>(</td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>value</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>콜순번 초기화 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>: 콜순번 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="acb919367d4ddcaf86284146ce9237c2e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int BxCore::Util::SnPrintf </td>
-          <td>(</td>
-          <td class="paramtype">string_rw&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>스트링에 스트링기록 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dst</td><td>: 기록할 시작 메모리번지 </td></tr>
-    <tr><td class="paramname">length</td><td>: dst의 길이 </td></tr>
-    <tr><td class="paramname">src</td><td>: sprintf양식의 맵(d/s/...) </td></tr>
-    <tr><td class="paramname">...</td><td>: src에 쓰일 가변인자 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>기록된 바이트길이 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac70cec443af515775e1715fb098d4ebd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int BxCore::Util::VsnPrintf </td>
-          <td>(</td>
-          <td class="paramtype">string_rw&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>list</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>스트링에 va_list식 스트링기록 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dst</td><td>: 기록할 시작 메모리번지 </td></tr>
-    <tr><td class="paramname">length</td><td>: dst의 길이 </td></tr>
-    <tr><td class="paramname">src</td><td>: sprintf양식의 맵(d/s/...) </td></tr>
-    <tr><td class="paramname">list</td><td>: src에 쓰일 va_list형 가변인자 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>기록된 바이트길이 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><b> 구성된 스트링 </b></dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:29 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:48 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

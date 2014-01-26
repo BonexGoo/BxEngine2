@@ -1,4 +1,4 @@
-#include <BxScene.hpp>
+﻿#include <BxScene.hpp>
 #include "TestB.hpp"
 
 FRAMEWORK_SCENE(TestBClass, "Test-B")

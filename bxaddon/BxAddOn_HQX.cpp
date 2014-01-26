@@ -1,4 +1,4 @@
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+Ôªø// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 #include <BxMemory.hpp>
 #include <BxSingleton.hpp>
 
@@ -12,7 +12,7 @@ namespace BxCore
 local_func const byte* HQXToBMP(const byte* bmp, int scale);
 local_func bool BindingCore() {BxCore::AddOn::ForExtend_HQXToBMP() = (void*) HQXToBMP; return true;}
 local_data bool Unknown = BindingCore();
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 
 #include <stdlib.h>
 #include <stdint.h>
@@ -41,7 +41,7 @@ void hq4x_32_rb( uint32_t * src, uint32_t src_rowBytes, uint32_t * dest, uint32_
 #define trU   0x00000700
 #define trV   0x00000006
 
-// YUV∞ËªÍ ¡§π–µµ
+// YUVÍ≥ÑÏÇ∞ Ï†ïÎ∞ÄÎèÑ
 #define DETAIL_MASK_SIZE 6
 #define DETAIL_R_SHIFT ((8 - DETAIL_MASK_SIZE) * 3)
 #define DETAIL_G_SHIFT ((8 - DETAIL_MASK_SIZE) * 2)
@@ -60,23 +60,23 @@ static uint32_t* RGBtoYUV = nullptr;
 static uint32_t YUV1 = 0;
 static uint32_t YUV2 = 0;
 
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 const byte* HQXToBMP(const byte* bmp, int scale)
 {
-	// ∫Ò∆Æ∏ ±∏º∫
+	// ÎπÑÌä∏ÎßµÍµ¨ÏÑ±
 	if(scale < 2 || 4 < scale) return nullptr;
 	typedef struct {uint Size; ushort Reserved1; ushort Reserved2; uint OffBits;} BITMAPFILEHEADER;
 	typedef struct {uint Size; int Width; int Height; ushort Planes; ushort BitCount; uint Compression;
 		uint SizeImage; int XPelsPerMeter; int YPelsPerMeter; uint ClrUsed; uint ClrImportant;} BITMAPINFOHEADER;
 
-	// Source¡§∫∏
+	// SourceÏ†ïÎ≥¥
 	if(bmp[0] != 'B' || bmp[1] != 'x' || bmp[2] != 'B' || bmp[3] != 'M') return nullptr;
 	BITMAPINFOHEADER* SrcBmpInfoHeader = (BITMAPINFOHEADER*)(bmp + 4 + sizeof(BITMAPFILEHEADER));
 	if(SrcBmpInfoHeader->BitCount != 32) return nullptr;
 	const int SrcWidth = SrcBmpInfoHeader->Width;
 	const int SrcHeight = SrcBmpInfoHeader->Height;
 
-	// ∫Ò∆Æ∏ ±∏º∫
+	// ÎπÑÌä∏ÎßµÍµ¨ÏÑ±
 	const int DstWidth = SrcWidth * scale;
 	const int DstHeight = SrcHeight * scale;
 	const int BmpBytesPerPixel = 4;
@@ -115,7 +115,7 @@ const byte* HQXToBMP(const byte* bmp, int scale)
 	}
 	return Bmp;
 }
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 
 static inline uint32_t rgb_to_yuv(uint32_t c)
 {
@@ -221,7 +221,7 @@ static inline void Interp10(uint32_t * pc, uint32_t c1, uint32_t c2, uint32_t c3
 void hqxInit(void)
 {
 	if(RGBtoYUV) return;
-	BxSINGLETON(RGBtoYUV, uint, (DETAIL_R_MASK | DETAIL_G_MASK | DETAIL_B_MASK) + 1);
+	BxSINGLETON(RGBtoYUV, (DETAIL_R_MASK | DETAIL_G_MASK | DETAIL_B_MASK) + 1);
     /* Initalize RGB to YUV lookup table */
     uint32_t c, r, g, b, y, u, v;
     for (c = 0; c < (DETAIL_R_MASK | DETAIL_G_MASK | DETAIL_B_MASK) + 1; c++) {

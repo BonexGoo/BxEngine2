@@ -8,69 +8,64 @@
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
       <node id="182">
-        <label>stdarg.h</label>
-      </node>
-      <node id="180">
         <label>BxExpress.hpp</label>
         <link refid="BxExpress.hpp"/>
-        <childnode refid="181" relation="include">
+        <childnode refid="183" relation="include">
         </childnode>
       </node>
-      <node id="181">
+      <node id="183">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="182" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="188">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
-      </node>
       <node id="185">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="183">
-        <label>BxExpress.hpp</label>
-        <link refid="BxExpress.hpp"/>
-        <childnode refid="184" relation="include">
-        </childnode>
-      </node>
-      <node id="184">
         <label>BxDraw.hpp</label>
         <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="185" relation="include">
-        </childnode>
         <childnode refid="186" relation="include">
         </childnode>
-        <childnode refid="188" relation="include">
+        <childnode refid="187" relation="include">
         </childnode>
         <childnode refid="189" relation="include">
         </childnode>
-      </node>
-      <node id="189">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
         <childnode refid="190" relation="include">
         </childnode>
       </node>
       <node id="187">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
       </node>
       <node id="190">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>BxExpress.hpp</label>
+        <link refid="BxExpress.hpp"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="191">
         <label>BxCoreForS3E.hpp</label>
         <link refid="_bx_core_for_s3_e_8hpp_source"/>
       </node>
-      <node id="186">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="187" relation="include">
-        </childnode>
-        <childnode refid="185" relation="include">
-        </childnode>
+      <node id="188">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
+      <node id="189">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_express_1_1___integer" prot="public">BxExpress::_Integer</innerclass>
@@ -91,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" bodystart="4" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" bodystart="4" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1ae402912f25257c568fe484c088384346" prot="public" static="no">
         <name>BxIntegerX</name>
@@ -103,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" bodystart="5" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1a915820da0672b4dc79b74489cea4b8c7" prot="public" static="no">
         <name>BxFloat</name>
@@ -115,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1ab20410305c53094bc7ad556aa6f12b95" prot="public" static="no">
         <name>BxFloatX</name>
@@ -127,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp" bodystart="7" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp" bodystart="7" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -135,8 +130,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxType.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxType.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BxInteger(VALUE)<sp/><sp/>(BxExpress::Integer::Make&lt;(int)(VALUE)&gt;())</highlight></codeline>
 <codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BxIntegerX(VALUE)<sp/>(BxExpress::IntegerX::Make&lt;(int)(VALUE)&gt;())</highlight></codeline>
@@ -417,6 +412,6 @@
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>Float<sp/><sp/><sp/>operator/(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>_Float&amp;<sp/>v1,<sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FloatX&amp;<sp/>v2<sp/><sp/>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Float((fint)((v1.ValueF<sp/>*<sp/>(huge)<sp/>v2.GetInverseF())<sp/>&gt;&gt;<sp/>16),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);}</highlight></codeline>
 <codeline lineno="282"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxExpress.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxExpress.hpp"/>
   </compounddef>
 </doxygen>

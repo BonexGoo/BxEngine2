@@ -6,7 +6,7 @@ var searchData=
   ['clearobjectall',['ClearObjectAll',['../class_bx_animate.html#af29a6641041d7c3dc33f24a817970e79',1,'BxAnimate']]],
   ['clip',['CLIP',['../namespace_bx_draw_global.html#aeec25401761d67115d55bff9619c3681',1,'BxDrawGlobal']]],
   ['clone',['Clone',['../class_bx_keyword_1_1_clone.html',1,'BxKeyword']]],
-  ['clonewithalloc',['CloneWithAlloc',['../class_bx_string.html#ad82768a52a89e008078998783e622347',1,'BxString']]],
+  ['clonewithalloc',['CloneWithAlloc',['../class_bx_string.html#afa4631e4a36fe15273eb4cfe7e6cafec',1,'BxString']]],
   ['close',['Close',['../namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b',1,'BxCore::File::Close()'],['../namespace_bx_core_1_1_font.html#a774eba3b56f296434e719f06842743b1',1,'BxCore::Font::Close()'],['../namespace_bx_core_1_1_library.html#a4a4735c133e1cf5689553b237901e02a',1,'BxCore::Library::Close()']]],
   ['closemutex',['CloseMutex',['../namespace_bx_core_1_1_thread.html#a01f908e2c4137aaf47cbd5adf675e1b7',1,'BxCore::Thread']]],
   ['color',['COLOR',['../namespace_bx_draw_global.html#aa77b8b6570afce4266316a45e5e552ee',1,'BxDrawGlobal::COLOR(byte r, byte g, byte b, uint rate=100)'],['../namespace_bx_draw_global.html#a1106b5aedf54a1f4c833e8b579d54280',1,'BxDrawGlobal::COLOR(color_x888 rgb, uint rate=100)']]],

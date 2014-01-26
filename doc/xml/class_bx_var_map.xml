@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="168" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="168" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="168" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_var_map_1ae8ff43ac9abfa51d6ac7e61dae39b5f3" prot="private" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref> **</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="169" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="169" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="169" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="10" bodyend="28"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="10" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="10" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a0f9bf2325ad270815b253bad0e437ad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE &amp;</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="31" bodyend="53"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="31" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ad42b7d6d39fb0117cd892f91cadcb747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE &amp;</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="56" bodyend="86"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="56" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="56" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a7f6392b1771dd4b2cc6d15ca1e3f8b87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="89" bodyend="100"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="89" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a035b6e1e7b2aeec287e4abd271a1c9d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="103" bodyend="117"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="103" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a4778fe94d3b087e5d07c3556c0d812e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="120" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="120" bodyend="140"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="120" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="120" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a533a12f831eaa5cd9ab275edfc421050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="143" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="143" bodyend="154"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="143" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="143" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ae40acbc31252742f39d01043f566144f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="157" bodyend="161"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="157" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="157" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ae08d6239a32d2e30e61709ac7e27dd81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="162" bodyend="165"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="162" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="162" bodyend="165"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -193,14 +193,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="171" bodyend="176"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="171" bodyend="176"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>map식 가변배열 제공 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="6" bodyend="177"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" line="7" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp" bodystart="6" bodyend="177"/>
     <listofallmembers>
       <member refid="class_bx_var_map_1a7f6392b1771dd4b2cc6d15ca1e3f8b87" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
       <member refid="class_bx_var_map_1a035b6e1e7b2aeec287e4abd271a1c9d0" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>

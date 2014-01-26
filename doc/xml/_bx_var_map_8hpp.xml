@@ -6,65 +6,71 @@
     <includedby refid="_bx_dynamic_8hpp" local="no">BxDynamic.hpp</includedby>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <includedby refid="_bx_telex_8hpp" local="no">BxTelex.hpp</includedby>
+    <includedby refid="_bx_core_for_s3_e_8hpp" local="no">BxCoreForS3E.hpp</includedby>
+    <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="508">
-        <label>stdarg.h</label>
-      </node>
-      <node id="510">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="507" relation="include">
-        </childnode>
-      </node>
-      <node id="506">
+      <node id="498">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="507" relation="include">
-        </childnode>
-        <childnode refid="509" relation="include">
+        <childnode refid="499" relation="include">
         </childnode>
       </node>
-      <node id="505">
+      <node id="497">
         <label>BxVarMap.hpp</label>
         <link refid="BxVarMap.hpp"/>
-        <childnode refid="506" relation="include">
+        <childnode refid="498" relation="include">
         </childnode>
       </node>
-      <node id="509">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="510" relation="include">
-        </childnode>
-      </node>
-      <node id="507">
+      <node id="501">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="508" relation="include">
+      </node>
+      <node id="500">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="501" relation="include">
         </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="514">
-        <label>BxTelex.hpp</label>
-        <link refid="_bx_telex_8hpp_source"/>
-      </node>
-      <node id="513">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="512">
+      <node id="504">
         <label>BxDynamic.hpp</label>
         <link refid="_bx_dynamic_8hpp_source"/>
       </node>
-      <node id="511">
+      <node id="506">
+        <label>BxTelex.hpp</label>
+        <link refid="_bx_telex_8hpp_source"/>
+      </node>
+      <node id="503">
         <label>BxVarMap.hpp</label>
         <link refid="BxVarMap.hpp"/>
-        <childnode refid="512" relation="include">
+        <childnode refid="504" relation="include">
         </childnode>
-        <childnode refid="513" relation="include">
+        <childnode refid="505" relation="include">
         </childnode>
-        <childnode refid="514" relation="include">
+        <childnode refid="506" relation="include">
         </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="507">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_var_map" prot="public">BxVarMap</innerclass>
@@ -73,8 +79,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxCore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxCore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TYPE&gt;</highlight></codeline>
 <codeline lineno="6" refid="class_bx_var_map" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_var_map" kindref="compound" tooltip="map식 가변배열 제공 ">BxVarMap</ref></highlight></codeline>
@@ -96,7 +102,7 @@
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Data<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TYPE;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsTypePointer&lt;TYPE&gt;())</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(CurNode-&gt;Data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(CurNode-&gt;Data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE));</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*CurNode-&gt;Data;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -121,7 +127,7 @@
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Data<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TYPE;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsTypePointer&lt;TYPE&gt;())</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(CurNode-&gt;Data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(CurNode-&gt;Data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE));</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*CurNode-&gt;Data;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -154,7 +160,7 @@
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Data<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TYPE;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsTypePointer&lt;TYPE&gt;())</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(CurNode-&gt;Data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(CurNode-&gt;Data,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TYPE));</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*CurNode-&gt;Data;</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -246,10 +252,10 @@
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Child)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Child<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_bx_var_map" kindref="compound" tooltip="map식 가변배열 제공 ">BxVarMap</ref>*[16];</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(Child,<sp/>0x00,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_bx_var_map" kindref="compound" tooltip="map식 가변배열 제공 ">BxVarMap</ref>*)<sp/>*<sp/>16);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(Child,<sp/>0x00,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_bx_var_map" kindref="compound" tooltip="map식 가변배열 제공 ">BxVarMap</ref>*)<sp/>*<sp/>16);</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="177"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVarMap.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVarMap.hpp"/>
   </compounddef>
 </doxygen>

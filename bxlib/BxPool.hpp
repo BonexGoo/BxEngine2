@@ -1,7 +1,19 @@
-#pragma once
+ï»¿#pragma once
 #include <BxType.hpp>
 
-//! \brief BxPool°ü·Ã ±Û·Î¹úÇÔ¼ö
+/// @cond SECTION_NAME
+namespace BxCore
+{
+	namespace Thread
+	{
+		void* BindStorage(int* storagekey);
+	}
+}
+/// @endcond
+
+#include <stdio.h>/////////////////////////////////////////////////////////////////////////////////
+
+//! \brief BxPoolê´€ë ¨ ê¸€ë¡œë²Œí•¨ìˆ˜
 namespace BxPoolGlobal
 {
 	class Unit
@@ -9,232 +21,241 @@ namespace BxPoolGlobal
 	public:
 		Unit* Next;
 		Unit() : Next(nullptr) {}
-		virtual ~Unit()
+		virtual void Quit()
 		{
-			Unit* CurNode = nullptr;
-			Unit* NextNode = Next;
-			while(CurNode = NextNode)
+			if(Next)
 			{
-				NextNode = CurNode->Next;
-				CurNode->Next = nullptr;
-				delete CurNode;
+				Unit* CurUnit = nullptr;
+				Unit* NextUnit = Next;
+				Next = nullptr;
+				while(CurUnit = NextUnit)
+				{
+					NextUnit = CurUnit->Next;
+					CurUnit->Next = nullptr;
+					delete CurUnit;
+				}
 			}
 		}
-		virtual bool Find(void* Ptr)
-		{
-			BxAssert("BxPoolGlobal<Àß¸øµÈ È£ÃâÀÔ´Ï´Ù>", false);
-			return false;
-		}
-		virtual void Free(void* Ptr)
-		{
-			BxAssert("BxPoolGlobal<Àß¸øµÈ È£ÃâÀÔ´Ï´Ù>", false);
-		}
+	public:
+		virtual void Free(void* Ptr) {BxASSERT("BxPoolGlobal<ì˜ëª»ëœ í˜¸ì¶œì…ë‹ˆë‹¤>", false);}
+		virtual bool Find(void* Ptr) {BxASSERT("BxPoolGlobal<ì˜ëª»ëœ í˜¸ì¶œì…ë‹ˆë‹¤>", false); return false;}
 	};
 
 	class UnitLink
 	{
 	public:
-		Unit* _ref_ Data;
+		Unit* _ref_ Head;
 		UnitLink* Next;
-		UnitLink() : Data(nullptr), Next(nullptr) {}
+		UnitLink(Unit* _ref_ head) : Head(head), Next(nullptr) {}
 		~UnitLink()
 		{
-			UnitLink* CurNode = nullptr;
-			UnitLink* NextNode = Next;
-			while(CurNode = NextNode)
+			if(Head)
 			{
-				NextNode = CurNode->Next;
-				CurNode->Next = nullptr;
-				delete CurNode;
+				Head->Quit();
+				Head = nullptr;
+			}
+			if(Next)
+			{
+				UnitLink* CurLink = nullptr;
+				UnitLink* NextLink = Next;
+				Next = nullptr;
+				while(CurLink = NextLink)
+				{
+					NextLink = CurLink->Next;
+					CurLink->Next = nullptr;
+					delete CurLink;
+				}
 			}
 		}
-		global_func UnitLink* Make(Unit* _ref_ data)
-		{
-			UnitLink* NewUnitLink = new UnitLink;
-			NewUnitLink->Data = data;
-			return NewUnitLink;
-		}
 	public:
-		global_func inline UnitLink& PoolBegin()
-		{
-			global_data UnitLink Begin;
-			return Begin;
-		}
+		global_func inline UnitLink* LinkHead()
+		{thread_storage _ = sizeof(UnitLink); return (UnitLink*) BxCore::Thread::BindStorage(&_);}
 	};
 
-	global_func void PoolBind(Unit* _ref_ Data)
+	global_func void Bind(Unit* _ref_ Head)
 	{
-		UnitLink* NewUnitLink = UnitLink::Make(Data);
-		NewUnitLink->Next = UnitLink::PoolBegin().Next;
-		UnitLink::PoolBegin().Next = NewUnitLink;
+		UnitLink* NewLink = new UnitLink(Head);
+		NewLink->Next = UnitLink::LinkHead()->Next;
+		UnitLink::LinkHead()->Next = NewLink;
 	}
 
 	global_func Unit* FindUnit(void* Ptr)
 	{
-		UnitLink* ListLink = &UnitLink::PoolBegin();
-		while(ListLink = ListLink->Next)
+		UnitLink* CurLink = UnitLink::LinkHead();
+		while(CurLink = CurLink->Next)
 		{
-			Unit* List = ListLink->Data;
-			while(List)
+			Unit* CurUnit = CurLink->Head;
+			while(CurUnit)
 			{
-				if(List->Find(Ptr))
-					return List;
-				List = List->Next;
+				if(CurUnit->Find(Ptr))
+					return CurUnit;
+				CurUnit = CurUnit->Next;
 			}
 		}
-		BxAssert("BxPoolGlobal<ÇØ´ç PtrÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù>", false);
+		BxASSERT("BxPoolGlobal<í•´ë‹¹ Ptrì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", false);
 		return nullptr;
+	}
+
+	global_func void UnbindAll()
+	{
+		UnitLink::LinkHead()->~UnitLink();
 	}
 }
 
-//! \brief »ç¿ëÀÚ¸ğµâÀ» À§ÇÑ Ç®¸µµµ±¸
+//! \brief ì‚¬ìš©ìëª¨ë“ˆì„ ìœ„í•œ í’€ë§ë„êµ¬
 template<typename TYPE>
 class BxPool
 {
 public:
 	/*!
-	\brief ÅÛÇÃ¸´´ÜÀ§ ÇÏ³ªÀÇ ¸Ş¸ğ¸®°ø°£ ÇÒ´ç
-	\return ÇÒ´çµÈ ¸Ş¸ğ¸®Æ÷ÀÎÅÍ, ÃÊ±âÈ­ ¾øÀ½
+	\brief í…œí”Œë¦¿ë‹¨ìœ„ í•˜ë‚˜ì˜ ë©”ëª¨ë¦¬ê³µê°„ í• ë‹¹
+	\return í• ë‹¹ëœ ë©”ëª¨ë¦¬í¬ì¸í„°, ì´ˆê¸°í™” ì—†ìŒ
 	\see Free
 	*/
 	global_func TYPE* Make()
 	{
-		TYPE* Ptr = PoolFocus()->Make();
+		TYPE* Ptr = UnitFocus()->Make();
 		if(!Ptr)
 		{
-			Unit* List = &PoolBegin();
-			while(!(Ptr = List->Make()))
+			Unit* CurUnit = UnitHead();
+			while(!(Ptr = CurUnit->Make()))
 			{
-				if(!List->Next && !(List->Next = new Unit))
+				if(!CurUnit->Next && !(CurUnit->Next = new Unit))
+				{
+					BxASSERT("BxPool<ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤>", false);
 					return nullptr;
-				List = (Unit*) List->Next;
+				}
+				CurUnit = (Unit*) CurUnit->Next;
 			}
-			PoolFocus() = List;
+			UnitFocus(CurUnit);
 		}
 		return Ptr;
 	}
 
 	/*!
-	\brief Make()·Î »ı¼ºµÈ ¸Ş¸ğ¸®°ø°£ ¹İÈ¯
-	\param Ptr : ¹İÈ¯½ÃÅ³ ¸Ş¸ğ¸®Æ÷ÀÎÅÍ
-	\return ¹İÈ¯¼º°ø¿©ºÎ
+	\brief Make()ë¡œ ìƒì„±ëœ ë©”ëª¨ë¦¬ê³µê°„ ë°˜í™˜
+	\param Ptr : ë°˜í™˜ì‹œí‚¬ ë©”ëª¨ë¦¬í¬ì¸í„°
+	\return ë°˜í™˜ì„±ê³µì—¬ë¶€
 	\see Make
 	*/
 	global_func bool Free(TYPE* Ptr)
 	{
-		BxPoolGlobal::Unit* List = FindUnit(Ptr);
-		if(!List) return false;
-		List->Free(Ptr);
+		BxPoolGlobal::Unit* DeleteUnit = FindUnit(Ptr);
+		if(!DeleteUnit) return false;
+		DeleteUnit->Free(Ptr);
 		return true;
 	}
 
 	/*!
-	\brief ÅÛÇÃ¸´´ÜÀ§ ÇÏ³ªÀÇ ¸Ş¸ğ¸®°ø°£ ÇÒ´ç ¹× »ı¼ºÀÚÈ£Ãâ
-	\return ÇÒ´çµÈ ¸Ş¸ğ¸®Æ÷ÀÎÅÍ
+	\brief í…œí”Œë¦¿ë‹¨ìœ„ í•˜ë‚˜ì˜ ë©”ëª¨ë¦¬ê³µê°„ í• ë‹¹ ë° ìƒì„±ìí˜¸ì¶œ
+	\return í• ë‹¹ëœ ë©”ëª¨ë¦¬í¬ì¸í„°
 	\see FreeClass
 	*/
 	global_func TYPE* MakeClass()
 	{
-		return new((int) Make()) TYPE;
+		return new((mint) Make()) TYPE;
 	}
 
 	/*!
-	\brief MakeClass()·Î »ı¼ºµÈ ¸Ş¸ğ¸®°ø°£ ¹İÈ¯ ¹× ¼Ò¸êÀÚÈ£Ãâ
-	\param Ptr : ¹İÈ¯½ÃÅ³ ¸Ş¸ğ¸®Æ÷ÀÎÅÍ
-	\return ¹İÈ¯¼º°ø¿©ºÎ
+	\brief MakeClass()ë¡œ ìƒì„±ëœ ë©”ëª¨ë¦¬ê³µê°„ ë°˜í™˜ ë° ì†Œë©¸ìí˜¸ì¶œ
+	\param Ptr : ë°˜í™˜ì‹œí‚¬ ë©”ëª¨ë¦¬í¬ì¸í„°
+	\return ë°˜í™˜ì„±ê³µì—¬ë¶€
 	\see MakeClass
 	*/
 	global_func bool FreeClass(TYPE* Ptr)
 	{
-		BxPoolGlobal::Unit* List = FindUnit(Ptr);
-		if(!List) return false;
-		Ptr->~TYPE();
-		List->Free(Ptr);
-		return true;
+		if(Ptr) Ptr->~TYPE();
+		return Free(Ptr);
 	}
 
 private:
 	class Unit : public BxPoolGlobal::Unit
 	{
 	public:
-		enum {MAX = 256};
+		enum:int {MAX = 256}; // ìµœëŒ€ 256ê¹Œì§€ ê°€ëŠ¥
 		byte Data[MAX][sizeof(TYPE)];
 		TYPE* Focus;
 		int Count;
 		Unit()
 		{
-			// ¸¶Áö¸·Àº ¸µÅ©±â·Ï ºÒÇÊ¿ä
+			// ë§ˆì§€ë§‰ì€ ë§í¬ê¸°ë¡ ë¶ˆí•„ìš”
 			for(int i = 0; i < MAX - 1; ++i)
 				Data[i][0] = i + 1;
 			Focus = (TYPE*) &Data[0][0];
 			Count = 0;
 		}
-		virtual ~Unit()
+		virtual void Quit()
 		{
+			if(Focus)
+			{
+				UnitFocus(this);
+				Focus = nullptr;
+				Count = 0;
+			}
+			BxPoolGlobal::Unit::Quit();
 		}
-		virtual bool Find(void* Ptr)
-		{
-			BxAssert("BxPool<PtrÀÌ nullptrÀÔ´Ï´Ù>", Ptr != nullptr);
-			if(Ptr < ((TYPE*) &Data[0][0]) || ((TYPE*) &Data[0][0]) + MAX <= Ptr)
-				return false;
-			return true;
-		}
+	public:
 		TYPE* Make()
 		{
-			TYPE* Ptr = Focus;
+			TYPE* Result = Focus;
 			if(Count < MAX)
-				Focus = (++Count == MAX)? nullptr : ((TYPE*) &Data[0][0]) + *((byte*) Focus);
-			return Ptr;
+				Focus = (++Count == MAX)? nullptr : (TYPE*) &Data[*((byte*) Focus)][0];
+			return Result;
 		}
 		virtual void Free(void* Ptr)
 		{
-			BxAssert("BxPool<¿¬¼ÓµÈ Áßº¹»èÁ¦ÀÔ´Ï´Ù>", Focus != Ptr);
-			BxAssert("BxPool<ÇÒ´çµÈ ¸Ş¸ğ¸®°¡ ¾ø½À´Ï´Ù>", 0 < Count);
-			BxAssert("BxPool<ºÎÁ¤È®ÇÑ ¸Ş¸ğ¸®ÁÖ¼ÒÀÔ´Ï´Ù>", ((((byte*) Ptr) - &Data[0][0]) % sizeof(TYPE)) == 0);
+			BxASSERT("BxPool<ì—°ì†ëœ ì¤‘ë³µì‚­ì œì…ë‹ˆë‹¤>", Focus != Ptr);
+			BxASSERT("BxPool<í• ë‹¹ëœ ë©”ëª¨ë¦¬ê°€ ì—†ìŠµë‹ˆë‹¤>", 0 < Count);
+			BxASSERT("BxPool<ë¶€ì •í™•í•œ ë©”ëª¨ë¦¬ì£¼ì†Œì…ë‹ˆë‹¤>", ((((byte*) Ptr) - &Data[0][0]) % sizeof(TYPE)) == 0);
 			if(Count-- < MAX)
 			{
-				BxAssert("BxPool<Æ÷Ä¿½ºÁ¤º¸°¡ À¯È¿ÇÏÁö ¾Ê½À´Ï´Ù>", Focus != nullptr);
-				BxAssert("BxPool<Æ÷Ä¿½ºÁ¤º¸°¡ À¯È¿ÇÏÁö ¾Ê½À´Ï´Ù>", ((TYPE*) &Data[0][0]) <= Focus && Focus < ((TYPE*) &Data[0][0]) + MAX);
-				BxAssert("BxPool<Æ÷Ä¿½ºÁ¤º¸°¡ À¯È¿ÇÏÁö ¾Ê½À´Ï´Ù>", ((((byte*) Focus) - &Data[0][0]) % sizeof(TYPE)) == 0);
+				BxASSERT("BxPool<í¬ì»¤ìŠ¤ì •ë³´ê°€ ìœ íš¨í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", Focus != nullptr);
+				BxASSERT("BxPool<í¬ì»¤ìŠ¤ì •ë³´ê°€ ìœ íš¨í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", &Data[0][0] <= ((byte*) Focus) && ((byte*) Focus) < &Data[MAX][0]);
+				BxASSERT("BxPool<í¬ì»¤ìŠ¤ì •ë³´ê°€ ìœ íš¨í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", ((((byte*) Focus) - &Data[0][0]) % sizeof(TYPE)) == 0);
 				*((byte*) Ptr) = (((byte*) Focus) - &Data[0][0]) / sizeof(TYPE);
 			}
 			Focus = (TYPE*) Ptr;
 		}
+		virtual bool Find(void* Ptr)
+		{
+			BxASSERT("BxPool<Ptrì´ nullptrì…ë‹ˆë‹¤>", Ptr != nullptr);
+			return (&Data[0][0] <= Ptr && Ptr < &Data[MAX][0]);
+		}
 	};
 
-	global_func inline Unit& PoolBegin()
+	global_func inline Unit* UnitHead()
 	{
-		global_data Unit Begin;
-		global_data bool IsBinded = false;
-		if(!IsBinded)
-		{
-			IsBinded = true;
-			BxPoolGlobal::PoolBind(&Begin);
-		}
-		return Begin;
+		thread_storage _ = sizeof(Unit);
+		Unit* Result = (Unit*) BxCore::Thread::BindStorage(&_);
+		if(!*((void**) Result))
+			BxPoolGlobal::Bind(new((mint) Result) Unit);
+		return (Unit*) Result;
 	}
 
-	global_func inline Unit*& PoolFocus()
+	global_func inline Unit* UnitFocus(Unit* Set = nullptr)
 	{
-		global_data Unit* Focus = &PoolBegin();
-		return Focus;
+		thread_storage _ = sizeof(Unit*);
+		Unit*& Result = *((Unit**) BxCore::Thread::BindStorage(&_));
+		if(Set) Result = Set;
+		else if(!Result) Result = UnitHead();
+		return Result;
 	}
 
 	global_func Unit* FindUnit(TYPE* Ptr)
 	{
 		if(!Ptr) return nullptr;
-		if(PoolFocus()->Find(Ptr))
-			return PoolFocus();
-		Unit* List = &PoolBegin();
-		while(List)
+		// í•´ë‹¹í’€ í¬ì»¤ìŠ¤ê²€ì‚¬
+		if(UnitFocus()->Find(Ptr))
+			return UnitFocus();
+		// í•´ë‹¹í’€ ê²€ìƒ‰
+		Unit* CurUnit = UnitHead();
+		while(CurUnit)
 		{
-			if(List->Find(Ptr))
-			{
-				PoolFocus() = List;
-				return List;
-			}
-			List = (Unit*) List->Next;
+			if(CurUnit->Find(Ptr))
+				return UnitFocus(CurUnit);
+			CurUnit = (Unit*) CurUnit->Next;
 		}
+		// ì „ì²´í’€ ê²€ìƒ‰
 		return (Unit*) BxPoolGlobal::FindUnit(Ptr);
 	}
 };

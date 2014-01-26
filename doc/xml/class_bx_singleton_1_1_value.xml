@@ -9,18 +9,18 @@
       </param>
     </templateparamlist>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_bx_singleton_1_1_value_1a4afb4766b80aa8c617f2671e786e3d46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1_1_value_1a4354c718e7bc227908e396ae859aa96a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>BxSingleton::Value&lt; TYPE &gt;::Value</definition>
-        <argsstring>(TYPE **value, uint *count)</argsstring>
+        <argsstring>(TYPE **value, int *count __DEBUG_PRM__)</argsstring>
         <name>Value</name>
         <param>
           <type>TYPE **</type>
           <declname>value</declname>
         </param>
         <param>
-          <type>uint *</type>
-          <declname>count</declname>
+          <type>int *count</type>
+          <declname>__DEBUG_PRM__</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -28,32 +28,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="88" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="88" bodyend="88"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="82" bodyend="84"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1_1_value_1a0dc5fe4195291432263491d24405a792" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>BxSingleton::Value&lt; TYPE &gt;::~Value</definition>
-        <argsstring>()</argsstring>
-        <name>~Value</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="89" bodyend="89"/>
-      </memberdef>
-      <memberdef kind="function" id="class_bx_singleton_1_1_value_1a92a0562c40caa5fecb4edf1487587b3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_singleton_1_1_value_1add7e7eae1ab0ab0b9b0ba4bea825b7e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void BxSingleton::Value&lt; TYPE &gt;::Rebind</definition>
-        <argsstring>(TYPE *newvalue, const uint newcount)</argsstring>
+        <argsstring>(TYPE *newvalue, const int newcount)</argsstring>
         <name>Rebind</name>
         <param>
           <type>TYPE *</type>
           <declname>newvalue</declname>
         </param>
         <param>
-          <type>const uint</type>
+          <type>const int</type>
           <declname>newcount</declname>
         </param>
         <briefdescription>
@@ -62,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="90" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="90" bodyend="91"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="85" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="85" bodyend="86"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -70,35 +57,34 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="216">
+      <node id="226">
         <label>BxSingleton::Element</label>
       </node>
-      <node id="215">
+      <node id="225">
         <label>BxSingleton::Value&lt; TYPE &gt;</label>
-        <childnode refid="216" relation="public-inheritance">
+        <childnode refid="226" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="218">
+      <node id="228">
         <label>BxSingleton::Element</label>
       </node>
-      <node id="217">
+      <node id="227">
         <label>BxSingleton::Value&lt; TYPE &gt;</label>
-        <childnode refid="218" relation="public-inheritance">
+        <childnode refid="228" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" line="87" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="86" bodyend="92"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" line="80" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="79" bodyend="87"/>
     <listofallmembers>
-      <member refid="class_bx_singleton_1_1_element_1a877d26700e5b4b1706caf7f324edd7ef" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>CountPtr</name></member>
-      <member refid="class_bx_singleton_1_1_element_1abb098d6b8496beadeeef07e9e9ab5490" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Element</name></member>
+      <member refid="class_bx_singleton_1_1_element_1abc60a323d34d493fcc4a3a0df574ff96" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>CountPtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1aa7a8699afcb26df13f4136ede82a8bdd" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Element</name></member>
       <member refid="class_bx_singleton_1_1_element_1a2957b754db139114977b73fbaba57a76" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>IsSame</name></member>
-      <member refid="class_bx_singleton_1_1_value_1a92a0562c40caa5fecb4edf1487587b3d" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Rebind</name></member>
-      <member refid="class_bx_singleton_1_1_value_1a4afb4766b80aa8c617f2671e786e3d46" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Value</name></member>
+      <member refid="class_bx_singleton_1_1_value_1add7e7eae1ab0ab0b9b0ba4bea825b7e6" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Rebind</name></member>
+      <member refid="class_bx_singleton_1_1_value_1a4354c718e7bc227908e396ae859aa96a" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Value</name></member>
       <member refid="class_bx_singleton_1_1_element_1af7a86af516a40b55b8e3601fc82b5c1a" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>ValuePtr</name></member>
       <member refid="class_bx_singleton_1_1_element_1a47d7b034a1f0be2401ae03763d247b69" prot="public" virt="virtual"><scope>BxSingleton::Value</scope><name>~Element</name></member>
-      <member refid="class_bx_singleton_1_1_value_1a0dc5fe4195291432263491d24405a792" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>~Value</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

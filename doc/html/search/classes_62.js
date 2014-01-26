@@ -8,6 +8,7 @@ var searchData=
   ['bxgui',['BxGUI',['../class_bx_g_u_i.html',1,'']]],
   ['bximage',['BxImage',['../class_bx_image.html',1,'']]],
   ['bxkeyword',['BxKeyword',['../class_bx_keyword.html',1,'']]],
+  ['bxmemory',['BxMemory',['../class_bx_memory.html',1,'']]],
   ['bxpool',['BxPool',['../class_bx_pool.html',1,'']]],
   ['bxscene',['BxScene',['../class_bx_scene.html',1,'']]],
   ['bxsingleton',['BxSingleton',['../class_bx_singleton.html',1,'']]],

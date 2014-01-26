@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">BxDynamic.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxCore.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxCore.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;BxUtil.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;BxVarMap.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
@@ -168,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">protected</span>: <span class="keywordtype">void</span> AllocCache(<span class="keywordtype">int</span> BufferSize, <span class="keywordtype">int</span> UsingCacheSize)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxDynamic::Resource&lt;이미 할당된 버퍼가 존재합니다&gt;&quot;</span>, mBuffer == <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxDynamic::Resource&lt;이미 할당된 버퍼가 존재합니다&gt;&quot;</span>, mBuffer == <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> CachePoolSize = GetCachePoolSize(GetCachePoolName());</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">int</span> CachePoolUsed = GetCachePoolUsed(GetCachePoolName());</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">// 확보</span></div>
@@ -176,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BindPool</a>* CurBinder = HeadBinder-&gt;GetNext();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">while</span>(CachePoolSize &lt; CachePoolUsed + UsingCacheSize || !(mBuffer = (byte*) BxAlloc(BufferSize)))</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxDynamic::Resource&lt;관련된 모든 캐시를 비웠지만 버퍼 할당에 실패하였습니다&gt;&quot;</span>, CurBinder != HeadBinder);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxDynamic::Resource&lt;관련된 모든 캐시를 비웠지만 버퍼 할당에 실패하였습니다&gt;&quot;</span>, CurBinder != HeadBinder);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="class_bx_dynamic_1_1_resource.html" title="리소스 관리 ">Resource</a>* CurResource = CurBinder-&gt;GetData();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">if</span>(CurResource-&gt;mBuffer &amp;&amp; CurResource-&gt;mLockCount == 0)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
@@ -203,12 +202,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">protected</span>: <span class="keywordtype">int</span> UnlockCache()</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxDynamic::Resource&lt;LockCount를 초과한 Unlock입니다&gt;&quot;</span>, 0 &lt; mLockCount);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxDynamic::Resource&lt;LockCount를 초과한 Unlock입니다&gt;&quot;</span>, 0 &lt; mLockCount);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">return</span> --mLockCount;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keyword">protected</span>: <span class="keywordtype">void</span> UpdateCache()</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxDynamic::Resource&lt;등록되지 않은 캐시입니다&gt;&quot;</span>, mBinder != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxDynamic::Resource&lt;등록되지 않은 캐시입니다&gt;&quot;</span>, mBinder != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="comment">// 버퍼가 존재하지 않으면 작업취소</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">if</span>(!mBuffer) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="comment">// 스코어갱신</span></div>
@@ -356,8 +355,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keyword">public</span>: <span class="keywordtype">void</span> ResetData(callback_serialize CB = <span class="keyword">nullptr</span>, <span class="keywordtype">string</span> Comment = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            {</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                ParamCB = CB;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                ParamComment = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(ParamComment);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordflow">if</span>(Comment) ParamComment = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(Comment);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                ParamComment = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(ParamComment);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordflow">if</span>(Comment) ParamComment = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(Comment);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                <span class="keywordflow">if</span>(ParamCB &amp;&amp; ParentBinder &amp;&amp; ParentBinder-&gt;ParamData)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    ParamCB(bindstate_binded, ParamComment);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            }</div>
@@ -428,7 +427,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:27 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

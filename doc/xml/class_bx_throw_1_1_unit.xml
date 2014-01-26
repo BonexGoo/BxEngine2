@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" line="91" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" bodystart="91" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="128" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="128" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" line="92" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" bodystart="92" bodyend="92"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="129" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="129" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_throw_1_1_unit_1a16922fc0b002528d313930d604cd8ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -44,20 +44,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" line="93" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" bodystart="93" bodyend="93"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="130" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="130" bodyend="130"/>
       </memberdef>
-      <memberdef kind="function" id="class_bx_throw_1_1_unit_1a03c143c9269c2be15f087e121025a816" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_bx_throw_1_1_unit_1a8047c56b2f802b75610239430fa627e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const void *</type>
-        <definition>const void* BxThrow::Unit::TablePtr</definition>
+        <definition>const void* BxThrow::Unit::VTablePtr</definition>
         <argsstring>() const </argsstring>
-        <name>TablePtr</name>
+        <name>VTablePtr</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" line="95" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" bodystart="95" bodyend="98"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="132" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="132" bodyend="132"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -65,33 +65,33 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="196">
+      <node id="214">
         <label>BxThrow::Unit</label>
       </node>
-      <node id="197">
+      <node id="215">
         <label>BxThrow::HeadUnit</label>
-        <childnode refid="196" relation="public-inheritance">
+        <childnode refid="214" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="198">
+      <node id="216">
         <label>BxThrow::PtrUnit&lt; TYPE &gt;</label>
-        <childnode refid="196" relation="public-inheritance">
+        <childnode refid="214" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="199">
+      <node id="217">
         <label>BxThrow::Unit</label>
-        <childnode refid="199" relation="usage">
+        <childnode refid="217" relation="usage">
           <edgelabel>Next</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" line="89" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxThrow.hpp" bodystart="88" bodyend="99"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="126" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="125" bodyend="133"/>
     <listofallmembers>
       <member refid="class_bx_throw_1_1_unit_1a0669421cde97e40027c33c1dfe4152cf" prot="public" virt="non-virtual"><scope>BxThrow::Unit</scope><name>Next</name></member>
-      <member refid="class_bx_throw_1_1_unit_1a03c143c9269c2be15f087e121025a816" prot="public" virt="non-virtual"><scope>BxThrow::Unit</scope><name>TablePtr</name></member>
       <member refid="class_bx_throw_1_1_unit_1af92d493271b40f6fec68e1971c62cd98" prot="public" virt="non-virtual"><scope>BxThrow::Unit</scope><name>Unit</name></member>
+      <member refid="class_bx_throw_1_1_unit_1a8047c56b2f802b75610239430fa627e7" prot="public" virt="non-virtual"><scope>BxThrow::Unit</scope><name>VTablePtr</name></member>
       <member refid="class_bx_throw_1_1_unit_1a16922fc0b002528d313930d604cd8ac3" prot="public" virt="virtual"><scope>BxThrow::Unit</scope><name>~Unit</name></member>
     </listofallmembers>
   </compounddef>

@@ -1,17 +1,17 @@
-#pragma once
+ï»¿#pragma once
 /*!
-\mainpage BxEngine °³¿ä
-\section developer °³¹ßÀÚ
+\mainpage BxEngine ê°œìš”
+\section developer ê°œë°œì
 	- Bonex Gu
-\section infomation ¸ñÀû
-	- Å©·Î½ºÇÃ·§ÆûÇâ ¹Ìµé¿ş¾î °ÔÀÓ¿£Áø
-\section advenced ¼Ò°³
-	- Marmalade-SDK±â¹İ °ÔÀÓ¿£Áø
-	- OpenGL/SW·£´õ¸µ ÅëÇÕ±×·¡ÇÈ½º
-	- µ¶¸³Çü Core-Interface °ÔÀÓ¿£Áø
+\section infomation ëª©ì 
+	- í¬ë¡œìŠ¤í”Œë«í¼í–¥ ë¯¸ë“¤ì›¨ì–´ ê²Œì„ì—”ì§„
+\section advenced ì†Œê°œ
+	- Marmalade-SDKê¸°ë°˜ ê²Œì„ì—”ì§„
+	- OpenGL/SWëœë”ë§ í†µí•©ê·¸ë˜í”½ìŠ¤
+	- ë…ë¦½í˜• Core-Interface ê²Œì„ì—”ì§„
 */
 
-// ÄÄÆÄÀÏ·¯ Æ¯¼º
+// ì»´íŒŒì¼ëŸ¬ íŠ¹ì„±
 #ifndef nullptr
 	#define nullptr (0)
 #endif
@@ -28,46 +28,47 @@
 	#define _inline inline
 #endif
 
-// Á¤ÀÇ
-#define _arr_ // ¹è¿­½ÄÀ¸·Î ÇÒ´çµÇ°í »èÁ¦µÇ´Â Æ÷ÀÎÅÍÀÌ´Ù
-#define _ref_ // ¿øº»À» ÂüÁ¶ÇÏ´Â µ¥ÀÌÅÍÀÌ¸ç »èÁ¦¸¦ ±İÇÑ´Ù
-#define _tmp_ // ÀÓ½Ã·Î Àü´ŞÇÏ´Â µ¥ÀÌÅÍÀÌ¸ç ÀúÀå, »èÁ¦¸¦ ±İÇÑ´Ù
-#define _in_ // ¿ÀÁ÷ ÀÔ·ÂÀ» À§ÇÑ ÆÄ¶ó¹ÌÅÍÀÌ´Ù
-#define _out_ & // ¿ÀÁ÷ Ãâ·ÂÀ» À§ÇÑ ÆÄ¶ó¹ÌÅÍÀÌ´Ù
-#define _inout_ & // ÀÔ·ÂµÇ°í Ãâ·ÂµÇ´Â ÆÄ¶ó¹ÌÅÍÀÌ´Ù
-#define local_func static // Æ¯Á¤¼Ò½º¿¡¸¸ Á¸ÀçÇÏ´Â ÇÔ¼ö(CPP ¶Ç´Â MACRO)
-#define local_data static // Æ¯Á¤¼Ò½º¿¡¸¸ Á¸ÀçÇÏ´Â Àü¿ªº¯¼ö(CPP ¶Ç´Â MACRO)
-#define global_func static // ¾îµğ¼­µçÁö Á¢±ÙÇÒ ¼ö ÀÖ´Â ÇÔ¼ö(H)
-#define global_data static // ¾îµğ¼­µçÁö Á¢±ÙÇÒ ¼ö ÀÖ´Â Áö¿ªº¯¼ö(CPP ¶Ç´Â H)
-#ifdef __GNUC__
-	#define macro inline
-#elif __ARMCC_VERSION
-	#define macro inline
-#else
-	#define macro __forceinline
+// ì •ì˜
+#ifndef _BX_STATIC_DEFINE_
+#define _BX_STATIC_DEFINE_
+	#define _arr_ // ë°°ì—´ì‹ìœ¼ë¡œ í• ë‹¹ë˜ê³  ì‚­ì œë˜ëŠ” í¬ì¸í„°ì´ë‹¤
+	#define _ref_ // ì›ë³¸ì„ ì°¸ì¡°í•˜ëŠ” ë°ì´í„°ì´ë©° ì‚­ì œë¥¼ ê¸ˆí•œë‹¤
+	#define _tmp_ // ì„ì‹œë¡œ ì „ë‹¬í•˜ëŠ” ë°ì´í„°ì´ë©° ì €ì¥, ì‚­ì œë¥¼ ê¸ˆí•œë‹¤
+	#define _in_ // ì˜¤ì§ ì…ë ¥ì„ ìœ„í•œ íŒŒë¼ë¯¸í„°ì´ë‹¤
+	#define _out_ & // ì˜¤ì§ ì¶œë ¥ì„ ìœ„í•œ íŒŒë¼ë¯¸í„°ì´ë‹¤
+	#define _inout_ & // ì…ë ¥ë˜ê³  ì¶œë ¥ë˜ëŠ” íŒŒë¼ë¯¸í„°ì´ë‹¤
+	#define local_func static // í•´ë‹¹ì†ŒìŠ¤ì—ì„œë§Œ ì ‘ê·¼ê°€ëŠ¥í•œ êµ­ì§€ì  ì „ì—­í•¨ìˆ˜(CPP)
+	#define local_data static // í•´ë‹¹ì†ŒìŠ¤ì—ì„œë§Œ ì ‘ê·¼ê°€ëŠ¥í•œ êµ­ì§€ì  ì „ì—­ë³€ìˆ˜(CPP)
+	#define global_func static // ì–´ë””ì„œë“ ì§€ ì ‘ê·¼í•  ìˆ˜ ìˆëŠ” í´ë˜ìŠ¤ë‚´ ë©¤ë²„í•¨ìˆ˜(H)
+	#define global_data static // ì–´ë””ì„œë“ ì§€ ì ‘ê·¼í•  ìˆ˜ ìˆëŠ” í•¨ìˆ˜ë‚´ ì •ì ë³€ìˆ˜(CPP/H)
+	#define thread_storage static int // ìŠ¤ë ˆë“œë³„ ë¡œì»¬ìŠ¤í† ë¦¬ì§€(TLS) ì—°ê²°ë³€ìˆ˜(CPP/H)
+	#if defined(__GNUC__) || defined(__ARMCC_VERSION)
+		#define macro inline
+	#else
+		#define macro __forceinline
+	#endif
 #endif
 
-// Å¸ÀÔ-µ¥ÀÌÅÍ
+// íƒ€ì…-ë°ì´í„°
+typedef unsigned char byte;
+typedef unsigned short ushort;
 typedef unsigned int uint;
+typedef int fint; // Float-Int : ê³ ì •ì†Œìˆ˜ì (16/16)
+typedef unsigned long mint; // Memory-Int : ë©”ëª¨ë¦¬ì£¼ì†Œ
 typedef long long huge;
 typedef unsigned long long uhuge;
-typedef unsigned short ushort;
-typedef int fint;
-typedef unsigned char byte;
-#ifdef __GNUC__
-	enum rsid:uhuge {rsid_null = 0x0000000000000000ULL, rsid_temp = 0xAAA00AAAAA000000ULL};
-#elif __ARMCC_VERSION
+#if defined(__GNUC__) || defined(__ARMCC_VERSION)
 	enum rsid:uhuge {rsid_null = 0x0000000000000000ULL, rsid_temp = 0xAAA00AAAAA000000ULL};
 #else
 	enum rsid:uhuge {rsid_null = 0x0000000000000000ui64, rsid_temp = 0xAAA00AAAAA000000ui64};
 #endif
 
-// Å¸ÀÔ-»ö»ó
+// íƒ€ì…-ìƒ‰ìƒ
 typedef unsigned short color_565;
 typedef unsigned short color_m555_a444;
 typedef unsigned int color_x888;
 typedef unsigned int color_a888;
-//! \brief color_bgra±¸Á¶Ã¼ : b, g, r, a
+//! \brief color_bgraêµ¬ì¡°ì²´ : b, g, r, a
 typedef struct {byte b; byte g; byte r; byte a;} color_bgra;
 #ifdef __BX_PIXEL16
 	typedef color_565 pixel_dst;
@@ -81,7 +82,7 @@ typedef struct {byte b; byte g; byte r; byte a;} color_bgra;
 	#define _OPA_BIT_ 0xFF000000
 #endif
 
-// ¿­°Å
+// ì—´ê±°
 enum syseventtype:byte {syseventtype_init, syseventtype_quit, syseventtype_resize, syseventtype_key, syseventtype_touch, syseventtype_button};
 enum syseventset:byte {syseventset_null, syseventset_do_enable, syseventset_need_enable};
 enum syseventresult:byte {syseventresult_pass, syseventresult_done};
@@ -165,7 +166,7 @@ enum oskeyboardtype:byte {oskeyboardtype_base, oskeyboardtype_email, oskeyboardt
 enum rendermode:byte {rendermode_null, rendermode_2d, rendermode_3d};
 enum bindstate:byte {bindstate_binded, bindstate_bind, bindstate_entrust, bindstate_unbind};
 
-// Å¸ÀÔ-Å°¿öµå
+// íƒ€ì…-í‚¤ì›Œë“œ
 typedef const char* event;
 typedef unsigned char check;
 typedef unsigned char radio;
@@ -179,17 +180,17 @@ typedef const char* __restrict string_prm;
 typedef char* __restrict string_rw_prm;
 typedef const ushort* __restrict wstring_prm;
 typedef ushort* __restrict wstring_rw_prm;
-// Å¸ÀÔ-ÁÂÇ¥
-//! \brief point±¸Á¶Ã¼ : x, y
+// íƒ€ì…-ì¢Œí‘œ
+//! \brief pointêµ¬ì¡°ì²´ : x, y
 typedef struct point
 {
 	int x; int y;
 	global_func inline const point& zero() {global_data const point p = {0, 0}; return p;}
 	point& operator=(const point& rhs) {x = rhs.x; y = rhs.y; return *this;}
 } point;
-//! \brief pointf±¸Á¶Ã¼ : x, y
+//! \brief pointfêµ¬ì¡°ì²´ : x, y
 typedef struct pointf {fint x; fint y;} pointf;
-//! \brief size±¸Á¶Ã¼ : w, h
+//! \brief sizeêµ¬ì¡°ì²´ : w, h
 typedef struct size
 {
 	int w; int h;
@@ -198,7 +199,7 @@ typedef struct size
 	global_func inline const size& full() {global_data const size s = {max, max}; return s;}
 	size& operator=(const size& rhs) {w = rhs.w; h = rhs.h; return *this;}
 } size;
-//! \brief rect±¸Á¶Ã¼ : l, t, r, b
+//! \brief rectêµ¬ì¡°ì²´ : l, t, r, b
 typedef struct rect
 {
 	int l; int t; int r; int b;
@@ -207,28 +208,27 @@ typedef struct rect
 	global_func inline const rect& zero() {global_data const rect r = {0, 0, 0, 0}; return r;}
 	rect& operator=(const rect& rhs) {l = rhs.l; t = rhs.t; r = rhs.r; b = rhs.b; return *this;}
 } rect;
-//! \brief rectf±¸Á¶Ã¼ : l, t, r, b
+//! \brief rectfêµ¬ì¡°ì²´ : l, t, r, b
 typedef struct rectf {fint l; fint t; fint r; fint b;} rectf;
-//! \brief vertex±¸Á¶Ã¼ : x, y, z, nouse(±¸Á¶Ã¼2½Â¼ö¸ÂÃã)
+//! \brief vertexêµ¬ì¡°ì²´ : x, y, z, nouse(êµ¬ì¡°ì²´2ìŠ¹ìˆ˜ë§ì¶¤)
 typedef struct vertex {int x; int y; int z; int nouse;} vertex;
-//! \brief quater±¸Á¶Ã¼ : x, y, z, angle1024
+//! \brief quaterêµ¬ì¡°ì²´ : x, y, z, angle1024
 typedef struct quater {int x; int y; int z; int angle1024;} quater;
-//! \brief uv±¸Á¶Ã¼ : u, v
+//! \brief uvêµ¬ì¡°ì²´ : u, v
 typedef struct uv {int u; int v;} uv;
-//! \brief face±¸Á¶Ã¼ : va, vb, vc, ua, ub, uc, nouse(±¸Á¶Ã¼2½Â¼ö¸ÂÃã)
+//! \brief faceêµ¬ì¡°ì²´ : va, vb, vc, ua, ub, uc, nouse(êµ¬ì¡°ì²´2ìŠ¹ìˆ˜ë§ì¶¤)
 typedef struct face {short va; short vb; short vc; short ua; short ub; short uc; int nouse;} face;
-//! \brief matrix±¸Á¶Ã¼ : m[4][4]
+//! \brief matrixêµ¬ì¡°ì²´ : m[4][4]
 typedef struct matrix {fint m[4][4];} matrix;
-//! \brief area±¸Á¶Ã¼ : w, h, hx, hy
+//! \brief areaêµ¬ì¡°ì²´ : w, h, hx, hy
 typedef struct area {short w; short h; short hx; short hy;} area;
-//! \brief points±¸Á¶Ã¼ : count, {x, y}, ...
+//! \brief pointsêµ¬ì¡°ì²´ : count, {x, y}, ...
 typedef struct points {enum {max = 1020}; int count; point pt[max];} points;
-//! \brief vertexs±¸Á¶Ã¼ : count, {x, y, z}, ...
+//! \brief vertexsêµ¬ì¡°ì²´ : count, {x, y, z}, ...
 typedef struct vertexs {enum {max = 1020}; int count; vertex vt[max];} vertexs;
-// Å¸ÀÔ-ID/±âÅ¸
+// íƒ€ì…-ID/ê¸°íƒ€
 typedef void* id_font;
 typedef void* id_sound;
-typedef void* id_memory;
 typedef void* id_file;
 typedef void* id_socket;
 typedef void* id_library;
@@ -240,7 +240,7 @@ typedef void* id_zip;
 typedef void* id_thread;
 typedef void* id_mutex;
 typedef bool delete_me;
-//! \brief OnEvent()ÀÇ ÀÌº¥Æ®ÆÄ¶ó¹ÌÅÍ
+//! \brief OnEvent()ì˜ ì´ë²¤íŠ¸íŒŒë¼ë¯¸í„°
 typedef struct sysevent
 {
 	syseventtype type;
@@ -251,37 +251,51 @@ typedef struct sysevent
 	struct {systouchtype type; uint id; int x; int y;} touch;
 	struct {sysbuttontype type; string name; rect field; int x; int y;} button;
 } sysevent;
-// Äİ¹é-ÇÁ·¹ÀÓ
+// ì½œë°±-í”„ë ˆì„
 typedef bool (*callback_frame)(int value, void* data);
-// Äİ¹é-ÀÌº¥Æ®
+// ì½œë°±-ì´ë²¤íŠ¸
 typedef void (*callback_event)(bool isautocall, string name, void* param);
-// Äİ¹é-JNI
+// ì½œë°±-JNI
 typedef int (*callback_jni)(string param1_str256, int param2);
-// Äİ¹é-EDK
+// ì½œë°±-EDK
 typedef void (*callback_edk)(string param1_str, int param2);
-// Äİ¹é-ÇÁ·Î½ÃÀú
+// ì½œë°±-í”„ë¡œì‹œì €
 typedef bool (*callback_procedure)(int sleep);
-// Äİ¹é-ÇÁ·Î¼¼½º
+// ì½œë°±-í”„ë¡œì„¸ìŠ¤
 typedef void (*callback_process)(callback_procedure yield);
-// Äİ¹é-ÇÁ·Î±×·¹½º(pos°¡ -1ÀÌ¸é lenÀº yield½Ã°£À» ÀÇ¹Ì)
-typedef bool (*callback_progress)(int pos, int len);
-// Äİ¹é-Á÷·ÄÈ­
+// ì½œë°±-í”„ë¡œê·¸ë ˆìŠ¤(posê°€ -1ì´ë©´ argì€ yieldì‹œê°„ì„ ì˜ë¯¸)
+typedef bool (*callback_progress)(int pos, mint arg);
+// ì½œë°±-ì§ë ¬í™”
 typedef void (*callback_serialize)(bindstate state, string comment);
-// Äİ¹é-ÆÄÀÏ°Ë»ö
+// ì½œë°±-íŒŒì¼ê²€ìƒ‰
 typedef void (*callback_filesearch)(bool isdirname, string _tmp_ name, void* data);
-// Äİ¹é-½º·¹µå
+// ì½œë°±-ìŠ¤ë ˆë“œ
 typedef void (*callback_thread)(void* data);
 
-// »ó¼ö
-#ifdef __GNUC__
-	#define ox100000000 0x100000000LL
-#elif __ARMCC_VERSION
+// ìƒìˆ˜
+#if defined(__GNUC__) || defined(__ARMCC_VERSION)
 	#define ox100000000 0x100000000LL
 #else
 	#define ox100000000 0x100000000i64
 #endif
 
-// ¸ÅÅ©·Î
+// ë¬¸ìì—´ ìƒìˆ˜
+#ifndef _BX_STRING_LITERAL_
+#define _BX_STRING_LITERAL_
+	#if defined(_MSC_VER)
+		#define MB(STR) ((const char* const) STR)
+		#define W1(STR) BxCore::System::GetUTF8LiteralByCP949(STR, sizeof(STR) - 1)
+		#define W2(STR) ((const ushort* const) L##STR)
+		#define _W2(STR) L##STR
+	#else
+		#define MB(STR) BxCore::System::GetCP949LiteralByUTF8(STR, sizeof(STR) - 1)
+		#define W1(STR) ((const char* const) STR)
+		#define W2(STR) ((const ushort* const) u##STR)
+		#define _W2(STR) u##STR
+	#endif
+#endif
+
+// ì‘ìš© ë§¤í¬ë¡œ
 #define ItoF(A) ((fint) ((A) << 16))
 #define FtoI(A) ((int) ((A) >> 16))
 #define FtoR(A) ((int) (((A) + 0x8000) >> 16))
@@ -305,16 +319,44 @@ typedef void (*callback_thread)(void* data);
 	case 0x38: A case 0x39: A case 0x3A: A case 0x3B: A \
 	case 0x3C: A case 0x3D: A case 0x3E: A case 0x3F: A}
 
-// ASSERT¼±¾ğ
-#ifdef __BX_DEBUG_ASSERT_POPUP
-	namespace BxCore {namespace System {void Assert(string, string, bool&, bool, string, int, string);}}
-	#define BxAssert(STRING, QUERY) do{global_data bool IsIgnore = false; \
-		BxCore::System::Assert(STRING, #QUERY, IsIgnore, (QUERY) != 0, __FILE__, __LINE__, __FUNCTION__);} while(false)
+// DEBUGê´€ë ¨
+#ifdef __BX_DEBUG
+	#define __DEBUG_MCR__ ,__FILE__,__LINE__,__FUNCTION__
+	#define __DEBUG_PRM__ ,string file,const int line,string func
+	#define __DEBUG_VAL__ string File;const int Line;string Func;
+	#define __DEBUG_INT__ ,File(file),Line(line),Func(func)
+	#define __DEBUG_ARG__ ,file,line,func
+	#define __DEBUG_FILE__ file
+	#define __DEBUG_LINE__ line
+	#define __DEBUG_FUNC__ func
 #else
-	#define BxAssert(STRING, CHECK) do{} while(false)
+	#define __DEBUG_MCR__
+	#define __DEBUG_PRM__
+	#define __DEBUG_VAL__
+	#define __DEBUG_INT__
+	#define __DEBUG_ARG__
+	#define __DEBUG_FILE__ ""
+	#define __DEBUG_LINE__ -1
+	#define __DEBUG_FUNC__ ""
 #endif
 
-// NEW/DELETE°ü·Ã
+// ASSERT/TRACEê´€ë ¨
+#ifdef __BX_DEBUG
+	namespace BxCore {namespace System {bool Break(string, string __DEBUG_PRM__);}}
+	#define BxASSERT(STRING, QUERY) \
+		do \
+		{ \
+			global_data bool IsIgnore = false; \
+			if(IsIgnore || (QUERY) != 0) break; \
+			IsIgnore = !BxCore::System::Break(STRING, #QUERY __DEBUG_MCR__); \
+		} while(false)
+	#define BxTRACE(...) BxCore::System::Trace(__VA_ARGS__)
+#else
+	#define BxASSERT(STRING, CHECK) do{} while(false)
+	#define BxTRACE(...) do{} while(false)
+#endif
+
+// NEW/DELETEê´€ë ¨
 #ifndef _BX_OPERATOR_NEW_
 #define _BX_OPERATOR_NEW_
 	#ifdef __BX_USED_LONG_SIZET
@@ -322,13 +364,13 @@ typedef void (*callback_thread)(void* data);
 	#else
 		#define NEW_SIZE_T unsigned int
 	#endif
-	inline void* operator new(NEW_SIZE_T, int ptr) {return (void*) ptr;}
-	inline void* operator new[](NEW_SIZE_T, int ptr) {return (void*) ptr;}
-	inline void operator delete(void*, int) {}
-	inline void operator delete[](void*, int) {}
+	inline void* operator new(NEW_SIZE_T, mint ptr) {return (void*) ptr;}
+	inline void* operator new[](NEW_SIZE_T, mint ptr) {return (void*) ptr;}
+	inline void operator delete(void*, mint) {}
+	inline void operator delete[](void*, mint) {}
 #endif
 
-// Å¸ÀÔºĞ¼®°ü·Ã
+// íƒ€ì…ë¶„ì„ê´€ë ¨
 #ifndef __BX_DECLARE_IsTypePointer
 #define __BX_DECLARE_IsTypePointer
 	template<typename TYPE>
@@ -343,8 +385,3 @@ typedef void (*callback_thread)(void* data);
 		return _IsTypePointer(Variable);
 	}
 #endif
-
-// try¸ğµâ
-#define try(DRAW, ...) for(bool _try_ = DRAW.AddStyleByIf(__VA_ARGS__); _try_; _try_ = DRAW.SubStyle())
-
-#include <stdarg.h>

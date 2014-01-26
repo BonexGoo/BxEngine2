@@ -1,4 +1,4 @@
-#include <BxScene.hpp>
+Ôªø#include <BxScene.hpp>
 #include "BxKeyboard.hpp"
 
 FRAMEWORK_SCENE(BxKeyboard, "BxKeyboard")
@@ -13,15 +13,15 @@ local_data string ButtonChar[2][2][41] =
 			"1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
 			"q", "w", "e", "r", "t", "y", "u", "i", "o", "p",
 			"a",    "s", "d", "f", "g", "h", "j", "k",  "l",
-			"°Ë",   "z", "x", "c", "v", "b", "n", "m",  "°Á",
-			"Ko",                  " ",                 "°Â"
+			"‚Üë",   "z", "x", "c", "v", "b", "n", "m",  "‚Üê",
+			"Ko",                  " ",                 "‚ñº"
 		},
 		{
 			"1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9", "0",
-			"§≤", "§∏", "§ß", "§°", "§µ", "§À", "§≈", "§¡", "§¿", "§ƒ",
-			"§±",   "§§", "§∑", "§©", "§æ", "§«", "§√", "§ø",  "§”",
-			"°Ë",   "§ª", "§º", "§∫", "§Ω", "§–", "§Ã", "§—",  "°Á",
-			"En",                     " ",                    "°Â"
+			"„ÖÇ", "„Öà", "„Ñ∑", "„Ñ±", "„ÖÖ", "„Öõ", "„Öï", "„Öë", "„Öê", "„Öî",
+			"„ÖÅ",   "„Ñ¥", "„Öá", "„Ñπ", "„Öé", "„Öó", "„Öì", "„Öè",  "„Ö£",
+			"‚Üë",   "„Öã", "„Öå", "„Öä", "„Öç", "„Ö†", "„Öú", "„Ö°",  "‚Üê",
+			"En",                     " ",                    "‚ñº"
 		}
 	},
 	{
@@ -29,15 +29,15 @@ local_data string ButtonChar[2][2][41] =
 			".", ":", "?", "/", "@", "&", "-", "=", "(", ")",
 			"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
 			"A",    "S", "D", "F", "G", "H", "J", "K",  "L",
-			"°È",   "Z", "X", "C", "V", "B", "N", "M",  "°Á",
-			"Ko",                  " ",                 "°Â"
+			"‚Üì",   "Z", "X", "C", "V", "B", "N", "M",  "‚Üê",
+			"Ko",                  " ",                 "‚ñº"
 		},
 		{
 			".",  ":",  "?",  "/",  "@",  "&",  "-",  "=",  "(", ")",
-			"§≥", "§π", "§®", "§¢", "§∂", "§À", "§≈", "§¡", "§¬", "§∆",
-			"§±",   "§§", "§∑", "§©", "§æ", "§«", "§√", "§ø",  "§”",
-			"°È",   "§ª", "§º", "§∫", "§Ω", "§–", "§Ã", "§—",  "°Á",
-			"En",                     " ",                    "°Â"
+			"„ÖÉ", "„Öâ", "„Ñ∏", "„Ñ≤", "„ÖÜ", "„Öõ", "„Öï", "„Öë", "„Öí", "„Öñ",
+			"„ÖÅ",   "„Ñ¥", "„Öá", "„Ñπ", "„Öé", "„Öó", "„Öì", "„Öè",  "„Ö£",
+			"‚Üì",   "„Öã", "„Öå", "„Öä", "„Öç", "„Ö†", "„Öú", "„Ö°",  "‚Üê",
+			"En",                     " ",                    "‚ñº"
 		}
 	}
 };
@@ -116,7 +116,7 @@ syseventresult OnEvent(BxKeyboard& Data, const sysevent& Event)
 		if(-1 < Index)
 		{
 			if(Event.key.type == syskeytype_down) IsDown = true;
-			else if(Event.key.type == syskeytype_repeat) {IsUp = true; IsDown = true;} // «ˆ¿Á ∏∂∏÷∑π¿ÃµÂ πÃ¡ˆø¯
+			else if(Event.key.type == syskeytype_repeat) {IsUp = true; IsDown = true;} // ÌòÑÏû¨ ÎßàÎ©ÄÎ†àÏù¥Îìú ÎØ∏ÏßÄÏõê
 			else if(Event.key.type == syskeytype_up) IsUp = true;
 		}
 	}
@@ -154,10 +154,10 @@ syseventresult OnEvent(BxKeyboard& Data, const sysevent& Event)
 						*Data.UserString = Data.IMEChars + Data.IMETails;
 				}
 				break;
-			case 38: // «—±€/øµæÓ
+			case 38: // ÌïúÍ∏Ä/ÏòÅÏñ¥
 				IsButtonKorean = !IsButtonKorean;
 				break;
-			case 40: // ¿‘∑¬
+			case 40: // ÏûÖÎ†•
 				Data.UserString = nullptr;
 				Data.IMEChars = "";
 				Data.IMETails = "";
@@ -228,9 +228,9 @@ void OnRender(BxKeyboard& Data, BxDraw& Draw)
 		const int iY = BeginY + ButtonH * ButtonY[i];
 		const int iW = RateX * ButtonW[i];
 		const int iH = ButtonH;
-		try(Draw, CLIP(XYWH(iX + Data.UIPos.x, iY + Data.UIPos.y, iW, iH)), BxString("KEY-%02d", nullptr, i))
+		BxTRY(Draw, CLIP(XYWH(iX + Data.UIPos.x, iY + Data.UIPos.y, iW, iH)), BxString::Parse("<>:KEY-<A:02>", BxTHROW(i)))
 		{
-			try(Draw, CLIP(XYWH(Gap, Gap, Draw.Width() - Gap * 2, Draw.Height() - Gap * 2)))
+			BxTRY(Draw, CLIP(XYWH(Gap, Gap, Draw.Width() - Gap * 2, Draw.Height() - Gap * 2)))
 			{
 				Data.DrawButton(Draw, IsButtonPushed[i]);
 				BxCore::Font::SetSort(fontsort_pad5);
@@ -242,7 +242,7 @@ void OnRender(BxKeyboard& Data, BxDraw& Draw)
 
 	// IME
 	if(Data.UserString)
-	try(Draw, CLIP(XYWH(0, 0, Draw.Width(), BeginY)))
+	BxTRY(Draw, CLIP(XYWH(0, 0, Draw.Width(), BeginY)))
 	{
 		const int CharsWidth = BxCore::Font::GetSize(Data.IMEfont, Data.IMEChars).w;
 		const int TailsWidth = BxCore::Font::GetSize(Data.IMEfont, Data.IMETails).w;

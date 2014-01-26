@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">BxAnimate.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxVarVector.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxVarVector.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;BxImage.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;BxString.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
@@ -173,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="class_bx_animate.html#aab1fa6b757b448fd3aedf2476491269a">  117</a></span>&#160;    id_object <a class="code" href="class_bx_animate.html#aab1fa6b757b448fd3aedf2476491269a" title="오브젝트 추가 ">AddObject</a>(<span class="keywordtype">string</span> objectName, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectName);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectName);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        _Object* FindObject = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Object.Length(); ++i)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(objectName, Object[i].Name) == same)</div>
@@ -197,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">if</span>(&amp;AliveActive[i] == OneActive)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;해당 오브젝트의 생존여부가 틀립니다&gt;&quot;</span>, OneActive-&gt;IsAlive);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;해당 오브젝트의 생존여부가 틀립니다&gt;&quot;</span>, OneActive-&gt;IsAlive);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                _Active* RemoveItem = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                AliveActive.Delete(i, &amp;RemoveItem);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                BxDelete(RemoveItem);</div>
@@ -208,7 +207,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">if</span>(&amp;DeadActive[i] == OneActive)</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;해당 오브젝트의 생존여부가 틀립니다&gt;&quot;</span>, !OneActive-&gt;IsAlive);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;해당 오브젝트의 생존여부가 틀립니다&gt;&quot;</span>, !OneActive-&gt;IsAlive);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                _Active* RemoveItem = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                DeadActive.Delete(i, &amp;RemoveItem);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                BxDelete(RemoveItem);</div>
@@ -235,7 +234,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="class_bx_animate.html#a1ff1c42988f1dbdea0098ffd84a7365c">  192</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a>&amp; <a class="code" href="class_bx_animate.html#a1ff1c42988f1dbdea0098ffd84a7365c" title="오브젝트위치 얻기 ">ObjectPos</a>(id_object objectID)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectID);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectID);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        _Active* OneActive = (_Active*) objectID;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span>(!OneActive-&gt;IsAlive)</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        {</div>
@@ -249,8 +248,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="class_bx_animate.html#aaf88b551be77ef906da4e61ac407a62c">  212</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bx_animate.html#aaf88b551be77ef906da4e61ac407a62c" title="오브젝트에 이벤트전달 ">SendEvent</a>(id_object objectID, <span class="keywordtype">string</span> eventName, <span class="keywordtype">bool</span> doInterrupt = <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectID);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, eventName);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectID);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, eventName);</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        _Active* OneActive = (_Active*) objectID;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">if</span>(!OneActive-&gt;IsAlive)</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">return</span>;</div>
@@ -260,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(eventName, Keyword[g][i].Name) == same)</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                _Keyword* FindEvent = &amp;Keyword[g][i];</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, FindEvent-&gt;Type == keyword_event);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, FindEvent-&gt;Type == keyword_event);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                OneActive-&gt;SetEvent(FindEvent, doInterrupt);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            }</div>
@@ -303,8 +302,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    <span class="keywordflow">if</span>(OneLayer-&gt;Type == layer_image)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    {</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                        _Object::_Action::_Motion::_Data::_Frame::_Layer::_Data::_Image* OneImage = (_Object::_Action::_Motion::_Data::_Frame::_Layer::_Data::_Image*) OneLayer-&gt;Data.Image;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, OneImage-&gt;Form);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, OneImage-&gt;Outline);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, OneImage-&gt;Form);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, OneImage-&gt;Outline);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> X = AliveActive[i].GetPosX() + OneFrame-&gt;UnitSize.w * OneImage-&gt;Grid.x + OneImage-&gt;Detail.x;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Y = AliveActive[i].GetPosY() + OneFrame-&gt;UnitSize.h * OneImage-&gt;Grid.y + OneImage-&gt;Detail.y;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        <span class="keywordflow">if</span>(!OneImage-&gt;ShowTerms || (OneImage-&gt;ShowTerms-&gt;Type == keyword_check &amp;&amp; OneImage-&gt;ShowTerms-&gt;Check) || (OneImage-&gt;ShowTerms-&gt;Type == keyword_radio &amp;&amp; OneImage-&gt;ShowTerms-&gt;Radio))</div>
@@ -325,7 +324,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                            <span class="keywordflow">case</span> _Outline::_DataClass::ClassType_Points:</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                        }</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                    }</div>
@@ -366,14 +365,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            {</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                    Node-&gt;Event = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Node-&gt;Event);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    Node-&gt;Event = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(*setValue);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                    Node-&gt;Event = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Node-&gt;Event);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    Node-&gt;Event = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(*setValue);</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                }</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">return</span> Node-&gt;Event;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            }</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">return</span> Node-&gt;Event;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
@@ -390,7 +389,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            }</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        }</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> Node-&gt;Check;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
@@ -408,7 +407,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            }</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        }</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">return</span> Node-&gt;Radio;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
@@ -425,7 +424,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            }</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        }</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> Node-&gt;Number;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
@@ -438,14 +437,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            {</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                {</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                    Node-&gt;String = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Node-&gt;String);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                    Node-&gt;String = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(*setValue);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                    Node-&gt;String = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Node-&gt;String);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                    Node-&gt;String = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(*setValue);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                }</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                <span class="keywordflow">return</span> Node-&gt;String;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            }</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">return</span> Node-&gt;String;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    }</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
@@ -498,11 +497,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        _Keyword() : Type(keyword_null), Name(nullptr), ParentID(0), <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">Link</a>(nullptr) {}</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        ~_Keyword()</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            Name = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name);</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <span class="keywordflow">switch</span>(Type)</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            {</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">case</span> keyword_event: Event = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Event); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="keywordflow">case</span> keyword_string: String = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(String); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">case</span> keyword_event: Event = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Event); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="keywordflow">case</span> keyword_string: String = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(String); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            }</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        }</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keyword">public</span>:</div>
@@ -518,7 +517,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            <span class="keywordflow">case</span> keyword_radio: Radio = <a class="code" href="namespace_bx_util_global.html#ae5e038296b7ac4d7e4929187d8106c13" title="데이터에서 로드(byte) ">BxUtilGlobal::LoadUint8</a>(Resource); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            <span class="keywordflow">case</span> keyword_number: Number = <a class="code" href="namespace_bx_util_global.html#af336f01897cb6e50d0347d5ba54aa968" title="데이터에서 로드(int) ">BxUtilGlobal::LoadInt32</a>(Resource); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;            <span class="keywordflow">case</span> keyword_string: String = <a class="code" href="namespace_bx_util_global.html#a956f04e1f763eddd08c74f1bf301c05f" title="데이터에서 스트링 로드 ">BxUtilGlobal::LoadString</a>(Resource); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            }</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;            GetKeyword(Begin, 0, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        }</div>
@@ -539,7 +538,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            }</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(SetRadio)</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            {</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, SetRadio-&gt;Type == keyword_radio);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, SetRadio-&gt;Type == keyword_radio);</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                _Keyword* Node = *KeywordBegin;</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                <span class="keywordflow">while</span>(Node)</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                {</div>
@@ -552,7 +551,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <span class="keywordflow">if</span>(Index-- &lt;= 0) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            _Keyword* Node = *KeywordBegin;</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            <span class="keywordflow">while</span>(0 &lt; Index-- &amp;&amp; Node) Node = Node-&gt;Link;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Node);</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            <span class="keywordflow">return</span> Node;</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        }</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    };</div>
@@ -570,7 +569,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            _DataClass(ClassType type) : CType(type) {}</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="class_bx_draw_form.html" title="새로운 폼개발을 위한 인터페이스 ">BxDrawForm</a>* GetForm()</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            {</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;호출이 금지된 함수입니다&gt;&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;호출이 금지된 함수입니다&gt;&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;            }</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        };</div>
@@ -583,7 +582,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                <a class="code" href="class_bx_image.html" title="이미지 운영 ">BxImage</a>* Image;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                _Sprite() : _DataClass(ClassType_Sprite), FileID(0), Image(nullptr) {}</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                ~_Sprite() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Sprite); BxDelete(Image);}</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                ~_Sprite() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Sprite); BxDelete(Image);}</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_bx_draw_form.html" title="새로운 폼개발을 위한 인터페이스 ">BxDrawForm</a>* GetForm()</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                {</div>
@@ -592,10 +591,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                        Image = BxNew(<a class="code" href="class_bx_image.html" title="이미지 운영 ">BxImage</a>);</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> FileName;</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="preprocessor">                        #ifdef __BX_PIXEL16</span></div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="preprocessor"></span>                            FileName.<a class="code" href="class_bx_string.html#a49d7bab9efab049b76b36df70dd759cd" title="sprintf형태로 스트링 생성 ">Format</a>(<span class="stringliteral">&quot;%s/%08x.b16&quot;</span>, (<span class="keywordtype">string</span>) <a class="code" href="class_bx_animate.html#a7f1d26b44a84cae17da512f14fd5ccfb" title="리소스폴더 경로지정 ">SetResourcePath</a>(), FileID);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="preprocessor"></span>                            FileName.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;%s/%08x.b16&quot;</span>, (<span class="keywordtype">string</span>) <a class="code" href="class_bx_animate.html#a7f1d26b44a84cae17da512f14fd5ccfb" title="리소스폴더 경로지정 ">SetResourcePath</a>(), FileID);</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;                            Image-&gt;Load(FileName, BxImage::B16);</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="preprocessor">                        #else</span></div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="preprocessor"></span>                            FileName.<a class="code" href="class_bx_string.html#a49d7bab9efab049b76b36df70dd759cd" title="sprintf형태로 스트링 생성 ">Format</a>(<span class="stringliteral">&quot;%s/%08x.b32&quot;</span>, (<span class="keywordtype">string</span>) <a class="code" href="class_bx_animate.html#a7f1d26b44a84cae17da512f14fd5ccfb" title="리소스폴더 경로지정 ">SetResourcePath</a>(), FileID);</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="preprocessor"></span>                            FileName.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;%s/%08x.b32&quot;</span>, (<span class="keywordtype">string</span>) <a class="code" href="class_bx_animate.html#a7f1d26b44a84cae17da512f14fd5ccfb" title="리소스폴더 경로지정 ">SetResourcePath</a>(), FileID);</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                            Image-&gt;Load(FileName, BxImage::B32);</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">                        #endif</span></div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor"></span>                        </div>
@@ -618,7 +617,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                uint Angle1024;</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                _Gradation() : _DataClass(ClassType_Gradation), Width(0), Height(0), NumUnit(0), Unit(nullptr), Angle1024(0) {}</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                ~_Gradation() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Gradation); BxDelete_Array(Unit);}</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                ~_Gradation() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Gradation); BxDelete_Array(Unit);}</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            } *Gradation;</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            <span class="keyword">class </span>_Stencil : <span class="keyword">public</span> _DataClass</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            {</div>
@@ -628,7 +627,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                byte* Bits;</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                _Stencil() : _DataClass(ClassType_Stencil), Width(0), Height(0), Bits(nullptr) {}</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                ~_Stencil() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Stencil); BxDelete_Array(Bits);}</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                ~_Stencil() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Stencil); BxDelete_Array(Bits);}</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            } *Stencil;</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        } Data;</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        _Form* _ref_ <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">Link</a>;</div>
@@ -641,7 +640,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;            <span class="keywordflow">case</span> form_sprite: BxDelete_Array(Data.Sprite); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            <span class="keywordflow">case</span> form_gradation: BxDelete_Array(Data.Gradation); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;            <span class="keywordflow">case</span> form_stencil: BxDelete_Array(Data.Stencil); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            }</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        }</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keyword">public</span>:</div>
@@ -683,7 +682,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                    <a class="code" href="namespace_bx_util_global.html#ad1297c7c4fa7a887810713a0ab541400" title="데이터에서 바이트배열 로드(uint) ">BxUtilGlobal::LoadBytes</a>(Data.Stencil[i].Bits, Resource, NumBits);</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                }</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            }</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            GetFormData(Begin, 0, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        }</div>
@@ -718,7 +717,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                <span class="keywordflow">else</span> Index -= Node-&gt;Length;</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            }</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        }</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    };</div>
@@ -743,7 +742,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> Grid;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;                <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> Detail;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                _Point1() : _DataClass(ClassType_Point1) {}</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                ~_Point1() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Point1);}</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                ~_Point1() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Point1);}</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;            } *Hotspot;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            <span class="keyword">class </span>_Point2 : <span class="keyword">public</span> _DataClass</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            {</div>
@@ -751,7 +750,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> Grid[2];</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                <a class="code" href="structpoint.html" title="point구조체 : x, y ">point</a> Detail[2];</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                _Point2() : _DataClass(ClassType_Point2) {}</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                ~_Point2() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Point2);}</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                ~_Point2() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Point2);}</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;            } *Rectangle, *Ellipse;</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;            <span class="keyword">class </span>_Points : <span class="keyword">public</span> _DataClass</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;            {</div>
@@ -763,7 +762,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                _Points() : _DataClass(ClassType_Points), NumPoint(0), Grid(nullptr), Detail(nullptr) {}</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                ~_Points()</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                {</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                    BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Points);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                    BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Points);</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                    BxDelete_Array(Grid);</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                    BxDelete_Array(Detail);</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                }</div>
@@ -781,7 +780,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            <span class="keywordflow">case</span> outline_ellipse: BxDelete_Array(Data.Ellipse); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            <span class="keywordflow">case</span> outline_st_polygon: BxDelete_Array(Data.StPolygon); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            <span class="keywordflow">case</span> outline_bz_polygon: BxDelete_Array(Data.BzPolygon); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;            }</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        }</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    <span class="keyword">public</span>:</div>
@@ -830,7 +829,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                    }</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                }</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            }</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            GetOutlineData(Begin, 0, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        }</div>
@@ -862,13 +861,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                    <span class="keywordflow">case</span> outline_ellipse: <span class="keywordflow">return</span> &amp;Node-&gt;Data.Ellipse[Index];</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                    <span class="keywordflow">case</span> outline_st_polygon: <span class="keywordflow">return</span> &amp;Node-&gt;Data.StPolygon[Index];</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                    <span class="keywordflow">case</span> outline_bz_polygon: <span class="keywordflow">return</span> &amp;Node-&gt;Data.BzPolygon[Index];</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                    <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                    <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                    }</div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                }</div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                <span class="keywordflow">else</span> Index -= Node-&gt;Length;</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                Node = Node-&gt;Link;</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;            }</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        }</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    };</div>
@@ -880,7 +879,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <span class="keywordtype">int</span> NumAction;</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        _Object() : Name(nullptr), NumAction(0), Action(nullptr) {}</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        ~_Object() {Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name); BxDelete_Array(Action);}</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        ~_Object() {Name = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name); BxDelete_Array(Action);}</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bx_animate.html#aa542dbaa87cd22940e08350440e3a237" title="애니메이션 로드 ">Load</a>(<span class="keywordtype">void</span>* BeginArray[3], byte* _inout_ Resource)</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        {</div>
@@ -899,7 +898,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            <span class="keywordtype">int</span> NumMotion;</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;            _Action() : Name(nullptr), Event(nullptr), NumMotion(0), Motion(nullptr) {}</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;            ~_Action() {Name = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name); BxDelete_Array(Motion);}</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;            ~_Action() {Name = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Name); BxDelete_Array(Motion);}</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_bx_animate.html#aa542dbaa87cd22940e08350440e3a237" title="애니메이션 로드 ">Load</a>(<span class="keywordtype">void</span>* BeginArray[3], byte* _inout_ Resource)</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;            {</div>
@@ -955,7 +954,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;                                            Pipe[i] = <a class="code" href="namespace_bx_util_global.html#ae5e038296b7ac4d7e4929187d8106c13" title="데이터에서 로드(byte) ">BxUtilGlobal::LoadUint8</a>(Resource);</div>
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;                                        Form = BxAnimate::_Form::GetFormData(&amp;BeginArray[FORM], <a class="code" href="namespace_bx_util_global.html#af2cc8a19541c23620fd82cc5f76ce048" title="데이터에서 로드(ushort) ">BxUtilGlobal::LoadUint16</a>(Resource));</div>
 <div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                                        Outline = BxAnimate::_Outline::GetOutlineData(&amp;BeginArray[OUTLINE], <a class="code" href="namespace_bx_util_global.html#af2cc8a19541c23620fd82cc5f76ce048" title="데이터에서 로드(ushort) ">BxUtilGlobal::LoadUint16</a>(Resource));</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                                        BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Form &amp;&amp; Outline);</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                                        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Form &amp;&amp; Outline);</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                                        Grid.x = <a class="code" href="namespace_bx_util_global.html#a7eae0e60a7c0d68747315118d63c44d3" title="데이터에서 로드(short) ">BxUtilGlobal::LoadInt16</a>(Resource);</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                                        Grid.y = <a class="code" href="namespace_bx_util_global.html#a7eae0e60a7c0d68747315118d63c44d3" title="데이터에서 로드(short) ">BxUtilGlobal::LoadInt16</a>(Resource);</div>
 <div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                                        Detail.x = <a class="code" href="namespace_bx_util_global.html#a7eae0e60a7c0d68747315118d63c44d3" title="데이터에서 로드(short) ">BxUtilGlobal::LoadInt16</a>(Resource);</div>
@@ -982,13 +981,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                                    Data.Image = <a class="code" href="class_bx_pool.html#a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" title="템플릿단위 하나의 메모리공간 할당 및 생성자호출 ">BxPool&lt;_Data::_Image&gt;::MakeClass</a>();</div>
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;                                    Data.Image-&gt;Load(BeginArray, Resource);</div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;                                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;                                <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;                                <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;                                }</div>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;                            }</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;                        } *Layer;</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;                        _Frame() : _DataClass(ClassType_Frame), ShowEvent(nullptr), TouchEvent(nullptr), NumLayer(0), Layer(nullptr) {}</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;                        ~_Frame() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Frame); BxDelete_Array(Layer);}</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;                        ~_Frame() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Frame); BxDelete_Array(Layer);}</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_bx_animate.html#aa542dbaa87cd22940e08350440e3a237" title="애니메이션 로드 ">Load</a>(<span class="keywordtype">void</span>* BeginArray[3], byte* _inout_ Resource)</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;                        {</div>
@@ -1008,7 +1007,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;                        uint Frame;</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;                        _Sleep() : _DataClass(ClassType_Sleep), Frame(0) {}</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;                        ~_Sleep() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Sleep);}</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;                        ~_Sleep() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Sleep);}</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;                    } *<a class="code" href="namespace_bx_core_1_1_system.html#ac19388a6c092a2770a38a155e7f1cc6e" title="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">Sleep</a>;</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;                    <span class="keyword">class </span>_Speed : <span class="keyword">public</span> _DataClass <span class="comment">// 지시</span></div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;                    {</div>
@@ -1016,7 +1015,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;                        uint Frame;</div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;                        _Speed() : _DataClass(ClassType_Speed), Frame(1) {}</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;                        ~_Speed() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Speed);}</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;                        ~_Speed() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Speed);}</div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;                    } *Speed;</div>
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;                    <span class="keyword">class </span>_Vector : <span class="keyword">public</span> _DataClass <span class="comment">// 지시</span></div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;                    {</div>
@@ -1025,7 +1024,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;                        <span class="keywordtype">int</span> Y;</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;                        _Vector() : _DataClass(ClassType_Vector), X(0), Y(0) {}</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                        ~_Vector() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Vector);}</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                        ~_Vector() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Vector);}</div>
 <div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;                    } *Vector;</div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;                    <span class="keyword">class </span>_Keyword : <span class="keyword">public</span> _DataClass <span class="comment">// 지시, 판단, 판단, 판단, 판단</span></div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;                    {</div>
@@ -1043,19 +1042,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;                        _Keyword() : _DataClass(ClassType_Keyword), Keyword(nullptr) {}</div>
 <div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;                        ~_Keyword()</div>
 <div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;                        {</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;                            BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Keyword);</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;                            BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Keyword);</div>
 <div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;                            <span class="keywordflow">if</span>(Keyword)</div>
 <div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;                            <span class="keywordflow">switch</span>(Keyword-&gt;Type)</div>
 <div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;                            {</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;                            <span class="keywordflow">case</span> keyword_event: Compare.Event = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Compare.Event); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;                            <span class="keywordflow">case</span> keyword_string: Compare.String = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Compare.String); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;                            <span class="keywordflow">case</span> keyword_event: Compare.Event = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Compare.Event); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;                            <span class="keywordflow">case</span> keyword_string: Compare.String = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(Compare.String); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;                            }</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;                        }</div>
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_bx_animate.html#aa542dbaa87cd22940e08350440e3a237" title="애니메이션 로드 ">Load</a>(<span class="keywordtype">void</span>** Begin, byte* _inout_ Resource, motion Type)</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;                        {</div>
 <div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;                            Keyword = BxAnimate::_Keyword::GetKeyword(Begin, <a class="code" href="namespace_bx_util_global.html#af2cc8a19541c23620fd82cc5f76ce048" title="데이터에서 로드(ushort) ">BxUtilGlobal::LoadUint16</a>(Resource));</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;                            BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Keyword);</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;                            BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, Keyword);</div>
 <div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;                            <span class="keywordflow">switch</span>(Keyword-&gt;Type)</div>
 <div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;                            {</div>
 <div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;                            <span class="keywordflow">case</span> keyword_event: Compare.Event = <a class="code" href="namespace_bx_util_global.html#a956f04e1f763eddd08c74f1bf301c05f" title="데이터에서 스트링 로드 ">BxUtilGlobal::LoadString</a>(Resource); <span class="keywordflow">break</span>;</div>
@@ -1066,7 +1065,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;                                    Compare.Number = <a class="code" href="namespace_bx_util_global.html#af336f01897cb6e50d0347d5ba54aa968" title="데이터에서 로드(int) ">BxUtilGlobal::LoadInt32</a>(Resource);</div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;                            <span class="keywordflow">case</span> keyword_string: Compare.String = <a class="code" href="namespace_bx_util_global.html#a956f04e1f763eddd08c74f1bf301c05f" title="데이터에서 스트링 로드 ">BxUtilGlobal::LoadString</a>(Resource); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;                            <span class="keywordflow">default</span>: BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;                            <span class="keywordflow">default</span>: BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 값입니다&gt;&quot;</span>, <span class="keyword">false</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;                            }</div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;                        }</div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;                    } *Set, *If, *IfFew, *IfRate, *IfCount;</div>
@@ -1077,7 +1076,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                        <span class="keywordtype">int</span> MotionID;</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                        _Goto() : _DataClass(ClassType_Goto), ActionID(0), MotionID(0) {}</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;                        ~_Goto() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Goto);}</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;                        ~_Goto() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;소멸되는 타입이 다릅니다&gt;&quot;</span>, CType == ClassType_Goto);}</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;                    } *Goto;</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;                } Data;</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;            <span class="keyword">public</span>:</div>
@@ -1185,7 +1184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        <span class="keywordtype">bool</span> IsAlive;</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        _Active() {BxAssert(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 호출입니다&gt;&quot;</span>, <span class="keyword">false</span>);}</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        _Active() {BxASSERT(<span class="stringliteral">&quot;BxAnimate&lt;잘못된 호출입니다&gt;&quot;</span>, <span class="keyword">false</span>);}</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        _Active(_Object* <span class="keywordtype">object</span>) : Object(object), IsAlive(true)</div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        {</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;            EventCur = Object-&gt;Action[0].Event;</div>
@@ -1282,8 +1281,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;                        <span class="keywordflow">switch</span>(OneMotion.Data.Set-&gt;Keyword-&gt;Type)</div>
 <div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;                        {</div>
 <div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;                        <span class="keywordflow">case</span> keyword_event:</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;Event = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(OneMotion.Data.Set-&gt;Keyword-&gt;Event);</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;Event = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(OneMotion.Data.Set-&gt;Compare.Event);</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;Event = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(OneMotion.Data.Set-&gt;Keyword-&gt;Event);</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;Event = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(OneMotion.Data.Set-&gt;Compare.Event);</div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;                        <span class="keywordflow">case</span> keyword_check:</div>
 <div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;Check = OneMotion.Data.Set-&gt;Compare.Check;</div>
@@ -1296,8 +1295,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;Number = OneMotion.Data.Set-&gt;Compare.Number;</div>
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;                        <span class="keywordflow">case</span> keyword_string:</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;String = <a class="code" href="namespace_bx_util_global.html#a6b57be4a3faa566d21e94778d168559a" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(OneMotion.Data.Set-&gt;Keyword-&gt;String);</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;String = <a class="code" href="namespace_bx_util_global.html#a54c60665d511e4b22ec758296a1ce51d" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(OneMotion.Data.Set-&gt;Compare.String);</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;String = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(OneMotion.Data.Set-&gt;Keyword-&gt;String);</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;                            OneMotion.Data.Set-&gt;Keyword-&gt;String = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(OneMotion.Data.Set-&gt;Compare.String);</div>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;                        }</div>
 <div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;                        ++MotionID;</div>
@@ -1309,7 +1308,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;                            <span class="keywordflow">switch</span>(OneMotion.Data.If-&gt;Keyword-&gt;Type)</div>
 <div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                            {</div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                            <span class="keywordflow">case</span> keyword_event:</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                            <span class="keywordflow">case</span> keyword_check:</div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                                IsSuccess = (OneMotion.Data.If-&gt;Keyword-&gt;Check == OneMotion.Data.If-&gt;Compare.Check);</div>
@@ -1344,19 +1343,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;                            <span class="keywordflow">switch</span>(OneMotion.Data.IfFew-&gt;Keyword-&gt;Type)</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;                            {</div>
 <div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;                            <span class="keywordflow">case</span> keyword_event:</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;                            <span class="keywordflow">case</span> keyword_check:</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                            <span class="keywordflow">case</span> keyword_radio:</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                            <span class="keywordflow">case</span> keyword_number:</div>
 <div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                                IsSuccess = (OneMotion.Data.IfFew-&gt;Keyword-&gt;Number &lt; OneMotion.Data.IfFew-&gt;Compare.Number);</div>
 <div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;                            <span class="keywordflow">case</span> keyword_string:</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                            }</div>
 <div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                            <span class="keywordflow">if</span>(IsSuccess)</div>
@@ -1379,19 +1378,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                            <span class="keywordflow">switch</span>(OneMotion.Data.IfRate-&gt;Keyword-&gt;Type)</div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                            {</div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                            <span class="keywordflow">case</span> keyword_event:</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                            <span class="keywordflow">case</span> keyword_check:</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                            <span class="keywordflow">case</span> keyword_radio:</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                            <span class="keywordflow">case</span> keyword_number:</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                                IsSuccess = ((((int) <a class="code" href="class_bx_util.html#a5c3ac899f819d98214f9f3345ac5bd87" title="랜덤값 구하기 ">BxUtil::GetRandom</a>()) % 100) &lt; OneMotion.Data.IfRate-&gt;Keyword-&gt;Number);</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                            <span class="keywordflow">case</span> keyword_string:</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;                            }</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;                            <span class="keywordflow">if</span>(IsSuccess)</div>
@@ -1414,13 +1413,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                            <span class="keywordflow">switch</span>(OneMotion.Data.IfCount-&gt;Keyword-&gt;Type)</div>
 <div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                            {</div>
 <div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                            <span class="keywordflow">case</span> keyword_event:</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                            <span class="keywordflow">case</span> keyword_check:</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                            <span class="keywordflow">case</span> keyword_radio:</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                            <span class="keywordflow">case</span> keyword_number:</div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;                                <span class="keywordflow">if</span>(0 &lt; OneMotion.Data.IfCount-&gt;Keyword-&gt;Number)</div>
@@ -1430,7 +1429,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                                }</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                            <span class="keywordflow">case</span> keyword_string:</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                                BxAssert(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                            }</div>
 <div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;                            <span class="keywordflow">if</span>(IsSuccess)</div>
@@ -1520,7 +1519,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:27 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:46 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

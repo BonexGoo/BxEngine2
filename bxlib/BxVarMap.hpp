@@ -1,12 +1,12 @@
-#pragma once
+ï»¿#pragma once
 #include <BxCore.hpp>
 
-//! \brief map½Ä °¡º¯¹è¿­ Á¦°ø
+//! \brief mapì‹ ê°€ë³€ë°°ì—´ ì œê³µ
 template<typename TYPE>
 class BxVarMap
 {
 public:
-	// Á¤¼öKey½Ä µ¥ÀÌÅÍÇÒ´ç
+	// ì •ìˆ˜Keyì‹ ë°ì´í„°í• ë‹¹
 	TYPE& operator[](uint key)
 	{
 		BxVarMap* CurNode = this;
@@ -27,7 +27,7 @@ public:
 		return *CurNode->Data;
 	}
 
-	// ¹®ÀÚ¿­Key½Ä(CP949) µ¥ÀÌÅÍÇÒ´ç
+	// ë¬¸ìì—´Keyì‹(CP949) ë°ì´í„°í• ë‹¹
 	TYPE& operator[](string key)
 	{
 		BxVarMap* CurNode = this;
@@ -52,7 +52,7 @@ public:
 		return *CurNode->Data;
 	}
 
-	// ¹®ÀÚ¿­Key½Ä(UTF16) µ¥ÀÌÅÍÇÒ´ç
+	// ë¬¸ìì—´Keyì‹(UTF16) ë°ì´í„°í• ë‹¹
 	TYPE& operator[](wstring key)
 	{
 		BxVarMap* CurNode = this;
@@ -85,7 +85,7 @@ public:
 		return *CurNode->Data;
 	}
 
-	// Á¤¼öKey½Ä µ¥ÀÌÅÍÁ¢±Ù
+	// ì •ìˆ˜Keyì‹ ë°ì´í„°ì ‘ê·¼
 	TYPE* Access(uint key) const
 	{
 		const BxVarMap* CurNode = this;
@@ -99,7 +99,7 @@ public:
 		return CurNode->Data;
 	}
 
-	// ¹®ÀÚ¿­Key½Ä(CP949) µ¥ÀÌÅÍÁ¢±Ù
+	// ë¬¸ìì—´Keyì‹(CP949) ë°ì´í„°ì ‘ê·¼
 	TYPE* Access(string key) const
 	{
 		const BxVarMap* CurNode = this;
@@ -116,7 +116,7 @@ public:
 		return CurNode->Data;
 	}
 
-	// ¹®ÀÚ¿­Key½Ä(UTF16) µ¥ÀÌÅÍÁ¢±Ù
+	// ë¬¸ìì—´Keyì‹(UTF16) ë°ì´í„°ì ‘ê·¼
 	TYPE* Access(wstring key) const
 	{
 		const BxVarMap* CurNode = this;
@@ -139,7 +139,7 @@ public:
 		return CurNode->Data;
 	}
 
-	// ÀüÃ¼ÃÊ±âÈ­
+	// ì „ì²´ì´ˆê¸°í™”
 	void Reset()
 	{
 		delete Data;
@@ -153,7 +153,7 @@ public:
 		Child = nullptr;
 	}
 
-	// »ı¼ºÀÚ/¼Ò¸êÀÚ
+	// ìƒì„±ì/ì†Œë©¸ì
 	BxVarMap()
 	{
 		Data = nullptr;

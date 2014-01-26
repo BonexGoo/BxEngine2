@@ -6,94 +6,90 @@
     <includedby refid="_bx_animate_8hpp" local="no">BxAnimate.hpp</includedby>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="216">
-        <label>stdarg.h</label>
-      </node>
-      <node id="218">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="215" relation="include">
+      <node id="212">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
         </childnode>
       </node>
-      <node id="214">
+      <node id="211">
+        <label>BxImage.hpp</label>
+        <link refid="BxImage.hpp"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="215" relation="include">
-        </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="216" relation="include">
         </childnode>
       </node>
-      <node id="213">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="214" relation="include">
+      <node id="221">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="218" relation="include">
         </childnode>
       </node>
-      <node id="212">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="213" relation="include">
+      <node id="218">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="217">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="219" relation="include">
         </childnode>
       </node>
-      <node id="220">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="215" relation="include">
+      <node id="216">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="217" relation="include">
         </childnode>
       </node>
-      <node id="211">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="212" relation="include">
+      <node id="213">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="214" relation="include">
         </childnode>
         <childnode refid="220" relation="include">
         </childnode>
       </node>
-      <node id="217">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="218" relation="include">
+      <node id="214">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="215" relation="include">
         </childnode>
       </node>
       <node id="219">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="214" relation="include">
-        </childnode>
-        <childnode refid="213" relation="include">
-        </childnode>
-      </node>
-      <node id="210">
-        <label>BxImage.hpp</label>
-        <link refid="BxImage.hpp"/>
-        <childnode refid="211" relation="include">
-        </childnode>
-      </node>
-      <node id="215">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="216" relation="include">
-        </childnode>
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="223">
+      <node id="222">
+        <label>BxImage.hpp</label>
+        <link refid="BxImage.hpp"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
-      <node id="222">
+      <node id="223">
         <label>BxAnimate.hpp</label>
         <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="221">
-        <label>BxImage.hpp</label>
-        <link refid="BxImage.hpp"/>
-        <childnode refid="222" relation="include">
-        </childnode>
-        <childnode refid="223" relation="include">
-        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_image" prot="public">BxImage</innerclass>
@@ -102,8 +98,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxDraw.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxDraw.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="class_bx_image" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_image" kindref="compound" tooltip="이미지 운영 ">BxImage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_bx_draw_form" kindref="compound" tooltip="새로운 폼개발을 위한 인터페이스 ">BxDrawForm</ref></highlight></codeline>
 <codeline lineno="6"><highlight class="normal">{</highlight></codeline>
@@ -207,7 +203,7 @@
 <codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
 <codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete_Array(Bits);</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Bits<sp/>=<sp/>BxNew_Array(pixel_src,<sp/>AreaWidth<sp/>*<sp/>AreaHeight);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(Bits,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pixel_src)<sp/>*<sp/>AreaWidth<sp/>*<sp/>AreaHeight);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(Bits,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pixel_src)<sp/>*<sp/>AreaWidth<sp/>*<sp/>AreaHeight);</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
 <codeline lineno="163" refid="class_bx_image_1ad8cf3a1291116f0dc05d51b2daa4cf5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_image_1ad8cf3a1291116f0dc05d51b2daa4cf5a" kindref="member" tooltip="복사식 이미지 생성 ">Create</ref>(<ref refid="class_bx_image" kindref="compound" tooltip="이미지 운영 ">BxImage</ref>&amp;<sp/>Src,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>X,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Height,<sp/>hotspot<sp/>Hotspot<sp/>=<sp/>PAD7)</highlight></codeline>
@@ -260,7 +256,7 @@
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>AreaWidthSrc<sp/>=<sp/>BxDrawForm::CalcTextureSize(Src.Area.w);</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CopyLength<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pixel_src)<sp/>*<sp/>(SrcX2<sp/>-<sp/>SrcX);</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>Y,<sp/>srcy<sp/>=<sp/>SrcY;<sp/>srcy<sp/>&lt;<sp/>SrcY2;<sp/>++y,<sp/>++srcy)</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(&amp;Bits[X<sp/>+<sp/>y<sp/>*<sp/>AreaWidth],<sp/>&amp;Src.Bits[SrcX<sp/>+<sp/>srcy<sp/>*<sp/>AreaWidthSrc],<sp/>CopyLength);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(&amp;Bits[X<sp/>+<sp/>y<sp/>*<sp/>AreaWidth],<sp/>&amp;Src.Bits[SrcX<sp/>+<sp/>srcy<sp/>*<sp/>AreaWidthSrc],<sp/>CopyLength);</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
 <codeline lineno="236" refid="class_bx_image_1a713d62bb72baec2908aaf1e35059790d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>OnFormMethod<sp/><ref refid="class_bx_image_1a713d62bb72baec2908aaf1e35059790d" kindref="member" tooltip="폼모듈용 콜백함수 얻기 ">GetFormMethod</ref>(maskoperate<sp/>operate,<sp/>maskflag<sp/>flag)</highlight></codeline>
@@ -385,7 +381,7 @@
 <codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>WidthByMargin<sp/>=<sp/>BxCore::OpenGL2D::GetTextureMargin()<sp/>+<sp/>Width()<sp/>+<sp/>BxCore::OpenGL2D::GetTextureMargin();</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HeightByMargin<sp/>=<sp/>BxCore::OpenGL2D::GetTextureMargin()<sp/>+<sp/>Height()<sp/>+<sp/>BxCore::OpenGL2D::GetTextureMargin();</highlight></codeline>
 <codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color_a888*<sp/>TextureImage<sp/>=<sp/>BxNew_Array(color_a888,<sp/>WidthByMargin<sp/>*<sp/>HeightByMargin);</highlight></codeline>
-<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(TextureImage,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(color_a888)<sp/>*<sp/>WidthByMargin<sp/>*<sp/>HeightByMargin);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(TextureImage,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(color_a888)<sp/>*<sp/>WidthByMargin<sp/>*<sp/>HeightByMargin);</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TextureRow<sp/>=<sp/>WidthByMargin;</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TextureMargin<sp/>=<sp/>BxCore::OpenGL2D::GetTextureMargin()<sp/>+<sp/>TextureRow<sp/>*<sp/>BxCore::OpenGL2D::GetTextureMargin();</highlight></codeline>
 <codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BitsRow<sp/>=<sp/>BxDrawForm::CalcTextureSize(Width());</highlight></codeline>
@@ -459,8 +455,8 @@
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcolor__bgra" kindref="compound" tooltip="color_bgra구조체 : b, g, r, a ">color_bgra</ref><sp/>BitmapPalette[256]<sp/>=<sp/>{{0,},};</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BITMAPFILEHEADER<sp/>BitmapFileHeader;</highlight></codeline>
 <codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BITMAPINFOHEADER<sp/>BitmapInfoHeader;</highlight></codeline>
-<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(&amp;BitmapFileHeader,<sp/><ref refid="namespace_bx_util_global_1a5bd37d311b067ed2ac52c3443363013f" kindref="member" tooltip="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</ref>(ResourcePtr,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPFILEHEADER)),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPFILEHEADER));</highlight></codeline>
-<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(&amp;BitmapInfoHeader,<sp/><ref refid="namespace_bx_util_global_1a5bd37d311b067ed2ac52c3443363013f" kindref="member" tooltip="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</ref>(ResourcePtr,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPINFOHEADER)),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPINFOHEADER));</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(&amp;BitmapFileHeader,<sp/><ref refid="namespace_bx_util_global_1a5bd37d311b067ed2ac52c3443363013f" kindref="member" tooltip="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</ref>(ResourcePtr,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPFILEHEADER)),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPFILEHEADER));</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(&amp;BitmapInfoHeader,<sp/><ref refid="namespace_bx_util_global_1a5bd37d311b067ed2ac52c3443363013f" kindref="member" tooltip="데이터에서 임의배열 로드 ">BxUtilGlobal::LoadType</ref>(ResourcePtr,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPINFOHEADER)),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(BITMAPINFOHEADER));</highlight></codeline>
 <codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>BitmapInfoHeader.ClrUsed)</highlight></codeline>
 <codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_util_global_1ad1297c7c4fa7a887810713a0ab541400" kindref="member" tooltip="데이터에서 바이트배열 로드(uint) ">BxUtilGlobal::LoadBytes</ref>(ResourcePtr,<sp/>BitmapPalette,<sp/>BitmapInfoHeader.ClrUsed<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcolor__bgra" kindref="compound" tooltip="color_bgra구조체 : b, g, r, a ">color_bgra</ref>));</highlight></codeline>
 <codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>BitmapFileHeader.OffBits<sp/>-<sp/>54)</highlight></codeline>
@@ -702,7 +698,7 @@
 <codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MGSPng클래스는<sp/>인터레이스를<sp/>지원하지<sp/>않는다</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>GetByte())</highlight></codeline>
 <codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxImage&lt;인터레이스가<sp/>들어간<sp/>PNG는<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxImage&lt;인터레이스가<sp/>들어간<sp/>PNG는<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="697"><highlight class="normal"></highlight></codeline>
@@ -751,7 +747,7 @@
 <codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>BMPDataWidth<sp/>=<sp/>(ImageWidth<sp/>*<sp/>BytePerPixel<sp/>+<sp/>3)<sp/>&amp;<sp/>~3;</highlight></codeline>
 <codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMPSize<sp/>=<sp/>56<sp/>+<sp/>ImageHeight<sp/>*<sp/>BMPDataWidth;</highlight></codeline>
 <codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMPData<sp/>=<sp/>BxNew_Array(byte,<sp/>BMPSize);</highlight></codeline>
-<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(BMPData,<sp/>0xff,<sp/>BMPSize);</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(BMPData,<sp/>0xff,<sp/>BMPSize);</highlight></codeline>
 <codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetBMPInfo(BMPData,<sp/>ImageWidth,<sp/>ImageHeight,<sp/>BytePerPixel);</highlight></codeline>
 <codeline lineno="745"><highlight class="normal"></highlight></codeline>
 <codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IDAT<sp/>청크</highlight><highlight class="normal"></highlight></codeline>
@@ -793,8 +789,8 @@
 <codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte*<sp/>RowBuffers[2];</highlight></codeline>
 <codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RowBuffers[0]<sp/>=<sp/>BxNew_Array(byte,<sp/>RowBufferWidth);</highlight></codeline>
 <codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RowBuffers[1]<sp/>=<sp/>BxNew_Array(byte,<sp/>RowBufferWidth);</highlight></codeline>
-<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(RowBuffers[0],<sp/>0x00,<sp/>RowBufferWidth);</highlight></codeline>
-<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(RowBuffers[1],<sp/>0x00,<sp/>RowBufferWidth);</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(RowBuffers[0],<sp/>0x00,<sp/>RowBufferWidth);</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(RowBuffers[1],<sp/>0x00,<sp/>RowBufferWidth);</highlight></codeline>
 <codeline lineno="787"><highlight class="normal"></highlight></codeline>
 <codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>첫<sp/>블럭헤더<sp/>디코딩</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DecodeBlockHeader();</highlight></codeline>
@@ -1185,7 +1181,7 @@
 <codeline lineno="1174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>DistancesNum<sp/>=<sp/>GetBits(5)<sp/>+<sp/>1;</highlight></codeline>
 <codeline lineno="1175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>LengthsNum<sp/>=<sp/>GetBits(4)<sp/>+<sp/>4;</highlight></codeline>
 <codeline lineno="1176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>Lengths[19];</highlight></codeline>
-<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(Lengths,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint)<sp/>*<sp/>19);</highlight></codeline>
+<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(Lengths,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint)<sp/>*<sp/>19);</highlight></codeline>
 <codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>LengthsNum;<sp/>++i)</highlight></codeline>
 <codeline lineno="1179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Lengths[PngLengthOrder[i]]<sp/>=<sp/>GetBits(3);</highlight></codeline>
 <codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuildTable(2,<sp/>19,<sp/>Lengths);</highlight></codeline>
@@ -1335,6 +1331,6 @@
 <codeline lineno="1324"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="1326"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxImage.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxImage.hpp"/>
   </compounddef>
 </doxygen>

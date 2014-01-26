@@ -1,18 +1,18 @@
-#pragma once
+ï»¿#pragma once
 #include <BxVar.hpp>
 #include <BxUtil.hpp>
 #include <BxSingleton.hpp>
 
-//! \brief ½ºÆ®¸µ °ü¸®
+//! \brief ìŠ¤íŠ¸ë§ ê´€ë¦¬
 class BxString
 {
 public:
-	//! \brief ÆÄ½Ì °ü¸®
+	//! \brief íŒŒì‹± ê´€ë¦¬
 	class Parse
 	{
 	public:
 		/*!
-		\brief ±âº»»ı¼ºÀÚ
+		\brief ê¸°ë³¸ìƒì„±ì
 		*/
 		Parse()
 		{
@@ -22,7 +22,7 @@ public:
 		}
 
 		/*!
-		\brief º¹»ç»ı¼ºÀÚ(Parse)
+		\brief ë³µì‚¬ìƒì„±ì(Parse)
 		*/
 		Parse(const Parse& RHS)
 		{
@@ -32,7 +32,7 @@ public:
 		}
 
 		/*!
-		\brief º¹»ç»ı¼ºÀÚ(string, int)
+		\brief ë³µì‚¬ìƒì„±ì(string, int)
 		*/
 		explicit Parse(string RHS, int Length = -1)
 		{
@@ -42,7 +42,7 @@ public:
 		}
 
 		/*!
-		\brief º¹»ç»ı¼ºÀÚ(Parse*, string)
+		\brief ë³µì‚¬ìƒì„±ì(Parse*, string)
 		*/
 		explicit Parse(const Parse* RHS1, string RHS2)
 		{
@@ -50,24 +50,24 @@ public:
 			ValidCount = RHS1->ValidCount + RHS2Count;
 			StringLength = ValidCount + 1;
 			String = BxUtilGlobal::StrAlloc(ValidCount);
-			BxCore::Util::MemMove(String, RHS1->String, RHS1->ValidCount);
-			BxCore::Util::MemMove(String + RHS1->ValidCount, RHS2, RHS2Count);
+			BxCore::Util::MemCpy(String, RHS1->String, RHS1->ValidCount);
+			BxCore::Util::MemCpy(String + RHS1->ValidCount, RHS2, RHS2Count);
 			((char*) String)[ValidCount] = '\0';
 		}
 
 		/*!
-		\brief º¹»ç»ı¼ºÀÚ(string, BxThrow)
+		\brief ë³µì‚¬ìƒì„±ì(string, BxThrow)
 		*/
-		explicit Parse(string RHS, const BxThrow& args)
+		explicit Parse(string RHS, const BxThrow& Args)
 		{
 			ValidCount = 0;
-			string Result = BxCore::Util::Print(RHS, args, &ValidCount);
+			string _tmp_ Result = BxCore::Util::Print(RHS, Args, &ValidCount);
 			StringLength = ValidCount + 1;
 			String = BxUtilGlobal::StrCpyWithAlloc(Result, ValidCount);
 		}
 
 		/*!
-		\brief ¼Ò¸êÀÚ
+		\brief ì†Œë©¸ì
 		*/
 		~Parse()
 		{
@@ -75,8 +75,8 @@ public:
 		}
 
 		/*!
-		\brief ±æÀÌ ±¸ÇÏ±â
-		\return ½ºÆ®¸µÀÇ ±ÛÀÚ±æÀÌ
+		\brief ê¸¸ì´ êµ¬í•˜ê¸°
+		\return ìŠ¤íŠ¸ë§ì˜ ê¸€ìê¸¸ì´
 		*/
 		inline int GetLength()
 		{
@@ -84,8 +84,8 @@ public:
 		}
 
 		/*!
-		\brief ¸¶Áö¸· ±ÛÀÚ ±¸ÇÏ±â
-		\return ¸¶Áö¸· ±ÛÀÚ
+		\brief ë§ˆì§€ë§‰ ê¸€ì êµ¬í•˜ê¸°
+		\return ë§ˆì§€ë§‰ ê¸€ì
 		*/
 		inline char GetLast()
 		{
@@ -93,7 +93,7 @@ public:
 		}
 
 		/*!
-		\brief ¸¶Áö¸· ±ÛÀÚ Áö¿ì±â
+		\brief ë§ˆì§€ë§‰ ê¸€ì ì§€ìš°ê¸°
 		*/
 		inline void DeleteLast()
 		{
@@ -102,9 +102,9 @@ public:
 		}
 
 		/*!
-		\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+(string)
-		\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-		\return »õ·Î¿î ÀÎ½ºÅÏ½º
+		\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+(string)
+		\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+		\return ìƒˆë¡œìš´ ì¸ìŠ¤í„´ìŠ¤
 		*/
 		Parse operator+(string RHS) const
 		{
@@ -112,9 +112,9 @@ public:
 		}
 
 		/*!
-		\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö=(string)
-		\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-		\return ÀÚ½ÅÀ» ¸®ÅÏ
+		\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜=(string)
+		\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+		\return ìì‹ ì„ ë¦¬í„´
 		*/
 		Parse& operator=(string RHS)
 		{
@@ -126,9 +126,9 @@ public:
 		}
 
 		/*!
-		\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö=(Parse)
-		\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-		\return ÀÚ½ÅÀ» ¸®ÅÏ
+		\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜=(Parse)
+		\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+		\return ìì‹ ì„ ë¦¬í„´
 		*/
 		Parse& operator=(const Parse& RHS)
 		{
@@ -136,17 +136,17 @@ public:
 		}
 
 		/*!
-		\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+=(char)
-		\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-		\return ÀÚ½ÅÀ» ¸®ÅÏ
+		\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+=(char)
+		\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+		\return ìì‹ ì„ ë¦¬í„´
 		*/
 		inline Parse& operator+=(char RHS)
 		{
 			if(StringLength <= ValidCount + 1)
 			{
 				const int OldStringLength = StringLength;
-				string NewString = BxUtilGlobal::StrAlloc((StringLength *= 2) - 1);
-				BxCore::Util::MemMove(NewString, String, OldStringLength);
+				string_rw NewString = BxUtilGlobal::StrAlloc((StringLength *= 2) - 1);
+				BxCore::Util::MemCpy(NewString, String, OldStringLength);
 				String = BxUtilGlobal::StrFree(String);
 				String = NewString;
 			}
@@ -156,8 +156,8 @@ public:
 		}
 
 		/*!
-		\brief Çüº¯È¯ Áßº¹ÇÔ¼ö(string)
-		\return stringÇü ÀüÃ¼½ºÆ®¸µ
+		\brief í˜•ë³€í™˜ ì¤‘ë³µí•¨ìˆ˜(string)
+		\return stringí˜• ì „ì²´ìŠ¤íŠ¸ë§
 		*/
 		inline operator string() const
 		{
@@ -165,9 +165,9 @@ public:
 		}
 
 		/*!
-		\brief ¹è¿­Á¢±Ù
-		\param index : ¹è¿­¹øÈ£
-		\return charÇü ÇØ´ç µ¥ÀÌÅÍ
+		\brief ë°°ì—´ì ‘ê·¼
+		\param index : ë°°ì—´ë²ˆí˜¸
+		\return charí˜• í•´ë‹¹ ë°ì´í„°
 		*/
 		inline const char operator[](int Index)
 		{
@@ -177,29 +177,29 @@ public:
 		}
 
 		/*!
-		\brief ÆÄÆ¼¼Ç½ºÆ®¸µ ³ª´©±â(|A|B|C|, /A/B/C/, *A*B*C*...)
-		\param Result : ³ª´®±âÈ£(Ã¹¹ÙÀÌÆ® ÀÚµ¿ÀÎ½Ä)·Î ºĞ¸®µÈ °á°ú(°­Á¦ ResetÀº ¾ÈÇÔ)
-		\param Other : ÀÛ¾÷ÇÒ ½ºÆ®¸µ
-		\param Length : ÀÛ¾÷ÇÒ ½ºÆ®¸µÀÇ »çÀÌÁî(OtherÀÇ ±æÀÌ·Î ÀÚµ¿¼ÂÆÃ : -1)
+		\brief íŒŒí‹°ì…˜ìŠ¤íŠ¸ë§ ë‚˜ëˆ„ê¸°(|A|B|C|, /A/B/C/, *A*B*C*...)
+		\param Result : ë‚˜ëˆ”ê¸°í˜¸(ì²«ë°”ì´íŠ¸ ìë™ì¸ì‹)ë¡œ ë¶„ë¦¬ëœ ê²°ê³¼(ê°•ì œ Resetì€ ì•ˆí•¨)
+		\param Src : ì‘ì—…í•  ìŠ¤íŠ¸ë§
+		\param Length : ì‘ì—…í•  ìŠ¤íŠ¸ë§ì˜ ì‚¬ì´ì¦ˆ(Otherì˜ ê¸¸ì´ë¡œ ìë™ì…‹íŒ… : -1)
 		*/
-		global_func void Division(BxVar<Parse>& Result, string Other, int Length = -1)
+		global_func void Division(BxVar<Parse>& Result, string Src, int Length = -1)
 		{
-			const int OtherLength = (Length < 0)? BxUtilGlobal::StrLen(Other) : Length;
-			if(OtherLength && Other[0] == Other[OtherLength - 1])
-			for(int i = 1, iprev = 1; i < OtherLength; ++i)
-				if(Other[i] == Other[0])
+			const int SrcLength = (Length < 0)? BxUtilGlobal::StrLen(Src) : Length;
+			if(SrcLength && Src[0] == Src[SrcLength - 1])
+			for(int i = 1, iprev = 1; i < SrcLength; ++i)
+				if(Src[i] == Src[0])
 				{
 					Result[LAST].ValidCount = i - iprev;
 					Result[END].StringLength = i - iprev + 1;
-					Result[END].String = BxUtilGlobal::StrCpyWithAlloc(&Other[iprev], i - iprev);
+					Result[END].String = BxUtilGlobal::StrCpyWithAlloc(&Src[iprev], i - iprev);
 					iprev = i + 1;
 				}
 		}
 
 		/*!
-		\brief À¯´ÏÆ®½ºÆ®¸µ ÀÌ¸§ °¡Á®¿À±â(A<B:C:D>¿¡¼­ AºÎºĞ)
-		\param Unit : ÀÛ¾÷ÇÒ ½ºÆ®¸µ
-		\return ÀÌ¸§
+		\brief ìœ ë‹ˆíŠ¸ìŠ¤íŠ¸ë§ ì´ë¦„ ê°€ì ¸ì˜¤ê¸°(A<B:C:D>ì—ì„œ Aë¶€ë¶„)
+		\param Unit : ì‘ì—…í•  ìŠ¤íŠ¸ë§
+		\return ì´ë¦„
 		*/
 		global_func Parse UnitName(string Unit)
 		{
@@ -209,10 +209,10 @@ public:
 		}
 
 		/*!
-		\brief À¯´ÏÆ®½ºÆ®¸µ ÀÎ¼ö °¡Á®¿À±â(A<B:C:D>¿¡¼­ B, C, DºÎºĞ)
-		\param Unit : ÀÛ¾÷ÇÒ ½ºÆ®¸µ
-		\param Order : ÀÎ¼öÁß °¡Á®¿Ã ¼ø¹ø
-		\return ÀÎ¼ö
+		\brief ìœ ë‹ˆíŠ¸ìŠ¤íŠ¸ë§ ì¸ìˆ˜ ê°€ì ¸ì˜¤ê¸°(A<B:C:D>ì—ì„œ B, C, Dë¶€ë¶„)
+		\param Unit : ì‘ì—…í•  ìŠ¤íŠ¸ë§
+		\param Order : ì¸ìˆ˜ì¤‘ ê°€ì ¸ì˜¬ ìˆœë²ˆ
+		\return ì¸ìˆ˜
 		*/
 		global_func Parse UnitParam(string Unit, int Order)
 		{
@@ -226,9 +226,9 @@ public:
 		}
 
 		/*!
-		\brief À¯´ÏÆ®½ºÆ®¸µ ÀÎ¼ö¼ö·® °¡Á®¿À±â(A<B:C:D>ÀÇ °æ¿ì, 3À» ¸®ÅÏ)
-		\param Unit : ÀÛ¾÷ÇÒ ½ºÆ®¸µ
-		\return ÀÎ¼ö¼ö·®
+		\brief ìœ ë‹ˆíŠ¸ìŠ¤íŠ¸ë§ ì¸ìˆ˜ìˆ˜ëŸ‰ ê°€ì ¸ì˜¤ê¸°(A<B:C:D>ì˜ ê²½ìš°, 3ì„ ë¦¬í„´)
+		\param Unit : ì‘ì—…í•  ìŠ¤íŠ¸ë§
+		\return ì¸ìˆ˜ìˆ˜ëŸ‰
 		*/
 		global_func int UnitParamLength(string Unit)
 		{
@@ -242,55 +242,51 @@ public:
 	protected:
 		int ValidCount;
 		int StringLength;
-		string String;
+		string_rw String;
 	};
 
 public:
 	/*!
-	\brief ±âº»»ı¼ºÀÚ
+	\brief ê¸°ë³¸ìƒì„±ì
 	*/
 	BxString() {Chars[0] = '\0';}
 
 	/*!
-	\brief º¹»ç»ı¼ºÀÚ(BxString)
-	\param RHS : º¹»çÇÒ ÀÎ½ºÅÏ½º
+	\brief ë³µì‚¬ìƒì„±ì(BxString)
+	\param RHS : ë³µì‚¬í•  ì¸ìŠ¤í„´ìŠ¤
 	*/
 	BxString(const BxString& RHS) {operator=(RHS);}
 
 	/*!
-	\brief º¹»ç»ı¼ºÀÚ(char)
-	\param RHS : º¹»çÇÒ ÀÎ½ºÅÏ½º
+	\brief ë³µì‚¬ìƒì„±ì(char)
+	\param RHS : ë³µì‚¬í•  ì¸ìŠ¤í„´ìŠ¤
 	*/
 	explicit BxString(char RHS) {operator=(RHS);}
 
 	/*!
-	\brief º¹»ç»ı¼ºÀÚ(string)
-	\param RHS : º¹»çÇÒ ÀÎ½ºÅÏ½º
+	\brief ë³µì‚¬ìƒì„±ì(string)
+	\param RHS : ë³µì‚¬í•  ì¸ìŠ¤í„´ìŠ¤
 	*/
 	explicit BxString(string RHS) {operator=(RHS);}
 
 	/*!
-	\brief º¹»ç»ı¼ºÀÚ(sprintf)
-	\param src : printf¾ç½ÄÀÇ ¸Ê(%d/%s/...)
-	\param nouse : »ı¼ºÀÚ ½Äº°¿ë °ª
-	\param ... : °¡º¯ÀÎÀÚµé
+	\brief ë³µì‚¬ìƒì„±ì(string, BxThrow)
+	\param RHS : ìŠ¤íŠ¸ë§ë§µ ìŠ¤í¬ë¦½íŠ¸(ì‹ë³„ë¬¸ìëŠ” "<>:")
+	\param Args : RHSì— ì“°ì¼ ê°€ë³€ì¸ì
 	*/
-	explicit BxString(string src, void* nouse, ...)
+	explicit BxString(string RHS, const BxThrow& Args)
 	{
-		va_list List;
-		va_start(List, nouse);
-		FormatV(src, List);
-		va_end(List);
+		Format(RHS, Args);
 	}
 
 	/*!
-	\brief ¼Ò¸êÀÚ
+	\brief ì†Œë©¸ì
 	*/
 	virtual ~BxString() {Chars.Reset();}
 
 public:
 	/*!
-	\brief ³»¿ë ºñ¿ì±â
+	\brief ë‚´ìš© ë¹„ìš°ê¸°
 	*/
 	inline void Empty()
 	{
@@ -299,8 +295,8 @@ public:
 	}
 
 	/*!
-	\brief ±æÀÌ ±¸ÇÏ±â
-	\return ½ºÆ®¸µÀÇ ±ÛÀÚ±æÀÌ
+	\brief ê¸¸ì´ êµ¬í•˜ê¸°
+	\return ìŠ¤íŠ¸ë§ì˜ ê¸€ìê¸¸ì´
 	*/
 	inline int GetLength()
 	{
@@ -308,9 +304,9 @@ public:
 	}
 
 	/*!
-	\brief ¹è¿­Á¢±Ù
-	\param index : ¹è¿­¹øÈ£
-	\return charÇü ÇØ´ç µ¥ÀÌÅÍ
+	\brief ë°°ì—´ì ‘ê·¼
+	\param index : ë°°ì—´ë²ˆí˜¸
+	\return charí˜• í•´ë‹¹ ë°ì´í„°
 	*/
 	inline char& operator[](int Index)
 	{
@@ -321,8 +317,8 @@ public:
 	}
 
 	/*!
-	\brief Çüº¯È¯ Áßº¹ÇÔ¼ö(string)
-	\return stringÇü ÀüÃ¼½ºÆ®¸µ
+	\brief í˜•ë³€í™˜ ì¤‘ë³µí•¨ìˆ˜(string)
+	\return stringí˜• ì „ì²´ìŠ¤íŠ¸ë§
 	*/
 	inline operator string()
 	{
@@ -330,9 +326,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+(char)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return »õ·Î¿î ÀÎ½ºÅÏ½º
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+(char)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìƒˆë¡œìš´ ì¸ìŠ¤í„´ìŠ¤
 	*/
 	inline BxString operator+(char RHS) const
 	{
@@ -342,9 +338,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+(string)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return »õ·Î¿î ÀÎ½ºÅÏ½º
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+(string)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìƒˆë¡œìš´ ì¸ìŠ¤í„´ìŠ¤
 	*/
 	BxString operator+(string RHS) const
 	{
@@ -356,9 +352,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+(BxString)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return »õ·Î¿î ÀÎ½ºÅÏ½º
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+(BxString)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìƒˆë¡œìš´ ì¸ìŠ¤í„´ìŠ¤
 	*/
 	BxString operator+(BxString& RHS) const
 	{
@@ -370,9 +366,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö=(char)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜=(char)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	inline BxString& operator=(char RHS)
 	{
@@ -382,9 +378,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö=(string)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜=(string)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	BxString& operator=(string RHS)
 	{
@@ -396,9 +392,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö=(BxString)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜=(BxString)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	BxString& operator=(const BxString& RHS)
 	{
@@ -411,9 +407,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+=(char)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+=(char)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	inline BxString& operator+=(char RHS)
 	{
@@ -422,9 +418,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+=(string)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+=(string)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	BxString& operator+=(string RHS)
 	{
@@ -435,9 +431,9 @@ public:
 	}
 
 	/*!
-	\brief ¿¬»êÀÚ Áßº¹ÇÔ¼ö+=(BxString)
-	\param RHS : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜+=(BxString)
+	\param RHS : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	BxString& operator+=(BxString& RHS)
 	{
@@ -448,9 +444,9 @@ public:
 	}
 
 	/*!
-	\brief ½ºÆ®¸µÀ¸·Î ÃÊ±âÈ­
-	\param Src : ½ºÆ®¸µ
-	\param Length : ½ºÆ®¸µÀÇ ¹ÙÀÌÆ®±æÀÌ(-1Àº ±æÀÌ ÀÚµ¿ÃøÁ¤)
+	\brief ìŠ¤íŠ¸ë§ìœ¼ë¡œ ì´ˆê¸°í™”
+	\param Src : ìŠ¤íŠ¸ë§
+	\param Length : ìŠ¤íŠ¸ë§ì˜ ë°”ì´íŠ¸ê¸¸ì´(-1ì€ ê¸¸ì´ ìë™ì¸¡ì •)
 	*/
 	void SetString(string Src, int Length = -1)
 	{
@@ -463,8 +459,8 @@ public:
 	}
 
 	/*!
-	\brief °ø¹éÁ¦°Å(TrimLeft + TrimRight)
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ê³µë°±ì œê±°(TrimLeft + TrimRight)
+	\return ìì‹ ì„ ë¦¬í„´
 	\see TrimQuote
 	*/
 	BxString& TrimBlank()
@@ -477,8 +473,8 @@ public:
 	}
 
 	/*!
-	\brief ÀÎ¿ë±¸Á¦°Å("A"³ª 'A'¸¦ A·Î º¯°æ)
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì¸ìš©êµ¬ì œê±°("A"ë‚˜ 'A'ë¥¼ Aë¡œ ë³€ê²½)
+	\return ìì‹ ì„ ë¦¬í„´
 	\see TrimBlank
 	*/
 	BxString& TrimQuote()
@@ -493,9 +489,9 @@ public:
 	}
 
 	/*!
-	\brief ÁÂÃø º¹»çÇÏ±â
-	\param Count : º¹»çÇÒ ¹ÙÀÌÆ®¼ö
-	\return »õ·Î¿î ÀÎ½ºÅÏ½º
+	\brief ì¢Œì¸¡ ë³µì‚¬í•˜ê¸°
+	\param Count : ë³µì‚¬í•  ë°”ì´íŠ¸ìˆ˜
+	\return ìƒˆë¡œìš´ ì¸ìŠ¤í„´ìŠ¤
 	\see Right
 	*/
 	BxString Left(int Length) const
@@ -508,9 +504,9 @@ public:
 	}
 
 	/*!
-	\brief ¿ìÃø º¹»çÇÏ±â
-	\param Count : º¹»çÇÒ ¹ÙÀÌÆ®¼ö
-	\return »õ·Î¿î ÀÎ½ºÅÏ½º
+	\brief ìš°ì¸¡ ë³µì‚¬í•˜ê¸°
+	\param Count : ë³µì‚¬í•  ë°”ì´íŠ¸ìˆ˜
+	\return ìƒˆë¡œìš´ ì¸ìŠ¤í„´ìŠ¤
 	\see Left
 	*/
 	BxString Right(int Length) const
@@ -524,9 +520,9 @@ public:
 	}
 
 	/*!
-	\brief ÁÂÃø Á¦°ÅÇÏ±â
-	\param Count : Á¦°ÅÇÒ ¹ÙÀÌÆ®¼ö
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ì¢Œì¸¡ ì œê±°í•˜ê¸°
+	\param Count : ì œê±°í•  ë°”ì´íŠ¸ìˆ˜
+	\return ìì‹ ì„ ë¦¬í„´
 	\see DeleteRight
 	*/
 	BxString& DeleteLeft(int Length)
@@ -538,9 +534,9 @@ public:
 	}
 
 	/*!
-	\brief ¿ìÃø Á¦°ÅÇÏ±â
-	\param Count : Á¦°ÅÇÒ ¹ÙÀÌÆ®¼ö
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ìš°ì¸¡ ì œê±°í•˜ê¸°
+	\param Count : ì œê±°í•  ë°”ì´íŠ¸ìˆ˜
+	\return ìì‹ ì„ ë¦¬í„´
 	\see DeleteLeft
 	*/
 	BxString& DeleteRight(int Length)
@@ -552,20 +548,20 @@ public:
 	}
 
 	/*!
-	\brief ÇØ´ç ±ÛÀÚÀÇ È®Àå¹®ÀÚ¿©ºÎ ¹İÈ¯
-	\param Index :¹è¿­¹øÈ£
-	\return È®Àå¹®ÀÚ¿©ºÎ, trueÀÌ¸é 2¹ÙÀÌÆ®¹®ÀÚ, falseÀÌ¸é 1¹ÙÀÌÆ®¹®ÀÚ
+	\brief í•´ë‹¹ ê¸€ìì˜ í™•ì¥ë¬¸ìì—¬ë¶€ ë°˜í™˜
+	\param Index :ë°°ì—´ë²ˆí˜¸
+	\return í™•ì¥ë¬¸ìì—¬ë¶€, trueì´ë©´ 2ë°”ì´íŠ¸ë¬¸ì, falseì´ë©´ 1ë°”ì´íŠ¸ë¬¸ì
 	\see IsLastCharExtend
 	*/
 	bool IsCharExtend(int Index)
 	{
-		BxAssert("BxString<½ºÆ®¸µÀÇ ±¸°£À» ÃÊ°úÇÕ´Ï´Ù>", 0 <= Index && Index < Chars.Length() - 1);
+		BxASSERT("BxString<ìŠ¤íŠ¸ë§ì˜ êµ¬ê°„ì„ ì´ˆê³¼í•©ë‹ˆë‹¤>", 0 <= Index && Index < Chars.Length() - 1);
 		return ((Chars[Index] & 0x80) == 0x80);
 	}
 
 	/*!
-	\brief ¸¶Áö¸· ±ÛÀÚÀÇ È®Àå¹®ÀÚ¿©ºÎ ¹İÈ¯
-	\return È®Àå¹®ÀÚ¿©ºÎ, trueÀÌ¸é 2¹ÙÀÌÆ®¹®ÀÚ, falseÀÌ¸é 1¹ÙÀÌÆ®¹®ÀÚ
+	\brief ë§ˆì§€ë§‰ ê¸€ìì˜ í™•ì¥ë¬¸ìì—¬ë¶€ ë°˜í™˜
+	\return í™•ì¥ë¬¸ìì—¬ë¶€, trueì´ë©´ 2ë°”ì´íŠ¸ë¬¸ì, falseì´ë©´ 1ë°”ì´íŠ¸ë¬¸ì
 	\see IsCharExtend
 	*/
 	bool IsLastCharExtend()
@@ -578,9 +574,9 @@ public:
 	}
 
 	/*!
-	\brief ±ÛÀÚ Ã£±â
-	\param Key : Ã£À» ±ÛÀÚ
-	\return ¹è¿­À§Ä¡, -1Àº ½ÇÆĞ
+	\brief ê¸€ì ì°¾ê¸°
+	\param Key : ì°¾ì„ ê¸€ì
+	\return ë°°ì—´ìœ„ì¹˜, -1ì€ ì‹¤íŒ¨
 	*/
 	int Find(char Key)
 	{
@@ -592,9 +588,9 @@ public:
 	}
 
 	/*!
-	\brief ²¨²Ù·Î ±ÛÀÚ Ã£±â
-	\param Key : Ã£À» ±ÛÀÚ
-	\return ¹è¿­À§Ä¡, -1Àº ½ÇÆĞ
+	\brief êº¼ê¾¸ë¡œ ê¸€ì ì°¾ê¸°
+	\param Key : ì°¾ì„ ê¸€ì
+	\return ë°°ì—´ìœ„ì¹˜, -1ì€ ì‹¤íŒ¨
 	*/
 	int ReverseFind(char Key)
 	{
@@ -606,18 +602,18 @@ public:
 	}
 
 	/*!
-	\brief ÇÒ´çµÈ ÀüÃ¼½ºÆ®¸µ ¹İÈ¯
-	\return stringÇü ÀüÃ¼½ºÆ®¸µ
+	\brief í• ë‹¹ëœ ì „ì²´ìŠ¤íŠ¸ë§ ë°˜í™˜
+	\return stringí˜• ì „ì²´ìŠ¤íŠ¸ë§
 	*/
-	inline string CloneWithAlloc()
+	inline string_rw CloneWithAlloc()
 	{
 		return BxUtilGlobal::StrCpyWithAlloc((string) Chars.GetBytes());
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°£ ºñ±³(string)
-	\param Other : ºñ±³ÇÒ ½ºÆ®¸µ
-	\return same-°°À½, param_is_more-ÀÎ¼ö°¡ Å­, param_is_less-ÀÎ¼ö°¡ ÀÛÀ½
+	\brief ìŠ¤íŠ¸ë§ê°„ ë¹„êµ(string)
+	\param Other : ë¹„êµí•  ìŠ¤íŠ¸ë§
+	\return same-ê°™ìŒ, param_is_more-ì¸ìˆ˜ê°€ í¼, param_is_less-ì¸ìˆ˜ê°€ ì‘ìŒ
 	*/
 	compare Compare(string Other)
 	{
@@ -631,9 +627,9 @@ public:
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°£ ºñ±³(BxString)
-	\param Other : ºñ±³ÇÒ ½ºÆ®¸µ
-	\return same-°°À½, param_is_more-ÀÎ¼ö°¡ Å­, param_is_less-ÀÎ¼ö°¡ ÀÛÀ½
+	\brief ìŠ¤íŠ¸ë§ê°„ ë¹„êµ(BxString)
+	\param Other : ë¹„êµí•  ìŠ¤íŠ¸ë§
+	\return same-ê°™ìŒ, param_is_more-ì¸ìˆ˜ê°€ í¼, param_is_less-ì¸ìˆ˜ê°€ ì‘ìŒ
 	*/
 	compare Compare(BxString& Other)
 	{
@@ -647,9 +643,9 @@ public:
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°£ ´ë¼Ò¹®ÀÚ ±¸ºĞ¾ø´Â ºñ±³(string)
-	\param Other : ºñ±³ÇÒ ½ºÆ®¸µ
-	\return same-°°À½, param_is_more-ÀÎ¼ö°¡ Å­, param_is_less-ÀÎ¼ö°¡ ÀÛÀ½
+	\brief ìŠ¤íŠ¸ë§ê°„ ëŒ€ì†Œë¬¸ì êµ¬ë¶„ì—†ëŠ” ë¹„êµ(string)
+	\param Other : ë¹„êµí•  ìŠ¤íŠ¸ë§
+	\return same-ê°™ìŒ, param_is_more-ì¸ìˆ˜ê°€ í¼, param_is_less-ì¸ìˆ˜ê°€ ì‘ìŒ
 	*/
 	compare CompareNoCase(string Other)
 	{
@@ -667,9 +663,9 @@ public:
 	}
 
 	/*!
-	\brief ½ºÆ®¸µ°£ ´ë¼Ò¹®ÀÚ ±¸ºĞ¾ø´Â ºñ±³(BxString)
-	\param Other : ºñ±³ÇÒ ½ºÆ®¸µ
-	\return same-°°À½, param_is_more-ÀÎ¼ö°¡ Å­, param_is_less-ÀÎ¼ö°¡ ÀÛÀ½
+	\brief ìŠ¤íŠ¸ë§ê°„ ëŒ€ì†Œë¬¸ì êµ¬ë¶„ì—†ëŠ” ë¹„êµ(BxString)
+	\param Other : ë¹„êµí•  ìŠ¤íŠ¸ë§
+	\return same-ê°™ìŒ, param_is_more-ì¸ìˆ˜ê°€ í¼, param_is_less-ì¸ìˆ˜ê°€ ì‘ìŒ
 	*/
 	compare CompareNoCase(BxString& Other)
 	{
@@ -687,42 +683,24 @@ public:
 	}
 
 	/*!
-	\brief sprintfÇüÅÂ·Î ½ºÆ®¸µ »ı¼º
-	\param format : »ı¼ºÇÒ Æ÷¸Ë½ºÆ®¸µ
-	\param ... : µ¥ÀÌÅÍ ÀÎ¼öµé
+	\brief ìŠ¤íŠ¸ë§êµ¬ì„±
+	\param Map : ìŠ¤íŠ¸ë§ë§µ ìŠ¤í¬ë¦½íŠ¸(ì‹ë³„ë¬¸ìëŠ” "<>:")
+	\param Args : Mapì— ì“°ì¼ ê°€ë³€ì¸ì
 	*/
-	void Format(string format, ...)
+	void Format(string Map, const BxThrow& Args = BxThrow::zero())
 	{
-		va_list List;
-		va_start(List, format);
-		FormatV(format, List);
-		va_end(List);
-	}
-
-	/*!
-	\brief vsprintfÇüÅÂ·Î ½ºÆ®¸µ »ı¼º
-	\param format : »ı¼ºÇÒ Æ÷¸Ë½ºÆ®¸µ
-	\param list : µ¥ÀÌÅÍ ÀÎ¼öµé
-	*/
-	void FormatV(string format, va_list list)
-	{
-		const int TempLen = BxCore::Util::VsnPrintf(nullptr, 0, format, list);
-		BxAssert("BxString<TempÀÇ ¿¹»ó±æÀÌ¸¦ ¾ò´Âµ¥ ½ÇÆĞÇÏ¿´½À´Ï´Ù>", 0 <= TempLen);
-		global_data int TempSizeMax = 0;
-		if(TempSizeMax < TempLen + 1) TempSizeMax = TempLen + 1;
-		string_rw Temp = nullptr;
-		BxSINGLETON(Temp, char, TempSizeMax);
-		BxCore::Util::VsnPrintf(Temp, TempLen + 1, format, list);
 		Empty();
-		for(int i = 0; i < TempLen; ++i)
-			Chars.Insert(i) = Temp[i];
+		int ResultLength = 0;
+		string _tmp_ Result = BxCore::Util::Print(Map, Args, &ResultLength);
+		for(int i = 0; i < ResultLength; ++i)
+			Chars.Insert(i) = Result[i];
 	}
 
 	/*!
-	\brief ¸ÖÆ¼¶óÀÎ CSV½ºÆ®¸µ(CP949/UTF8) ³ª´©±â(A,"B,B",C¸¦ A¿Í B,B¿Í C·Î ³ª´®)
-	\param Other : ÀÛ¾÷ÇÒ ½ºÆ®¸µ
-	\param Result : ºĞ¸®µÈ °á°ú(°­Á¦ ResetÀº ¾ÈÇÔ)
-	\return ÆÄ½ÌµÈ ±æÀÌ
+	\brief ë©€í‹°ë¼ì¸ CSVìŠ¤íŠ¸ë§(CP949/UTF8) ë‚˜ëˆ„ê¸°(A,"B,B",Cë¥¼ Aì™€ B,Bì™€ Cë¡œ ë‚˜ëˆ”)
+	\param Other : ì‘ì—…í•  ìŠ¤íŠ¸ë§
+	\param Result : ë¶„ë¦¬ëœ ê²°ê³¼(ê°•ì œ Resetì€ ì•ˆí•¨)
+	\return íŒŒì‹±ëœ ê¸¸ì´
 	*/
 	global_func int ParseCSV(string Other, BxVar<BxString>& Result)
 	{
@@ -730,26 +708,26 @@ public:
 		do
 		{
 			++iFocus;
-			// ÀÎ¿ë±¸ ½ºÅµ
+			// ì¸ìš©êµ¬ ìŠ¤í‚µ
 			if(Other[iFocus] == '\'' || Other[iFocus] == '\"')
 			{
 				const char QuoteCode = Other[iFocus++];
 				while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n'
 					&& Other[iFocus] != QuoteCode) ++iFocus;
 			}
-			// È®Àå¹®ÀÚ ½ºÅµ(UTF8°í·Á)
+			// í™•ì¥ë¬¸ì ìŠ¤í‚µ(UTF8ê³ ë ¤)
 			else if(Other[iFocus] & 0x80)
 			{
 				++iFocus;
 				while(Other[iFocus] != '\0' && Other[iFocus] != '\r' && Other[iFocus] != '\n'
 					&& (Other[iFocus] & 0x80)) ++iFocus;
 			}
-			// ½ºÆ®¸µ ÀúÀå
+			// ìŠ¤íŠ¸ë§ ì €ì¥
 			if(Other[iFocus] == ',' || Other[iFocus] == '\0' || Other[iFocus] == '\r' || Other[iFocus] == '\n')
 			{
 				Result[LAST].SetString(&Other[iBegin], iFocus - iBegin);
-				Result[END].TrimBlank(); // °ø¹éÁ¦°Å
-				Result[END].TrimQuote(); // ÀÎ¿ë±¸Á¦°Å
+				Result[END].TrimBlank(); // ê³µë°±ì œê±°
+				Result[END].TrimQuote(); // ì¸ìš©êµ¬ì œê±°
 				iBegin = iFocus + 1;
 			}
 		}
@@ -758,9 +736,9 @@ public:
 	}
 
 	/*!
-	\brief ¸ÖÆ¼¶óÀÎ ISO-2022½ºÆ®¸µ ³ª´©±â
-	\param Other : ÀÛ¾÷ÇÒ ½ºÆ®¸µ
-	\param Result : ÁÙ¹Ù²Ş±âÈ£·Î ºĞ¸®µÈ °á°ú(°­Á¦ ResetÀº ¾ÈÇÔ)
+	\brief ë©€í‹°ë¼ì¸ ISO-2022ìŠ¤íŠ¸ë§ ë‚˜ëˆ„ê¸°
+	\param Other : ì‘ì—…í•  ìŠ¤íŠ¸ë§
+	\param Result : ì¤„ë°”ê¿ˆê¸°í˜¸ë¡œ ë¶„ë¦¬ëœ ê²°ê³¼(ê°•ì œ Resetì€ ì•ˆí•¨)
 	*/
 	global_func void ParseISO2022(string Other, BxVar<BxString>& Result)
 	{
@@ -790,8 +768,8 @@ public:
 	}
 
 	/*!
-	\brief °æ·Î¿¡¼­ ÆÄÀÏ¸í ÃßÃâ
-	\return ÃßÃâµÈ ½ºÆ®¸µ
+	\brief ê²½ë¡œì—ì„œ íŒŒì¼ëª… ì¶”ì¶œ
+	\return ì¶”ì¶œëœ ìŠ¤íŠ¸ë§
 	*/
 	inline BxString GetFileName()
 	{
@@ -799,8 +777,8 @@ public:
 	}
 
 	/*!
-	\brief °æ·Î¿¡¼­ ÆÄÀÏ¸íÀ» Á¦¿ÜÇÑ ÆĞ½º¸í(/¹®ÀÚ Æ÷ÇÔ) ÃßÃâ
-	\return ÃßÃâµÈ ½ºÆ®¸µ
+	\brief ê²½ë¡œì—ì„œ íŒŒì¼ëª…ì„ ì œì™¸í•œ íŒ¨ìŠ¤ëª…(/ë¬¸ì í¬í•¨) ì¶”ì¶œ
+	\return ì¶”ì¶œëœ ìŠ¤íŠ¸ë§
 	*/
 	inline BxString GetFilePath()
 	{
@@ -809,8 +787,8 @@ public:
 	}
 
 	/*!
-	\brief °æ·Î¿¡¼­ ÆÄÀÏÅ¸ÀÌÆ²(È®ÀåÀÚ Á¦¿Ü) ÃßÃâ
-	\return ÃßÃâµÈ ½ºÆ®¸µ
+	\brief ê²½ë¡œì—ì„œ íŒŒì¼íƒ€ì´í‹€(í™•ì¥ì ì œì™¸) ì¶”ì¶œ
+	\return ì¶”ì¶œëœ ìŠ¤íŠ¸ë§
 	*/
 	inline BxString GetFileTitle()
 	{
@@ -819,8 +797,8 @@ public:
 	}
 
 	/*!
-	\brief °æ·Î¿¡¼­ ÆÄÀÏÈ®ÀåÀÚ ÃßÃâ
-	\return ÃßÃâµÈ ½ºÆ®¸µ
+	\brief ê²½ë¡œì—ì„œ íŒŒì¼í™•ì¥ì ì¶”ì¶œ
+	\return ì¶”ì¶œëœ ìŠ¤íŠ¸ë§
 	*/
 	inline BxString GetFileExt()
 	{
@@ -830,8 +808,8 @@ public:
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ¿¡¼­ ·Îµå
-	\param Resource : uint16À¸·Î ½ºÆ®¸µ»çÀÌÁî¸¦ ¾òÀº ´ÙÀ½, ÇØ´ç ½ºÆ®¸µÀ» ·Îµå
+	\brief ë°ì´í„°ì—ì„œ ë¡œë“œ
+	\param Resource : uint16ìœ¼ë¡œ ìŠ¤íŠ¸ë§ì‚¬ì´ì¦ˆë¥¼ ì–»ì€ ë‹¤ìŒ, í•´ë‹¹ ìŠ¤íŠ¸ë§ì„ ë¡œë“œ
 	*/
 	void Load(byte*& Resource)
 	{

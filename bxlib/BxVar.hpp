@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <BxMemory.hpp>
 #include <BxPool.hpp>
 
@@ -12,7 +12,7 @@
 #define FINAL ((int) 0xDFFFFFFF)
 #endif
 
-//! \brief °¡º¯¹è¿­ Á¦°ø
+//! \brief ê°€ë³€ë°°ì—´ ì œê³µ
 template<typename TYPE>
 class BxVar
 {
@@ -26,24 +26,24 @@ public:
 	enum Parameter {AutoCreate = 0, NoNeed = 0};
 	enum Type {LengthOfRange, LengthOfCount};
 
-	// µ¥ÀÌÅÍÇÒ´ç
+	// ë°ì´í„°í• ë‹¹
 	inline TYPE& operator[](int index)
 	{
 		CalcIndex(index);
-		// ºü¸¥Ã³¸®
+		// ë¹ ë¥¸ì²˜ë¦¬
 		const int index16 = index & 0xF;
 		if(CacheIdx[index16] == index)
 			return *CachePtr[index16];
 		IsDirtyCache = true;
 		CacheIdx[index16] = index;
-		// ÀÏ¹İÃ³¸®
+		// ì¼ë°˜ì²˜ë¦¬
 		VarTree& Leaf = TreeHead.GetLeafMutabled(index);
 		const VarList* List = Leaf.GetList(index);
 		if(List) return *(CachePtr[index16] = List->Data);
 		return *(CachePtr[index16] = Leaf.AddList(index, MakeNewData(nullptr), VarTree::NoRanging));
 	}
 
-	// µ¥ÀÌÅÍÁ¢±Ù
+	// ë°ì´í„°ì ‘ê·¼
 	inline TYPE* Access(int index) const
 	{
 		CalcIndex(index);
@@ -53,7 +53,7 @@ public:
 		return nullptr;
 	}
 
-	// µ¥ÀÌÅÍ±æÀÌ
+	// ë°ì´í„°ê¸¸ì´
 	inline const int Length(Type type = LengthOfRange) const
 	{
 		if(type == LengthOfRange)
@@ -61,7 +61,7 @@ public:
 		return TreeHead.Count;
 	}
 
-	// ÀüÃ¼ÃÊ±âÈ­
+	// ì „ì²´ì´ˆê¸°í™”
 	inline void Reset(const bool doRemove = true)
 	{
 		CleaningCache();
@@ -70,7 +70,7 @@ public:
 		VarList::EnableRemove() = true;
 	}
 
-	// ¸®½ºÆ®»ğÀÔ
+	// ë¦¬ìŠ¤íŠ¸ì‚½ì…
 	inline TYPE& Insert(int index, TYPE* newData = (TYPE*) AutoCreate)
 	{
 		CalcIndex(index);
@@ -79,7 +79,7 @@ public:
 		return *Leaf.AddList(index, MakeNewData(newData), VarTree::DoRanging);
 	}
 
-	// ¸®½ºÆ®»èÁ¦
+	// ë¦¬ìŠ¤íŠ¸ì‚­ì œ
 	void Delete(int index, TYPE** oldData = (TYPE**) NoNeed)
 	{
 		if(0 < CalcIndex(index)) return;
@@ -95,7 +95,7 @@ public:
 		else Leaf.DeleteBlank(index);
 	}
 
-	// µ¥ÀÌÅÍ¼öÁ¤
+	// ë°ì´í„°ìˆ˜ì •
 	bool ModifyData(int index, TYPE* newData = (TYPE*) AutoCreate, TYPE** oldData = (TYPE**) NoNeed)
 	{
 		if(0 < CalcIndex(index)) return false;
@@ -112,7 +112,7 @@ public:
 		return true;
 	}
 
-	// µ¥ÀÌÅÍÁö¿ò
+	// ë°ì´í„°ì§€ì›€
 	bool RemoveData(int index, TYPE** oldData = (TYPE**) NoNeed)
 	{
 		if(0 < CalcIndex(index)) return false;
@@ -129,7 +129,7 @@ public:
 		return false;
 	}
 
-	// µ¥ÀÌÅÍ±³Ã¼
+	// ë°ì´í„°êµì²´
 	inline void SwapData(int index1, int index2)
 	{
 		TYPE* Data1 = Access(index1);
@@ -142,7 +142,7 @@ public:
 		else RemoveData(index1, &NoDelete);
 	}
 
-	// µ¥ÀÌÅÍÁ÷·ÄÈ­
+	// ë°ì´í„°ì§ë ¬í™”
 	const byte* GetBytes()
 	{
 		if(!BytesUpdated)
@@ -153,21 +153,21 @@ public:
 			for(int i = 0; i < TreeHead.Range; ++i)
 			{
 				TYPE* Data = Access(i);
-				if(Data) BxCore::Util::MemMove(&BytesData[i], Data, sizeof(TYPE));
+				if(Data) BxCore::Util::MemCpy(&BytesData[i], Data, sizeof(TYPE));
 				else BxCore::Util::MemSet(&BytesData[i], 0, sizeof(TYPE));
 			}
 		}
 		return (const byte*) BytesData;
 	}
 
-	// µ¥ÀÌÅÍÁ÷·ÄÈ­ ÇØÁ¦
+	// ë°ì´í„°ì§ë ¬í™” í•´ì œ
 	inline void ReleaseBytes()
 	{
 		BytesUpdated = false;
 		BxFree(BytesData);
 	}
 
-	// µ¥ÀÌÅÍº¹Á¦
+	// ë°ì´í„°ë³µì œ
 	BxVar& operator=(BxVar& RHS)
 	{
 		Reset();
@@ -180,11 +180,11 @@ public:
 		return *this;
 	}
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	BxVar() : TreeHead(nullptr), BytesUpdated(false), BytesData(nullptr), IsDirtyCache(true) {CleaningCache();}
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	BxVar(const BxVar& RHS) : TreeHead(nullptr), BytesUpdated(false), BytesData(nullptr), IsDirtyCache(true) {operator=(RHS);}
-	// ¼Ò¸êÀÚ
+	// ì†Œë©¸ì
 	virtual ~BxVar() {ReleaseBytes();}
 
 private:
@@ -202,7 +202,7 @@ private:
 			if(index == FINAL) index = (LastIndex < 0)? 0 : LastIndex;
 			else index = index - END + LastIndex;
 		}
-		BxAssert("BxVar<index¿¡´Â À½¼ö°¡ ¿Ã ¼ö ¾ø½À´Ï´Ù>", 0 <= index);
+		BxASSERT("BxVar<indexì—ëŠ” ìŒìˆ˜ê°€ ì˜¬ ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", 0 <= index);
 		return index - LastIndex;
 	}
 
@@ -229,11 +229,11 @@ private:
 	class VarList
 	{
 	public:
-		int Index; // »öÀÎ
-		TYPE* Data; // ÀÚ±âµ¥ÀÌÅÍ
-		VarList* Next; // ´ÙÀ½µ¥ÀÌÅÍ
+		int Index; // ìƒ‰ì¸
+		TYPE* Data; // ìê¸°ë°ì´í„°
+		VarList* Next; // ë‹¤ìŒë°ì´í„°
 	public:
-		VarList() {BxAssert("BxVar<Àß¸øµÈ È£ÃâÀÔ´Ï´Ù>", false);}
+		VarList() {BxASSERT("BxVar<ì˜ëª»ëœ í˜¸ì¶œì…ë‹ˆë‹¤>", false);}
 		~VarList()
 		{
 			RemoveData();
@@ -246,11 +246,12 @@ private:
 			if(Data && EnableRemove())
 			{
 				const bool Result = TypePool::FreeClass(Data);
-				BxAssert("BxVar<¿ÜºÎµ¥ÀÌÅÍ°¡ ÀÖ¾î ¸Ş¸ğ¸®´©¼ö°¡ ¹ß»ıÇÕ´Ï´Ù>", Result);
+				BxASSERT("BxVar<ì™¸ë¶€ë°ì´í„°ê°€ ìˆì–´ ë©”ëª¨ë¦¬ëˆ„ìˆ˜ê°€ ë°œìƒí•©ë‹ˆë‹¤>", Result);
 			}
 			Data = nullptr;
 		}
-		global_func bool& EnableRemove() {global_data bool _ = true; return _;}
+		global_func bool& EnableRemove()
+		{thread_storage _ = sizeof(bool); return *((bool*) BxCore::Thread::BindStorage(&_));}
 	};
 
 	class VarTree
@@ -259,17 +260,17 @@ private:
 		enum Parameter {DoRanging, NoRanging};
 		enum Action {NoAction, DeleteMe};
 	public:
-		VarTree* Parent; // ºÎ¸ğ
-		int Range; // ¸®½ºÆ®¹üÀ§
-		int Count; // ¸®½ºÆ®¼ö·®
+		VarTree* Parent; // ë¶€ëª¨
+		int Range; // ë¦¬ìŠ¤íŠ¸ë²”ìœ„
+		int Count; // ë¦¬ìŠ¤íŠ¸ìˆ˜ëŸ‰
 		union
 		{
-			VarTree* Child[2]; // [ÁÂ¼±][¿ì¼±]
-			VarList* List[2]; // [¸®½ºÆ®][nullptr]
+			VarTree* Child[2]; // [ì¢Œì„ ][ìš°ì„ ]
+			VarList* List[2]; // [ë¦¬ìŠ¤íŠ¸][nullptr]
 		};
 	public:
-		VarTree() {BxAssert("BxVar<Àß¸øµÈ È£ÃâÀÔ´Ï´Ù>", false);}
-		VarTree(void*) // TreeHeadÀü¿ë
+		VarTree() {BxASSERT("BxVar<ì˜ëª»ëœ í˜¸ì¶œì…ë‹ˆë‹¤>", false);}
+		VarTree(void*) // TreeHeadì „ìš©
 		{
 			Parent = nullptr;
 			Range = 0;
@@ -299,7 +300,7 @@ private:
 		}
 		void Reset()
 		{
-			BxAssert("BxVar<Àß¸øµÈ È£ÃâÀÔ´Ï´Ù>", !Parent);
+			BxASSERT("BxVar<ì˜ëª»ëœ í˜¸ì¶œì…ë‹ˆë‹¤>", !Parent);
 			Quit();
 			Range = 0;
 			Count = 0;
@@ -339,7 +340,7 @@ private:
 		}
 		const VarList* GetList(int index) const
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
 			const VarList* CurList = List[0];
 			while(CurList && (index -= CurList->Index))
 				CurList = CurList->Next;
@@ -351,7 +352,7 @@ private:
 		}
 		TYPE* AddList(const int index, TYPE* data, const Parameter option)
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
 			VarList* NewList = VarListPool::Make()->Init(index, data);
 			if(List[0])
 			{
@@ -363,44 +364,44 @@ private:
 						NewList->Index -= CurList->Index;
 					else
 					{
-						CurList->Index -= NewList->Index - ((option == DoRanging)? 1 : 0); // ÀÎµ¦½ººĞÇÒ
-						((PrevList)? PrevList->Next : List[0]) = NewList; // ¸®½ºÆ®°áÇÕ
+						CurList->Index -= NewList->Index - ((option == DoRanging)? 1 : 0); // ì¸ë±ìŠ¤ë¶„í• 
+						((PrevList)? PrevList->Next : List[0]) = NewList; // ë¦¬ìŠ¤íŠ¸ê²°í•©
 						NewList->Next = CurList;
-						AdjustLoop((option == DoRanging)? 1 : 0, 1); // Æ®¸®Á¶Á¤
-						if(Count == 4) LeafToPath(); // ÆĞ½ººĞ¸®
+						AdjustLoop((option == DoRanging)? 1 : 0, 1); // íŠ¸ë¦¬ì¡°ì •
+						if(Count == 4) LeafToPath(); // íŒ¨ìŠ¤ë¶„ë¦¬
 						return data;
 					}
 				}
 				while(CurList = (PrevList = CurList)->Next);
-				// º» À§Ä¡´Â VarÀÇ ¹üÀ§¸¦ ¹ş¾î³­ Ãß°¡¸¦ ÀÇ¹Ì
-				PrevList->Next = NewList; // ¸®½ºÆ®°áÇÕ
-				AdjustLoop(NewList->Index, 1); // Æ®¸®Á¶Á¤
-				if(Count == 4) LeafToPath(); // ÆĞ½ººĞ¸®
+				// ë³¸ ìœ„ì¹˜ëŠ” Varì˜ ë²”ìœ„ë¥¼ ë²—ì–´ë‚œ ì¶”ê°€ë¥¼ ì˜ë¯¸
+				PrevList->Next = NewList; // ë¦¬ìŠ¤íŠ¸ê²°í•©
+				AdjustLoop(NewList->Index, 1); // íŠ¸ë¦¬ì¡°ì •
+				if(Count == 4) LeafToPath(); // íŒ¨ìŠ¤ë¶„ë¦¬
 			}
 			else
 			{
-				List[0] = NewList; // Ã¹µ¥ÀÌÅÍ
-				AdjustLoop(index + 1, 1); // Æ®¸®Á¶Á¤
+				List[0] = NewList; // ì²«ë°ì´í„°
+				AdjustLoop(index + 1, 1); // íŠ¸ë¦¬ì¡°ì •
 			}
 			return data;
 		}
 		Action SubList(VarList* list, const Parameter option)
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
 			VarList* PrevList = nullptr;
 			VarList* CurList = List[0];
 			while(true)
 			{
-				BxAssert("BxVar<Àß¸øµÈ ½Ã³ª¸®¿ÀÀÔ´Ï´Ù>", CurList);
+				BxASSERT("BxVar<ì˜ëª»ëœ ì‹œë‚˜ë¦¬ì˜¤ì…ë‹ˆë‹¤>", CurList);
 				if(CurList == list)
 				{
-					if(CurList->Next) // ÀÎµ¦½ºÅëÇÕ
+					if(CurList->Next) // ì¸ë±ìŠ¤í†µí•©
 						CurList->Next->Index += CurList->Index - ((option == DoRanging)? 1 : 0);
-					((PrevList)? PrevList->Next : List[0]) = CurList->Next; // ¸®½ºÆ®ºĞ¸®
+					((PrevList)? PrevList->Next : List[0]) = CurList->Next; // ë¦¬ìŠ¤íŠ¸ë¶„ë¦¬
 					CurList->Next = nullptr;
 					VarListPool::FreeClass(CurList);
-					AdjustLoop((option == DoRanging)? -1 : 0, -1); // Æ®¸®Á¶Á¤
-					if(Count == 0) return BrotherToParent(); // ÆĞ½ºÁ¦°Å
+					AdjustLoop((option == DoRanging)? -1 : 0, -1); // íŠ¸ë¦¬ì¡°ì •
+					if(Count == 0) return BrotherToParent(); // íŒ¨ìŠ¤ì œê±°
 					return NoAction;
 				}
 				CurList = (PrevList = CurList)->Next;
@@ -409,23 +410,23 @@ private:
 		}
 		void LeafToPath()
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
-			// ¸®ÇÁ±¸¼º
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
+			// ë¦¬í”„êµ¬ì„±
 			const int NewRange1 = 1 + List[0]->Index + List[0]->Next->Index;
 			const int NewRange2 = Range - NewRange1;
 			VarList* NewList1 = List[0];
 			VarList* NewList2 = NewList1->Next->Next;
-			NewList1->Next->Next = nullptr; // °ü°èºĞ¸®
+			NewList1->Next->Next = nullptr; // ê´€ê³„ë¶„ë¦¬
 			--NewList2->Index;
-			// ¸®ÇÁ»ı¼º
+			// ë¦¬í”„ìƒì„±
 			Child[0] = VarTreePool::Make()->InitLeaf(this, NewRange1, 2, NewList1);
 			Child[1] = VarTreePool::Make()->InitLeaf(this, NewRange2, 2, NewList2);
-			// Æ¿ÆÃ
+			// í‹¸íŒ…
 			TiltingLoop(true);
 		}
 		Action BrotherToParent()
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
 			if(Parent)
 			{
 				VarTree* Brother = Parent->Child[Parent->Child[1] != this];
@@ -444,19 +445,19 @@ private:
 					Parent->List[1] = nullptr;
 					Brother->List[0] = nullptr;
 				}
-				VarTreePool::FreeClass(Brother); // ÇüÁ¦Á¦°Å
-				// Æ¿ÆÃ
+				VarTreePool::FreeClass(Brother); // í˜•ì œì œê±°
+				// í‹¸íŒ…
 				Parent->TiltingLoop(false);
 				return DeleteMe;
 			}
-			// ÃÖ»óÀ§
+			// ìµœìƒìœ„
 			VarListPool::FreeClass(List[0]);
 			List[0] = nullptr;
 			return NoAction;
 		}
 		void DeleteBlank(int index)
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
 			VarList* CurList = List[0];
 			do
 			{
@@ -472,7 +473,7 @@ private:
 		}
 		void AdjustLoop(const int range, const int count)
 		{
-			BxAssert("BxVar<Leaf°¡ ¾Æ´Õ´Ï´Ù>", !HasChild());
+			BxASSERT("BxVar<Leafê°€ ì•„ë‹™ë‹ˆë‹¤>", !HasChild());
 			VarTree* CurTree = this;
 			do
 			{
@@ -494,19 +495,19 @@ private:
 		}
 		bool Tilting(const bool testside)
 		{
-			BxAssert("BxVar<Path°¡ ¾Æ´Õ´Ï´Ù>", HasChild());
-			// µæ½ÇÆò°¡
+			BxASSERT("BxVar<Pathê°€ ì•„ë‹™ë‹ˆë‹¤>", HasChild());
+			// ë“ì‹¤í‰ê°€
 			VarTree* Test = Child[testside];
 			VarTree* Loss = Child[!testside];
 			VarTree* Benefit = Test->Child[testside];
 			VarTree* Same = Test->Child[!testside];
 			if(Benefit->Count <= Loss->Count)
 				return false;
-			// 1´Ü°è
+			// 1ë‹¨ê³„
 			Benefit->Parent = this;
 			Child[testside] = Benefit;
 			Child[!testside] = Test;
-			// 2´Ü°è
+			// 2ë‹¨ê³„
 			Loss->Parent = Test;
 			Test->Child[testside] = Same;
 			Test->Child[!testside] = Loss;

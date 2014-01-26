@@ -9,106 +9,102 @@
     <includedby refid="_bx_core_for_s3_e_8hpp" local="no">BxCoreForS3E.hpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="329">
-        <label>stdarg.h</label>
-      </node>
-      <node id="331">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="328" relation="include">
+      <node id="323">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
         </childnode>
       </node>
-      <node id="327">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="328" relation="include">
+      <node id="333">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="331" relation="include">
         </childnode>
-        <childnode refid="330" relation="include">
-        </childnode>
-      </node>
-      <node id="326">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="327" relation="include">
+        <childnode refid="334" relation="include">
         </childnode>
       </node>
       <node id="332">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="326" relation="include">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="327" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>BxScene.hpp</label>
+        <link refid="BxScene.hpp"/>
+        <childnode refid="323" relation="include">
         </childnode>
         <childnode refid="333" relation="include">
         </childnode>
       </node>
       <node id="324">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
         <childnode refid="325" relation="include">
         </childnode>
-        <childnode refid="332" relation="include">
-        </childnode>
-        <childnode refid="333" relation="include">
-        </childnode>
-      </node>
-      <node id="335">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
         <childnode refid="328" relation="include">
         </childnode>
       </node>
       <node id="334">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="332" relation="include">
-        </childnode>
-        <childnode refid="335" relation="include">
-        </childnode>
-      </node>
-      <node id="323">
-        <label>BxScene.hpp</label>
-        <link refid="BxScene.hpp"/>
-        <childnode refid="324" relation="include">
-        </childnode>
-        <childnode refid="334" relation="include">
-        </childnode>
-      </node>
-      <node id="330">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="331" relation="include">
-        </childnode>
-      </node>
-      <node id="333">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="327" relation="include">
-        </childnode>
-        <childnode refid="326" relation="include">
-        </childnode>
-      </node>
-      <node id="325">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="326" relation="include">
-        </childnode>
-        <childnode refid="331" relation="include">
-        </childnode>
-      </node>
-      <node id="328">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
         <childnode refid="329" relation="include">
         </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="336">
-        <label>BxScene.hpp</label>
-        <link refid="BxScene.hpp"/>
-        <childnode refid="337" relation="include">
+      <node id="329">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="328">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
         </childnode>
       </node>
-      <node id="337">
+      <node id="327">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="335">
+        <label>BxScene.hpp</label>
+        <link refid="BxScene.hpp"/>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
         <label>BxCoreForS3E.hpp</label>
         <link refid="_bx_core_for_s3_e_8hpp_source"/>
       </node>
@@ -144,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxScene.hpp" line="550" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxScene.hpp" bodystart="550" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxScene.hpp" line="550" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxScene.hpp" bodystart="550" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -152,8 +148,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxString.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxString.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxDraw.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">BxUtilGlobal;</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">BxDrawGlobal;</highlight></codeline>
@@ -164,9 +160,9 @@
 <codeline lineno="17" refid="class_bx_scene_1a9763cca1ec026a37162400e97c183bae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_scene_1a9763cca1ec026a37162400e97c183bae" kindref="member" tooltip="씬활성화 요청 ">AddRequest</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Order<sp/>=<sp/>-1)</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AllScene*<sp/>FindedScene<sp/>=<sp/>__FindAllScene__(Name);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;이미<sp/>활성화된<sp/>씬입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveScene__(Name)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>씬은<sp/>이미<sp/>요청중입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveSceneRequest__(FindedScene)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;이미<sp/>활성화된<sp/>씬입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveScene__(Name)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>씬은<sp/>이미<sp/>요청중입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveSceneRequest__(FindedScene)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>Request(Add)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveSceneRequest*<sp/>NewActiveSceneRequest<sp/>=<sp/>BxNew_Param(ActiveSceneRequest,<sp/>sysrequest_add,<sp/>Order,<sp/>BxNew_Param(ActiveScene,<sp/>FindedScene));</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewActiveSceneRequest-&gt;Next<sp/>=<sp/>__GetActiveSceneRequest__().Next;</highlight></codeline>
@@ -176,10 +172,10 @@
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35" refid="class_bx_scene_1aa9dd5490b88cfcbe671a331dceb1a77d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_scene_1aa9dd5490b88cfcbe671a331dceb1a77d" kindref="member" tooltip="활성씬 제거 ">SubRequest</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name)</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AllScene*<sp/>FindedScene<sp/>=<sp/>__FindActiveScene__(Name);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름으로<sp/>활성화된<sp/>씬이<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>씬은<sp/>이미<sp/>요청중입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveSceneRequest__(FindedScene)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름으로<sp/>활성화된<sp/>씬이<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>씬은<sp/>이미<sp/>요청중입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveSceneRequest__(FindedScene)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>Loop</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>OneActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(OneActiveScene-&gt;Scene<sp/>!=<sp/>FindedScene)</highlight></codeline>
@@ -193,10 +189,10 @@
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57" refid="class_bx_scene_1a993fd47b28dce1816496d5e93ba33662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_scene_1a993fd47b28dce1816496d5e93ba33662" kindref="member" tooltip="활성씬 출력순번변경 ">SetRequest</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name,<sp/>uint<sp/>Order)</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AllScene*<sp/>FindedScene<sp/>=<sp/>__FindActiveScene__(Name);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름으로<sp/>활성화된<sp/>씬이<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>씬은<sp/>이미<sp/>요청중입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveSceneRequest__(FindedScene)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름으로<sp/>활성화된<sp/>씬이<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>씬은<sp/>이미<sp/>요청중입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindActiveSceneRequest__(FindedScene)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>Loop</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>OneActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(OneActiveScene-&gt;Scene<sp/>!=<sp/>FindedScene)</highlight></codeline>
@@ -274,7 +270,7 @@
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="154" refid="class_bx_scene_1a93faa81b158dc76969ef4af16efde4a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/>uint<sp/><ref refid="class_bx_scene_1a93faa81b158dc76969ef4af16efde4a1" kindref="member" tooltip="활성씬 출력순번얻기 ">GetOrder</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name)</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>Count<sp/>=<sp/>(uint)<sp/>__GetActiveSceneAllCount__()<sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>OneActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((OneActiveScene<sp/>=<sp/>OneActiveScene-&gt;Next)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
@@ -288,7 +284,7 @@
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
 <codeline lineno="173" refid="class_bx_scene_1a8c58816a245121762a6b475b95b175a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_bx_scene_1a8c58816a245121762a6b475b95b175a4" kindref="member" tooltip="해당출력순번의 활성씬 이름얻기 ">GetName</ref>(uint<sp/>Order)</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;검색할<sp/>씬의<sp/>순번이<sp/>너무<sp/>큽니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Order<sp/>&lt;<sp/>(uint)<sp/>__GetActiveSceneAllCount__());</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;검색할<sp/>씬의<sp/>순번이<sp/>너무<sp/>큽니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Order<sp/>&lt;<sp/>(uint)<sp/>__GetActiveSceneAllCount__());</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>Count<sp/>=<sp/>(uint)<sp/>__GetActiveSceneAllCount__()<sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>OneActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((OneActiveScene<sp/>=<sp/>OneActiveScene-&gt;Next)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
@@ -302,22 +298,22 @@
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="192" refid="class_bx_scene_1ac485f70214143d939311e6b403d6ed6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_scene_1ac485f70214143d939311e6b403d6ed6d" kindref="member" tooltip="해당 씬의 활성화 상태얻기 ">IsActivity</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name)</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AllScene*<sp/>FindedScene<sp/>=<sp/>__FindActiveScene__(Name);</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight></codeline>
 <codeline lineno="204" refid="class_bx_scene_1a31f3363df33df2fe373ed5e96679c95d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="class_bx_scene_1a31f3363df33df2fe373ed5e96679c95d" kindref="member" tooltip="활성씬의 데이터얻기 ">GetData</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name)</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름의<sp/>씬은<sp/>존재하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AllScene*<sp/>FindedScene<sp/>=<sp/>__FindActiveScene__(Name);</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름으로<sp/>활성화된<sp/>씬이<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이름으로<sp/>활성화된<sp/>씬이<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>FindedScene<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FindedScene-&gt;GetData(sysmethod_get);</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>__Create__(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name,<sp/>EventCB<sp/>Event,<sp/>UpdateCB<sp/>Update,<sp/>RenderCB<sp/>Render,<sp/>GetDataCB<sp/>GetData)</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;같은<sp/>씬이름을<sp/>가진<sp/>파일이<sp/>이미<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;같은<sp/>씬이름을<sp/>가진<sp/>파일이<sp/>이미<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>__FindAllScene__(Name)<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AllScene*<sp/>NewScene<sp/>=<sp/>BxNew_Param(AllScene,<sp/>Name,<sp/>Event,<sp/>Update,<sp/>Render,<sp/>GetData);</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewScene-&gt;Next<sp/>=<sp/>__GetAllScene__().Next;</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__GetAllScene__().Next<sp/>=<sp/>NewScene;</highlight></codeline>
@@ -327,8 +323,8 @@
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__AddEvent__(<ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>&amp;<sp/>Event,<sp/>syseventset<sp/>Set)</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EventQueue*<sp/>NewEvent<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>EventQueue();</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(&amp;NewEvent-&gt;Event,<sp/>&amp;Event,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>));</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(&amp;NewEvent-&gt;Set,<sp/>&amp;Set,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(syseventset));</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(&amp;NewEvent-&gt;Event,<sp/>&amp;Event,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(&amp;NewEvent-&gt;Set,<sp/>&amp;Set,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(syseventset));</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EventQueue*<sp/>CurNode<sp/>=<sp/>EventQueue::Top();</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(CurNode-&gt;Next)<sp/>CurNode<sp/>=<sp/>CurNode-&gt;Next;</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurNode-&gt;Next<sp/>=<sp/>NewEvent;</highlight></codeline>
@@ -445,9 +441,9 @@
 <codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneActiveScene-&gt;Scene-&gt;Event(OneActiveScene-&gt;Scene-&gt;GetData(sysmethod_get),<sp/>Event)<sp/>==<sp/>syseventresult_done)</highlight></codeline>
 <codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이벤트는<sp/>독점할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Event.type<sp/>!=<sp/>syseventtype_init);</highlight></codeline>
-<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이벤트는<sp/>독점할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Event.type<sp/>!=<sp/>syseventtype_quit);</highlight></codeline>
-<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이벤트는<sp/>독점할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Event.type<sp/>!=<sp/>syseventtype_resize);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이벤트는<sp/>독점할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Event.type<sp/>!=<sp/>syseventtype_init);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이벤트는<sp/>독점할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Event.type<sp/>!=<sp/>syseventtype_quit);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;해당<sp/>이벤트는<sp/>독점할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Event.type<sp/>!=<sp/>syseventtype_resize);</highlight></codeline>
 <codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((OneActiveScene<sp/>=<sp/>OneActiveScene-&gt;Next)<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(Event.type)</highlight></codeline>
@@ -520,7 +516,7 @@
 <codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__GetActiveSceneRequest__().Next<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>요청실행</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref><sp/>Event;</highlight></codeline>
-<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a26da9f030a69c9db36aa84b0b23c2dd2" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(&amp;Event,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>));</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">BxCore::Util::MemSet</ref>(&amp;Event,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structsysevent" kindref="compound" tooltip="OnEvent()의 이벤트파라미터 ">sysevent</ref>));</highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>ActiveSceneRequestCount<sp/>-<sp/>1;<sp/>0<sp/>&lt;=<sp/>i;<sp/>--i)</highlight></codeline>
 <codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveSceneRequest*<sp/>OneActiveSceneRequest<sp/>=<sp/>OldActiveSceneRequest;</highlight></codeline>
@@ -534,7 +530,7 @@
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>NewActiveScene<sp/>=<sp/>OneActiveSceneRequest-&gt;Data;</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Order<sp/>=<sp/>(0<sp/>&lt;=<sp/>OneActiveSceneRequest-&gt;Option)?<sp/>__GetActiveSceneAllCount__()<sp/>-<sp/>OneActiveSceneRequest-&gt;Option</highlight></codeline>
 <codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>((OneActiveSceneRequest-&gt;Option<sp/>==<sp/>-2)?<sp/>0<sp/>:<sp/>__GetActiveSceneGUICount__());</highlight></codeline>
-<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;추가할<sp/>씬의<sp/>순번이<sp/>너무<sp/>큽니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;=<sp/>Order);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;추가할<sp/>씬의<sp/>순번이<sp/>너무<sp/>큽니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;=<sp/>Order);</highlight></codeline>
 <codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>PrevNewActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
 <codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Order;<sp/>++i)</highlight></codeline>
 <codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PrevNewActiveScene<sp/>=<sp/>PrevNewActiveScene-&gt;Next;</highlight></codeline>
@@ -579,7 +575,7 @@
 <codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>CurActiveScene<sp/>=<sp/>OneActiveSceneRequest-&gt;Data;</highlight></codeline>
 <codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Order<sp/>=<sp/>__GetActiveSceneAllCount__()<sp/>-<sp/>OneActiveSceneRequest-&gt;Option;</highlight></codeline>
-<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxScene&lt;추가할<sp/>씬의<sp/>순번이<sp/>너무<sp/>큽니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;=<sp/>Order);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxScene&lt;추가할<sp/>씬의<sp/>순번이<sp/>너무<sp/>큽니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;=<sp/>Order);</highlight></codeline>
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>PrevSetActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
 <codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Order;<sp/>++i)</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PrevSetActiveScene<sp/>=<sp/>PrevSetActiveScene-&gt;Next;</highlight></codeline>
@@ -657,6 +653,6 @@
 <codeline lineno="568"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
 <codeline lineno="569"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>local_data<sp/>bool<sp/>_Unknown<sp/>=<sp/>BxScene::__Create__(STRING,<sp/>__OnEvent__,<sp/>__OnUpdate__,<sp/>__OnRender__,<sp/>__GetData__);</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxScene.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxScene.hpp"/>
   </compounddef>
 </doxygen>

@@ -3,8 +3,8 @@ defines
 	IW_GXFONT_TTF
 	__S3E_CL_WRAPPER
 	__BX_OPENGL
+	__BX_MEMORY
 	#__BX_PIXEL16
-	#__BX_CALLSTACK
 }
 
 debug_defines
@@ -12,8 +12,7 @@ debug_defines
 	IW_USE_TRACING
 	IW_USE_ASSERTIONS
 	IW_USE_CALLSTACK
-	__BX_DEBUG_MEMORY_DLL
-	__BX_DEBUG_ASSERT_POPUP
+	__BX_DEBUG
 }
 
 includepaths
@@ -128,8 +127,8 @@ deployments
 	caption='Test1'
 	long-caption='Test1'
 	provider='Bonex'
-	version='280'
-	version-string='2.8.0'
+	version='290'
+	version-string='2.9.0'
 	app-icf="data/app.icf"
 	embed-icf=1
 	assets="Data"

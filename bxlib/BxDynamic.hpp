@@ -1,20 +1,20 @@
-#pragma once
+ï»¿#pragma once
 #include <BxCore.hpp>
 #include <BxUtil.hpp>
 #include <BxVarMap.hpp>
 
-//! \brief µ¿Àû°ü¸®
+//! \brief ë™ì ê´€ë¦¬
 namespace BxDynamic
 {
-	//! \brief ¸®¼Ò½º °ü¸®
+	//! \brief ë¦¬ì†ŒìŠ¤ ê´€ë¦¬
 	class Resource
 	{
 		private: class Pool;
 		public: class BindPool;
 		public: class LinkPool;
 
-		// Á÷·ÄÈ­ °ü·Ã ///////////////////////////////////////////////////////////////////////////////
-		// µî·Ï
+		// ì§ë ¬í™” ê´€ë ¨ ///////////////////////////////////////////////////////////////////////////////
+		// ë“±ë¡
 		protected: bool Bind(rsid ID)
 		{
 			if(mBinder) return false;
@@ -23,7 +23,7 @@ namespace BxDynamic
 			((LinkPool*) mBinder->TopLinker())->CallSerialize(bindstate_bind);
 			return true;
 		}
-		// ÀÌ°ü
+		// ì´ê´€
 		protected: bool Entrust(Resource* Res)
 		{
 			if(!mBinder) return false;
@@ -37,22 +37,22 @@ namespace BxDynamic
 			}
 			return true;
 		}
-		// ID¹İÈ¯
+		// IDë°˜í™˜
 		public: rsid GetID()
 		{
 			if(!mBinder) return rsid_null;
 			return mBinder->GetID();
 		}
-		// ID»ı¼º
+		// IDìƒì„±
 		protected: global_func rsid MakeID()
 		{
 			global_data rsid LastID = rsid_temp;
 			return LastID = (rsid)(LastID + (rsid) 1);
 		}
-		// ÀÎÅÍÆäÀÌ½º
+		// ì¸í„°í˜ì´ìŠ¤
 		protected: virtual void OnLoad(id_file File) = 0;
 		protected: virtual void OnSave(id_file File) = 0;
-		// ³»ºÎÇÔ¼ö
+		// ë‚´ë¶€í•¨ìˆ˜
 		public: global_func BindPool* BinderBegin(string CachePoolName)
 		{
 			global_data LinkPool LPool(nullptr);
@@ -62,10 +62,10 @@ namespace BxDynamic
 			return &BPoolMap[CachePoolName];
 		}
 
-		// Ä³½Ã °ü·Ã /////////////////////////////////////////////////////////////////////////////////
+		// ìºì‹œ ê´€ë ¨ /////////////////////////////////////////////////////////////////////////////////
 		public: global_func void SortCachePool(string CachePoolName)
 		{
-			// Á¡ÁøÀû ¼ÒÆÃ(·çÇÁÁ¦ÇÑ:1024)
+			// ì ì§„ì  ì†ŒíŒ…(ë£¨í”„ì œí•œ:1024)
 			BindPool* HeadBinder = BinderBegin(CachePoolName);
 			BindPool* CurBinder = HeadBinder->GetNext();
 			for(int i = 0; i < 1024 && CurBinder != HeadBinder && CurBinder->GetNext() != HeadBinder; ++i)
@@ -78,15 +78,15 @@ namespace BxDynamic
 		}
 		protected: void AllocCache(int BufferSize, int UsingCacheSize)
 		{
-			BxAssert("BxDynamic::Resource<ÀÌ¹Ì ÇÒ´çµÈ ¹öÆÛ°¡ Á¸ÀçÇÕ´Ï´Ù>", mBuffer == nullptr);
+			BxASSERT("BxDynamic::Resource<ì´ë¯¸ í• ë‹¹ëœ ë²„í¼ê°€ ì¡´ì¬í•©ë‹ˆë‹¤>", mBuffer == nullptr);
 			const int CachePoolSize = GetCachePoolSize(GetCachePoolName());
 			int CachePoolUsed = GetCachePoolUsed(GetCachePoolName());
-			// È®º¸
+			// í™•ë³´
 			BindPool* HeadBinder = BinderBegin(GetCachePoolName());
 			BindPool* CurBinder = HeadBinder->GetNext();
 			while(CachePoolSize < CachePoolUsed + UsingCacheSize || !(mBuffer = (byte*) BxAlloc(BufferSize)))
 			{
-				BxAssert("BxDynamic::Resource<°ü·ÃµÈ ¸ğµç Ä³½Ã¸¦ ºñ¿üÁö¸¸ ¹öÆÛ ÇÒ´ç¿¡ ½ÇÆĞÇÏ¿´½À´Ï´Ù>", CurBinder != HeadBinder);
+				BxASSERT("BxDynamic::Resource<ê´€ë ¨ëœ ëª¨ë“  ìºì‹œë¥¼ ë¹„ì› ì§€ë§Œ ë²„í¼ í• ë‹¹ì— ì‹¤íŒ¨í•˜ì˜€ìŠµë‹ˆë‹¤>", CurBinder != HeadBinder);
 				Resource* CurResource = CurBinder->GetData();
 				if(CurResource->mBuffer && CurResource->mLockCount == 0)
 				{
@@ -113,27 +113,27 @@ namespace BxDynamic
 		}
 		protected: int UnlockCache()
 		{
-			BxAssert("BxDynamic::Resource<LockCount¸¦ ÃÊ°úÇÑ UnlockÀÔ´Ï´Ù>", 0 < mLockCount);
+			BxASSERT("BxDynamic::Resource<LockCountë¥¼ ì´ˆê³¼í•œ Unlockì…ë‹ˆë‹¤>", 0 < mLockCount);
 			return --mLockCount;
 		}
 		protected: void UpdateCache()
 		{
-			BxAssert("BxDynamic::Resource<µî·ÏµÇÁö ¾ÊÀº Ä³½ÃÀÔ´Ï´Ù>", mBinder != nullptr);
-			// ¹öÆÛ°¡ Á¸ÀçÇÏÁö ¾ÊÀ¸¸é ÀÛ¾÷Ãë¼Ò
+			BxASSERT("BxDynamic::Resource<ë“±ë¡ë˜ì§€ ì•Šì€ ìºì‹œì…ë‹ˆë‹¤>", mBinder != nullptr);
+			// ë²„í¼ê°€ ì¡´ì¬í•˜ì§€ ì•Šìœ¼ë©´ ì‘ì—…ì·¨ì†Œ
 			if(!mBuffer) return;
-			// ½ºÄÚ¾î°»½Å
+			// ìŠ¤ì½”ì–´ê°±ì‹ 
 			mCacheScore = GetCacheScore(BxCore::Main::GetCurrentRenderCount(), mUsedCacheSize);
 			BindPool* HeadBinder = BinderBegin(GetCachePoolName());
-			// ÀÌ¹Ì ¿Ã¶ó°¥ »óÀ§½ºÄÚ¾î°¡ ¾øÀ¸¸é ¸®ÅÏ
+			// ì´ë¯¸ ì˜¬ë¼ê°ˆ ìƒìœ„ìŠ¤ì½”ì–´ê°€ ì—†ìœ¼ë©´ ë¦¬í„´
 			if(HeadBinder->GetPrev() == mBinder) return;
-			// ÃàÃâÈÄ ³¡»ğÀÔ
+			// ì¶•ì¶œí›„ ëì‚½ì…
 			HeadBinder->GetPrev()->Add(mBinder->Sub());
 		}
-		// ÀÎÅÍÆäÀÌ½º
+		// ì¸í„°í˜ì´ìŠ¤
 		public: virtual string _tmp_ GetCachePoolName() = 0;
 		protected: virtual int GetCacheScore(int FrameTime, int CacheSize) = 0;
 		protected: virtual void OnPreRemoveCache() = 0;
-		// ³»ºÎÇÔ¼ö
+		// ë‚´ë¶€í•¨ìˆ˜
 		protected: global_func int GetCachePoolSize(string CachePoolName)
 		{
 			global_data BxVarMap<int> CachePoolSizeMap;
@@ -156,17 +156,17 @@ namespace BxDynamic
 			return AdjustCachePoolUsed(CachePoolName, 0);
 		}
 
-		// »ı¼ºÀÚ & ¼Ò¸êÀÚ ///////////////////////////////////////////////////////////////////////////
+		// ìƒì„±ì & ì†Œë©¸ì ///////////////////////////////////////////////////////////////////////////
 		protected: Resource() : mBinder(nullptr), mBuffer(nullptr), mCacheScore(0), mUsedCacheSize(0), mLockCount(0) {}
 		public: virtual ~Resource() {Entrust(nullptr); FreeCacheManually();}
-		// ¸â¹öº¯¼ö
+		// ë©¤ë²„ë³€ìˆ˜
 		private: BindPool* mBinder;
 		private: byte* mBuffer;
 		private: int mCacheScore;
 		private: int mUsedCacheSize;
 		private: int mLockCount;
 
-		// Ç®°ü¸® ////////////////////////////////////////////////////////////////////////////////////
+		// í’€ê´€ë¦¬ ////////////////////////////////////////////////////////////////////////////////////
 		private: class Pool
 		{
 			protected: Pool* Prev; // MemberData
@@ -215,7 +215,7 @@ namespace BxDynamic
 			}
 		};
 
-		// ¹ÙÀÎµåÇ®°ü¸® //////////////////////////////////////////////////////////////////////////////
+		// ë°”ì¸ë“œí’€ê´€ë¦¬ //////////////////////////////////////////////////////////////////////////////
 		public: class BindPool : public Pool
 		{
 			friend class LinkPool;
@@ -229,7 +229,7 @@ namespace BxDynamic
 			private: virtual Pool* New(Pool* TopChild) {return BxNew_Param(BindPool, TopChild);}
 			private: virtual void Delete() {Pool* Temp = this; BxDelete(Temp);}
 			private: virtual bool IsSame(void* Key) {return (Key == (void*) ParamID);}
-			// °ø°³ÇÔ¼ö
+			// ê³µê°œí•¨ìˆ˜
 			public: void ResetData(Resource* Data = nullptr) {ParamData = Data;}
 			public: BindPool* FindBinder(rsid ID)
 			{
@@ -250,7 +250,7 @@ namespace BxDynamic
 			public: BindPool* GetNext() {return (BindPool*) Next;}
 		};
 
-		// ¸µÅ©Ç®°ü¸® ////////////////////////////////////////////////////////////////////////////////
+		// ë§í¬í’€ê´€ë¦¬ ////////////////////////////////////////////////////////////////////////////////
 		public: class LinkPool : public Pool
 		{
 			friend BindPool* Resource::BinderBegin(string CachePoolName);
@@ -262,7 +262,7 @@ namespace BxDynamic
 			private: virtual Pool* New(Pool* Parent) {return BxNew_Param(LinkPool, (BindPool*) Parent);}
 			private: virtual void Delete() {Pool* Temp = this; BxDelete(Temp);}
 			private: virtual bool IsSame(void* Key) {return (this == (LinkPool*) Key);}
-			// °ø°³ÇÔ¼ö
+			// ê³µê°œí•¨ìˆ˜
 			public: void ResetData(callback_serialize CB = nullptr, string Comment = nullptr)
 			{
 				ParamCB = CB;
@@ -295,11 +295,11 @@ namespace BxDynamic
 		};
 	};
 
-	//! \brief Á÷·ÄÈ­ °ü¸®
+	//! \brief ì§ë ¬í™” ê´€ë¦¬
 	template<typename TYPE>
 	class Serialize
 	{
-		// ¿¬°á
+		// ì—°ê²°
 		public: bool Link(rsid ID, callback_serialize CB = nullptr, string Comment = nullptr)
 		{
 			if(Linker) return false;
@@ -307,32 +307,32 @@ namespace BxDynamic
 			Linker->ResetData(CB, Comment);
 			return true;
 		}
-		// Á¢±Ù
+		// ì ‘ê·¼
 		public: TYPE* Access()
 		{
 			if(!Linker) return nullptr;
 			return (TYPE*) Linker->GetResource();
 		}
-		// ÆÄÀÏ·Îµå
+		// íŒŒì¼ë¡œë“œ
 		public: rsid Load(id_file File)
 		{
 			uhuge ID = (uhuge) rsid_null;
 			BxCore::File::Read(File, &ID, 8);
 			return (rsid) ID;
 		}
-		// ÆÄÀÏ¼¼ÀÌºê
+		// íŒŒì¼ì„¸ì´ë¸Œ
 		public: void Save(id_file File)
 		{
 			uhuge ID = (uhuge) rsid_null;
 			if(Linker) ID = (uhuge) Linker->GetID();
 			BxCore::File::Write(File, &ID, 8);
 		}
-		// »ı¼ºÀÚ & ¼Ò¸êÀÚ
+		// ìƒì„±ì & ì†Œë©¸ì
 		public: Serialize() : Linker(nullptr) {}
 		public: ~Serialize() {if(Linker) Linker->Remove();}
-		// ¸â¹öº¯¼ö
+		// ë©¤ë²„ë³€ìˆ˜
 		private: Resource::LinkPool* Linker;
-		// ³»ºÎÇÔ¼ö
+		// ë‚´ë¶€í•¨ìˆ˜
 		private: global_func Resource* GetClass() {global_data TYPE Class; return &Class;}
 	};
 }

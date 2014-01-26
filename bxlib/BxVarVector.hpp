@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <BxMemory.hpp>
 #include <BxUtil.hpp>
 
@@ -12,7 +12,7 @@
 #define FINAL ((int) 0xDFFFFFFF)
 #endif
 
-//! \brief vector½Ä °¡º¯¹è¿­ Á¦°ø(BxVar¿Í µ¿ÀÏÀÎÅÍÆäÀÌ½º)
+//! \brief vectorì‹ ê°€ë³€ë°°ì—´ ì œê³µ(BxVarì™€ ë™ì¼ì¸í„°í˜ì´ìŠ¤)
 template<typename TYPE, int UNITSIZE>
 class BxVarVector
 {
@@ -20,7 +20,7 @@ public:
 	enum Parameter {AutoCreate = 0, NoNeed = 0};
 	enum Type {LengthOfRange, LengthOfCount};
 
-	// µ¥ÀÌÅÍÇÒ´ç
+	// ë°ì´í„°í• ë‹¹
 	inline TYPE& operator[](int index)
 	{
 		CalcIndex(index);
@@ -37,7 +37,7 @@ public:
 		return *Unit[index];
 	}
 
-	// µ¥ÀÌÅÍÁ¢±Ù
+	// ë°ì´í„°ì ‘ê·¼
 	inline TYPE* Access(int index) const
 	{
 		CalcIndex(index);
@@ -45,7 +45,7 @@ public:
 		return Unit[index];
 	}
 
-	// µ¥ÀÌÅÍ±æÀÌ
+	// ë°ì´í„°ê¸¸ì´
 	inline const int Length(Type type = LengthOfRange) const
 	{
 		if(type == LengthOfRange)
@@ -53,7 +53,7 @@ public:
 		return Count;
 	}
 
-	// ÀüÃ¼ÃÊ±âÈ­
+	// ì „ì²´ì´ˆê¸°í™”
 	void Reset(const bool doRemove = true)
 	{
 		for(int i = 0; i < Size; ++i)
@@ -66,7 +66,7 @@ public:
 		BytesUpdated = false;
 	}
 
-	// ¸®½ºÆ®»ğÀÔ
+	// ë¦¬ìŠ¤íŠ¸ì‚½ì…
 	inline TYPE& Insert(int index, TYPE* newData = (TYPE*) AutoCreate)
 	{
 		CalcIndex(index);
@@ -75,7 +75,7 @@ public:
 		else
 		{
 			ValidIndex(Size);
-			BxCore::Util::MemMove(&Unit[index + 1], &Unit[index], sizeof(TYPE*) * (Size - index));
+			BxCore::Util::MemCpy(&Unit[index + 1], &Unit[index], sizeof(TYPE*) * (Size - index));
 		}
 		Unit[index] = (newData)? newData : new TYPE;
 		if(!newData && IsTypePointer<TYPE>())
@@ -88,7 +88,7 @@ public:
 		return *Unit[index];
 	}
 
-	// ¸®½ºÆ®»èÁ¦
+	// ë¦¬ìŠ¤íŠ¸ì‚­ì œ
 	void Delete(int index, TYPE** oldData = (TYPE**) NoNeed)
 	{
 		CalcIndex(index);
@@ -98,14 +98,14 @@ public:
 		else delete Unit[index];
 		if(index < --Size)
 		{
-			BxCore::Util::MemMove(&Unit[index], &Unit[index + 1], sizeof(TYPE*) * (Size - index));
+			BxCore::Util::MemCpy(&Unit[index], &Unit[index + 1], sizeof(TYPE*) * (Size - index));
 			Unit[index + (Size - index)] = nullptr;
 		}
 		else Unit[index] = nullptr;
 		BytesUpdated = false;
 	}
 
-	// µ¥ÀÌÅÍ¼öÁ¤
+	// ë°ì´í„°ìˆ˜ì •
 	bool ModifyData(int index, TYPE* newData = (TYPE*) AutoCreate, TYPE** oldData = (TYPE**) NoNeed)
 	{
 		CalcIndex(index);
@@ -120,7 +120,7 @@ public:
 		return true;
 	}
 
-	// µ¥ÀÌÅÍÁö¿ò
+	// ë°ì´í„°ì§€ì›€
 	bool RemoveData(int index, TYPE** oldData = (TYPE**) NoNeed)
 	{
 		CalcIndex(index);
@@ -133,7 +133,7 @@ public:
 		return true;
 	}
 
-	// µ¥ÀÌÅÍ±³Ã¼
+	// ë°ì´í„°êµì²´
 	inline void SwapData(int index1, int index2)
 	{
 		TYPE* Data1 = Access(index1);
@@ -146,7 +146,7 @@ public:
 		else RemoveData(index1, &NoDelete);
 	}
 
-	// µ¥ÀÌÅÍÁ÷·ÄÈ­
+	// ë°ì´í„°ì§ë ¬í™”
 	const byte* GetBytes()
 	{
 		if(!BytesUpdated)
@@ -158,7 +158,7 @@ public:
 				for(int i = 0; i < Size; ++i)
 				{
 					TYPE* Data = Access(i);
-					if(Data) BxCore::Util::MemMove(&BytesData[i], Data, sizeof(TYPE));
+					if(Data) BxCore::Util::MemCpy(&BytesData[i], Data, sizeof(TYPE));
 					else BxCore::Util::MemSet(&BytesData[i], 0, sizeof(TYPE));
 				}
 			}
@@ -167,7 +167,7 @@ public:
 		return (const byte*) BytesData;
 	}
 
-	// µ¥ÀÌÅÍÁ÷·ÄÈ­ ÇØÁ¦
+	// ë°ì´í„°ì§ë ¬í™” í•´ì œ
 	inline void ReleaseBytes()
 	{
 		delete[] BytesData;
@@ -175,7 +175,7 @@ public:
 		BytesUpdated = false;
 	}
 
-	// µ¥ÀÌÅÍº¹Á¦
+	// ë°ì´í„°ë³µì œ
 	BxVarVector& operator=(BxVarVector& RHS)
 	{
 		Reset();
@@ -188,7 +188,7 @@ public:
 		return *this;
 	}
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	BxVarVector() : BytesUpdated(false), BytesData(nullptr)
 	{
 		UnitSize = UNITSIZE;
@@ -197,7 +197,7 @@ public:
 		Size = 0;
 		Count = 0;
 	}
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	BxVarVector(const BxVarVector& RHS) : BytesUpdated(false), BytesData(nullptr)
 	{
 		UnitSize = UNITSIZE;
@@ -207,7 +207,7 @@ public:
 		Count = 0;
 		operator=(RHS);
 	}
-	// ¼Ò¸êÀÚ
+	// ì†Œë©¸ì
 	virtual ~BxVarVector()
 	{
 		ReleaseBytes();
@@ -230,14 +230,14 @@ private:
 			if(index == FINAL) index = (0 < Size)? Size - 1 : 0;
 			else index = index - END + Size - 1;
 		}
-		BxAssert("BxVarVector", 0 <= index);
+		BxASSERT("BxVarVector", 0 <= index);
 	}
 	void ValidIndex(const int index)
 	{
 		if(index < UnitSize) return;
 		const int NewUnitSize = BxUtilGlobal::Max(UnitSize + UNITSIZE, (index + 1 + UNITSIZE - 1) / UNITSIZE * UNITSIZE);
 		TYPE** NewUnit = (TYPE**) BxAlloc(sizeof(TYPE*) * NewUnitSize);
-		BxCore::Util::MemMove(NewUnit, Unit, sizeof(TYPE*) * UnitSize);
+		BxCore::Util::MemCpy(NewUnit, Unit, sizeof(TYPE*) * UnitSize);
 		BxCore::Util::MemSet(NewUnit + UnitSize, 0, sizeof(TYPE*) * (NewUnitSize - UnitSize));
 		UnitSize = NewUnitSize;
 		BxFree(Unit);

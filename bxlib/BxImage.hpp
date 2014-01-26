@@ -1,7 +1,7 @@
-#pragma once
+ï»¿#pragma once
 #include <BxDraw.hpp>
 
-//! \brief ÀÌ¹ÌÁö ¿î¿µ
+//! \brief ì´ë¯¸ì§€ ìš´ì˜
 class BxImage : public BxDrawForm
 {
 public:
@@ -17,21 +17,21 @@ protected:
 
 public:
 	/*!
-	\brief ±âº»»ı¼ºÀÚ
+	\brief ê¸°ë³¸ìƒì„±ì
 	*/
 	BxImage() {Bits = nullptr;}
 
 	/*!
-	\brief ¼Ò¸êÀÚ
+	\brief ì†Œë©¸ì
 	*/
 	virtual ~BxImage() {Release();}
 
 	/*!
-	\brief ÀÌ¹ÌÁö ·Îµå
-	\param Resource : ¸Ş¸ğ¸®¸®¼Ò½º
-	\param Length : ¸Ş¸ğ¸®¸®¼Ò½ºÀÇ ¹ÙÀÌÆ®±æÀÌ
-	\param Type : ¸®¼Ò½ºÅ¸ÀÔ(BMP, B16, B32, PNG, JPG, GIF)
-	\return ·Îµù¼º°ø¿©ºÎ
+	\brief ì´ë¯¸ì§€ ë¡œë“œ
+	\param Resource : ë©”ëª¨ë¦¬ë¦¬ì†ŒìŠ¤
+	\param Length : ë©”ëª¨ë¦¬ë¦¬ì†ŒìŠ¤ì˜ ë°”ì´íŠ¸ê¸¸ì´
+	\param Type : ë¦¬ì†ŒìŠ¤íƒ€ì…(BMP, B16, B32, PNG, JPG, GIF)
+	\return ë¡œë”©ì„±ê³µì—¬ë¶€
 	*/
 	bool Load(const byte* Resource, const int Length, type Type)
 	{
@@ -55,10 +55,10 @@ public:
 	}
 
 	/*!
-	\brief ÀÌ¹ÌÁö ·Îµå
-	\param FileName : ÆÄÀÏ¸í
-	\param Type : ¸®¼Ò½ºÅ¸ÀÔ(BMP, B16, B32, PNG, JPG, GIF)
-	\return ·Îµù¼º°ø¿©ºÎ
+	\brief ì´ë¯¸ì§€ ë¡œë“œ
+	\param FileName : íŒŒì¼ëª…
+	\param Type : ë¦¬ì†ŒìŠ¤íƒ€ì…(BMP, B16, B32, PNG, JPG, GIF)
+	\return ë¡œë”©ì„±ê³µì—¬ë¶€
 	*/
 	bool Load(string FileName, type Type)
 	{
@@ -86,15 +86,15 @@ public:
 	}
 
 	/*!
-	\brief ÀÌ¹ÌÁö ºÎºĞ·Îµå
-	\param FileName : ÆÄÀÏ¸í
-	\param Type : ¸®¼Ò½ºÅ¸ÀÔ(BMP, B16, B32, PNG, JPG, GIF)
-	\param X : Àß¶ó³¾ À§Ä¡X
-	\param Y : Àß¶ó³¾ À§Ä¡Y
-	\param Width : Àß¶ó³¾ ³Êºñ
-	\param Height : Àß¶ó³¾ ³ôÀÌ
-	\param Hotspot : ÃÊ±âÁßÁ¡(NumPad¹æ½Ä)
-	\return ·Îµù¼º°ø¿©ºÎ
+	\brief ì´ë¯¸ì§€ ë¶€ë¶„ë¡œë“œ
+	\param FileName : íŒŒì¼ëª…
+	\param Type : ë¦¬ì†ŒìŠ¤íƒ€ì…(BMP, B16, B32, PNG, JPG, GIF)
+	\param X : ì˜ë¼ë‚¼ ìœ„ì¹˜X
+	\param Y : ì˜ë¼ë‚¼ ìœ„ì¹˜Y
+	\param Width : ì˜ë¼ë‚¼ ë„ˆë¹„
+	\param Height : ì˜ë¼ë‚¼ ë†’ì´
+	\param Hotspot : ì´ˆê¸°ì¤‘ì (NumPadë°©ì‹)
+	\return ë¡œë”©ì„±ê³µì—¬ë¶€
 	*/
 	bool Load(string FileName, type Type, const int X, const int Y, const int Width, const int Height, hotspot Hotspot = PAD7)
 	{
@@ -106,8 +106,8 @@ public:
 	}
 
 	/*!
-	\brief ÀÌ¹ÌÁö Á¸Àç¿©ºÎ
-	\return Á¸Àç¿©ºÎ
+	\brief ì´ë¯¸ì§€ ì¡´ì¬ì—¬ë¶€
+	\return ì¡´ì¬ì—¬ë¶€
 	\see Load, Create
 	*/
 	bool IsExist()
@@ -120,11 +120,11 @@ public:
 	}
 
 	/*!
-	\brief ºó ÀÌ¹ÌÁö »ı¼º
-	\param Width : »ı¼º³¾ ³Êºñ
-	\param Height : »ı¼º³¾ ³ôÀÌ
-	\param HotspotX : ÁßÁ¡X
-	\param HotspotY : ÁßÁ¡Y
+	\brief ë¹ˆ ì´ë¯¸ì§€ ìƒì„±
+	\param Width : ìƒì„±ë‚¼ ë„ˆë¹„
+	\param Height : ìƒì„±ë‚¼ ë†’ì´
+	\param HotspotX : ì¤‘ì X
+	\param HotspotY : ì¤‘ì Y
 	*/
 	void Create(const int Width, const int Height, const int HotspotX, const int HotspotY)
 	{
@@ -152,13 +152,13 @@ public:
 	}
 
 	/*!
-	\brief º¹»ç½Ä ÀÌ¹ÌÁö »ı¼º
-	\param Src : ¼Ò½ºÀÌ¹ÌÁö
-	\param X : º¹»çÇÒ À§Ä¡X
-	\param Y : º¹»çÇÒ À§Ä¡Y
-	\param Width : º¹»çÇÒ ³Êºñ
-	\param Height : º¹»çÇÒ ³ôÀÌ
-	\param Hotspot : ÃÊ±âÁßÁ¡(NumPad¹æ½Ä)
+	\brief ë³µì‚¬ì‹ ì´ë¯¸ì§€ ìƒì„±
+	\param Src : ì†ŒìŠ¤ì´ë¯¸ì§€
+	\param X : ë³µì‚¬í•  ìœ„ì¹˜X
+	\param Y : ë³µì‚¬í•  ìœ„ì¹˜Y
+	\param Width : ë³µì‚¬í•  ë„ˆë¹„
+	\param Height : ë³µì‚¬í•  ë†’ì´
+	\param Hotspot : ì´ˆê¸°ì¤‘ì (NumPadë°©ì‹)
 	*/
 	void Create(BxImage& Src, const int X, const int Y, const int Width, const int Height, hotspot Hotspot = PAD7)
 	{
@@ -181,7 +181,7 @@ public:
 	}
 
 	/*!
-	\brief ÀÌ¹ÌÁö Á¦°Å
+	\brief ì´ë¯¸ì§€ ì œê±°
 	\see Load, Create
 	*/
 	void Release()
@@ -197,14 +197,14 @@ public:
 	}
 
 	/*!
-	\brief ÀÌ¹ÌÁöº¹»ç
-	\param X : º¹»çµÉ À§Ä¡X
-	\param Y : º¹»çµÉ À§Ä¡Y
-	\param Src : ¼Ò½ºÀÌ¹ÌÁö
-	\param SrcX : º¹»çÇÒ ¼Ò½ºÀ§Ä¡X
-	\param SrcY : º¹»çÇÒ ¼Ò½ºÀ§Ä¡Y
-	\param SrcWidth : º¹»çÇÒ ¼Ò½º³Êºñ
-	\param SrcHeight : º¹»çÇÒ ¼Ò½º³ôÀÌ
+	\brief ì´ë¯¸ì§€ë³µì‚¬
+	\param X : ë³µì‚¬ë  ìœ„ì¹˜X
+	\param Y : ë³µì‚¬ë  ìœ„ì¹˜Y
+	\param Src : ì†ŒìŠ¤ì´ë¯¸ì§€
+	\param SrcX : ë³µì‚¬í•  ì†ŒìŠ¤ìœ„ì¹˜X
+	\param SrcY : ë³µì‚¬í•  ì†ŒìŠ¤ìœ„ì¹˜Y
+	\param SrcWidth : ë³µì‚¬í•  ì†ŒìŠ¤ë„ˆë¹„
+	\param SrcHeight : ë³µì‚¬í•  ì†ŒìŠ¤ë†’ì´
 	*/
 	void CopyFrom(int X, int Y, BxImage& Src, int SrcX, int SrcY, const int SrcWidth, const int SrcHeight)
 	{
@@ -224,14 +224,14 @@ public:
 		const int AreaWidthSrc = BxDrawForm::CalcTextureSize(Src.Area.w);
 		const int CopyLength = sizeof(pixel_src) * (SrcX2 - SrcX);
 		for(int y = Y, srcy = SrcY; srcy < SrcY2; ++y, ++srcy)
-			BxCore::Util::MemMove(&Bits[X + y * AreaWidth], &Src.Bits[SrcX + srcy * AreaWidthSrc], CopyLength);
+			BxCore::Util::MemCpy(&Bits[X + y * AreaWidth], &Src.Bits[SrcX + srcy * AreaWidthSrc], CopyLength);
 	}
 
 	/*!
-	\brief Æû¸ğµâ¿ë Äİ¹éÇÔ¼ö ¾ò±â
-	\param operate : ¸¶½ºÅ©Á¶°Ç
-	\param flag : ¾²ÀÏ ¸¶½ºÅ©±âÈ£
-	\return Æû¸ğµâ¿ë Äİ¹éÇÔ¼ö
+	\brief í¼ëª¨ë“ˆìš© ì½œë°±í•¨ìˆ˜ ì–»ê¸°
+	\param operate : ë§ˆìŠ¤í¬ì¡°ê±´
+	\param flag : ì“°ì¼ ë§ˆìŠ¤í¬ê¸°í˜¸
+	\return í¼ëª¨ë“ˆìš© ì½œë°±í•¨ìˆ˜
 	*/
 	virtual OnFormMethod GetFormMethod(maskoperate operate, maskflag flag)
 	{
@@ -364,7 +364,7 @@ protected:
 		const int TextureRow = WidthByMargin;
 		const int TextureMargin = BxCore::OpenGL2D::GetTextureMargin() + TextureRow * BxCore::OpenGL2D::GetTextureMargin();
 		const int BitsRow = BxDrawForm::CalcTextureSize(Width());
-		// ¸¶Áø°í·Á º¹»ç
+		// ë§ˆì§„ê³ ë ¤ ë³µì‚¬
 		for(int y = 0; y < Height(); ++y)
 		for(int x = 0; x < Width(); ++x)
 		{
@@ -376,7 +376,7 @@ protected:
 			#endif
 		}
 		BxDelete_Array(Bits);
-		// Åõ¸íÇÈ¼¿ º¸°£
+		// íˆ¬ëª…í”½ì…€ ë³´ê°„
 		if(BxCore::OpenGL2D::DoTextureInterpolation())
 		{
 			const color_a888 MaskPixel = 0x00F8F8F8;
@@ -432,12 +432,12 @@ protected:
 		if(BxUtilGlobal::LoadUint32(ResourcePtr) != *((uint*) "BxBM"))
 			return false;
 
-		// FILEHEADER/INFOHEADER/PALETTE ·Îµå
+		// FILEHEADER/INFOHEADER/PALETTE ë¡œë“œ
 		color_bgra BitmapPalette[256] = {{0,},};
 		BITMAPFILEHEADER BitmapFileHeader;
 		BITMAPINFOHEADER BitmapInfoHeader;
-		BxCore::Util::MemMove(&BitmapFileHeader, BxUtilGlobal::LoadType(ResourcePtr, sizeof(BITMAPFILEHEADER)), sizeof(BITMAPFILEHEADER));
-		BxCore::Util::MemMove(&BitmapInfoHeader, BxUtilGlobal::LoadType(ResourcePtr, sizeof(BITMAPINFOHEADER)), sizeof(BITMAPINFOHEADER));
+		BxCore::Util::MemCpy(&BitmapFileHeader, BxUtilGlobal::LoadType(ResourcePtr, sizeof(BITMAPFILEHEADER)), sizeof(BITMAPFILEHEADER));
+		BxCore::Util::MemCpy(&BitmapInfoHeader, BxUtilGlobal::LoadType(ResourcePtr, sizeof(BITMAPINFOHEADER)), sizeof(BITMAPINFOHEADER));
 		if(0 < BitmapInfoHeader.ClrUsed)
 			BxUtilGlobal::LoadBytes(ResourcePtr, BitmapPalette, BitmapInfoHeader.ClrUsed * sizeof(color_bgra));
 		else if(0 < BitmapFileHeader.OffBits - 54)
@@ -446,7 +446,7 @@ protected:
 			BxUtilGlobal::LoadBytes(ResourcePtr, BitmapPalette, BitmapFileHeader.OffBits - 54);
 		}
 
-		// PALETTE ¿À·ù±Øº¹
+		// PALETTE ì˜¤ë¥˜ê·¹ë³µ
 		if(BitmapInfoHeader.ClrUsed == 0 && BitmapInfoHeader.BitCount < 8)
 		{
 			switch(BitmapInfoHeader.BitCount)
@@ -474,7 +474,7 @@ protected:
 			}
 		}
 
-		// PIXEL ·Îµå
+		// PIXEL ë¡œë“œ
 		if(0 < BitmapInfoHeader.Width && 0 < BitmapInfoHeader.Height)
 		{
 			const int RowLength = (((BitmapInfoHeader.Width * BitmapInfoHeader.BitCount + 7) / 8 + 3) & ~3);
@@ -662,7 +662,7 @@ public:
 				DeleteResource();
 		}
 
-		// PNG¸Ş¸ğ¸®¸¦ BMP¸Ş¸ğ¸®·Î º¯È¯ÇÔ
+		// PNGë©”ëª¨ë¦¬ë¥¼ BMPë©”ëª¨ë¦¬ë¡œ ë³€í™˜í•¨
 		byte* GetResource(const byte* pngsource, bool ismust32 = false)
 		{
 			DeleteResource();
@@ -674,7 +674,7 @@ public:
 			byte* BMPPaletteAlpha = nullptr;
 			uint ChunkName = 0;
 
-			// IHDR Ã»Å©
+			// IHDR ì²­í¬
 			while(ChunkName != 0x49484452)
 			{
 				PNGByteOffset = NextByteOffset;
@@ -686,16 +686,16 @@ public:
 			uint ImageHeight = (uint) GetUInt32();
 			uint ImageDepth = (uint) GetByte();
 			uint ImageColorType = (uint) GetByte();
-			GetByte(); GetByte(); // Compression Method, Filter Method »ı·«
+			GetByte(); GetByte(); // Compression Method, Filter Method ìƒëµ
 
-			// MGSPngÅ¬·¡½º´Â ÀÎÅÍ·¹ÀÌ½º¸¦ Áö¿øÇÏÁö ¾Ê´Â´Ù
+			// MGSPngí´ë˜ìŠ¤ëŠ” ì¸í„°ë ˆì´ìŠ¤ë¥¼ ì§€ì›í•˜ì§€ ì•ŠëŠ”ë‹¤
 			if(0 < GetByte())
 			{
-				BxAssert("BxImage<ÀÎÅÍ·¹ÀÌ½º°¡ µé¾î°£ PNG´Â Áö¿øÇÏÁö ¾Ê½À´Ï´Ù>", false);
+				BxASSERT("BxImage<ì¸í„°ë ˆì´ìŠ¤ê°€ ë“¤ì–´ê°„ PNGëŠ” ì§€ì›í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", false);
 				return nullptr;
 			}
 
-			// PLTE Ã»Å©
+			// PLTE ì²­í¬
 			uint PaletteSize = 0;
 			while(ChunkName != 0x504c5445)
 			{
@@ -715,7 +715,7 @@ public:
 					BMPPalette[p] = GetByte();
 			}
 
-			// tRNS Ã»Å©
+			// tRNS ì²­í¬
 			uint TransparencySize = 0;
 			while(ChunkName != 0x74524e53)
 			{
@@ -735,7 +735,7 @@ public:
 					BMPPaletteAlpha[a] = GetByte();
 			}
 
-			// ºñÆ®¸Ê±¸¼º
+			// ë¹„íŠ¸ë§µêµ¬ì„±
 			ushort BytePerPixel = (ImageColorType == 4 || ImageColorType == 6 || (ImageColorType == 3 && 0 < TransparencySize) || ismust32)? 4 : 3;
 			uint BMPDataWidth = (ImageWidth * BytePerPixel + 3) & ~3;
 			BMPSize = 56 + ImageHeight * BMPDataWidth;
@@ -743,7 +743,7 @@ public:
 			BxCore::Util::MemSet(BMPData, 0xff, BMPSize);
 			SetBMPInfo(BMPData, ImageWidth, ImageHeight, BytePerPixel);
 
-			// IDAT Ã»Å©
+			// IDAT ì²­í¬
 			while(ChunkName != 0x49444154)
 			{
 				PNGByteOffset = NextByteOffset;
@@ -751,22 +751,22 @@ public:
 				ChunkName = GetUInt32();
 			}
 
-			// LZWindowÀ©µµ¿ì ¸¸µé±â
+			// LZWindowìœˆë„ìš° ë§Œë“¤ê¸°
 			LZWindowPos = CopyPos = CopyCount = 0;
-			LZWindowSize = 1 << ((GetByte() >> 4) + 8); // Compression Method »ı·«
+			LZWindowSize = 1 << ((GetByte() >> 4) + 8); // Compression Method ìƒëµ
 			LZWindow = BxNew_Array(byte, LZWindowSize);
-			GetByte(); // Compression Level, Preset Dictionary »ı·«
+			GetByte(); // Compression Level, Preset Dictionary ìƒëµ
 
-			// µğÄÚµùµÈ ÇÈ¼¿Á¤º¸ ÀÓ½ÃÀúÀå¼Ò
+			// ë””ì½”ë”©ëœ í”½ì…€ì •ë³´ ì„ì‹œì €ì¥ì†Œ
 			uint RowBufferWidth = 0, FilterOffset = 0;
 			switch(ImageColorType)
 			{
-			case 0: // Èæ¹é
-			case 3: // ÆÈ·¹Æ®
+			case 0: // í‘ë°±
+			case 3: // íŒ”ë ˆíŠ¸
 				RowBufferWidth = ((ImageWidth * ImageDepth) + 7) / 8;
 				FilterOffset = 1;
 				break;
-			case 4: // Åõ¸íÈæ¹é
+			case 4: // íˆ¬ëª…í‘ë°±
 				RowBufferWidth = 2 * ImageWidth * ImageDepth / 8;
 				FilterOffset = 2 * ImageDepth / 8;
 				break;
@@ -774,7 +774,7 @@ public:
 				RowBufferWidth = 3 * ImageWidth * ImageDepth / 8;
 				FilterOffset = 3 * ImageDepth / 8;
 				break;
-			case 6: // Åõ¸íRGB
+			case 6: // íˆ¬ëª…RGB
 				RowBufferWidth = 4 * ImageWidth * ImageDepth / 8;
 				FilterOffset = 4 * ImageDepth / 8;
 				break;
@@ -785,10 +785,10 @@ public:
 			BxCore::Util::MemSet(RowBuffers[0], 0x00, RowBufferWidth);
 			BxCore::Util::MemSet(RowBuffers[1], 0x00, RowBufferWidth);
 
-			// Ã¹ ºí·°Çì´õ µğÄÚµù
+			// ì²« ë¸”ëŸ­í—¤ë” ë””ì½”ë”©
 			DecodeBlockHeader();
 
-			// Çà´ÜÀ§ µğÄÚµù
+			// í–‰ë‹¨ìœ„ ë””ì½”ë”©
 			int RowBufferFocus = 0;
 			for(uint y = 0; y < ImageHeight; ++y)
 			{
@@ -796,28 +796,28 @@ public:
 				for(uint x = 0; x < RowBufferWidth; ++x)
 					RowBuffers[RowBufferFocus][x] = DecodeByte();
 
-				// ÇÊÅÍºĞ¼®
+				// í•„í„°ë¶„ì„
 				uint Col;
 				switch(Filter)
 				{
-				case 1: // SubÇÊÅÍ
+				case 1: // Subí•„í„°
 					for(Col = FilterOffset; Col < RowBufferWidth; ++Col)
 						RowBuffers[RowBufferFocus][Col] += RowBuffers[RowBufferFocus][Col - FilterOffset];
 					break;
-				case 2: // UpÇÊÅÍ
+				case 2: // Upí•„í„°
 					for(Col = 0; Col < RowBufferWidth; ++Col)
 						RowBuffers[RowBufferFocus][Col] += RowBuffers[1 - RowBufferFocus][Col];
 					break;
-				case 3: // AverageÇÊÅÍ
+				case 3: // Averageí•„í„°
 					for(Col = 0; Col < RowBufferWidth; ++Col)
 						RowBuffers[RowBufferFocus][Col] += (((Col < FilterOffset)? 0 : RowBuffers[RowBufferFocus][Col - FilterOffset])
 							+ RowBuffers[1 - RowBufferFocus][Col]) / 2;
 					break;
-				case 4: // PaethÇÊÅÍ
+				case 4: // Paethí•„í„°
 					for(Col = 0; Col < RowBufferWidth; ++Col)
 					{
-						// ÁËÃø, À­¿­, À­ÁÂÃøÀÇ °ªµéÀÇ Æò±Õ°ª¿¡ °¡±î¿î ÇÊÅÍ¸¦ »ç¿ë
-						// ÀüÃ¼¾ĞÃàÀ²¿¡ ¼Õ½ÇÀ» ÀÔÈú ¿ì·Á°¡ ÀÖ´Â ÇÊÅÍ¸¦ ¹èÁ¦ÇÏ±â À§ÇÑ ¹æÆí
+						// ì£„ì¸¡, ìœ—ì—´, ìœ—ì¢Œì¸¡ì˜ ê°’ë“¤ì˜ í‰ê· ê°’ì— ê°€ê¹Œìš´ í•„í„°ë¥¼ ì‚¬ìš©
+						// ì „ì²´ì••ì¶•ìœ¨ì— ì†ì‹¤ì„ ì…í ìš°ë ¤ê°€ ìˆëŠ” í•„í„°ë¥¼ ë°°ì œí•˜ê¸° ìœ„í•œ ë°©í¸
 						const byte Left = (Col < FilterOffset)? 0 : RowBuffers[RowBufferFocus][Col - FilterOffset];
 						const byte Above = RowBuffers[1 - RowBufferFocus][Col];
 						const byte Aboveleft = (Col < FilterOffset)? 0 : RowBuffers[1 - RowBufferFocus][Col - FilterOffset];
@@ -831,13 +831,13 @@ public:
 					break;
 				}
 
-				// ÀÌ¹ÌÁö¾²±â
+				// ì´ë¯¸ì§€ì“°ê¸°
 				uint ImageOffset = 56 + (ImageHeight - y - 1) * BMPDataWidth, AlphaOffset, PaletteOffset;
 				uint TransOffset = (ImageHeight - y - 1) * ImageWidth;
 				byte ColorValue;
 				switch(ImageColorType)
 				{
-				case 0: // Èæ¹é
+				case 0: // í‘ë°±
 					{
 						for(uint x = 0; x < ImageWidth; ++x, ImageOffset += BytePerPixel)
 						{
@@ -848,7 +848,7 @@ public:
 						}
 					}
 					break;
-				case 3: // ÆÈ·¹Æ®
+				case 3: // íŒ”ë ˆíŠ¸
 					{
 						for(uint x = 0; x < ImageWidth; ++x, ImageOffset += BytePerPixel)
 						{
@@ -866,7 +866,7 @@ public:
 						}
 					}
 					break;
-				case 4: // Åõ¸íÈæ¹é
+				case 4: // íˆ¬ëª…í‘ë°±
 					{
 						for(uint x = 0; x < ImageWidth; ++x, ImageOffset += BytePerPixel)
 						{
@@ -888,7 +888,7 @@ public:
 						}
 					}
 					break;
-				case 6: // Åõ¸íRGB
+				case 6: // íˆ¬ëª…RGB
 					{
 						for(uint x = 0; x < ImageWidth; ++x, ImageOffset += BytePerPixel)
 						{
@@ -913,13 +913,13 @@ public:
 			return BMPData;
 		}
 
-		// ºñÆ®¸ÊÀÇ »çÀÌÁî
+		// ë¹„íŠ¸ë§µì˜ ì‚¬ì´ì¦ˆ
 		inline uint GetResourceSize()
 		{
 			return BMPSize;
 		}
 
-		// ºñÆ®¸Ê¸®¼Ò½º¸¦ ¸Ş¸ğ¸®»ó¿¡¼­ ÇØÁ¦
+		// ë¹„íŠ¸ë§µë¦¬ì†ŒìŠ¤ë¥¼ ë©”ëª¨ë¦¬ìƒì—ì„œ í•´ì œ
 		inline void DeleteResource()
 		{
 			BxDelete_Array(BMPData);
@@ -928,42 +928,42 @@ public:
 
 	protected:
 		bool AutoDelete;
-		byte* LZWindow; // LZ77À©µµ¿ì Æ÷ÀÎÅÍ
-		int LZWindowSize;//  LZ77À©µµ¿ì »çÀÌÁî
+		byte* LZWindow; // LZ77ìœˆë„ìš° í¬ì¸í„°
+		int LZWindowSize;//  LZ77ìœˆë„ìš° ì‚¬ì´ì¦ˆ
 		uint LZWindowPos;
 		uint CopyPos;
 		uint CopyCount;
 
-		byte* PNG; // PNGÆÄÀÏ¸Ş¸ğ¸® Æ÷ÀÎÅÍ
-		int PNGByteOffset; // PNGÆÄÀÏ¸Ş¸ğ¸® ¹ÙÀÌÆ®´ÜÀ§ ¿ÀÇÁ¼Â
-		int PNGBitOffset; // PNGÆÄÀÏ¸Ş¸ğ¸® ºñÆ®´ÜÀ§ ¿ÀÇÁ¼Â
-		int NextByteOffset; // PNGÆÄÀÏ¸Ş¸ğ¸® ¹ÙÀÌÆ®´ÜÀ§ ¿ÀÇÁ¼Â ³Ø½ºÆ®
-		bool IsFinalBlock; // IDATÀÇ ºí·°Çì´õ µğÄÚµùÁß ÇöÀç ºí·°ÀÌ ¸¶Áö¸·ÀÎÁö¸¦ ³ªÅ¸³¿
-		char BlockMode; // IDATÀÇ ºí·°Çì´õ µğÄÚµùÁß ÇöÀç ºí·°ÀÌ ¾î¶°ÇÑ ºí·°ÀÎÁö¸¦ ³ªÅ¸³¿
-		int LiteralLength; // ºñ¾ĞÃàºí·°ÀÇ »çÀÌÁî
-		byte* BMPData; // »ı»êµÈ ºñÆ®¸Ê¸®¼Ò½º
-		uint BMPOffset; // ºñÆ®¸ÊÀÇ ¹ÙÀÌÆ®´ÜÀ§ ¿ÀÇÁ¼Â
-		uint BMPSize; // µğÄÚµùµÈ ºñÆ®¸ÊÀÇ »çÀÌÁî
+		byte* PNG; // PNGíŒŒì¼ë©”ëª¨ë¦¬ í¬ì¸í„°
+		int PNGByteOffset; // PNGíŒŒì¼ë©”ëª¨ë¦¬ ë°”ì´íŠ¸ë‹¨ìœ„ ì˜¤í”„ì…‹
+		int PNGBitOffset; // PNGíŒŒì¼ë©”ëª¨ë¦¬ ë¹„íŠ¸ë‹¨ìœ„ ì˜¤í”„ì…‹
+		int NextByteOffset; // PNGíŒŒì¼ë©”ëª¨ë¦¬ ë°”ì´íŠ¸ë‹¨ìœ„ ì˜¤í”„ì…‹ ë„¥ìŠ¤íŠ¸
+		bool IsFinalBlock; // IDATì˜ ë¸”ëŸ­í—¤ë” ë””ì½”ë”©ì¤‘ í˜„ì¬ ë¸”ëŸ­ì´ ë§ˆì§€ë§‰ì¸ì§€ë¥¼ ë‚˜íƒ€ëƒ„
+		char BlockMode; // IDATì˜ ë¸”ëŸ­í—¤ë” ë””ì½”ë”©ì¤‘ í˜„ì¬ ë¸”ëŸ­ì´ ì–´ë– í•œ ë¸”ëŸ­ì¸ì§€ë¥¼ ë‚˜íƒ€ëƒ„
+		int LiteralLength; // ë¹„ì••ì¶•ë¸”ëŸ­ì˜ ì‚¬ì´ì¦ˆ
+		byte* BMPData; // ìƒì‚°ëœ ë¹„íŠ¸ë§µë¦¬ì†ŒìŠ¤
+		uint BMPOffset; // ë¹„íŠ¸ë§µì˜ ë°”ì´íŠ¸ë‹¨ìœ„ ì˜¤í”„ì…‹
+		uint BMPSize; // ë””ì½”ë”©ëœ ë¹„íŠ¸ë§µì˜ ì‚¬ì´ì¦ˆ
 
-		int MaxCode[3][15]; // LiteralÅ×ÀÌºí : 0, DistanceÅ×ÀÌºí : 1, LengthsÅ×ÀÌºí : 2
+		int MaxCode[3][15]; // Literalí…Œì´ë¸” : 0, Distanceí…Œì´ë¸” : 1, Lengthsí…Œì´ë¸” : 2
 		int MinCode[3][15];
 		ushort ValueArray[3][15];
 		ushort HuffValues[3][288];
 
 	protected:
-		// È®ÀåIDAT Ã¼Å©
+		// í™•ì¥IDAT ì²´í¬
 		inline void CheckExtendIDAT()
 		{
 			if(PNGByteOffset == NextByteOffset - 4)
 			{
 				PNGBitOffset = 0;
-				GetUInt32(false); // CRCÄÚµå »ı·«
+				GetUInt32(false); // CRCì½”ë“œ ìƒëµ
 				NextByteOffset += GetUInt32(false) + 12;
-				GetUInt32(false); // Ã»Å©¸í »ı·«
+				GetUInt32(false); // ì²­í¬ëª… ìƒëµ
 			}
 		}
 
-		// 1ºñÆ®¸¦ ÀĞÀ½
+		// 1ë¹„íŠ¸ë¥¼ ì½ìŒ
 		inline uint GetBit(bool DoCheck = true)
 		{
 			if(DoCheck) CheckExtendIDAT();
@@ -973,7 +973,7 @@ public:
 			return RValue;
 		}
 
-		// lenºñÆ®¸¦ ÀĞÀ½, lenÇã¿ë¹üÀ§ : 0-32
+		// lenë¹„íŠ¸ë¥¼ ì½ìŒ, lení—ˆìš©ë²”ìœ„ : 0-32
 		uint GetBits(const int len, bool DoCheck = true)
 		{
 			uint RValue = 0;
@@ -982,7 +982,7 @@ public:
 			return RValue;
 		}
 
-		// bufÀÇ bitoffºÎÅÍ lenºñÆ®¸¦ ÀĞÀ½
+		// bufì˜ bitoffë¶€í„° lenë¹„íŠ¸ë¥¼ ì½ìŒ
 		global_func uint GetBits(const byte* buf, int bitoff, const int len)
 		{
 			if(len == 0) return 0;
@@ -1000,10 +1000,10 @@ public:
 			return RValue;
 		}
 
-		// 1¹ÙÀÌÆ®¸¦ ÀĞÀ½, GetBits()·Î ÀĞ´Ù ³²Àº°ÍÀÌ ÀÖ´Ù¸é ÇØ´ç ¹ÙÀÌÆ® °Ç³Ê¶Ü
+		// 1ë°”ì´íŠ¸ë¥¼ ì½ìŒ, GetBits()ë¡œ ì½ë‹¤ ë‚¨ì€ê²ƒì´ ìˆë‹¤ë©´ í•´ë‹¹ ë°”ì´íŠ¸ ê±´ë„ˆëœ€
 		inline byte GetByte(bool DoCheck = true)
 		{
-			// ºñÆ®´ÜÀ§·Î ÀĞ´ø°ÍÀº ³Ñ¾î°¨
+			// ë¹„íŠ¸ë‹¨ìœ„ë¡œ ì½ë˜ê²ƒì€ ë„˜ì–´ê°
 			if(0 < PNGBitOffset)
 			{
 				PNGBitOffset = 0;
@@ -1013,7 +1013,7 @@ public:
 			return PNG[PNGByteOffset++];
 		}
 
-		// 4¹ÙÀÌÆ®¸¦ ÀĞÀ½
+		// 4ë°”ì´íŠ¸ë¥¼ ì½ìŒ
 		inline uint GetUInt32(bool DoCheck = true)
 		{
 			uint RValue = (GetByte(DoCheck) & 0xff) << 24;
@@ -1023,18 +1023,18 @@ public:
 			return RValue;
 		}
 
-		// ÇãÇÁ¸¸Å×ÀÌºí¿¡¼­ °ªÀ» Ã£À½
+		// í—ˆí”„ë§Œí…Œì´ë¸”ì—ì„œ ê°’ì„ ì°¾ìŒ
 		ushort Decode(const uint tablenum)
 		{
 			int CodeLength;
 			int Code = GetBit();
-			// ¸ÕÀú 1¹ÙÀÌÆ®¸¦ ÀĞ°í MaxCode¿Í ºñ±³¸¦ ÇÏ±â ¶§¹®¿¡ Code°¡ ´õ Å¬ ¼ö ÀÖÀ½
+			// ë¨¼ì € 1ë°”ì´íŠ¸ë¥¼ ì½ê³  MaxCodeì™€ ë¹„êµë¥¼ í•˜ê¸° ë•Œë¬¸ì— Codeê°€ ë” í´ ìˆ˜ ìˆìŒ
 			for(CodeLength = 0; MaxCode[tablenum][CodeLength] < Code && CodeLength < 15; ++CodeLength)
-				Code = (Code << 1) | GetBit(); // 1ºñÆ®¾¿ °Å²Ù·Î ÀĞÀ½
+				Code = (Code << 1) | GetBit(); // 1ë¹„íŠ¸ì”© ê±°ê¾¸ë¡œ ì½ìŒ
 			return HuffValues[tablenum][ValueArray[tablenum][CodeLength] + (Code - MinCode[tablenum][CodeLength])];
 		}
 
-		// IDAT¸¦ ÇãÇÁ¸¸¹æ½ÄÀ¸·Î ÀĞÀ½
+		// IDATë¥¼ í—ˆí”„ë§Œë°©ì‹ìœ¼ë¡œ ì½ìŒ
 		inline byte DecodeByte()
 		{
 			if(BlockMode == 0) return DecodeLiteralByte();
@@ -1072,7 +1072,7 @@ public:
 				4,  4,  5,  5,  6,  6,  7,  7,  8,  8,
 				9,  9, 10, 10, 11, 11, 12, 12, 13, 13};
 
-			// LZÀ©µµ¿ìÀÇ º¹»ç°Å¸®µ¿¾È µğÄÚµùÀº ½°
+			// LZìœˆë„ìš°ì˜ ë³µì‚¬ê±°ë¦¬ë™ì•ˆ ë””ì½”ë”©ì€ ì‰¼
 			if(0 < CopyCount)
 			{
 				byte Value8 = LZWindow[CopyPos];
@@ -1083,7 +1083,7 @@ public:
 				return Value8;
 			}
 
-			// ÇãÇÁ¸¸Æ®¸®¿¡ ÀÔ°¢ÇÏ¿© ÇÏ³ªÀÇ °ªÀ» ÀĞ¾î³¿
+			// í—ˆí”„ë§ŒíŠ¸ë¦¬ì— ì…ê°í•˜ì—¬ í•˜ë‚˜ì˜ ê°’ì„ ì½ì–´ëƒ„
 			uint Value32 = Decode(0);
 
 			if(Value32 == 256)
@@ -1092,14 +1092,14 @@ public:
 					DecodeBlockHeader();
 				return DecodeByte();
 			}
-			else if(Value32 < 256) // LZ77»óÀÇ ±âÈ£ÅäÅ«ÀÎ °æ¿ì
+			else if(Value32 < 256) // LZ77ìƒì˜ ê¸°í˜¸í† í°ì¸ ê²½ìš°
 			{
 				LZWindow[LZWindowPos] = (byte) Value32;
 				LZWindowPos = (LZWindowPos + 1) & 0x7fff;
 				return (byte) Value32;
 			}
 
-			// LZ77»óÀÇ ±¸¸¦ ÀÌ·ç´Â ÅäÅ«ÀÎ °æ¿ì
+			// LZ77ìƒì˜ êµ¬ë¥¼ ì´ë£¨ëŠ” í† í°ì¸ ê²½ìš°
 			uint Length = LengthBase[Value32 - 257] + GetBits(LengthExtra[Value32 - 257]);
 			Value32 = Decode(1);
 			uint Distance = DistanceBase[Value32] + GetBits(DistanceExtra[Value32]);
@@ -1110,11 +1110,11 @@ public:
 			return DecodeCompressedByte();
 		}
 
-		// ºí·°Çì´õÀÇ Length¸¦ ÀĞÀ½
+		// ë¸”ëŸ­í—¤ë”ì˜ Lengthë¥¼ ì½ìŒ
 		void DecodeLengths(uint tablenum, uint* lengths, uint lengthcount)
 		{
-			// µ¿ÀûÇãÇÁ¸¸Å×ÀÌºíÀÎ °æ¿ì ÀÌ¹ÌÁöÁ¤º¸°ª°ú LZÀ©µµ¿ì°Å¸®°ªÀÇ ¹è¿­ÀÌ
-			// µû·Î ±â·ÏµÇ¾î ÀÖÀ¸´Ï µğÄÚµùÇØ¾ß ÇÏ¸ç RLE¾ĞÃà¹æ½ÄÀ» ¾´´Ù
+			// ë™ì í—ˆí”„ë§Œí…Œì´ë¸”ì¸ ê²½ìš° ì´ë¯¸ì§€ì •ë³´ê°’ê³¼ LZìœˆë„ìš°ê±°ë¦¬ê°’ì˜ ë°°ì—´ì´
+			// ë”°ë¡œ ê¸°ë¡ë˜ì–´ ìˆìœ¼ë‹ˆ ë””ì½”ë”©í•´ì•¼ í•˜ë©° RLEì••ì¶•ë°©ì‹ì„ ì“´ë‹¤
 			uint Index = 0;
 			while(Index < lengthcount)
 			{
@@ -1125,9 +1125,9 @@ public:
 					uint Count = 0;
 					switch(Command)
 					{
-					case 16: Count = GetBits(2) + 3; break; // Ä«¿îÆ®¸¸Å­ ÀÌÀü°ú °°À½
-					case 17: Count = GetBits(3) + 3; break; // Ä«¿îÆ®¸¸Å­ 0°ª
-					case 18: Count = GetBits(7) + 11; break; // Ä«¿îÆ®¸¸Å­ 0°ª
+					case 16: Count = GetBits(2) + 3; break; // ì¹´ìš´íŠ¸ë§Œí¼ ì´ì „ê³¼ ê°™ìŒ
+					case 17: Count = GetBits(3) + 3; break; // ì¹´ìš´íŠ¸ë§Œí¼ 0ê°’
+					case 18: Count = GetBits(7) + 11; break; // ì¹´ìš´íŠ¸ë§Œí¼ 0ê°’
 					}
 					for(uint i = 0; i < Count; ++i)
 					{
@@ -1142,32 +1142,32 @@ public:
 			}
 		}
 
-		// IDATÀÇ ºí·°Çì´õ¸¦ µğÄÚµùÇÔ
+		// IDATì˜ ë¸”ëŸ­í—¤ë”ë¥¼ ë””ì½”ë”©í•¨
 		void DecodeBlockHeader()
 		{
 			global_data const byte PngLengthOrder[19] =
 				{16, 17, 18,  0,  8,  7,  9,  6, 10,  5, 11,  4, 12,  3, 13,  2, 14,  1, 15};
-			// ¾ĞÃàºí·°Àº ÀÌ¹ÌÁö Çà´ÜÀ§°¡ ¾Æ´Ï¶ó Çà¼Ó¿¡¼­ÀÇ È¿À²´ÜÀ§ÀÌ´Ù
+			// ì••ì¶•ë¸”ëŸ­ì€ ì´ë¯¸ì§€ í–‰ë‹¨ìœ„ê°€ ì•„ë‹ˆë¼ í–‰ì†ì—ì„œì˜ íš¨ìœ¨ë‹¨ìœ„ì´ë‹¤
 			IsFinalBlock = (GetBit() != 0);
 
 			switch(GetBits(2))
 			{
-			case 0: // ºñ¾ĞÃàºí·°
+			case 0: // ë¹„ì••ì¶•ë¸”ëŸ­
 				{
 					BlockMode = 0;
 					LiteralLength = GetByte();
 					LiteralLength |= ((int) GetByte()) << 8;
-					GetByte(); GetByte(); // Not Length »ı·«
+					GetByte(); GetByte(); // Not Length ìƒëµ
 				}
 				break;
-			case 1: // °íÁ¤ÇãÇÁ¸¸Å×ÀÌºí
+			case 1: // ê³ ì •í—ˆí”„ë§Œí…Œì´ë¸”
 				if(BlockMode != 1)
 				{
 					BlockMode = 1;
 					BuildFixedTable();
 				}
 				break;
-			case 2: // µ¿ÀûÇãÇÁ¸¸Å×ÀÌºí
+			case 2: // ë™ì í—ˆí”„ë§Œí…Œì´ë¸”
 				{
 					BlockMode = 2;
 					const uint LiteralsNum = GetBits(5) + 257;
@@ -1190,7 +1190,7 @@ public:
 			}
 		}
 
-		// °íÁ¤ÇãÇÁ¸¸Å×ÀÌºí ±¸¼º
+		// ê³ ì •í—ˆí”„ë§Œí…Œì´ë¸” êµ¬ì„±
 		void BuildFixedTable()
 		{
 			for(int j = 0; j < 2; j++)
@@ -1215,19 +1215,19 @@ public:
 			for(ushort f = 0; f <= 31; ++f) HuffValues[1][valuesfocus++] = f;
 		}
 
-		// µ¿ÀûÇãÇÁ¸¸Å×ÀÌºí ±¸¼º
+		// ë™ì í—ˆí”„ë§Œí…Œì´ë¸” êµ¬ì„±
 		void BuildTable(uint tablenum, uint vcount, const uint* codelengths)
 		{
 			uint LengthArray[288];
-			// ¹è¿­¹øÈ£´Â ±× ÀÚÃ¼·Î ÃÖÁ¾ÀûÀ¸·Î µğÄÚµù½Ã ¾ò´Â ÀÌ¹ÌÁöÁ¤º¸µîÀÇ °ªÀÌ¸ç
-			// Length´Â ±× °ªÀ» Ç¥ÇöÇÏ±â À§ÇÑ ºñÆ®¼öÀÌ´Ù
+			// ë°°ì—´ë²ˆí˜¸ëŠ” ê·¸ ìì²´ë¡œ ìµœì¢…ì ìœ¼ë¡œ ë””ì½”ë”©ì‹œ ì–»ëŠ” ì´ë¯¸ì§€ì •ë³´ë“±ì˜ ê°’ì´ë©°
+			// LengthëŠ” ê·¸ ê°’ì„ í‘œí˜„í•˜ê¸° ìœ„í•œ ë¹„íŠ¸ìˆ˜ì´ë‹¤
 			for(uint i = 0; i < vcount; ++i)
 			{
 				HuffValues[tablenum][i] = (ushort) i;
 				LengthArray[i] = codelengths[i];
 			}
 
-			// ¹è¿­ÀÇ µÚ·Î °¥¼ö·Ï ºñÆ®¼ö°¡ ¸¹¾ÆÁö°Ô Á¤·ÄÇÑ´Ù
+			// ë°°ì—´ì˜ ë’¤ë¡œ ê°ˆìˆ˜ë¡ ë¹„íŠ¸ìˆ˜ê°€ ë§ì•„ì§€ê²Œ ì •ë ¬í•œë‹¤
 			for(uint i = 0; i < vcount - 1; ++i)
 			{
 				uint MinIndex = i;
@@ -1247,7 +1247,7 @@ public:
 			}
 
 			ushort HuffCodes[288];
-			// ÇØ´çºñÆ®¼ö·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Â ÃÖ¼Ò¼öºÎÅÍ 1¾¿ ¿Ã¶ó°¡¸ç Â÷·ÊÂ÷·Ê ±â·ÏÇÑ´Ù
+			// í•´ë‹¹ë¹„íŠ¸ìˆ˜ë¡œ í‘œí˜„í•  ìˆ˜ ìˆëŠ” ìµœì†Œìˆ˜ë¶€í„° 1ì”© ì˜¬ë¼ê°€ë©° ì°¨ë¡€ì°¨ë¡€ ê¸°ë¡í•œë‹¤
 			uint LastLen = 0, Code = 0;
 			for(uint i = 0; i < vcount; ++i)
 			{
@@ -1260,7 +1260,7 @@ public:
 					HuffCodes[i] = (ushort) Code++;
 			}
 
-			// ºñÆ®¼ö´Â º¸Åë 5, 7, 8, 9¸¸À» ¾²±â ¶§¹®¿¡ ÃÊ±âÈ­ÇÔ
+			// ë¹„íŠ¸ìˆ˜ëŠ” ë³´í†µ 5, 7, 8, 9ë§Œì„ ì“°ê¸° ë•Œë¬¸ì— ì´ˆê¸°í™”í•¨
 			for(uint i = 0; i < 15; ++i)
 			{
 				MaxCode[tablenum][i] = -1;
@@ -1268,7 +1268,7 @@ public:
 				ValueArray[tablenum][i] = 0;
 			}
 
-			// ºñÆ®¼ö¿¡ µû¸¥ ÃÖ¼Ò°ª°ú ÃÖ´ë°ª, ÀÌ¹ÌÁöÁ¤º¸±âº»°ªÀ» ÀúÀåÇÑ´Ù
+			// ë¹„íŠ¸ìˆ˜ì— ë”°ë¥¸ ìµœì†Œê°’ê³¼ ìµœëŒ€ê°’, ì´ë¯¸ì§€ì •ë³´ê¸°ë³¸ê°’ì„ ì €ì¥í•œë‹¤
 			uint LastLength = 0;
 			for(uint i = 0; i < vcount; ++i)
 			{
@@ -1283,11 +1283,11 @@ public:
 			}
 		}
 
-		// BMP Çì´õÁ¤º¸ Ã¤¿ì±â
+		// BMP í—¤ë”ì •ë³´ ì±„ìš°ê¸°
 		inline void SetBMPInfo(byte* bmp, uint w, uint h, ushort byteperpixel)
 		{
 			BMPOffset = 0;
-			// ºñÆ®¸ÊÁ¤º¸±¸¼º
+			// ë¹„íŠ¸ë§µì •ë³´êµ¬ì„±
 			SetBMPUInt32(bmp, *((uint*) "BxBM"));
 			SetBMPUInt32(bmp, 54 + ((w * byteperpixel + 3) & ~3) * h);
 			SetBMPUInt16(bmp, 0);

@@ -5,14 +5,14 @@
     <innerclass refid="class_bx_pool_global_1_1_unit" prot="public">BxPoolGlobal::Unit</innerclass>
     <innerclass refid="class_bx_pool_global_1_1_unit_link" prot="public">BxPoolGlobal::UnitLink</innerclass>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespace_bx_pool_global_1a3a49de2d17b81486984fc24ba8469770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_pool_global_1a33abdbe3e999f603f8c8c99bf7dfdfca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>global_func void</type>
-        <definition>global_func void BxPoolGlobal::PoolBind</definition>
-        <argsstring>(Unit *_ref_ Data)</argsstring>
-        <name>PoolBind</name>
+        <definition>global_func void BxPoolGlobal::Bind</definition>
+        <argsstring>(Unit *_ref_ Head)</argsstring>
+        <name>Bind</name>
         <param>
           <type><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref> *_ref_</type>
-          <declname>Data</declname>
+          <declname>Head</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="65" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="65" bodyend="70"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" line="75" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" bodystart="75" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_pool_global_1a0260f45ad8dfb48e879631f54cb83cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>global_func <ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref> *</type>
@@ -37,13 +37,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="72" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" bodystart="72" bodyend="87"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" bodystart="82" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_pool_global_1a6046b5dbe11ccb4e6a23f270e076d7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxPoolGlobal::UnbindAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnbindAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" line="99" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" bodystart="99" bodyend="102"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>BxPool관련 글로벌함수 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPool.hpp" line="6" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPool.hpp" line="18" column="1"/>
   </compounddef>
 </doxygen>

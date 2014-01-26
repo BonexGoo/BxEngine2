@@ -3,9 +3,9 @@
   <compounddef id="class_bx_web_content_1_1_cache_pool" kind="class" prot="private">
     <compoundname>BxWebContent::CachePool</compoundname>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1a3d933c052c69d91c8c2b20e0a86eade5" prot="public" static="no" mutable="no">
-        <type>string</type>
-        <definition>string BxWebContent::CachePool::Path</definition>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1a4f9f71821441e99b710b63c9ba5aefd2" prot="public" static="no" mutable="no">
+        <type>string_rw</type>
+        <definition>string_rw BxWebContent::CachePool::Path</definition>
         <argsstring></argsstring>
         <name>Path</name>
         <briefdescription>
@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" line="15" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="15" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" line="15" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1ae354d239358686092357285716d4ef84" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="16" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" line="16" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1af3461d260572f665800ea6aa8370b850" prot="public" static="no" mutable="no">
         <type>uhuge</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="17" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="18" bodyend="18"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" line="18" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="18" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1_1_cache_pool_1a62edb218b065c30efdac76a81a7ba90a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -68,18 +68,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="19" bodyend="19"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="19" bodyend="19"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="12" bodyend="20"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp" bodystart="12" bodyend="20"/>
     <listofallmembers>
       <member refid="class_bx_web_content_1_1_cache_pool_1a5612ef6d6cbc110a92113be475856bf5" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>CachePool</name></member>
       <member refid="class_bx_web_content_1_1_cache_pool_1af3461d260572f665800ea6aa8370b850" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Date</name></member>
-      <member refid="class_bx_web_content_1_1_cache_pool_1a3d933c052c69d91c8c2b20e0a86eade5" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Path</name></member>
+      <member refid="class_bx_web_content_1_1_cache_pool_1a4f9f71821441e99b710b63c9ba5aefd2" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Path</name></member>
       <member refid="class_bx_web_content_1_1_cache_pool_1ae354d239358686092357285716d4ef84" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Size</name></member>
       <member refid="class_bx_web_content_1_1_cache_pool_1a62edb218b065c30efdac76a81a7ba90a" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>~CachePool</name></member>
     </listofallmembers>

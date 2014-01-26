@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">BxXml.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxString.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxString.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="class_bx_xml.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bx_xml.html" title="XML 관리 ">BxXml</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
@@ -101,18 +100,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// DEFINE</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> DefineTag(<span class="keyword">const</span> <span class="keywordtype">int</span> tagID, <span class="keywordtype">string</span> tagName)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        Tag[tagID].TagName = tagName;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> DefineAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> tagID, <span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">string</span> attbName, <span class="keywordtype">int</span> intDefault)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        Tag[tagID].AttbName[attbID] = attbName;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Tag[tagID].AttbValue[attbID].Format(<span class="stringliteral">&quot;%d&quot;</span>, intDefault);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> DefineAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> tagID, <span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">string</span> attbName, <span class="keywordtype">string</span> strDefault)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        Tag[tagID].AttbName[attbID] = attbName;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        Tag[tagID].AttbValue[attbID] = strDefault;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
@@ -120,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// READ</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> ReadBegin(<span class="keywordtype">string</span> fileName)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        File = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2" title="파일열기 ">BxCore::File::Open</a>(fileName, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span>(File)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
@@ -137,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> ReadEnd()</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        TagStack.Reset();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        BxDelete_Array(Xml);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Xml = <span class="keyword">nullptr</span>;</div>
@@ -147,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NextTag(State* state = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        TagStack.Reset();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Focus = TagStack[0].Read(Xml, Focus, state);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">string</span> CompareName = TagStack[0].TagName;</div>
@@ -158,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> ReadAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">int</span>&amp; intValue)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span>(TagID == -1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        Unit&amp; OneTag = Tag[TagID];</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(OneTag.AttbName.Length() &lt;= attbID) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -174,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> ReadAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>&amp; strValue)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span>(TagID == -1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        Unit&amp; OneTag = Tag[TagID];</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span>(OneTag.AttbName.Length() &lt;= attbID) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -190,7 +189,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> ReadAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <a class="code" href="class_bx_var.html" title="가변배열 제공 ">BxVar&lt;byte&gt;</a>&amp; hexValue)</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span>(TagID == -1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        Unit&amp; OneTag = Tag[TagID];</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span>(OneTag.AttbName.Length() &lt;= attbID) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -206,7 +205,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">bool</span> ReadContent(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>&amp; content)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == READ);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span>(TagID == -1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        Unit&amp; OneTag = Tag[TagID];</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        content = TagStack[0].Content;</div>
@@ -216,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// WRITE</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">bool</span> WriteBegin(<span class="keywordtype">string</span> fileName)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        File = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2" title="파일열기 ">BxCore::File::Open</a>(fileName, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span>(!File) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        Mode = WRITE;</div>
@@ -224,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> WriteEnd()</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span>(File)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b" title="파일닫기 ">BxCore::File::Close</a>(File);</div>
@@ -235,7 +234,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">void</span> PushTag(<span class="keyword">const</span> <span class="keywordtype">int</span> tagID)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
@@ -249,7 +248,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> PopTag()</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
@@ -260,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> WriteAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">int</span> intValue)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
@@ -269,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> WriteAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">string</span> strValue)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
@@ -278,7 +277,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">void</span> WriteAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <a class="code" href="class_bx_var.html" title="가변배열 제공 ">BxVar&lt;byte&gt;</a>&amp; hexValue)</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
@@ -294,7 +293,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> WriteContent(<span class="keywordtype">string</span> content)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == WRITE);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
@@ -453,66 +452,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <span class="keywordflow">case</span> OPEN:</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">case</span> OPENCLOSE:</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#a49d7bab9efab049b76b36df70dd759cd" title="sprintf형태로 스트링 생성 ">Format</a>(<span class="stringliteral">&quot;&lt;%s&quot;</span>, (<span class="keywordtype">string</span>) TagName);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;A&gt;&quot;</span>, BxTHROW(TagName));</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                    Sum += Temp;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; AttbName.Length(); ++i)</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                    {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        Temp.<a class="code" href="class_bx_string.html#a49d7bab9efab049b76b36df70dd759cd" title="sprintf형태로 스트링 생성 ">Format</a>(<span class="stringliteral">&quot; %s=\&quot;%s\&quot;&quot;</span>, (<span class="keywordtype">string</span>) AttbName[i], (<span class="keywordtype">string</span>) AttbValue[i]);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;: &lt;A&gt;=&lt;DQ&gt;&lt;A&gt;&lt;DQ&gt;&quot;</span>, BxTHROW(AttbName[i], AttbValue[i]));</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                        Sum += Temp;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                    }</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#a49d7bab9efab049b76b36df70dd759cd" title="sprintf형태로 스트링 생성 ">Format</a>((state == OPEN)? <span class="stringliteral">&quot;&gt;%s&quot;</span> : <span class="stringliteral">&quot;/&gt;%s&quot;</span>,</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                        (Content.GetLength())? (<span class="keywordtype">string</span>) Content : <span class="stringliteral">&quot;\r\n&quot;</span>);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                    Sum += Temp;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                }</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="keywordflow">case</span> CLOSE:</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#a49d7bab9efab049b76b36df70dd759cd" title="sprintf형태로 스트링 생성 ">Format</a>(<span class="stringliteral">&quot;&lt;/%s&gt;\r\n&quot;</span>, (<span class="keywordtype">string</span>) TagName);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                    Sum += Temp;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0" title="파일로 쓰기 ">BxCore::File::Write</a>(file, (<span class="keywordtype">string</span>) Sum, Sum.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>());</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">return</span> (0 &lt; Content.GetLength());</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        global_func <span class="keywordtype">void</span> AtoH(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>&amp; strValue, <a class="code" href="class_bx_var.html" title="가변배열 제공 ">BxVar&lt;byte&gt;</a>&amp; hexValue)</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            hexValue.Reset();</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keywordtype">string</span> String = strValue;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> Length = strValue.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>();</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; Length; i += 2)</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                hexValue[LAST] = 0;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = i - 1; j &lt;= i; ++j)</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                    <span class="keywordtype">int</span> OneValue = 0;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                    <span class="keywordflow">if</span>(<span class="charliteral">&#39;0&#39;</span> &lt;= String[j] &amp;&amp; String[j] &lt;= <span class="charliteral">&#39;9&#39;</span>)</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                        OneValue = String[j] - <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="charliteral">&#39;A&#39;</span> &lt;= String[j] &amp;&amp; String[j] &lt;= <span class="charliteral">&#39;F&#39;</span>)</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                        OneValue = String[j] - <span class="charliteral">&#39;A&#39;</span> + 10;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="charliteral">&#39;a&#39;</span> &lt;= String[j] &amp;&amp; String[j] &lt;= <span class="charliteral">&#39;f&#39;</span>)</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                        OneValue = String[j] - <span class="charliteral">&#39;a&#39;</span> + 10;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    hexValue[END] = (hexValue[END] &lt;&lt; 4) | OneValue;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                }</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            }</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        }</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    };</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">enum</span> {DEFINE, READ, WRITE} Mode;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="class_bx_var.html">BxVar&lt;Unit&gt;</a> Tag;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <a class="code" href="class_bx_var.html">BxVar&lt;Unit&gt;</a> TagStack;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">string</span> Xml;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordtype">int</span> Focus;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordtype">int</span> TagID;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    id_file File;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordtype">bool</span> IsWriting;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;};</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;A&gt;&quot;</span>, BxTHROW((state == OPEN)? <span class="stringliteral">&quot;&gt;&quot;</span> : <span class="stringliteral">&quot;/&gt;&quot;</span>, (Content.GetLength())? (<span class="keywordtype">string</span>) Content : <span class="stringliteral">&quot;\r\n&quot;</span>));</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                    Sum += Temp;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordflow">case</span> CLOSE:</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;FS&gt;&lt;A&gt;&gt;&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(TagName));</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    Sum += Temp;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0" title="파일로 쓰기 ">BxCore::File::Write</a>(file, (<span class="keywordtype">string</span>) Sum, Sum.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>());</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">return</span> (0 &lt; Content.GetLength());</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        global_func <span class="keywordtype">void</span> AtoH(<a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a>&amp; strValue, <a class="code" href="class_bx_var.html" title="가변배열 제공 ">BxVar&lt;byte&gt;</a>&amp; hexValue)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            hexValue.Reset();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            <span class="keywordtype">string</span> String = strValue;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> Length = strValue.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; Length; i += 2)</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                hexValue[LAST] = 0;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = i - 1; j &lt;= i; ++j)</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                    <span class="keywordtype">int</span> OneValue = 0;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                    <span class="keywordflow">if</span>(<span class="charliteral">&#39;0&#39;</span> &lt;= String[j] &amp;&amp; String[j] &lt;= <span class="charliteral">&#39;9&#39;</span>)</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        OneValue = String[j] - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="charliteral">&#39;A&#39;</span> &lt;= String[j] &amp;&amp; String[j] &lt;= <span class="charliteral">&#39;F&#39;</span>)</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                        OneValue = String[j] - <span class="charliteral">&#39;A&#39;</span> + 10;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="charliteral">&#39;a&#39;</span> &lt;= String[j] &amp;&amp; String[j] &lt;= <span class="charliteral">&#39;f&#39;</span>)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                        OneValue = String[j] - <span class="charliteral">&#39;a&#39;</span> + 10;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                    hexValue[END] = (hexValue[END] &lt;&lt; 4) | OneValue;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    };</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">enum</span> {DEFINE, READ, WRITE} Mode;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <a class="code" href="class_bx_var.html">BxVar&lt;Unit&gt;</a> Tag;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="class_bx_var.html">BxVar&lt;Unit&gt;</a> TagStack;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">string</span> Xml;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">int</span> Focus;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordtype">int</span> TagID;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    id_file File;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordtype">bool</span> IsWriting;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:28 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

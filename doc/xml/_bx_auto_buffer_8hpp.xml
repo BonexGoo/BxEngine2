@@ -8,21 +8,28 @@
     <includedby refid="_bx_core_for_s3_e_8hpp" local="no">BxCoreForS3E.hpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="19">
-        <label>stdarg.h</label>
-      </node>
-      <node id="21">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="18" relation="include">
-        </childnode>
-      </node>
       <node id="17">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
         <childnode refid="18" relation="include">
         </childnode>
+      </node>
+      <node id="20">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="19">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -39,29 +46,20 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="20">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="19" relation="include">
-        </childnode>
+      <node id="21">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="24">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      </node>
       <node id="23">
         <label>BxAutoBuffer.hpp</label>
         <link refid="BxAutoBuffer.hpp"/>
         <childnode refid="24" relation="include">
         </childnode>
-      </node>
-      <node id="24">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="_bx_core_for_s3_e_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_auto_buffer" prot="public">BxAutoBuffer</innerclass>
@@ -71,8 +69,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxCore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxCore.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxMemory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="keyword">template</highlight><highlight class="normal">&lt;autobuffer<sp/>AUTOBUFFER_ID&gt;</highlight></codeline>
@@ -136,7 +134,7 @@
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(doLock)<sp/>++LockCountByUse;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SecureBuffer(size));</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;이미<sp/>Buffer가<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>!Buffer);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;이미<sp/>Buffer가<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>!Buffer);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LastTimeByUse<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" kindref="member" tooltip="현재시간을 밀리초로 구하기(천분의 1초) ">BxCore::System::GetTimeMilliSecond</ref>();</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>풀에<sp/>추가</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BufferPoolUsed()<sp/>+=<sp/>size;</highlight></codeline>
@@ -149,8 +147,8 @@
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Free()</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;해제할<sp/>Buffer가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Buffer);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Buffer가<sp/>Lock상태입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>LockCountByUse<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;해제할<sp/>Buffer가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Buffer);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Buffer가<sp/>Lock상태입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>LockCountByUse<sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LastTimeByUse<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>풀검색</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List*<sp/>FindPool<sp/>=<sp/>BufferPoolFirst();</highlight></codeline>
@@ -174,13 +172,13 @@
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Lock()</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Lock시킬<sp/>Buffer가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Buffer);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Lock시킬<sp/>Buffer가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Buffer);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++LockCountByUse;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Unlock()</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Unlock시킬<sp/>Buffer가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Buffer);</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Lock의<sp/>수를<sp/>넘어선<sp/>Unlock입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;<sp/>LockCountByUse);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Unlock시킬<sp/>Buffer가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Buffer);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;Lock의<sp/>수를<sp/>넘어선<sp/>Unlock입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;<sp/>LockCountByUse);</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--LockCountByUse;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetAutoRelease(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isAutoRelease)</highlight></codeline>
@@ -208,7 +206,7 @@
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LastTimeMax<sp/>=<sp/>FindPool-&gt;Data-&gt;LastTimeByUse;</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;새<sp/>Buffer의<sp/>공간을<sp/>할당할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>SubPool);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAutoBuffer&lt;새<sp/>Buffer의<sp/>공간을<sp/>할당할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>SubPool);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SubPool-&gt;Data-&gt;Free();</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -216,6 +214,6 @@
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="145"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxAutoBuffer.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxAutoBuffer.hpp"/>
   </compounddef>
 </doxygen>

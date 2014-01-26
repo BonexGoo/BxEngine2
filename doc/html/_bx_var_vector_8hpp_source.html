@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.8.0</span>
+   &#160;<span id="projectnumber">2.9.0</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">BxVarVector.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;BxMemory.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxMemory.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;BxUtil.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef END</span></div>
@@ -120,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            Unit[index] = <span class="keyword">new</span> TYPE;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span>(IsTypePointer&lt;TYPE&gt;())</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit[index], 0, <span class="keyword">sizeof</span>(TYPE));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit[index], 0, <span class="keyword">sizeof</span>(TYPE));</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">if</span>(Size &lt; index + 1) Size = index + 1;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            ++Count;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            BytesUpdated = <span class="keyword">false</span>;</div>
@@ -166,11 +165,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            ValidIndex(Size);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;Unit[index + 1], &amp;Unit[index], <span class="keyword">sizeof</span>(TYPE*) * (Size - index));</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;Unit[index + 1], &amp;Unit[index], <span class="keyword">sizeof</span>(TYPE*) * (Size - index));</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        Unit[index] = (newData)? newData : <span class="keyword">new</span> TYPE;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span>(!newData &amp;&amp; IsTypePointer&lt;TYPE&gt;())</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit[index], 0, <span class="keyword">sizeof</span>(TYPE));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit[index], 0, <span class="keyword">sizeof</span>(TYPE));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(Size &lt; index + 1)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            Size = index + 1;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span> ++Size;</div>
@@ -189,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">else</span> <span class="keyword">delete</span> Unit[index];</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span>(index &lt; --Size)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;Unit[index], &amp;Unit[index + 1], <span class="keyword">sizeof</span>(TYPE*) * (Size - index));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;Unit[index], &amp;Unit[index + 1], <span class="keyword">sizeof</span>(TYPE*) * (Size - index));</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            Unit[index + (Size - index)] = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">else</span> Unit[index] = <span class="keyword">nullptr</span>;</div>
@@ -206,7 +205,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">else</span> <span class="keyword">delete</span> Unit[index];</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        Unit[index] = (newData)? newData : <span class="keyword">new</span> TYPE;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span>(!newData &amp;&amp; IsTypePointer&lt;TYPE&gt;())</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit[index], 0, <span class="keyword">sizeof</span>(TYPE));</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit[index], 0, <span class="keyword">sizeof</span>(TYPE));</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        BytesUpdated = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
@@ -249,8 +248,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Size; ++i)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    TYPE* Data = Access(i);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <span class="keywordflow">if</span>(Data) <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(&amp;BytesData[i], Data, <span class="keyword">sizeof</span>(TYPE));</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    <span class="keywordflow">else</span> <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(&amp;BytesData[i], 0, <span class="keyword">sizeof</span>(TYPE));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <span class="keywordflow">if</span>(Data) <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(&amp;BytesData[i], Data, <span class="keyword">sizeof</span>(TYPE));</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    <span class="keywordflow">else</span> <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(&amp;BytesData[i], 0, <span class="keyword">sizeof</span>(TYPE));</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            BytesUpdated = <span class="keyword">true</span>;</div>
@@ -284,7 +283,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        UnitSize = UNITSIZE;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        Unit = (TYPE**) BxAlloc(<span class="keyword">sizeof</span>(TYPE*) * UNITSIZE);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit, 0, <span class="keyword">sizeof</span>(TYPE*) * UNITSIZE);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit, 0, <span class="keyword">sizeof</span>(TYPE*) * UNITSIZE);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        Size = 0;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        Count = 0;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
@@ -293,7 +292,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        UnitSize = UNITSIZE;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        Unit = (TYPE**) BxAlloc(<span class="keyword">sizeof</span>(TYPE*) * UNITSIZE);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit, 0, <span class="keyword">sizeof</span>(TYPE*) * UNITSIZE);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(Unit, 0, <span class="keyword">sizeof</span>(TYPE*) * UNITSIZE);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        Size = 0;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        Count = 0;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        operator=(RHS);</div>
@@ -321,15 +320,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">if</span>(index == FINAL) index = (0 &lt; Size)? Size - 1 : 0;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">else</span> index = index - END + Size - 1;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        BxAssert(<span class="stringliteral">&quot;BxVarVector&quot;</span>, 0 &lt;= index);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxVarVector&quot;</span>, 0 &lt;= index);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">void</span> ValidIndex(<span class="keyword">const</span> <span class="keywordtype">int</span> index)</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">if</span>(index &lt; UnitSize) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> NewUnitSize = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f" title="최대값 구하기 ">BxUtilGlobal::Max</a>(UnitSize + UNITSIZE, (index + 1 + UNITSIZE - 1) / UNITSIZE * UNITSIZE);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        TYPE** NewUnit = (TYPE**) BxAlloc(<span class="keyword">sizeof</span>(TYPE*) * NewUnitSize);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a0371fbafa905afeb67c09fca85741db0" title="메모리 복사 ">BxCore::Util::MemMove</a>(NewUnit, Unit, <span class="keyword">sizeof</span>(TYPE*) * UnitSize);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a26da9f030a69c9db36aa84b0b23c2dd2" title="메모리 초기화 ">BxCore::Util::MemSet</a>(NewUnit + UnitSize, 0, <span class="keyword">sizeof</span>(TYPE*) * (NewUnitSize - UnitSize));</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(NewUnit, Unit, <span class="keyword">sizeof</span>(TYPE*) * UnitSize);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08" title="메모리 초기화 ">BxCore::Util::MemSet</a>(NewUnit + UnitSize, 0, <span class="keyword">sizeof</span>(TYPE*) * (NewUnitSize - UnitSize));</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        UnitSize = NewUnitSize;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        BxFree(Unit);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        Unit = NewUnit;</div>
@@ -338,7 +337,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 00:27:28 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

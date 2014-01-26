@@ -1,8 +1,8 @@
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+Ôªø// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 #include <BxCoreForS3E.hpp>
 #include <BxCore.hpp>
 
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 #include <BxAutoBuffer.hpp>
 #include <BxExpress.hpp>
 #include <BxKeyword.hpp>
@@ -11,10 +11,10 @@
 #include <BxUtil.hpp>
 #include <BxString.hpp>
 
-// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 namespace BxCore
 {
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Main
 	{
 		local_data BxDraw* Draw = nullptr;
@@ -38,7 +38,7 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace System
 	{
 		bool IsQuit()
@@ -299,18 +299,23 @@ namespace BxCore
 			#endif
 		}
 
-		void Assert(string name, string query, bool& IsIgnore, bool flag, string file, int line, string func)
+		bool Break(string name, string query __DEBUG_PRM__)
 		{
-			if(IsIgnore || flag) return;
-			switch(IwDebugAssertShow(name, file, line, 1))
+			switch(IwDebugAssertShow(name, __DEBUG_FILE__, __DEBUG_LINE__, 1))
 			{
 			case S3E_ERROR_SHOW_STOP:
 				do{if(s3eDebugIsDebuggerPresent()) IwDebugBreak(); else abort();} while(false);
 				break;
 			case S3E_ERROR_SHOW_IGNORE:
-				IsIgnore = true;
-				break;
+				return false;
 			}
+			return true;
+		}
+
+		void Trace(string map, const BxThrow& args)
+		{
+			printf(BxCore::Util::Print(map, args));
+			fflush(stdout);
 		}
 
 		string _tmp_ GetOSName()
@@ -328,7 +333,7 @@ namespace BxCore
 			const int IntegerID = s3eDeviceGetInt(S3E_DEVICE_UNIQUE_ID);
 			if(IntegerID == -1)
 			{
-				// ∏∆æÓµÂ∑πΩ∫ID∏¶ ¡¶¿€
+				// Îß•Ïñ¥ÎìúÎ†àÏä§IDÎ•º Ï†úÏûë
 				////////////////////////////////////////
 				if(integerid) *integerid = 0;
 				return "UNSUPPORTED";
@@ -453,12 +458,12 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Surface
 	{
 		void Init()
 		{
-			// icf∏¶ ≈Î«— πÊ«‚º∫¡∂ªÁ(ø°πƒ¿∫ ∫Ò»∞º∫)
+			// icfÎ•º ÌÜµÌïú Î∞©Ìñ•ÏÑ±Ï°∞ÏÇ¨(ÏóêÎÆ¨ÏùÄ ÎπÑÌôúÏÑ±)
 			dirtype dir = dir_rot0;
 			#if defined(__GNUC__) || defined(__ARMCC_VERSION)
 				string DispFixRot = BxCore::System::GetPlatformConfigString("DispFixRot");
@@ -511,7 +516,7 @@ namespace BxCore
 				{
 					if(!OffscreenSurface().CreateSurface(nullptr, GetWidth(), GetHeight(),
 						CIwGxSurface::EXACT_MATCH_F | CIwGxSurface::PERSISTENT_F))
-						BxAssert("BxCore::Surface<FBO¿« √ ±‚»≠ø° Ω«∆–«œø¥Ω¿¥œ¥Ÿ>", false);
+						BxASSERT("BxCore::Surface<FBOÏùò Ï¥àÍ∏∞ÌôîÏóê Ïã§Ìå®ÌïòÏòÄÏäµÎãàÎã§>", false);
 					else
 					{
 						IsOffscreenSurfaceValid() = true;
@@ -628,13 +633,13 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Sound
 	{
 		id_sound Create(string filename, bool autoload)
 		{
 			const int Length = BxUtilGlobal::StrLen(filename);
-			BxAssert("BxCore::Sound<∆ƒ¿œ∏Ì¿Ã ≥ π´ ¬™Ω¿¥œ¥Ÿ>", 4 <= Length);
+			BxASSERT("BxCore::Sound<ÌååÏùºÎ™ÖÏù¥ ÎÑàÎ¨¥ ÏßßÏäµÎãàÎã§>", 4 <= Length);
 			const bool IsAudio = (BxUtilGlobal::StrICmp(filename + Length - 4, ".wav") != same);
 			SoundData* Data = BxNew_Param(SoundData, filename, IsAudio, autoload);
 			return (id_sound) Data;
@@ -670,13 +675,13 @@ namespace BxCore
 				if(((SoundData*) sound)->IsSoundDataByAudio())
 				{
 					s3eResult Result = s3eAudioPlayFromBuffer(((SoundData*) sound)->GetSoundData(), ((SoundData*) sound)->GetSoundDataSize(), 1);
-					BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+					BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 				}
 				else
 				{
 					s3eSoundChannelSetInt(0, S3E_CHANNEL_RATE, ((SoundData*) sound)->SamplesPerSec);
 					s3eResult Result = s3eSoundChannelPlay(0, ((SoundData*) sound)->GetSoundData(), ((SoundData*) sound)->GetSoundDataCount(), 1, 0);
-					BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+					BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 				}
 			}
 		}
@@ -719,7 +724,7 @@ namespace BxCore
 			{
 				SoundData::EffectChannelStop(Channel);
 				s3eResult Result = SoundData::EffectChannelPlay(Channel, sound);
-				BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+				BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 			}
 			else SoundData::EffectChannelPlayReserve(Channel, sound);
 		}
@@ -753,112 +758,36 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Util
 	{
-		id_memory Malloc(int size)
+		void* Alloc(int size)
 		{
-			return (id_memory) s3eMalloc(size);
+			return s3eMalloc(size);
 		}
 
-		void Free(id_memory item)
+		void Free(void* buf)
 		{
-			s3eFree((void*) item);
+			s3eFree(buf);
 		}
 
-		void* GetPtr(id_memory item)
+		void MemSet(void* dst, byte value, int length)
 		{
-			return (void*) item;
+			if(dst) memset(dst, value, length);
 		}
 
-		void MemMove(const void* dst, const void* src, int length)
+		void MemCpy(void* dst, const void* src, int length)
 		{
-			if(dst) memmove((void*) dst, src, length);
-		}
-
-		void MemSet(const void* dst, byte value, int length)
-		{
-			if(dst) memset((void*) dst, value, length);
+			if(dst) memmove(dst, src, length);
 		}
 
 		int MemCmp(const void* dst, const void* src, int length)
 		{
 			return memcmp(dst, src, length);
 		}
-
-		int Printf(string src, ...)
-		{
-			va_list List;
-			va_start(List, src);
-			const int Result = vprintf(src, List);
-			va_end(List);
-			fflush(stdout);
-			return Result;
-		}
-
-		int SnPrintf(string_rw dst, int length, string src, ...)
-		{
-			va_list List;
-			va_start(List, src);
-			const int Result = VsnPrintf(dst, length, src, List);
-			va_end(List);
-			return Result;
-		}
-
-		int VsnPrintf(string_rw dst, int length, string src, va_list list)
-		{
-			const int Result = vsnprintf(dst, length, src, list);
-			BxAssert("BxCore::Util<DST¿« ±Ê¿Ã∞° ∫Œ¡∑«’¥œ¥Ÿ>", !dst || (0 <= Result && Result < length));
-			BxAssert("BxCore::Util<DST¿« øπªÛ±Ê¿Ã∏¶ æÚ¥¬µ• Ω«∆–«œø¥Ω¿¥œ¥Ÿ>", dst || 0 <= Result);
-			return Result;
-		}
-
-		uint GetCurrentCallDepth()
-		{
-			if(!__CallCount__) return 0;
-			return ((__CallStackFocus__ - __CallStack__) >> 1) - 2;
-		}
-
-		void* GetCurrentCallAddress()
-		{
-			if(!__CallCount__) return nullptr;
-			return (void*) __CallStackFocus__[-4];
-		}
-
-		uint GetCurrentCallCount()
-		{
-			if(!__CallCount__) return 0;
-			return __CallStackFocus__[-3];
-		}
-
-		void SetCallCount(uint value)
-		{
-			if(!__CallCount__) return;
-			__CallCount__ = value;
-		}
-
-		void PushCallDepthAndLog(string file, const int line, string func)
-		{
-			if(_function_cur_depth++ < _function_log_depth)
-				Printf("%s%s%s                ........%s(%dLn), %I64ds\r%s{\r",
-					(_function_is_before_endline)? "\r" : "",
-					_function_depth_blank[_function_cur_depth - 1], func, file, line,
-					BxCore::System::GetTimeNanoSecond(),
-					_function_depth_blank[_function_cur_depth - 1]);
-			_function_is_before_endline = false;
-		}
-
-		void PopCallDepthAndLog(string file, const int line)
-		{
-			if(--_function_cur_depth < _function_log_depth)
-				Printf("%s}                ........%s(%dLn), %I64ds\r",
-					_function_depth_blank[_function_cur_depth], file, line,
-					BxCore::System::GetTimeNanoSecond());
-			_function_is_before_endline = true;
-		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace File
 	{
 		bool IsExist(string filename)
@@ -873,20 +802,20 @@ namespace BxCore
 
 		void Close(id_file file)
 		{
-			BxAssert("BxCore::File<∆ƒ¿œ«⁄µÈ¿Ã nullptr¿‘¥œ¥Ÿ>", file);
+			BxASSERT("BxCore::File<ÌååÏùºÌï∏Îì§Ïù¥ nullptrÏûÖÎãàÎã§>", file);
 			s3eFileClose((s3eFile*) file);
 		}
 
 		uint Read(id_file file, void* buffer, uint length, callback_progress progress)
 		{
-			BxAssert("BxCore::File<∆ƒ¿œ«⁄µÈ¿Ã nullptr¿‘¥œ¥Ÿ>", file);
+			BxASSERT("BxCore::File<ÌååÏùºÌï∏Îì§Ïù¥ nullptrÏûÖÎãàÎã§>", file);
 			if(!progress)
 				return s3eFileRead(buffer, length, 1, (s3eFile*) file);
 			uint Result = 0;
 			for(uint i = 0; i < length; i += 4096)
 			{
 				Result += s3eFileRead(&((byte*) buffer)[i], BxUtilGlobal::Min(length - i, 4096), 1, (s3eFile*) file);
-				if(progress && !progress(-1, 0)) return Result; // æ˜µ•¿Ã∆Æ
+				if(progress && !progress(-1, 0)) return Result; // ÏóÖÎç∞Ïù¥Ìä∏
 			}
 			return Result;
 		}
@@ -906,14 +835,14 @@ namespace BxCore
 
 		uint Write(id_file file, const void* buffer, uint length, callback_progress progress)
 		{
-			BxAssert("BxCore::File<∆ƒ¿œ«⁄µÈ¿Ã nullptr¿‘¥œ¥Ÿ>", file);
+			BxASSERT("BxCore::File<ÌååÏùºÌï∏Îì§Ïù¥ nullptrÏûÖÎãàÎã§>", file);
 			if(!progress)
 				return s3eFileWrite(buffer, length, 1, (s3eFile*) file);
 			uint Result = 0;
 			for(uint i = 0; i < length; i += 4096)
 			{
 				Result += s3eFileWrite(&((const byte*) buffer)[i], BxUtilGlobal::Min(length - i, 4096), 1, (s3eFile*) file);
-				if(progress && !progress(-1, 0)) return Result; // æ˜µ•¿Ã∆Æ
+				if(progress && !progress(-1, 0)) return Result; // ÏóÖÎç∞Ïù¥Ìä∏
 			}
 			return Result;
 		}
@@ -941,13 +870,13 @@ namespace BxCore
 
 		int Skip(id_file file, uint length)
 		{
-			BxAssert("BxCore::File<∆ƒ¿œ«⁄µÈ¿Ã nullptr¿‘¥œ¥Ÿ>", file);
+			BxASSERT("BxCore::File<ÌååÏùºÌï∏Îì§Ïù¥ nullptrÏûÖÎãàÎã§>", file);
 			return s3eFileSeek((s3eFile*) file, length, S3E_FILESEEK_CUR);
 		}
 
 		int GetSize(id_file file)
 		{
-			BxAssert("BxCore::File<∆ƒ¿œ«⁄µÈ¿Ã nullptr¿‘¥œ¥Ÿ>", file);
+			BxASSERT("BxCore::File<ÌååÏùºÌï∏Îì§Ïù¥ nullptrÏûÖÎãàÎã§>", file);
 			return s3eFileGetSize((s3eFile*) file);
 		}
 
@@ -1041,7 +970,7 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Socket
 	{
 		id_socket Create()
@@ -1077,24 +1006,24 @@ namespace BxCore
 			}
 			else if(((TCPData*) sock)->GetState() == socketstate_connecting) return connect_connecting;
 			else if(((TCPData*) sock)->GetState() == socketstate_connected) return connect_connected;
-			// IP¡∂ªÁ
+			// IPÏ°∞ÏÇ¨
 			hostent* HostEnt = gethostbyname(addr);
-			BxAssert("BxCore::Socket<æÀ ºˆ æ¯¥¬ µµ∏ﬁ¿Œ¿‘¥œ¥Ÿ>", HostEnt);
+			BxASSERT("BxCore::Socket<Ïïå Ïàò ÏóÜÎäî ÎèÑÎ©îÏù∏ÏûÖÎãàÎã§>", HostEnt);
 			if(!HostEnt) return connect_error_param;
 			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
-				// ¡¢º”¡§∫∏
+				// Ï†ëÏÜçÏ†ïÎ≥¥
 				SOCKADDR_IN SockAddr;
 				BxCore::Util::MemSet(&SockAddr, 0, sizeof(SOCKADDR_IN));
 				SockAddr.sin_family = AF_INET;
 				SockAddr.sin_addr.S_un.S_addr = *((uint*) HostEnt->h_addr_list[0]);
 				SockAddr.sin_port = htons(port);
-				// ¡¢º”
+				// Ï†ëÏÜç
 				((TCPData*) sock)->SetState(socketstate_connecting);
 				SOCKET FD = ((TCPData*) sock)->GetClient();
 				uint DoNonBlock = 1;
 				BxDLL_ioctlsocket(FD, FIONBIO, &DoNonBlock);
 				BxDLL_connect(FD, (LPSOCKADDR) &SockAddr, sizeof(SOCKADDR_IN));
-				// ∞·∞˙»Æ¿Œ
+				// Í≤∞Í≥ºÌôïÏù∏
 				BxDLL_fd_set fdset = {1, {FD,}};
 				BxDLL_timeval tmval = {(timeout + 999) / 1000, 0};
 				BxDLL_select(FD + 1, nullptr, &fdset, nullptr, &tmval);
@@ -1103,11 +1032,11 @@ namespace BxCore
 				else if(0 < fdset.fd_count)
 					((TCPData*) sock)->SetServer(fdset.fd_array[0]);
 			#else
-				// ¡¢º”¡§∫∏
+				// Ï†ëÏÜçÏ†ïÎ≥¥
 				s3eInetAddress SockAddr = {0,};
 				SockAddr.m_IPAddress = *((uint*) HostEnt->h_addr_list[0]);
 				SockAddr.m_Port = ((port & 0x00FF) << 8) | ((port & 0xFF00) >> 8);
-				// ¡¢º”
+				// Ï†ëÏÜç
 				((TCPData*) sock)->SetState(socketstate_connecting);
 				s3eResult Result = s3eSocketConnect(((TCPData*) sock)->GetClient(), &SockAddr, _ConnectCB, sock);
 				if(Result == S3E_RESULT_ERROR)
@@ -1123,13 +1052,13 @@ namespace BxCore
 					default: ((TCPData*) sock)->SetState(socketstate_disconnected); return connect_error_unknown;
 					}
 				}
-				// ∞·∞˙»Æ¿Œ
+				// Í≤∞Í≥ºÌôïÏù∏
 				if(0 < timeout)
 				{
 					uhuge LimitTime = BxCore::System::GetTimeMilliSecond() + timeout;
 					while(BxCore::System::GetTimeMilliSecond() < LimitTime && ((TCPData*) sock)->GetState() == socketstate_connecting)
 					{
-						if(progress && !progress(-1, 0)) // æ˜µ•¿Ã∆Æ
+						if(progress && !progress(-1, 0)) // ÏóÖÎç∞Ïù¥Ìä∏
 							return connect_error_unknown;
 						BxCore::System::Sleep(10);
 					}
@@ -1185,16 +1114,16 @@ namespace BxCore
 		{
 			#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 				global_data ICMPData Sock;
-				// IP¡∂ªÁ
+				// IPÏ°∞ÏÇ¨
 				hostent* HostEnt = gethostbyname(addr);
-				BxAssert("BxCore::Socket<æÀ ºˆ æ¯¥¬ µµ∏ﬁ¿Œ¿‘¥œ¥Ÿ>", HostEnt);
+				BxASSERT("BxCore::Socket<Ïïå Ïàò ÏóÜÎäî ÎèÑÎ©îÏù∏ÏûÖÎãàÎã§>", HostEnt);
 				if(!HostEnt) return SOCKET_ERROR;
-				// ¡¢º”¡§∫∏
+				// Ï†ëÏÜçÏ†ïÎ≥¥
 				SOCKADDR_IN SockAddr;
 				BxCore::Util::MemSet(&SockAddr, 0, sizeof(SOCKADDR_IN));
 				SockAddr.sin_family = AF_INET;
 				SockAddr.sin_addr.S_un.S_addr = *((uint*) HostEnt->h_addr_list[0]);
-				// º€ºˆΩ≈
+				// ÏÜ°ÏàòÏã†
 				if(Sock.SendTo(timeout, (LPSOCKADDR) &SockAddr, sizeof(SOCKADDR_IN)) == SOCKET_ERROR)
 					return SOCKET_ERROR;
 				return Sock.RecvFrom();
@@ -1204,7 +1133,7 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Font
 	{
 		id_font Open(string filename, const int pointsize, const int numCacheGlyphs)
@@ -1363,12 +1292,12 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Thread
 	{
 		id_thread Create(callback_thread threadCB, void* data)
 		{
-			ThreadClass* Class = BxNew_Param(ThreadClass, threadCB, data);
+			ThreadClass* Class = new ThreadClass(threadCB, data);
 			return (id_thread) Class;
 		}
 
@@ -1378,19 +1307,19 @@ namespace BxCore
 			ThreadClass* Class = (ThreadClass*) thread;
 			if(dokill) Class->Kill();
 			if(dowait) Class->Wait();
-			BxDelete(Class);
+			delete Class;
 		}
 
 		id_mutex OpenMutex()
 		{
-			MutexClass* Mutex = BxNew(MutexClass);
+			MutexClass* Mutex = new MutexClass();
 			return (id_mutex) Mutex;
 		}
 
 		void CloseMutex(id_mutex mutex)
 		{
 			if(!mutex) return;
-			BxDelete_ByType(MutexClass, mutex);
+			delete (MutexClass*) mutex;
 		}
 
 		void Lock(id_mutex mutex)
@@ -1404,9 +1333,28 @@ namespace BxCore
 			if(!mutex) return;
 			((MutexClass*) mutex)->Unlock();
 		}
+
+		void* BindStorage(int* storagekey)
+		{
+			// Ïä§Î†àÎìúÎ≥Ñ Ï†ÄÏû•ÏÜåÍ∑∏Î£π Ï†ëÍ∑º
+			Lock(StorageClass::Mutex());
+			BxVarMap<StorageClass>& StorageByThread = StorageClass::Map()[StorageClass::CurrentThreadID()];
+			Unlock(StorageClass::Mutex());
+			// Ïä§Î†àÎìúÎÇ¥ Í∞úÎ≥ÑÏ†ÄÏû•ÏÜå Ï†ëÍ∑º
+			StorageClass* Result = StorageByThread.Access((uint) storagekey);
+			if(Result) return Result->Data;
+			return StorageByThread[(uint) storagekey].Init(*storagekey);
+		}
+
+		void UnbindStorageAll()
+		{
+			Lock(StorageClass::Mutex());
+			StorageClass::Map()[StorageClass::CurrentThreadID()].Reset();
+			Unlock(StorageClass::Mutex());
+		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace Library
 	{
 		id_library Open(string filename)
@@ -1425,7 +1373,7 @@ namespace BxCore
 		}
 	}
 
-	// °·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·°·
+	// ‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†‚ñ†
 	namespace OpenGL2D
 	{
 		void Init()
@@ -1580,7 +1528,7 @@ namespace BxCore
 		id_opengl_outline MakeOutline_PolyVertexUV(const points& p, const rect& uvclip)
 		{
 			PolyVertexUV* Result = BxNew_Param(PolyVertexUV, p.count);
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ p¿« count¥¬ 3 ¿ÃªÛ¿ÃæÓæﬂ «’¥œ¥Ÿ>", 3 <= p.count);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞ pÏùò countÎäî 3 Ïù¥ÏÉÅÏù¥Ïñ¥Ïïº Ìï©ÎãàÎã§>", 3 <= p.count);
 			// Vertex
 			rectf Bound = {0, 0, 0, 0};
 			const bool IsClockwise = (BxUtil::GetClockwiseValue(p.pt[0], p.pt[1], p.pt[2]) < 0);
@@ -1612,8 +1560,8 @@ namespace BxCore
 		id_opengl_outline MakeOutline_PolyVertexUV3D(const vertexs& v, const points& uv)
 		{
 			PolyVertexUV3D* Result = BxNew_Param(PolyVertexUV3D, v.count);
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ v¿« count¥¬ 3 ¿ÃªÛ¿ÃæÓæﬂ «’¥œ¥Ÿ>", 3 <= v.count);
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ vøÕ uv¿« count¥¬ µø¿œ«ÿæﬂ «’¥œ¥Ÿ>", v.count == uv.count);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞ vÏùò countÎäî 3 Ïù¥ÏÉÅÏù¥Ïñ¥Ïïº Ìï©ÎãàÎã§>", 3 <= v.count);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞ vÏôÄ uvÏùò countÎäî ÎèôÏùºÌï¥Ïïº Ìï©ÎãàÎã§>", v.count == uv.count);
 			// Vertex
 			for(int i = 0; i < v.count; ++i)
 			{
@@ -1637,14 +1585,14 @@ namespace BxCore
 		color_x888 Form_ColorAmbient_GetColor(id_opengl_form form)
 		{
 			OpenGLForm* Form = (OpenGLForm*) form;
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ∞° ColorAmbient«¸¿Ã æ∆¥’¥œ¥Ÿ>", Form->Type == OpenGLForm::COLOR);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞Í∞Ä ColorAmbientÌòïÏù¥ ÏïÑÎãôÎãàÎã§>", Form->Type == OpenGLForm::COLOR);
 			return ((ColorAmbient*) Form)->Color;
 		}
 
 		void Outline_VertexUV_SetScale(id_opengl_outline outline, fint hoz, fint ver)
 		{
 			OpenGLOutline* Outline = (OpenGLOutline*) outline;
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ∞° VertexUV«¸¿Ã æ∆¥’¥œ¥Ÿ>", Outline->Type == OpenGLOutline::RECT);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞Í∞Ä VertexUVÌòïÏù¥ ÏïÑÎãôÎãàÎã§>", Outline->Type == OpenGLOutline::RECT);
 			if(hoz == 0x10000 && ver == 0x10000) return;
 			VertexUV* VUV = (VertexUV*) Outline;
 			for(int i = 0; i < 4; ++i)
@@ -1657,7 +1605,7 @@ namespace BxCore
 		void Outline_VertexUV_SetRotate(id_opengl_outline outline, int angle1024, bool doFlip)
 		{
 			OpenGLOutline* Outline = (OpenGLOutline*) outline;
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ∞° VertexUV«¸¿Ã æ∆¥’¥œ¥Ÿ>", Outline->Type == OpenGLOutline::RECT);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞Í∞Ä VertexUVÌòïÏù¥ ÏïÑÎãôÎãàÎã§>", Outline->Type == OpenGLOutline::RECT);
 			if(angle1024 == 0 && !doFlip) return;
 			VertexUV* VUV = (VertexUV*) Outline;
 			const huge Cos = BxUtil::Cos(angle1024);
@@ -1680,7 +1628,7 @@ namespace BxCore
 		void Outline_PolyVertexUV_SetScale(id_opengl_outline outline, fint hoz, fint ver)
 		{
 			OpenGLOutline* Outline = (OpenGLOutline*) outline;
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ∞° PolyVertexUV«¸¿Ã æ∆¥’¥œ¥Ÿ>", Outline->Type == OpenGLOutline::POLYGON);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞Í∞Ä PolyVertexUVÌòïÏù¥ ÏïÑÎãôÎãàÎã§>", Outline->Type == OpenGLOutline::POLYGON);
 			if(hoz == 0x10000 && ver == 0x10000) return;
 			PolyVertexUV* PolyVUV = (PolyVertexUV*) Outline;
 			for(int i = 0; i < PolyVUV->Count; ++i)
@@ -1693,7 +1641,7 @@ namespace BxCore
 		void Outline_PolyVertexUV_SetRotate(id_opengl_outline outline, int angle1024, bool doFlip)
 		{
 			OpenGLOutline* Outline = (OpenGLOutline*) outline;
-			BxAssert("BxCore::OpenGL2D<∆ƒ∂ÛπÃ≈Õ∞° PolyVertexUV«¸¿Ã æ∆¥’¥œ¥Ÿ>", Outline->Type == OpenGLOutline::POLYGON);
+			BxASSERT("BxCore::OpenGL2D<ÌååÎùºÎØ∏ÌÑ∞Í∞Ä PolyVertexUVÌòïÏù¥ ÏïÑÎãôÎãàÎã§>", Outline->Type == OpenGLOutline::POLYGON);
 			if(angle1024 == 0 && !doFlip) return;
 			PolyVertexUV* PolyVUV = (PolyVertexUV*) Outline;
 			const huge Cos = BxUtil::Cos(angle1024);

@@ -6,31 +6,18 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
     <incdepgraph>
-      <node id="282">
-        <label>BxPathFind.hpp</label>
-        <link refid="BxPathFind.hpp"/>
-        <childnode refid="283" relation="include">
-        </childnode>
+      <node id="292">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
         <childnode refid="290" relation="include">
         </childnode>
-        <childnode refid="292" relation="include">
+        <childnode refid="293" relation="include">
         </childnode>
       </node>
-      <node id="287">
-        <label>stdarg.h</label>
-      </node>
-      <node id="283">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="284" relation="include">
-        </childnode>
-        <childnode refid="290" relation="include">
-        </childnode>
-      </node>
-      <node id="289">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="286" relation="include">
+      <node id="291">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="288" relation="include">
         </childnode>
       </node>
       <node id="285">
@@ -38,13 +25,29 @@
         <link refid="_bx_core_8hpp_source"/>
         <childnode refid="286" relation="include">
         </childnode>
+      </node>
+      <node id="293">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
         <childnode refid="288" relation="include">
         </childnode>
       </node>
-      <node id="284">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="285" relation="include">
+      <node id="288">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="287">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="287" relation="include">
         </childnode>
       </node>
       <node id="290">
@@ -55,39 +58,32 @@
         <childnode refid="291" relation="include">
         </childnode>
       </node>
-      <node id="293">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="286" relation="include">
-        </childnode>
-      </node>
-      <node id="292">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="290" relation="include">
-        </childnode>
-        <childnode refid="293" relation="include">
-        </childnode>
-      </node>
-      <node id="288">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="289" relation="include">
-        </childnode>
-      </node>
-      <node id="291">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
+      <node id="284">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="285" relation="include">
         </childnode>
-        <childnode refid="284" relation="include">
+      </node>
+      <node id="282">
+        <label>BxPathFind.hpp</label>
+        <link refid="BxPathFind.hpp"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
         </childnode>
       </node>
-      <node id="286">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="287" relation="include">
+      <node id="283">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="284" relation="include">
         </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="struct_bx_path_find_1_1_line" prot="public">BxPathFind::Line</innerclass>
@@ -102,8 +98,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVarVector.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVarVector.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxUtil.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxDraw.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
@@ -488,7 +484,7 @@
 <codeline lineno="385"><highlight class="normal"></highlight></codeline>
 <codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/>polygon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBoundLine<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;Object가<sp/>추가된<sp/>Hurdle은<sp/>Add를<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ObjectBeginID<sp/>==<sp/>-1);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;Object가<sp/>추가된<sp/>Hurdle은<sp/>Add를<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ObjectBeginID<sp/>==<sp/>-1);</highlight></codeline>
 <codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>Bound<sp/>=<sp/>{polygon.pt[0].x,<sp/>polygon.pt[0].y,<sp/>polygon.pt[0].x,<sp/>polygon.pt[0].y};</highlight></codeline>
 <codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>polygon.count;<sp/>++i)</highlight></codeline>
 <codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -502,7 +498,7 @@
 <codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>*<sp/>Result<sp/>=<sp/>MERGE_POLYGON(List[i],<sp/>polygon,<sp/>Bound,<sp/>isBoundLine);</highlight></codeline>
 <codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Result)</highlight></codeline>
 <codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(&amp;polygon,<sp/>Result,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>));</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(&amp;polygon,<sp/>Result,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>));</highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>*<sp/>DeleteNode<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List.Delete(i,<sp/>&amp;DeleteNode);</highlight></codeline>
 <codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(DeleteNode);</highlight></codeline>
@@ -527,7 +523,7 @@
 <codeline lineno="424"><highlight class="normal"></highlight></codeline>
 <codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_path_find_1_1_map" kindref="compound">Map</ref>*<sp/>BuildMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>boundBox)</highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;Object가<sp/>추가된<sp/>Hurdle은<sp/>BuildMap을<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ObjectBeginID<sp/>==<sp/>-1);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;Object가<sp/>추가된<sp/>Hurdle은<sp/>BuildMap을<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ObjectBeginID<sp/>==<sp/>-1);</highlight></codeline>
 <codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref><sp/>BoundPolygon;</highlight></codeline>
 <codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoundPolygon.count<sp/>=<sp/>4;</highlight></codeline>
 <codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoundPolygon.pt[0]<sp/>=<sp/><ref refid="namespace_bx_draw_global_1a7a20db367ef4dc6b10017de45ed32c6b" kindref="member" tooltip="위치제작 ">BxDrawGlobal::XY</ref>(boundBox.l,<sp/>boundBox.t);</highlight></codeline>
@@ -555,20 +551,20 @@
 <codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsBoundLine<sp/>&amp;&amp;<sp/>BestDstI<sp/>==<sp/>-1<sp/>&amp;&amp;<sp/>(Dst.pt[i].x<sp/>&lt;<sp/>SrcBound.l<sp/>||<sp/>Dst.pt[i].y<sp/>&lt;<sp/>SrcBound.t))</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BestDstI<sp/>=<sp/>i;</highlight></codeline>
 <codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;Src는<sp/>Dst의<sp/>우측하단에<sp/>위치하여야<sp/>안전합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>IsBoundLine<sp/>||<sp/>BestDstI<sp/>!=<sp/>-1);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;Src는<sp/>Dst의<sp/>우측하단에<sp/>위치하여야<sp/>안전합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>IsBoundLine<sp/>||<sp/>BestDstI<sp/>!=<sp/>-1);</highlight></codeline>
 <codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsL<sp/>||<sp/>IsT<sp/>||<sp/>IsR<sp/>||<sp/>IsB)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>교차검사<sp/>수집데이터(최소한<sp/>Dst의<sp/>0번<sp/>정점은<sp/>Src에<sp/>포함되지<sp/>않아야<sp/>함)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>CollectDstB[1024];</highlight></codeline>
 <codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>CollectDstE[1024];</highlight></codeline>
 <codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CollectDstLength<sp/>=<sp/>Dst.count;</highlight></codeline>
-<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(CollectDstB,<sp/>&amp;Dst.pt[0],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>CollectDstLength);</highlight></codeline>
-<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(CollectDstE,<sp/>&amp;Dst.pt[1],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>(CollectDstLength<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(CollectDstB,<sp/>&amp;Dst.pt[0],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>CollectDstLength);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(CollectDstE,<sp/>&amp;Dst.pt[1],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>(CollectDstLength<sp/>-<sp/>1));</highlight></codeline>
 <codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CollectDstE[CollectDstLength<sp/>-<sp/>1]<sp/>=<sp/>Dst.pt[0];</highlight></codeline>
 <codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>CollectSrcB[1024];</highlight></codeline>
 <codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>CollectSrcE[1024];</highlight></codeline>
 <codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CollectSrcLength<sp/>=<sp/>Src.count;</highlight></codeline>
-<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(CollectSrcB,<sp/>&amp;Src.pt[0],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>CollectSrcLength);</highlight></codeline>
-<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(CollectSrcE,<sp/>&amp;Src.pt[1],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>(CollectSrcLength<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(CollectSrcB,<sp/>&amp;Src.pt[0],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>CollectSrcLength);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(CollectSrcE,<sp/>&amp;Src.pt[1],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref>)<sp/>*<sp/>(CollectSrcLength<sp/>-<sp/>1));</highlight></codeline>
 <codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CollectSrcE[CollectSrcLength<sp/>-<sp/>1]<sp/>=<sp/>Src.pt[0];</highlight></codeline>
 <codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>0;<sp/>d<sp/>&lt;<sp/>CollectDstLength;<sp/>++d)</highlight></codeline>
 <codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>0;<sp/>s<sp/>&lt;<sp/>CollectSrcLength;<sp/>++s)</highlight></codeline>
@@ -588,7 +584,7 @@
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CollectSrcE[CollectSrcLength]<sp/>=<sp/>CollectSrcE[s];</highlight></codeline>
 <codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CollectSrcB[CollectSrcLength++]<sp/>=<sp/>(CollectSrcE[s]<sp/>=<sp/>*CrossDot);</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;계산상<sp/>오류입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CollectDstLength<sp/>&lt;<sp/>1024<sp/>&amp;&amp;<sp/>CollectSrcLength<sp/>&lt;<sp/>1024);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;계산상<sp/>오류입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>CollectDstLength<sp/>&lt;<sp/>1024<sp/>&amp;&amp;<sp/>CollectSrcLength<sp/>&lt;<sp/>1024);</highlight></codeline>
 <codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CollectDstLength<sp/>==<sp/>Dst.count)</highlight></codeline>
@@ -606,7 +602,7 @@
 <codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result.pt[0]<sp/>=<sp/>CollectDstB[d];</highlight></codeline>
 <codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;계산상<sp/>오류입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Result.pt[0].x<sp/>!=<sp/>0<sp/>||<sp/>Result.pt[0].y<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;계산상<sp/>오류입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Result.pt[0].x<sp/>!=<sp/>0<sp/>||<sp/>Result.pt[0].y<sp/>!=<sp/>0);</highlight></codeline>
 <codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Result.pt[0]<sp/>=<sp/>Dst.pt[BestDstI];</highlight></codeline>
 <codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
@@ -627,7 +623,7 @@
 <codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SrcIndex<sp/>=<sp/>s;</highlight></codeline>
 <codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxAssert(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;계산상<sp/>오류입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>DstIndex<sp/>!=<sp/>-1<sp/>||<sp/>SrcIndex<sp/>!=<sp/>-1);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxPathFind&lt;계산상<sp/>오류입니다&gt;&quot;</highlight><highlight class="normal">,<sp/>DstIndex<sp/>!=<sp/>-1<sp/>||<sp/>SrcIndex<sp/>!=<sp/>-1);</highlight></codeline>
 <codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>SelectedDot;</highlight></codeline>
 <codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DstIndex<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>SrcIndex<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>0<sp/>&lt;<sp/>Result.count)</highlight></codeline>
 <codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -716,6 +712,6 @@
 <codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="614"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxPathFind.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxPathFind.hpp"/>
   </compounddef>
 </doxygen>

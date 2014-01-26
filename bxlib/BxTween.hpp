@@ -1,10 +1,10 @@
-#pragma once
+ï»¿#pragma once
 #include <BxUtil.hpp>
 
-//! \brief Æ¼ÆùÅø ÆÄÆ¼Å¬ ¿î¿µ
+//! \brief í‹°í°íˆ´ íŒŒí‹°í´ ìš´ì˜
 class BxTween
 {
-	// Äİ¹é
+	// ì½œë°±
 	typedef void (*OnPart)(const int ID, const int X, const int Y, const int Opacity, const int Motion, const id_memory Message, void* Data);
 
 public:
@@ -25,11 +25,11 @@ public:
 
 	bool Open(byte* resource)
 	{
-		// Æ÷¸ËÀÎÁõ
+		// í¬ë§·ì¸ì¦
 		byte* Resource = resource;
 		if(BxUtilGlobal::LoadUint32(Resource) != *((uint*) "ptb2"))
 			return false;
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		Close();
 		const int PartLength = BxUtilGlobal::LoadUint8(Resource);
 		BxCore::Util::MemSet(this, 0, sizeof(BxTween) - sizeof(BxVar<_PartTarget>));
@@ -40,7 +40,7 @@ public:
 		_MsPerFrame = 50;
 		_AnimationRandKey = 1234;
 		_PartLength = PartLength;
-		// ·Îµå°úÁ¤
+		// ë¡œë“œê³¼ì •
 		for(int i = 0; i < _PartLength; ++i)
 		{
 			_PartTarget* Target = (i == 0)? (_PartTarget*) &_Begin : &_Target[i - 1];
@@ -57,8 +57,8 @@ public:
 			const int MessageLength = BxUtilGlobal::LoadInt8(Resource);
 			if(0 < MessageLength)
 			{
-				const id_memory Message = BxCore::Util::Malloc(MessageLength);
-				BxCore::Util::MemMove(BxCore::Util::GetPtr(Message), Resource, MessageLength);
+				const id_memory Message = BxCore::Util::Alloc(MessageLength);
+				BxCore::Util::MemCpy(BxCore::Util::GetPtr(Message), Resource, MessageLength);
 				Resource += MessageLength;
 				Target->Message = Message;
 			}
@@ -208,7 +208,7 @@ private:
 
 		inline void SetOpacity(const int Opacity, const int Step, const int End)
 		{
-			BxAssert("BxTween", End != 0);
+			BxASSERT("BxTween", End != 0);
 			AnimationOpacity = (FirstOpacity * (End - Step) + Opacity * Step) / End;
 		}
 
@@ -220,7 +220,7 @@ private:
 
 		inline void PullTarget(const int Step, int End)
 		{
-			BxAssert("BxTween", End != 0);
+			BxASSERT("BxTween", End != 0);
 			AnimationTargetX = (AnimationTargetX * (End - Step) + TargetX * Step) / End;
 			AnimationTargetY = (AnimationTargetY * (End - Step) + TargetY * Step) / End;
 		}
@@ -294,21 +294,21 @@ private:
 			const bool IsPull = (Position == 19 || (Position % 9) / 3 == 2);
 			const bool IsMiddle = (18 <= Position);
 			int RateLeft = 0, RateTop = 0, RateRight = 0, RateBottom = 0;
-			// ¸Ş¸ğ¸®ÇÒ´ç
+			// ë©”ëª¨ë¦¬í• ë‹¹
 			if(Animation) BxCore::Util::Free(Animation);
 			AnimationLength = NumPart;
-			Animation = BxCore::Util::Malloc(sizeof(_PartAnimation) * AnimationLength);
+			Animation = BxCore::Util::Alloc(sizeof(_PartAnimation) * AnimationLength);
 			BxCore::Util::MemSet(BxCore::Util::GetPtr(Animation), 0, sizeof(_PartAnimation) * AnimationLength);
-			id_memory Point = BxCore::Util::Malloc(sizeof(int) * AnimationLength * 2);
+			id_memory Point = BxCore::Util::Alloc(sizeof(int) * AnimationLength * 2);
 			BxCore::Util::MemSet(BxCore::Util::GetPtr(Point), 0, sizeof(int) * AnimationLength * 2);
-			// Æ÷ÀÎÅÍÈ­
+			// í¬ì¸í„°í™”
 			_PartAnimation* AnimationPtr = (_PartAnimation*) BxCore::Util::GetPtr(Animation);
 			int* PosX = &((int*) BxCore::Util::GetPtr(Point))[0];
 			int* PosY = &((int*) BxCore::Util::GetPtr(Point))[AnimationLength];
 
 			if(!IsMiddle)
 			{
-				// ¼öÁı°úÁ¤
+				// ìˆ˜ì§‘ê³¼ì •
 				int PrevPosX = PosX[0];
 				int PrevPosY = PosY[0];
 				int Dist = Detail * 2, Angle = 0, Count = 1, Step = 0, Vector = 0;
@@ -349,7 +349,7 @@ private:
 					RateBottom = BxUtilGlobal::Max(RateBottom, PosY[i]);
 					if(IsCircle)
 					{
-						BxAssert("BxTween", (Dist * 2 * BxUtilGlobal::Pi()) != 0);
+						BxASSERT("BxTween", (Dist * 2 * BxUtilGlobal::Pi()) != 0);
 						const int AddAngle = (int)((((huge)(Detail * 2 * 1024)) << 16) / (Dist * 2 * BxUtilGlobal::Pi()));
 						Angle = (Angle + AddAngle) % 1024;
 						Dist += Detail * 2 * AddAngle / 1024;
@@ -364,7 +364,7 @@ private:
 						}
 					}
 				}
-				// °¡°ø°úÁ¤
+				// ê°€ê³µê³¼ì •
 				const int CenterX = (RateLeft + RateRight) / 2, CenterY = (RateTop + RateBottom) / 2;
 				const int SumDistPow = (RateRight - RateLeft) * (RateRight - RateLeft)
 					+ (RateBottom - RateTop) * (RateBottom - RateTop);
@@ -378,7 +378,7 @@ private:
 						const int DistPow = PosX[i] * PosX[i] + PosY[i] * PosY[i];
 						const int Dist = (0 < DistPow)? BxUtilGlobal::Sqrt(DistPow) : 0;
 						const huge CalcDist = (Position % 3 == 1)? Dist : SumDist - Dist;
-						BxAssert("BxTween", (AnimationLength * Detail) != 0);
+						BxASSERT("BxTween", (AnimationLength * Detail) != 0);
 						PosX[i] = (int)(PosX[i] * CalcDist / (AnimationLength * Detail));
 						PosY[i] = (int)(PosY[i] * CalcDist / (AnimationLength * Detail));
 					}
@@ -388,13 +388,13 @@ private:
 					RateBottom = (i == 0)? PosY[i] : BxUtilGlobal::Max(RateBottom, PosY[i]);
 				}
 			}
-			// ºñ·Ê°úÁ¤
+			// ë¹„ë¡€ê³¼ì •
 			int EnableRate = (IsBegin)? 100 : BxUtil::GetValue(PartRateMin, PartRateMax);
 			int EnableRateSum = 100;
 			for(int i = 0; i < AnimationLength; ++i)
 			{
-				BxAssert("BxTween", (RateRight - RateLeft + 2) != 0);
-				BxAssert("BxTween", (RateBottom - RateTop + 2) != 0);
+				BxASSERT("BxTween", (RateRight - RateLeft + 2) != 0);
+				BxASSERT("BxTween", (RateBottom - RateTop + 2) != 0);
 				AnimationPtr[i].ResetTarget(100 <= EnableRateSum,
 					(PosX[i] - RateLeft + 1) * (TargetX2 - TargetX1 + 1) / (RateRight - RateLeft + 2) - (TargetX2 - TargetX1) / 2,
 					(PosY[i] - RateTop + 1) * (TargetY2 - TargetY1 + 1) / (RateBottom - RateTop + 2) - (TargetY2 - TargetY1) / 2);
@@ -436,61 +436,61 @@ private:
 			{
 				if(!AnimationPtr[i].IsEnable)
 					continue;
-				// ÁøÇà
+				// ì§„í–‰
 				if(AnimationPtr[i].GetRunAnimation())
 				{
 					const int EndFrame = BxUtilGlobal::Max(1, MS_TO_FRAME(BxUtil::GetValue(WorkTimeMin, WorkTimeMax, i)));
 					const int AniFrame = ++AnimationPtr[i].AnimationFrame;
 					if(AniFrame <= 0)
 					{
-						// ºÒÅõ¸íµµÀû¿ë
+						// ë¶ˆíˆ¬ëª…ë„ì ìš©
 						const int Step = AnimationPtr[i].AnimationFrame - AnimationPtr[i].AnimationFrameBegin;
 						const int End = -AnimationPtr[i].AnimationFrameBegin;
 						switch(Waiting)
 						{
-						case 0: // ±ŞÁø¼Ò¸ê
+						case 0: // ê¸‰ì§„ì†Œë©¸
 							AnimationPtr[i].SetOpacity(0, 1, 1);
 							break;
-						case 1: // ¿Ï¸¸¼Ò¸ê
+						case 1: // ì™„ë§Œì†Œë©¸
 							if(PrevTarget->IsBegin)
 								AnimationPtr[i].SetOpacity(0, End - Step, End);
 							else AnimationPtr[i].SetOpacity(0, (Step <= End / 2)? Step : End - Step, End / 2);
 							break;
-						case 2: // ±ŞÁøÁ¡È­
+						case 2: // ê¸‰ì§„ì í™”
 							AnimationPtr[i].SetOpacity(100, 1, 1);
 							break;
-						case 3: // ¿Ï¸¸Á¡È­
+						case 3: // ì™„ë§Œì í™”
 							if(PrevTarget->IsBegin)
 								AnimationPtr[i].SetOpacity(0, End - Step, End);
 							else AnimationPtr[i].SetOpacity(100, (Step <= End / 2)? Step : End - Step, End / 2);
 							break;
-						case 4: // ±ÔÄ¢Á¡¸ê
+						case 4: // ê·œì¹™ì ë©¸
 							AnimationPtr[i].SetOpacity(50 * BxUtilGlobal::Abs(((i + Step) % 4) - 2), 1, 1);
 							break;
-						case 5: // ·£´ıÁ¡¸ê
+						case 5: // ëœë¤ì ë©¸
 							AnimationPtr[i].SetOpacity(50 * BxUtilGlobal::Abs((BxUtil::GetRandom(i + Step) % 4) - 2), 1, 1);
 							break;
 						}
 					}
 					else if(AniFrame <= EndFrame)
 					{
-						// ÀÌµ¿°è»ê
+						// ì´ë™ê³„ì‚°
 						int EndValue = 0, AniValue = 0;
 						switch(Movement)
 						{
-						case 0: // µî¼Ó
+						case 0: // ë“±ì†
 							EndValue = EndFrame;
 							AniValue = AniFrame;
 							break;
-						case 1: // °¡¼Ó
+						case 1: // ê°€ì†
 							EndValue = EndFrame * EndFrame;
 							AniValue = AniFrame * AniFrame;
 							break;
-						case 2: // °¨¼Ó
+						case 2: // ê°ì†
 							EndValue = EndFrame * EndFrame;
 							AniValue = EndValue - (EndFrame - AniFrame) * (EndFrame - AniFrame);
 							break;
-						case 3: // °¡°¨º¯¼Ó
+						case 3: // ê°€ê°ë³€ì†
 							if(AniFrame <= EndFrame / 2)
 							{
 								const int End = EndFrame / 2;
@@ -507,7 +507,7 @@ private:
 								AniValue = EndHalf + EndHalf - (End - Ani) * (End - Ani);
 							}
 							break;
-						case 4: // °¨°¡º¯¼Ó
+						case 4: // ê°ê°€ë³€ì†
 							if(AniFrame <= EndFrame / 2)
 							{
 								const int End = EndFrame / 2;
@@ -525,19 +525,19 @@ private:
 							}
 							break;
 						}
-						// ÀÌµ¿Àû¿ë
-						BxAssert("BxTween", EndValue != 0);
+						// ì´ë™ì ìš©
+						BxASSERT("BxTween", EndValue != 0);
 						AnimationPtr[i].AnimationMoverX = (AnimationPtr[i].AnimationTargetX - AnimationPtr[i].MoverX)
 							* AniValue / EndValue + AnimationPtr[i].MoverX;
 						AnimationPtr[i].AnimationMoverY = (AnimationPtr[i].AnimationTargetY - AnimationPtr[i].MoverY)
 							* AniValue / EndValue + AnimationPtr[i].MoverY;
-						// Áß·Â»óÈ²
+						// ì¤‘ë ¥ìƒí™©
 						if(BxUtil::GetValue(GravityMin, GravityMax, i))
 						{
 							AnimationPtr[i].AnimationGravityVector += (int)((((huge) BxUtil::GetValue(GravityMin, GravityMax, i)) << 16) * MsPerFrame / 1000);
 							AnimationPtr[i].AnimationTargetAddY += AnimationPtr[i].AnimationGravityVector;
 						}
-						// ¹Ù¶÷»óÈ²
+						// ë°”ëŒìƒí™©
 						if(BxUtil::GetValue(WindMin, WindMax, i))
 						{
 							AnimationPtr[i].AnimationTargetAddX += (int)(((huge)(BxUtil::Sin(AnimationPtr[i].AnimationWindAngle * 1024 / 360)))
@@ -545,32 +545,32 @@ private:
 							AnimationPtr[i].AnimationTargetAddY -= (int)(((huge)(BxUtil::Cos(AnimationPtr[i].AnimationWindAngle * 1024 / 360)))
 								* BxUtil::GetValue(WindMin, WindMax, i) * MsPerFrame / 1000);
 						}
-						// Å¸°ÙÀû¿ë
+						// íƒ€ê²Ÿì ìš©
 						if(BxUtil::GetValue(GravityMin, GravityMax, i) || BxUtil::GetValue(WindMin, WindMax, i))
 							AnimationPtr[i].SetTarget((AnimationPtr[i].AnimationTargetAddX + 0x7FFF) >> 16, (AnimationPtr[i].AnimationTargetAddY + 0x7FFF) >> 16);
-						// ÀÎ·ÂÀû¿ë
+						// ì¸ë ¥ì ìš©
 						if(Position == 19 || (Position % 9) / 3 == 2)
 							AnimationPtr[i].PullTarget(AniFrame, EndFrame);
-						// ºÒÅõ¸íµµÀû¿ë
+						// ë¶ˆíˆ¬ëª…ë„ì ìš©
 						AnimationPtr[i].SetOpacity(BxUtil::GetValue(OpacityMin, OpacityMax, i), AniFrame, EndFrame);
-						// ÁøÇàÆĞÅÏ°è»ê
+						// ì§„í–‰íŒ¨í„´ê³„ì‚°
 						if(0 < Pattern)
 						{
-							BxAssert("BxTween", EndFrame != 0);
+							BxASSERT("BxTween", EndFrame != 0);
 							int MoverAddX = 0, MoverAddY = 0, CalcValue1 = 0, CalcValue2 = 0;
 							switch(Pattern)
 							{
-							case 1: // ½Ã°è
+							case 1: // ì‹œê³„
 								CalcValue1 = (1024 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
 								MoverAddX = FtoI(BxUtil::Sin((EndFrame - AniFrame) * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + 0x7FFF);
 								MoverAddY = FtoI(BxUtil::Cos((EndFrame - AniFrame) * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRYMin, PatternRYMax, i) + 0x7FFF);
 								break;
-							case 2: // ¹İ½Ã°è
+							case 2: // ë°˜ì‹œê³„
 								CalcValue1 = (1024 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
 								MoverAddX = FtoI(BxUtil::Sin(AniFrame * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + 0x7FFF);
 								MoverAddY = FtoI(BxUtil::Cos(AniFrame * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRYMin, PatternRYMax, i) + 0x7FFF);
 								break;
-							case 3: // Áö±×Àç±×
+							case 3: // ì§€ê·¸ì¬ê·¸
 								CalcValue1 = BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * (4 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
 								MoverAddX = BxUtilGlobal::Abs(((AniFrame * CalcValue1 / EndFrame) % (BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4))
 									- BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 2) - BxUtil::GetValue(PatternRXMin, PatternRXMax, i);
@@ -578,28 +578,28 @@ private:
 								MoverAddY = BxUtilGlobal::Abs(((AniFrame * CalcValue2 / EndFrame) % (BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4))
 									- BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 2) - BxUtil::GetValue(PatternRYMin, PatternRYMax, i);
 								break;
-							case 4: // ³ª¹µÀÙ
+							case 4: // ë‚˜ë­‡ì
 								CalcValue1 = (1024 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
 								CalcValue2 = AniFrame + (AnimationPtr[i].AnimationCalcValue >> 8);
 								MoverAddX = FtoI(BxUtil::Sin(CalcValue2 * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + 0x7FFF);
 								MoverAddY = BxUtilGlobal::Abs(FtoI(BxUtil::Cos(CalcValue2 * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRYMin, PatternRYMax, i) + 0x7FFF));
 								break;
-							case 5: // ¿öÇÁ
+							case 5: // ì›Œí”„
 								CalcValue1 = ((AnimationPtr[i].AnimationCalcValue >> 8) & 0xF) + 0x7;
-								BxAssert("BxTween", CalcValue1 != 0);
+								BxASSERT("BxTween", CalcValue1 != 0);
 								CalcValue2 = AniFrame + AniFrame / CalcValue1 * CalcValue1;
 								CalcValue1 = BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4 * (AnimationPtr[i].AnimationCalcValue & 0xFF);
 								MoverAddX = BxUtilGlobal::Abs(((CalcValue2 * CalcValue1 / (EndFrame * 2)) % (BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4))
 									- BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 2) - BxUtil::GetValue(PatternRXMin, PatternRXMax, i);
 								CalcValue1 = ((AnimationPtr[i].AnimationCalcValue >> 12) & 0xF) + 0x7;
-								BxAssert("BxTween", CalcValue1 != 0);
+								BxASSERT("BxTween", CalcValue1 != 0);
 								CalcValue2 = AniFrame + AniFrame / CalcValue1 * CalcValue1;
 								CalcValue1 = BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4 * (AnimationPtr[i].AnimationCalcValue & 0xFF);
 								MoverAddY = BxUtilGlobal::Abs(((CalcValue2 * CalcValue1 / (EndFrame * 2)) % (BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4))
 									- BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 2) - BxUtil::GetValue(PatternRYMin, PatternRYMax, i);
 								break;
 							}
-							// È¸Àü
+							// íšŒì „
 							if(Pattern == 4)
 							{
 								AnimationPtr[i].AnimationMoverAddX = MoverAddX;
@@ -612,18 +612,18 @@ private:
 								AnimationPtr[i].AnimationMoverAddX = FtoI(MoverAddX * BxUtil::Cos(Angle) - MoverAddY * BxUtil::Sin(Angle) + 0x7FFF);
 								AnimationPtr[i].AnimationMoverAddY = FtoI(MoverAddY * BxUtil::Cos(Angle) + MoverAddX * BxUtil::Sin(Angle) + 0x7FFF);
 							}
-							// Ãà¼Ò
+							// ì¶•ì†Œ
 							CalcValue1 = EndFrame * 4;
 							CalcValue2 = EndFrame - BxUtilGlobal::Abs(AniFrame * 2 - EndFrame);
 							CalcValue2 = BxUtilGlobal::Min(CalcValue2 * CalcValue2, CalcValue1);
-							BxAssert("BxTween", CalcValue1 != 0);
+							BxASSERT("BxTween", CalcValue1 != 0);
 							AnimationPtr[i].AnimationMoverAddX = AnimationPtr[i].AnimationMoverAddX * CalcValue2 / CalcValue1;
 							AnimationPtr[i].AnimationMoverAddY = AnimationPtr[i].AnimationMoverAddY * CalcValue2 / CalcValue1;
 						}
 					}
 					else AnimationPtr[i].ClearAnimation(true);
 				}
-				// ½Å±Ô
+				// ì‹ ê·œ
 				else if(PrevTarget && !AnimationPtr[i].GetEndAnimation())
 				{
 					_PartAnimation* PrevAnimationPtr = (_PartAnimation*) BxCore::Util::GetPtr(PrevTarget->Animation);
@@ -632,19 +632,19 @@ private:
 							break;
 					if(PrevTarget->IsBegin || PrevAnimationPtr[j].GetEndAnimation())
 					{
-						// ÆĞÅÏÈ½¼ö
+						// íŒ¨í„´íšŸìˆ˜
 						const int TargetDistX = (PrevTarget->TargetX1 + PrevTarget->TargetX2) / 2 - (TargetX1 + TargetX2) / 2;
 						const int TargetDistY = (PrevTarget->TargetY1 + PrevTarget->TargetY2) / 2 - (TargetY1 + TargetY2) / 2;
 						int CalcValue = 0;
 						if(0 < Pattern)
 						{
 							const int Dist16 = BxUtilGlobal::Sqrt64(((huge)(TargetDistX * TargetDistX + TargetDistY * TargetDistY)) << 32);
-							BxAssert("BxTween", ((BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + BxUtil::GetValue(PatternRYMin, PatternRYMax, i)) * BxUtilGlobal::Pi()) != 0);
+							BxASSERT("BxTween", ((BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + BxUtil::GetValue(PatternRYMin, PatternRYMax, i)) * BxUtilGlobal::Pi()) != 0);
 							CalcValue = ((BxUtil::GetRandom() & 0xFF) << 8)
 								| BxUtilGlobal::Min(int(Dist16 / ((BxUtil::GetValue(PatternRXMin, PatternRXMax, i)
 								+ BxUtil::GetValue(PatternRYMin, PatternRYMax, i)) * BxUtilGlobal::Pi())) + 2, 0xFF);
 						}
-						// ½Å±ÔÃÊ±âÈ­
+						// ì‹ ê·œì´ˆê¸°í™”
 						CurrentlyDelay += BxUtil::GetValue(DelayMin, DelayMax, i);
 						AnimationPtr[i].ResetAnimation(PrevTarget->IsBegin, BxUtil::GetValue(PrevTarget->OpacityMin, PrevTarget->OpacityMax, j),
 							PrevAnimationPtr[j].AnimationTargetX + TargetDistX,

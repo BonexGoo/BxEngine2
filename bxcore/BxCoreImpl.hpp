@@ -1,5 +1,4 @@
-#pragma once
-
+ï»¿#pragma once
 #include <BxKeyword.hpp>
 
 namespace BxCore
@@ -23,7 +22,7 @@ namespace BxCore
 			global_data bool IsLoaded = false;
 			if(IsLoaded) return;
 			const bool LoadResult = BxKeyword::Load("config/default.key");
-			BxAssert("BxCore::System<config/default.keyÆÄÀÏÀ» ·ÎµåÇÒ ¼ö ¾ø½À´Ï´Ù>", LoadResult);
+			BxASSERT("BxCore::System<config/default.keyíŒŒì¼ì„ ë¡œë“œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤>", LoadResult);
 			IsLoaded = true;
 		}
 		/// @endcond
@@ -48,7 +47,7 @@ namespace BxCore
 					if(0 < datasize && data)
 					{
 						Data = BxAlloc(datasize);
-						BxCore::Util::MemMove(Data, data, datasize);
+						BxCore::Util::MemCpy(Data, data, datasize);
 					}
 					else Data = nullptr;
 				}
@@ -98,7 +97,7 @@ namespace BxCore
 		}
 		void ForSystem_RunChildProcess(callback_procedure yield)
 		{
-			BxAssert("BxCore::System::_RunChildProcess<µî·ÏµÈ ChildProcess°¡ ¾ø½À´Ï´Ù>", _ChildProcess());
+			BxASSERT("BxCore::System::_RunChildProcess<ë“±ë¡ëœ ChildProcessê°€ ì—†ìŠµë‹ˆë‹¤>", _ChildProcess());
 			_ChildProcess()(yield);
 		}
 		/// @endcond
@@ -123,56 +122,56 @@ namespace BxCore
 		/// @cond SECTION_NAME
 		typedef const byte* (*CoreJPGToBMP)(const byte*);
 		const byte* DefaultJPGToBMP(const byte*)
-		{BxAssert("BxCore::AddOn<ÇØ´ç JPGToBMPÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ JPGToBMPí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_JPGToBMP() {static void* Function = (void*) DefaultJPGToBMP; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef const byte* (*CoreGIFToBMP)(const byte*, const int, int _out_);
 		const byte* DefaultGIFToBMP(const byte*, const int, int _out_)
-		{BxAssert("BxCore::AddOn<ÇØ´ç GIFToBMPÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ GIFToBMPí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_GIFToBMP() {static void* Function = (void*) DefaultGIFToBMP; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef const byte* (*CoreHQXToBMP)(const byte*, int);
 		const byte* DefaultHQXToBMP(const byte*, int)
-		{BxAssert("BxCore::AddOn<ÇØ´ç HQXToBMPÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ HQXToBMPí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_HQXToBMP() {static void* Function = (void*) DefaultHQXToBMP; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef string _tmp_ (*CoreBUFToMD5)(const byte*, const int);
 		string _tmp_ DefaultBUFToMD5(const byte*, const int)
-		{BxAssert("BxCore::AddOn<ÇØ´ç BUFToMD5È®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ BUFToMD5í™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_BUFToMD5() {static void* Function = (void*) DefaultBUFToMD5; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef id_zip (*CoreCreateZIP)(const byte*, const int, int _out_, string);
 		id_zip DefaultCreateZIP(const byte*, const int, int _out_, string)
-		{BxAssert("BxCore::AddOn<ÇØ´ç CreateZIPÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ CreateZIPí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_CreateZIP() {static void* Function = (void*) DefaultCreateZIP; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef void (*CoreReleaseZIP)(id_zip);
 		void DefaultReleaseZIP(id_zip)
-		{BxAssert("BxCore::AddOn<ÇØ´ç ReleaseZIPÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false);}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ ReleaseZIPí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false);}
 		void* _inout_ ForExtend_ReleaseZIP() {static void* Function = (void*) DefaultReleaseZIP; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef const byte* (*CoreZIPToFILE)(id_zip, const int, int _out_);
 		const byte* DefaultZIPToFILE(id_zip, const int, int _out_)
-		{BxAssert("BxCore::AddOn<ÇØ´ç ZIPToFILEÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ ZIPToFILEí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_ZIPToFILE() {static void* Function = (void*) DefaultZIPToFILE; return Function;}
 		/// @endcond
 
 		/// @cond SECTION_NAME
 		typedef string _tmp_ (*CoreZIPToINFO)(id_zip, const int, bool*, uhuge*, uhuge*, uhuge*, bool*, bool*, bool*, bool*);
 		string _tmp_ DefaultZIPToINFO(id_zip, const int, bool*, uhuge*, uhuge*, uhuge*, bool*, bool*, bool*, bool*)
-		{BxAssert("BxCore::AddOn<ÇØ´ç ZIPToINFOÈ®ÀåÇÔ¼ö°¡ ¾ø½À´Ï´Ù>", false); return nullptr;}
+		{BxASSERT("BxCore::AddOn<í•´ë‹¹ ZIPToINFOí™•ìž¥í•¨ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤>", false); return nullptr;}
 		void* _inout_ ForExtend_ZIPToINFO() {static void* Function = (void*) DefaultZIPToINFO; return Function;}
 		/// @endcond
 	}

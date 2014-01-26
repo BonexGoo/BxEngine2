@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kind="class" prot="public">
+    <compoundname>THROW_HEX_UPPER</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1aebd5f21c92ed48ad414cd497dab96954" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint THROW_HEX_UPPER::Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1afdbf42c4cf09b67ce158d5d00b303489" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>THROW_HEX_UPPER::THROW_HEX_UPPER</definition>
+        <argsstring>(const THROW_HEX_UPPER &amp;RHS)</argsstring>
+        <name>THROW_HEX_UPPER</name>
+        <param>
+          <type>const <ref refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kindref="compound">THROW_HEX_UPPER</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="28" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1a1c4ca7621873407bf2fa5981d8e07ecd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>THROW_HEX_UPPER::THROW_HEX_UPPER</definition>
+        <argsstring>(const int RHS)</argsstring>
+        <name>THROW_HEX_UPPER</name>
+        <param>
+          <type>const int</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="29" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1a0e0dbc65ef202d44471355e4d8197a5a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>THROW_HEX_UPPER::THROW_HEX_UPPER</definition>
+        <argsstring>(const void *RHS)</argsstring>
+        <name>THROW_HEX_UPPER</name>
+        <param>
+          <type>const void *</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="30" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1aae501a432017b0081a392236147ed6f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kindref="compound">THROW_HEX_UPPER</ref> &amp;</type>
+        <definition>THROW_HEX_UPPER&amp; THROW_HEX_UPPER::operator=</definition>
+        <argsstring>(const THROW_HEX_UPPER &amp;RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kindref="compound">THROW_HEX_UPPER</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="31" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="25" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="24" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1aae501a432017b0081a392236147ed6f7" prot="public" virt="non-virtual"><scope>THROW_HEX_UPPER</scope><name>operator=</name></member>
+      <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1afdbf42c4cf09b67ce158d5d00b303489" prot="public" virt="non-virtual"><scope>THROW_HEX_UPPER</scope><name>THROW_HEX_UPPER</name></member>
+      <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1a1c4ca7621873407bf2fa5981d8e07ecd" prot="public" virt="non-virtual"><scope>THROW_HEX_UPPER</scope><name>THROW_HEX_UPPER</name></member>
+      <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1a0e0dbc65ef202d44471355e4d8197a5a" prot="public" virt="non-virtual"><scope>THROW_HEX_UPPER</scope><name>THROW_HEX_UPPER</name></member>
+      <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1aebd5f21c92ed48ad414cd497dab96954" prot="public" virt="non-virtual"><scope>THROW_HEX_UPPER</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

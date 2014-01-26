@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 #include <BxString.hpp>
 
 #define BxKeyEvent(NAME) (BxKeyword::Access<BxKeyword::Event>::ByTemplate<__COUNTER__>("" NAME).LetString())
@@ -21,13 +21,17 @@
 #define IsExistBxKeyNumber(NAME) (BxKeyword::Access<BxKeyword::Number>::BySearch(NAME, false) != nullptr)
 #define IsExistBxKeyString(NAME) (BxKeyword::Access<BxKeyword::String>::BySearch(NAME, false) != nullptr)
 
-//! \brief ¡˜∑ƒ¿⁄∑· ¡¶∞¯
+//! \brief ÏßÅÎ†¨ÏûêÎ£å Ï†úÍ≥µ
 class BxKeyword
 {
 	BxString FileName;
 
 	global_func inline BxVar<BxKeyword>& LetPool()
-	{BxVar<BxKeyword>* _; BxSINGLETON(_, BxVar<BxKeyword>, 1); return *_;}
+	{
+		BxVar<BxKeyword>* _;
+		BxSINGLETON(_, 1);
+		return *_;
+	}
 
 	global_func inline uint MakeParentID(bool IsAdd = true)
 	{
@@ -79,8 +83,8 @@ public:
 		enum bekon_type:int {bekon_begin, bekon_finish, bekon_end,
 			bekon_group, bekon_event, bekon_check, bekon_radio, bekon_number, bekon_string, bekon_max};
 		global_data string Command[bekon_max] = {
-			"bekon_script_area<begin>", "bekon_script_area<finish>", "bekon_script_area<end>", // ∫–±‚∏Ì∑…
-			"group(", "event(", "check(", "radio(", "number(", "string("}; // ≈∞øˆµÂ∏Ì∑…
+			"bekon_script_area<begin>", "bekon_script_area<finish>", "bekon_script_area<end>", // Î∂ÑÍ∏∞Î™ÖÎ†π
+			"group(", "event(", "check(", "radio(", "number(", "string("}; // ÌÇ§ÏõåÎìúÎ™ÖÎ†π
 		global_data const int CommandLength[bekon_max] = {
 			BxUtilGlobal::StrLen(Command[0]), BxUtilGlobal::StrLen(Command[1]), BxUtilGlobal::StrLen(Command[2]),
 			BxUtilGlobal::StrLen(Command[3]), BxUtilGlobal::StrLen(Command[4]), BxUtilGlobal::StrLen(Command[5]),
@@ -113,18 +117,18 @@ public:
 				ReservedKeywordType[END] = TempType[TempIndex];
 				ReservedKeywordName = TempName[TempIndex];
 			}
-			else if(buffer[i] == '(' || buffer[i] == '<' || buffer[i] == '>') // <¥¬ if∂ß « ø‰
+			else if(buffer[i] == '(' || buffer[i] == '<' || buffer[i] == '>') // <Îäî ifÎïå ÌïÑÏöî
 			{
 				for(int j = 0, jend = (IsScriptArea)? bekon_max : bekon_end; j < jend; ++j)
 				{
-					// ∏Ì∑…æÓº±¡§
+					// Î™ÖÎ†πÏñ¥ÏÑ†Ï†ï
 					if(i < CommandLength[j] - 1) continue;
 					bool IsMatch = true;
 					for(int k = 0; IsMatch && k < CommandLength[j]; ++k)
 						if(buffer[i - k] != Command[j][CommandLength[j] - k - 1])
 							IsMatch = false;
 					if(!IsMatch) continue;
-					// ±‚¥…Ω««‡
+					// Í∏∞Îä•Ïã§Ìñâ
 					if(j == bekon_begin) IsScriptArea = true;
 					else if(j == bekon_finish) return;
 					else if(j == bekon_end) IsScriptArea = false;
@@ -162,7 +166,7 @@ public:
 				}
 				if(buffer[i] == '[')
 				{
-					BxString Index(".%d", nullptr, GroupArrayIndex[END]++);
+					BxString Index("<>:.<A>", BxTHROW(GroupArrayIndex[END]++));
 					GroupArrayIndex[LAST] = 0;
 					GroupNameLength[LAST] = Index.GetLength();
 					GroupName += Index;
@@ -296,7 +300,7 @@ public:
 						}
 						BxCore::File::WriteString(KeywordFile, ") = ");
 						BxString SelectNumber;
-						SelectNumber.Format("%d\r\n", SelectRadioIndex);
+						SelectNumber.Format("<>:<A><R><N>", BxTHROW(SelectRadioIndex));
 						BxCore::File::WriteString(KeywordFile, SelectNumber);
 					}
 				}
@@ -310,7 +314,7 @@ public:
 					BxCore::File::WriteString(KeywordFile, "number(");
 					BxCore::File::WriteString(KeywordFile, NumberPool[i].GetKeyword());
 					BxString NumberValue;
-					NumberValue.Format(") = %d\r\n", NumberPool[i].LetInt());
+					NumberValue.Format("<>:) = <A><R><N>", BxTHROW(NumberPool[i].LetInt()));
 					BxCore::File::WriteString(KeywordFile, NumberValue);
 				}
 			}
@@ -427,7 +431,7 @@ public:
 		~Access() {}
 
 		global_func inline BxVar<Access>& LetPool()
-		{BxVar<Access>* _; BxSINGLETON(_, BxVar<Access>, 1); return *_;}
+		{BxVar<Access>* _; BxSINGLETON(_, 1); return *_;}
 
 		template<int COUNT>
 		global_func inline Access& ByTemplate(string name)

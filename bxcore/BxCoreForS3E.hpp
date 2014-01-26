@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 #include "s3e.h"
 #include "netdb.h"
 #include "s3eLibrary.h"
@@ -21,8 +21,11 @@
 	#include <pthread.h>
 #endif
 
+#include <BxSingleton.hpp>
+#include <BxPool.hpp>
 #include <BxAutoBuffer.hpp>
 #include <BxScene.hpp>
+#include <BxVarMap.hpp>
 
 namespace BxCore
 {
@@ -162,7 +165,7 @@ namespace BxCore
 			Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
 			Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
 			BxScene::__AddEvent__(Event, (EventData->m_Pressed)? syseventset_do_enable : syseventset_need_enable);
-			// ∏º«¿Ã∫•∆Æ º≥¡§/«ÿ¡¶
+			// Î™®ÏÖòÏù¥Î≤§Ìä∏ ÏÑ§Ï†ï/Ìï¥Ï†ú
 			if(EventData->m_Pressed)
 				s3ePointerRegister(S3E_POINTER_MOTION_EVENT, OnPointerMotion, nullptr);
 			else s3ePointerUnRegister(S3E_POINTER_MOTION_EVENT, OnPointerMotion);
@@ -201,7 +204,7 @@ namespace BxCore
 			Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
 			Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
 			BxScene::__AddEvent__(Event, (EventData->m_Pressed)? syseventset_do_enable : syseventset_need_enable);
-			// ∏º«¿Ã∫•∆Æ º≥¡§/«ÿ¡¶
+			// Î™®ÏÖòÏù¥Î≤§Ìä∏ ÏÑ§Ï†ï/Ìï¥Ï†ú
 			IsPressed[EventData->m_TouchID] = (EventData->m_Pressed != 0);
 			uint PressCount = 0;
 			for(int i = 0; i < S3E_POINTER_TOUCH_MAX; ++i)
@@ -217,7 +220,7 @@ namespace BxCore
 
 	namespace System
 	{
-		// ¿©µµøÏ ¡¶æÓ
+		// ÏúàÎèÑÏö∞ Ï†úÏñ¥
 		/// @cond SECTION_NAME
 		#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 			typedef struct {uint dwLowDateTime; uint dwHighDateTime;} FILETIME, *PFILETIME, *LPFILETIME;
@@ -273,12 +276,12 @@ namespace BxCore
 				BxDLL_GetSystemMetrics = (WindowsLib_GetSystemMetrics) BxCore::Library::Link(WindowsLib_User32, "GetSystemMetrics");
 				BxDLL_SendMessageA = (WindowsLib_SendMessageA) BxCore::Library::Link(WindowsLib_User32, "SendMessageA");
 				BxDLL_ShowWindow = (WindowsLib_ShowWindow) BxCore::Library::Link(WindowsLib_User32, "ShowWindow");
-				// Ω√πƒ∑π¿Ã≈Õ ¿Á¡∂¡§
+				// ÏãúÎÆ¨Î†àÏù¥ÌÑ∞ Ïû¨Ï°∞Ï†ï
 				BxDLL_WindowHandle = BxDLL_FindWindowA(0, "Marmalade- x86 Simulator");
 				if(!BxDLL_WindowHandle) BxDLL_WindowHandle = BxDLL_FindWindowA(0, "BxSimulator");
 				if(BxDLL_WindowHandle)
 				{
-					// Ω∫≈∏¿œ¡∂¡§
+					// Ïä§ÌÉÄÏùºÏ°∞Ï†ï
 					const int GWL_STYLE = -16;
 					const int GWL_EXSTYLE = -20;
 					const int GCL_STYLE = -26;
@@ -290,7 +293,7 @@ namespace BxCore
 					BxDLL_SetWindowLongA(BxDLL_WindowHandle, GWL_EXSTYLE, WS_EX_TOPMOST);
 					BxDLL_SetClassLongA(BxDLL_WindowHandle, GCL_STYLE, BxDLL_GetClassLongA(BxDLL_WindowHandle, GCL_STYLE) | CS_DROPSHADOW);
 					BxDLL_SetMenu(BxDLL_WindowHandle, 0);
-					// ¿ßƒ°¡∂¡§
+					// ÏúÑÏπòÏ°∞Ï†ï
 					const int SM_CXMAXIMIZED = 61;
 					const int SM_CYMAXIMIZED = 62;
 					const int SM_CXFRAME = 32;
@@ -307,7 +310,7 @@ namespace BxCore
 		#endif
 		/// @endcond
 
-		// JNI ¡¶æÓ
+		// JNI Ï†úÏñ¥
 		/// @cond SECTION_NAME
 		template<int ID>
 		class CallbackListJNI
@@ -390,7 +393,7 @@ namespace BxCore
 		{
 		private:
 			bool IsAudio;
-			string FileName;
+			string_rw FileName;
 			int FileSize;
 		public:
 			short* _ref_ WaveData;
@@ -489,7 +492,7 @@ namespace BxCore
 				if(!autoload)
 				{
 					id_file File = File::Open(FileName, "rb");
-					BxAssert("BxCore::Sound<¡∏¿Á«œ¡ˆ æ ¥¬ ∆ƒ¿œ¿‘¥œ¥Ÿ>", File);
+					BxASSERT("BxCore::Sound<Ï°¥Ïû¨ÌïòÏßÄ ÏïäÎäî ÌååÏùºÏûÖÎãàÎã§>", File);
 					File::Read(File, Alloc(FileSize, false, false), FileSize);
 					File::Close(File);
 					LoadWave((const byte*) GetBuffer(), FileSize);
@@ -506,7 +509,7 @@ namespace BxCore
 				if(!GetBuffer())
 				{
 					id_file File = File::Open(FileName, "rb");
-					BxAssert("BxCore::Sound<¡∏¿Á«œ¡ˆ æ ¥¬ ∆ƒ¿œ¿‘¥œ¥Ÿ>", File);
+					BxASSERT("BxCore::Sound<Ï°¥Ïû¨ÌïòÏßÄ ÏïäÎäî ÌååÏùºÏûÖÎãàÎã§>", File);
 					File::Read(File, Alloc(FileSize, true, true), FileSize);
 					File::Close(File);
 					LoadWave((const byte*) GetBuffer(), FileSize);
@@ -544,7 +547,7 @@ namespace BxCore
 			{
 				ChannelState(channel, false) = sound;
 				ChannelState(channel, true) = nullptr;
-				BxAssert("BxCore::Sound<»ø∞˙¿Ω¿∫ Audio∆˜∏À¿Ã ¡ˆø¯∫“∞°«’¥œ¥Ÿ>", !((SoundData*) sound)->IsSoundDataByAudio());
+				BxASSERT("BxCore::Sound<Ìö®Í≥ºÏùåÏùÄ AudioÌè¨Îß∑Ïù¥ ÏßÄÏõêÎ∂àÍ∞ÄÌï©ÎãàÎã§>", !((SoundData*) sound)->IsSoundDataByAudio());
 				((SoundData*) sound)->LockSoundData();
 				s3eSoundChannelSetInt(channel, S3E_CHANNEL_RATE, ((SoundData*) sound)->SamplesPerSec);
 				return s3eSoundChannelPlay(channel, ((SoundData*) sound)->GetSoundData(), ((SoundData*) sound)->GetSoundDataCount(), 1, 0);
@@ -555,11 +558,11 @@ namespace BxCore
 				SoundData* Sound = (SoundData*) ChannelState(channel, true);
 				if(Sound)
 				{
-					BxAssert("BxCore::Sound<»ø∞˙¿Ω¿∫ Audio∆˜∏À¿Ã ¡ˆø¯∫“∞°«’¥œ¥Ÿ>", !Sound->IsSoundDataByAudio());
+					BxASSERT("BxCore::Sound<Ìö®Í≥ºÏùåÏùÄ AudioÌè¨Îß∑Ïù¥ ÏßÄÏõêÎ∂àÍ∞ÄÌï©ÎãàÎã§>", !Sound->IsSoundDataByAudio());
 					Sound->LockSoundData();
 					s3eSoundChannelSetInt(channel, S3E_CHANNEL_RATE, Sound->SamplesPerSec);
 					s3eResult Result = s3eSoundChannelPlay(channel, Sound->GetSoundData(), Sound->GetSoundDataCount(), 1, 0);
-					BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+					BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 				}
 				ChannelState(channel, false) = ChannelState(channel, true);
 				ChannelState(channel, true) = sound;
@@ -582,7 +585,7 @@ namespace BxCore
 
 			local_func bool EffectChannelCB(int value, void*)
 			{
-				// »Æ¿Œ
+				// ÌôïÏù∏
 				const int Channel = value;
 				SoundData* CurSound = (SoundData*) SoundData::ChannelState(Channel, false);
 				if(!CurSound) return true;
@@ -590,15 +593,15 @@ namespace BxCore
 				if(s3eSoundChannelGetInt(Channel, S3E_CHANNEL_STATUS)) return true;
 				CurSound->UnlockSoundData();
 				SoundData::ChannelState(Channel, false) = nullptr;
-				// √≥∏Æ
+				// Ï≤òÎ¶¨
 				SoundData* Sound = (SoundData*) ChannelState(Channel, true);
 				if(Sound)
 				{
-					BxAssert("BxCore::Sound<»ø∞˙¿Ω¿∫ Audio∆˜∏À¿Ã ¡ˆø¯∫“∞°«’¥œ¥Ÿ>", !Sound->IsSoundDataByAudio());
+					BxASSERT("BxCore::Sound<Ìö®Í≥ºÏùåÏùÄ AudioÌè¨Îß∑Ïù¥ ÏßÄÏõêÎ∂àÍ∞ÄÌï©ÎãàÎã§>", !Sound->IsSoundDataByAudio());
 					Sound->LockSoundData();
 					s3eSoundChannelSetInt(Channel, S3E_CHANNEL_RATE, Sound->SamplesPerSec);
 					s3eResult Result = s3eSoundChannelPlay(Channel, Sound->GetSoundData(), Sound->GetSoundDataCount(), 1, 0);
-					BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+					BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 				}
 				ChannelState(Channel, false) = ChannelState(Channel, true);
 				ChannelState(Channel, true) = nullptr;
@@ -729,7 +732,7 @@ namespace BxCore
 
 			local_func bool MusicChannelCB(int, void*)
 			{
-				// »Æ¿Œ
+				// ÌôïÏù∏
 				SoundData* CurSound = (SoundData*) SoundData::ChannelState(0, false);
 				if(!CurSound) return true;
 				if(CurSound->IsSoundDataByAudio())
@@ -745,7 +748,7 @@ namespace BxCore
 				}
 				CurSound->UnlockSoundData();
 				SoundData::ChannelState(0, false) = nullptr;
-				// √≥∏Æ
+				// Ï≤òÎ¶¨
 				if(!Focus(GoNext)->Sound) Focus(GoNext);
 				if(Focus()->Sound)
 				{
@@ -760,13 +763,13 @@ namespace BxCore
 					if(CurSound->IsSoundDataByAudio())
 					{
 						s3eResult Result = s3eAudioPlayFromBuffer(CurSound->GetSoundData(), CurSound->GetSoundDataSize(), 1);
-						BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+						BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 					}
 					else
 					{
 						s3eSoundChannelSetInt(0, S3E_CHANNEL_RATE, CurSound->SamplesPerSec);
 						s3eResult Result = s3eSoundChannelPlay(0, CurSound->GetSoundData(), CurSound->GetSoundDataCount(), 1, 0);
-						BxAssert("BxCore::Sound<«ÿ¥Á ªÁøÓµÂ∏¶ √‚∑¬«“ ºˆ æ¯Ω¿¥œ¥Ÿ>", Result != S3E_RESULT_ERROR);
+						BxASSERT("BxCore::Sound<Ìï¥Îãπ ÏÇ¨Ïö¥ÎìúÎ•º Ï∂úÎ†•Ìï† Ïàò ÏóÜÏäµÎãàÎã§>", Result != S3E_RESULT_ERROR);
 					}
 				}
 				return true;
@@ -775,92 +778,9 @@ namespace BxCore
 		/// @endcond
 	}
 
-	namespace Util
-	{
-		/// @cond SECTION_NAME
-		local_data uint __CallStack__[20480] = {0,};
-		local_data uint* __CallStackFocus__ = __CallStack__;
-		local_data uint __CallCount__ = 0;
-		/// @endcond
-
-		/// @cond SECTION_NAME
-		#if !defined(__GNUC__) && !defined(__ARMCC_VERSION)
-			// ƒƒ∆ƒ¿œø…º«« ø‰(/Gh)
-			extern "C" void __declspec(naked) _cdecl _penter(void)
-			{
-				_asm
-				{
-					push edi
-					push esi
-						mov edi, __CallStackFocus__
-						mov esi, [esp] + 8
-						mov [edi], esi
-						mov esi, __CallCount__
-						mov [edi + 4], esi
-					pop esi
-					pop edi
-					inc __CallCount__
-					add __CallStackFocus__, 8
-					ret
-				}
-			}
-			// ƒƒ∆ƒ¿œø…º«« ø‰(/GH)
-			extern "C" void __declspec(naked) _cdecl _pexit(void)
-			{
-				_asm
-				{
-					sub __CallStackFocus__, 8
-					ret
-				}
-			}
-		#endif
-		/// @endcond
-
-		// π⁄Ω∫«‘ºˆ∞¸∑√
-		/// @cond SECTION_NAME
-		local_data int _function_cur_depth = 0;
-		local_data int _function_log_depth = 0;
-		local_data const int _function_log_depth_max = 32;
-		local_data bool _function_is_before_endline = true;
-		local_data const char* _function_depth_blank[_function_log_depth_max] = {
-		"0...",
-		"0...1...",
-		"0...1...2...",
-		"0...1...2...3...",
-		"0...1...2...3...4...",
-		"0...1...2...3...4...5...",
-		"0...1...2...3...4...5...6...",
-		"0...1...2...3...4...5...6...7...",
-		"0...1...2...3...4...5...6...7...8...",
-		"0...1...2...3...4...5...6...7...8...9...",
-		"0...1...2...3...4...5...6...7...8...9..10...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...6...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...6...7...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...6...7...8...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...6...7...8...9...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...6...7...8...9..30...",
-		"0...1...2...3...4...5...6...7...8...9..10...1...2...3...4...5...6...7...8...9..20...1...2...3...4...5...6...7...8...9..30...1..."};
-		/// @endcond
-	}
-
 	namespace Socket
 	{
-		// ≥◊∆Æøˆ≈© ¡¶æÓ
+		// ÎÑ§Ìä∏ÏõåÌÅ¨ Ï†úÏñ¥
 		/// @cond SECTION_NAME
 		#if defined(_MSC_VER) && defined(I3D_ARCH_X86)
 			#define WSADESCRIPTION_LEN 256
@@ -1001,7 +921,7 @@ namespace BxCore
 					if(Client == INVALID_SOCKET)
 					{
 						const int ErrorCode = BxDLL_WSAGetLastError();
-						BxAssert(BxString("BxCore::Socket<º“ƒœª˝º∫ Ω«∆–(%d)>", nullptr, ErrorCode), false);
+						BxASSERT(BxString::Parse("<>:BxCore::Socket<<ÏÜåÏºìÏÉùÏÑ± Ïã§Ìå®(<A>)>>", BxTHROW(ErrorCode)), false);
 						State = socketstate_null;
 					}
 					else State = socketstate_created;
@@ -1066,7 +986,7 @@ namespace BxCore
 					if(!Client)
 					{
 						const int ErrorCode = (int) s3eSocketGetError();
-						BxAssert(BxString("BxCore::Socket<º“ƒœª˝º∫ Ω«∆–(%d)>", nullptr, ErrorCode), false);
+						BxASSERT(BxString::Parse("<>:BxCore::Socket<<ÏÜåÏºìÏÉùÏÑ± Ïã§Ìå®(<A>)>>", BxTHROW(ErrorCode)), false);
 					}
 					State = (Client)? socketstate_created : socketstate_null;
 				}
@@ -1098,25 +1018,25 @@ namespace BxCore
 				enum ECHO:byte {ECHO_REPLY = 0, ECHO_REQUEST = 8};
 				struct IPHEADER
 				{
-					byte ip_hl:4; // «Ï¥ı ±Ê¿Ã
-					byte ip_v:4; // πˆ¿¸
-					byte ip_tos; // º≠∫ÒΩ∫ ≈∏¿‘
-					short ip_len; // ¿¸√º ±Ê¿Ã
+					byte ip_hl:4; // Ìó§Îçî Í∏∏Ïù¥
+					byte ip_v:4; // Î≤ÑÏ†Ñ
+					byte ip_tos; // ÏÑúÎπÑÏä§ ÌÉÄÏûÖ
+					short ip_len; // Ï†ÑÏ≤¥ Í∏∏Ïù¥
 					ushort ip_id; // ID
-					short ip_off; // Fragment ø…º¬ « µÂ
+					short ip_off; // Fragment ÏòµÏÖã ÌïÑÎìú
 					byte ip_ttl; // TTL
-					byte ip_p; // «¡∑Œ≈‰ƒ›
-					ushort ip_cksum; // √º≈©º∂
-					IN_ADDR ip_src; // πﬂº€¡ˆ
-					IN_ADDR ip_dst; // ∏Ò¿˚¡ˆ
+					byte ip_p; // ÌîÑÎ°úÌÜ†ÏΩú
+					ushort ip_cksum; // Ï≤¥ÌÅ¨ÏÑ¨
+					IN_ADDR ip_src; // Î∞úÏÜ°ÏßÄ
+					IN_ADDR ip_dst; // Î™©Ï†ÅÏßÄ
 				};
 				struct ICMPMESSAGE
 				{
-					ECHO icmp_type; // ∏ﬁºº¡ˆ ≈∏¿‘
-					byte icmp_code; // º≠∫Í ƒ⁄µÂ ≈∏¿‘
-					ushort icmp_cksum; // √º≈©º∂
+					ECHO icmp_type; // Î©îÏÑ∏ÏßÄ ÌÉÄÏûÖ
+					byte icmp_code; // ÏÑúÎ∏å ÏΩîÎìú ÌÉÄÏûÖ
+					ushort icmp_cksum; // Ï≤¥ÌÅ¨ÏÑ¨
 					ushort icmp_id; // ID
-					ushort icmp_seq; // Ω√ƒˆΩ∫ π¯»£
+					ushort icmp_seq; // ÏãúÌÄÄÏä§ Î≤àÌò∏
 				};
 				SOCKET Server;
 				uint LastTimeout;
@@ -1147,7 +1067,7 @@ namespace BxCore
 						if(Server == INVALID_SOCKET)
 						{
 							const int ErrorCode = BxDLL_WSAGetLastError();
-							BxAssert(BxString("BxCore::Socket<º“ƒœª˝º∫ Ω«∆–(%d)>", nullptr, ErrorCode), false);
+							BxASSERT(BxString::Parse("<>:BxCore::Socket<<ÏÜåÏºìÏÉùÏÑ± Ïã§Ìå®(<A>)>>", BxTHROW(ErrorCode)), false);
 						}
 					}
 					if(Server != INVALID_SOCKET && LastTimeout != Timeout)
@@ -1221,13 +1141,13 @@ namespace BxCore
 				if(ErrorCode == WSAEWOULDBLOCK) return 0;
 				switch(ErrorCode)
 				{
-				case WSAEFAULT: BxCore::Util::Printf("##### Socket ErrorCode : WSAEFAULT #####\r\n"); break;
-				case WSAENOTSOCK: BxCore::Util::Printf("##### Socket ErrorCode : WSAENOTSOCK #####\r\n"); break;
-				case WSAESHUTDOWN: BxCore::Util::Printf("##### Socket ErrorCode : WSAESHUTDOWN #####\r\n"); break;
-				case WSAENOTCONN: BxCore::Util::Printf("##### Socket ErrorCode : WSAENOTCONN #####\r\n"); break;
-				case WSAECONNABORTED: BxCore::Util::Printf("##### Socket ErrorCode : WSAECONNABORTED #####\r\n"); break;
-				case WSAECONNRESET: BxCore::Util::Printf("##### Socket ErrorCode : WSAECONNRESET #####\r\n"); break;
-				default: BxCore::Util::Printf("##### Socket ErrorCode : %d #####\r\n", ErrorCode); break;
+				case WSAEFAULT: BxTRACE("<>:##### Socket ErrorCode : WSAEFAULT #####<R><N>"); break;
+				case WSAENOTSOCK: BxTRACE("<>:##### Socket ErrorCode : WSAENOTSOCK #####<R><N>"); break;
+				case WSAESHUTDOWN: BxTRACE("<>:##### Socket ErrorCode : WSAESHUTDOWN #####<R><N>"); break;
+				case WSAENOTCONN: BxTRACE("<>:##### Socket ErrorCode : WSAENOTCONN #####<R><N>"); break;
+				case WSAECONNABORTED: BxTRACE("<>:##### Socket ErrorCode : WSAECONNABORTED #####<R><N>"); break;
+				case WSAECONNRESET: BxTRACE("<>:##### Socket ErrorCode : WSAECONNRESET #####<R><N>"); break;
+				default: BxTRACE("<>:##### Socket ErrorCode : <A> #####<R><N>", BxTHROW(ErrorCode)); break;
 				}
 				switch(ErrorCode)
 				{
@@ -1254,10 +1174,10 @@ namespace BxCore
 				if(ErrorCode == S3E_SOCKET_ERR_WOULDBLOCK) return 0;
 				switch(ErrorCode)
 				{
-				case S3E_SOCKET_ERR_PARAM: BxCore::Util::Printf("##### Socket ErrorCode : S3E_SOCKET_ERR_PARAM #####\r\n"); break;
-				case S3E_SOCKET_ERR_SHUTDOWN: BxCore::Util::Printf("##### Socket ErrorCode : S3E_SOCKET_ERR_SHUTDOWN #####\r\n"); break;
-				case S3E_SOCKET_ERR_NOTCONN: BxCore::Util::Printf("##### Socket ErrorCode : S3E_SOCKET_ERR_NOTCONN #####\r\n"); break;
-				default: BxCore::Util::Printf("##### Socket ErrorCode : %d #####\r\n", ErrorCode); break;
+				case S3E_SOCKET_ERR_PARAM: BxTRACE("<>:##### Socket ErrorCode : S3E_SOCKET_ERR_PARAM #####<R><N>"); break;
+				case S3E_SOCKET_ERR_SHUTDOWN: BxTRACE("<>:##### Socket ErrorCode : S3E_SOCKET_ERR_SHUTDOWN #####<R><N>"); break;
+				case S3E_SOCKET_ERR_NOTCONN: BxTRACE("<>:##### Socket ErrorCode : S3E_SOCKET_ERR_NOTCONN #####<R><N>"); break;
+				default: BxTRACE("<>:##### Socket ErrorCode : <A> #####<R><N>", BxTHROW(ErrorCode)); break;
 				}
 				switch(ErrorCode)
 				{
@@ -1276,7 +1196,7 @@ namespace BxCore
 	{
 		/// @cond SECTION_NAME
 		local_func int& RefCount() {global_data int Count = 0; return Count;}
-		local_func CIwGxFont*& TempFont() {global_data CIwGxFont* Font = 0; return Font;} // GxFontπˆ±◊»∏««øÎ
+		local_func CIwGxFont*& TempFont() {global_data CIwGxFont* Font = 0; return Font;} // GxFontÎ≤ÑÍ∑∏ÌöåÌîºÏö©
 		/// @endcond
 	}
 
@@ -1302,6 +1222,9 @@ namespace BxCore
 			{
 				ThreadClass* This = (ThreadClass*) self;
 				if(This->CB) This->CB(This->Data);
+				BxSingleton::UnbindAll(true);
+				BxPoolGlobal::UnbindAll();
+				BxCore::Thread::UnbindStorageAll();
 				return 0;
 			}
 		public:
@@ -1394,6 +1317,34 @@ namespace BxCore
 					pthread_mutex_unlock(&ID);
 				#endif
 			}
+		};
+		/// @endcond
+
+		/// @cond SECTION_NAME
+		class StorageClass
+		{
+		public:
+			void* Data;
+		public:
+			StorageClass() : Data(nullptr) {}
+			~StorageClass() {BxCore::Util::Free(Data);}
+			void* Init(int size)
+			{
+				Data = BxCore::Util::Alloc(size);
+				BxCore::Util::MemSet(Data, 0, size);
+				return Data;
+			}
+		public:
+			global_func uint CurrentThreadID()
+			{
+				#ifdef _WIN32
+					return (uint) GetCurrentThreadId();
+				#else
+					return (uint) (pthread_self() & 0xFFFFFFFF);
+				#endif
+			}
+			global_func id_mutex& Mutex() {global_data id_mutex _ = OpenMutex(); return _;}
+			global_func BxVarMap< BxVarMap<StorageClass> >& Map() {global_data BxVarMap< BxVarMap<StorageClass> > _; return _;}
 		};
 		/// @endcond
 	}
@@ -1519,7 +1470,7 @@ namespace BxCore
 					//CIwGxStream ShareVBO(*VBOPool, CIwGxStream::SVEC2, sizeof(CIwSVec2) * PoolFocus);
 					if(BxCore::Util::MemCmp(&VBOData[PoolFocus], Vertex, sizeof(CIwSVec2) * 4))
 					{
-						BxCore::Util::MemMove(&VBOData[PoolFocus], Vertex, sizeof(CIwSVec2) * 4);
+						BxCore::Util::MemCpy(&VBOData[PoolFocus], Vertex, sizeof(CIwSVec2) * 4);
 						//ShareVBO.Set(CIwGxStream::SVEC2, &VBOData[PoolFocus], 4, 0);
 						//ShareVBO.Upload(true, false);
 					}
@@ -1537,7 +1488,7 @@ namespace BxCore
 					//CIwGxStream ShareVBO(*VBOPool, CIwGxStream::SVEC2, sizeof(CIwSVec2) * PoolFocus);
 					if(BxCore::Util::MemCmp(&VBOData[PoolFocus], UV, sizeof(CIwSVec2) * 4))
 					{
-						BxCore::Util::MemMove(&VBOData[PoolFocus], UV, sizeof(CIwSVec2) * 4);
+						BxCore::Util::MemCpy(&VBOData[PoolFocus], UV, sizeof(CIwSVec2) * 4);
 						//ShareVBO.Set(CIwGxStream::SVEC2, &VBOData[PoolFocus], 4, 0);
 						//ShareVBO.Upload(true, false);
 					}

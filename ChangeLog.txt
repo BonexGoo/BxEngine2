@@ -4,6 +4,14 @@ https://www.madewithmarmalade.com/downloads/7.0/7.0.0/marmalade-sdk-7.0.0-353650
 ※ ●:신규, ○:업데이트, ◎:버그패치, ★:폐지
 
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [2.8.0] → [2.9.0]
+○ All Source : CP949에서 UTF-8(BOM)로 전환
+○ BxCore::System : BxASSERT, BxTRACE(구:Printf), W1("str"), W2("str"), MB("str")
+● BxCore::Thread : TLS시스템인 BindStorage, UnbindStorageAll 추가(thread_storage사용)
+○ BxCore::Util : Print의 맵스트링은 "<>:str"로 정립, 대/소문자/16진수 추가
+★ BxCore::Util : SnPrintf, VsnPrintf의 폐지 → 맵스트링기반 Print로 대체
+★ BxType : strarg.h와 가변인자함수 va_list관련 코드 폐지 → BxTHROW로 대체
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■ [2.7.0] → [2.8.0]
 ● BxCoreImpl : 코어로부터 공용소스의 독립관리체계 구성(향후 MFC, QT5로 병렬화)
 ● BxCore::Thread : 스레드, 뮤텍스의 관리

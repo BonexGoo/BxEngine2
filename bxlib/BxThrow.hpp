@@ -1,16 +1,53 @@
-#pragma once
+ï»¿#pragma once
 #include <BxPool.hpp>
 
-#define Throw(...) (BxThrow(), __VA_ARGS__)
+// BxTHROW-ëª¨ë“ˆ
+#define BxTHROW(...) (BxThrow(), __VA_ARGS__)
 
-//! \brief °¡º¯ÀÎÀÚ Á¦°ø
+// BxTHROW ì „ìš©íƒ€ì…
+class THROW_STR_UPPER
+{
+public:
+	string _tmp_ Value;
+	THROW_STR_UPPER(const THROW_STR_UPPER& RHS) {operator=(RHS);}
+	explicit THROW_STR_UPPER(string RHS) : Value(RHS) {}
+	THROW_STR_UPPER& operator=(const THROW_STR_UPPER& RHS) {Value = RHS.Value; return *this;}
+};
+class THROW_STR_LOWER
+{
+public:
+	string _tmp_ Value;
+	THROW_STR_LOWER(const THROW_STR_LOWER& RHS) {operator=(RHS);}
+	explicit THROW_STR_LOWER(string RHS) : Value(RHS) {}
+	THROW_STR_LOWER& operator=(const THROW_STR_LOWER& RHS) {Value = RHS.Value; return *this;}
+};
+class THROW_HEX_UPPER
+{
+public:
+	uint Value;
+	THROW_HEX_UPPER(const THROW_HEX_UPPER& RHS) {operator=(RHS);}
+	explicit THROW_HEX_UPPER(const int RHS) : Value((uint) RHS) {}
+	explicit THROW_HEX_UPPER(const void* RHS) : Value((uint) RHS) {}
+	THROW_HEX_UPPER& operator=(const THROW_HEX_UPPER& RHS) {Value = RHS.Value; return *this;}
+};
+class THROW_HEX_LOWER
+{
+public:
+	uint Value;
+	THROW_HEX_LOWER(const THROW_HEX_LOWER& RHS) {operator=(RHS);}
+	explicit THROW_HEX_LOWER(const int RHS) : Value((uint) RHS) {}
+	explicit THROW_HEX_LOWER(const void* RHS) : Value((uint) RHS) {}
+	THROW_HEX_LOWER& operator=(const THROW_HEX_LOWER& RHS) {Value = RHS.Value; return *this;}
+};
+
+//! \brief ê°€ë³€ì¸ì ì œê³µ
 class BxThrow
 {
 public:
 	/*!
-	\brief ¹ü¿ë Comma¿¬»êÀÚ Áßº¹ÇÔ¼ö
-	\param rhs : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief ë²”ìš© Commaì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜
+	\param rhs : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	template<typename TYPE>
 	inline BxThrow& operator,(const TYPE& rhs)
@@ -22,22 +59,22 @@ public:
 	}
 
 	/*!
-	\brief stringÀü¿ë Comma¿¬»êÀÚ Áßº¹ÇÔ¼ö
-	\param rhs : ¿ìÃø ÇÇ¿¬»êÀÚ
-	\return ÀÚ½ÅÀ» ¸®ÅÏ
+	\brief stringì „ìš© Commaì—°ì‚°ì ì¤‘ë³µí•¨ìˆ˜
+	\param rhs : ìš°ì¸¡ í”¼ì—°ì‚°ì
+	\return ìì‹ ì„ ë¦¬í„´
 	*/
 	inline BxThrow& operator,(string rhs)
 	{
 		PtrUnit<string>* NewUint = BxPool< PtrUnit<string> >::MakeClass();
-		NewUint->Ptr = (string*) rhs; // Æ¯¼öÈ­
+		NewUint->Ptr = (string*) rhs; // íŠ¹ìˆ˜í™”
 		List.AttachLast(NewUint);
 		return *this;
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ Á¢±ÙÇÏ±â
-	\param i : µ¥ÀÌÅÍ ¼ø¹ø
-	\return µ¥ÀÌÅÍ¸¦ ¸®ÅÏ(½ÇÆĞ½Ã nullptr)
+	\brief ë°ì´í„° ì ‘ê·¼í•˜ê¸°
+	\param i : ë°ì´í„° ìˆœë²ˆ
+	\return ë°ì´í„°ë¥¼ ë¦¬í„´(ì‹¤íŒ¨ì‹œ nullptr)
 	*/
 	template<typename TYPE>
 	inline TYPE* Access(int i) const
@@ -45,14 +82,14 @@ public:
 		if(i < 0 || List.Length() <= i) return nullptr;
 		Unit* AccessedUnit = List.Access(i);
 		if(!AccessedUnit) return nullptr;
-		if(AccessedUnit->TablePtr() != PtrUnit<TYPE>::StaticTablePtr())
+		if(AccessedUnit->VTablePtr() != PtrUnit<TYPE>::VTablePtr())
 			return nullptr;
 		return ((PtrUnit<TYPE>*) AccessedUnit)->Ptr;
 	}
 
 	/*!
-	\brief µ¥ÀÌÅÍ±æÀÌ °¡Á®¿À±â
-	\return µ¥ÀÌÅÍ±æÀÌ¸¦ ¸®ÅÏ
+	\brief ë°ì´í„°ê¸¸ì´ ê°€ì ¸ì˜¤ê¸°
+	\return ë°ì´í„°ê¸¸ì´ë¥¼ ë¦¬í„´
 	*/
 	inline const int Length() const
 	{
@@ -60,8 +97,8 @@ public:
 	}
 
 	/*!
-	\brief °øµ¥ÀÌÅÍ
-	\return °øµ¥ÀÌÅÍ¸¦ ¸®ÅÏ
+	\brief ê³µë°ì´í„°
+	\return ê³µë°ì´í„°ë¥¼ ë¦¬í„´
 	*/
 	global_func inline const BxThrow& zero()
 	{
@@ -70,12 +107,12 @@ public:
 	}
 
 	/*!
-	\brief »ı¼ºÀÚ
+	\brief ìƒì„±ì
 	*/
 	BxThrow() {}
 
 	/*!
-	\brief ¼Ò¸êÀÚ
+	\brief ì†Œë©¸ì
 	*/
 	~BxThrow()
 	{
@@ -92,10 +129,7 @@ private:
 		Unit() : Next(nullptr) {}
 		virtual ~Unit() {}
 	public:
-		const void* TablePtr() const
-		{
-			return ((const void**) this)[0];
-		}
+		const void* VTablePtr() const {return *((const void**) this);}
 	};
 	class HeadUnit : public Unit
 	{
@@ -141,10 +175,11 @@ private:
 		PtrUnit() : Ptr(nullptr) {}
 		virtual ~PtrUnit() {}
 	public:
-		global_func const void* StaticTablePtr()
+		global_func const void* VTablePtr()
 		{
-			global_data const PtrUnit Unit;
-			return ((const void**) &Unit)[0];
+			global_data void* _ = nullptr;
+			if(!_) {PtrUnit VTable; _ = *((void**) &VTable);}
+			return _;
 		}
 	};
 	HeadUnit List;

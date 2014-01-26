@@ -1,9 +1,9 @@
-#pragma once
+ï»¿#pragma once
 #include <BxVarVector.hpp>
 #include <BxUtil.hpp>
 #include <BxDraw.hpp>
 
-//! \brief ´Ù°¢Çü¸Ê ±æÃ£±â Á¦°ø
+//! \brief ë‹¤ê°í˜•ë§µ ê¸¸ì°¾ê¸° ì œê³µ
 namespace BxPathFind
 {
 	enum linetype {linetype_bound, linetype_space, linetype_wall};
@@ -135,7 +135,7 @@ namespace BxPathFind
 					Triangle* CurTriangle = End;
 					while(CurTriangle)
 					{
-						// Áß°£Á¤Á¡ »ğÀÔ
+						// ì¤‘ê°„ì •ì  ì‚½ì…
 						if(0 < step)
 						{
 							const point DotA = Result->Dots[END];
@@ -162,7 +162,7 @@ namespace BxPathFind
 				Dots[LAST] = list[i].pt[j];
 				Lines[LAST].Set((i == list.Length() - 1)? linetype_bound : linetype_wall, CurIndex, CurIndex + ((j + 1) % jend) - j);
 			}
-			// ¸Ê±¸¼º
+			// ë§µêµ¬ì„±
 			MAPPING(Top.INSERT_FIRST(), nullptr, linetype_bound, 0, 1);
 		}
 
@@ -170,27 +170,27 @@ namespace BxPathFind
 		{
 			for(int dotC = 0; dotC < Dots.Length(); dotC++)
 			{
-				// Á¡CÀÇ Á¶°Ç
+				// ì Cì˜ ì¡°ê±´
 				if(!parent) {if(dotC == dotA || dotC == dotB) continue;}
 				else if(dotC == parent->DotA || dotC == parent->DotB || dotC == parent->DotC)
 					continue;
-				// »ï°¢Çü±¸¼ºÀÇ Á¶°Ç
+				// ì‚¼ê°í˜•êµ¬ì„±ì˜ ì¡°ê±´
 				if(IS_INCLUDE_ANI_DOT_BY(dotA, dotB, dotC)) continue;
 				int LineAC = FIND_LINE_ID(dotA, dotC);
 				int LineBC = FIND_LINE_ID(dotB, dotC);
 				if((LineAC != -1 || !IS_CROSSING_ANI_LINE_BY(dotA, dotC)) && (LineBC != -1 || !IS_CROSSING_ANI_LINE_BY(dotB, dotC)))
 				{
-					// »ï°¢ÇüÃß°¡
+					// ì‚¼ê°í˜•ì¶”ê°€
 					focus->TypeAB = type;
 					focus->TypeAC = (LineAC == -1)? linetype_space : Lines[LineAC].Type;
 					focus->TypeBC = (LineBC == -1)? linetype_space : Lines[LineBC].Type;
 					focus->DotA = dotA;
 					focus->DotB = dotB;
 					focus->DotC = dotC;
-					// ¼±Ãß°¡
+					// ì„ ì¶”ê°€
 					if(LineAC == -1) Lines[LAST].Set(linetype_space, focus->DotA, focus->DotC);
 					if(LineBC == -1) Lines[LAST].Set(linetype_space, focus->DotB, focus->DotC);
-					// ¿¬°áµÇ´Â »ï°¢ÇüÁ¤º¸
+					// ì—°ê²°ë˜ëŠ” ì‚¼ê°í˜•ì •ë³´
 					focus->LinkAB = parent;
 					if(focus->TypeAC != linetype_bound && !(focus->LinkAC = FIND_SAME_TRIANGLE(focus->DotA, focus->DotC, focus)))
 						MAPPING(focus->LinkAC = Top.INSERT_FIRST(), focus, focus->TypeAC, focus->DotA, focus->DotC);
@@ -385,7 +385,7 @@ namespace BxPathFind
 
 		public: void Add(const points& polygon, const bool isBoundLine = false)
 		{
-			BxAssert("Object°¡ Ãß°¡µÈ HurdleÀº Add¸¦ Áö¿øÇÏÁö ¾Ê½À´Ï´Ù>", ObjectBeginID == -1);
+			BxASSERT("Objectê°€ ì¶”ê°€ëœ Hurdleì€ Addë¥¼ ì§€ì›í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", ObjectBeginID == -1);
 			rect Bound = {polygon.pt[0].x, polygon.pt[0].y, polygon.pt[0].x, polygon.pt[0].y};
 			for(int i = 1; i < polygon.count; ++i)
 			{
@@ -399,7 +399,7 @@ namespace BxPathFind
 				const points* Result = MERGE_POLYGON(List[i], polygon, Bound, isBoundLine);
 				if(Result)
 				{
-					BxCore::Util::MemMove(&polygon, Result, sizeof(points));
+					BxCore::Util::MemCpy(&polygon, Result, sizeof(points));
 					points* DeleteNode = nullptr;
 					List.Delete(i, &DeleteNode);
 					BxFree(DeleteNode);
@@ -424,7 +424,7 @@ namespace BxPathFind
 
 		public: Map* BuildMap(const rect& boundBox)
 		{
-			BxAssert("Object°¡ Ãß°¡µÈ HurdleÀº BuildMapÀ» Áö¿øÇÏÁö ¾Ê½À´Ï´Ù>", ObjectBeginID == -1);
+			BxASSERT("Objectê°€ ì¶”ê°€ëœ Hurdleì€ BuildMapì„ ì§€ì›í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤>", ObjectBeginID == -1);
 			points BoundPolygon;
 			BoundPolygon.count = 4;
 			BoundPolygon.pt[0] = BxDrawGlobal::XY(boundBox.l, boundBox.t);
@@ -440,7 +440,7 @@ namespace BxPathFind
 		private: const points* MERGE_POLYGON(const points& Dst, const points& Src, const rect SrcBound, const bool IsBoundLine)
 		{
 			global_data points Result = {0,};
-			// ÇÑ°è°Ë»ç
+			// í•œê³„ê²€ì‚¬
 			bool IsL = true, IsT = true, IsR = true, IsB = true;
 			int BestDstI = -1;
 			for(int i = 0; i < Dst.count; ++i)
@@ -452,20 +452,20 @@ namespace BxPathFind
 				if(!IsBoundLine && BestDstI == -1 && (Dst.pt[i].x < SrcBound.l || Dst.pt[i].y < SrcBound.t))
 					BestDstI = i;
 			}
-			BxAssert("BxPathFind<Src´Â DstÀÇ ¿ìÃøÇÏ´Ü¿¡ À§Ä¡ÇÏ¿©¾ß ¾ÈÀüÇÕ´Ï´Ù>", IsBoundLine || BestDstI != -1);
+			BxASSERT("BxPathFind<SrcëŠ” Dstì˜ ìš°ì¸¡í•˜ë‹¨ì— ìœ„ì¹˜í•˜ì—¬ì•¼ ì•ˆì „í•©ë‹ˆë‹¤>", IsBoundLine || BestDstI != -1);
 			if(IsL || IsT || IsR || IsB) return nullptr;
-			// ±³Â÷°Ë»ç ¼öÁıµ¥ÀÌÅÍ(ÃÖ¼ÒÇÑ DstÀÇ 0¹ø Á¤Á¡Àº Src¿¡ Æ÷ÇÔµÇÁö ¾Ê¾Æ¾ß ÇÔ)
+			// êµì°¨ê²€ì‚¬ ìˆ˜ì§‘ë°ì´í„°(ìµœì†Œí•œ Dstì˜ 0ë²ˆ ì •ì ì€ Srcì— í¬í•¨ë˜ì§€ ì•Šì•„ì•¼ í•¨)
 			point CollectDstB[1024];
 			point CollectDstE[1024];
 			int CollectDstLength = Dst.count;
-			BxCore::Util::MemMove(CollectDstB, &Dst.pt[0], sizeof(point) * CollectDstLength);
-			BxCore::Util::MemMove(CollectDstE, &Dst.pt[1], sizeof(point) * (CollectDstLength - 1));
+			BxCore::Util::MemCpy(CollectDstB, &Dst.pt[0], sizeof(point) * CollectDstLength);
+			BxCore::Util::MemCpy(CollectDstE, &Dst.pt[1], sizeof(point) * (CollectDstLength - 1));
 			CollectDstE[CollectDstLength - 1] = Dst.pt[0];
 			point CollectSrcB[1024];
 			point CollectSrcE[1024];
 			int CollectSrcLength = Src.count;
-			BxCore::Util::MemMove(CollectSrcB, &Src.pt[0], sizeof(point) * CollectSrcLength);
-			BxCore::Util::MemMove(CollectSrcE, &Src.pt[1], sizeof(point) * (CollectSrcLength - 1));
+			BxCore::Util::MemCpy(CollectSrcB, &Src.pt[0], sizeof(point) * CollectSrcLength);
+			BxCore::Util::MemCpy(CollectSrcE, &Src.pt[1], sizeof(point) * (CollectSrcLength - 1));
 			CollectSrcE[CollectSrcLength - 1] = Src.pt[0];
 			for(int d = 0; d < CollectDstLength; ++d)
 			for(int s = 0; s < CollectSrcLength; ++s)
@@ -485,7 +485,7 @@ namespace BxPathFind
 						CollectSrcE[CollectSrcLength] = CollectSrcE[s];
 						CollectSrcB[CollectSrcLength++] = (CollectSrcE[s] = *CrossDot);
 					}
-					BxAssert("BxPathFind<°è»ê»ó ¿À·ùÀÔ´Ï´Ù>", CollectDstLength < 1024 && CollectSrcLength < 1024);
+					BxASSERT("BxPathFind<ê³„ì‚°ìƒ ì˜¤ë¥˜ì…ë‹ˆë‹¤>", CollectDstLength < 1024 && CollectSrcLength < 1024);
 				}
 			}
 			if(CollectDstLength == Dst.count)
@@ -503,7 +503,7 @@ namespace BxPathFind
 					Result.pt[0] = CollectDstB[d];
 					break;
 				}
-				BxAssert("BxPathFind<°è»ê»ó ¿À·ùÀÔ´Ï´Ù>", Result.pt[0].x != 0 || Result.pt[0].y != 0);
+				BxASSERT("BxPathFind<ê³„ì‚°ìƒ ì˜¤ë¥˜ì…ë‹ˆë‹¤>", Result.pt[0].x != 0 || Result.pt[0].y != 0);
 			}
 			else Result.pt[0] = Dst.pt[BestDstI];
 			do
@@ -524,7 +524,7 @@ namespace BxPathFind
 						SrcIndex = s;
 						break;
 					}
-				BxAssert("BxPathFind<°è»ê»ó ¿À·ùÀÔ´Ï´Ù>", DstIndex != -1 || SrcIndex != -1);
+				BxASSERT("BxPathFind<ê³„ì‚°ìƒ ì˜¤ë¥˜ì…ë‹ˆë‹¤>", DstIndex != -1 || SrcIndex != -1);
 				point SelectedDot;
 				if(DstIndex != -1 && SrcIndex != -1 && 0 < Result.count)
 				{
@@ -578,7 +578,7 @@ namespace BxPathFind
 					const point& SubTarget = path->Dots[p];
 					for(int h = 0; !IsFind && h < hurdle->List.Length(); ++h)
 					{
-						// curPos¸¦ µÑ·¯½Ñ ¿ÀºêÁ§Æ®´Â °Ë»ç¿¡¼­ Á¦¿Ü
+						// curPosë¥¼ ë‘˜ëŸ¬ì‹¼ ì˜¤ë¸Œì íŠ¸ëŠ” ê²€ì‚¬ì—ì„œ ì œì™¸
 						if(0 <= hurdle->ObjectBeginID && hurdle->ObjectBeginID <= h)
 						{
 							bool IsInHurdle = true;

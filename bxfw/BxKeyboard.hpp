@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 
 #include <BxString.hpp>
 #include <BxImage.hpp>
@@ -23,8 +23,8 @@ public:
 		BxWebContent Web;
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"))
 		{
-			buttonfont = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 12);
-			IMEfont = BxCore::Font::Open(BxString("%s/%s", nullptr, Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"), 18);
+			buttonfont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxTHROW(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 12);
+			IMEfont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxTHROW(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 18);
 		}
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.IMG-01-BONEC-000000.keyboard.png"))
 		{
@@ -51,12 +51,14 @@ public:
 
 	void DrawButton(BxDraw& Draw, bool IsPushed)
 	{
-		try(Draw, OPACITY(64))
+		BxTRY(Draw, OPACITY(64))
 		{
 			Draw.Area(0, 0, FORM(&IMEImage, IMEImageRect[IsPushed][0]));
-			try(Draw, CLIP(XYWH(8, 0, Draw.Width() - 16, Draw.Height())))
-			for(int x = 0, xend = Draw.Width(), xstep = IMEImageRect[IsPushed][1].width(); x < xend; x += xstep)
-				Draw.Area(x, 0, FORM(&IMEImage, IMEImageRect[IsPushed][1]));
+			BxTRY(Draw, CLIP(XYWH(8, 0, Draw.Width() - 16, Draw.Height())))
+			{
+				for(int x = 0, xend = Draw.Width(), xstep = IMEImageRect[IsPushed][1].width(); x < xend; x += xstep)
+					Draw.Area(x, 0, FORM(&IMEImage, IMEImageRect[IsPushed][1]));
+			}
 			Draw.Area(Draw.Width() - 8, 0, FORM(&IMEImage, IMEImageRect[IsPushed][2]));
 		}
 	}
@@ -69,7 +71,7 @@ public:
 			0x8841, 0x8c41, 0x9041, 0x9441, 0x9841, 0x9c41, 0xa041, 0xa441, 0xa841, 0xac41, 0xb041, 0xb441, 0xb841, 0xbc41, 0xc041, 0xc441, 0xc841, 0xcc41, 0xd041,
 			0x85c1, 0x85e1, 0x8641, 0x86a1, 0x86c1, 0x86e1, 0x8781,
 			0x8461, 0x8481, 0x84a1, 0x84c1, 0x84e1, 0x8541, 0x8561, 0x8581, 0x85a1, 0x8661, 0x8681, 0x8741, 0x8761, 0x87a1,
-			// √ º∫º¯º≠ø° ∏¬√· ¡æº∫ƒ⁄µÂ
+			// Ï¥àÏÑ±ÏàúÏÑúÏóê ÎßûÏ∂ò Ï¢ÖÏÑ±ÏΩîÎìú
 			0x8442, 0x8443, 0x8445, 0x8448, 0x0001, 0x8449, 0x8451, 0x8453, 0x0001, 0x8455, 0x8456, 0x8457, 0x8458, 0x0001, 0x8459, 0x845a, 0x845b, 0x845c, 0x845d
 		};
 		global_data const ushort KSC_KSSM[2350][2] =
@@ -370,7 +372,7 @@ public:
 			{0xc8f9, 0xd3a5}, {0xc8fa, 0xd3a9}, {0xc8fb, 0xd3b1}, {0xc8fc, 0xd3b3}, {0xc8fd, 0xd3b5}, {0xc8fe, 0xd3b7}
 		};
 
-		// ¡∂«’ƒ⁄µÂ ±∏º∫
+		// Ï°∞Ìï©ÏΩîÎìú Íµ¨ÏÑ±
 		ushort Combine = 0x8000;
 		if(JohapCombine[0]) Combine |= JohapCode[JohapCombine[0] - 1] & 0x7c00;
 		else Combine |= 0x0400;
@@ -383,7 +385,7 @@ public:
 			else Combine |= JohapCode[JohapCombine[2] - 1 - 11 + 51] & 0x001f;
 		}
 		else Combine |= 0x0001;
-		// øœº∫ƒ⁄µÂ ∏≈ƒ™
+		// ÏôÑÏÑ±ÏΩîÎìú Îß§Ïπ≠
 		global_data char Result[3];
 		for(int i = 0; i < 2350; ++i)
 			if(KSC_KSSM[i][1] == Combine)
@@ -391,7 +393,7 @@ public:
 				Result[0] = (KSC_KSSM[i][0] >> 8) & 0xFF;
 				Result[1] = KSC_KSSM[i][0] & 0xFF;
 				Result[2] = '\0';
-				// ∆ƒ∂ÛπÃ≈Õ √ ±‚»≠
+				// ÌååÎùºÎØ∏ÌÑ∞ Ï¥àÍ∏∞Ìôî
 				JohapCombine[0] = 0;
 				JohapCombine[1] = 0;
 				JohapCombine[2] = 0;
@@ -404,10 +406,10 @@ public:
 	{
 		global_data const string KoreanChar[51] =
 		{
-			"§°§µ", "§§§∏", "§§§æ", "§©§°", "§©§±", "§©§≤", "§©§µ", "§©§º", "§©§Ω", "§©§æ", "§≤§µ",
-			"§°", "§¢", "§§", "§ß", "§®", "§©", "§±", "§≤", "§≥", "§µ", "§∂", "§∑", "§∏", "§π", "§∫", "§ª", "§º", "§Ω", "§æ",
-			"§«§ø", "§«§¿", "§«§”", "§Ã§√", "§Ã§ƒ", "§Ã§”", "§—§”",
-			"§ø", "§¿", "§¡", "§¬", "§√", "§ƒ", "§≈", "§∆", "§«", "§À", "§Ã", "§–", "§—", "§”"
+			"„Ñ±„ÖÖ", "„Ñ¥„Öà", "„Ñ¥„Öé", "„Ñπ„Ñ±", "„Ñπ„ÖÅ", "„Ñπ„ÖÇ", "„Ñπ„ÖÖ", "„Ñπ„Öå", "„Ñπ„Öç", "„Ñπ„Öé", "„ÖÇ„ÖÖ",
+			"„Ñ±", "„Ñ≤", "„Ñ¥", "„Ñ∑", "„Ñ∏", "„Ñπ", "„ÖÅ", "„ÖÇ", "„ÖÉ", "„ÖÖ", "„ÖÜ", "„Öá", "„Öà", "„Öâ", "„Öä", "„Öã", "„Öå", "„Öç", "„Öé",
+			"„Öó„Öè", "„Öó„Öê", "„Öó„Ö£", "„Öú„Öì", "„Öú„Öî", "„Öú„Ö£", "„Ö°„Ö£",
+			"„Öè", "„Öê", "„Öë", "„Öí", "„Öì", "„Öî", "„Öï", "„Öñ", "„Öó", "„Öõ", "„Öú", "„Ö†", "„Ö°", "„Ö£"
 		};
 		global_data const int KoreanCharLen[51] =
 		{
@@ -421,7 +423,7 @@ public:
 		IMETails = "";
 
 		int JohapCombine[3] = {0, 0, 0}, TestCombine[3] = {0, 0, 0};
-		string InputString = StrCpyWithAlloc(IMETemps);
+		string_rw InputString = StrCpyWithAlloc(IMETemps);
 		string InputFocus = InputString;
 		while(*InputFocus)
 		{
@@ -430,50 +432,50 @@ public:
 				if(StrSameCount(KoreanChar[i], InputFocus) == KoreanCharLen[i])
 				{
 					LastKoreanChar = i;
-					if(i < 11) // π´¡∂∞« ¡æº∫
+					if(i < 11) // Î¨¥Ï°∞Í±¥ Ï¢ÖÏÑ±
 					{
-						if(JohapCombine[2]) continue; // Ω«∆– : ¿ÃπÃ ¡æº∫¿Ã ¿÷¥¬ ∞ÊøÏ
+						if(JohapCombine[2]) continue; // Ïã§Ìå® : Ïù¥ÎØ∏ Ï¢ÖÏÑ±Ïù¥ ÏûàÎäî Í≤ΩÏö∞
 						TestCombine[0] = JohapCombine[0];
 						TestCombine[1] = JohapCombine[1];
 						TestCombine[2] = i + 1;
-						if(*ConvertIME(TestCombine)) // ±∏º∫º∫∞¯
+						if(*ConvertIME(TestCombine)) // Íµ¨ÏÑ±ÏÑ±Í≥µ
 							JohapCombine[2] = i + 1;
-						else continue; // ±∏º∫Ω«∆– : øœº∫«¸ ∫Œ¿Á(øπ:îÓ)
+						else continue; // Íµ¨ÏÑ±Ïã§Ìå® : ÏôÑÏÑ±Ìòï Î∂ÄÏû¨(Ïòà:Î∑Å)
 					}
-					else if(i < 30) // √ º∫ ∂«¥¬ ¡æº∫
+					else if(i < 30) // Ï¥àÏÑ± ÎòêÎäî Ï¢ÖÏÑ±
 					{
-						if(!JohapCombine[0] || JohapCombine[2]) // √ º∫
+						if(!JohapCombine[0] || JohapCombine[2]) // Ï¥àÏÑ±
 						{
-							if(JohapCombine[2]) // øœº∫ : ¿ÃπÃ ¡æº∫¿Ã ¿÷¥¬ ∞ÊøÏ
+							if(JohapCombine[2]) // ÏôÑÏÑ± : Ïù¥ÎØ∏ Ï¢ÖÏÑ±Ïù¥ ÏûàÎäî Í≤ΩÏö∞
 								DestString += ConvertIME(JohapCombine);
 							JohapCombine[0] = i + 1;
 							JohapCombine[1] = 0;
 							JohapCombine[2] = 0;
 						}
-						else // ¡æº∫
+						else // Ï¢ÖÏÑ±
 						{
 							TestCombine[0] = JohapCombine[0];
 							TestCombine[1] = JohapCombine[1];
 							TestCombine[2] = i + 1;
-							if(*ConvertIME(TestCombine)) // ±∏º∫º∫∞¯
+							if(*ConvertIME(TestCombine)) // Íµ¨ÏÑ±ÏÑ±Í≥µ
 								JohapCombine[2] = i + 1;
-							else // ±∏º∫Ω«∆– : øœº∫«¸ ∫Œ¿Á(øπ:åc)
+							else // Íµ¨ÏÑ±Ïã§Ìå® : ÏôÑÏÑ±Ìòï Î∂ÄÏû¨(Ïòà:Îò†)
 							{
 								string LastIME = ConvertIME(JohapCombine);
 								if(*LastIME) DestString += LastIME;
-								else if(JohapCombine[0]) // ±∏º∫Ω«∆– : √ º∫∏∏ ¿÷∞Ì ¡ﬂº∫¿Ã æ¯¥¬ ªÛ»≤
+								else if(JohapCombine[0]) // Íµ¨ÏÑ±Ïã§Ìå® : Ï¥àÏÑ±Îßå ÏûàÍ≥† Ï§ëÏÑ±Ïù¥ ÏóÜÎäî ÏÉÅÌô©
 									DestString += KoreanChar[JohapCombine[0] - 1];
-								JohapCombine[0] = i + 1; // √ º∫¿∏∑Œ √≥∏Æ
+								JohapCombine[0] = i + 1; // Ï¥àÏÑ±ÏúºÎ°ú Ï≤òÎ¶¨
 								JohapCombine[1] = 0;
 								JohapCombine[2] = 0;
 							}
 						}
 					}
-					else if(!JohapCombine[0]) // √ º∫¿Ã æ¯¥¬ ¡ﬂº∫
+					else if(!JohapCombine[0]) // Ï¥àÏÑ±Ïù¥ ÏóÜÎäî Ï§ëÏÑ±
 						DestString += KoreanChar[i];
-					else // ¡ﬂº∫
+					else // Ï§ëÏÑ±
 					{
-						// øœº∫ : ¿ÃπÃ ¡ﬂº∫¿Ã ¿÷¥¬ ∞ÊøÏ
+						// ÏôÑÏÑ± : Ïù¥ÎØ∏ Ï§ëÏÑ±Ïù¥ ÏûàÎäî Í≤ΩÏö∞
 						if(JohapCombine[1])
 						{
 							if(JohapCombine[2])
@@ -481,17 +483,17 @@ public:
 								int TempI = JohapCombine[2];
 								switch(JohapCombine[2])
 								{
-								case 1: TempI = 21; JohapCombine[2] = 12; break; // §£
-								case 2: TempI = 24; JohapCombine[2] = 14; break; // §•
-								case 3: TempI = 30; JohapCombine[2] = 14; break; // §¶
-								case 4: TempI = 12; JohapCombine[2] = 17; break; // §™
-								case 5: TempI = 18; JohapCombine[2] = 17; break; // §´
-								case 6: TempI = 19; JohapCombine[2] = 17; break; // §¨
-								case 7: TempI = 21; JohapCombine[2] = 17; break; // §≠
-								case 8: TempI = 28; JohapCombine[2] = 17; break; // §Æ
-								case 9: TempI = 29; JohapCombine[2] = 17; break; // §Ø
-								case 10: TempI = 30; JohapCombine[2] = 17; break; // §∞
-								case 11: TempI = 21; JohapCombine[2] = 19; break; // §¥
+								case 1: TempI = 21; JohapCombine[2] = 12; break; // „Ñ≥
+								case 2: TempI = 24; JohapCombine[2] = 14; break; // „Ñµ
+								case 3: TempI = 30; JohapCombine[2] = 14; break; // „Ñ∂
+								case 4: TempI = 12; JohapCombine[2] = 17; break; // „Ñ∫
+								case 5: TempI = 18; JohapCombine[2] = 17; break; // „Ñª
+								case 6: TempI = 19; JohapCombine[2] = 17; break; // „Ñº
+								case 7: TempI = 21; JohapCombine[2] = 17; break; // „ÑΩ
+								case 8: TempI = 28; JohapCombine[2] = 17; break; // „Ñæ
+								case 9: TempI = 29; JohapCombine[2] = 17; break; // „Ñø
+								case 10: TempI = 30; JohapCombine[2] = 17; break; // „ÖÄ
+								case 11: TempI = 21; JohapCombine[2] = 19; break; // „ÖÑ
 								default: JohapCombine[2] = 0; break;
 								}
 								DestString += ConvertIME(JohapCombine);
@@ -500,22 +502,22 @@ public:
 							else
 							{
 								DestString += ConvertIME(JohapCombine);
-								DestString += KoreanChar[i]; // ±∏º∫Ω«∆– : √ º∫¿Ã æ¯¿Ω
+								DestString += KoreanChar[i]; // Íµ¨ÏÑ±Ïã§Ìå® : Ï¥àÏÑ±Ïù¥ ÏóÜÏùå
 								continue;
 							}
 						}
 						TestCombine[0] = JohapCombine[0];
 						TestCombine[1] = i + 1;
 						TestCombine[2] = 0;
-						if(*ConvertIME(TestCombine)) // ±∏º∫º∫∞¯
+						if(*ConvertIME(TestCombine)) // Íµ¨ÏÑ±ÏÑ±Í≥µ
 							JohapCombine[1] = i + 1;
-						else continue; // ±∏º∫Ω«∆– : øœº∫«¸ ∫Œ¿Á(øπ:¨Ç)
+						else continue; // Íµ¨ÏÑ±Ïã§Ìå® : ÏôÑÏÑ±Ìòï Î∂ÄÏû¨(Ïòà:ÏµÄ)
 					}
 					break;
 				}
 			if(-1 < LastKoreanChar)
 				InputFocus += KoreanCharLen[LastKoreanChar];
-			else // «—±€¿Ã æ∆¥— ∞ÊøÏ∑Œ ≥°≥≤
+			else // ÌïúÍ∏ÄÏù¥ ÏïÑÎãå Í≤ΩÏö∞Î°ú ÎÅùÎÇ®
 			{
 				string LastIME = ConvertIME(JohapCombine);
 				if(*LastIME)
@@ -540,7 +542,7 @@ public:
 				return;
 			}
 		}
-		// «—±€¿Ã ≥≤¿∫ ∞ÊøÏ
+		// ÌïúÍ∏ÄÏù¥ ÎÇ®ÏùÄ Í≤ΩÏö∞
 		if(JohapCombine[0]) InputFocus -= KoreanCharLen[JohapCombine[0] - 1];
 		if(JohapCombine[1]) InputFocus -= KoreanCharLen[JohapCombine[1] - 1];
 		if(JohapCombine[2]) InputFocus -= KoreanCharLen[JohapCombine[2] - 1];

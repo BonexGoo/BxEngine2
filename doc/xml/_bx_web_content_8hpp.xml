@@ -6,100 +6,96 @@
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="536">
-        <label>stdarg.h</label>
-      </node>
-      <node id="530">
-        <label>BxWebContent.hpp</label>
-        <link refid="BxWebContent.hpp"/>
-        <childnode refid="531" relation="include">
+      <node id="524">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="525" relation="include">
         </childnode>
-        <childnode refid="541" relation="include">
+        <childnode refid="532" relation="include">
         </childnode>
-      </node>
-      <node id="541">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
         <childnode refid="533" relation="include">
-        </childnode>
-        <childnode refid="539" relation="include">
-        </childnode>
-      </node>
-      <node id="538">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="535" relation="include">
-        </childnode>
-      </node>
-      <node id="534">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="535" relation="include">
-        </childnode>
-        <childnode refid="537" relation="include">
         </childnode>
       </node>
       <node id="533">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="534" relation="include">
-        </childnode>
-      </node>
-      <node id="539">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="533" relation="include">
-        </childnode>
-        <childnode refid="540" relation="include">
-        </childnode>
-      </node>
-      <node id="531">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="532" relation="include">
-        </childnode>
-        <childnode refid="539" relation="include">
-        </childnode>
-        <childnode refid="540" relation="include">
-        </childnode>
-      </node>
-      <node id="537">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="538" relation="include">
-        </childnode>
-      </node>
-      <node id="540">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="529">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>BxWebContent.hpp</label>
+        <link refid="BxWebContent.hpp"/>
+        <childnode refid="524" relation="include">
+        </childnode>
         <childnode refid="534" relation="include">
         </childnode>
-        <childnode refid="533" relation="include">
+      </node>
+      <node id="528">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="529" relation="include">
         </childnode>
       </node>
       <node id="532">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="526" relation="include">
+        </childnode>
         <childnode refid="533" relation="include">
         </childnode>
-        <childnode refid="538" relation="include">
+      </node>
+      <node id="526">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="527" relation="include">
         </childnode>
       </node>
-      <node id="535">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-        <childnode refid="536" relation="include">
+      <node id="534">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="526" relation="include">
         </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="542">
+      <node id="535">
         <label>BxWebContent.hpp</label>
         <link refid="BxWebContent.hpp"/>
-        <childnode refid="543" relation="include">
+        <childnode refid="536" relation="include">
         </childnode>
       </node>
-      <node id="543">
+      <node id="536">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
@@ -111,8 +107,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxString.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxString.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVarVector.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6" refid="class_bx_web_content" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bx_web_content" kindref="compound" tooltip="HTTP기반 쿼리송수신, 파일다운로드 ">BxWebContent</ref></highlight></codeline>
@@ -124,11 +120,11 @@
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CachePool</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Path;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string_rw<sp/>Path;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>Size;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>Date;</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CachePool()<sp/>:<sp/>Path(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>Size(0),<sp/>Date(0)<sp/>{}</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~CachePool()<sp/>{Path<sp/>=<sp/><ref refid="namespace_bx_util_global_1a6b57be4a3faa566d21e94778d168559a" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Path);}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~CachePool()<sp/>{Path<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(Path);}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_bx_var_vector" kindref="compound" tooltip="vector식 가변배열 제공(BxVar와 동일인터페이스) ">BxVarVector&lt;CachePool, 64&gt;</ref><sp/><ref refid="class_bx_var_vector" kindref="compound" tooltip="vector식 가변배열 제공(BxVar와 동일인터페이스) ">CachePoolList</ref>;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/>macro<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>IsInitPool()<sp/>{global_data<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_IsInitPool<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_IsInitPool;}</highlight></codeline>
@@ -141,7 +137,7 @@
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Name.<ref refid="class_bx_string_1ab4151cb71418cbde1b8260be5dafbe84" kindref="member" tooltip="경로에서 파일확장자 추출 ">GetFileExt</ref>().<ref refid="class_bx_string_1aaf31f369dfc9d76a8bd304aebeef4752" kindref="member" tooltip="스트링간 대소문자 구분없는 비교(string) ">CompareNoCase</ref>(</highlight><highlight class="stringliteral">&quot;downloading&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>same)</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[LAST].Path<sp/>=<sp/>Name.<ref refid="class_bx_string_1ad82768a52a89e008078998783e622347" kindref="member" tooltip="할당된 전체스트링 반환 ">CloneWithAlloc</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[LAST].Path<sp/>=<sp/>Name.<ref refid="class_bx_string_1afa4631e4a36fe15273eb4cfe7e6cafec" kindref="member" tooltip="할당된 전체스트링 반환 ">CloneWithAlloc</ref>();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PoolSumSize()<sp/>+=<sp/>(Pool()[END].Size<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">BxCore::File::GetSize</ref>(Name));</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Date<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" kindref="member" tooltip="파일의 마지막 수정날짜 얻기 ">BxCore::File::GetDate</ref>(Name);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -168,18 +164,18 @@
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_socket<sp/>Socket<sp/>=<sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member" tooltip="소켓ID 할당 ">BxCore::Socket::Create</ref>();</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(connect_connected<sp/>==<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member" tooltip="서버로 접속 ">BxCore::Socket::Connect</ref>(Socket,<sp/>Domain,<sp/>Port,<sp/>Timeout,<sp/>Progress))</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>RequestChars[4096];</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1acb919367d4ddcaf86284146ce9237c2e" kindref="member" tooltip="스트링에 스트링기록 ">BxCore::Util::SnPrintf</ref>(RequestChars,<sp/>4096,</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GET<sp/>/%s%s%s<sp/>HTTP/1.1\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept:<sp/>text/html,<sp/>application/xhtml+xml,<sp/>*/*\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Language:<sp/>ko-KR\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;User-Agent:<sp/>Mozilla/5.0<sp/>(compatible;<sp/>MSIE<sp/>9.0;<sp/>Windows<sp/>NT<sp/>6.1;<sp/>Trident/5.0)\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Encoding:<sp/>deflate\r\n&quot;</highlight><highlight class="comment">//&quot;Accept-Encoding:<sp/>gzip,<sp/>deflate\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Host:<sp/>%s\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Connection:<sp/>Keep-Alive\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">,<sp/>Path,<sp/>(!Arguments<sp/>||<sp/>!*Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">,<sp/>(!Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/>Arguments,<sp/>Domain);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SendResult<sp/>=<sp/>0,<sp/>SendedLength<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RequestCharsLength<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(RequestChars);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RequestCharsLength<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>RequestChars<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1a39339febd9159aca9926f2a400bb0617" kindref="member" tooltip="스트링구성 ">BxCore::Util::Print</ref>(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;&gt;:GET<sp/>/&lt;A&gt;&lt;A&gt;&lt;A&gt;<sp/>HTTP/1.1&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept:<sp/>text/html,<sp/>application/xhtml+xml,<sp/>*/*&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Language:<sp/>ko-KR&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;User-Agent:<sp/>Mozilla/5.0<sp/>(compatible;<sp/>MSIE<sp/>9.0;<sp/>Windows<sp/>NT<sp/>6.1;<sp/>Trident/5.0)&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Encoding:<sp/>deflate&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="comment">//&quot;Accept-Encoding:<sp/>gzip,<sp/>deflate&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Host:<sp/>&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Connection:<sp/>Keep-Alive&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(Path,<sp/>(!Arguments<sp/>||<sp/>!*Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">,<sp/>(!Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/>Arguments,<sp/>Domain),</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;RequestCharsLength);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SendResult<sp/>=<sp/>0,<sp/>SendedLength<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(-1,<sp/>0))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>업데이트</highlight><highlight class="normal"></highlight></codeline>
@@ -240,174 +236,176 @@
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/>(byte*)<sp/>BxAlloc(ResponseLength<sp/>+<sp/>1);</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>EndCodeSearchFocus<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member" tooltip="최대값 구하기 ">BxUtilGlobal::Max</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>ResponseChars,<sp/>(int)(EndCodeSearchFocus<sp/>-<sp/>HTMLEndCodeLength));</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>받은<sp/>내용이<sp/>없을<sp/>경우</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Timeout<sp/>&lt;<sp/>(ErrorTime<sp/>+=<sp/>SleepTime))</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>대기시간초과</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(<ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(SleepTime++,<sp/>Timeout<sp/>&gt;&gt;<sp/>6));</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvResult<sp/>&lt;<sp/>0)</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>수신실패</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터<sp/>이관</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvedLength<sp/>=<sp/>ResponseChars<sp/>+<sp/>RecvedLength<sp/>-<sp/>EndCodeSearchFocus;</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1a0371fbafa905afeb67c09fca85741db0" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemMove</ref>(ResponseBytes,<sp/>EndCodeSearchFocus,<sp/>RecvedLength);</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터<sp/>수신</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvResult<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvedLength<sp/>&lt;<sp/>ResponseLength)</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ErrorTime<sp/>=<sp/>0,<sp/>SleepTime<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(0<sp/>&lt;=<sp/>(RecvResult<sp/>=<sp/><ref refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kindref="member" tooltip="데이터 수신 ">BxCore::Socket::Recv</ref>(Socket,<sp/>ResponseBytes<sp/>+<sp/>RecvedLength,<sp/>ResponseLength<sp/>-<sp/>RecvedLength)))</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvedLength<sp/>+=<sp/>RecvResult;</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>받은<sp/>내용이<sp/>있을<sp/>경우</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>RecvResult)</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ErrorTime<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SleepTime<sp/>&gt;&gt;=<sp/>1;</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신완료1<sp/>:<sp/>정상적인<sp/>파일</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvedLength<sp/>==<sp/>ResponseLength)</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신완료2<sp/>:<sp/>Content-Length가<sp/>없는<sp/>HTML파일</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>((</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>&amp;ResponseBytes[RecvedLength<sp/>-<sp/>5],<sp/></highlight><highlight class="stringliteral">&quot;0\r\n\r\n&quot;</highlight><highlight class="normal">)<sp/>==<sp/>5)</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>RecvedLength;</highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>받은<sp/>내용이<sp/>없을<sp/>경우</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Timeout<sp/>&lt;<sp/>(ErrorTime<sp/>+=<sp/>SleepTime))</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>대기시간초과</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(<ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(SleepTime++,<sp/>Timeout<sp/>&gt;&gt;<sp/>6));</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvResult<sp/>&lt;<sp/>0)</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>수신실패</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes[ResponseLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"></highlight></codeline>
-<codeline lineno="237" refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" kindref="member" tooltip="캐시파일 로드(없으면 생성) ">Cache</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain,<sp/>ushort<sp/>Port,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FilePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoLoad<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>callback_progress<sp/>Progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheCountSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheCountSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheSizeSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheSizeSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
-<codeline lineno="241"><highlight class="normal"></highlight></codeline>
-<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시로드</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>CacheFileName(</highlight><highlight class="stringliteral">&quot;%s/%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>FilePath);</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FindedPos<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((FindedPos<sp/>=<sp/>CacheFileName.<ref refid="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" kindref="member" tooltip="글자 찾기 ">Find</ref>(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">))<sp/>!=<sp/>-1)</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CacheFileName[FindedPos]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member" tooltip="파일의 존재여부 ">BxCore::File::IsExist</ref>(CacheFileName))</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FileSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">BxCore::File::GetSize</ref>(CacheFile);</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member" tooltip="파일의 존재여부 ">BxCore::File::IsExist</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DoLoad)</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>FileSize;</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/>(byte*)<sp/>BxAlloc(ResponseLength<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes[ResponseLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
-<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="272"><highlight class="normal"></highlight></codeline>
-<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>쿼리실행</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(Domain,<sp/>Port,<sp/>FilePath,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>-1,<sp/>Progress))</highlight></codeline>
-<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="276"><highlight class="normal"></highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시풀<sp/>초기수집</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsInitPool()<sp/>&amp;&amp;<sp/>(CacheCountSumMax<sp/>!=<sp/>-1<sp/>||<sp/>CacheSizeSumMax<sp/>!=<sp/>-1))</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsInitPool()<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kindref="member" tooltip="파일검색 ">BxCore::File::SearchFiles</ref>(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>OnFileSearch,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"></highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시저장</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kindref="member" tooltip="폴더만들기 ">BxCore::File::MakeDirectory</ref>(CacheFileName.<ref refid="class_bx_string_1a29661787c9d623e0a18b2fdf7929ac3d" kindref="member" tooltip="경로에서 파일명을 제외한 패스명(/문자 포함) 추출 ">GetFilePath</ref>());</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>DownloadingFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(DownloadingFile,<sp/>&amp;ResponseLength,<sp/>4);</highlight></codeline>
-<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(DownloadingFile);</highlight></codeline>
-<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>실제파일<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
-<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>삭제</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member" tooltip="파일삭제 ">BxCore::File::RemoveFile</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!DoLoad)</highlight></codeline>
-<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="302"><highlight class="normal"></highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시풀<sp/>운영</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsInitPool())</highlight></codeline>
-<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>제한처리</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NewFileSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">BxCore::File::GetSize</ref>(CacheFileName);</highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((CacheCountSumMax<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>0<sp/>&lt;<sp/>Pool().Length()<sp/>&amp;&amp;<sp/>CacheCountSumMax<sp/>&lt;<sp/>Pool().Length()<sp/>+<sp/>1)<sp/>||</highlight></codeline>
-<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CacheSizeSumMax<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>0<sp/>&lt;<sp/>PoolSumSize()<sp/>&amp;&amp;<sp/>CacheSizeSumMax<sp/>&lt;<sp/>PoolSumSize()<sp/>+<sp/>NewFileSize))</highlight></codeline>
-<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iBest<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>BestDate<sp/>=<sp/>Pool()[0].Date;</highlight></codeline>
-<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>Pool().Length();<sp/>++i)</highlight></codeline>
-<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Pool()[i].Date<sp/>&lt;<sp/>BestDate)</highlight></codeline>
-<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iBest<sp/>=<sp/>i;</highlight></codeline>
-<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BestDate<sp/>=<sp/>Pool()[i].Date;</highlight></codeline>
-<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RemoveFile로<sp/>지워지지<sp/>않는<sp/>파일이라고<sp/>해도<sp/>캐시관리<sp/>특성상<sp/>지워졌다고<sp/>판단함</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member" tooltip="파일삭제 ">BxCore::File::RemoveFile</ref>(Pool()[iBest].Path,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PoolSumSize()<sp/>-=<sp/>Pool()[iBest].Size;</highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool().Delete(iBest);</highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>항목추가</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[LAST].Path<sp/>=<sp/><ref refid="namespace_bx_util_global_1a54c60665d511e4b22ec758296a1ce51d" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(CacheFileName);</highlight></codeline>
-<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Size<sp/>=<sp/>NewFileSize;</highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Date<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" kindref="member" tooltip="파일의 마지막 수정날짜 얻기 ">BxCore::File::GetDate</ref>(CacheFileName);</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PoolSumSize()<sp/>+=<sp/>NewFileSize;</highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="332"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ResponseChars<sp/>&lt;<sp/>EndCodeSearchFocus<sp/>-<sp/>HTMLEndCodeLength)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndCodeSearchFocus<sp/>=<sp/>EndCodeSearchFocus<sp/>-<sp/>HTMLEndCodeLength;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>EndCodeSearchFocus<sp/>=<sp/>ResponseChars;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>받은<sp/>내용이<sp/>없을<sp/>경우</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Timeout<sp/>&lt;<sp/>(ErrorTime<sp/>+=<sp/>SleepTime))</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>대기시간초과</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(<ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(SleepTime++,<sp/>Timeout<sp/>&gt;&gt;<sp/>6));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvResult<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>수신실패</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터<sp/>이관</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvedLength<sp/>=<sp/>ResponseChars<sp/>+<sp/>RecvedLength<sp/>-<sp/>EndCodeSearchFocus;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">BxCore::Util::MemCpy</ref>(ResponseBytes,<sp/>EndCodeSearchFocus,<sp/>RecvedLength);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터<sp/>수신</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvResult<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvedLength<sp/>&lt;<sp/>ResponseLength)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ErrorTime<sp/>=<sp/>0,<sp/>SleepTime<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(0<sp/>&lt;=<sp/>(RecvResult<sp/>=<sp/><ref refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kindref="member" tooltip="데이터 수신 ">BxCore::Socket::Recv</ref>(Socket,<sp/>ResponseBytes<sp/>+<sp/>RecvedLength,<sp/>ResponseLength<sp/>-<sp/>RecvedLength)))</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecvedLength<sp/>+=<sp/>RecvResult;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>받은<sp/>내용이<sp/>있을<sp/>경우</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>RecvResult)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ErrorTime<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SleepTime<sp/>&gt;&gt;=<sp/>1;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신완료1<sp/>:<sp/>정상적인<sp/>파일</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvedLength<sp/>==<sp/>ResponseLength)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신완료2<sp/>:<sp/>Content-Length가<sp/>없는<sp/>HTML파일</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>((</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>&amp;ResponseBytes[RecvedLength<sp/>-<sp/>5],<sp/></highlight><highlight class="stringliteral">&quot;0\r\n\r\n&quot;</highlight><highlight class="normal">)<sp/>==<sp/>5)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>RecvedLength;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>받은<sp/>내용이<sp/>없을<sp/>경우</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Timeout<sp/>&lt;<sp/>(ErrorTime<sp/>+=<sp/>SleepTime))</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>대기시간초과</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kindref="member" tooltip="프로세스 슬립(밀린 소켓/키이벤트등 처리) ">BxCore::System::Sleep</ref>(<ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member" tooltip="최소값 구하기 ">BxUtilGlobal::Min</ref>(SleepTime++,<sp/>Timeout<sp/>&gt;&gt;<sp/>6));</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">BxCore::Socket::Release</ref>(Socket);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvResult<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>수신실패</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes[ResponseLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_web_content_1a74c88b12ae7f3dde6e45e92dc977f9b5" kindref="member" tooltip="캐시파일 로드(없으면 생성) ">Cache</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Domain,<sp/>ushort<sp/>Port,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FilePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoLoad<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>callback_progress<sp/>Progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheCountSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheCountSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheSizeSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheSizeSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시로드</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>CacheFileName(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;FS&gt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>FilePath));</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FindedPos<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((FindedPos<sp/>=<sp/>CacheFileName.<ref refid="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" kindref="member" tooltip="글자 찾기 ">Find</ref>(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">))<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CacheFileName[FindedPos]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member" tooltip="파일의 존재여부 ">BxCore::File::IsExist</ref>(CacheFileName))</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FileSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">BxCore::File::GetSize</ref>(CacheFile);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member" tooltip="파일의 존재여부 ">BxCore::File::IsExist</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DoLoad)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>FileSize;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/>(byte*)<sp/>BxAlloc(ResponseLength<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">BxCore::File::Read</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes[ResponseLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>쿼리실행</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kindref="member" tooltip="HTTP쿼리실행 ">Query</ref>(Domain,<sp/>Port,<sp/>FilePath,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>-1,<sp/>Progress))</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시풀<sp/>초기수집</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!IsInitPool()<sp/>&amp;&amp;<sp/>(CacheCountSumMax<sp/>!=<sp/>-1<sp/>||<sp/>CacheSizeSumMax<sp/>!=<sp/>-1))</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsInitPool()<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kindref="member" tooltip="파일검색 ">BxCore::File::SearchFiles</ref>(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>OnFileSearch,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시저장</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kindref="member" tooltip="폴더만들기 ">BxCore::File::MakeDirectory</ref>(CacheFileName.<ref refid="class_bx_string_1a29661787c9d623e0a18b2fdf7929ac3d" kindref="member" tooltip="경로에서 파일명을 제외한 패스명(/문자 포함) 추출 ">GetFilePath</ref>());</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>DownloadingFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(DownloadingFile,<sp/>&amp;ResponseLength,<sp/>4);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(DownloadingFile);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>실제파일<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">BxCore::File::Write</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>삭제</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member" tooltip="파일삭제 ">BxCore::File::RemoveFile</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!DoLoad)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxFree(ResponseBytes);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBytes<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시풀<sp/>운영</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsInitPool())</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>제한처리</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NewFileSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">BxCore::File::GetSize</ref>(CacheFileName);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((CacheCountSumMax<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>0<sp/>&lt;<sp/>Pool().Length()<sp/>&amp;&amp;<sp/>CacheCountSumMax<sp/>&lt;<sp/>Pool().Length()<sp/>+<sp/>1)<sp/>||</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CacheSizeSumMax<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/>0<sp/>&lt;<sp/>PoolSumSize()<sp/>&amp;&amp;<sp/>CacheSizeSumMax<sp/>&lt;<sp/>PoolSumSize()<sp/>+<sp/>NewFileSize))</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iBest<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>BestDate<sp/>=<sp/>Pool()[0].Date;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>Pool().Length();<sp/>++i)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Pool()[i].Date<sp/>&lt;<sp/>BestDate)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iBest<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BestDate<sp/>=<sp/>Pool()[i].Date;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RemoveFile로<sp/>지워지지<sp/>않는<sp/>파일이라고<sp/>해도<sp/>캐시관리<sp/>특성상<sp/>지워졌다고<sp/>판단함</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member" tooltip="파일삭제 ">BxCore::File::RemoveFile</ref>(Pool()[iBest].Path,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PoolSumSize()<sp/>-=<sp/>Pool()[iBest].Size;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool().Delete(iBest);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>항목추가</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[LAST].Path<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(CacheFileName);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Size<sp/>=<sp/>NewFileSize;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pool()[END].Date<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" kindref="member" tooltip="파일의 마지막 수정날짜 얻기 ">BxCore::File::GetDate</ref>(CacheFileName);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PoolSumSize()<sp/>+=<sp/>NewFileSize;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxWebContent.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp"/>
   </compounddef>
 </doxygen>

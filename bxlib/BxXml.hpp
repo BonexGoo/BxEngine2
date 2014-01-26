@@ -1,7 +1,7 @@
-#pragma once
+ï»¿#pragma once
 #include <BxString.hpp>
 
-//! \brief XML °ü¸®
+//! \brief XML ê´€ë¦¬
 class BxXml
 {
 public:
@@ -10,18 +10,18 @@ public:
 	// DEFINE
 	void DefineTag(const int tagID, string tagName)
 	{
-		BxAssert("BxXml", Mode == DEFINE);
+		BxASSERT("BxXml", Mode == DEFINE);
 		Tag[tagID].TagName = tagName;
 	}
 	void DefineAttb(const int tagID, const int attbID, string attbName, int intDefault)
 	{
-		BxAssert("BxXml", Mode == DEFINE);
+		BxASSERT("BxXml", Mode == DEFINE);
 		Tag[tagID].AttbName[attbID] = attbName;
 		Tag[tagID].AttbValue[attbID].Format("%d", intDefault);
 	}
 	void DefineAttb(const int tagID, const int attbID, string attbName, string strDefault)
 	{
-		BxAssert("BxXml", Mode == DEFINE);
+		BxASSERT("BxXml", Mode == DEFINE);
 		Tag[tagID].AttbName[attbID] = attbName;
 		Tag[tagID].AttbValue[attbID] = strDefault;
 	}
@@ -29,7 +29,7 @@ public:
 	// READ
 	bool ReadBegin(string fileName)
 	{
-		BxAssert("BxXml", Mode == DEFINE);
+		BxASSERT("BxXml", Mode == DEFINE);
 		File = BxCore::File::Open(fileName, "rb");
 		if(File)
 		{
@@ -46,7 +46,7 @@ public:
 	}
 	void ReadEnd()
 	{
-		BxAssert("BxXml", Mode == READ);
+		BxASSERT("BxXml", Mode == READ);
 		TagStack.Reset();
 		BxDelete_Array(Xml);
 		Xml = nullptr;
@@ -56,7 +56,7 @@ public:
 	}
 	const int NextTag(State* state = nullptr)
 	{
-		BxAssert("BxXml", Mode == READ);
+		BxASSERT("BxXml", Mode == READ);
 		TagStack.Reset();
 		Focus = TagStack[0].Read(Xml, Focus, state);
 		string CompareName = TagStack[0].TagName;
@@ -67,7 +67,7 @@ public:
 	}
 	bool ReadAttb(const int attbID, int& intValue)
 	{
-		BxAssert("BxXml", Mode == READ);
+		BxASSERT("BxXml", Mode == READ);
 		if(TagID == -1) return false;
 		Unit& OneTag = Tag[TagID];
 		if(OneTag.AttbName.Length() <= attbID) return false;
@@ -83,7 +83,7 @@ public:
 	}
 	bool ReadAttb(const int attbID, BxString& strValue)
 	{
-		BxAssert("BxXml", Mode == READ);
+		BxASSERT("BxXml", Mode == READ);
 		if(TagID == -1) return false;
 		Unit& OneTag = Tag[TagID];
 		if(OneTag.AttbName.Length() <= attbID) return false;
@@ -99,7 +99,7 @@ public:
 	}
 	bool ReadAttb(const int attbID, BxVar<byte>& hexValue)
 	{
-		BxAssert("BxXml", Mode == READ);
+		BxASSERT("BxXml", Mode == READ);
 		if(TagID == -1) return false;
 		Unit& OneTag = Tag[TagID];
 		if(OneTag.AttbName.Length() <= attbID) return false;
@@ -115,7 +115,7 @@ public:
 	}
 	bool ReadContent(BxString& content)
 	{
-		BxAssert("BxXml", Mode == READ);
+		BxASSERT("BxXml", Mode == READ);
 		if(TagID == -1) return false;
 		Unit& OneTag = Tag[TagID];
 		content = TagStack[0].Content;
@@ -125,7 +125,7 @@ public:
 	// WRITE
 	bool WriteBegin(string fileName)
 	{
-		BxAssert("BxXml", Mode == DEFINE);
+		BxASSERT("BxXml", Mode == DEFINE);
 		File = BxCore::File::Open(fileName, "wb");
 		if(!File) return false;
 		Mode = WRITE;
@@ -133,7 +133,7 @@ public:
 	}
 	void WriteEnd()
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(File)
 		{
 			BxCore::File::Close(File);
@@ -144,7 +144,7 @@ public:
 	}
 	void PushTag(const int tagID)
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
@@ -158,7 +158,7 @@ public:
 	}
 	void PopTag()
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
@@ -169,7 +169,7 @@ public:
 	}
 	void WriteAttb(const int attbID, int intValue)
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
@@ -178,7 +178,7 @@ public:
 	}
 	void WriteAttb(const int attbID, string strValue)
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
@@ -187,7 +187,7 @@ public:
 	}
 	void WriteAttb(const int attbID, BxVar<byte>& hexValue)
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
@@ -203,7 +203,7 @@ public:
 	}
 	void WriteContent(string content)
 	{
-		BxAssert("BxXml", Mode == WRITE);
+		BxASSERT("BxXml", Mode == WRITE);
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
@@ -362,21 +362,20 @@ private:
 			case OPEN:
 			case OPENCLOSE:
 				{
-					Temp.Format("<%s", (string) TagName);
+					Temp.Format("<>:<<<A>", BxTHROW(TagName));
 					Sum += Temp;
 					for(int i = 0; i < AttbName.Length(); ++i)
 					{
-						Temp.Format(" %s=\"%s\"", (string) AttbName[i], (string) AttbValue[i]);
+						Temp.Format("<>: <A>=<DQ><A><DQ>", BxTHROW(AttbName[i], AttbValue[i]));
 						Sum += Temp;
 					}
-					Temp.Format((state == OPEN)? ">%s" : "/>%s",
-						(Content.GetLength())? (string) Content : "\r\n");
+					Temp.Format("<>:<A><A>", BxTHROW((state == OPEN)? ">" : "/>", (Content.GetLength())? (string) Content : "\r\n"));
 					Sum += Temp;
 				}
 				break;
 			case CLOSE:
 				{
-					Temp.Format("</%s>\r\n", (string) TagName);
+					Temp.Format("<>:<<<FS><A>>><R><N>", BxTHROW(TagName));
 					Sum += Temp;
 				}
 				break;

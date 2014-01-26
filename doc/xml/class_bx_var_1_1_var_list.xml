@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="232" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="232" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="232" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_var_1_1_var_list_1acd9a73a51673e8d9b806271710143768" prot="public" static="no" mutable="no">
         <type>TYPE *</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="233" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="233" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_var_1_1_var_list_1a914ca15539fd65692b670bcd7bc7e57a" prot="public" static="no" mutable="no">
         <type>VarList *</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="234" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="234" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="236" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="236" bodyend="236"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="236" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="236" bodyend="236"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_1_1_var_list_1aee157c2e30b4c1cf26789defa33d4e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="237" bodyend="241"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="237" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="237" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_1_1_var_list_1a30563483bb50be87a39aea6acc012ed1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>VarList *</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="243" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="243" bodyend="243"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="243" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="243" bodyend="243"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_1_1_var_list_1a8d33a55c26f9bb4acb375123a31200c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="244" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="244" bodyend="252"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="244" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="244" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_1_1_var_list_1aeeab28a7316de5d59115b428f8132172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func bool &amp;</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="253" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="253" bodyend="253"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="253" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="253" bodyend="254"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -123,14 +123,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="220">
+      <node id="230">
         <label>BxVar&lt; TYPE &gt;::VarList</label>
-        <childnode refid="220" relation="usage">
+        <childnode refid="230" relation="usage">
           <edgelabel>Next</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine280ForMarmalade700/bxlib/BxVar.hpp" bodystart="229" bodyend="254"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" line="230" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxVar.hpp" bodystart="229" bodyend="255"/>
     <listofallmembers>
       <member refid="class_bx_var_1_1_var_list_1acd9a73a51673e8d9b806271710143768" prot="public" virt="non-virtual"><scope>BxVar::VarList</scope><name>Data</name></member>
       <member refid="class_bx_var_1_1_var_list_1aeeab28a7316de5d59115b428f8132172" prot="public" virt="non-virtual"><scope>BxVar::VarList</scope><name>EnableRemove</name></member>

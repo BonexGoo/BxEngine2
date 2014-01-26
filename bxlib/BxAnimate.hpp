@@ -1,20 +1,20 @@
-#pragma once
+ï»¿#pragma once
 #include <BxVarVector.hpp>
 #include <BxImage.hpp>
 #include <BxString.hpp>
 
-//! \brief ¸ŞµÎ»çÅø ¾Ö´Ï¸ŞÀÌ¼Ç ¿î¿µ
+//! \brief ë©”ë‘ì‚¬íˆ´ ì• ë‹ˆë©”ì´ì…˜ ìš´ì˜
 class BxAnimate
 {
 public:
-	// Äİ¹é
+	// ì½œë°±
 	typedef compare (*OnSort)(BxAnimate& anim, id_object objectA, id_object objectB);
-	// ¿­°ÅÇü
+	// ì—´ê±°í˜•
 	enum {KEYWORD, FORM, OUTLINE, BEGIN_MAX};
 
 public:
 	/*!
-	\brief ±âº»»ı¼ºÀÚ
+	\brief ê¸°ë³¸ìƒì„±ì
 	*/
 	BxAnimate()
 	{
@@ -22,7 +22,7 @@ public:
 	}
 
 	/*!
-	\brief ¼Ò¸êÀÚ
+	\brief ì†Œë©¸ì
 	*/
 	~BxAnimate()
 	{
@@ -30,9 +30,9 @@ public:
 	}
 
 	/*!
-	\brief ¸®¼Ò½ºÆú´õ °æ·ÎÁöÁ¤
-	\param path : °æ·Î
-	\return ÀúÀåµÈ °æ·Î½ºÆ®¸µ
+	\brief ë¦¬ì†ŒìŠ¤í´ë” ê²½ë¡œì§€ì •
+	\param path : ê²½ë¡œ
+	\return ì €ì¥ëœ ê²½ë¡œìŠ¤íŠ¸ë§
 	*/
 	global_func BxString& SetResourcePath(string path = nullptr)
 	{
@@ -42,9 +42,9 @@ public:
 	}
 
 	/*!
-	\brief ¾Ö´Ï¸ŞÀÌ¼Ç ·Îµå
-	\param resource : ¸Ş¸ğ¸®¸®¼Ò½º
-	\return ·Îµù¼º°ø¿©ºÎ
+	\brief ì• ë‹ˆë©”ì´ì…˜ ë¡œë“œ
+	\param resource : ë©”ëª¨ë¦¬ë¦¬ì†ŒìŠ¤
+	\return ë¡œë”©ì„±ê³µì—¬ë¶€
 	*/
 	bool Load(byte* resource)
 	{
@@ -79,9 +79,9 @@ public:
 	}
 
 	/*!
-	\brief ¾Ö´Ï¸ŞÀÌ¼Ç ·Îµå
-	\param resource : ÆÄÀÏ¸í
-	\return ·Îµù¼º°ø¿©ºÎ
+	\brief ì• ë‹ˆë©”ì´ì…˜ ë¡œë“œ
+	\param resource : íŒŒì¼ëª…
+	\return ë¡œë”©ì„±ê³µì—¬ë¶€
 	*/
 	bool Load(string filename)
 	{
@@ -96,9 +96,9 @@ public:
 	}
 
 	/*!
-	\brief ¿ÀºêÁ§Æ® »ıÁ¸¿©ºÎ
-	\param objectID : ¿ÀºêÁ§Æ®ÇÚµé
-	\return »ıÁ¸¿©ºÎ
+	\brief ì˜¤ë¸Œì íŠ¸ ìƒì¡´ì—¬ë¶€
+	\param objectID : ì˜¤ë¸Œì íŠ¸í•¸ë“¤
+	\return ìƒì¡´ì—¬ë¶€
 	*/
 	bool IsAliveObject(id_object objectID)
 	{
@@ -107,16 +107,16 @@ public:
 	}
 
 	/*!
-	\brief ¿ÀºêÁ§Æ® Ãß°¡
-	\param objectName : ¿ÀÇÁÁ§Æ®¸í
-	\param x : »ı¼ºÀ§Ä¡ X
-	\param y : »ı¼ºÀ§Ä¡ Y
-	\return ¿ÀºêÁ§Æ®ÇÚµé
+	\brief ì˜¤ë¸Œì íŠ¸ ì¶”ê°€
+	\param objectName : ì˜¤í”„ì íŠ¸ëª…
+	\param x : ìƒì„±ìœ„ì¹˜ X
+	\param y : ìƒì„±ìœ„ì¹˜ Y
+	\return ì˜¤ë¸Œì íŠ¸í•¸ë“¤
 	\see SubObject
 	*/
 	id_object AddObject(string objectName, int x, int y)
 	{
-		BxAssert("BxAnimate", objectName);
+		BxASSERT("BxAnimate", objectName);
 		_Object* FindObject = nullptr;
 		for(int i = 0; i < Object.Length(); ++i)
 			if(BxUtilGlobal::StrCmp(objectName, Object[i].Name) == same)
@@ -133,8 +133,8 @@ public:
 	}
 
 	/*!
-	\brief ¿ÀºêÁ§Æ® Á¦°Å
-	\param objectID : ¿ÀºêÁ§Æ®ÇÚµé
+	\brief ì˜¤ë¸Œì íŠ¸ ì œê±°
+	\param objectID : ì˜¤ë¸Œì íŠ¸í•¸ë“¤
 	\see AddObject
 	*/
 	void SubObject(id_object _inout_ objectID)
@@ -145,7 +145,7 @@ public:
 		{
 			if(&AliveActive[i] == OneActive)
 			{
-				BxAssert("BxAnimate<ÇØ´ç ¿ÀºêÁ§Æ®ÀÇ »ıÁ¸¿©ºÎ°¡ Æ²¸³´Ï´Ù>", OneActive->IsAlive);
+				BxASSERT("BxAnimate<í•´ë‹¹ ì˜¤ë¸Œì íŠ¸ì˜ ìƒì¡´ì—¬ë¶€ê°€ í‹€ë¦½ë‹ˆë‹¤>", OneActive->IsAlive);
 				_Active* RemoveItem = nullptr;
 				AliveActive.Delete(i, &RemoveItem);
 				BxDelete(RemoveItem);
@@ -156,7 +156,7 @@ public:
 		{
 			if(&DeadActive[i] == OneActive)
 			{
-				BxAssert("BxAnimate<ÇØ´ç ¿ÀºêÁ§Æ®ÀÇ »ıÁ¸¿©ºÎ°¡ Æ²¸³´Ï´Ù>", !OneActive->IsAlive);
+				BxASSERT("BxAnimate<í•´ë‹¹ ì˜¤ë¸Œì íŠ¸ì˜ ìƒì¡´ì—¬ë¶€ê°€ í‹€ë¦½ë‹ˆë‹¤>", !OneActive->IsAlive);
 				_Active* RemoveItem = nullptr;
 				DeadActive.Delete(i, &RemoveItem);
 				BxDelete(RemoveItem);
@@ -166,7 +166,7 @@ public:
 	}
 
 	/*!
-	\brief ¸ğµç ¿ÀºêÁ§Æ® Á¦°Å
+	\brief ëª¨ë“  ì˜¤ë¸Œì íŠ¸ ì œê±°
 	*/
 	void ClearObjectAll()
 	{
@@ -185,13 +185,13 @@ public:
 	}
 
 	/*!
-	\brief ¿ÀºêÁ§Æ®À§Ä¡ ¾ò±â
-	\param objectID : ¿ÀºêÁ§Æ®ÇÚµé
-	\return ¿ÀºêÁ§Æ®À§Ä¡
+	\brief ì˜¤ë¸Œì íŠ¸ìœ„ì¹˜ ì–»ê¸°
+	\param objectID : ì˜¤ë¸Œì íŠ¸í•¸ë“¤
+	\return ì˜¤ë¸Œì íŠ¸ìœ„ì¹˜
 	*/
 	inline point& ObjectPos(id_object objectID)
 	{
-		BxAssert("BxAnimate", objectID);
+		BxASSERT("BxAnimate", objectID);
 		_Active* OneActive = (_Active*) objectID;
 		if(!OneActive->IsAlive)
 		{
@@ -204,15 +204,15 @@ public:
 	}
 
 	/*!
-	\brief ¿ÀºêÁ§Æ®¿¡ ÀÌº¥Æ®Àü´Ş
-	\param objectID : ¿ÀºêÁ§Æ®ÇÚµé
-	\param eventName : ÀÌº¥Æ®¸í
-	\param doInterrupt : ³¢¾îµé±â¿©ºÎ
+	\brief ì˜¤ë¸Œì íŠ¸ì— ì´ë²¤íŠ¸ì „ë‹¬
+	\param objectID : ì˜¤ë¸Œì íŠ¸í•¸ë“¤
+	\param eventName : ì´ë²¤íŠ¸ëª…
+	\param doInterrupt : ë¼ì–´ë“¤ê¸°ì—¬ë¶€
 	*/
 	void SendEvent(id_object objectID, string eventName, bool doInterrupt = false)
 	{
-		BxAssert("BxAnimate", objectID);
-		BxAssert("BxAnimate", eventName);
+		BxASSERT("BxAnimate", objectID);
+		BxASSERT("BxAnimate", eventName);
 		_Active* OneActive = (_Active*) objectID;
 		if(!OneActive->IsAlive)
 			return;
@@ -222,7 +222,7 @@ public:
 			if(BxUtilGlobal::StrCmp(eventName, Keyword[g][i].Name) == same)
 			{
 				_Keyword* FindEvent = &Keyword[g][i];
-				BxAssert("BxAnimate", FindEvent->Type == keyword_event);
+				BxASSERT("BxAnimate", FindEvent->Type == keyword_event);
 				OneActive->SetEvent(FindEvent, doInterrupt);
 				return;
 			}
@@ -230,9 +230,9 @@ public:
 	}
 
 	/*!
-	\brief ÀüÃ¼ ¿ÀºêÁ§Æ® ±×¸®±â
-	\param draw : Draw°´Ã¼
-	\param sortCB : Á¤·Ä¿ë Äİ¹éÇÔ¼ö
+	\brief ì „ì²´ ì˜¤ë¸Œì íŠ¸ ê·¸ë¦¬ê¸°
+	\param draw : Drawê°ì²´
+	\param sortCB : ì •ë ¬ìš© ì½œë°±í•¨ìˆ˜
 	\see DefaultSort, NextAnimate
 	*/
 	void DrawAnimate(BxDraw& draw, OnSort sortCB = nullptr)
@@ -271,14 +271,14 @@ public:
 					if(OneLayer->Type == layer_image)
 					{
 						_Object::_Action::_Motion::_Data::_Frame::_Layer::_Data::_Image* OneImage = (_Object::_Action::_Motion::_Data::_Frame::_Layer::_Data::_Image*) OneLayer->Data.Image;
-						BxAssert("BxAnimate", OneImage->Form);
-						BxAssert("BxAnimate", OneImage->Outline);
+						BxASSERT("BxAnimate", OneImage->Form);
+						BxASSERT("BxAnimate", OneImage->Outline);
 						const int X = AliveActive[i].GetPosX() + OneFrame->UnitSize.w * OneImage->Grid.x + OneImage->Detail.x;
 						const int Y = AliveActive[i].GetPosY() + OneFrame->UnitSize.h * OneImage->Grid.y + OneImage->Detail.y;
 						if(!OneImage->ShowTerms || (OneImage->ShowTerms->Type == keyword_check && OneImage->ShowTerms->Check) || (OneImage->ShowTerms->Type == keyword_radio && OneImage->ShowTerms->Radio))
 						{
 							const bool doFlip = ((OneImage->Pipe[2] % 2) == true);
-							// Åø°ú ¿£ÁøÀÇ µå·ÎÀ×¸ğµâ¹æ½Ä Â÷ÀÌ
+							// íˆ´ê³¼ ì—”ì§„ì˜ ë“œë¡œì‰ëª¨ë“ˆë°©ì‹ ì°¨ì´
 							int FlipXAdd = (doFlip)? OneImage->Form->GetForm()->GetArea()->hx * 2 - OneImage->Form->GetForm()->GetArea()->w : 0;
 							switch(OneImage->Outline->CType)
 							{
@@ -293,7 +293,7 @@ public:
 								break;
 							case _Outline::_DataClass::ClassType_Points:
 								break;
-							default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+							default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 							}
 						}
 					}
@@ -303,7 +303,7 @@ public:
 	}
 
 	/*!
-	\brief ¾Ö´Ï¸ŞÀÌ¼Ç ÁøÇà
+	\brief ì• ë‹ˆë©”ì´ì…˜ ì§„í–‰
 	\see DrawAnimate
 	*/
 	void NextAnimate()
@@ -322,10 +322,10 @@ public:
 	}
 
 	/*!
-	\brief OnSortÁ¤·Ä ±âº»Á¦°øÇÔ¼ö
-	\param anim : Anim°´Ã¼
-	\param objectA : ¿ÀºêÁ§Æ®A
-	\param objectB : ¿ÀºêÁ§Æ®B
+	\brief OnSortì •ë ¬ ê¸°ë³¸ì œê³µí•¨ìˆ˜
+	\param anim : Animê°ì²´
+	\param objectA : ì˜¤ë¸Œì íŠ¸A
+	\param objectB : ì˜¤ë¸Œì íŠ¸B
 	\see DrawAnimate
 	*/
 	global_func compare DefaultSort(BxAnimate& anim, id_object objectA, id_object objectB)
@@ -352,7 +352,7 @@ public:
 			}
 			Node = Node->Link;
 		}
-		BxAssert("BxAnimate", Node);
+		BxASSERT("BxAnimate", Node);
 		return Node->Event;
 	}
 
@@ -369,7 +369,7 @@ public:
 			}
 			Node = Node->Link;
 		}
-		BxAssert("BxAnimate", Node);
+		BxASSERT("BxAnimate", Node);
 		return Node->Check;
 	}
 
@@ -387,7 +387,7 @@ public:
 			}
 			Node = Node->Link;
 		}
-		BxAssert("BxAnimate", Node);
+		BxASSERT("BxAnimate", Node);
 		return Node->Radio;
 	}
 
@@ -404,7 +404,7 @@ public:
 			}
 			Node = Node->Link;
 		}
-		BxAssert("BxAnimate", Node);
+		BxASSERT("BxAnimate", Node);
 		return Node->Number;
 	}
 
@@ -424,43 +424,43 @@ public:
 			}
 			Node = Node->Link;
 		}
-		BxAssert("BxAnimate", Node);
+		BxASSERT("BxAnimate", Node);
 		return Node->String;
 	}
 
-	/*// ¿ÀºêÁ§Æ® Ãß°¡/»èÁ¦/À§Ä¡Á¤º¸/Ãâ·Â¼ø¼­Á¤º¸
+	/*// ì˜¤ë¸Œì íŠ¸ ì¶”ê°€/ì‚­ì œ/ìœ„ì¹˜ì •ë³´/ì¶œë ¥ìˆœì„œì •ë³´
 	//////////////////identity_o AddObject(string objectName, string eventNameForAction);
 	//////////////////void SubObject(identity_o objectID);
 	//////////////////point& LetObjectPos(identity_o objectID);
 	//////////////////uint& LetObjectOrder(identity_o objectID);
 
-	// ÀÌº¥Æ® ´ë±âÀü´Ş/°­Á¦Àü´Ş
+	// ì´ë²¤íŠ¸ ëŒ€ê¸°ì „ë‹¬/ê°•ì œì „ë‹¬
 	//////////////void PostEvent(identity_o objectID, string eventName);
 	//////////////void SendEvent(identity_o objectID, string eventName);
 
-	// ¿µ¿ª Ãß°¡/»èÁ¦/¿µ¿ªÁ¤º¸/ºÎ¸ğ¿ÀºêÁ§Æ®Á¤º¸
+	// ì˜ì—­ ì¶”ê°€/ì‚­ì œ/ì˜ì—­ì •ë³´/ë¶€ëª¨ì˜¤ë¸Œì íŠ¸ì •ë³´
 	identity_a AddArea(rect areaRect, string eventNameForTouch);
 	void SubArea(identity_a areaID);
 	rect& LetAreaRect(identity_a areaID);
 	identity_o& LetAreaParentObject(identity_a areaID);
 
-	// Å°¿öµåÁ¤º¸ ÀÌº¥Æ®/Ã¼Å©/¶óµğ¿À/¼ıÀÚ/´Ü¾î
+	// í‚¤ì›Œë“œì •ë³´ ì´ë²¤íŠ¸/ì²´í¬/ë¼ë””ì˜¤/ìˆ«ì/ë‹¨ì–´
 	string& LetEvent(identity_o objectID, string eventName);
 	check& LetCheck(identity_o objectID, string checkName);
 	radio& LetRadio(identity_o objectID, string radioName);
 	number& LetNumber(identity_o objectID, string numberName);
 	string& LetString(identity_o objectID, string stringName);
 
-	// Äİ¹éµî·Ï »ç¿ëÀÚµå·ÎÀ×/ÀÌº¥Æ®/¿µ¿ªÁ¢ÃË
+	// ì½œë°±ë“±ë¡ ì‚¬ìš©ìë“œë¡œì‰/ì´ë²¤íŠ¸/ì˜ì—­ì ‘ì´‰
 	void SetDrawCB(OnDraw drawCB);
 	void SetEventCB(OnEvent eventCB);
 	void SetContactCB(OnContact contactCB);
 
-	// ¾Ö´Ï¸ŞÀÌ¼Ç Ãâ·Â/ÁøÇà
+	// ì• ë‹ˆë©”ì´ì…˜ ì¶œë ¥/ì§„í–‰
 	//////////////////void DrawAnimate(MuvDraw& draw);
 	//////////////////uint NextAnimate();
 
-	// Äİ¹é
+	// ì½œë°±
 	typedef void (*OnDraw)(MuvDraw& draw, identity_a areaID);
 	typedef void (*OnEvent)(identity_o objectID, string eventName);
 	typedef void (*OnContact)(identity_a area1ID, identity_a area2ID, boolean isSeparate);*/
@@ -506,7 +506,7 @@ protected:
 			case keyword_radio: Radio = BxUtilGlobal::LoadUint8(Resource); break;
 			case keyword_number: Number = BxUtilGlobal::LoadInt32(Resource); break;
 			case keyword_string: String = BxUtilGlobal::LoadString(Resource); break;
-			default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+			default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 			}
 			GetKeyword(Begin, 0, this);
 		}
@@ -527,7 +527,7 @@ protected:
 			}
 			else if(SetRadio)
 			{
-				BxAssert("BxAnimate", SetRadio->Type == keyword_radio);
+				BxASSERT("BxAnimate", SetRadio->Type == keyword_radio);
 				_Keyword* Node = *KeywordBegin;
 				while(Node)
 				{
@@ -540,7 +540,7 @@ protected:
 			if(Index-- <= 0) return nullptr;
 			_Keyword* Node = *KeywordBegin;
 			while(0 < Index-- && Node) Node = Node->Link;
-			BxAssert("BxAnimate", Node);
+			BxASSERT("BxAnimate", Node);
 			return Node;
 		}
 	};
@@ -560,7 +560,7 @@ protected:
 			_DataClass(ClassType type) : CType(type) {}
 			virtual BxDrawForm* GetForm()
 			{
-				BxAssert("BxAnimate<È£ÃâÀÌ ±İÁöµÈ ÇÔ¼öÀÔ´Ï´Ù>", false);
+				BxASSERT("BxAnimate<í˜¸ì¶œì´ ê¸ˆì§€ëœ í•¨ìˆ˜ì…ë‹ˆë‹¤>", false);
 				return nullptr;
 			}
 		};
@@ -573,7 +573,7 @@ protected:
 				BxImage* Image;
 			public:
 				_Sprite() : _DataClass(ClassType_Sprite), FileID(0), Image(nullptr) {}
-				~_Sprite() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Sprite); BxDelete(Image);}
+				~_Sprite() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Sprite); BxDelete(Image);}
 			public:
 				virtual BxDrawForm* GetForm()
 				{
@@ -608,7 +608,7 @@ protected:
 				uint Angle1024;
 			public:
 				_Gradation() : _DataClass(ClassType_Gradation), Width(0), Height(0), NumUnit(0), Unit(nullptr), Angle1024(0) {}
-				~_Gradation() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Gradation); BxDelete_Array(Unit);}
+				~_Gradation() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Gradation); BxDelete_Array(Unit);}
 			} *Gradation;
 			class _Stencil : public _DataClass
 			{
@@ -618,7 +618,7 @@ protected:
 				byte* Bits;
 			public:
 				_Stencil() : _DataClass(ClassType_Stencil), Width(0), Height(0), Bits(nullptr) {}
-				~_Stencil() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Stencil); BxDelete_Array(Bits);}
+				~_Stencil() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Stencil); BxDelete_Array(Bits);}
 			} *Stencil;
 		} Data;
 		_Form* _ref_ Link;
@@ -631,7 +631,7 @@ protected:
 			case form_sprite: BxDelete_Array(Data.Sprite); break;
 			case form_gradation: BxDelete_Array(Data.Gradation); break;
 			case form_stencil: BxDelete_Array(Data.Stencil); break;
-			default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+			default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 			}
 		}
 	public:
@@ -673,7 +673,7 @@ protected:
 					BxUtilGlobal::LoadBytes(Data.Stencil[i].Bits, Resource, NumBits);
 				}
 				break;
-			default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+			default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 			}
 			GetFormData(Begin, 0, this);
 		}
@@ -708,7 +708,7 @@ protected:
 				else Index -= Node->Length;
 				Node = Node->Link;
 			}
-			BxAssert("BxAnimate", false);
+			BxASSERT("BxAnimate", false);
 			return nullptr;
 		}
 	};
@@ -735,7 +735,7 @@ protected:
 				point Grid;
 				point Detail;
 				_Point1() : _DataClass(ClassType_Point1) {}
-				~_Point1() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Point1);}
+				~_Point1() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Point1);}
 			} *Hotspot;
 			class _Point2 : public _DataClass
 			{
@@ -743,7 +743,7 @@ protected:
 				point Grid[2];
 				point Detail[2];
 				_Point2() : _DataClass(ClassType_Point2) {}
-				~_Point2() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Point2);}
+				~_Point2() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Point2);}
 			} *Rectangle, *Ellipse;
 			class _Points : public _DataClass
 			{
@@ -755,7 +755,7 @@ protected:
 				_Points() : _DataClass(ClassType_Points), NumPoint(0), Grid(nullptr), Detail(nullptr) {}
 				~_Points()
 				{
-					BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Points);
+					BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Points);
 					BxDelete_Array(Grid);
 					BxDelete_Array(Detail);
 				}
@@ -773,7 +773,7 @@ protected:
 			case outline_ellipse: BxDelete_Array(Data.Ellipse); break;
 			case outline_st_polygon: BxDelete_Array(Data.StPolygon); break;
 			case outline_bz_polygon: BxDelete_Array(Data.BzPolygon); break;
-			default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+			default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 			}
 		}
 	public:
@@ -822,7 +822,7 @@ protected:
 					}
 				}
 				break;
-			default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+			default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 			}
 			GetOutlineData(Begin, 0, this);
 		}
@@ -854,13 +854,13 @@ protected:
 					case outline_ellipse: return &Node->Data.Ellipse[Index];
 					case outline_st_polygon: return &Node->Data.StPolygon[Index];
 					case outline_bz_polygon: return &Node->Data.BzPolygon[Index];
-					default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+					default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 					}
 				}
 				else Index -= Node->Length;
 				Node = Node->Link;
 			}
-			BxAssert("BxAnimate", false);
+			BxASSERT("BxAnimate", false);
 			return nullptr;
 		}
 	};
@@ -885,7 +885,7 @@ protected:
 				Action[i].Load(BeginArray, Resource);
 		}
 	public:
-		class _Action // Çàµ¿
+		class _Action // í–‰ë™
 		{
 		public:
 			string Name;
@@ -905,7 +905,7 @@ protected:
 					Motion[i].Load(BeginArray, Resource);
 			}
 		public:
-			class _Motion // µ¿ÀÛ
+			class _Motion // ë™ì‘
 			{
 			public:
 				motion Type;
@@ -919,7 +919,7 @@ protected:
 				};
 				union _Data
 				{
-					class _Frame : public _DataClass // Àå¸é
+					class _Frame : public _DataClass // ì¥ë©´
 					{
 					public:
 						BxAnimate::_Keyword* _ref_ ShowEvent;
@@ -949,7 +949,7 @@ protected:
 											Pipe[i] = BxUtilGlobal::LoadUint8(Resource);
 										Form = BxAnimate::_Form::GetFormData(&BeginArray[FORM], BxUtilGlobal::LoadUint16(Resource));
 										Outline = BxAnimate::_Outline::GetOutlineData(&BeginArray[OUTLINE], BxUtilGlobal::LoadUint16(Resource));
-										BxAssert("BxAnimate", Form && Outline);
+										BxASSERT("BxAnimate", Form && Outline);
 										Grid.x = BxUtilGlobal::LoadInt16(Resource);
 										Grid.y = BxUtilGlobal::LoadInt16(Resource);
 										Detail.x = BxUtilGlobal::LoadInt16(Resource);
@@ -976,13 +976,13 @@ protected:
 									Data.Image = BxPool<_Data::_Image>::MakeClass();
 									Data.Image->Load(BeginArray, Resource);
 									break;
-								default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+								default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 								}
 							}
 						} *Layer;
 					public:
 						_Frame() : _DataClass(ClassType_Frame), ShowEvent(nullptr), TouchEvent(nullptr), NumLayer(0), Layer(nullptr) {}
-						~_Frame() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Frame); BxDelete_Array(Layer);}
+						~_Frame() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Frame); BxDelete_Array(Layer);}
 					public:
 						void Load(void* BeginArray[3], byte* _inout_ Resource)
 						{
@@ -996,32 +996,32 @@ protected:
 								Layer[i].Load(BeginArray, Resource);
 						}
 					} *Frame;
-					class _Sleep : public _DataClass // Áö½Ã
+					class _Sleep : public _DataClass // ì§€ì‹œ
 					{
 					public:
 						uint Frame;
 					public:
 						_Sleep() : _DataClass(ClassType_Sleep), Frame(0) {}
-						~_Sleep() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Sleep);}
+						~_Sleep() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Sleep);}
 					} *Sleep;
-					class _Speed : public _DataClass // Áö½Ã
+					class _Speed : public _DataClass // ì§€ì‹œ
 					{
 					public:
 						uint Frame;
 					public:
 						_Speed() : _DataClass(ClassType_Speed), Frame(1) {}
-						~_Speed() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Speed);}
+						~_Speed() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Speed);}
 					} *Speed;
-					class _Vector : public _DataClass // Áö½Ã
+					class _Vector : public _DataClass // ì§€ì‹œ
 					{
 					public:
 						int X;
 						int Y;
 					public:
 						_Vector() : _DataClass(ClassType_Vector), X(0), Y(0) {}
-						~_Vector() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Vector);}
+						~_Vector() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Vector);}
 					} *Vector;
-					class _Keyword : public _DataClass // Áö½Ã, ÆÇ´Ü, ÆÇ´Ü, ÆÇ´Ü, ÆÇ´Ü
+					class _Keyword : public _DataClass // ì§€ì‹œ, íŒë‹¨, íŒë‹¨, íŒë‹¨, íŒë‹¨
 					{
 					public:
 						BxAnimate::_Keyword* _ref_ Keyword;
@@ -1037,7 +1037,7 @@ protected:
 						_Keyword() : _DataClass(ClassType_Keyword), Keyword(nullptr) {}
 						~_Keyword()
 						{
-							BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Keyword);
+							BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Keyword);
 							if(Keyword)
 							switch(Keyword->Type)
 							{
@@ -1049,7 +1049,7 @@ protected:
 						void Load(void** Begin, byte* _inout_ Resource, motion Type)
 						{
 							Keyword = BxAnimate::_Keyword::GetKeyword(Begin, BxUtilGlobal::LoadUint16(Resource));
-							BxAssert("BxAnimate", Keyword);
+							BxASSERT("BxAnimate", Keyword);
 							switch(Keyword->Type)
 							{
 							case keyword_event: Compare.Event = BxUtilGlobal::LoadString(Resource); break;
@@ -1060,18 +1060,18 @@ protected:
 									Compare.Number = BxUtilGlobal::LoadInt32(Resource);
 								break;
 							case keyword_string: Compare.String = BxUtilGlobal::LoadString(Resource); break;
-							default: BxAssert("BxAnimate<Àß¸øµÈ °ªÀÔ´Ï´Ù>", false); break;
+							default: BxASSERT("BxAnimate<ì˜ëª»ëœ ê°’ì…ë‹ˆë‹¤>", false); break;
 							}
 						}
 					} *Set, *If, *IfFew, *IfRate, *IfCount;
-					class _Goto : public _DataClass // Áö½Ã
+					class _Goto : public _DataClass // ì§€ì‹œ
 					{
 					public:
 						int ActionID;
 						int MotionID;
 					public:
 						_Goto() : _DataClass(ClassType_Goto), ActionID(0), MotionID(0) {}
-						~_Goto() {BxAssert("BxAnimate<¼Ò¸êµÇ´Â Å¸ÀÔÀÌ ´Ù¸¨´Ï´Ù>", CType == ClassType_Goto);}
+						~_Goto() {BxASSERT("BxAnimate<ì†Œë©¸ë˜ëŠ” íƒ€ì…ì´ ë‹¤ë¦…ë‹ˆë‹¤>", CType == ClassType_Goto);}
 					} *Goto;
 				} Data;
 			public:
@@ -1181,7 +1181,7 @@ protected:
 	public:
 		bool IsAlive;
 	public:
-		_Active() {BxAssert("BxAnimate<Àß¸øµÈ È£ÃâÀÔ´Ï´Ù>", false);}
+		_Active() {BxASSERT("BxAnimate<ì˜ëª»ëœ í˜¸ì¶œì…ë‹ˆë‹¤>", false);}
 		_Active(_Object* object) : Object(object), IsAlive(true)
 		{
 			EventCur = Object->Action[0].Event;
@@ -1228,7 +1228,7 @@ protected:
 		inline const int GetPosX() {return CurrentPos.x;}
 		inline const int GetPosY() {return CurrentPos.y;}
 		inline _Object::_Action::_Motion* GetMotion() {return &Object->Action[CurrentAction].Motion[CurrentMotion];}
-		delete_me Play(void** Begin) // local-keyword°³³äµµÀÔ
+		delete_me Play(void** Begin) // local-keywordê°œë…ë„ì…
 		{
 			do
 			{
@@ -1305,7 +1305,7 @@ protected:
 							switch(OneMotion.Data.If->Keyword->Type)
 							{
 							case keyword_event:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_check:
 								IsSuccess = (OneMotion.Data.If->Keyword->Check == OneMotion.Data.If->Compare.Check);
@@ -1340,19 +1340,19 @@ protected:
 							switch(OneMotion.Data.IfFew->Keyword->Type)
 							{
 							case keyword_event:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_check:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_radio:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_number:
 								IsSuccess = (OneMotion.Data.IfFew->Keyword->Number < OneMotion.Data.IfFew->Compare.Number);
 								break;
 							case keyword_string:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							}
 							if(IsSuccess)
@@ -1375,19 +1375,19 @@ protected:
 							switch(OneMotion.Data.IfRate->Keyword->Type)
 							{
 							case keyword_event:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_check:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_radio:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_number:
 								IsSuccess = ((((int) BxUtil::GetRandom()) % 100) < OneMotion.Data.IfRate->Keyword->Number);
 								break;
 							case keyword_string:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							}
 							if(IsSuccess)
@@ -1410,13 +1410,13 @@ protected:
 							switch(OneMotion.Data.IfCount->Keyword->Type)
 							{
 							case keyword_event:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_check:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_radio:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							case keyword_number:
 								if(0 < OneMotion.Data.IfCount->Keyword->Number)
@@ -1426,7 +1426,7 @@ protected:
 								}
 								break;
 							case keyword_string:
-								BxAssert("BxAnimate", false);
+								BxASSERT("BxAnimate", false);
 								break;
 							}
 							if(IsSuccess)
