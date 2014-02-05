@@ -202,12 +202,12 @@ namespace BxUtilGlobal
 
 	/*!
 	\brief 스트링 복사하기
-	\param DstString : 복사할 스트링(restrict속성)
-	\param SrcString : 가져올 스트링(restrict속성)
+	\param DstString : 복사할 스트링
+	\param SrcString : 가져올 스트링
 	\param SrcLength : 복사될 사이즈(StringSrc의 길이로 자동셋팅 : -1)
 	\return 복사된 사이즈(NULL문자 제외)
 	*/
-	static int StrCpy(string_rw_prm DstString, string_prm SrcString, int SrcLength = -1)
+	static int StrCpy(string_rw DstString, string SrcString, int SrcLength = -1)
 	{
 		const int SrcLen = (SrcLength < 0)? StrLen(SrcString) : SrcLength;
 		BxCore::Util::MemCpy(DstString, SrcString, SrcLen);
@@ -233,12 +233,12 @@ namespace BxUtilGlobal
 
 	/*!
 	\brief 스트링 비교하기
-	\param StringA : 스트링A(restrict속성)
-	\param StringB : 스트링B(restrict속성)
+	\param StringA : 스트링A
+	\param StringB : 스트링B
 	\param FixedLength : 고정식 비교구간(사용안함 : -1)
 	\return same-같음, b_is_more-스트링B가 큼, b_is_less-스트링B가 작음
 	*/
-	static compare StrCmp(string_prm StringA, string_prm StringB, int FixedLength = -1)
+	static compare StrCmp(string StringA, string StringB, int FixedLength = -1)
 	{
 		if(FixedLength < 0)
 		{
@@ -257,12 +257,12 @@ namespace BxUtilGlobal
 
 	/*!
 	\brief 대소문자 구분없이 스트링 비교하기
-	\param StringA : 스트링A(restrict속성)
-	\param StringB : 스트링B(restrict속성)
+	\param StringA : 스트링A
+	\param StringB : 스트링B
 	\param FixedLength : 고정식 비교구간(사용안함 : -1)
 	\return same-같음, b_is_more-스트링B가 큼, b_is_less-스트링B가 작음
 	*/
-	static compare StrICmp(string_prm StringA, string_prm StringB, int FixedLength = -1)
+	static compare StrICmp(string StringA, string StringB, int FixedLength = -1)
 	{
 		if(FixedLength < 0)
 		{
@@ -289,11 +289,11 @@ namespace BxUtilGlobal
 
 	/*!
 	\brief 스트링간 동일구역의 길이 구하기
-	\param StringA : 스트링A(restrict속성)
-	\param StringB : 스트링B(restrict속성)
+	\param StringA : 스트링A
+	\param StringB : 스트링B
 	\return 바이트길이
 	*/
-	static int StrSameCount(string_prm StringA, string_prm StringB)
+	static int StrSameCount(string StringA, string StringB)
 	{
 		int Focus = 0;
 		while(StringA[Focus] != '\0' && StringA[Focus] == StringB[Focus])

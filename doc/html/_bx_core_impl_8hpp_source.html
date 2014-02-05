@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.9.0</span>
+   &#160;<span id="projectnumber">3.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            global_data <span class="keywordtype">bool</span> IsLoaded = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span>(IsLoaded) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">bool</span> LoadResult = BxKeyword::Load(<span class="stringliteral">&quot;config/default.key&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxCore::System&lt;config/default.key파일을 로드할 수 없습니다&gt;&quot;</span>, LoadResult);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            BxASSERT(W1(<span class="stringliteral">&quot;BxCore::System&lt;config/default.key파일을 로드할 수 없습니다&gt;&quot;</span>), LoadResult);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            IsLoaded = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div>
@@ -242,7 +242,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

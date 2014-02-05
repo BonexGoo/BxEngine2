@@ -3,6 +3,8 @@
   <compounddef id="dir_b5b94320ff88f13382361ee1d091b121" kind="dir">
     <compoundname>bxcore</compoundname>
     <innerfile refid="_bx_core_8hpp">BxCore.hpp</innerfile>
+    <innerfile refid="_bx_core_for_q_t5_8cpp">BxCoreForQT5.cpp</innerfile>
+    <innerfile refid="_bx_core_for_q_t5_8hpp">BxCoreForQT5.hpp</innerfile>
     <innerfile refid="_bx_core_for_s3_e_8cpp">BxCoreForS3E.cpp</innerfile>
     <innerfile refid="_bx_core_for_s3_e_8hpp">BxCoreForS3E.hpp</innerfile>
     <innerfile refid="_bx_core_impl_8cpp">BxCoreImpl.cpp</innerfile>
@@ -11,6 +13,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/"/>
   </compounddef>
 </doxygen>

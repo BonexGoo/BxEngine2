@@ -176,10 +176,6 @@ typedef char* string_rw;
 typedef const ushort* wstring;
 typedef ushort* wstring_rw;
 typedef ushort wchar;
-typedef const char* __restrict string_prm;
-typedef char* __restrict string_rw_prm;
-typedef const ushort* __restrict wstring_prm;
-typedef ushort* __restrict wstring_rw_prm;
 // 타입-좌표
 //! \brief point구조체 : x, y
 typedef struct point
@@ -284,11 +280,11 @@ typedef void (*callback_thread)(void* data);
 #define _BX_STRING_LITERAL_
 	#if defined(_MSC_VER)
 		#define MB(STR) ((const char* const) STR)
-		#define W1(STR) BxCore::System::GetUTF8LiteralByCP949(STR, sizeof(STR) - 1)
+		#define W1(STR) BxCore::System::GetUTF8LiteralByCP949("" STR)
 		#define W2(STR) ((const ushort* const) L##STR)
 		#define _W2(STR) L##STR
 	#else
-		#define MB(STR) BxCore::System::GetCP949LiteralByUTF8(STR, sizeof(STR) - 1)
+		#define MB(STR) BxCore::System::GetCP949LiteralByUTF8("" STR)
 		#define W1(STR) ((const char* const) STR)
 		#define W2(STR) ((const ushort* const) u##STR)
 		#define _W2(STR) u##STR

@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxType.hpp" bodystart="222" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="218" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="218" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>matrix구조체 : m[4][4] </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxType.hpp" bodystart="222" bodyend="222"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="218" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="218" bodyend="218"/>
     <listofallmembers>
       <member refid="structmatrix_1a2e81c025ac684f32b282ab81579ef535" prot="public" virt="non-virtual"><scope>matrix</scope><name>m</name></member>
     </listofallmembers>

@@ -88,7 +88,7 @@ namespace BxCore
 			return defaultString;
 		}
 
-		string const GetUTF8LiteralByCP949(string const cp949, const int size)
+		string const GetUTF8LiteralByCP949(string const cp949)
 		{
 			// 캐시
 			BxVarMap<string_rw>* UTF8Literals = nullptr;
@@ -96,19 +96,20 @@ namespace BxCore
 			if(UTF8Literals->Access((uint) cp949))
 				return (*UTF8Literals)[(uint) cp949];
 			// 임시공간
+			const int LetterLen = BxUtilGlobal::StrLen(cp949);
 			thread_storage _ = sizeof(int);
 			int& TempSizeMax = *((int*) BxCore::Thread::BindStorage(&_));
-			if(TempSizeMax < size + 1) TempSizeMax = size + 1;
+			if(TempSizeMax < LetterLen + 1) TempSizeMax = LetterLen + 1;
 			wstring_rw Temp = nullptr;
 			BxSINGLETON(Temp, TempSizeMax);
 			// 변환
-			const int UTF16Len = BxUtil::CP949ToUTF16(cp949, size, Temp, size);
+			const int UTF16Len = BxUtil::CP949ToUTF16(cp949, LetterLen, Temp, LetterLen);
 			string_rw UTF8 = new char[BxUtil::GetLengthForUTF8(Temp, UTF16Len) + 1];
 			BxUtil::UTF16ToUTF8(Temp, UTF16Len, UTF8);
 			return ((*UTF8Literals)[(uint) cp949] = UTF8);
 		}
 
-		string const GetCP949LiteralByUTF8(string const utf8, const int size)
+		string const GetCP949LiteralByUTF8(string const utf8)
 		{
 			// 캐시
 			BxVarMap<string_rw>* CP949Literals = nullptr;
@@ -116,14 +117,14 @@ namespace BxCore
 			if(CP949Literals->Access((uint) utf8))
 				return (*CP949Literals)[(uint) utf8];
 			// 임시공간
-			const int LetterLen = BxUtil::GetLengthForUTF16(utf8, size);
+			const int LetterLen = BxUtil::GetLengthForUTF16(utf8, -1);
 			thread_storage _ = sizeof(int);
 			int& TempSizeMax = *((int*) BxCore::Thread::BindStorage(&_));
 			if(TempSizeMax < LetterLen + 1) TempSizeMax = LetterLen + 1;
 			wstring_rw Temp = nullptr;
 			BxSINGLETON(Temp, TempSizeMax);
 			// 변환
-			BxUtil::UTF8ToUTF16(utf8, size, Temp);
+			BxUtil::UTF8ToUTF16(utf8, -1, Temp);
 			string_rw CP949 = new char[LetterLen * 2 + 1];
 			BxUtil::UTF16ToCP949(Temp, LetterLen, CP949, LetterLen * 2);
 			return ((*CP949Literals)[(uint) utf8] = CP949);
@@ -269,6 +270,22 @@ namespace BxCore
 							{
 								ArgString[0] = BxUtilGlobal::ItoA(*((unsigned int*) ArgData));
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+							}
+							else if(ArgData = args.Access<float>(ArgID))
+							{
+								ArgString[0] = BxUtilGlobal::ItoA((int) *((float*) ArgData));
+								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+								if(SpaceSize[0] == -1 && SpaceSize[1] != -1)
+									SpaceSize[0] = ArgStringLength[0];
+								// 소수처리
+								global_data char CipherString[8] = {'.',};
+								string_rw CipherFocus = CipherString + 1;
+								int CipherCode = 1000000;
+								int Value = BxUtilGlobal::Abs((int) (*((float*) ArgData) * CipherCode)) % CipherCode;
+								do {*(CipherFocus++) = '0' + ((Value / (CipherCode /= 10)) % 10);}
+								while(Value %= CipherCode);
+								ArgString[1] = CipherString;
+								ArgStringLength[1] = CipherFocus - CipherString;
 							}
 							else if(ArgData = args.Access<double>(ArgID))
 							{

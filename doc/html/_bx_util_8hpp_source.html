@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.9.0</span>
+   &#160;<span id="projectnumber">3.0.0</span>
    </div>
   </td>
  </tr>
@@ -203,7 +203,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#ab0ebe24132ef62727a0493664df7e8eb">  210</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespace_bx_util_global.html#ab0ebe24132ef62727a0493664df7e8eb" title="스트링 복사하기 ">StrCpy</a>(string_rw_prm DstString, string_prm SrcString, <span class="keywordtype">int</span> SrcLength = -1)</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#a8fdd65e4b612e98e3f9f9f7141b9ddb2">  210</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespace_bx_util_global.html#a8fdd65e4b612e98e3f9f9f7141b9ddb2" title="스트링 복사하기 ">StrCpy</a>(string_rw DstString, <span class="keywordtype">string</span> SrcString, <span class="keywordtype">int</span> SrcLength = -1)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> SrcLen = (SrcLength &lt; 0)? <a class="code" href="namespace_bx_util_global.html#a677b3048a42145d09849067b4d4a73ce" title="스트링길이 구하기 ">StrLen</a>(SrcString) : SrcLength;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc" title="메모리 복사 ">BxCore::Util::MemCpy</a>(DstString, SrcString, SrcLen);</div>
@@ -220,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> AllocedString;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325">  241</a></span>&#160;    <span class="keyword">static</span> compare <a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">StrCmp</a>(string_prm StringA, string_prm StringB, <span class="keywordtype">int</span> FixedLength = -1)</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54">  241</a></span>&#160;    <span class="keyword">static</span> compare <a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">StrCmp</a>(<span class="keywordtype">string</span> StringA, <span class="keywordtype">string</span> StringB, <span class="keywordtype">int</span> FixedLength = -1)</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">if</span>(FixedLength &lt; 0)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
@@ -237,7 +237,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">return</span> same;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#a4317f902f41c2f1cebf54642d42d671f">  265</a></span>&#160;    <span class="keyword">static</span> compare <a class="code" href="namespace_bx_util_global.html#a4317f902f41c2f1cebf54642d42d671f" title="대소문자 구분없이 스트링 비교하기 ">StrICmp</a>(string_prm StringA, string_prm StringB, <span class="keywordtype">int</span> FixedLength = -1)</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#aecfd04966f2d01ed9b53f0109cb1424b">  265</a></span>&#160;    <span class="keyword">static</span> compare <a class="code" href="namespace_bx_util_global.html#aecfd04966f2d01ed9b53f0109cb1424b" title="대소문자 구분없이 스트링 비교하기 ">StrICmp</a>(<span class="keywordtype">string</span> StringA, <span class="keywordtype">string</span> StringB, <span class="keywordtype">int</span> FixedLength = -1)</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span>(FixedLength &lt; 0)</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {</div>
@@ -262,7 +262,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> same;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#a6e24c46c55a8937dc65a258adc40c1b9">  296</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespace_bx_util_global.html#a6e24c46c55a8937dc65a258adc40c1b9" title="스트링간 동일구역의 길이 구하기 ">StrSameCount</a>(string_prm StringA, string_prm StringB)</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="code" href="namespace_bx_util_global.html#a2b718de4bf83cecd812c0409d74286bc">  296</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespace_bx_util_global.html#a2b718de4bf83cecd812c0409d74286bc" title="스트링간 동일구역의 길이 구하기 ">StrSameCount</a>(<span class="keywordtype">string</span> StringA, <span class="keywordtype">string</span> StringB)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    {</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordtype">int</span> Focus = 0;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">while</span>(StringA[Focus] != <span class="charliteral">&#39;\0&#39;</span> &amp;&amp; StringA[Focus] == StringB[Focus])</div>
@@ -417,7 +417,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> StringLen = (StringLength &lt; 0)? <a class="code" href="namespace_bx_util_global.html#a39b70575037e5a54e79b304c82c1822a" title="확장된 스트링길이 구하기(과  도 인식) ">StrLenEx</a>(String) : StringLength;</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        string_rw Result = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        BxSINGLETON(Result, StringLen + 1);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <a class="code" href="namespace_bx_util_global.html#ab0ebe24132ef62727a0493664df7e8eb" title="스트링 복사하기 ">StrCpy</a>(Result, String, StringLen);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <a class="code" href="namespace_bx_util_global.html#a8fdd65e4b612e98e3f9f9f7141b9ddb2" title="스트링 복사하기 ">StrCpy</a>(Result, String, StringLen);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keywordflow">if</span>(IsUpper)</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        {</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; StringLen; ++i)</div>
@@ -1119,7 +1119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 6 2014 00:58:46 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

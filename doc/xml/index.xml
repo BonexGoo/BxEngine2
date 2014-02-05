@@ -633,10 +633,14 @@
     <member refid="class_bx_var_map_1a7f6392b1771dd4b2cc6d15ca1e3f8b87" kind="function"><name>Access</name></member>
     <member refid="class_bx_var_map_1a035b6e1e7b2aeec287e4abd271a1c9d0" kind="function"><name>Access</name></member>
     <member refid="class_bx_var_map_1a4778fe94d3b087e5d07c3556c0d812e7" kind="function"><name>Access</name></member>
+    <member refid="class_bx_var_map_1af91f76912e700ab888b0880426958058" kind="function"><name>Remove</name></member>
+    <member refid="class_bx_var_map_1a32e01c9aba55197d29de97a94ed1c6a6" kind="function"><name>Remove</name></member>
+    <member refid="class_bx_var_map_1ad162702a632c68a0defcc6d4ab0316a0" kind="function"><name>Remove</name></member>
     <member refid="class_bx_var_map_1a533a12f831eaa5cd9ab275edfc421050" kind="function"><name>Reset</name></member>
     <member refid="class_bx_var_map_1ae40acbc31252742f39d01043f566144f" kind="function"><name>BxVarMap</name></member>
     <member refid="class_bx_var_map_1ae08d6239a32d2e30e61709ac7e27dd81" kind="function"><name>~BxVarMap</name></member>
-    <member refid="class_bx_var_map_1a7888ef24fbed41b8f4d40410f7a7f2e5" kind="function"><name>ValidChild</name></member>
+    <member refid="class_bx_var_map_1a1a6fd93faecacac1be929b7b0734d2ca" kind="function"><name>ValidChild</name></member>
+    <member refid="class_bx_var_map_1a8a279e9a4fe631062726868da1dd15c9" kind="function"><name>InvalideChild</name></member>
   </compound>
   <compound refid="class_bx_var_vector" kind="class"><name>BxVarVector</name>
     <member refid="class_bx_var_vector_1a0ebcac5fb97e9bb800bb5ef91cfcd020" kind="enum"><name>Parameter</name></member>
@@ -1422,7 +1426,7 @@
     <member refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kind="function"><name>Link</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_main" kind="namespace"><name>BxCore::Main</name>
-    <member refid="namespace_bx_core_1_1_main_1a5d83ec8940a4663971209d8982bb263c" kind="variable"><name>Draw</name></member>
+    <member refid="namespace_bx_core_1_1_main_1a9c41476ca4803e62ca586299582466c0" kind="variable"><name>Draw</name></member>
     <member refid="namespace_bx_core_1_1_main_1a3cf2c7f4bf991220cc10c6da44e5a3f4" kind="function"><name>EventAttach</name></member>
     <member refid="namespace_bx_core_1_1_main_1a10d016a2659bc9581498b37bc214c6bf" kind="function"><name>EventDetach</name></member>
     <member refid="namespace_bx_core_1_1_main_1a864663329e5257c4c08e22b86f1faf90" kind="function"><name>GetCurrentUpdateCount</name></member>
@@ -1497,6 +1501,7 @@
     <member refid="namespace_bx_core_1_1_surface_1a403b067f7bae56e4ac2c57490bf5a1e6" kind="function"><name>_MarginEnable</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_system" kind="namespace"><name>BxCore::System</name>
+    <member refid="namespace_bx_core_1_1_system_1a2c732393f167db7cccf4e65e9e407701" kind="variable"><name>QuitFlag</name></member>
     <member refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kind="function"><name>IsQuit</name></member>
     <member refid="namespace_bx_core_1_1_system_1a76e419e00d7b54a666a81fbcf125ac0b" kind="function"><name>DoQuit</name></member>
     <member refid="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" kind="function"><name>Sleep</name></member>
@@ -1519,8 +1524,8 @@
     <member refid="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" kind="function"><name>DoSimulatorMinimize</name></member>
     <member refid="namespace_bx_core_1_1_system_1af1378bb03a6217f9098f0386b4668f2e" kind="function"><name>Break</name></member>
     <member refid="namespace_bx_core_1_1_system_1a32cbcef13cd061545c46900a5a1de6ce" kind="function"><name>Trace</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a90f936d990916aa107105ba54247fd22" kind="function"><name>GetUTF8LiteralByCP949</name></member>
-    <member refid="namespace_bx_core_1_1_system_1af0d560a109b110c57e7398d39b0479dc" kind="function"><name>GetCP949LiteralByUTF8</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a68e95a6afa87cea29d75098fedf3103d" kind="function"><name>GetUTF8LiteralByCP949</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a15ac9a31f47be8502f77a6bc9749ef95" kind="function"><name>GetCP949LiteralByUTF8</name></member>
     <member refid="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" kind="function"><name>GetOSName</name></member>
     <member refid="namespace_bx_core_1_1_system_1a6cd582a9429126f4aa5fd79632f22a28" kind="function"><name>GetArchName</name></member>
     <member refid="namespace_bx_core_1_1_system_1aa0aec579b20508c545e741183592e89c" kind="function"><name>GetDeviceID</name></member>
@@ -1674,11 +1679,11 @@
     <member refid="namespace_bx_util_global_1a41d6743504746604fc1b2607346e2b5c" kind="function"><name>StrLenEx</name></member>
     <member refid="namespace_bx_util_global_1ad0d73de4f241c8cd6b2a89cf95570d43" kind="function"><name>StrAlloc</name></member>
     <member refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kind="function"><name>StrFree</name></member>
-    <member refid="namespace_bx_util_global_1ab0ebe24132ef62727a0493664df7e8eb" kind="function"><name>StrCpy</name></member>
+    <member refid="namespace_bx_util_global_1a8fdd65e4b612e98e3f9f9f7141b9ddb2" kind="function"><name>StrCpy</name></member>
     <member refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kind="function"><name>StrCpyWithAlloc</name></member>
-    <member refid="namespace_bx_util_global_1a6f088d5e02c37b59ffaaacdc19e5d325" kind="function"><name>StrCmp</name></member>
-    <member refid="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" kind="function"><name>StrICmp</name></member>
-    <member refid="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" kind="function"><name>StrSameCount</name></member>
+    <member refid="namespace_bx_util_global_1aac495a865fddc971089bedc397adff54" kind="function"><name>StrCmp</name></member>
+    <member refid="namespace_bx_util_global_1aecfd04966f2d01ed9b53f0109cb1424b" kind="function"><name>StrICmp</name></member>
+    <member refid="namespace_bx_util_global_1a2b718de4bf83cecd812c0409d74286bc" kind="function"><name>StrSameCount</name></member>
     <member refid="namespace_bx_util_global_1a06eca0ea562f266e838ed7bed0843faa" kind="function"><name>StrHash</name></member>
     <member refid="namespace_bx_util_global_1ad2174a731be330c26da64403b394bab4" kind="function"><name>StrSearch</name></member>
     <member refid="namespace_bx_util_global_1a89891dd65b308771858ff8d3dc2be904" kind="function"><name>StrSearchMap</name></member>
@@ -1705,6 +1710,10 @@
   <compound refid="_bx_auto_buffer_8hpp" kind="file"><name>BxAutoBuffer.hpp</name>
   </compound>
   <compound refid="_bx_core_8hpp" kind="file"><name>BxCore.hpp</name>
+  </compound>
+  <compound refid="_bx_core_for_q_t5_8cpp" kind="file"><name>BxCoreForQT5.cpp</name>
+  </compound>
+  <compound refid="_bx_core_for_q_t5_8hpp" kind="file"><name>BxCoreForQT5.hpp</name>
   </compound>
   <compound refid="_bx_core_for_s3_e_8cpp" kind="file"><name>BxCoreForS3E.cpp</name>
   </compound>
@@ -2183,10 +2192,6 @@
     <member refid="_bx_type_8hpp_1a66ccb29808450eb791b21ebb85ac9aa6" kind="typedef"><name>wstring</name></member>
     <member refid="_bx_type_8hpp_1a40b1c9496c72f9adf230d5dbf4fcc329" kind="typedef"><name>wstring_rw</name></member>
     <member refid="_bx_type_8hpp_1a28c0083ab45bd4162f7487ff7bc3399d" kind="typedef"><name>wchar</name></member>
-    <member refid="_bx_type_8hpp_1a0b2e7b8131f1ec7b2acba5c87e216314" kind="typedef"><name>string_prm</name></member>
-    <member refid="_bx_type_8hpp_1a28fd2aeb6127a5e35a8f2ab5e8ab8127" kind="typedef"><name>string_rw_prm</name></member>
-    <member refid="_bx_type_8hpp_1a96a1fcff7b3505bb710a3f624a6e9a27" kind="typedef"><name>wstring_prm</name></member>
-    <member refid="_bx_type_8hpp_1a78b024917ed01ea5c2f3aa59014ab921" kind="typedef"><name>wstring_rw_prm</name></member>
     <member refid="_bx_type_8hpp_1abc9e36332ee3746d18ff525266622a55" kind="typedef"><name>point</name></member>
     <member refid="_bx_type_8hpp_1ac72b4c9ea3be039488466ecc555a4908" kind="typedef"><name>pointf</name></member>
     <member refid="_bx_type_8hpp_1ae6fa477a6f3455f296f7d785faeb3ee3" kind="typedef"><name>size</name></member>

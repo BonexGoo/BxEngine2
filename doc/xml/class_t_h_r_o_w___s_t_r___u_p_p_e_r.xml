@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="11" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="12" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="12" bodyend="12"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" line="12" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" bodystart="12" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a72ec9cbb535e63ab86db7b3aa3947284" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="13" bodyend="13"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a5365769d6c85c25d0537038c7f4c4464" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r" kindref="compound">THROW_STR_UPPER</ref> &amp;</type>
@@ -67,14 +67,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="14" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="14" bodyend="14"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" line="14" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" bodystart="14" bodyend="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxThrow.hpp" bodystart="8" bodyend="15"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" line="9" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxThrow.hpp" bodystart="8" bodyend="15"/>
     <listofallmembers>
       <member refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a5365769d6c85c25d0537038c7f4c4464" prot="public" virt="non-virtual"><scope>THROW_STR_UPPER</scope><name>operator=</name></member>
       <member refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a94984b9d45d41c5a4ae42d7b047d4b83" prot="public" virt="non-virtual"><scope>THROW_STR_UPPER</scope><name>THROW_STR_UPPER</name></member>

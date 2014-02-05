@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.9.0</span>
+   &#160;<span id="projectnumber">3.0.0</span>
    </div>
   </td>
  </tr>
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="stringliteral">&quot;Accept: text/html, application/xhtml+xml, */*&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="stringliteral">&quot;Accept-Language: ko-KR&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="stringliteral">&quot;User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)&lt;R&gt;&lt;N&gt;&quot;</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="stringliteral">&quot;Accept-Encoding: deflate&lt;R&gt;&lt;N&gt;&quot;</span><span class="comment">//&quot;Accept-Encoding: gzip, deflate&lt;R&gt;&lt;N&gt;&quot;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="stringliteral">&quot;Accept-Encoding: deflate&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="stringliteral">&quot;Host: &lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="stringliteral">&quot;Connection: Keep-Alive&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(Path, (!Arguments || !*Arguments)? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;?&quot;</span>, (!Arguments)? <span class="stringliteral">&quot;&quot;</span> : Arguments, Domain),</div>
@@ -196,13 +196,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">if</span>(HTMLEndCodeLength &lt; RecvedLength)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    ResponseChars[RecvedLength] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    <span class="keywordflow">while</span>(*(++EndCodeSearchFocus) &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6e24c46c55a8937dc65a258adc40c1b9" title="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</a>(EndCodeSearchFocus, <span class="stringliteral">&quot;\r\n\r\n&quot;</span>) != HTMLEndCodeLength);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    <span class="keywordflow">while</span>(*(++EndCodeSearchFocus) &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a2b718de4bf83cecd812c0409d74286bc" title="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</a>(EndCodeSearchFocus, <span class="stringliteral">&quot;\r\n\r\n&quot;</span>) != HTMLEndCodeLength);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    <span class="keywordflow">if</span>(*EndCodeSearchFocus)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                        EndCodeSearchFocus += HTMLEndCodeLength;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                        <span class="comment">// 데이터사이즈 조사</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                        <span class="keywordtype">char</span>* ContentLengthSearchFocus = ResponseChars;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                        <span class="keywordflow">while</span>(++ContentLengthSearchFocus &lt; EndCodeSearchFocus &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6e24c46c55a8937dc65a258adc40c1b9" title="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</a>(ContentLengthSearchFocus, <span class="stringliteral">&quot;Content-Length:&quot;</span>) != 15);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                        <span class="keywordflow">while</span>(++ContentLengthSearchFocus &lt; EndCodeSearchFocus &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a2b718de4bf83cecd812c0409d74286bc" title="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</a>(ContentLengthSearchFocus, <span class="stringliteral">&quot;Content-Length:&quot;</span>) != 15);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                        <span class="keywordflow">if</span>(ContentLengthSearchFocus == EndCodeSearchFocus)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                        {</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                            <span class="comment">// Content-Length가 없을 경우 5MByte로 잡는다</span></div>
@@ -263,7 +263,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    <span class="keywordflow">if</span>(RecvedLength == ResponseLength)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                    <span class="comment">// 추가수신완료2 : Content-Length가 없는 HTML파일</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6e24c46c55a8937dc65a258adc40c1b9" title="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</a>((<span class="keywordtype">string</span>) &amp;ResponseBytes[RecvedLength - 5], <span class="stringliteral">&quot;0\r\n\r\n&quot;</span>) == 5)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a2b718de4bf83cecd812c0409d74286bc" title="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</a>((<span class="keywordtype">string</span>) &amp;ResponseBytes[RecvedLength - 5], <span class="stringliteral">&quot;0\r\n\r\n&quot;</span>) == 5)</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    {</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                        ResponseLength = RecvedLength;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                        <span class="keywordflow">if</span>(Progress &amp;&amp; !Progress(RecvedLength, ResponseLength)) <span class="comment">// 프로그레스</span></div>
@@ -390,7 +390,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2014 14:08:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 6 2014 00:58:46 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

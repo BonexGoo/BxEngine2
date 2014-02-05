@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">2.9.0</span>
+   &#160;<span id="projectnumber">3.0.0</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, objectName);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        _Object* FindObject = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Object.Length(); ++i)</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(objectName, Object[i].Name) == same)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(objectName, Object[i].Name) == same)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                FindObject = &amp;Object[i];</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">break</span>;</div>
@@ -256,7 +256,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> g = 0; g &lt; 2; ++g)</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Keyword[g].Length(); ++i)</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(eventName, Keyword[g][i].Name) == same)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(eventName, Keyword[g][i].Name) == same)</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                _Keyword* FindEvent = &amp;Keyword[g][i];</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                BxASSERT(<span class="stringliteral">&quot;BxAnimate&quot;</span>, FindEvent-&gt;Type == keyword_event);</div>
@@ -361,7 +361,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&amp;Begin[KEYWORD], 1);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">while</span>(Node)</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_event &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, eventName) == same)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_event &amp;&amp; <a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, eventName) == same)</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            {</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                {</div>
@@ -381,7 +381,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&amp;Begin[KEYWORD], 1);</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">while</span>(Node)</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_check &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, checkName) == same)</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_check &amp;&amp; <a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, checkName) == same)</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            {</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    Node-&gt;Check = *setValue;</div>
@@ -398,7 +398,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&amp;Begin[KEYWORD], 1);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">while</span>(Node)</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_radio &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, radioName) == same)</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_radio &amp;&amp; <a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, radioName) == same)</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            {</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                    <span class="keywordflow">if</span>(Node-&gt;Radio = *setValue)</div>
@@ -416,7 +416,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&amp;Begin[KEYWORD], 1);</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">while</span>(Node)</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_number &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, numberName) == same)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_number &amp;&amp; <a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, numberName) == same)</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            {</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    Node-&gt;Number = *setValue;</div>
@@ -433,7 +433,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        BxAnimate::_Keyword* Node = BxAnimate::_Keyword::GetKeyword(&amp;Begin[KEYWORD], 1);</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">while</span>(Node)</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_string &amp;&amp; <a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, stringName) == same)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            <span class="keywordflow">if</span>(Node-&gt;Type == keyword_string &amp;&amp; <a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(Node-&gt;Name, stringName) == same)</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            {</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                <span class="keywordflow">if</span>(setValue)</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                {</div>
@@ -1320,7 +1320,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                                IsSuccess = (OneMotion.Data.If-&gt;Keyword-&gt;Number == OneMotion.Data.If-&gt;Compare.Number);</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;                            <span class="keywordflow">case</span> keyword_string:</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;                                IsSuccess = (<a class="code" href="namespace_bx_util_global.html#a6f088d5e02c37b59ffaaacdc19e5d325" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(OneMotion.Data.If-&gt;Keyword-&gt;String, OneMotion.Data.If-&gt;Compare.String) == same);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;                                IsSuccess = (<a class="code" href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54" title="스트링 비교하기 ">BxUtilGlobal::StrCmp</a>(OneMotion.Data.If-&gt;Keyword-&gt;String, OneMotion.Data.If-&gt;Compare.String) == same);</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;                            }</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;                            <span class="keywordflow">if</span>(IsSuccess)</div>
@@ -1519,7 +1519,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2014 14:08:46 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

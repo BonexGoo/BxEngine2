@@ -22,7 +22,7 @@ namespace BxCore
 			global_data bool IsLoaded = false;
 			if(IsLoaded) return;
 			const bool LoadResult = BxKeyword::Load("config/default.key");
-			BxASSERT("BxCore::System<config/default.key파일을 로드할 수 없습니다>", LoadResult);
+			BxASSERT(W1("BxCore::System<config/default.key파일을 로드할 수 없습니다>"), LoadResult);
 			IsLoaded = true;
 		}
 		/// @endcond

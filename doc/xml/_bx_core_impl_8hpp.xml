@@ -5,82 +5,82 @@
     <includes refid="_bx_keyword_8hpp" local="no">BxKeyword.hpp</includes>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="143">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="144" relation="include">
-        </childnode>
-        <childnode refid="151" relation="include">
-        </childnode>
-        <childnode refid="152" relation="include">
+      <node id="194">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="195" relation="include">
         </childnode>
       </node>
-      <node id="152">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="149" relation="include">
+      <node id="188">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="BxCoreImpl.hpp"/>
+        <childnode refid="189" relation="include">
         </childnode>
       </node>
-      <node id="146">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="147" relation="include">
-        </childnode>
-      </node>
-      <node id="144">
+      <node id="191">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="145" relation="include">
+        <childnode refid="192" relation="include">
         </childnode>
-        <childnode refid="148" relation="include">
+        <childnode refid="195" relation="include">
         </childnode>
       </node>
-      <node id="149">
+      <node id="199">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="148">
+      <node id="190">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="149" relation="include">
+        <childnode refid="196" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
-        </childnode>
-      </node>
-      <node id="147">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="148" relation="include">
+        <childnode refid="197" relation="include">
         </childnode>
       </node>
-      <node id="142">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="143" relation="include">
-        </childnode>
+      <node id="197">
+        <label>stdio.h</label>
       </node>
-      <node id="151">
+      <node id="198">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="145" relation="include">
+        <childnode refid="192" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
-        </childnode>
-      </node>
-      <node id="141">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="BxCoreImpl.hpp"/>
-        <childnode refid="142" relation="include">
+        <childnode refid="199" relation="include">
         </childnode>
       </node>
-      <node id="145">
+      <node id="189">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
         <label>BxMemory.hpp</label>
         <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="146" relation="include">
+        <childnode refid="193" relation="include">
         </childnode>
-      </node>
-      <node id="150">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -113,7 +113,7 @@
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsLoaded<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsLoaded)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>LoadResult<sp/>=<sp/>BxKeyword::Load(</highlight><highlight class="stringliteral">&quot;config/default.key&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::System&lt;config/default.key파일을<sp/>로드할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>LoadResult);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(W1(</highlight><highlight class="stringliteral">&quot;BxCore::System&lt;config/default.key파일을<sp/>로드할<sp/>수<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">),<sp/>LoadResult);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsLoaded<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -243,6 +243,6 @@
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="178"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreImpl.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.hpp"/>
   </compounddef>
 </doxygen>

@@ -88,7 +88,7 @@ public:
 				"Accept: text/html, application/xhtml+xml, */*<R><N>"
 				"Accept-Language: ko-KR<R><N>"
 				"User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)<R><N>"
-				"Accept-Encoding: deflate<R><N>"//"Accept-Encoding: gzip, deflate<R><N>"
+				"Accept-Encoding: deflate<R><N>"
 				"Host: <A><R><N>"
 				"Connection: Keep-Alive<R><N>"
 				"<R><N>", BxTHROW(Path, (!Arguments || !*Arguments)? "" : "?", (!Arguments)? "" : Arguments, Domain),

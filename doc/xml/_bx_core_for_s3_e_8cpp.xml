@@ -12,233 +12,233 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <incdepgraph>
-      <node id="65">
+      <node id="112">
         <label>IwGx.h</label>
       </node>
-      <node id="80">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="81" relation="include">
-        </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-      </node>
-      <node id="63">
-        <label>arpa/inet.h</label>
-      </node>
-      <node id="83">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
-        </childnode>
-      </node>
-      <node id="71">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="72" relation="include">
-        </childnode>
-      </node>
-      <node id="59">
-        <label>s3eAndroidJNI.h</label>
-      </node>
-      <node id="76">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="77" relation="include">
-        </childnode>
-      </node>
-      <node id="79">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="80" relation="include">
-        </childnode>
-        <childnode refid="83" relation="include">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>s3eOSExec.h</label>
-      </node>
-      <node id="81">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="73" relation="include">
-        </childnode>
-      </node>
-      <node id="62">
-        <label>derbh.h</label>
-      </node>
-      <node id="69">
-        <label>IwDebug.h</label>
-      </node>
-      <node id="68">
-        <label>IwUTF8.h</label>
-      </node>
-      <node id="67">
-        <label>IwGxFontContainer.h</label>
-      </node>
-      <node id="85">
+      <node id="132">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="76" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
       </node>
-      <node id="55">
+      <node id="124">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="128">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>s3eAndroidJNI.h</label>
+      </node>
+      <node id="104">
+        <label>s3eOSExec.h</label>
+      </node>
+      <node id="100">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>derbh.h</label>
+      </node>
+      <node id="116">
+        <label>IwDebug.h</label>
+      </node>
+      <node id="115">
+        <label>IwUTF8.h</label>
+      </node>
+      <node id="114">
+        <label>IwGxFontContainer.h</label>
+      </node>
+      <node id="102">
         <label>netdb.h</label>
       </node>
-      <node id="84">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="72" relation="include">
+      <node id="126">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="72">
+      <node id="117">
+        <label>pthread.h</label>
+      </node>
+      <node id="118">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>string.h</label>
+      </node>
+      <node id="107">
+        <label>../edk/h/jni.h</label>
+      </node>
+      <node id="119">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="52">
-        <label>BxCoreForS3E.cpp</label>
-        <link refid="BxCoreForS3E.cpp"/>
-        <childnode refid="53" relation="include">
+      <node id="127">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="128" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="129" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
-        </childnode>
-        <childnode refid="86" relation="include">
-        </childnode>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="79" relation="include">
-        </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
-      <node id="70">
-        <label>pthread.h</label>
-      </node>
-      <node id="61">
-        <label>string.h</label>
-      </node>
-      <node id="60">
-        <label>../edk/h/jni.h</label>
-      </node>
-      <node id="73">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="72" relation="include">
-        </childnode>
-        <childnode refid="74" relation="include">
-        </childnode>
-      </node>
-      <node id="77">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="73" relation="include">
-        </childnode>
-      </node>
-      <node id="58">
+      <node id="105">
         <label>s3eOSReadString.h</label>
       </node>
-      <node id="66">
+      <node id="113">
         <label>IwGxFont.h</label>
       </node>
-      <node id="86">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="80" relation="include">
+      <node id="123">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="124" relation="include">
         </childnode>
       </node>
-      <node id="53">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="_bx_core_for_s3_e_8hpp_source"/>
-        <childnode refid="54" relation="include">
+      <node id="120">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="119" relation="include">
         </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
-        </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
-        <childnode refid="63" relation="include">
-        </childnode>
-        <childnode refid="64" relation="include">
-        </childnode>
-        <childnode refid="65" relation="include">
-        </childnode>
-        <childnode refid="66" relation="include">
-        </childnode>
-        <childnode refid="67" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-        <childnode refid="69" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
-        </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-        <childnode refid="73" relation="include">
-        </childnode>
-        <childnode refid="75" relation="include">
-        </childnode>
-        <childnode refid="79" relation="include">
-        </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="121" relation="include">
         </childnode>
       </node>
-      <node id="82">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-      </node>
-      <node id="64">
+      <node id="111">
         <label>IwGL.h</label>
       </node>
-      <node id="75">
+      <node id="122">
         <label>BxAutoBuffer.hpp</label>
         <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="76" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
       </node>
-      <node id="54">
+      <node id="101">
         <label>s3e.h</label>
       </node>
-      <node id="78">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="76" relation="include">
-        </childnode>
-      </node>
-      <node id="56">
+      <node id="103">
         <label>s3eLibrary.h</label>
       </node>
-      <node id="74">
+      <node id="121">
         <label>stdio.h</label>
+      </node>
+      <node id="129">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>BxCoreForS3E.cpp</label>
+        <link refid="BxCoreForS3E.cpp"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="119" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -725,9 +725,9 @@
 <codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dirtype<sp/>dir<sp/>=<sp/>dir_rot0;</highlight></codeline>
 <codeline lineno="468"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>defined(__GNUC__)<sp/>||<sp/>defined(__ARMCC_VERSION)</highlight></codeline>
 <codeline lineno="469"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>DispFixRot<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1a03bc3ee39c5c98605f0b1ae623722eff" kindref="member" tooltip="마멀레이드의 String형 환경설정값(icf/s3e) 불러오기 ">BxCore::System::GetPlatformConfigString</ref>(</highlight><highlight class="stringliteral">&quot;DispFixRot&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;Portrait&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same<sp/>||<sp/><ref refid="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;FixedPortrait&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same)</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1aecfd04966f2d01ed9b53f0109cb1424b" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;Portrait&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same<sp/>||<sp/><ref refid="namespace_bx_util_global_1aecfd04966f2d01ed9b53f0109cb1424b" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;FixedPortrait&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same)</highlight></codeline>
 <codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>=<sp/>dir_rot0;</highlight></codeline>
-<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;Landscape&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same<sp/>||<sp/><ref refid="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;FixedLandscape&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same)</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1aecfd04966f2d01ed9b53f0109cb1424b" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;Landscape&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same<sp/>||<sp/><ref refid="namespace_bx_util_global_1aecfd04966f2d01ed9b53f0109cb1424b" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(DispFixRot,<sp/></highlight><highlight class="stringliteral">&quot;FixedLandscape&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same)</highlight></codeline>
 <codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir<sp/>=<sp/>dir_rot90;</highlight></codeline>
 <codeline lineno="474"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
 <codeline lineno="475"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsOSAndroid())<sp/>dir<sp/>=<sp/>dir_rot0;</highlight></codeline>
@@ -898,7 +898,7 @@
 <codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(filename);</highlight></codeline>
 <codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::Sound&lt;파일명이<sp/>너무<sp/>짧습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>4<sp/>&lt;=<sp/>Length);</highlight></codeline>
-<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsAudio<sp/>=<sp/>(<ref refid="namespace_bx_util_global_1a4317f902f41c2f1cebf54642d42d671f" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(filename<sp/>+<sp/>Length<sp/>-<sp/>4,<sp/></highlight><highlight class="stringliteral">&quot;.wav&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>same);</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsAudio<sp/>=<sp/>(<ref refid="namespace_bx_util_global_1aecfd04966f2d01ed9b53f0109cb1424b" kindref="member" tooltip="대소문자 구분없이 스트링 비교하기 ">BxUtilGlobal::StrICmp</ref>(filename<sp/>+<sp/>Length<sp/>-<sp/>4,<sp/></highlight><highlight class="stringliteral">&quot;.wav&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>same);</highlight></codeline>
 <codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SoundData*<sp/>Data<sp/>=<sp/>BxNew_Param(SoundData,<sp/>filename,<sp/>IsAudio,<sp/>autoload);</highlight></codeline>
 <codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(id_sound)<sp/>Data;</highlight></codeline>
 <codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1185,7 +1185,7 @@
 <codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DirLength<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(dirname);</highlight></codeline>
 <codeline lineno="928"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>SearchCount<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="929"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>FileName[1024];</highlight></codeline>
-<codeline lineno="930"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_util_global_1ab0ebe24132ef62727a0493664df7e8eb" kindref="member" tooltip="스트링 복사하기 ">BxUtilGlobal::StrCpy</ref>(FileName,<sp/>dirname,<sp/>DirLength);</highlight></codeline>
+<codeline lineno="930"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_util_global_1a8fdd65e4b612e98e3f9f9f7141b9ddb2" kindref="member" tooltip="스트링 복사하기 ">BxUtilGlobal::StrCpy</ref>(FileName,<sp/>dirname,<sp/>DirLength);</highlight></codeline>
 <codeline lineno="931"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileName[DirLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(s3eFileListNext(List,<sp/>FileName<sp/>+<sp/>(DirLength<sp/>+<sp/>1),<sp/>1024<sp/>-<sp/>(DirLength<sp/>+<sp/>1))<sp/>==<sp/>S3E_RESULT_SUCCESS)</highlight></codeline>
 <codeline lineno="933"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1945,6 +1945,6 @@
 <codeline lineno="1687"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1688"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxcore/BxCoreForS3E.cpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForS3E.cpp"/>
   </compounddef>
 </doxygen>

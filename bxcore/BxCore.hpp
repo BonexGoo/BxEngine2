@@ -173,18 +173,16 @@ namespace BxCore
 		/*!
 		\brief CP949 스트링상수로부터 UTF8 스트링상수얻기 (Macro함수인 W1을 사용권장)
 		\param cp949 : CP949 스트링상수
-		\param size : cp949의 바이트사이즈
 		\return UTF8 스트링상수
 		*/
-		string const GetUTF8LiteralByCP949(string const cp949, const int size);
+		string const GetUTF8LiteralByCP949(string const cp949);
 
 		/*!
 		\brief UTF8 스트링상수로부터 CP949 스트링상수얻기 (Macro함수인 MB를 사용권장)
 		\param utf8 : UTF8 스트링상수
-		\param size : utf8의 바이트사이즈
 		\return CP949 스트링상수
 		*/
-		string const GetCP949LiteralByUTF8(string const utf8, const int size);
+		string const GetCP949LiteralByUTF8(string const utf8);
 
 		/*!
 		\brief OS이름 구하기

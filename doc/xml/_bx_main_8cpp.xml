@@ -6,132 +6,132 @@
     <includes refid="_bx_singleton_8hpp" local="no">BxSingleton.hpp</includes>
     <includes refid="_bx_telex_8hpp" local="no">BxTelex.hpp</includes>
     <incdepgraph>
-      <node id="240">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="248" relation="include">
-        </childnode>
-        <childnode refid="249" relation="include">
-        </childnode>
-      </node>
-      <node id="250">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="248" relation="include">
-        </childnode>
-        <childnode refid="251" relation="include">
-        </childnode>
-      </node>
-      <node id="252">
-        <label>BxTelex.hpp</label>
-        <link refid="_bx_telex_8hpp_source"/>
-        <childnode refid="249" relation="include">
-        </childnode>
-        <childnode refid="244" relation="include">
-        </childnode>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="253" relation="include">
-        </childnode>
-        <childnode refid="254" relation="include">
-        </childnode>
-      </node>
-      <node id="249">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="246" relation="include">
-        </childnode>
-      </node>
-      <node id="243">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="244" relation="include">
-        </childnode>
-      </node>
-      <node id="239">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
-        </childnode>
-      </node>
-      <node id="241">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="253">
+      <node id="300">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="243" relation="include">
+        <childnode refid="290" relation="include">
         </childnode>
       </node>
-      <node id="251">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="246" relation="include">
+      <node id="291">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="292" relation="include">
         </childnode>
       </node>
-      <node id="246">
+      <node id="288">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>BxTelex.hpp</label>
+        <link refid="_bx_telex_8hpp_source"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="245">
+      <node id="287">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="246" relation="include">
+        <childnode refid="293" relation="include">
         </childnode>
-        <childnode refid="247" relation="include">
-        </childnode>
-      </node>
-      <node id="244">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="245" relation="include">
+        <childnode refid="294" relation="include">
         </childnode>
       </node>
-      <node id="248">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="249" relation="include">
-        </childnode>
-      </node>
-      <node id="242">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-      </node>
-      <node id="238">
+      <node id="285">
         <label>BxMain.cpp</label>
         <link refid="BxMain.cpp"/>
-        <childnode refid="239" relation="include">
+        <childnode refid="286" relation="include">
         </childnode>
-        <childnode refid="249" relation="include">
+        <childnode refid="296" relation="include">
         </childnode>
-        <childnode refid="252" relation="include">
-        </childnode>
-      </node>
-      <node id="254">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="299" relation="include">
         </childnode>
       </node>
-      <node id="247">
+      <node id="294">
         <label>stdio.h</label>
+      </node>
+      <node id="295">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -173,8 +173,8 @@
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>BxCore::Main::EventAttach(Draw);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>GUIScene</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a6f088d5e02c37b59ffaaacdc19e5d325" kindref="member" tooltip="스트링 비교하기 ">BxUtilGlobal::StrCmp</ref>(<ref refid="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" kindref="member" tooltip="OS이름 구하기 ">BxCore::System::GetOSName</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;WINDOWS&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1a6f088d5e02c37b59ffaaacdc19e5d325" kindref="member" tooltip="스트링 비교하기 ">BxUtilGlobal::StrCmp</ref>(<ref refid="namespace_bx_core_1_1_system_1a6cd582a9429126f4aa5fd79632f22a28" kindref="member" tooltip="아키텍쳐이름 구하기 ">BxCore::System::GetArchName</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;X86&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1aac495a865fddc971089bedc397adff54" kindref="member" tooltip="스트링 비교하기 ">BxUtilGlobal::StrCmp</ref>(<ref refid="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" kindref="member" tooltip="OS이름 구하기 ">BxCore::System::GetOSName</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;WINDOWS&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1aac495a865fddc971089bedc397adff54" kindref="member" tooltip="스트링 비교하기 ">BxUtilGlobal::StrCmp</ref>(<ref refid="namespace_bx_core_1_1_system_1a6cd582a9429126f4aa5fd79632f22a28" kindref="member" tooltip="아키텍쳐이름 구하기 ">BxCore::System::GetArchName</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;X86&quot;</highlight><highlight class="normal">)<sp/>==<sp/>same</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="namespace_bx_core_1_1_system_1ac714d932b1b27b88793c01f528752691" kindref="member" tooltip="환경설정값 존재여부 ">BxCore::System::IsExistConfig</ref>(keyword_string,<sp/></highlight><highlight class="stringliteral">&quot;Bx.Framework.GUIScene&quot;</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_scene_1a9763cca1ec026a37162400e97c183bae" kindref="member" tooltip="씬활성화 요청 ">BxScene::AddRequest</ref>(<ref refid="namespace_bx_core_1_1_system_1aaaf026f3d1f3df3ac0794f8adcf1c4f9" kindref="member" tooltip="String형 환경설정값 불러오기 ">BxCore::System::GetConfigString</ref>(</highlight><highlight class="stringliteral">&quot;Bx.Framework.GUIScene&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/>-2);</highlight></codeline>
@@ -284,6 +284,6 @@
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="153"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxMain.cpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxMain.cpp"/>
   </compounddef>
 </doxygen>

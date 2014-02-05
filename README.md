@@ -1,5 +1,5 @@
-BxEngine 2.9.0 For Marmalade 7.0.0
-==================================
+BxEngine 3.0.0 For Marmalade 7.0.0 And QT 5.2.1
+===============================================
 
 안녕하세요. github로 서비스하는 BxEngine입니다.
 
@@ -19,11 +19,13 @@ dynamical resource loading /
 BEKON parser (better json) /
 THROW (dynamical parameter) /
 software renderer /
-medusa-tool /
-typhon-tool
+animation-tool /
+particle-tool
 
 
-SDK-700 : https://www.madewithmarmalade.com/downloads/7.0/7.0.0/marmalade-sdk-7.0.0-353650-windows.exe
+Marmalade-700 : https://www.madewithmarmalade.com/downloads/7.0/7.0.0/marmalade-sdk-7.0.0-353650-windows.exe
+
+QT-521 : http://download.qt-project.org/official_releases/qt/5.2/5.2.1/qt-opensource-windows-x86-android-5.2.1.exe
 
 MEDUSA AnimationTool : http://cafe.naver.com/bxengineformarmalade/64
 

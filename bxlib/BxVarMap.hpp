@@ -12,10 +12,7 @@ public:
 		BxVarMap* CurNode = this;
 		while(key)
 		{
-			const uint index = (key & 0xF);
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[index])? CurNode->Child[index]
-				: (CurNode->Child[index] = new BxVarMap);
+			CurNode = CurNode->ValidChild(key & 0xF);
 			key >>= 4;
 		}
 		if(!CurNode->Data)
@@ -33,15 +30,8 @@ public:
 		BxVarMap* CurNode = this;
 		while(*key)
 		{
-			const uint indexHi = ((*key & 0xF0) >> 4);
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[indexHi])? CurNode->Child[indexHi]
-				: (CurNode->Child[indexHi] = new BxVarMap);
-			const uint indexLo = (*(key++) & 0x0F);
-			if(!*key && !indexLo) break;
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[indexLo])? CurNode->Child[indexLo]
-				: (CurNode->Child[indexLo] = new BxVarMap);
+			CurNode = CurNode->ValidChild((*key & 0xF0) >> 4);
+			CurNode = CurNode->ValidChild(*(key++) & 0x0F);
 		}
 		if(!CurNode->Data)
 		{
@@ -58,23 +48,10 @@ public:
 		BxVarMap* CurNode = this;
 		while(*key)
 		{
-			const uint indexHiHi = ((*key & 0xF000) >> 12);
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[indexHiHi])? CurNode->Child[indexHiHi]
-				: (CurNode->Child[indexHiHi] = new BxVarMap);
-			const uint indexHiLo = ((*key & 0x0F00) >> 8);
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[indexHiLo])? CurNode->Child[indexHiLo]
-				: (CurNode->Child[indexHiLo] = new BxVarMap);
-			const uint indexLoHi = ((*key & 0x00F0) >> 4);
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[indexLoHi])? CurNode->Child[indexLoHi]
-				: (CurNode->Child[indexLoHi] = new BxVarMap);
-			const uint indexLoLo = (*(key++) & 0x000F);
-			if(!*key && !indexLoLo) break;
-			CurNode->ValidChild();
-			CurNode = (CurNode->Child[indexLoLo])? CurNode->Child[indexLoLo]
-				: (CurNode->Child[indexLoLo] = new BxVarMap);
+			CurNode = CurNode->ValidChild((*key & 0xF000) >> 12);
+			CurNode = CurNode->ValidChild((*key & 0x0F00) >> 8);
+			CurNode = CurNode->ValidChild((*key & 0x00F0) >> 4);
+			CurNode = CurNode->ValidChild(*(key++) & 0x000F);
 		}
 		if(!CurNode->Data)
 		{
@@ -91,9 +68,7 @@ public:
 		const BxVarMap* CurNode = this;
 		while(key)
 		{
-			const uint index = (key & 0xF);
-			if(!CurNode->Child || !CurNode->Child[index]) return nullptr;
-			CurNode = CurNode->Child[index];
+			if(!CurNode->Child || !(CurNode = CurNode->Child[key & 0xF])) return nullptr;
 			key >>= 4;
 		}
 		return CurNode->Data;
@@ -105,13 +80,8 @@ public:
 		const BxVarMap* CurNode = this;
 		while(*key)
 		{
-			const uint indexHi = ((*key & 0xF0) >> 4);
-			if(!CurNode->Child || !CurNode->Child[indexHi]) return nullptr;
-			CurNode = CurNode->Child[indexHi];
-			const uint indexLo = (*(key++) & 0x0F);
-			if(!*key && !indexLo) break;
-			if(!CurNode->Child || !CurNode->Child[indexLo]) return nullptr;
-			CurNode = CurNode->Child[indexLo];
+			if(!CurNode->Child || !(CurNode = CurNode->Child[(*key & 0xF0) >> 4])) return nullptr;
+			if(!CurNode->Child || !(CurNode = CurNode->Child[*(key++) & 0x0F])) return nullptr;
 		}
 		return CurNode->Data;
 	}
@@ -122,21 +92,78 @@ public:
 		const BxVarMap* CurNode = this;
 		while(*key)
 		{
-			const uint indexHiHi = ((*key & 0xF000) >> 12);
-			if(!CurNode->Child || !CurNode->Child[indexHiHi]) return nullptr;
-			CurNode = CurNode->Child[indexHiHi];
-			const uint indexHiLo = ((*key & 0x0F00) >> 8);
-			if(!CurNode->Child || !CurNode->Child[indexHiLo]) return nullptr;
-			CurNode = CurNode->Child[indexHiLo];
-			const uint indexLoHi = ((*key & 0x00F0) >> 4);
-			if(!CurNode->Child || !CurNode->Child[indexLoHi]) return nullptr;
-			CurNode = CurNode->Child[indexLoHi];
-			const uint indexLoLo = (*(key++) & 0x000F);
-			if(!*key && !indexLoLo) break;
-			if(!CurNode->Child || !CurNode->Child[indexLoLo]) return nullptr;
-			CurNode = CurNode->Child[indexLoLo];
+			if(!CurNode->Child || !(CurNode = CurNode->Child[(*key & 0xF000) >> 12])) return nullptr;
+			if(!CurNode->Child || !(CurNode = CurNode->Child[(*key & 0x0F00) >> 8])) return nullptr;
+			if(!CurNode->Child || !(CurNode = CurNode->Child[(*key & 0x00F0) >> 4])) return nullptr;
+			if(!CurNode->Child || !(CurNode = CurNode->Child[*(key++) & 0x000F])) return nullptr;
 		}
 		return CurNode->Data;
+	}
+
+	// 정수Key식 데이터제거
+	bool Remove(uint key)
+	{
+		bool Result = !key;
+		BxVarMap* CurChild = nullptr;
+		if(Result) {delete Data; Data = nullptr;}
+		else if(Child && (CurChild = Child[key & 0xF]))
+		{
+			Result = CurChild->Remove(key >> 4);
+			if(Result && !CurChild->Data && !CurChild->Child)
+				InvalideChild(key & 0xF);
+		}
+		return Result;
+	}
+
+	// 문자열Key식(CP949) 데이터제거
+	bool Remove(string key)
+	{
+		bool Result = !*key;
+		BxVarMap* CurChild1 = nullptr;
+		BxVarMap* CurChild2 = nullptr;
+		if(Result) {delete Data; Data = nullptr;}
+		else if(Child && (CurChild1 = Child[(*key & 0xF0) >> 4]) && (CurChild2 = CurChild1->Child[*key & 0x0F]))
+		{
+			Result = CurChild2->Remove(key + 1);
+			if(Result && !CurChild2->Data && !CurChild2->Child)
+			{
+				CurChild1->InvalideChild(*key & 0x0F);
+				if(!CurChild1->Data && !CurChild1->Child)
+					InvalideChild((*key & 0xF0) >> 4);
+			}
+		}
+		return Result;
+	}
+
+	// 문자열Key식(UTF16) 데이터제거
+	bool Remove(wstring key)
+	{
+		bool Result = !*key;
+		BxVarMap* CurChild1 = nullptr;
+		BxVarMap* CurChild2 = nullptr;
+		BxVarMap* CurChild3 = nullptr;
+		BxVarMap* CurChild4 = nullptr;
+		if(Result) {delete Data; Data = nullptr;}
+		else if(Child && (CurChild1 = Child[(*key & 0xF000) >> 12]) && (CurChild2 = CurChild1->Child[(*key & 0x0F00) >> 8])
+			&& (CurChild3 = CurChild2->Child[(*key & 0x00F0) >> 4]) && (CurChild4 = CurChild3->Child[*key & 0x000F]))
+		{
+			Result = CurChild4->Remove(key + 1);
+			if(Result && !CurChild4->Data && !CurChild4->Child)
+			{
+				CurChild3->InvalideChild(*key & 0x000F);
+				if(!CurChild3->Data && !CurChild3->Child)
+				{
+					CurChild2->InvalideChild((*key & 0x00F0) >> 4);
+					if(!CurChild2->Data && !CurChild2->Child)
+					{
+						CurChild1->InvalideChild((*key & 0x0F00) >> 8);
+						if(!CurChild1->Data && !CurChild1->Child)
+							InvalideChild((*key & 0xF000) >> 12);
+					}
+				}
+			}
+		}
+		return Result;
 	}
 
 	// 전체초기화
@@ -168,10 +195,26 @@ private:
 	TYPE* Data;
 	BxVarMap** Child;
 
-	inline void ValidChild()
+	inline BxVarMap* ValidChild(const int i)
 	{
-		if(Child) return;
-		Child = new BxVarMap*[16];
-		BxCore::Util::MemSet(Child, 0x00, sizeof(BxVarMap*) * 16);
+		if(!Child)
+		{
+			Child = new BxVarMap*[16];
+			BxCore::Util::MemSet(Child, 0x00, sizeof(BxVarMap*) * 16);
+		}
+		return (Child[i])? Child[i] : (Child[i] = new BxVarMap);
+	}
+	inline void InvalideChild(const int i)
+	{
+		delete Child[i];
+		Child[i] = nullptr;
+		if(!Child[0x0] && !Child[0x1] && !Child[0x2] && !Child[0x3]
+		&& !Child[0x4] && !Child[0x5] && !Child[0x6] && !Child[0x7]
+		&& !Child[0x8] && !Child[0x9] && !Child[0xA] && !Child[0xB]
+		&& !Child[0xC] && !Child[0xD] && !Child[0xE] && !Child[0xF])
+		{
+			delete Child;
+			Child = nullptr;
+		}
 	}
 };

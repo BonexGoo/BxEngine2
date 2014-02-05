@@ -6,68 +6,68 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="171">
-        <label>BxDynamic.hpp</label>
-        <link refid="BxDynamic.hpp"/>
-        <childnode refid="172" relation="include">
-        </childnode>
-        <childnode refid="177" relation="include">
-        </childnode>
-        <childnode refid="180" relation="include">
-        </childnode>
-      </node>
-      <node id="179">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="175" relation="include">
-        </childnode>
-      </node>
-      <node id="172">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="173" relation="include">
-        </childnode>
-      </node>
-      <node id="180">
+      <node id="227">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="172" relation="include">
+        <childnode refid="219" relation="include">
         </childnode>
       </node>
-      <node id="175">
+      <node id="220">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>BxDynamic.hpp</label>
+        <link refid="BxDynamic.hpp"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="174">
+      <node id="219">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="175" relation="include">
+        <childnode refid="222" relation="include">
         </childnode>
-        <childnode refid="176" relation="include">
-        </childnode>
-      </node>
-      <node id="173">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="174" relation="include">
+        <childnode refid="223" relation="include">
         </childnode>
       </node>
-      <node id="177">
+      <node id="223">
+        <label>stdio.h</label>
+      </node>
+      <node id="224">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="178" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
-        <childnode refid="179" relation="include">
+        <childnode refid="226" relation="include">
         </childnode>
       </node>
-      <node id="178">
+      <node id="225">
         <label>BxMemory.hpp</label>
         <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="172" relation="include">
+        <childnode refid="219" relation="include">
         </childnode>
-      </node>
-      <node id="176">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="class_bx_dynamic_1_1_resource" prot="public">BxDynamic::Resource</innerclass>
@@ -417,6 +417,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxDynamic.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

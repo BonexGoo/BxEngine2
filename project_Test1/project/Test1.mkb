@@ -4,7 +4,6 @@ defines
 	__S3E_CL_WRAPPER
 	__BX_OPENGL
 	__BX_MEMORY
-	#__BX_PIXEL16
 }
 
 debug_defines
@@ -17,14 +16,14 @@ debug_defines
 
 includepaths
 {
-	../bxcore
-	../bxlib
+	../../bxcore
+	../../bxlib
 }
 
 files
 {
 	["Source"]
-	(source)
+	(../source)
 	TestA.cpp
 	TestA.hpp
 	TestB.cpp
@@ -33,7 +32,7 @@ files
 	TestList.hpp
 
 	["BxAddOn"]
-	(../bxaddon)
+	(../../bxaddon)
 	BxAddOn_GIF.cpp
 	BxAddOn_HQX.cpp
 	BxAddOn_JPG.cpp
@@ -41,7 +40,7 @@ files
 	BxAddOn_ZIP.cpp
 
 	["BxCore"]
-	(../bxcore)
+	(../../bxcore)
 	BxCore.hpp
 	BxCoreForS3E.cpp
 	BxCoreForS3E.hpp
@@ -49,7 +48,7 @@ files
 	BxCoreImpl.hpp
 
 	["BxLib"]
-	(../bxlib)
+	(../../bxlib)
 	BxAnimate.hpp
 	BxAutoBuffer.hpp
 	BxDraw.hpp
@@ -77,18 +76,18 @@ files
 	BxXml.hpp
 
 	["BxFw"]
-	(../bxfw)
+	(../../bxfw)
 	BxKeyboard.cpp
 	BxKeyboard.hpp
 	BxSimulator.cpp
 	BxSimulator.hpp
 
 	["Doc"]
-	(../doc/html)
+	(../../doc/html)
 	index.html
 
 	["Config"]
-	(data/config)
+	(../data/config)
 	default.key
 }
 
@@ -96,23 +95,25 @@ options
 {
 	cflags="-std=c++0x"
 	compile-thumb=0
+	builddir="../build-marmalade"
+	s3e-data-dir="../data"
 }
 
 assets
 {
-	(data)
+	(../data)
 	app.config.txt
 
 	["Config"]
-	(data)
+	(../data)
 	config/
 
 	["Font"]
-	(data)
+	(../data)
 	font/
 
 	["Sound"]
-	(data)
+	(../data)
 	sound/
 
 	["Data"]
@@ -127,12 +128,12 @@ deployments
 	caption='Test1'
 	long-caption='Test1'
 	provider='Bonex'
-	version='290'
-	version-string='2.9.0'
-	app-icf="data/app.icf"
+	version='100'
+	version-string='1.0.0'
+	app-icf="../data/app.icf"
 	embed-icf=1
 	assets="Data"
-	win32-icon='icon/bxdii.ico'
+	win32-icon='../icon/bxdii.ico'
 }
 
 subprojects

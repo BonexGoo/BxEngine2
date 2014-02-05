@@ -6,98 +6,98 @@
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="524">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="525" relation="include">
-        </childnode>
-        <childnode refid="532" relation="include">
-        </childnode>
-        <childnode refid="533" relation="include">
+      <node id="580">
+        <label>BxThrow.hpp</label>
+        <link refid="_bx_throw_8hpp_source"/>
+        <childnode refid="581" relation="include">
         </childnode>
       </node>
-      <node id="533">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="530" relation="include">
-        </childnode>
-      </node>
-      <node id="527">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="528" relation="include">
-        </childnode>
-      </node>
-      <node id="525">
+      <node id="577">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="526" relation="include">
+        <childnode refid="578" relation="include">
         </childnode>
-        <childnode refid="529" relation="include">
+        <childnode refid="581" relation="include">
         </childnode>
       </node>
-      <node id="530">
+      <node id="586">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="582" relation="include">
+        </childnode>
+      </node>
+      <node id="582">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="529">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="530" relation="include">
+      <node id="576">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="577" relation="include">
         </childnode>
-        <childnode refid="531" relation="include">
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
         </childnode>
       </node>
-      <node id="523">
+      <node id="575">
         <label>BxWebContent.hpp</label>
         <link refid="BxWebContent.hpp"/>
-        <childnode refid="524" relation="include">
+        <childnode refid="576" relation="include">
         </childnode>
-        <childnode refid="534" relation="include">
-        </childnode>
-      </node>
-      <node id="528">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="529" relation="include">
+        <childnode refid="586" relation="include">
         </childnode>
       </node>
-      <node id="532">
+      <node id="579">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="581">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>stdio.h</label>
+      </node>
+      <node id="584">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="526" relation="include">
+        <childnode refid="578" relation="include">
         </childnode>
-        <childnode refid="533" relation="include">
+        <childnode refid="585" relation="include">
         </childnode>
       </node>
-      <node id="526">
+      <node id="578">
         <label>BxMemory.hpp</label>
         <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="527" relation="include">
+        <childnode refid="579" relation="include">
         </childnode>
-      </node>
-      <node id="534">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="526" relation="include">
-        </childnode>
-        <childnode refid="532" relation="include">
-        </childnode>
-      </node>
-      <node id="531">
-        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="535">
-        <label>BxWebContent.hpp</label>
-        <link refid="BxWebContent.hpp"/>
-        <childnode refid="536" relation="include">
-        </childnode>
-      </node>
-      <node id="536">
+      <node id="588">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="587">
+        <label>BxWebContent.hpp</label>
+        <link refid="BxWebContent.hpp"/>
+        <childnode refid="588" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_web_content" prot="public">BxWebContent</innerclass>
@@ -170,7 +170,7 @@
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept:<sp/>text/html,<sp/>application/xhtml+xml,<sp/>*/*&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Language:<sp/>ko-KR&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;User-Agent:<sp/>Mozilla/5.0<sp/>(compatible;<sp/>MSIE<sp/>9.0;<sp/>Windows<sp/>NT<sp/>6.1;<sp/>Trident/5.0)&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Encoding:<sp/>deflate&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="comment">//&quot;Accept-Encoding:<sp/>gzip,<sp/>deflate&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Encoding:<sp/>deflate&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Host:<sp/>&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Connection:<sp/>Keep-Alive&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(Path,<sp/>(!Arguments<sp/>||<sp/>!*Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">,<sp/>(!Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/>Arguments,<sp/>Domain),</highlight></codeline>
@@ -214,13 +214,13 @@
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(HTMLEndCodeLength<sp/>&lt;<sp/>RecvedLength)</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseChars[RecvedLength]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(*(++EndCodeSearchFocus)<sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>(EndCodeSearchFocus,<sp/></highlight><highlight class="stringliteral">&quot;\r\n\r\n&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>HTMLEndCodeLength);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(*(++EndCodeSearchFocus)<sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1a2b718de4bf83cecd812c0409d74286bc" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>(EndCodeSearchFocus,<sp/></highlight><highlight class="stringliteral">&quot;\r\n\r\n&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>HTMLEndCodeLength);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*EndCodeSearchFocus)</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndCodeSearchFocus<sp/>+=<sp/>HTMLEndCodeLength;</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>데이터사이즈<sp/>조사</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ContentLengthSearchFocus<sp/>=<sp/>ResponseChars;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(++ContentLengthSearchFocus<sp/>&lt;<sp/>EndCodeSearchFocus<sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>(ContentLengthSearchFocus,<sp/></highlight><highlight class="stringliteral">&quot;Content-Length:&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>15);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(++ContentLengthSearchFocus<sp/>&lt;<sp/>EndCodeSearchFocus<sp/>&amp;&amp;<sp/><ref refid="namespace_bx_util_global_1a2b718de4bf83cecd812c0409d74286bc" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>(ContentLengthSearchFocus,<sp/></highlight><highlight class="stringliteral">&quot;Content-Length:&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>15);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ContentLengthSearchFocus<sp/>==<sp/>EndCodeSearchFocus)</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Content-Length가<sp/>없을<sp/>경우<sp/>5MByte로<sp/>잡는다</highlight><highlight class="normal"></highlight></codeline>
@@ -281,7 +281,7 @@
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(RecvedLength<sp/>==<sp/>ResponseLength)</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>추가수신완료2<sp/>:<sp/>Content-Length가<sp/>없는<sp/>HTML파일</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a6e24c46c55a8937dc65a258adc40c1b9" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>((</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>&amp;ResponseBytes[RecvedLength<sp/>-<sp/>5],<sp/></highlight><highlight class="stringliteral">&quot;0\r\n\r\n&quot;</highlight><highlight class="normal">)<sp/>==<sp/>5)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_util_global_1a2b718de4bf83cecd812c0409d74286bc" kindref="member" tooltip="스트링간 동일구역의 길이 구하기 ">BxUtilGlobal::StrSameCount</ref>((</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>&amp;ResponseBytes[RecvedLength<sp/>-<sp/>5],<sp/></highlight><highlight class="stringliteral">&quot;0\r\n\r\n&quot;</highlight><highlight class="normal">)<sp/>==<sp/>5)</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseLength<sp/>=<sp/>RecvedLength;</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Progress<sp/>&amp;&amp;<sp/>!Progress(RecvedLength,<sp/>ResponseLength))<sp/></highlight><highlight class="comment">//<sp/>프로그레스</highlight><highlight class="normal"></highlight></codeline>
@@ -406,6 +406,6 @@
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="334"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine290ForMarmalade700/bxlib/BxWebContent.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxWebContent.hpp"/>
   </compounddef>
 </doxygen>
