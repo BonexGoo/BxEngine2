@@ -5,81 +5,76 @@
     <includes refid="_bx_keyword_8hpp" local="no">BxKeyword.hpp</includes>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="194">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="195" relation="include">
+      <node id="216">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
         </childnode>
       </node>
-      <node id="188">
+      <node id="212">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
         <label>BxCoreImpl.hpp</label>
         <link refid="BxCoreImpl.hpp"/>
-        <childnode refid="189" relation="include">
+        <childnode refid="208" relation="include">
         </childnode>
       </node>
-      <node id="191">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="195" relation="include">
-        </childnode>
-      </node>
-      <node id="199">
+      <node id="217">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="196" relation="include">
+        <childnode refid="215" relation="include">
         </childnode>
       </node>
-      <node id="196">
+      <node id="211">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="190">
+      <node id="209">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="191" relation="include">
+        <childnode refid="210" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="216" relation="include">
         </childnode>
-        <childnode refid="199" relation="include">
-        </childnode>
-      </node>
-      <node id="193">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="194" relation="include">
+        <childnode refid="217" relation="include">
         </childnode>
       </node>
-      <node id="195">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="196" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
+      <node id="213">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="214" relation="include">
         </childnode>
       </node>
-      <node id="197">
-        <label>stdio.h</label>
-      </node>
-      <node id="198">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="199" relation="include">
-        </childnode>
-      </node>
-      <node id="189">
+      <node id="208">
         <label>BxKeyword.hpp</label>
         <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="190" relation="include">
+        <childnode refid="209" relation="include">
         </childnode>
       </node>
-      <node id="192">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="193" relation="include">
+      <node id="214">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -243,6 +238,6 @@
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="178"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.hpp"/>
   </compounddef>
 </doxygen>

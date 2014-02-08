@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="224" bodyend="224"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="224" bodyend="224"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="224" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structvertexs_1a13092ff1fccec250a75c4c07efef5426" prot="public" static="no" mutable="no">
         <type><ref refid="structvertex" kindref="compound">vertex</ref></type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="224" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="224" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -56,19 +56,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="238">
+      <node id="240">
         <label>vertex</label>
         <link refid="structvertex"/>
       </node>
-      <node id="237">
+      <node id="239">
         <label>vertexs</label>
         <link refid="structvertexs"/>
-        <childnode refid="238" relation="usage">
+        <childnode refid="240" relation="usage">
           <edgelabel>vt</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="224" bodyend="224"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="224" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="224" bodyend="224"/>
     <listofallmembers>
       <member refid="structvertexs_1ade944f1099634a5dabf43eaa4d0396f5" prot="public" virt="non-virtual"><scope>vertexs</scope><name>count</name></member>
       <member refid="structvertexs_1a9fd77e3c17b7640228eba4ba1f084201a6f8d9379421ed82e0be5e435f56dc67e" prot="public" virt="non-virtual"><scope>vertexs</scope><name>max</name></member>

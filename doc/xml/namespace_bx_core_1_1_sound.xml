@@ -40,7 +40,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="374" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="295" bodyend="299"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="374" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="297" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a6b955c392b411972ca91efd87c35fe8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,12 +66,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="381" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="301" bodyend="304"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="381" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="303" bodyend="306"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1ae5f64a6ec2d340776d3db3961b123f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a25c5399fb1f1359acdc9b394670771a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void BxCore::Sound::PlayMusic</definition>
-        <argsstring>(id_sound sound, bool interrupt=false, const BxThrow &amp;panorama=BxThrow::zero())</argsstring>
+        <argsstring>(id_sound sound, bool interrupt=false, const BxArgument &amp;panorama=BxArgument::zero())</argsstring>
         <name>PlayMusic</name>
         <param>
           <type>id_sound</type>
@@ -83,9 +83,9 @@
           <defval>false</defval>
         </param>
         <param>
-          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
           <declname>panorama</declname>
-          <defval><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member">BxThrow::zero</ref>()</defval>
+          <defval><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member">BxArgument::zero</ref>()</defval>
         </param>
         <briefdescription>
 <para>배경음 출력 </para>        </briefdescription>
@@ -116,7 +116,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="390" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="306" bodyend="309"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="390" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForS3E.cpp" bodystart="653" bodyend="687"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1af8a207c266081ae3271f65c62eb60af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -126,11 +126,11 @@
         <briefdescription>
 <para>배경음 중지 </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1ae5f64a6ec2d340776d3db3961b123f58" kindref="member">PlayMusic</ref> </para></simplesect>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_sound_1a25c5399fb1f1359acdc9b394670771a0" kindref="member">PlayMusic</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="396" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="311" bodyend="314"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="396" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="313" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a7ad143b76624bcfeccda99f889eeb009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -155,7 +155,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="402" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="316" bodyend="319"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="402" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="318" bodyend="321"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a6e42e6f184cca12f6cf0df5272426e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -193,7 +193,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="410" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="321" bodyend="324"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="410" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="323" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a2b76f9d1cd3074a151ca96b8eb3bfea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -207,7 +207,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="416" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="326" bodyend="329"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="416" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="328" bodyend="331"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1af15db88c483a17d15554a266445c2e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -232,7 +232,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="422" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="331" bodyend="334"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="422" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="333" bodyend="336"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a3aec21a0c95d090d4e7d14c755a21193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="427" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="336" bodyend="339"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="427" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="338" bodyend="341"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a7d386c2bb173df20750b012f56647c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -258,13 +258,38 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="432" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="341" bodyend="344"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="432" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="343" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_sound_1a85767d56886b7937ff4d66a0f15b77c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Sound::PlayMusic</definition>
+        <argsstring>(id_sound sound, bool interrupt, const BxThrow &amp;panorama)</argsstring>
+        <name>PlayMusic</name>
+        <param>
+          <type>id_sound</type>
+          <declname>sound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>interrupt</declname>
+        </param>
+        <param>
+          <type>const BxThrow &amp;</type>
+          <declname>panorama</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" line="308" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="308" bodyend="311"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Sound파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="366" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="366" column="1"/>
   </compounddef>
 </doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_argument_1_1_unit" kind="class" prot="private">
+    <compoundname>BxArgument::Unit</compoundname>
+    <derivedcompoundref refid="class_bx_argument_1_1_head_unit" prot="public" virt="non-virtual">BxArgument::HeadUnit</derivedcompoundref>
+    <derivedcompoundref refid="class_bx_argument_1_1_ptr_unit" prot="public" virt="non-virtual">BxArgument::PtrUnit&lt; TYPE &gt;</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" prot="public" static="no" mutable="no">
+        <type>Unit *_ref_</type>
+        <definition>Unit* _ref_ BxArgument::Unit::Next</definition>
+        <argsstring></argsstring>
+        <name>Next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="128" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxArgument::Unit::Unit</definition>
+        <argsstring>()</argsstring>
+        <name>Unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="129" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxArgument::Unit::~Unit</definition>
+        <argsstring>()</argsstring>
+        <name>~Unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="130" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* BxArgument::Unit::VTablePtr</definition>
+        <argsstring>() const </argsstring>
+        <name>VTablePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="132" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="213">
+        <label>BxArgument::HeadUnit</label>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>BxArgument::Unit</label>
+      </node>
+      <node id="214">
+        <label>BxArgument::PtrUnit&lt; TYPE &gt;</label>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="215">
+        <label>BxArgument::Unit</label>
+        <childnode refid="215" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="126" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="125" bodyend="133"/>
+    <listofallmembers>
+      <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" prot="public" virt="non-virtual"><scope>BxArgument::Unit</scope><name>Next</name></member>
+      <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" prot="public" virt="non-virtual"><scope>BxArgument::Unit</scope><name>Unit</name></member>
+      <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" prot="public" virt="non-virtual"><scope>BxArgument::Unit</scope><name>VTablePtr</name></member>
+      <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" prot="public" virt="virtual"><scope>BxArgument::Unit</scope><name>~Unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

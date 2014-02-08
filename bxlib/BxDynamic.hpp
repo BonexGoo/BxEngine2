@@ -256,7 +256,7 @@ namespace BxDynamic
 			friend BindPool* Resource::BinderBegin(string CachePoolName);
 			private: BindPool* ParentBinder; // MemberData
 			private: callback_serialize ParamCB; // MemberData
-			private: string ParamComment; // MemberData
+			private: string_rw ParamComment; // MemberData
 			private: LinkPool(BindPool* Parent) : ParentBinder(Parent), ParamCB(nullptr), ParamComment(nullptr) {}
 			public: virtual ~LinkPool() {ResetData();}
 			private: virtual Pool* New(Pool* Parent) {return BxNew_Param(LinkPool, (BindPool*) Parent);}

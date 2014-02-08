@@ -8,87 +8,82 @@
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <includedby refid="_bx_core_impl_8hpp" local="no">BxCoreImpl.hpp</includedby>
     <incdepgraph>
-      <node id="277">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="278" relation="include">
+      <node id="294">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
         </childnode>
       </node>
-      <node id="274">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="275" relation="include">
-        </childnode>
-        <childnode refid="278" relation="include">
+      <node id="290">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="291" relation="include">
         </childnode>
       </node>
-      <node id="282">
+      <node id="295">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="279" relation="include">
+        <childnode refid="293" relation="include">
         </childnode>
       </node>
-      <node id="279">
+      <node id="289">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="273">
+      <node id="287">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="274" relation="include">
+        <childnode refid="288" relation="include">
         </childnode>
-        <childnode refid="281" relation="include">
+        <childnode refid="294" relation="include">
         </childnode>
-        <childnode refid="282" relation="include">
-        </childnode>
-      </node>
-      <node id="276">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="277" relation="include">
+        <childnode refid="295" relation="include">
         </childnode>
       </node>
-      <node id="278">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="279" relation="include">
-        </childnode>
-        <childnode refid="280" relation="include">
+      <node id="291">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="292" relation="include">
         </childnode>
       </node>
-      <node id="280">
-        <label>stdio.h</label>
-      </node>
-      <node id="281">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="275" relation="include">
-        </childnode>
-        <childnode refid="282" relation="include">
-        </childnode>
-      </node>
-      <node id="272">
+      <node id="286">
         <label>BxKeyword.hpp</label>
         <link refid="BxKeyword.hpp"/>
-        <childnode refid="273" relation="include">
+        <childnode refid="287" relation="include">
         </childnode>
       </node>
-      <node id="275">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="276" relation="include">
+      <node id="292">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="284">
+      <node id="297">
         <label>BxCoreImpl.hpp</label>
         <link refid="_bx_core_impl_8hpp_source"/>
       </node>
-      <node id="283">
+      <node id="296">
         <label>BxKeyword.hpp</label>
         <link refid="BxKeyword.hpp"/>
-        <childnode refid="284" relation="include">
+        <childnode refid="297" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -111,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="4" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="4" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="4" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1aaea9881cbf6bb906c697f7b26319e8ff" prot="public" static="no">
         <name>BxKeyCheck</name>
@@ -123,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="5" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="5" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1ad945bbeeb9001d6f2d16b902e25cc121" prot="public" static="no">
         <name>BxKeyRadio_Get</name>
@@ -135,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a408e42a178529a2aa7dc2462a9ea3061" prot="public" static="no">
         <name>BxKeyRadio_On</name>
@@ -147,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="7" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="7" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a163184ec760555b9606988530d3a76be" prot="public" static="no">
         <name>BxKeyRadio_Off</name>
@@ -159,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="8" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="8" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="8" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a20935387cb46acaa054c4a31b56bc69f" prot="public" static="no">
         <name>BxKeyNumber</name>
@@ -171,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="9" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="9" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="9" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a1dbc738721b6a69c1e56f967c7d1902d" prot="public" static="no">
         <name>BxKeyString</name>
@@ -183,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="10" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="10" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="10" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1afed1ab5db6085d8309c2ce6857daf189" prot="public" static="no">
         <name>BxKeyEventBySearch</name>
@@ -195,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="11" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="11" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="11" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a9d20da4735b29ea2ede24366044c4492" prot="public" static="no">
         <name>BxKeyCheckBySearch</name>
@@ -207,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="12" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="12" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="12" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a6c4f0bf189eb617778f2d6423736217f" prot="public" static="no">
         <name>BxKeyRadioBySearch_Get</name>
@@ -219,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="13" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="13" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="13" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a6c99e4c08f598ba669a105fefb15ff1a" prot="public" static="no">
         <name>BxKeyRadioBySearch_On</name>
@@ -231,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="14" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="14" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="14" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a923b74a5402d6e24fea5d4f8b4a742a5" prot="public" static="no">
         <name>BxKeyRadioBySearch_Off</name>
@@ -243,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="15" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="15" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="15" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a61b276c4ef5f67c6f20c5000bf5c0433" prot="public" static="no">
         <name>BxKeyNumberBySearch</name>
@@ -255,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="16" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="16" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="16" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1aa96c2597d1e8252490ad9e25017dae17" prot="public" static="no">
         <name>BxKeyStringBySearch</name>
@@ -267,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="17" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="17" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="17" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a14ecf7a1563e4f28f2e1e423d4f070f6" prot="public" static="no">
         <name>IsExistBxKeyEvent</name>
@@ -279,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="18" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="18" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="18" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a8565cf7d4e1a07eaab2f88d30780f29d" prot="public" static="no">
         <name>IsExistBxKeyCheck</name>
@@ -291,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="19" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="19" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="19" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1aefdb1f795daab1f53db5a0ad53e9e3dd" prot="public" static="no">
         <name>IsExistBxKeyRadio</name>
@@ -303,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="20" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="20" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="20" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1a96ce9ebb0e76c1c50cc6e8d11dc6d882" prot="public" static="no">
         <name>IsExistBxKeyNumber</name>
@@ -315,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="21" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="21" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="21" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_keyword_8hpp_1ada5cae84d0db2e46a9ae3f2b37be1d98" prot="public" static="no">
         <name>IsExistBxKeyString</name>
@@ -327,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" line="22" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp" bodystart="22" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" line="22" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -502,7 +497,7 @@
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(buffer[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Index(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:.&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(GroupArrayIndex[END]++));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>Index(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:.&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(GroupArrayIndex[END]++));</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GroupArrayIndex[LAST]<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GroupNameLength[LAST]<sp/>=<sp/>Index.<ref refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kindref="member" tooltip="길이 구하기 ">GetLength</ref>();</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GroupName<sp/>+=<sp/>Index;</highlight></codeline>
@@ -636,7 +631,7 @@
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>SelectNumber;</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SelectNumber.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(SelectRadioIndex));</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SelectNumber.<ref refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(SelectRadioIndex));</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>SelectNumber);</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -650,7 +645,7 @@
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/></highlight><highlight class="stringliteral">&quot;number(&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>NumberPool[i].GetKeyword());</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>NumberValue;</highlight></codeline>
-<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NumberValue.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:)<sp/>=<sp/>&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(NumberPool[i].LetInt()));</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NumberValue.<ref refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:)<sp/>=<sp/>&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(NumberPool[i].LetInt()));</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">BxCore::File::WriteString</ref>(KeywordFile,<sp/>NumberValue);</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -828,6 +823,6 @@
 <codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="493"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxKeyword.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxKeyword.hpp"/>
   </compounddef>
 </doxygen>

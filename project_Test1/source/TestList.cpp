@@ -91,7 +91,7 @@ void OnRender(TestListClass& Data, BxDraw& Draw)
 		}
 
 		BxCore::Font::SetSort(fontsort_pad5);
-		BxString Date("<>:[<A>, <A>]", BxTHROW(__DATE__, __TIME__));
+		BxString Date("<>:[<A>, <A>]", BxARG(__DATE__, __TIME__));
 		BxCore::Font::Draw(Data.font2, Date, XY(0, Draw.Height() - 10 - 30),
 			WH(Draw.Width(), 30), RGB32(255, 255, 0), 128);
 

@@ -26,205 +26,200 @@
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <includedby refid="_bx_core_for_s3_e_8cpp" local="no">BxCoreForS3E.cpp</includedby>
     <incdepgraph>
-      <node id="147">
+      <node id="168">
         <label>IwGx.h</label>
       </node>
-      <node id="167">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="158" relation="include">
-        </childnode>
-      </node>
-      <node id="159">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="155" relation="include">
-        </childnode>
-      </node>
-      <node id="145">
+      <node id="166">
         <label>arpa/inet.h</label>
       </node>
-      <node id="163">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="160" relation="include">
+      <node id="185">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="184" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
+        <childnode refid="186" relation="include">
         </childnode>
       </node>
-      <node id="141">
+      <node id="162">
         <label>s3eAndroidJNI.h</label>
       </node>
-      <node id="139">
+      <node id="184">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
         <label>s3eOSExec.h</label>
       </node>
-      <node id="135">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="BxCoreForS3E.hpp"/>
-        <childnode refid="136" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
-        </childnode>
-        <childnode refid="138" relation="include">
-        </childnode>
-        <childnode refid="139" relation="include">
-        </childnode>
-        <childnode refid="140" relation="include">
-        </childnode>
-        <childnode refid="141" relation="include">
-        </childnode>
-        <childnode refid="142" relation="include">
-        </childnode>
-        <childnode refid="143" relation="include">
-        </childnode>
-        <childnode refid="144" relation="include">
-        </childnode>
-        <childnode refid="145" relation="include">
-        </childnode>
-        <childnode refid="146" relation="include">
-        </childnode>
-        <childnode refid="147" relation="include">
-        </childnode>
-        <childnode refid="148" relation="include">
-        </childnode>
-        <childnode refid="149" relation="include">
-        </childnode>
-        <childnode refid="150" relation="include">
-        </childnode>
-        <childnode refid="151" relation="include">
-        </childnode>
-        <childnode refid="152" relation="include">
-        </childnode>
-        <childnode refid="153" relation="include">
-        </childnode>
-        <childnode refid="155" relation="include">
-        </childnode>
-        <childnode refid="157" relation="include">
-        </childnode>
-        <childnode refid="161" relation="include">
-        </childnode>
-        <childnode refid="167" relation="include">
-        </childnode>
-      </node>
-      <node id="144">
+      <node id="165">
         <label>derbh.h</label>
       </node>
-      <node id="151">
+      <node id="172">
         <label>IwDebug.h</label>
       </node>
-      <node id="150">
+      <node id="171">
         <label>IwUTF8.h</label>
       </node>
-      <node id="149">
+      <node id="170">
         <label>IwGxFontContainer.h</label>
       </node>
-      <node id="137">
-        <label>netdb.h</label>
-      </node>
-      <node id="161">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="162" relation="include">
-        </childnode>
-        <childnode refid="165" relation="include">
-        </childnode>
-      </node>
-      <node id="152">
-        <label>pthread.h</label>
-      </node>
-      <node id="153">
+      <node id="174">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="154" relation="include">
+        <childnode refid="175" relation="include">
         </childnode>
       </node>
-      <node id="143">
-        <label>string.h</label>
+      <node id="158">
+        <label>netdb.h</label>
       </node>
-      <node id="142">
-        <label>../edk/h/jni.h</label>
+      <node id="180">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="178" relation="include">
+        </childnode>
       </node>
-      <node id="154">
+      <node id="186">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="162">
+      <node id="182">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>pthread.h</label>
+      </node>
+      <node id="164">
+        <label>string.h</label>
+      </node>
+      <node id="163">
+        <label>../edk/h/jni.h</label>
+      </node>
+      <node id="179">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="BxCoreForS3E.hpp"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
         <childnode refid="163" relation="include">
         </childnode>
         <childnode refid="164" relation="include">
         </childnode>
-        <childnode refid="153" relation="include">
-        </childnode>
-      </node>
-      <node id="140">
-        <label>s3eOSReadString.h</label>
-      </node>
-      <node id="148">
-        <label>IwGxFont.h</label>
-      </node>
-      <node id="158">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="159" relation="include">
-        </childnode>
-      </node>
-      <node id="155">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="154" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-      </node>
-      <node id="146">
-        <label>IwGL.h</label>
-      </node>
-      <node id="157">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="158" relation="include">
-        </childnode>
-        <childnode refid="160" relation="include">
-        </childnode>
-      </node>
-      <node id="136">
-        <label>s3e.h</label>
-      </node>
-      <node id="138">
-        <label>s3eLibrary.h</label>
-      </node>
-      <node id="156">
-        <label>stdio.h</label>
-      </node>
-      <node id="164">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="160" relation="include">
-        </childnode>
-        <childnode refid="153" relation="include">
-        </childnode>
-      </node>
-      <node id="165">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="164" relation="include">
+        <childnode refid="165" relation="include">
         </childnode>
         <childnode refid="166" relation="include">
         </childnode>
-      </node>
-      <node id="160">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="158" relation="include">
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
         </childnode>
       </node>
-      <node id="166">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="154" relation="include">
+      <node id="177">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+        <childnode refid="178" relation="include">
         </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>s3eOSReadString.h</label>
+      </node>
+      <node id="169">
+        <label>IwGxFont.h</label>
+      </node>
+      <node id="176">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>IwGL.h</label>
+      </node>
+      <node id="183">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>s3e.h</label>
+      </node>
+      <node id="159">
+        <label>s3eLibrary.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -1139,7 +1134,7 @@
 <codeline lineno="921"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Client<sp/>==<sp/>INVALID_SOCKET)</highlight></codeline>
 <codeline lineno="922"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="923"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ErrorCode<sp/>=<sp/>BxDLL_WSAGetLastError();</highlight></codeline>
-<codeline lineno="924"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(<ref refid="class_bx_string_1_1_parse" kindref="compound" tooltip="파싱 관리 ">BxString::Parse</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성<sp/>실패(&lt;A&gt;)&gt;&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(ErrorCode)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="924"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(<ref refid="class_bx_string_1_1_parse" kindref="compound" tooltip="파싱 관리 ">BxString::Parse</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성<sp/>실패(&lt;A&gt;)&gt;&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(ErrorCode)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="925"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>State<sp/>=<sp/>socketstate_null;</highlight></codeline>
 <codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>State<sp/>=<sp/>socketstate_created;</highlight></codeline>
@@ -1204,7 +1199,7 @@
 <codeline lineno="986"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Client)</highlight></codeline>
 <codeline lineno="987"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="988"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ErrorCode<sp/>=<sp/>(int)<sp/>s3eSocketGetError();</highlight></codeline>
-<codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(<ref refid="class_bx_string_1_1_parse" kindref="compound" tooltip="파싱 관리 ">BxString::Parse</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성<sp/>실패(&lt;A&gt;)&gt;&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(ErrorCode)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(<ref refid="class_bx_string_1_1_parse" kindref="compound" tooltip="파싱 관리 ">BxString::Parse</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성<sp/>실패(&lt;A&gt;)&gt;&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(ErrorCode)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="991"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>State<sp/>=<sp/>(Client)?<sp/>socketstate_created<sp/>:<sp/>socketstate_null;</highlight></codeline>
 <codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1283,7 +1278,7 @@
 <codeline lineno="1067"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Server<sp/>==<sp/>INVALID_SOCKET)</highlight></codeline>
 <codeline lineno="1068"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1069"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ErrorCode<sp/>=<sp/>BxDLL_WSAGetLastError();</highlight></codeline>
-<codeline lineno="1070"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(<ref refid="class_bx_string_1_1_parse" kindref="compound" tooltip="파싱 관리 ">BxString::Parse</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성<sp/>실패(&lt;A&gt;)&gt;&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(ErrorCode)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1070"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(<ref refid="class_bx_string_1_1_parse" kindref="compound" tooltip="파싱 관리 ">BxString::Parse</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성<sp/>실패(&lt;A&gt;)&gt;&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(ErrorCode)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="1071"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1072"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1073"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Server<sp/>!=<sp/>INVALID_SOCKET<sp/>&amp;&amp;<sp/>LastTimeout<sp/>!=<sp/>Timeout)</highlight></codeline>
@@ -1361,7 +1356,7 @@
 <codeline lineno="1147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WSAENOTCONN:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>WSAENOTCONN<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WSAECONNABORTED:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>WSAECONNABORTED<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WSAECONNRESET:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>WSAECONNRESET<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>&lt;A&gt;<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(ErrorCode));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>&lt;A&gt;<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(ErrorCode));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(ErrorCode)</highlight></codeline>
 <codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1391,7 +1386,7 @@
 <codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>S3E_SOCKET_ERR_PARAM:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>S3E_SOCKET_ERR_PARAM<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>S3E_SOCKET_ERR_SHUTDOWN:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>S3E_SOCKET_ERR_SHUTDOWN<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>S3E_SOCKET_ERR_NOTCONN:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>S3E_SOCKET_ERR_NOTCONN<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>&lt;A&gt;<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(ErrorCode));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>BxTRACE(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:#####<sp/>Socket<sp/>ErrorCode<sp/>:<sp/>&lt;A&gt;<sp/>#####&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(ErrorCode));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(ErrorCode)</highlight></codeline>
 <codeline lineno="1183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1533,7 +1528,7 @@
 <codeline lineno="1327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Data;</highlight></codeline>
 <codeline lineno="1328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="1329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StorageClass()<sp/>:<sp/>Data(nullptr)<sp/>{}</highlight></codeline>
-<codeline lineno="1330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~StorageClass()<sp/>{<ref refid="namespace_bx_core_1_1_util_1abe79bf4d20f42ce940b4d4e7d58b7a1d" kindref="member" tooltip="메모리반환 ">BxCore::Util::Free</ref>(Data);}</highlight></codeline>
+<codeline lineno="1330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~StorageClass()<sp/>{Data<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1a56c1aaa6d7106d36c67c88a5e3b6a6f1" kindref="member" tooltip="메모리반환 ">BxCore::Util::Free</ref>(Data);}</highlight></codeline>
 <codeline lineno="1331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_surface_1aaef270c828cd57bb99c8d11128bfbbe3" kindref="member" tooltip="화면생성 ">Init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref>)</highlight></codeline>
 <codeline lineno="1332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kindref="member" tooltip="메모리할당 ">BxCore::Util::Alloc</ref>(size);</highlight></codeline>
@@ -1855,6 +1850,6 @@
 <codeline lineno="1662"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1663"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForS3E.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForS3E.hpp"/>
   </compounddef>
 </doxygen>

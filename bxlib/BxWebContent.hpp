@@ -91,7 +91,7 @@ public:
 				"Accept-Encoding: deflate<R><N>"
 				"Host: <A><R><N>"
 				"Connection: Keep-Alive<R><N>"
-				"<R><N>", BxTHROW(Path, (!Arguments || !*Arguments)? "" : "?", (!Arguments)? "" : Arguments, Domain),
+				"<R><N>", BxARG(Path, (!Arguments || !*Arguments)? "" : "?", (!Arguments)? "" : Arguments, Domain),
 				&RequestCharsLength);
 			int SendResult = 0, SendedLength = 0;
 			do
@@ -242,7 +242,7 @@ public:
 		global_data const int CacheSizeSumMax = BxCore::System::GetConfigNumber("Bx.WebContent.CacheSizeSumMax", -1);
 
 		// 캐시로드
-		BxString CacheFileName("<>:<A><FS><A>", BxTHROW(GetCachePath(), FilePath));
+		BxString CacheFileName("<>:<A><FS><A>", BxARG(GetCachePath(), FilePath));
 		int FindedPos = -1;
 		while((FindedPos = CacheFileName.Find('?')) != -1)
 			CacheFileName[FindedPos] = '_';

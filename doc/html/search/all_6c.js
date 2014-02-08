@@ -1,7 +1,7 @@
 var searchData=
 [
   ['left',['Left',['../class_bx_string.html#a662659cfa6c9919e979989475eef455f',1,'BxString']]],
-  ['length',['Length',['../class_bx_throw.html#a7704438cd213692aa50b8adbb547cfe9',1,'BxThrow']]],
+  ['length',['Length',['../class_bx_argument.html#ae96cbca255ac73e912a23625e9eb23d5',1,'BxArgument']]],
   ['line',['Line',['../struct_bx_path_find_1_1_line.html',1,'BxPathFind']]],
   ['link',['Link',['../namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70',1,'BxCore::Library']]],
   ['linkpool',['LinkPool',['../class_bx_dynamic_1_1_resource_1_1_link_pool.html',1,'BxDynamic::Resource']]],
@@ -11,7 +11,7 @@ var searchData=
   ['loadint16',['LoadInt16',['../namespace_bx_util_global.html#a7eae0e60a7c0d68747315118d63c44d3',1,'BxUtilGlobal']]],
   ['loadint32',['LoadInt32',['../namespace_bx_util_global.html#af336f01897cb6e50d0347d5ba54aa968',1,'BxUtilGlobal']]],
   ['loadint8',['LoadInt8',['../namespace_bx_util_global.html#a1779e753e6ac06f0b0538095c0ff0ca9',1,'BxUtilGlobal']]],
-  ['loadstring',['LoadString',['../namespace_bx_util_global.html#a956f04e1f763eddd08c74f1bf301c05f',1,'BxUtilGlobal']]],
+  ['loadstring',['LoadString',['../namespace_bx_util_global.html#a9bba584552f6e46a3645bf9ba4179f9d',1,'BxUtilGlobal']]],
   ['loadtype',['LoadType',['../namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f',1,'BxUtilGlobal']]],
   ['loaduint16',['LoadUint16',['../namespace_bx_util_global.html#af2cc8a19541c23620fd82cc5f76ce048',1,'BxUtilGlobal']]],
   ['loaduint32',['LoadUint32',['../namespace_bx_util_global.html#a49fe224b36cf92615d28ca70e38d9257',1,'BxUtilGlobal']]],

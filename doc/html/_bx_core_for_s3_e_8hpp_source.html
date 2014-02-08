@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -987,7 +987,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                    <span class="keywordflow">if</span>(Client == INVALID_SOCKET)</div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;                    {</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> ErrorCode = BxDLL_WSAGetLastError();</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                        BxASSERT(<a class="code" href="class_bx_string_1_1_parse.html" title="파싱 관리 ">BxString::Parse</a>(<span class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성 실패(&lt;A&gt;)&gt;&gt;&quot;</span>, BxTHROW(ErrorCode)), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                        BxASSERT(<a class="code" href="class_bx_string_1_1_parse.html" title="파싱 관리 ">BxString::Parse</a>(<span class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성 실패(&lt;A&gt;)&gt;&gt;&quot;</span>, BxARG(ErrorCode)), <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                        State = socketstate_null;</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;                    }</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                    <span class="keywordflow">else</span> State = socketstate_created;</div>
@@ -1052,7 +1052,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;                    <span class="keywordflow">if</span>(!Client)</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                    {</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> ErrorCode = (int) s3eSocketGetError();</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                        BxASSERT(<a class="code" href="class_bx_string_1_1_parse.html" title="파싱 관리 ">BxString::Parse</a>(<span class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성 실패(&lt;A&gt;)&gt;&gt;&quot;</span>, BxTHROW(ErrorCode)), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                        BxASSERT(<a class="code" href="class_bx_string_1_1_parse.html" title="파싱 관리 ">BxString::Parse</a>(<span class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성 실패(&lt;A&gt;)&gt;&gt;&quot;</span>, BxARG(ErrorCode)), <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                    }</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;                    State = (Client)? socketstate_created : socketstate_null;</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;                }</div>
@@ -1131,7 +1131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                        <span class="keywordflow">if</span>(Server == INVALID_SOCKET)</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;                        {</div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">int</span> ErrorCode = BxDLL_WSAGetLastError();</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;                            BxASSERT(<a class="code" href="class_bx_string_1_1_parse.html" title="파싱 관리 ">BxString::Parse</a>(<span class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성 실패(&lt;A&gt;)&gt;&gt;&quot;</span>, BxTHROW(ErrorCode)), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;                            BxASSERT(<a class="code" href="class_bx_string_1_1_parse.html" title="파싱 관리 ">BxString::Parse</a>(<span class="stringliteral">&quot;&lt;&gt;:BxCore::Socket&lt;&lt;소켓생성 실패(&lt;A&gt;)&gt;&gt;&quot;</span>, BxARG(ErrorCode)), <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                        }</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                    }</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                    <span class="keywordflow">if</span>(Server != INVALID_SOCKET &amp;&amp; LastTimeout != Timeout)</div>
@@ -1209,7 +1209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;                <span class="keywordflow">case</span> WSAENOTCONN: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : WSAENOTCONN #####&lt;R&gt;&lt;N&gt;&quot;</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;                <span class="keywordflow">case</span> WSAECONNABORTED: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : WSAECONNABORTED #####&lt;R&gt;&lt;N&gt;&quot;</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                <span class="keywordflow">case</span> WSAECONNRESET: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : WSAECONNRESET #####&lt;R&gt;&lt;N&gt;&quot;</span>); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                <span class="keywordflow">default</span>: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : &lt;A&gt; #####&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(ErrorCode)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                <span class="keywordflow">default</span>: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : &lt;A&gt; #####&lt;R&gt;&lt;N&gt;&quot;</span>, BxARG(ErrorCode)); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;                }</div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;                <span class="keywordflow">switch</span>(ErrorCode)</div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;                {</div>
@@ -1239,7 +1239,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                <span class="keywordflow">case</span> S3E_SOCKET_ERR_PARAM: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : S3E_SOCKET_ERR_PARAM #####&lt;R&gt;&lt;N&gt;&quot;</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;                <span class="keywordflow">case</span> S3E_SOCKET_ERR_SHUTDOWN: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : S3E_SOCKET_ERR_SHUTDOWN #####&lt;R&gt;&lt;N&gt;&quot;</span>); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;                <span class="keywordflow">case</span> S3E_SOCKET_ERR_NOTCONN: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : S3E_SOCKET_ERR_NOTCONN #####&lt;R&gt;&lt;N&gt;&quot;</span>); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                <span class="keywordflow">default</span>: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : &lt;A&gt; #####&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(ErrorCode)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                <span class="keywordflow">default</span>: BxTRACE(<span class="stringliteral">&quot;&lt;&gt;:##### Socket ErrorCode : &lt;A&gt; #####&lt;R&gt;&lt;N&gt;&quot;</span>, BxARG(ErrorCode)); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;                }</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;                <span class="keywordflow">switch</span>(ErrorCode)</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;                {</div>
@@ -1381,7 +1381,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;            <span class="keywordtype">void</span>* Data;</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;            StorageClass() : Data(nullptr) {}</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;            ~StorageClass() {<a class="code" href="namespace_bx_core_1_1_util.html#abe79bf4d20f42ce940b4d4e7d58b7a1d" title="메모리반환 ">BxCore::Util::Free</a>(Data);}</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;            ~StorageClass() {Data = <a class="code" href="namespace_bx_core_1_1_util.html#a56c1aaa6d7106d36c67c88a5e3b6a6f1" title="메모리반환 ">BxCore::Util::Free</a>(Data);}</div>
 <div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;            <span class="keywordtype">void</span>* <a class="code" href="namespace_bx_core_1_1_surface.html#aaef270c828cd57bb99c8d11128bfbbe3" title="화면생성 ">Init</a>(<span class="keywordtype">int</span> <a class="code" href="structsize.html" title="size구조체 : w, h ">size</a>)</div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;            {</div>
 <div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;                Data = <a class="code" href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8" title="메모리할당 ">BxCore::Util::Alloc</a>(size);</div>
@@ -1705,7 +1705,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:04 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

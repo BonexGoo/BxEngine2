@@ -50,6 +50,7 @@ files
 	["BxLib"]
 	(../../bxlib)
 	BxAnimate.hpp
+	BxArgument.hpp
 	BxAutoBuffer.hpp
 	BxDraw.hpp
 	BxDynamic.hpp
@@ -65,7 +66,6 @@ files
 	BxSingleton.hpp
 	BxString.hpp
 	BxTelex.hpp
-	BxThrow.hpp
 	BxTween.hpp
 	BxType.hpp
 	BxUtil.hpp

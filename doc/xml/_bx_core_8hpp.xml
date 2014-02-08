@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
   <compounddef id="_bx_core_8hpp" kind="file">
     <compoundname>BxCore.hpp</compoundname>
-    <includes refid="_bx_throw_8hpp" local="no">BxThrow.hpp</includes>
+    <includes refid="_bx_argument_8hpp" local="no">BxArgument.hpp</includes>
     <includedby refid="_bx_auto_buffer_8hpp" local="no">BxAutoBuffer.hpp</includedby>
     <includedby refid="_bx_dynamic_8hpp" local="no">BxDynamic.hpp</includedby>
     <includedby refid="_bx_memory_8hpp" local="no">BxMemory.hpp</includedby>
@@ -12,212 +12,207 @@
     <includedby refid="_bx_core_for_s3_e_8cpp" local="no">BxCoreForS3E.cpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="26">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="27" relation="include">
+      <node id="50">
+        <label>BxCore.hpp</label>
+        <link refid="BxCore.hpp"/>
+        <childnode refid="51" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="53">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="25">
-        <label>BxCore.hpp</label>
-        <link refid="BxCore.hpp"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="29">
-        <label>stdio.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="51">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
         <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-      </node>
-      <node id="45">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="_bx_core_impl_8hpp_source"/>
-      </node>
-      <node id="50">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="43" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
         </childnode>
       </node>
       <node id="52">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
-      </node>
-      <node id="47">
-        <label>BxXml.hpp</label>
-        <link refid="_bx_xml_8hpp_source"/>
-        <childnode refid="38" relation="include">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="53" relation="include">
         </childnode>
       </node>
-      <node id="32">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="_bx_core_for_s3_e_8hpp_source"/>
-      </node>
-      <node id="49">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="40" relation="include">
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="61">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
       </node>
-      <node id="35">
-        <label>BxTelex.hpp</label>
-        <link refid="_bx_telex_8hpp_source"/>
-      </node>
-      <node id="40">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="38">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="42">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
-      </node>
-      <node id="48">
-        <label>BxTween.hpp</label>
-        <link refid="_bx_tween_8hpp_source"/>
-      </node>
-      <node id="33">
-        <label>BxDynamic.hpp</label>
-        <link refid="_bx_dynamic_8hpp_source"/>
-      </node>
-      <node id="41">
+      <node id="65">
         <label>BxPathFind.hpp</label>
         <link refid="_bx_path_find_8hpp_source"/>
       </node>
-      <node id="43">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="47" relation="include">
-        </childnode>
+      <node id="57">
+        <label>BxDynamic.hpp</label>
+        <link refid="_bx_dynamic_8hpp_source"/>
       </node>
-      <node id="46">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
-        <childnode refid="38" relation="include">
-        </childnode>
-      </node>
-      <node id="39">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-      </node>
-      <node id="30">
-        <label>BxCore.hpp</label>
-        <link refid="BxCore.hpp"/>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-      </node>
-      <node id="31">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
+      <node id="60">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="37" relation="include">
+        <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-      </node>
-      <node id="44">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
       </node>
-      <node id="37">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="38" relation="include">
+      <node id="75">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="54">
+        <label>BxCore.hpp</label>
+        <link refid="BxCore.hpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
+      </node>
+      <node id="71">
+        <label>BxXml.hpp</label>
+        <link refid="_bx_xml_8hpp_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
         <label>BxMemory.hpp</label>
         <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="60" relation="include">
         </childnode>
-        <childnode refid="50" relation="include">
+        <childnode refid="74" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
+      </node>
+      <node id="62">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="73">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>BxTween.hpp</label>
+        <link refid="_bx_tween_8hpp_source"/>
+      </node>
+      <node id="76">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="56">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      </node>
+      <node id="55">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>BxTelex.hpp</label>
+        <link refid="_bx_telex_8hpp_source"/>
+      </node>
+      <node id="74">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -239,7 +234,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxThrow.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxArgument.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="namespace_bx_core" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">BxCore</highlight></codeline>
 <codeline lineno="6"><highlight class="normal">{</highlight></codeline>
@@ -300,7 +295,7 @@
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1af1378bb03a6217f9098f0386b4668f2e" kindref="member" tooltip="실행중지(Macro함수인 BxASSERT로 사용권장) ">Break</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>query<sp/>__DEBUG_PRM__);</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1a32cbcef13cd061545c46900a5a1de6ce" kindref="member" tooltip="출력창에 스트링기록(Macro함수인 BxTRACE로 사용권장) ">Trace</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>args<sp/>=<sp/><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member" tooltip="공데이터 ">BxThrow::zero</ref>());</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1add31af8264dd786fcc5cf2e045877289" kindref="member" tooltip="출력창에 스트링기록(Macro함수인 BxTRACE로 사용권장) ">Trace</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>args<sp/>=<sp/><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member" tooltip="공데이터 ">BxArgument::zero</ref>());</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_system_1a68e95a6afa87cea29d75098fedf3103d" kindref="member" tooltip="CP949 스트링상수로부터 UTF8 스트링상수얻기 (Macro함수인 W1을 사용권장) ">GetUTF8LiteralByCP949</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cp949);</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight></codeline>
@@ -364,7 +359,7 @@
 <codeline lineno="375"><highlight class="normal"></highlight></codeline>
 <codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_sound_1a6b955c392b411972ca91efd87c35fe8e" kindref="member" tooltip="사운드ID 반환 ">Release</ref>(id_sound<sp/>sound);</highlight></codeline>
 <codeline lineno="382"><highlight class="normal"></highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_sound_1ae5f64a6ec2d340776d3db3961b123f58" kindref="member" tooltip="배경음 출력 ">PlayMusic</ref>(id_sound<sp/>sound,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>interrupt<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>panorama<sp/>=<sp/><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member" tooltip="공데이터 ">BxThrow::zero</ref>());</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_sound_1a25c5399fb1f1359acdc9b394670771a0" kindref="member" tooltip="배경음 출력 ">PlayMusic</ref>(id_sound<sp/>sound,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>interrupt<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>panorama<sp/>=<sp/><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member" tooltip="공데이터 ">BxArgument::zero</ref>());</highlight></codeline>
 <codeline lineno="391"><highlight class="normal"></highlight></codeline>
 <codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_sound_1af8a207c266081ae3271f65c62eb60af3" kindref="member" tooltip="배경음 중지 ">StopMusic</ref>();</highlight></codeline>
 <codeline lineno="397"><highlight class="normal"></highlight></codeline>
@@ -385,190 +380,190 @@
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kindref="member" tooltip="메모리할당 ">Alloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref>);</highlight></codeline>
 <codeline lineno="445"><highlight class="normal"></highlight></codeline>
-<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1abe79bf4d20f42ce940b4d4e7d58b7a1d" kindref="member" tooltip="메모리반환 ">Free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buf);</highlight></codeline>
-<codeline lineno="452"><highlight class="normal"></highlight></codeline>
-<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">MemSet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dst,<sp/>byte<sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
-<codeline lineno="460"><highlight class="normal"></highlight></codeline>
-<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">MemCpy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
-<codeline lineno="468"><highlight class="normal"></highlight></codeline>
-<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" kindref="member" tooltip="메모리 비교 ">MemCmp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
-<codeline lineno="477"><highlight class="normal"></highlight></codeline>
-<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_util_1a39339febd9159aca9926f2a400bb0617" kindref="member" tooltip="스트링구성 ">Print</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>args<sp/>=<sp/><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member" tooltip="공데이터 ">BxThrow::zero</ref>(),<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>length<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="497"><highlight class="normal"></highlight></codeline>
-<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>Cos1024Table();</highlight></codeline>
-<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>Tan1024Table();</highlight></codeline>
-<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wstring<sp/>UTF16Table();</highlight></codeline>
-<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wstring<sp/>CP949Table();</highlight></codeline>
-<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="503"><highlight class="normal"></highlight></codeline>
-<codeline lineno="505" refid="namespace_bx_core_1_1_add_on" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">AddOn</highlight></codeline>
-<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a4315a261d16a4efcbccfc6cb5deb54f4" kindref="member" tooltip="JPG이미지로 BMP를 제작 ">JPGToBMP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>jpg);</highlight></codeline>
-<codeline lineno="514"><highlight class="normal"></highlight></codeline>
-<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1af17ee227494d6911f4d5394d28c4f85b" kindref="member" tooltip="GIF이미지로 BMP를 제작 ">GIFToBMP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>gif,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>numpage);</highlight></codeline>
-<codeline lineno="524"><highlight class="normal"></highlight></codeline>
-<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a0e5c95dfe4c4b4f70864dfea29068c7b" kindref="member" tooltip="HQX방식으로 재가공된 BMP를 제작 ">HQXToBMP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>bmp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
-<codeline lineno="533"><highlight class="normal"></highlight></codeline>
-<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_add_on_1a7e5afd2b177cb0dfa7ad9cdc7a00ad7f" kindref="member" tooltip="데이터버퍼를 통해 MD5해시스트링을 제작 ">BUFToMD5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
-<codeline lineno="541"><highlight class="normal"></highlight></codeline>
-<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_zip<sp/><ref refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kindref="member" tooltip="ZIP파일의 디코딩을 위한 객체 생성 ">CreateZIP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>numfile,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="552"><highlight class="normal"></highlight></codeline>
-<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kindref="member" tooltip="ZIP객체 제거 ">ReleaseZIP</ref>(id_zip<sp/>zip);</highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight></codeline>
-<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a46ac0ae27223a96b93d1eaee33e98e6b" kindref="member" tooltip="ZIP객체에서 요청 순번의 파일을 로드 ">ZIPToFILE</ref>(id_zip<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>filesize);</highlight></codeline>
-<codeline lineno="569"><highlight class="normal"></highlight></codeline>
-<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" kindref="member" tooltip="ZIP객체에서 요청 순번의 파일정보를 로드 ">ZIPToINFO</ref>(id_zip<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,</highlight></codeline>
-<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>isdir<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uhuge*<sp/>ctime<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uhuge*<sp/>mtime<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uhuge*<sp/>atime<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>archive<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>hidden<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>readonly<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>system<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="587"><highlight class="normal"></highlight></codeline>
-<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member" tooltip="AddOn리소스 해제 ">Release</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buf);</highlight></codeline>
-<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="594"><highlight class="normal"></highlight></codeline>
-<codeline lineno="596" refid="namespace_bx_core_1_1_file" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">File</highlight></codeline>
-<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member" tooltip="파일의 존재여부 ">IsExist</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="605"><highlight class="normal"></highlight></codeline>
-<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mode);</highlight></codeline>
-<codeline lineno="614"><highlight class="normal"></highlight></codeline>
-<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">Close</ref>(id_file<sp/>file);</highlight></codeline>
-<codeline lineno="621"><highlight class="normal"></highlight></codeline>
-<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">Read</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/>uint<sp/>length,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="631"><highlight class="normal"></highlight></codeline>
-<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a74accb21bf2f405effb1968424bc7127" kindref="member" tooltip="파일에서 가변정수읽기 ">ReadVariable</ref>(id_file<sp/>file,<sp/>uhuge*<sp/>variable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>additionkey<sp/>=<sp/>0x00,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="641"><highlight class="normal"></highlight></codeline>
-<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">Write</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/>uint<sp/>length,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="651"><highlight class="normal"></highlight></codeline>
-<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a324b09bd397a44d8031fc989178f232e" kindref="member" tooltip="파일로 가변정수쓰기 ">WriteVariable</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhuge<sp/>variable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>additionkey<sp/>=<sp/>0x00,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="661"><highlight class="normal"></highlight></codeline>
-<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">WriteString</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>buffer,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="670"><highlight class="normal"></highlight></codeline>
-<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a2cc196750f85a59a0a6b346b3fd2ffe7" kindref="member" tooltip="파일위치 스킵하기 ">Skip</ref>(id_file<sp/>file,<sp/>uint<sp/>length);</highlight></codeline>
-<codeline lineno="678"><highlight class="normal"></highlight></codeline>
-<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">GetSize</ref>(id_file<sp/>file);</highlight></codeline>
-<codeline lineno="685"><highlight class="normal"></highlight></codeline>
-<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">GetSize</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="692"><highlight class="normal"></highlight></codeline>
-<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/><ref refid="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" kindref="member" tooltip="파일의 마지막 수정날짜 얻기 ">GetDate</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="699"><highlight class="normal"></highlight></codeline>
-<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" kindref="member" tooltip="DZ압축파일의 연동(여러번 Attach하면 마지막 Attach가 최우선순위) ">Attach</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>archivename);</highlight></codeline>
-<codeline lineno="707"><highlight class="normal"></highlight></codeline>
-<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" kindref="member" tooltip="DZ압축파일의 연동해제(Attach에 성공한 횟수만큼 해제) ">Detach</ref>();</highlight></codeline>
-<codeline lineno="713"><highlight class="normal"></highlight></codeline>
-<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kindref="member" tooltip="폴더만들기 ">MakeDirectory</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dirname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isFile<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="720"><highlight class="normal"></highlight></codeline>
-<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kindref="member" tooltip="파일검색 ">SearchFiles</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dirname,<sp/>callback_filesearch<sp/>resultCB,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
-<codeline lineno="729"><highlight class="normal"></highlight></codeline>
-<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member" tooltip="파일삭제 ">RemoveFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doRemoveBlankedDirectory<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="737"><highlight class="normal"></highlight></codeline>
-<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" kindref="member" tooltip="파일의 이름변경 ">RenameFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>srcname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dstname);</highlight></codeline>
-<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="746"><highlight class="normal"></highlight></codeline>
-<codeline lineno="748" refid="namespace_bx_core_1_1_socket" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Socket</highlight></codeline>
-<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_socket<sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member" tooltip="소켓ID 할당 ">Create</ref>();</highlight></codeline>
-<codeline lineno="756"><highlight class="normal"></highlight></codeline>
-<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">Release</ref>(id_socket<sp/>sock);</highlight></codeline>
-<codeline lineno="763"><highlight class="normal"></highlight></codeline>
-<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>socketstate<sp/><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member" tooltip="소켓 상태 ">GetState</ref>(id_socket<sp/>sock);</highlight></codeline>
-<codeline lineno="770"><highlight class="normal"></highlight></codeline>
-<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectresult<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member" tooltip="서버로 접속 ">Connect</ref>(id_socket<sp/>sock,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>ushort<sp/>port,<sp/>uint<sp/>timeout<sp/>=<sp/>0,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="782"><highlight class="normal"></highlight></codeline>
-<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kindref="member" tooltip="서버와의 접속종료 ">Disconnect</ref>(id_socket<sp/>sock);</highlight></codeline>
-<codeline lineno="789"><highlight class="normal"></highlight></codeline>
-<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" kindref="member" tooltip="데이터 송신 ">Send</ref>(id_socket<sp/>sock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="799"><highlight class="normal"></highlight></codeline>
-<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kindref="member" tooltip="데이터 수신 ">Recv</ref>(id_socket<sp/>sock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="809"><highlight class="normal"></highlight></codeline>
-<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kindref="member" tooltip="데이터 강제수신 ">RecvFully</ref>(id_socket<sp/>sock,<sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cancelmode);</highlight></codeline>
-<codeline lineno="821"><highlight class="normal"></highlight></codeline>
-<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" kindref="member" tooltip="핑시간 측정(ICMP프로토콜) ">Ping</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>uint<sp/>timeout);</highlight></codeline>
-<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="830"><highlight class="normal"></highlight></codeline>
-<codeline lineno="832" refid="namespace_bx_core_1_1_font" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Font</highlight></codeline>
-<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_font<sp/><ref refid="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" kindref="member" tooltip="폰트열기(파일) ">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointsize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCacheGlyphs<sp/>=<sp/>-1);</highlight></codeline>
-<codeline lineno="843"><highlight class="normal"></highlight></codeline>
-<codeline lineno="853"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_font<sp/><ref refid="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" kindref="member" tooltip="폰트열기(파일) ">Open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffersize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointsize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCacheGlyphs<sp/>=<sp/>-1);</highlight></codeline>
-<codeline lineno="854"><highlight class="normal"></highlight></codeline>
-<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member" tooltip="폰트닫기 ">Close</ref>(id_font<sp/>font);</highlight></codeline>
-<codeline lineno="861"><highlight class="normal"></highlight></codeline>
-<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" kindref="member" tooltip="인코딩방식 설정 ">SetEncoding</ref>(fontencoding<sp/>encoding);</highlight></codeline>
-<codeline lineno="868"><highlight class="normal"></highlight></codeline>
-<codeline lineno="875"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fontsort<sp/><ref refid="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" kindref="member" tooltip="정렬방식 설정 ">SetSort</ref>(fontsort<sp/>sort);</highlight></codeline>
-<codeline lineno="876"><highlight class="normal"></highlight></codeline>
-<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" kindref="member" tooltip="스타일 설정 ">SetStyle</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>underline,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>italic);</highlight></codeline>
-<codeline lineno="884"><highlight class="normal"></highlight></codeline>
-<codeline lineno="893"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" kindref="member" tooltip="사이즈 얻기 ">GetSize</ref>(id_font<sp/>font,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/>s<sp/>=<sp/>size::full());</highlight></codeline>
-<codeline lineno="894"><highlight class="normal"></highlight></codeline>
-<codeline lineno="904"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a08159673a1a3269082f9a3a1bc90eb28" kindref="member" tooltip="스트링 출력 ">Draw</ref>(id_font<sp/>font,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/>s<sp/>=<sp/>size::full(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity<sp/>=<sp/>0xFF);</highlight></codeline>
-<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="906"><highlight class="normal"></highlight></codeline>
-<codeline lineno="908" refid="namespace_bx_core_1_1_thread" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Thread</highlight></codeline>
-<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="917"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_thread<sp/><ref refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kindref="member" tooltip="스레드 생성 ">Create</ref>(callback_thread<sp/>threadCB,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="918"><highlight class="normal"></highlight></codeline>
-<codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" kindref="member" tooltip="스레드 해제 ">Release</ref>(id_thread<sp/>thread,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dokill<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dowait<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="927"><highlight class="normal"></highlight></codeline>
-<codeline lineno="933"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_mutex<sp/><ref refid="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" kindref="member" tooltip="뮤텍스 열기 ">OpenMutex</ref>();</highlight></codeline>
-<codeline lineno="934"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" kindref="member" tooltip="뮤텍스 닫기 ">CloseMutex</ref>(id_mutex<sp/>mutex);</highlight></codeline>
-<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="947"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" kindref="member" tooltip="뮤텍스 잠금 ">Lock</ref>(id_mutex<sp/>mutex);</highlight></codeline>
-<codeline lineno="948"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="954"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" kindref="member" tooltip="뮤텍스 해제 ">Unlock</ref>(id_mutex<sp/>mutex);</highlight></codeline>
-<codeline lineno="955"><highlight class="normal"></highlight></codeline>
-<codeline lineno="962"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member" tooltip="현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) ">BindStorage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>storagekey);</highlight></codeline>
-<codeline lineno="963"><highlight class="normal"></highlight></codeline>
-<codeline lineno="968"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" kindref="member" tooltip="현 스레드상의 저장소 전체종료 ">UnbindStorageAll</ref>();</highlight></codeline>
-<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="970"><highlight class="normal"></highlight></codeline>
-<codeline lineno="972" refid="namespace_bx_core_1_1_library" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Library</highlight></codeline>
-<codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="980"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_library<sp/><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member" tooltip="라이브러리 열기 ">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="981"><highlight class="normal"></highlight></codeline>
-<codeline lineno="987"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" kindref="member" tooltip="라이브러리 닫기 ">Close</ref>(id_library<sp/>handle);</highlight></codeline>
-<codeline lineno="988"><highlight class="normal"></highlight></codeline>
-<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>(id_library<sp/>handle,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
-<codeline lineno="996"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="997"><highlight class="normal"></highlight></codeline>
-<codeline lineno="999" refid="namespace_bx_core_1_1_open_g_l2_d" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenGL2D</highlight></codeline>
-<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
-<codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Quit();</highlight></codeline>
-<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Flush();</highlight></codeline>
-<codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>View</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPerspective(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mul,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
-<codeline lineno="1006"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetOrthogonal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
-<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewTrans(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
-<codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotX(fint<sp/>angle);</highlight></codeline>
-<codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotY(fint<sp/>angle);</highlight></codeline>
-<codeline lineno="1010"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotZ(fint<sp/>angle);</highlight></codeline>
-<codeline lineno="1011"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make/Free</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1012"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_form<sp/>MakeForm_TextureMaterial(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="1013"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_form<sp/>MakeForm_TextureMaterial(color_a888*<sp/>image,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pitch);</highlight></codeline>
-<codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_form<sp/>MakeForm_ColorAmbient(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
-<codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeForm(id_opengl_form<sp/>form);</highlight></codeline>
-<codeline lineno="1016"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_outline<sp/>MakeOutline_VertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
-<codeline lineno="1017"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_outline<sp/>MakeOutline_PolyVertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
-<codeline lineno="1018"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_outline<sp/>MakeOutline_PolyVertexUV3D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>&amp;<sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/><ref refid="structuv" kindref="compound" tooltip="uv구조체 : u, v ">uv</ref>);</highlight></codeline>
-<codeline lineno="1019"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeOutline(id_opengl_outline<sp/>outline);</highlight></codeline>
-<codeline lineno="1020"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1021"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color_x888<sp/>Form_ColorAmbient_GetColor(id_opengl_form<sp/>form);</highlight></codeline>
-<codeline lineno="1022"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetScale(id_opengl_outline<sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
-<codeline lineno="1023"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetRotate(id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
-<codeline lineno="1024"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetScale(id_opengl_outline<sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
-<codeline lineno="1025"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetRotate(id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
-<codeline lineno="1026"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Render</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render(id_opengl_form<sp/>form,<sp/>id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
-<codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render3D(id_opengl_form<sp/>form,<sp/>id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
-<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Option</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1030"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clip(<ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>r);</highlight></codeline>
-<codeline lineno="1031"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Property</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetTextureMargin();</highlight></codeline>
-<codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoTextureInterpolation();</highlight></codeline>
-<codeline lineno="1034"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1035"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_util_1a56c1aaa6d7106d36c67c88a5e3b6a6f1" kindref="member" tooltip="메모리반환 ">Free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buf);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kindref="member" tooltip="메모리 초기화 ">MemSet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dst,<sp/>byte<sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kindref="member" tooltip="메모리 복사 ">MemCpy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" kindref="member" tooltip="메모리 비교 ">MemCmp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_util_1acc00b7e6b5a850983733ca189777d3a7" kindref="member" tooltip="스트링구성 ">Print</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>args<sp/>=<sp/><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member" tooltip="공데이터 ">BxArgument::zero</ref>(),<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>length<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>Cos1024Table();</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>Tan1024Table();</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wstring<sp/>UTF16Table();</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wstring<sp/>CP949Table();</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506" refid="namespace_bx_core_1_1_add_on" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">AddOn</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a4315a261d16a4efcbccfc6cb5deb54f4" kindref="member" tooltip="JPG이미지로 BMP를 제작 ">JPGToBMP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>jpg);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1af17ee227494d6911f4d5394d28c4f85b" kindref="member" tooltip="GIF이미지로 BMP를 제작 ">GIFToBMP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>gif,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>numpage);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a0e5c95dfe4c4b4f70864dfea29068c7b" kindref="member" tooltip="HQX방식으로 재가공된 BMP를 제작 ">HQXToBMP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>bmp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_add_on_1a7e5afd2b177cb0dfa7ad9cdc7a00ad7f" kindref="member" tooltip="데이터버퍼를 통해 MD5해시스트링을 제작 ">BUFToMD5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_zip<sp/><ref refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kindref="member" tooltip="ZIP파일의 디코딩을 위한 객체 생성 ">CreateZIP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>numfile,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kindref="member" tooltip="ZIP객체 제거 ">ReleaseZIP</ref>(id_zip<sp/>zip);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a46ac0ae27223a96b93d1eaee33e98e6b" kindref="member" tooltip="ZIP객체에서 요청 순번의 파일을 로드 ">ZIPToFILE</ref>(id_zip<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>filesize);</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" kindref="member" tooltip="ZIP객체에서 요청 순번의 파일정보를 로드 ">ZIPToINFO</ref>(id_zip<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>isdir<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uhuge*<sp/>ctime<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uhuge*<sp/>mtime<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uhuge*<sp/>atime<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>archive<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>hidden<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>readonly<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>system<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member" tooltip="AddOn리소스 해제 ">Release</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buf);</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597" refid="namespace_bx_core_1_1_file" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">File</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member" tooltip="파일의 존재여부 ">IsExist</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member" tooltip="파일열기 ">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mode);</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member" tooltip="파일닫기 ">Close</ref>(id_file<sp/>file);</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member" tooltip="파일에서 읽기 ">Read</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/>uint<sp/>length,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a74accb21bf2f405effb1968424bc7127" kindref="member" tooltip="파일에서 가변정수읽기 ">ReadVariable</ref>(id_file<sp/>file,<sp/>uhuge*<sp/>variable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>additionkey<sp/>=<sp/>0x00,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member" tooltip="파일로 쓰기 ">Write</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/>uint<sp/>length,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a324b09bd397a44d8031fc989178f232e" kindref="member" tooltip="파일로 가변정수쓰기 ">WriteVariable</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhuge<sp/>variable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>additionkey<sp/>=<sp/>0x00,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" kindref="member" tooltip="파일로 스트링쓰기 ">WriteString</ref>(id_file<sp/>file,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>buffer,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a2cc196750f85a59a0a6b346b3fd2ffe7" kindref="member" tooltip="파일위치 스킵하기 ">Skip</ref>(id_file<sp/>file,<sp/>uint<sp/>length);</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">GetSize</ref>(id_file<sp/>file);</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member" tooltip="파일의 전체길이 얻기 ">GetSize</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/><ref refid="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" kindref="member" tooltip="파일의 마지막 수정날짜 얻기 ">GetDate</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" kindref="member" tooltip="DZ압축파일의 연동(여러번 Attach하면 마지막 Attach가 최우선순위) ">Attach</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>archivename);</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" kindref="member" tooltip="DZ압축파일의 연동해제(Attach에 성공한 횟수만큼 해제) ">Detach</ref>();</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kindref="member" tooltip="폴더만들기 ">MakeDirectory</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dirname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isFile<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kindref="member" tooltip="파일검색 ">SearchFiles</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dirname,<sp/>callback_filesearch<sp/>resultCB,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"></highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member" tooltip="파일삭제 ">RemoveFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doRemoveBlankedDirectory<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"></highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" kindref="member" tooltip="파일의 이름변경 ">RenameFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>srcname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dstname);</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="749" refid="namespace_bx_core_1_1_socket" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Socket</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_socket<sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member" tooltip="소켓ID 할당 ">Create</ref>();</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member" tooltip="소켓ID 반환, 접속종료 ">Release</ref>(id_socket<sp/>sock);</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>socketstate<sp/><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member" tooltip="소켓 상태 ">GetState</ref>(id_socket<sp/>sock);</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectresult<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member" tooltip="서버로 접속 ">Connect</ref>(id_socket<sp/>sock,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>ushort<sp/>port,<sp/>uint<sp/>timeout<sp/>=<sp/>0,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kindref="member" tooltip="서버와의 접속종료 ">Disconnect</ref>(id_socket<sp/>sock);</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" kindref="member" tooltip="데이터 송신 ">Send</ref>(id_socket<sp/>sock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kindref="member" tooltip="데이터 수신 ">Recv</ref>(id_socket<sp/>sock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"></highlight></codeline>
+<codeline lineno="821"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kindref="member" tooltip="데이터 강제수신 ">RecvFully</ref>(id_socket<sp/>sock,<sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cancelmode);</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" kindref="member" tooltip="핑시간 측정(ICMP프로토콜) ">Ping</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>uint<sp/>timeout);</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"></highlight></codeline>
+<codeline lineno="833" refid="namespace_bx_core_1_1_font" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Font</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_font<sp/><ref refid="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" kindref="member" tooltip="폰트열기(파일) ">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointsize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCacheGlyphs<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"></highlight></codeline>
+<codeline lineno="854"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_font<sp/><ref refid="namespace_bx_core_1_1_font_1ab5c096cde2aaab721067ff0b1e21783f" kindref="member" tooltip="폰트열기(파일) ">Open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffersize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointsize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCacheGlyphs<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"></highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member" tooltip="폰트닫기 ">Close</ref>(id_font<sp/>font);</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" kindref="member" tooltip="인코딩방식 설정 ">SetEncoding</ref>(fontencoding<sp/>encoding);</highlight></codeline>
+<codeline lineno="869"><highlight class="normal"></highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fontsort<sp/><ref refid="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" kindref="member" tooltip="정렬방식 설정 ">SetSort</ref>(fontsort<sp/>sort);</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" kindref="member" tooltip="스타일 설정 ">SetStyle</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>underline,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>italic);</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"></highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a3e241c20e4073cadd5e3e25add4293e3" kindref="member" tooltip="사이즈 얻기 ">GetSize</ref>(id_font<sp/>font,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/>s<sp/>=<sp/>size::full());</highlight></codeline>
+<codeline lineno="895"><highlight class="normal"></highlight></codeline>
+<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a08159673a1a3269082f9a3a1bc90eb28" kindref="member" tooltip="스트링 출력 ">Draw</ref>(id_font<sp/>font,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoint" kindref="compound" tooltip="point구조체 : x, y ">point</ref><sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref><sp/>s<sp/>=<sp/>size::full(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity<sp/>=<sp/>0xFF);</highlight></codeline>
+<codeline lineno="906"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"></highlight></codeline>
+<codeline lineno="909" refid="namespace_bx_core_1_1_thread" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Thread</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_thread<sp/><ref refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kindref="member" tooltip="스레드 생성 ">Create</ref>(callback_thread<sp/>threadCB,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="919"><highlight class="normal"></highlight></codeline>
+<codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" kindref="member" tooltip="스레드 해제 ">Release</ref>(id_thread<sp/>thread,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dokill<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dowait<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"></highlight></codeline>
+<codeline lineno="934"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_mutex<sp/><ref refid="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" kindref="member" tooltip="뮤텍스 열기 ">OpenMutex</ref>();</highlight></codeline>
+<codeline lineno="935"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" kindref="member" tooltip="뮤텍스 닫기 ">CloseMutex</ref>(id_mutex<sp/>mutex);</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="948"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" kindref="member" tooltip="뮤텍스 잠금 ">Lock</ref>(id_mutex<sp/>mutex);</highlight></codeline>
+<codeline lineno="949"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="955"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" kindref="member" tooltip="뮤텍스 해제 ">Unlock</ref>(id_mutex<sp/>mutex);</highlight></codeline>
+<codeline lineno="956"><highlight class="normal"></highlight></codeline>
+<codeline lineno="963"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member" tooltip="현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) ">BindStorage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>storagekey);</highlight></codeline>
+<codeline lineno="964"><highlight class="normal"></highlight></codeline>
+<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" kindref="member" tooltip="현 스레드상의 저장소 전체종료 ">UnbindStorageAll</ref>();</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="971"><highlight class="normal"></highlight></codeline>
+<codeline lineno="973" refid="namespace_bx_core_1_1_library" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Library</highlight></codeline>
+<codeline lineno="974"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="981"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_library<sp/><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member" tooltip="라이브러리 열기 ">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="982"><highlight class="normal"></highlight></codeline>
+<codeline lineno="988"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" kindref="member" tooltip="라이브러리 닫기 ">Close</ref>(id_library<sp/>handle);</highlight></codeline>
+<codeline lineno="989"><highlight class="normal"></highlight></codeline>
+<codeline lineno="996"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member" tooltip="함수연결 ">Link</ref>(id_library<sp/>handle,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
+<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="998"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1000" refid="namespace_bx_core_1_1_open_g_l2_d" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenGL2D</highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Quit();</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Flush();</highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>View</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1006"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPerspective(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mul,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetOrthogonal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewTrans(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotX(fint<sp/>angle);</highlight></codeline>
+<codeline lineno="1010"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotY(fint<sp/>angle);</highlight></codeline>
+<codeline lineno="1011"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotZ(fint<sp/>angle);</highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make/Free</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1013"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_form<sp/>MakeForm_TextureMaterial(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_form<sp/>MakeForm_TextureMaterial(color_a888*<sp/>image,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pitch);</highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_form<sp/>MakeForm_ColorAmbient(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
+<codeline lineno="1016"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeForm(id_opengl_form<sp/>form);</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_outline<sp/>MakeOutline_VertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
+<codeline lineno="1018"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_outline<sp/>MakeOutline_PolyVertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
+<codeline lineno="1019"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_opengl_outline<sp/>MakeOutline_PolyVertexUV3D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>&amp;<sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/><ref refid="structuv" kindref="compound" tooltip="uv구조체 : u, v ">uv</ref>);</highlight></codeline>
+<codeline lineno="1020"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeOutline(id_opengl_outline<sp/>outline);</highlight></codeline>
+<codeline lineno="1021"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color_x888<sp/>Form_ColorAmbient_GetColor(id_opengl_form<sp/>form);</highlight></codeline>
+<codeline lineno="1023"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetScale(id_opengl_outline<sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
+<codeline lineno="1024"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetRotate(id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
+<codeline lineno="1025"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetScale(id_opengl_outline<sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
+<codeline lineno="1026"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetRotate(id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Render</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render(id_opengl_form<sp/>form,<sp/>id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render3D(id_opengl_form<sp/>form,<sp/>id_opengl_outline<sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
+<codeline lineno="1030"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Option</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1031"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clip(<ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>r);</highlight></codeline>
+<codeline lineno="1032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Property</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetTextureMargin();</highlight></codeline>
+<codeline lineno="1034"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoTextureInterpolation();</highlight></codeline>
+<codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1036"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp"/>
   </compounddef>
 </doxygen>

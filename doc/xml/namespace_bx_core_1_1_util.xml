@@ -24,15 +24,15 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>할당된 메모리, 실패시 nullptr </para></simplesect>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1abe79bf4d20f42ce940b4d4e7d58b7a1d" kindref="member">Free</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1a56c1aaa6d7106d36c67c88a5e3b6a6f1" kindref="member">Free</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="444" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="350" bodyend="353"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="444" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="352" bodyend="355"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_util_1abe79bf4d20f42ce940b4d4e7d58b7a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void BxCore::Util::Free</definition>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a56c1aaa6d7106d36c67c88a5e3b6a6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * BxCore::Util::Free</definition>
         <argsstring>(void *buf)</argsstring>
         <name>Free</name>
         <param>
@@ -50,11 +50,12 @@
 <para>: 반환할 메모리 </para></parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>간편한 사용을 위한 nullptr값 리턴 </para></simplesect>
 <simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kindref="member">Alloc</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="451" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="355" bodyend="358"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="452" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="357" bodyend="361"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -101,7 +102,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="459" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="360" bodyend="363"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="460" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="363" bodyend="366"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -148,7 +149,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="467" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="365" bodyend="368"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="468" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="368" bodyend="371"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -196,21 +197,21 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="476" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.cpp" bodystart="370" bodyend="373"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="477" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.cpp" bodystart="373" bodyend="376"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a39339febd9159aca9926f2a400bb0617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1acc00b7e6b5a850983733ca189777d3a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string _tmp_</type>
         <definition>string _tmp_ BxCore::Util::Print</definition>
-        <argsstring>(string map, const BxThrow &amp;args=BxThrow::zero(), int *length=nullptr)</argsstring>
+        <argsstring>(string map, const BxArgument &amp;args=BxArgument::zero(), int *length=nullptr)</argsstring>
         <name>Print</name>
         <param>
           <type>string</type>
           <declname>map</declname>
         </param>
         <param>
-          <type>const <ref refid="class_bx_throw" kindref="compound">BxThrow</ref> &amp;</type>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
           <declname>args</declname>
-          <defval><ref refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kindref="member">BxThrow::zero</ref>()</defval>
+          <defval><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member">BxArgument::zero</ref>()</defval>
         </param>
         <param>
           <type>int *</type>
@@ -246,7 +247,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="496" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="201" bodyend="415"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="497" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.cpp" bodystart="201" bodyend="415"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a64ec381ceb5fbce7d4074c674a9b763d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const int *</type>
@@ -259,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="498" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="417" bodyend="438"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="499" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.cpp" bodystart="417" bodyend="438"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1ae6c876f32bae515d93b7c1fe9388ec5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const int *</type>
@@ -272,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="499" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="440" bodyend="460"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="500" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.cpp" bodystart="440" bodyend="460"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1abf0ab76dfa6db0a92832c1671b69a590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wstring</type>
@@ -285,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="500" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="462" bodyend="564"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="501" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.cpp" bodystart="462" bodyend="564"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_util_1a6170dbf2be53fcdfb6670dbb022cb154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wstring</type>
@@ -298,13 +299,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="501" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.cpp" bodystart="566" bodyend="668"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="502" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.cpp" bodystart="566" bodyend="668"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Util파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCore.hpp" line="437" column="1"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCore.hpp" line="437" column="1"/>
   </compounddef>
 </doxygen>

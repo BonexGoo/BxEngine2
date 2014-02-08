@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -213,13 +213,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a5bd37d311b067ed2ac52c3443363013f"><td class="memItemLeft" align="right" valign="top">static byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f">LoadType</a> (byte *&amp;Resource, uint TypeLen)</td></tr>
 <tr class="memdesc:a5bd37d311b067ed2ac52c3443363013f"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터에서 임의배열 로드  <a href="#a5bd37d311b067ed2ac52c3443363013f">More...</a><br/></td></tr>
 <tr class="separator:a5bd37d311b067ed2ac52c3443363013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a956f04e1f763eddd08c74f1bf301c05f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a956f04e1f763eddd08c74f1bf301c05f">LoadString</a> (byte *&amp;Resource)</td></tr>
-<tr class="memdesc:a956f04e1f763eddd08c74f1bf301c05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터에서 스트링 로드  <a href="#a956f04e1f763eddd08c74f1bf301c05f">More...</a><br/></td></tr>
-<tr class="separator:a956f04e1f763eddd08c74f1bf301c05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc0de550dfeda13d1a2bb85e7d55590"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
-<tr class="memitem:a8bc0de550dfeda13d1a2bb85e7d55590"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a8bc0de550dfeda13d1a2bb85e7d55590">SetArray</a> (TYPE *Dst, const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;Src)</td></tr>
-<tr class="memdesc:a8bc0de550dfeda13d1a2bb85e7d55590"><td class="mdescLeft">&#160;</td><td class="mdescRight">상수나열로 배열을 초기화  <a href="#a8bc0de550dfeda13d1a2bb85e7d55590">More...</a><br/></td></tr>
-<tr class="separator:a8bc0de550dfeda13d1a2bb85e7d55590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bba584552f6e46a3645bf9ba4179f9d"><td class="memItemLeft" align="right" valign="top">static string_rw&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a9bba584552f6e46a3645bf9ba4179f9d">LoadString</a> (byte *&amp;Resource)</td></tr>
+<tr class="memdesc:a9bba584552f6e46a3645bf9ba4179f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터에서 스트링 로드  <a href="#a9bba584552f6e46a3645bf9ba4179f9d">More...</a><br/></td></tr>
+<tr class="separator:a9bba584552f6e46a3645bf9ba4179f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b68673159a50732cfaf0e7252c0500"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
+<tr class="memitem:a79b68673159a50732cfaf0e7252c0500"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_bx_util_global.html#a79b68673159a50732cfaf0e7252c0500">SetArray</a> (TYPE *Dst, const <a class="el" href="class_bx_argument.html">BxArgument</a> &amp;Src)</td></tr>
+<tr class="memdesc:a79b68673159a50732cfaf0e7252c0500"><td class="mdescLeft">&#160;</td><td class="mdescRight">상수나열로 배열을 초기화  <a href="#a79b68673159a50732cfaf0e7252c0500">More...</a><br/></td></tr>
+<tr class="separator:a79b68673159a50732cfaf0e7252c0500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BxUtil관련 글로벌함수 </p>
@@ -744,7 +744,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a956f04e1f763eddd08c74f1bf301c05f"></a>
+<a class="anchor" id="a9bba584552f6e46a3645bf9ba4179f9d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -752,7 +752,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static string BxUtilGlobal::LoadString </td>
+          <td class="memname">static string_rw BxUtilGlobal::LoadString </td>
           <td>(</td>
           <td class="paramtype">byte *&amp;&#160;</td>
           <td class="paramname"><em>Resource</em>)</td><td></td>
@@ -1154,7 +1154,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8bc0de550dfeda13d1a2bb85e7d55590"></a>
+<a class="anchor" id="a79b68673159a50732cfaf0e7252c0500"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1172,7 +1172,7 @@ template&lt;typename TYPE &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_bx_argument.html">BxArgument</a> &amp;&#160;</td>
           <td class="paramname"><em>Src</em>&#160;</td>
         </tr>
         <tr>
@@ -1870,7 +1870,7 @@ template&lt;typename TYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:10 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

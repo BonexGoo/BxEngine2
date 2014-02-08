@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -256,7 +256,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">if</span>(buffer[i] == <span class="charliteral">&#39;[&#39;</span>)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> Index(<span class="stringliteral">&quot;&lt;&gt;:.&lt;A&gt;&quot;</span>, BxTHROW(GroupArrayIndex[END]++));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> Index(<span class="stringliteral">&quot;&lt;&gt;:.&lt;A&gt;&quot;</span>, BxARG(GroupArrayIndex[END]++));</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    GroupArrayIndex[LAST] = 0;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    GroupNameLength[LAST] = Index.<a class="code" href="class_bx_string.html#a1c1ed24074f79412ae42d81bb0c59615" title="길이 구하기 ">GetLength</a>();</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    GroupName += Index;</div>
@@ -390,7 +390,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                        }</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44" title="파일로 스트링쓰기 ">BxCore::File::WriteString</a>(KeywordFile, <span class="stringliteral">&quot;) = &quot;</span>);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> SelectNumber;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        SelectNumber.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(SelectRadioIndex));</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        SelectNumber.<a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxARG(SelectRadioIndex));</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        <a class="code" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44" title="파일로 스트링쓰기 ">BxCore::File::WriteString</a>(KeywordFile, SelectNumber);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                    }</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                }</div>
@@ -404,7 +404,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44" title="파일로 스트링쓰기 ">BxCore::File::WriteString</a>(KeywordFile, <span class="stringliteral">&quot;number(&quot;</span>);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44" title="파일로 스트링쓰기 ">BxCore::File::WriteString</a>(KeywordFile, NumberPool[i].GetKeyword());</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                    <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> NumberValue;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    NumberValue.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:) = &lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(NumberPool[i].LetInt()));</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    NumberValue.<a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:) = &lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxARG(NumberPool[i].LetInt()));</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                    <a class="code" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44" title="파일로 스트링쓰기 ">BxCore::File::WriteString</a>(KeywordFile, NumberValue);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                }</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            }</div>
@@ -584,7 +584,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:05 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

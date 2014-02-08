@@ -2,6 +2,7 @@ var searchData=
 [
   ['bindpool',['BindPool',['../class_bx_dynamic_1_1_resource_1_1_bind_pool.html',1,'BxDynamic::Resource']]],
   ['bxanimate',['BxAnimate',['../class_bx_animate.html',1,'']]],
+  ['bxargument',['BxArgument',['../class_bx_argument.html',1,'']]],
   ['bxautobuffer',['BxAutoBuffer',['../class_bx_auto_buffer.html',1,'']]],
   ['bxdraw',['BxDraw',['../class_bx_draw.html',1,'']]],
   ['bxdrawform',['BxDrawForm',['../class_bx_draw_form.html',1,'']]],
@@ -14,7 +15,6 @@ var searchData=
   ['bxsingleton',['BxSingleton',['../class_bx_singleton.html',1,'']]],
   ['bxstring',['BxString',['../class_bx_string.html',1,'']]],
   ['bxtelex',['BxTelex',['../class_bx_telex.html',1,'']]],
-  ['bxthrow',['BxThrow',['../class_bx_throw.html',1,'']]],
   ['bxtween',['BxTween',['../class_bx_tween.html',1,'']]],
   ['bxutil',['BxUtil',['../class_bx_util.html',1,'']]],
   ['bxvar',['BxVar',['../class_bx_var.html',1,'']]],

@@ -921,7 +921,7 @@ namespace BxCore
 					if(Client == INVALID_SOCKET)
 					{
 						const int ErrorCode = BxDLL_WSAGetLastError();
-						BxASSERT(BxString::Parse("<>:BxCore::Socket<<소켓생성 실패(<A>)>>", BxTHROW(ErrorCode)), false);
+						BxASSERT(BxString::Parse("<>:BxCore::Socket<<소켓생성 실패(<A>)>>", BxARG(ErrorCode)), false);
 						State = socketstate_null;
 					}
 					else State = socketstate_created;
@@ -986,7 +986,7 @@ namespace BxCore
 					if(!Client)
 					{
 						const int ErrorCode = (int) s3eSocketGetError();
-						BxASSERT(BxString::Parse("<>:BxCore::Socket<<소켓생성 실패(<A>)>>", BxTHROW(ErrorCode)), false);
+						BxASSERT(BxString::Parse("<>:BxCore::Socket<<소켓생성 실패(<A>)>>", BxARG(ErrorCode)), false);
 					}
 					State = (Client)? socketstate_created : socketstate_null;
 				}
@@ -1067,7 +1067,7 @@ namespace BxCore
 						if(Server == INVALID_SOCKET)
 						{
 							const int ErrorCode = BxDLL_WSAGetLastError();
-							BxASSERT(BxString::Parse("<>:BxCore::Socket<<소켓생성 실패(<A>)>>", BxTHROW(ErrorCode)), false);
+							BxASSERT(BxString::Parse("<>:BxCore::Socket<<소켓생성 실패(<A>)>>", BxARG(ErrorCode)), false);
 						}
 					}
 					if(Server != INVALID_SOCKET && LastTimeout != Timeout)
@@ -1147,7 +1147,7 @@ namespace BxCore
 				case WSAENOTCONN: BxTRACE("<>:##### Socket ErrorCode : WSAENOTCONN #####<R><N>"); break;
 				case WSAECONNABORTED: BxTRACE("<>:##### Socket ErrorCode : WSAECONNABORTED #####<R><N>"); break;
 				case WSAECONNRESET: BxTRACE("<>:##### Socket ErrorCode : WSAECONNRESET #####<R><N>"); break;
-				default: BxTRACE("<>:##### Socket ErrorCode : <A> #####<R><N>", BxTHROW(ErrorCode)); break;
+				default: BxTRACE("<>:##### Socket ErrorCode : <A> #####<R><N>", BxARG(ErrorCode)); break;
 				}
 				switch(ErrorCode)
 				{
@@ -1177,7 +1177,7 @@ namespace BxCore
 				case S3E_SOCKET_ERR_PARAM: BxTRACE("<>:##### Socket ErrorCode : S3E_SOCKET_ERR_PARAM #####<R><N>"); break;
 				case S3E_SOCKET_ERR_SHUTDOWN: BxTRACE("<>:##### Socket ErrorCode : S3E_SOCKET_ERR_SHUTDOWN #####<R><N>"); break;
 				case S3E_SOCKET_ERR_NOTCONN: BxTRACE("<>:##### Socket ErrorCode : S3E_SOCKET_ERR_NOTCONN #####<R><N>"); break;
-				default: BxTRACE("<>:##### Socket ErrorCode : <A> #####<R><N>", BxTHROW(ErrorCode)); break;
+				default: BxTRACE("<>:##### Socket ErrorCode : <A> #####<R><N>", BxARG(ErrorCode)); break;
 				}
 				switch(ErrorCode)
 				{
@@ -1327,7 +1327,7 @@ namespace BxCore
 			void* Data;
 		public:
 			StorageClass() : Data(nullptr) {}
-			~StorageClass() {BxCore::Util::Free(Data);}
+			~StorageClass() {Data = BxCore::Util::Free(Data);}
 			void* Init(int size)
 			{
 				Data = BxCore::Util::Alloc(size);

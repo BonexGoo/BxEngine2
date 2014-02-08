@@ -56,9 +56,9 @@ public:
 		}
 
 		/*!
-		\brief 복사생성자(string, BxThrow)
+		\brief 복사생성자(string, BxArgument)
 		*/
-		explicit Parse(string RHS, const BxThrow& Args)
+		explicit Parse(string RHS, const BxArgument& Args)
 		{
 			ValidCount = 0;
 			string _tmp_ Result = BxCore::Util::Print(RHS, Args, &ValidCount);
@@ -270,11 +270,11 @@ public:
 	explicit BxString(string RHS) {operator=(RHS);}
 
 	/*!
-	\brief 복사생성자(string, BxThrow)
+	\brief 복사생성자(string, BxArgument)
 	\param RHS : 스트링맵 스크립트(식별문자는 "<>:")
 	\param Args : RHS에 쓰일 가변인자
 	*/
-	explicit BxString(string RHS, const BxThrow& Args)
+	explicit BxString(string RHS, const BxArgument& Args)
 	{
 		Format(RHS, Args);
 	}
@@ -687,7 +687,7 @@ public:
 	\param Map : 스트링맵 스크립트(식별문자는 "<>:")
 	\param Args : Map에 쓰일 가변인자
 	*/
-	void Format(string Map, const BxThrow& Args = BxThrow::zero())
+	void Format(string Map, const BxArgument& Args = BxArgument::zero())
 	{
 		Empty();
 		int ResultLength = 0;

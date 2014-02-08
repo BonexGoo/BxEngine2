@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxSingleton.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="82" bodyend="84"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxSingleton.hpp" line="82" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxSingleton.hpp" bodystart="82" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_value_1add7e7eae1ab0ab0b9b0ba4bea825b7e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxSingleton.hpp" line="85" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="85" bodyend="86"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxSingleton.hpp" line="85" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxSingleton.hpp" bodystart="85" bodyend="86"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -57,16 +57,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="226">
-        <label>BxSingleton::Element</label>
-      </node>
-      <node id="225">
-        <label>BxSingleton::Value&lt; TYPE &gt;</label>
-        <childnode refid="226" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="228">
         <label>BxSingleton::Element</label>
       </node>
@@ -75,8 +65,18 @@
         <childnode refid="228" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="230">
+        <label>BxSingleton::Element</label>
+      </node>
+      <node id="229">
+        <label>BxSingleton::Value&lt; TYPE &gt;</label>
+        <childnode refid="230" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxSingleton.hpp" line="80" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxSingleton.hpp" bodystart="79" bodyend="87"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxSingleton.hpp" line="80" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxSingleton.hpp" bodystart="79" bodyend="87"/>
     <listofallmembers>
       <member refid="class_bx_singleton_1_1_element_1abc60a323d34d493fcc4a3a0df574ff96" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>CountPtr</name></member>
       <member refid="class_bx_singleton_1_1_element_1aa7a8699afcb26df13f4136ede82a8bdd" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Element</name></member>

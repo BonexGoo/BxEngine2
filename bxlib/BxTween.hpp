@@ -5,7 +5,7 @@
 class BxTween
 {
 	// 콜백
-	typedef void (*OnPart)(const int ID, const int X, const int Y, const int Opacity, const int Motion, const id_memory Message, void* Data);
+	typedef void (*OnPart)(const int ID, const int X, const int Y, const int Opacity, const int Motion, string Message, void* Data);
 
 public:
 	BxTween() : _PartLength(0) {}
@@ -57,10 +57,8 @@ public:
 			const int MessageLength = BxUtilGlobal::LoadInt8(Resource);
 			if(0 < MessageLength)
 			{
-				const id_memory Message = BxCore::Util::Alloc(MessageLength);
-				BxCore::Util::MemCpy(BxCore::Util::GetPtr(Message), Resource, MessageLength);
+				Target->Message = BxUtilGlobal::StrCpyWithAlloc((string) Resource, MessageLength - 1);
 				Resource += MessageLength;
-				Target->Message = Message;
 			}
 			Target->AnimationLength = 0;
 			if(0 < i)
@@ -100,10 +98,8 @@ public:
 		for(int i = 0; i < _PartLength; ++i)
 		{
 			_PartBegin* Begin = (i == 0)? &_Begin : (_PartBegin*) &_Target[i - 1];
-			const id_memory Message = Begin->Message;
-			const id_memory Animation = Begin->Animation;
-			if(Message) BxCore::Util::Free(Message);
-			if(Animation) BxCore::Util::Free(Animation);
+			Begin->Message = BxUtilGlobal::StrFree(Begin->Message);
+			Begin->Animation = (_PartAnimation*) BxCore::Util::Free(Begin->Animation);
 		}
 		_Target.Reset();
 	}
@@ -122,7 +118,7 @@ public:
 				if(i == 0) continue;
 				Target->StopAnimation();
 				for(int j = 0; j < Target->AnimationLength; ++j)
-					((_PartAnimation*) BxCore::Util::GetPtr(Target->Animation))[j].ClearAnimation(false);
+					Target->Animation[j].ClearAnimation(false);
 			}
 		}
 		for(int i = 1; i < _PartLength; ++i)
@@ -141,7 +137,7 @@ public:
 		for(int i = 1; i < _PartLength; ++i)
 		{
 			_PartTarget* Target = &_Target[i - 1];
-			_PartAnimation* Animation = (_PartAnimation*) BxCore::Util::GetPtr(Target->Animation);
+			_PartAnimation* Animation = Target->Animation;
 			for(int j = Target->AnimationLength - 1; 0 <= j; --j)
 			{
 				if(!Animation[j].GetRunAnimation()) continue;
@@ -280,9 +276,9 @@ private:
 		int Position;
 		int OpacityMin;
 		int OpacityMax;
-		id_memory Message;
+		string_rw Message;
 		int AnimationLength;
-		id_memory Animation;
+		_PartAnimation* Animation;
 
 	public:
 		void Targeting(const int NumPart, const int RandKey)
@@ -295,16 +291,15 @@ private:
 			const bool IsMiddle = (18 <= Position);
 			int RateLeft = 0, RateTop = 0, RateRight = 0, RateBottom = 0;
 			// 메모리할당
-			if(Animation) BxCore::Util::Free(Animation);
 			AnimationLength = NumPart;
-			Animation = BxCore::Util::Alloc(sizeof(_PartAnimation) * AnimationLength);
-			BxCore::Util::MemSet(BxCore::Util::GetPtr(Animation), 0, sizeof(_PartAnimation) * AnimationLength);
-			id_memory Point = BxCore::Util::Alloc(sizeof(int) * AnimationLength * 2);
-			BxCore::Util::MemSet(BxCore::Util::GetPtr(Point), 0, sizeof(int) * AnimationLength * 2);
+			if(Animation) Animation = (_PartAnimation*) BxCore::Util::Free(Animation);
+			Animation = (_PartAnimation*) BxCore::Util::Alloc(sizeof(_PartAnimation) * AnimationLength);
+			BxCore::Util::MemSet(Animation, 0, sizeof(_PartAnimation) * AnimationLength);
+			int* Point = (int*) BxCore::Util::Alloc(sizeof(int) * AnimationLength * 2);
+			BxCore::Util::MemSet(Point, 0, sizeof(int) * AnimationLength * 2);
 			// 포인터화
-			_PartAnimation* AnimationPtr = (_PartAnimation*) BxCore::Util::GetPtr(Animation);
-			int* PosX = &((int*) BxCore::Util::GetPtr(Point))[0];
-			int* PosY = &((int*) BxCore::Util::GetPtr(Point))[AnimationLength];
+			int* PosX = &Point[0];
+			int* PosY = &Point[AnimationLength];
 
 			if(!IsMiddle)
 			{
@@ -395,12 +390,12 @@ private:
 			{
 				BxASSERT("BxTween", (RateRight - RateLeft + 2) != 0);
 				BxASSERT("BxTween", (RateBottom - RateTop + 2) != 0);
-				AnimationPtr[i].ResetTarget(100 <= EnableRateSum,
+				Animation[i].ResetTarget(100 <= EnableRateSum,
 					(PosX[i] - RateLeft + 1) * (TargetX2 - TargetX1 + 1) / (RateRight - RateLeft + 2) - (TargetX2 - TargetX1) / 2,
 					(PosY[i] - RateTop + 1) * (TargetY2 - TargetY1 + 1) / (RateBottom - RateTop + 2) - (TargetY2 - TargetY1) / 2);
 				EnableRateSum = (EnableRateSum % 100) + EnableRate;
 			}
-			BxCore::Util::Free(Point);
+			Point = (int*) BxCore::Util::Free(Point);
 		}
 	};
 
@@ -431,44 +426,43 @@ private:
 		void PlayAnimation(_PartBegin* PrevTarget, int MsPerFrame)
 		{
 			#define MS_TO_FRAME(A) (((A) + MsPerFrame / 2) / MsPerFrame)
-			_PartAnimation* AnimationPtr = (_PartAnimation*) BxCore::Util::GetPtr(Animation);
 			for(int i = 0, j = 0; i < AnimationLength; ++i)
 			{
-				if(!AnimationPtr[i].IsEnable)
+				if(!Animation[i].IsEnable)
 					continue;
 				// 진행
-				if(AnimationPtr[i].GetRunAnimation())
+				if(Animation[i].GetRunAnimation())
 				{
 					const int EndFrame = BxUtilGlobal::Max(1, MS_TO_FRAME(BxUtil::GetValue(WorkTimeMin, WorkTimeMax, i)));
-					const int AniFrame = ++AnimationPtr[i].AnimationFrame;
+					const int AniFrame = ++Animation[i].AnimationFrame;
 					if(AniFrame <= 0)
 					{
 						// 불투명도적용
-						const int Step = AnimationPtr[i].AnimationFrame - AnimationPtr[i].AnimationFrameBegin;
-						const int End = -AnimationPtr[i].AnimationFrameBegin;
+						const int Step = Animation[i].AnimationFrame - Animation[i].AnimationFrameBegin;
+						const int End = -Animation[i].AnimationFrameBegin;
 						switch(Waiting)
 						{
 						case 0: // 급진소멸
-							AnimationPtr[i].SetOpacity(0, 1, 1);
+							Animation[i].SetOpacity(0, 1, 1);
 							break;
 						case 1: // 완만소멸
 							if(PrevTarget->IsBegin)
-								AnimationPtr[i].SetOpacity(0, End - Step, End);
-							else AnimationPtr[i].SetOpacity(0, (Step <= End / 2)? Step : End - Step, End / 2);
+								Animation[i].SetOpacity(0, End - Step, End);
+							else Animation[i].SetOpacity(0, (Step <= End / 2)? Step : End - Step, End / 2);
 							break;
 						case 2: // 급진점화
-							AnimationPtr[i].SetOpacity(100, 1, 1);
+							Animation[i].SetOpacity(100, 1, 1);
 							break;
 						case 3: // 완만점화
 							if(PrevTarget->IsBegin)
-								AnimationPtr[i].SetOpacity(0, End - Step, End);
-							else AnimationPtr[i].SetOpacity(100, (Step <= End / 2)? Step : End - Step, End / 2);
+								Animation[i].SetOpacity(0, End - Step, End);
+							else Animation[i].SetOpacity(100, (Step <= End / 2)? Step : End - Step, End / 2);
 							break;
 						case 4: // 규칙점멸
-							AnimationPtr[i].SetOpacity(50 * BxUtilGlobal::Abs(((i + Step) % 4) - 2), 1, 1);
+							Animation[i].SetOpacity(50 * BxUtilGlobal::Abs(((i + Step) % 4) - 2), 1, 1);
 							break;
 						case 5: // 랜덤점멸
-							AnimationPtr[i].SetOpacity(50 * BxUtilGlobal::Abs((BxUtil::GetRandom(i + Step) % 4) - 2), 1, 1);
+							Animation[i].SetOpacity(50 * BxUtilGlobal::Abs((BxUtil::GetRandom(i + Step) % 4) - 2), 1, 1);
 							break;
 						}
 					}
@@ -527,32 +521,32 @@ private:
 						}
 						// 이동적용
 						BxASSERT("BxTween", EndValue != 0);
-						AnimationPtr[i].AnimationMoverX = (AnimationPtr[i].AnimationTargetX - AnimationPtr[i].MoverX)
-							* AniValue / EndValue + AnimationPtr[i].MoverX;
-						AnimationPtr[i].AnimationMoverY = (AnimationPtr[i].AnimationTargetY - AnimationPtr[i].MoverY)
-							* AniValue / EndValue + AnimationPtr[i].MoverY;
+						Animation[i].AnimationMoverX = (Animation[i].AnimationTargetX - Animation[i].MoverX)
+							* AniValue / EndValue + Animation[i].MoverX;
+						Animation[i].AnimationMoverY = (Animation[i].AnimationTargetY - Animation[i].MoverY)
+							* AniValue / EndValue + Animation[i].MoverY;
 						// 중력상황
 						if(BxUtil::GetValue(GravityMin, GravityMax, i))
 						{
-							AnimationPtr[i].AnimationGravityVector += (int)((((huge) BxUtil::GetValue(GravityMin, GravityMax, i)) << 16) * MsPerFrame / 1000);
-							AnimationPtr[i].AnimationTargetAddY += AnimationPtr[i].AnimationGravityVector;
+							Animation[i].AnimationGravityVector += (int)((((huge) BxUtil::GetValue(GravityMin, GravityMax, i)) << 16) * MsPerFrame / 1000);
+							Animation[i].AnimationTargetAddY += Animation[i].AnimationGravityVector;
 						}
 						// 바람상황
 						if(BxUtil::GetValue(WindMin, WindMax, i))
 						{
-							AnimationPtr[i].AnimationTargetAddX += (int)(((huge)(BxUtil::Sin(AnimationPtr[i].AnimationWindAngle * 1024 / 360)))
+							Animation[i].AnimationTargetAddX += (int)(((huge)(BxUtil::Sin(Animation[i].AnimationWindAngle * 1024 / 360)))
 								* BxUtil::GetValue(WindMin, WindMax, i) * MsPerFrame / 1000);
-							AnimationPtr[i].AnimationTargetAddY -= (int)(((huge)(BxUtil::Cos(AnimationPtr[i].AnimationWindAngle * 1024 / 360)))
+							Animation[i].AnimationTargetAddY -= (int)(((huge)(BxUtil::Cos(Animation[i].AnimationWindAngle * 1024 / 360)))
 								* BxUtil::GetValue(WindMin, WindMax, i) * MsPerFrame / 1000);
 						}
 						// 타겟적용
 						if(BxUtil::GetValue(GravityMin, GravityMax, i) || BxUtil::GetValue(WindMin, WindMax, i))
-							AnimationPtr[i].SetTarget((AnimationPtr[i].AnimationTargetAddX + 0x7FFF) >> 16, (AnimationPtr[i].AnimationTargetAddY + 0x7FFF) >> 16);
+							Animation[i].SetTarget((Animation[i].AnimationTargetAddX + 0x7FFF) >> 16, (Animation[i].AnimationTargetAddY + 0x7FFF) >> 16);
 						// 인력적용
 						if(Position == 19 || (Position % 9) / 3 == 2)
-							AnimationPtr[i].PullTarget(AniFrame, EndFrame);
+							Animation[i].PullTarget(AniFrame, EndFrame);
 						// 불투명도적용
-						AnimationPtr[i].SetOpacity(BxUtil::GetValue(OpacityMin, OpacityMax, i), AniFrame, EndFrame);
+						Animation[i].SetOpacity(BxUtil::GetValue(OpacityMin, OpacityMax, i), AniFrame, EndFrame);
 						// 진행패턴계산
 						if(0 < Pattern)
 						{
@@ -561,40 +555,40 @@ private:
 							switch(Pattern)
 							{
 							case 1: // 시계
-								CalcValue1 = (1024 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
+								CalcValue1 = (1024 / 2) * (Animation[i].AnimationCalcValue & 0xFF);
 								MoverAddX = FtoI(BxUtil::Sin((EndFrame - AniFrame) * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + 0x7FFF);
 								MoverAddY = FtoI(BxUtil::Cos((EndFrame - AniFrame) * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRYMin, PatternRYMax, i) + 0x7FFF);
 								break;
 							case 2: // 반시계
-								CalcValue1 = (1024 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
+								CalcValue1 = (1024 / 2) * (Animation[i].AnimationCalcValue & 0xFF);
 								MoverAddX = FtoI(BxUtil::Sin(AniFrame * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + 0x7FFF);
 								MoverAddY = FtoI(BxUtil::Cos(AniFrame * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRYMin, PatternRYMax, i) + 0x7FFF);
 								break;
 							case 3: // 지그재그
-								CalcValue1 = BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * (4 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
+								CalcValue1 = BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * (4 / 2) * (Animation[i].AnimationCalcValue & 0xFF);
 								MoverAddX = BxUtilGlobal::Abs(((AniFrame * CalcValue1 / EndFrame) % (BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4))
 									- BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 2) - BxUtil::GetValue(PatternRXMin, PatternRXMax, i);
-								CalcValue2 = BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * (4 / 4) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
+								CalcValue2 = BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * (4 / 4) * (Animation[i].AnimationCalcValue & 0xFF);
 								MoverAddY = BxUtilGlobal::Abs(((AniFrame * CalcValue2 / EndFrame) % (BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4))
 									- BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 2) - BxUtil::GetValue(PatternRYMin, PatternRYMax, i);
 								break;
 							case 4: // 나뭇잎
-								CalcValue1 = (1024 / 2) * (AnimationPtr[i].AnimationCalcValue & 0xFF);
-								CalcValue2 = AniFrame + (AnimationPtr[i].AnimationCalcValue >> 8);
+								CalcValue1 = (1024 / 2) * (Animation[i].AnimationCalcValue & 0xFF);
+								CalcValue2 = AniFrame + (Animation[i].AnimationCalcValue >> 8);
 								MoverAddX = FtoI(BxUtil::Sin(CalcValue2 * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRXMin, PatternRXMax, i) + 0x7FFF);
 								MoverAddY = BxUtilGlobal::Abs(FtoI(BxUtil::Cos(CalcValue2 * CalcValue1 / EndFrame) * BxUtil::GetValue(PatternRYMin, PatternRYMax, i) + 0x7FFF));
 								break;
 							case 5: // 워프
-								CalcValue1 = ((AnimationPtr[i].AnimationCalcValue >> 8) & 0xF) + 0x7;
+								CalcValue1 = ((Animation[i].AnimationCalcValue >> 8) & 0xF) + 0x7;
 								BxASSERT("BxTween", CalcValue1 != 0);
 								CalcValue2 = AniFrame + AniFrame / CalcValue1 * CalcValue1;
-								CalcValue1 = BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4 * (AnimationPtr[i].AnimationCalcValue & 0xFF);
+								CalcValue1 = BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4 * (Animation[i].AnimationCalcValue & 0xFF);
 								MoverAddX = BxUtilGlobal::Abs(((CalcValue2 * CalcValue1 / (EndFrame * 2)) % (BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 4))
 									- BxUtil::GetValue(PatternRXMin, PatternRXMax, i) * 2) - BxUtil::GetValue(PatternRXMin, PatternRXMax, i);
-								CalcValue1 = ((AnimationPtr[i].AnimationCalcValue >> 12) & 0xF) + 0x7;
+								CalcValue1 = ((Animation[i].AnimationCalcValue >> 12) & 0xF) + 0x7;
 								BxASSERT("BxTween", CalcValue1 != 0);
 								CalcValue2 = AniFrame + AniFrame / CalcValue1 * CalcValue1;
-								CalcValue1 = BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4 * (AnimationPtr[i].AnimationCalcValue & 0xFF);
+								CalcValue1 = BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4 * (Animation[i].AnimationCalcValue & 0xFF);
 								MoverAddY = BxUtilGlobal::Abs(((CalcValue2 * CalcValue1 / (EndFrame * 2)) % (BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 4))
 									- BxUtil::GetValue(PatternRYMin, PatternRYMax, i) * 2) - BxUtil::GetValue(PatternRYMin, PatternRYMax, i);
 								break;
@@ -602,31 +596,31 @@ private:
 							// 회전
 							if(Pattern == 4)
 							{
-								AnimationPtr[i].AnimationMoverAddX = MoverAddX;
-								AnimationPtr[i].AnimationMoverAddY = MoverAddY;
+								Animation[i].AnimationMoverAddX = MoverAddX;
+								Animation[i].AnimationMoverAddY = MoverAddY;
 							}
 							else
 							{
-								const int Angle = (BxUtil::GetAngle1024(AnimationPtr[i].AnimationTargetX - AnimationPtr[i].AnimationMoverX,
-									AnimationPtr[i].AnimationTargetY - AnimationPtr[i].AnimationMoverY) + 256) % 1024;
-								AnimationPtr[i].AnimationMoverAddX = FtoI(MoverAddX * BxUtil::Cos(Angle) - MoverAddY * BxUtil::Sin(Angle) + 0x7FFF);
-								AnimationPtr[i].AnimationMoverAddY = FtoI(MoverAddY * BxUtil::Cos(Angle) + MoverAddX * BxUtil::Sin(Angle) + 0x7FFF);
+								const int Angle = (BxUtil::GetAngle1024(Animation[i].AnimationTargetX - Animation[i].AnimationMoverX,
+									Animation[i].AnimationTargetY - Animation[i].AnimationMoverY) + 256) % 1024;
+								Animation[i].AnimationMoverAddX = FtoI(MoverAddX * BxUtil::Cos(Angle) - MoverAddY * BxUtil::Sin(Angle) + 0x7FFF);
+								Animation[i].AnimationMoverAddY = FtoI(MoverAddY * BxUtil::Cos(Angle) + MoverAddX * BxUtil::Sin(Angle) + 0x7FFF);
 							}
 							// 축소
 							CalcValue1 = EndFrame * 4;
 							CalcValue2 = EndFrame - BxUtilGlobal::Abs(AniFrame * 2 - EndFrame);
 							CalcValue2 = BxUtilGlobal::Min(CalcValue2 * CalcValue2, CalcValue1);
 							BxASSERT("BxTween", CalcValue1 != 0);
-							AnimationPtr[i].AnimationMoverAddX = AnimationPtr[i].AnimationMoverAddX * CalcValue2 / CalcValue1;
-							AnimationPtr[i].AnimationMoverAddY = AnimationPtr[i].AnimationMoverAddY * CalcValue2 / CalcValue1;
+							Animation[i].AnimationMoverAddX = Animation[i].AnimationMoverAddX * CalcValue2 / CalcValue1;
+							Animation[i].AnimationMoverAddY = Animation[i].AnimationMoverAddY * CalcValue2 / CalcValue1;
 						}
 					}
-					else AnimationPtr[i].ClearAnimation(true);
+					else Animation[i].ClearAnimation(true);
 				}
 				// 신규
-				else if(PrevTarget && !AnimationPtr[i].GetEndAnimation())
+				else if(PrevTarget && !Animation[i].GetEndAnimation())
 				{
-					_PartAnimation* PrevAnimationPtr = (_PartAnimation*) BxCore::Util::GetPtr(PrevTarget->Animation);
+					_PartAnimation* PrevAnimationPtr = PrevTarget->Animation;
 					for(j = i; 0 <= j; --j)
 						if(PrevAnimationPtr[j].IsEnable)
 							break;
@@ -646,7 +640,7 @@ private:
 						}
 						// 신규초기화
 						CurrentlyDelay += BxUtil::GetValue(DelayMin, DelayMax, i);
-						AnimationPtr[i].ResetAnimation(PrevTarget->IsBegin, BxUtil::GetValue(PrevTarget->OpacityMin, PrevTarget->OpacityMax, j),
+						Animation[i].ResetAnimation(PrevTarget->IsBegin, BxUtil::GetValue(PrevTarget->OpacityMin, PrevTarget->OpacityMax, j),
 							PrevAnimationPtr[j].AnimationTargetX + TargetDistX,
 							PrevAnimationPtr[j].AnimationTargetY + TargetDistY,
 							CalcValue, (BxUtil::GetValue(WindAngleMin, WindAngleMax, i) == -1)?

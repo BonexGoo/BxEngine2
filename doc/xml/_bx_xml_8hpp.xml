@@ -5,86 +5,81 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="594">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="595" relation="include">
+      <node id="569">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
         </childnode>
       </node>
-      <node id="591">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="592" relation="include">
-        </childnode>
-        <childnode refid="595" relation="include">
+      <node id="565">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="566" relation="include">
         </childnode>
       </node>
-      <node id="589">
+      <node id="561">
         <label>BxXml.hpp</label>
         <link refid="BxXml.hpp"/>
-        <childnode refid="590" relation="include">
+        <childnode refid="562" relation="include">
         </childnode>
       </node>
-      <node id="599">
+      <node id="570">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="596" relation="include">
+        <childnode refid="568" relation="include">
         </childnode>
       </node>
-      <node id="596">
+      <node id="564">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="565" relation="include">
+        </childnode>
+      </node>
+      <node id="568">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="590">
+      <node id="562">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="591" relation="include">
+        <childnode refid="563" relation="include">
         </childnode>
-        <childnode refid="598" relation="include">
+        <childnode refid="569" relation="include">
         </childnode>
-        <childnode refid="599" relation="include">
-        </childnode>
-      </node>
-      <node id="593">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="594" relation="include">
+        <childnode refid="570" relation="include">
         </childnode>
       </node>
-      <node id="595">
+      <node id="566">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="567" relation="include">
+        </childnode>
+      </node>
+      <node id="567">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="596" relation="include">
-        </childnode>
-        <childnode refid="597" relation="include">
+        <childnode refid="568" relation="include">
         </childnode>
       </node>
-      <node id="597">
-        <label>stdio.h</label>
-      </node>
-      <node id="598">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="592" relation="include">
+      <node id="563">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="564" relation="include">
         </childnode>
-        <childnode refid="599" relation="include">
-        </childnode>
-      </node>
-      <node id="592">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="593" relation="include">
+        <childnode refid="567" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="600">
+      <node id="571">
         <label>BxXml.hpp</label>
         <link refid="BxXml.hpp"/>
-        <childnode refid="601" relation="include">
+        <childnode refid="572" relation="include">
         </childnode>
       </node>
-      <node id="601">
+      <node id="572">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
@@ -114,7 +109,7 @@
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxXml&quot;</highlight><highlight class="normal">,<sp/>Mode<sp/>==<sp/>DEFINE);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbName[attbID]<sp/>=<sp/>attbName;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbValue[attbID].Format(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>intDefault);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tag[tagID].AttbValue[attbID].Format(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(intDefault));</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefineAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>attbName,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>strDefault)</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -270,7 +265,7 @@
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TagStack.Length())</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Unit&amp;<sp/>OneTag<sp/>=<sp/>TagStack[END];</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneTag.AttbValue[attbID].Format(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>intValue);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OneTag.AttbValue[attbID].Format(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(intValue));</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteAttb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attbID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>strValue)</highlight></codeline>
@@ -459,20 +454,20 @@
 <codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OPEN:</highlight></codeline>
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OPENCLOSE:</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(TagName));</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(TagName));</highlight></codeline>
 <codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
 <codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>AttbName.Length();<sp/>++i)</highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:<sp/>&lt;A&gt;=&lt;DQ&gt;&lt;A&gt;&lt;DQ&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(AttbName[i],<sp/>AttbValue[i]));</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:<sp/>&lt;A&gt;=&lt;DQ&gt;&lt;A&gt;&lt;DQ&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(AttbName[i],<sp/>AttbValue[i]));</highlight></codeline>
 <codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
 <codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW((state<sp/>==<sp/>OPEN)?<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;/&gt;&quot;</highlight><highlight class="normal">,<sp/>(Content.GetLength())?<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Content<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG((state<sp/>==<sp/>OPEN)?<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;/&gt;&quot;</highlight><highlight class="normal">,<sp/>(Content.GetLength())?<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Content<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
 <codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CLOSE:</highlight></codeline>
 <codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;FS&gt;&lt;A&gt;&gt;&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(TagName));</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temp.<ref refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kindref="member" tooltip="스트링구성 ">Format</ref>(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;FS&gt;&lt;A&gt;&gt;&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(TagName));</highlight></codeline>
 <codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sum<sp/>+=<sp/>Temp;</highlight></codeline>
 <codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -515,6 +510,6 @@
 <codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsWriting;</highlight></codeline>
 <codeline lineno="419"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxXml.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxXml.hpp"/>
   </compounddef>
 </doxygen>

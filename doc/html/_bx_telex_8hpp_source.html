@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿#pragma once</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;BxSingleton.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;BxThrow.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;BxArgument.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;BxMemory.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;BxVar.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;BxVarMap.hpp&gt;</span></div>
@@ -196,16 +196,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        PeerName = <a class="code" href="namespace_bx_util_global.html#a33788c5de2f0a7b6e38324b5ecd7ae7f" title="스트링 해제 ">BxUtilGlobal::StrFree</a>(PeerName);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// 인스턴스관리</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">public</span>: global_func <a class="code" href="class_bx_telex.html" title="HQ서버연동 전보시스템 ">BxTelex</a>* Create(<span class="keywordtype">string</span> projectname, <span class="keywordtype">string</span> peername, <span class="keyword">const</span> <a class="code" href="class_bx_throw.html" title="가변인자 제공 ">BxThrow</a>&amp; reports, <span class="keyword">const</span> <a class="code" href="class_bx_throw.html" title="가변인자 제공 ">BxThrow</a>&amp; commands, UpdateCommandCB cb, <span class="keywordtype">void</span>* cbdata)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">public</span>: global_func <a class="code" href="class_bx_telex.html" title="HQ서버연동 전보시스템 ">BxTelex</a>* Create(<span class="keywordtype">string</span> projectname, <span class="keywordtype">string</span> peername, <span class="keyword">const</span> <a class="code" href="class_bx_argument.html" title="가변인자 제공 ">BxArgument</a>&amp; reports, <span class="keyword">const</span> <a class="code" href="class_bx_argument.html" title="가변인자 제공 ">BxArgument</a>&amp; commands, UpdateCommandCB cb, <span class="keywordtype">void</span>* cbdata)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        global_data <span class="keywordtype">int</span> LastTelexID = 0;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="class_bx_telex.html" title="HQ서버연동 전보시스템 ">BxTelex</a>* Result = BxNew(<a class="code" href="class_bx_telex.html" title="HQ서버연동 전보시스템 ">BxTelex</a>);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        Result-&gt;TelexID = --LastTelexID;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        Result-&gt;ProjectName = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(projectname);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        Result-&gt;PeerName = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(peername);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; reports.<a class="code" href="class_bx_throw.html#a7704438cd213692aa50b8adbb547cfe9" title="데이터길이 가져오기 ">Length</a>(); ++i)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; reports.<a class="code" href="class_bx_argument.html#ae96cbca255ac73e912a23625e9eb23d5" title="데이터길이 가져오기 ">Length</a>(); ++i)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="class_bx_telex_1_1_report.html">Report</a>** OneReport = reports.<a class="code" href="class_bx_throw.html#aa501b1854bd258ec7263fc6d7e7bb6be" title="데이터 접근하기 ">Access</a>&lt;<a class="code" href="class_bx_telex_1_1_report.html">Report</a>*&gt;(i);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="class_bx_telex_1_1_report.html">Report</a>** OneReport = reports.<a class="code" href="class_bx_argument.html#a35e8e0a2c2ee8d5b344c513aa6dc723b" title="데이터 접근하기 ">Access</a>&lt;<a class="code" href="class_bx_telex_1_1_report.html">Report</a>*&gt;(i);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxTelex&lt;reports파라미터 타입매칭 실패&gt;&quot;</span>, OneReport);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">if</span>(OneReport)</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            {</div>
@@ -213,9 +213,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                Result-&gt;ReportIDs[LAST] = (uint) *OneReport;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; commands.<a class="code" href="class_bx_throw.html#a7704438cd213692aa50b8adbb547cfe9" title="데이터길이 가져오기 ">Length</a>(); ++i)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; commands.<a class="code" href="class_bx_argument.html#ae96cbca255ac73e912a23625e9eb23d5" title="데이터길이 가져오기 ">Length</a>(); ++i)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="class_bx_telex_1_1_command.html">Command</a>** OneCommand = commands.<a class="code" href="class_bx_throw.html#aa501b1854bd258ec7263fc6d7e7bb6be" title="데이터 접근하기 ">Access</a>&lt;<a class="code" href="class_bx_telex_1_1_command.html">Command</a>*&gt;(i);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="class_bx_telex_1_1_command.html">Command</a>** OneCommand = commands.<a class="code" href="class_bx_argument.html#a35e8e0a2c2ee8d5b344c513aa6dc723b" title="데이터 접근하기 ">Access</a>&lt;<a class="code" href="class_bx_telex_1_1_command.html">Command</a>*&gt;(i);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            BxASSERT(<span class="stringliteral">&quot;BxTelex&lt;commands파라미터 타입매칭 실패&gt;&quot;</span>, OneCommand);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">if</span>(OneCommand)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            {</div>
@@ -580,7 +580,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:06 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

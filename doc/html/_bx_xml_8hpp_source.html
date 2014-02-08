@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        BxASSERT(<span class="stringliteral">&quot;BxXml&quot;</span>, Mode == DEFINE);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        Tag[tagID].AttbName[attbID] = attbName;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Tag[tagID].AttbValue[attbID].Format(<span class="stringliteral">&quot;%d&quot;</span>, intDefault);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Tag[tagID].AttbValue[attbID].Format(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&quot;</span>, BxARG(intDefault));</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> DefineAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> tagID, <span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">string</span> attbName, <span class="keywordtype">string</span> strDefault)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
@@ -263,7 +263,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span>(TagStack.Length())</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            Unit&amp; OneTag = TagStack[END];</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            OneTag.AttbValue[attbID].Format(<span class="stringliteral">&quot;%d&quot;</span>, intValue);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            OneTag.AttbValue[attbID].Format(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&quot;</span>, BxARG(intValue));</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        }</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> WriteAttb(<span class="keyword">const</span> <span class="keywordtype">int</span> attbID, <span class="keywordtype">string</span> strValue)</div>
@@ -452,20 +452,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <span class="keywordflow">case</span> OPEN:</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">case</span> OPENCLOSE:</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;A&gt;&quot;</span>, BxTHROW(TagName));</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;A&gt;&quot;</span>, BxARG(TagName));</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                    Sum += Temp;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; AttbName.Length(); ++i)</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                    {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;: &lt;A&gt;=&lt;DQ&gt;&lt;A&gt;&lt;DQ&gt;&quot;</span>, BxTHROW(AttbName[i], AttbValue[i]));</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                        Temp.<a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;: &lt;A&gt;=&lt;DQ&gt;&lt;A&gt;&lt;DQ&gt;&quot;</span>, BxARG(AttbName[i], AttbValue[i]));</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                        Sum += Temp;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                    }</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;A&gt;&quot;</span>, BxTHROW((state == OPEN)? <span class="stringliteral">&quot;&gt;&quot;</span> : <span class="stringliteral">&quot;/&gt;&quot;</span>, (Content.GetLength())? (<span class="keywordtype">string</span>) Content : <span class="stringliteral">&quot;\r\n&quot;</span>));</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;A&gt;&quot;</span>, BxARG((state == OPEN)? <span class="stringliteral">&quot;&gt;&quot;</span> : <span class="stringliteral">&quot;/&gt;&quot;</span>, (Content.GetLength())? (<span class="keywordtype">string</span>) Content : <span class="stringliteral">&quot;\r\n&quot;</span>));</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                    Sum += Temp;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                }</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordflow">case</span> CLOSE:</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;FS&gt;&lt;A&gt;&gt;&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(TagName));</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    Temp.<a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="stringliteral">&quot;&lt;&gt;:&lt;&lt;&lt;FS&gt;&lt;A&gt;&gt;&gt;&lt;R&gt;&lt;N&gt;&quot;</span>, BxARG(TagName));</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    Sum += Temp;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                <span class="keywordflow">break</span>;</div>
@@ -510,7 +510,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:46 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:07 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

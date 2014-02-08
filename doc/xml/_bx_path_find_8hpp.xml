@@ -6,83 +6,78 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
     <incdepgraph>
-      <node id="333">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="334" relation="include">
-        </childnode>
-      </node>
-      <node id="330">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="331" relation="include">
-        </childnode>
-        <childnode refid="337" relation="include">
-        </childnode>
-      </node>
-      <node id="338">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="335" relation="include">
-        </childnode>
-      </node>
-      <node id="335">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="329">
-        <label>BxPathFind.hpp</label>
-        <link refid="BxPathFind.hpp"/>
-        <childnode refid="330" relation="include">
-        </childnode>
-        <childnode refid="337" relation="include">
-        </childnode>
-        <childnode refid="339" relation="include">
-        </childnode>
-      </node>
-      <node id="332">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="333" relation="include">
-        </childnode>
-      </node>
-      <node id="334">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="335" relation="include">
-        </childnode>
-        <childnode refid="336" relation="include">
-        </childnode>
-      </node>
-      <node id="336">
-        <label>stdio.h</label>
-      </node>
-      <node id="337">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="331" relation="include">
-        </childnode>
-        <childnode refid="338" relation="include">
-        </childnode>
-      </node>
-      <node id="339">
+      <node id="349">
         <label>BxDraw.hpp</label>
         <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="337" relation="include">
+        <childnode refid="347" relation="include">
         </childnode>
-        <childnode refid="340" relation="include">
-        </childnode>
-      </node>
-      <node id="331">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="332" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
       </node>
       <node id="340">
+        <label>BxPathFind.hpp</label>
+        <link refid="BxPathFind.hpp"/>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
         <label>BxExpress.hpp</label>
         <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="335" relation="include">
+        <childnode refid="346" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="344">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="346" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -482,7 +477,7 @@
 <codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxDelete(hurdle);</highlight></codeline>
 <codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="385"><highlight class="normal"></highlight></codeline>
-<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/>polygon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBoundLine<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Add(<ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/>polygon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBoundLine<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;Object가<sp/>추가된<sp/>Hurdle은<sp/>Add를<sp/>지원하지<sp/>않습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ObjectBeginID<sp/>==<sp/>-1);</highlight></codeline>
 <codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structrect" kindref="compound" tooltip="rect구조체 : l, t, r, b ">rect</ref><sp/>Bound<sp/>=<sp/>{polygon.pt[0].x,<sp/>polygon.pt[0].y,<sp/>polygon.pt[0].x,<sp/>polygon.pt[0].y};</highlight></codeline>
@@ -712,6 +707,6 @@
 <codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="614"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxPathFind.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxPathFind.hpp"/>
   </compounddef>
 </doxygen>

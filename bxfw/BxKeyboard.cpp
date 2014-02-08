@@ -228,7 +228,7 @@ void OnRender(BxKeyboard& Data, BxDraw& Draw)
 		const int iY = BeginY + ButtonH * ButtonY[i];
 		const int iW = RateX * ButtonW[i];
 		const int iH = ButtonH;
-		BxTRY(Draw, CLIP(XYWH(iX + Data.UIPos.x, iY + Data.UIPos.y, iW, iH)), BxString::Parse("<>:KEY-<A:02>", BxTHROW(i)))
+		BxTRY(Draw, CLIP(XYWH(iX + Data.UIPos.x, iY + Data.UIPos.y, iW, iH)), BxString::Parse("<>:KEY-<A:02>", BxARG(i)))
 		{
 			BxTRY(Draw, CLIP(XYWH(Gap, Gap, Draw.Width() - Gap * 2, Draw.Height() - Gap * 2)))
 			{

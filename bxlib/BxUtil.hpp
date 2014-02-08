@@ -196,8 +196,7 @@ namespace BxUtilGlobal
 	*/
 	static string_rw StrFree(string_rw AllocedString)
 	{
-		BxCore::Util::Free(AllocedString);
-		return nullptr;
+		return (string_rw) BxCore::Util::Free(AllocedString);
 	}
 
 	/*!
@@ -643,7 +642,7 @@ namespace BxUtilGlobal
 	\param Resource : uint16으로 스트링사이즈를 얻은 다음, 해당 스트링을 로드
 	\return 로드한 스트링
 	*/
-	static inline string LoadString(byte*& Resource)
+	static inline string_rw LoadString(byte*& Resource)
 	{
 		int Length = LoadInt16(Resource);
 		string_rw Chars = (string_rw) StrAlloc(Length);
@@ -660,7 +659,7 @@ namespace BxUtilGlobal
 	\param ... : 상수값들
 	*/
 	template<typename TYPE>
-	static inline void SetArray(TYPE* Dst, const BxThrow& Src)
+	static inline void SetArray(TYPE* Dst, const BxArgument& Src)
 	{
 		for(int i = 0, iend = Src.Length(); i < iend; ++i)
 			Dst[i] = *Src.Access<TYPE>(i);

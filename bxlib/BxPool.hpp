@@ -11,8 +11,6 @@ namespace BxCore
 }
 /// @endcond
 
-#include <stdio.h>/////////////////////////////////////////////////////////////////////////////////
-
 //! \brief BxPool관련 글로벌함수
 namespace BxPoolGlobal
 {

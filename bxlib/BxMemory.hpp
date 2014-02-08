@@ -226,7 +226,7 @@
 						FreeMethod() = (FreeType) BxCore::Library::Link(DLLHandle(), "BxFree");
 						return;
 					}
-					else BxCore::Util::Free(Pool);
+					else Pool = BxCore::Util::Free(Pool);
 				}
 			#endif
 			if(DLLHandle() != nullptr)

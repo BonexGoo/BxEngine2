@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -207,7 +207,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keyword">typedef</span> void (*FreeType)(<span class="keyword">const</span> <span class="keywordtype">void</span>* ptr, <span class="keywordtype">int</span> type);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        global_func <span class="keyword">inline</span> LogType&amp; LogMethod() {global_data LogType Log = BeginLog; <span class="keywordflow">return</span> Log;}</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        global_func <span class="keyword">inline</span> MakeType&amp; MakeMethod() {global_data MakeType Make = BeginMake; <span class="keywordflow">return</span> Make;}</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        global_func <span class="keyword">inline</span> FreeType&amp; FreeMethod() {global_data FreeType <a class="code" href="namespace_bx_core_1_1_util.html#abe79bf4d20f42ce940b4d4e7d58b7a1d" title="메모리반환 ">Free</a> = BeginFree; <span class="keywordflow">return</span> Free;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        global_func <span class="keyword">inline</span> FreeType&amp; FreeMethod() {global_data FreeType <a class="code" href="namespace_bx_core_1_1_util.html#a56c1aaa6d7106d36c67c88a5e3b6a6f1" title="메모리반환 ">Free</a> = BeginFree; <span class="keywordflow">return</span> Free;}</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        global_func <span class="keywordtype">int</span> BeginLog(<span class="keywordtype">int</span> type, <span class="keywordtype">string</span> file, <span class="keyword">const</span> <span class="keywordtype">int</span> line, <span class="keywordtype">string</span> func)</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            InitMemory();</div>
@@ -246,7 +246,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        FreeMethod() = (FreeType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70" title="함수연결 ">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxFree&quot;</span>);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <span class="keywordflow">else</span> <a class="code" href="namespace_bx_core_1_1_util.html#abe79bf4d20f42ce940b4d4e7d58b7a1d" title="메모리반환 ">BxCore::Util::Free</a>(Pool);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <span class="keywordflow">else</span> Pool = <a class="code" href="namespace_bx_core_1_1_util.html#a56c1aaa6d7106d36c67c88a5e3b6a6f1" title="메모리반환 ">BxCore::Util::Free</a>(Pool);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">            #endif</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span>(DLLHandle() != <span class="keyword">nullptr</span>)</div>
@@ -592,7 +592,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="preprocessor"></span></div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:05 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

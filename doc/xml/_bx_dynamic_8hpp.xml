@@ -6,67 +6,62 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="227">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="219" relation="include">
-        </childnode>
-      </node>
-      <node id="220">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="221" relation="include">
-        </childnode>
-      </node>
-      <node id="226">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="222" relation="include">
-        </childnode>
-      </node>
-      <node id="218">
+      <node id="235">
         <label>BxDynamic.hpp</label>
         <link refid="BxDynamic.hpp"/>
-        <childnode refid="219" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
       </node>
-      <node id="222">
+      <node id="240">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="219">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="220" relation="include">
+      <node id="237">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="238" relation="include">
         </childnode>
       </node>
-      <node id="221">
+      <node id="238">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="222" relation="include">
-        </childnode>
-        <childnode refid="223" relation="include">
-        </childnode>
-      </node>
-      <node id="223">
-        <label>stdio.h</label>
-      </node>
-      <node id="224">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="225" relation="include">
-        </childnode>
-        <childnode refid="226" relation="include">
-        </childnode>
-      </node>
-      <node id="225">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="219" relation="include">
+        <childnode refid="239" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -337,7 +332,7 @@
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>Resource::BinderBegin(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>CachePoolName);</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>ParentBinder;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>callback_serialize<sp/>ParamCB;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ParamComment;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/>string_rw<sp/>ParamComment;<sp/></highlight><highlight class="comment">//<sp/>MemberData</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>Parent)<sp/>:<sp/>ParentBinder(Parent),<sp/>ParamCB(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),<sp/>ParamComment(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>()<sp/>{ResetData();}</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Pool*<sp/>New(Pool*<sp/>Parent)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BxNew_Param(<ref refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kindref="compound">LinkPool</ref>,<sp/>(<ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*)<sp/>Parent);}</highlight></codeline>
@@ -417,6 +412,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxDynamic.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

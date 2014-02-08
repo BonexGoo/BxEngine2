@@ -13,141 +13,136 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="186">
+      <node id="204">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="175" relation="include">
+        <childnode refid="195" relation="include">
         </childnode>
       </node>
-      <node id="176">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="177" relation="include">
+      <node id="195">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="196" relation="include">
         </childnode>
       </node>
-      <node id="170">
+      <node id="190">
         <label>BxCoreImpl.hpp</label>
         <link refid="_bx_core_impl_8hpp_source"/>
-        <childnode refid="171" relation="include">
+        <childnode refid="191" relation="include">
         </childnode>
       </node>
-      <node id="173">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="174" relation="include">
-        </childnode>
-        <childnode refid="177" relation="include">
-        </childnode>
-      </node>
-      <node id="169">
-        <label>BxCoreImpl.cpp</label>
-        <link refid="BxCoreImpl.cpp"/>
-        <childnode refid="170" relation="include">
-        </childnode>
-        <childnode refid="175" relation="include">
-        </childnode>
-        <childnode refid="182" relation="include">
-        </childnode>
-        <childnode refid="183" relation="include">
-        </childnode>
-        <childnode refid="171" relation="include">
-        </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
-        <childnode refid="184" relation="include">
-        </childnode>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="172" relation="include">
-        </childnode>
-        <childnode refid="186" relation="include">
-        </childnode>
-      </node>
-      <node id="184">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="172" relation="include">
-        </childnode>
-        <childnode refid="185" relation="include">
-        </childnode>
-      </node>
-      <node id="181">
+      <node id="200">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="178" relation="include">
+        <childnode refid="198" relation="include">
         </childnode>
       </node>
-      <node id="178">
+      <node id="194">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="172">
+      <node id="192">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="173" relation="include">
+        <childnode refid="193" relation="include">
         </childnode>
-        <childnode refid="180" relation="include">
+        <childnode refid="199" relation="include">
         </childnode>
-        <childnode refid="181" relation="include">
-        </childnode>
-      </node>
-      <node id="175">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="176" relation="include">
+        <childnode refid="200" relation="include">
         </childnode>
       </node>
-      <node id="177">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="178" relation="include">
+      <node id="189">
+        <label>BxCoreImpl.cpp</label>
+        <link refid="BxCoreImpl.cpp"/>
+        <childnode refid="190" relation="include">
         </childnode>
-        <childnode refid="179" relation="include">
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
         </childnode>
       </node>
-      <node id="182">
+      <node id="196">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
         <label>BxAutoBuffer.hpp</label>
         <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="175" relation="include">
+        <childnode refid="195" relation="include">
         </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
-      </node>
-      <node id="179">
-        <label>stdio.h</label>
-      </node>
-      <node id="180">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="174" relation="include">
-        </childnode>
-        <childnode refid="181" relation="include">
+        <childnode refid="194" relation="include">
         </childnode>
       </node>
-      <node id="171">
+      <node id="191">
         <label>BxKeyword.hpp</label>
         <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="172" relation="include">
+        <childnode refid="192" relation="include">
         </childnode>
       </node>
-      <node id="185">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="183" relation="include">
+      <node id="197">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="198" relation="include">
         </childnode>
       </node>
-      <node id="174">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="175" relation="include">
+      <node id="193">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
         </childnode>
       </node>
-      <node id="183">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="178" relation="include">
+      <node id="203">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -364,7 +359,7 @@
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Util</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_util_1a39339febd9159aca9926f2a400bb0617" kindref="member" tooltip="스트링구성 ">Print</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>args,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>length)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_util_1acc00b7e6b5a850983733ca189777d3a7" kindref="member" tooltip="스트링구성 ">Print</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>args,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>length)</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::Util::Print&lt;스트링맵의<sp/>형식을<sp/>지키지<sp/>않았습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>map[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&lt;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>map[1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&gt;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>map[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>결과버퍼사이즈</highlight><highlight class="normal"></highlight></codeline>
@@ -390,13 +385,13 @@
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(*(map++))</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::Util::Print&lt;참조할<sp/>인수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;<sp/>args.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>());</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>args.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>())</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::Util::Print&lt;참조할<sp/>인수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/>0<sp/>&lt;<sp/>args.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>());</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>args.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>())</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>인수매칭</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>SubMap<sp/>=<sp/>map;</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(*SubMap<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>*SubMap<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;&gt;&apos;</highlight><highlight class="normal">)<sp/>++SubMap;</highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ArgID<sp/>=<sp/>((SubMap<sp/>-<sp/>map)?<sp/><ref refid="namespace_bx_util_global_1a9d45cf5f144f0aaa40fa169feb915ea1" kindref="member" tooltip="스트링을 정수로 변환 ">BxUtilGlobal::AtoI</ref>(map,<sp/>SubMap<sp/>-<sp/>map)<sp/>:<sp/>LastArgID)<sp/>%<sp/>args.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ArgID<sp/>=<sp/>((SubMap<sp/>-<sp/>map)?<sp/><ref refid="namespace_bx_util_global_1a9d45cf5f144f0aaa40fa169feb915ea1" kindref="member" tooltip="스트링을 정수로 변환 ">BxUtilGlobal::AtoI</ref>(map,<sp/>SubMap<sp/>-<sp/>map)<sp/>:<sp/>LastArgID)<sp/>%<sp/>args.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>공간제약</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>SpaceCode[2]<sp/>=<sp/>{</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">};</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SpaceSize[2]<sp/>=<sp/>{-1,<sp/>-1};</highlight></codeline>
@@ -422,22 +417,22 @@
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ArgData<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ArgString[2]<sp/>=<sp/>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ArgStringLength[2]<sp/>=<sp/>{0,<sp/>0};</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>ArgData;</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1ae93b9c22557509ab724aaebb7877f15e" kindref="member" tooltip="정수를 스트링으로 변환 ">BxUtilGlobal::ItoA</ref>(*((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)<sp/>ArgData));</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1ae93b9c22557509ab724aaebb7877f15e" kindref="member" tooltip="정수를 스트링으로 변환 ">BxUtilGlobal::ItoA</ref>(*((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)<sp/>ArgData));</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1ae93b9c22557509ab724aaebb7877f15e" kindref="member" tooltip="정수를 스트링으로 변환 ">BxUtilGlobal::ItoA</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>*((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*)<sp/>ArgData));</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
@@ -453,7 +448,7 @@
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[1]<sp/>=<sp/>CipherString;</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[1]<sp/>=<sp/>CipherFocus<sp/>-<sp/>CipherString;</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1ae93b9c22557509ab724aaebb7877f15e" kindref="member" tooltip="정수를 스트링으로 변환 ">BxUtilGlobal::ItoA</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>*((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<sp/>ArgData));</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
@@ -469,39 +464,39 @@
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[1]<sp/>=<sp/>CipherString;</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[1]<sp/>=<sp/>CipherFocus<sp/>-<sp/>CipherString;</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;(ArgID))</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/>(string)<sp/>ArgData;<sp/></highlight><highlight class="comment">//<sp/>특수처리</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*&gt;(ArgID))</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*&gt;(ArgID))</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/>*((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**)<sp/>ArgData);</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>&gt;(ArgID))</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>&gt;(ArgID))</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/>(string)<sp/>*((<ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref>*)<sp/>ArgData);</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r" kindref="compound">THROW_STR_UPPER</ref>&gt;(ArgID))</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_a_r_g___s_t_r___u_p_p_e_r" kindref="compound">ARG_STR_UPPER</ref>&gt;(ArgID))</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a2aaf81ab8c431009a2f6d9f095c70e40" kindref="member" tooltip="스트링을 대소문자 스트링으로 변환 ">BxUtilGlobal::AtoA</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>((<ref refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r" kindref="compound">THROW_STR_UPPER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a2aaf81ab8c431009a2f6d9f095c70e40" kindref="member" tooltip="스트링을 대소문자 스트링으로 변환 ">BxUtilGlobal::AtoA</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>((<ref refid="class_a_r_g___s_t_r___u_p_p_e_r" kindref="compound">ARG_STR_UPPER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r" kindref="compound">THROW_STR_LOWER</ref>&gt;(ArgID))</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_a_r_g___s_t_r___l_o_w_e_r" kindref="compound">ARG_STR_LOWER</ref>&gt;(ArgID))</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a2aaf81ab8c431009a2f6d9f095c70e40" kindref="member" tooltip="스트링을 대소문자 스트링으로 변환 ">BxUtilGlobal::AtoA</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>((<ref refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r" kindref="compound">THROW_STR_LOWER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a2aaf81ab8c431009a2f6d9f095c70e40" kindref="member" tooltip="스트링을 대소문자 스트링으로 변환 ">BxUtilGlobal::AtoA</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>((<ref refid="class_a_r_g___s_t_r___l_o_w_e_r" kindref="compound">ARG_STR_LOWER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kindref="compound">THROW_HEX_UPPER</ref>&gt;(ArgID))</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_a_r_g___h_e_x___u_p_p_e_r" kindref="compound">ARG_HEX_UPPER</ref>&gt;(ArgID))</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a159f4e68b9dc0b952782037990be93c2" kindref="member" tooltip="양수를 헥사덤프로 변환 ">BxUtilGlobal::ItoH</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>((<ref refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kindref="compound">THROW_HEX_UPPER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a159f4e68b9dc0b952782037990be93c2" kindref="member" tooltip="양수를 헥사덤프로 변환 ">BxUtilGlobal::ItoH</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>((<ref refid="class_a_r_g___h_e_x___u_p_p_e_r" kindref="compound">ARG_HEX_UPPER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r" kindref="compound">THROW_HEX_LOWER</ref>&gt;(ArgID))</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ArgData<sp/>=<sp/>args.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_a_r_g___h_e_x___l_o_w_e_r" kindref="compound">ARG_HEX_LOWER</ref>&gt;(ArgID))</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a159f4e68b9dc0b952782037990be93c2" kindref="member" tooltip="양수를 헥사덤프로 변환 ">BxUtilGlobal::ItoH</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>((<ref refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r" kindref="compound">THROW_HEX_LOWER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgString[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a159f4e68b9dc0b952782037990be93c2" kindref="member" tooltip="양수를 헥사덤프로 변환 ">BxUtilGlobal::ItoH</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>((<ref refid="class_a_r_g___h_e_x___l_o_w_e_r" kindref="compound">ARG_HEX_LOWER</ref>*)<sp/>ArgData)-&gt;Value);</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArgStringLength[0]<sp/>=<sp/><ref refid="namespace_bx_util_global_1a677b3048a42145d09849067b4d4a73ce" kindref="member" tooltip="스트링길이 구하기 ">BxUtilGlobal::StrLen</ref>(ArgString[0]);</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::Util::Print&lt;지원하지<sp/>않는<sp/>타입의<sp/>인수입니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
@@ -934,6 +929,6 @@
 <codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="769"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreImpl.cpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreImpl.cpp"/>
   </compounddef>
 </doxygen>

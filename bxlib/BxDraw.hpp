@@ -218,7 +218,7 @@ namespace BxDrawGlobal
 	\param y : 꼭지점Y
 	\return 다각영역
 	*/
-	static inline const points& XYS(const BxThrow& x, const BxThrow& y)
+	static inline const points& XYS(const BxArgument& x, const BxArgument& y)
 	{
 		BxASSERT("BxDraw<가변인자의 길이가 서로 다릅니다>", x.Length() == y.Length());
 		thread_storage _ = sizeof(points);
@@ -243,7 +243,7 @@ namespace BxDrawGlobal
 	\param z : 꼭지점Z
 	\return 3D다각영역
 	*/
-	static inline const vertexs& XYZS(const BxThrow& x, const BxThrow& y, const BxThrow& z)
+	static inline const vertexs& XYZS(const BxArgument& x, const BxArgument& y, const BxArgument& z)
 	{
 		BxASSERT("BxDraw<가변인자의 길이가 서로 다릅니다>", x.Length() == y.Length() && x.Length() == z.Length());
 		thread_storage _ = sizeof(vertexs);
@@ -1324,7 +1324,7 @@ public:
 		// 조건 이관
 		if(0 < BxDrawGlobal::_DrawOption::CurAngle())
 		{
-			PolygonSt(opt, BxDrawGlobal::XYS(BxTHROW(r.l, r.l, r.r, r.r), BxTHROW(r.t, r.b, r.b, r.t)), count);
+			PolygonSt(opt, BxDrawGlobal::XYS(BxARG(r.l, r.l, r.r, r.r), BxARG(r.t, r.b, r.b, r.t)), count);
 			return;
 		}
 		// 모듈
@@ -1357,7 +1357,7 @@ public:
 		// 조건 이관
 		if(0 < BxDrawGlobal::_DrawOption::CurAngle())
 		{
-			PolygonSt(opt, BxDrawGlobal::XYS(BxTHROW(r.l, r.r - 1, r.r - 1, r.l), BxTHROW(r.t, r.t, r.b, r.b)), count);
+			PolygonSt(opt, BxDrawGlobal::XYS(BxARG(r.l, r.r - 1, r.r - 1, r.l), BxARG(r.t, r.t, r.b, r.b)), count);
 			return;
 		}
 		// 모듈

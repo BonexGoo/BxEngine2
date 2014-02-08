@@ -9,110 +9,105 @@
     <includedby refid="_bx_path_find_8hpp" local="no">BxPathFind.hpp</includedby>
     <includedby refid="_bx_scene_8hpp" local="no">BxScene.hpp</includedby>
     <incdepgraph>
-      <node id="205">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="206" relation="include">
+      <node id="219">
+        <label>BxDraw.hpp</label>
+        <link refid="BxDraw.hpp"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
         </childnode>
       </node>
-      <node id="209">
+      <node id="220">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="207" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
       </node>
-      <node id="207">
+      <node id="221">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="204">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="205" relation="include">
+      <node id="223">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="224" relation="include">
         </childnode>
       </node>
-      <node id="206">
+      <node id="224">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="207" relation="include">
-        </childnode>
-        <childnode refid="208" relation="include">
-        </childnode>
-      </node>
-      <node id="208">
-        <label>stdio.h</label>
-      </node>
-      <node id="202">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="203" relation="include">
-        </childnode>
-        <childnode refid="209" relation="include">
-        </childnode>
-      </node>
-      <node id="201">
-        <label>BxDraw.hpp</label>
-        <link refid="BxDraw.hpp"/>
-        <childnode refid="202" relation="include">
-        </childnode>
-        <childnode refid="210" relation="include">
-        </childnode>
-      </node>
-      <node id="203">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
-      <node id="210">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="207" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="217">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="_bx_core_for_s3_e_8hpp_source"/>
-      </node>
-      <node id="214">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="212">
-        <label>BxGUI.hpp</label>
-        <link refid="_bx_g_u_i_8hpp_source"/>
-      </node>
-      <node id="216">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="217" relation="include">
+      <node id="228">
+        <label>BxDraw.hpp</label>
+        <link refid="BxDraw.hpp"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
         </childnode>
       </node>
-      <node id="215">
+      <node id="232">
         <label>BxPathFind.hpp</label>
         <link refid="_bx_path_find_8hpp_source"/>
       </node>
-      <node id="213">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="214" relation="include">
-        </childnode>
-        <childnode refid="212" relation="include">
+      <node id="229">
+        <label>BxGUI.hpp</label>
+        <link refid="_bx_g_u_i_8hpp_source"/>
+      </node>
+      <node id="234">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      </node>
+      <node id="233">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="234" relation="include">
         </childnode>
       </node>
-      <node id="211">
-        <label>BxDraw.hpp</label>
-        <link refid="BxDraw.hpp"/>
-        <childnode refid="212" relation="include">
+      <node id="230">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="231" relation="include">
         </childnode>
-        <childnode refid="213" relation="include">
+        <childnode refid="229" relation="include">
         </childnode>
-        <childnode refid="215" relation="include">
-        </childnode>
-        <childnode refid="216" relation="include">
-        </childnode>
+      </node>
+      <node id="231">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_draw_form" prot="public">BxDrawForm</innerclass>
@@ -131,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxDraw.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxDraw.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxDraw.hpp" line="6" column="9" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxDraw.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -308,16 +303,16 @@
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Result;</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221" refid="namespace_bx_draw_global_1a28d2b89e6225044de76d60cb3e47bde2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/><ref refid="namespace_bx_draw_global_1a28d2b89e6225044de76d60cb3e47bde2" kindref="member" tooltip="가변인자식 다각영역제작 ">XYS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>y)</highlight></codeline>
+<codeline lineno="221" refid="namespace_bx_draw_global_1a3d154c2742e70d45fd7bd10c17a92dbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/><ref refid="namespace_bx_draw_global_1a3d154c2742e70d45fd7bd10c17a92dbb" kindref="member" tooltip="가변인자식 다각영역제작 ">XYS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>y)</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자의<sp/>길이가<sp/>서로<sp/>다릅니다&gt;&quot;</highlight><highlight class="normal">,<sp/>x.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>==<sp/>y.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>());</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자의<sp/>길이가<sp/>서로<sp/>다릅니다&gt;&quot;</highlight><highlight class="normal">,<sp/>x.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>==<sp/>y.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>());</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_storage<sp/>_<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>);</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>&amp;<sp/>Result<sp/>=<sp/>*((<ref refid="structpoints" kindref="compound" tooltip="points구조체 : count, {x, y}, ... ">points</ref>*)<sp/><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member" tooltip="현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) ">BxCore::Thread::BindStorage</ref>(&amp;_));</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result.count<sp/>=<sp/>x.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result.count<sp/>=<sp/>x.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Result.count;<sp/>++i)</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgX<sp/>=<sp/>x.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgY<sp/>=<sp/>y.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgX<sp/>=<sp/>x.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgY<sp/>=<sp/>y.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자<sp/>x에<sp/>int가<sp/>아닌<sp/>값이<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ArgX);</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자<sp/>y에<sp/>int가<sp/>아닌<sp/>값이<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ArgY);</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result.pt[i].x<sp/>=<sp/>*ArgX;</highlight></codeline>
@@ -326,17 +321,17 @@
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Result;</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight></codeline>
-<codeline lineno="246" refid="namespace_bx_draw_global_1abb606f769056ad58428a739cb2e80042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>&amp;<sp/><ref refid="namespace_bx_draw_global_1abb606f769056ad58428a739cb2e80042" kindref="member" tooltip="가변인자식 3D다각영역제작 ">XYZS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>z)</highlight></codeline>
+<codeline lineno="246" refid="namespace_bx_draw_global_1a77d25475925ffd41e85cedb205074b4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>&amp;<sp/><ref refid="namespace_bx_draw_global_1a77d25475925ffd41e85cedb205074b4e" kindref="member" tooltip="가변인자식 3D다각영역제작 ">XYZS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>z)</highlight></codeline>
 <codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자의<sp/>길이가<sp/>서로<sp/>다릅니다&gt;&quot;</highlight><highlight class="normal">,<sp/>x.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>==<sp/>y.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>&amp;&amp;<sp/>x.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>==<sp/>z.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>());</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자의<sp/>길이가<sp/>서로<sp/>다릅니다&gt;&quot;</highlight><highlight class="normal">,<sp/>x.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>==<sp/>y.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>&amp;&amp;<sp/>x.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>()<sp/>==<sp/>z.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>());</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_storage<sp/>_<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>);</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>&amp;<sp/>Result<sp/>=<sp/>*((<ref refid="structvertexs" kindref="compound" tooltip="vertexs구조체 : count, {x, y, z}, ... ">vertexs</ref>*)<sp/><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member" tooltip="현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) ">BxCore::Thread::BindStorage</ref>(&amp;_));</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result.count<sp/>=<sp/>x.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result.count<sp/>=<sp/>x.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Result.count;<sp/>++i)</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgX<sp/>=<sp/>x.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgY<sp/>=<sp/>y.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgZ<sp/>=<sp/>z.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgX<sp/>=<sp/>x.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgY<sp/>=<sp/>y.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ArgZ<sp/>=<sp/>z.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(i);</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자<sp/>x에<sp/>int가<sp/>아닌<sp/>값이<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ArgX);</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자<sp/>y에<sp/>int가<sp/>아닌<sp/>값이<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ArgY);</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxDraw&lt;가변인자<sp/>z에<sp/>int가<sp/>아닌<sp/>값이<sp/>존재합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>ArgZ);</highlight></codeline>
@@ -1159,7 +1154,7 @@
 <codeline lineno="1324"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>조건<sp/>이관</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>BxDrawGlobal::_DrawOption::CurAngle())</highlight></codeline>
 <codeline lineno="1326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PolygonSt(opt,<sp/><ref refid="namespace_bx_draw_global_1a28d2b89e6225044de76d60cb3e47bde2" kindref="member" tooltip="가변인자식 다각영역제작 ">BxDrawGlobal::XYS</ref>(BxTHROW(r.l,<sp/>r.l,<sp/>r.r,<sp/>r.r),<sp/>BxTHROW(r.t,<sp/>r.b,<sp/>r.b,<sp/>r.t)),<sp/>count);</highlight></codeline>
+<codeline lineno="1327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PolygonSt(opt,<sp/><ref refid="namespace_bx_draw_global_1a3d154c2742e70d45fd7bd10c17a92dbb" kindref="member" tooltip="가변인자식 다각영역제작 ">BxDrawGlobal::XYS</ref>(BxARG(r.l,<sp/>r.l,<sp/>r.r,<sp/>r.r),<sp/>BxARG(r.t,<sp/>r.b,<sp/>r.b,<sp/>r.t)),<sp/>count);</highlight></codeline>
 <codeline lineno="1328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>모듈</highlight><highlight class="normal"></highlight></codeline>
@@ -1192,7 +1187,7 @@
 <codeline lineno="1357"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>조건<sp/>이관</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>&lt;<sp/>BxDrawGlobal::_DrawOption::CurAngle())</highlight></codeline>
 <codeline lineno="1359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PolygonSt(opt,<sp/><ref refid="namespace_bx_draw_global_1a28d2b89e6225044de76d60cb3e47bde2" kindref="member" tooltip="가변인자식 다각영역제작 ">BxDrawGlobal::XYS</ref>(BxTHROW(r.l,<sp/>r.r<sp/>-<sp/>1,<sp/>r.r<sp/>-<sp/>1,<sp/>r.l),<sp/>BxTHROW(r.t,<sp/>r.t,<sp/>r.b,<sp/>r.b)),<sp/>count);</highlight></codeline>
+<codeline lineno="1360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PolygonSt(opt,<sp/><ref refid="namespace_bx_draw_global_1a3d154c2742e70d45fd7bd10c17a92dbb" kindref="member" tooltip="가변인자식 다각영역제작 ">BxDrawGlobal::XYS</ref>(BxARG(r.l,<sp/>r.r<sp/>-<sp/>1,<sp/>r.r<sp/>-<sp/>1,<sp/>r.l),<sp/>BxARG(r.t,<sp/>r.t,<sp/>r.b,<sp/>r.b)),<sp/>count);</highlight></codeline>
 <codeline lineno="1361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>모듈</highlight><highlight class="normal"></highlight></codeline>
@@ -1802,6 +1797,6 @@
 <codeline lineno="2024"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2026"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxDraw.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxDraw.hpp"/>
   </compounddef>
 </doxygen>

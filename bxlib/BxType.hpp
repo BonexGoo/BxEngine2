@@ -167,7 +167,7 @@ enum rendermode:byte {rendermode_null, rendermode_2d, rendermode_3d};
 enum bindstate:byte {bindstate_binded, bindstate_bind, bindstate_entrust, bindstate_unbind};
 
 // 타입-키워드
-typedef const char* event;
+typedef char* event;
 typedef unsigned char check;
 typedef unsigned char radio;
 typedef int number;

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['abs',['Abs',['../namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9',1,'BxUtilGlobal']]],
-  ['access',['Access',['../class_bx_throw.html#aa501b1854bd258ec7263fc6d7e7bb6be',1,'BxThrow']]],
+  ['access',['Access',['../class_bx_argument.html#a35e8e0a2c2ee8d5b344c513aa6dc723b',1,'BxArgument']]],
   ['addcallback',['AddCallback',['../namespace_bx_core_1_1_system.html#ac2473ebfc86c3766155c7193893b0ce3',1,'BxCore::System']]],
   ['addcallbackjni',['AddCallbackJNI',['../namespace_bx_core_1_1_system.html#aa721d486c3bd5d827a78b5ffb49dc2df',1,'BxCore::System']]],
   ['addobject',['AddObject',['../class_bx_animate.html#aab1fa6b757b448fd3aedf2476491269a',1,'BxAnimate']]],

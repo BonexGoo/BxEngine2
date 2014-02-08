@@ -114,9 +114,9 @@
     <member refid="class_bx_tween_1_1___part_begin_1a060eb8ecb57719f69fa73c742d63de7c" kind="variable"><name>Position</name></member>
     <member refid="class_bx_tween_1_1___part_begin_1a8295019f82af6c1ef5ce4d06115bcba2" kind="variable"><name>OpacityMin</name></member>
     <member refid="class_bx_tween_1_1___part_begin_1a84ca3b98d005bd27315090a1ac282b18" kind="variable"><name>OpacityMax</name></member>
-    <member refid="class_bx_tween_1_1___part_begin_1a90d5df7ec4322eb764ad89b31485e41e" kind="variable"><name>Message</name></member>
+    <member refid="class_bx_tween_1_1___part_begin_1a508cbcca912d7971a6ff2b14adc9f368" kind="variable"><name>Message</name></member>
     <member refid="class_bx_tween_1_1___part_begin_1a0c47ab13febf7a3123891745e1f77c9b" kind="variable"><name>AnimationLength</name></member>
-    <member refid="class_bx_tween_1_1___part_begin_1a2ee5ab024486e8374ff10d12d9a97385" kind="variable"><name>Animation</name></member>
+    <member refid="class_bx_tween_1_1___part_begin_1a430361e4463cf21388d03f0605207ff7" kind="variable"><name>Animation</name></member>
     <member refid="class_bx_tween_1_1___part_begin_1abb1cfa98a8a9c7ce75509b861b86b918" kind="function"><name>Targeting</name></member>
   </compound>
   <compound refid="class_bx_tween_1_1___part_target" kind="class"><name>BxTween::_PartTarget</name>
@@ -166,6 +166,32 @@
     <member refid="structarea_1a678b45654d7dd3c319bf7a5583061c7c" kind="variable"><name>hx</name></member>
     <member refid="structarea_1a109c3ee65f0ad93e6e5f6e9d54872350" kind="variable"><name>hy</name></member>
   </compound>
+  <compound refid="class_a_r_g___h_e_x___l_o_w_e_r" kind="class"><name>ARG_HEX_LOWER</name>
+    <member refid="class_a_r_g___h_e_x___l_o_w_e_r_1ae686a68c1e7acc8aa71029a44763a51d" kind="variable"><name>Value</name></member>
+    <member refid="class_a_r_g___h_e_x___l_o_w_e_r_1af2434e8a4c0be23d09cb0a7f9768de43" kind="function"><name>ARG_HEX_LOWER</name></member>
+    <member refid="class_a_r_g___h_e_x___l_o_w_e_r_1aaaeb349fa8eb54e9d367a3f9e4425a6d" kind="function"><name>ARG_HEX_LOWER</name></member>
+    <member refid="class_a_r_g___h_e_x___l_o_w_e_r_1a7af0bc722e937097f30d6b2b6636f621" kind="function"><name>ARG_HEX_LOWER</name></member>
+    <member refid="class_a_r_g___h_e_x___l_o_w_e_r_1a9989ebf05cc05c4f4b42df87c44f98e5" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_a_r_g___h_e_x___u_p_p_e_r" kind="class"><name>ARG_HEX_UPPER</name>
+    <member refid="class_a_r_g___h_e_x___u_p_p_e_r_1a36decd7bc19467100338702add24b09d" kind="variable"><name>Value</name></member>
+    <member refid="class_a_r_g___h_e_x___u_p_p_e_r_1a1b15322a2ef35efe3da7e1aec0428521" kind="function"><name>ARG_HEX_UPPER</name></member>
+    <member refid="class_a_r_g___h_e_x___u_p_p_e_r_1a5a71ef8dad795fb99a80ddc0cd28e56e" kind="function"><name>ARG_HEX_UPPER</name></member>
+    <member refid="class_a_r_g___h_e_x___u_p_p_e_r_1a0da98c2aebb811694c2328cd6c3f6e9b" kind="function"><name>ARG_HEX_UPPER</name></member>
+    <member refid="class_a_r_g___h_e_x___u_p_p_e_r_1a1390954502c4b0490b4fc9ecee2927a6" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_a_r_g___s_t_r___l_o_w_e_r" kind="class"><name>ARG_STR_LOWER</name>
+    <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a22c09d3965f60ccf8fc464fd36534bab" kind="variable"><name>Value</name></member>
+    <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a83d446fda38e2a86b423078d9021b3bf" kind="function"><name>ARG_STR_LOWER</name></member>
+    <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a8b179ec2ab312f01485ca2e500df3cb6" kind="function"><name>ARG_STR_LOWER</name></member>
+    <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a58b35f5878e1885ab937abd47dafcead" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="class_a_r_g___s_t_r___u_p_p_e_r" kind="class"><name>ARG_STR_UPPER</name>
+    <member refid="class_a_r_g___s_t_r___u_p_p_e_r_1a37ce3e1a9fbb36afc830ae5a376693dd" kind="variable"><name>Value</name></member>
+    <member refid="class_a_r_g___s_t_r___u_p_p_e_r_1a9acf142506a96ba8fe7b61007dc02eb6" kind="function"><name>ARG_STR_UPPER</name></member>
+    <member refid="class_a_r_g___s_t_r___u_p_p_e_r_1a7aa6d9eb39a7613470965fbb94d5701f" kind="function"><name>ARG_STR_UPPER</name></member>
+    <member refid="class_a_r_g___s_t_r___u_p_p_e_r_1aa448257f02712c69ea48dc36d2530093" kind="function"><name>operator=</name></member>
+  </compound>
   <compound refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kind="class"><name>BxDynamic::Resource::BindPool</name>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1ad418a3341269a7e6cb9fb1d7f5d00490" kind="friend"><name>LinkPool</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_bind_pool_1a94666bc30e72eaefa290f8f5300b5a18" kind="friend"><name>Resource::BinderBegin</name></member>
@@ -213,6 +239,16 @@
     <member refid="class_bx_animate_1a316ddc9c21e8ecd039bffd50ef315160" kind="function"><name>SetRadio</name></member>
     <member refid="class_bx_animate_1a3ccb6521155e4e75b32235ac45dc105a" kind="function"><name>SetNumber</name></member>
     <member refid="class_bx_animate_1ad60156ab1f65bec7d8c9ea1ba6002a19" kind="function"><name>SetString</name></member>
+  </compound>
+  <compound refid="class_bx_argument" kind="class"><name>BxArgument</name>
+    <member refid="class_bx_argument_1a8b0a2be9fad891ef846e329e910cef40" kind="variable"><name>List</name></member>
+    <member refid="class_bx_argument_1a323884ee4583af22bfe97e38cf539cf6" kind="function"><name>operator,</name></member>
+    <member refid="class_bx_argument_1a6ae6f7465a69a7865b5d0f16d3e154a4" kind="function"><name>operator,</name></member>
+    <member refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kind="function"><name>Access</name></member>
+    <member refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kind="function"><name>Length</name></member>
+    <member refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kind="function"><name>zero</name></member>
+    <member refid="class_bx_argument_1a6dbff45a654011fb705fa7fd0236059a" kind="function"><name>BxArgument</name></member>
+    <member refid="class_bx_argument_1a9b83e1bc0b9b8b816422454f5b61963b" kind="function"><name>~BxArgument</name></member>
   </compound>
   <compound refid="class_bx_auto_buffer" kind="class"><name>BxAutoBuffer</name>
     <member refid="class_bx_auto_buffer_1ae8c00f9e7088aba36e1ec133398be9d8" kind="variable"><name>LastTimeByUse</name></member>
@@ -354,7 +390,7 @@
     <member refid="class_bx_g_u_i_1ab14c77bd524970f0b858afa5629dbd0d" kind="function"><name>Version</name></member>
     <member refid="class_bx_g_u_i_1a4725dc56f03627191869e882e6d57863" kind="function"><name>IsValidDownload</name></member>
     <member refid="class_bx_g_u_i_1a8e28af11bb3db931146d4902a6304250" kind="function"><name>Callback</name></member>
-    <member refid="class_bx_g_u_i_1afe36a1c9b66537da6cf16be21f625226" kind="function"><name>DownloadCache</name></member>
+    <member refid="class_bx_g_u_i_1ac6443f62f92b80150f1e44ecf32f7b50" kind="function"><name>DownloadCache</name></member>
     <member refid="class_bx_g_u_i_1acb06c0e7b3d4fe5623a00965b52bfc9f" kind="function"><name>BxGUI</name></member>
     <member refid="class_bx_g_u_i_1ad9648b891730fb587b30bcbef1f6cbdb" kind="function"><name>~BxGUI</name></member>
     <member refid="class_bx_g_u_i_1ac9560ada555a7a800755721b1876b01c" kind="function"><name>Init</name></member>
@@ -365,7 +401,7 @@
     <member refid="class_bx_g_u_i_1a1ace89b6079b2ec76133f1b59822d636" kind="function"><name>AdjustViewScroll</name></member>
     <member refid="class_bx_g_u_i_1a7dc8fc96c1027cc24b109973b299fed0" kind="function"><name>GetViewSize</name></member>
     <member refid="class_bx_g_u_i_1a0384a1eb7408fe79f1a8532dacb475ed" kind="function"><name>AdjustColorHLS</name></member>
-    <member refid="class_bx_g_u_i_1abc7eb0e5b79f3568bdf5a9d25d1cf3bb" kind="function"><name>AdjustTextFormat</name></member>
+    <member refid="class_bx_g_u_i_1abd6dd9c94bfe0c11e3db0e16c52b273c" kind="function"><name>AdjustTextFormat</name></member>
     <member refid="class_bx_g_u_i_1abee4156df09a6806d1c133692377ff19" kind="function"><name>GetImageWidth</name></member>
     <member refid="class_bx_g_u_i_1a970c1b61d80fc3d450e35b38a7629e6b" kind="function"><name>GetImageHeight</name></member>
     <member refid="class_bx_g_u_i_1ac6bd283b62892a268f38d87975000135" kind="function"><name>Render</name></member>
@@ -457,7 +493,7 @@
     <member refid="class_bx_string_1a4ba075e59a125b5a9e2cc09f120759fb" kind="function"><name>BxString</name></member>
     <member refid="class_bx_string_1a89b7e3b70310a99d944e60748a9b9f2f" kind="function"><name>BxString</name></member>
     <member refid="class_bx_string_1a819ce62aca47966ebea31617d4b7d070" kind="function"><name>BxString</name></member>
-    <member refid="class_bx_string_1a1177abf9d2542d1420cc84a69e230a76" kind="function"><name>BxString</name></member>
+    <member refid="class_bx_string_1ad4ecde2d474a277c2cbef1d3491d30af" kind="function"><name>BxString</name></member>
     <member refid="class_bx_string_1a6bce07db311243e6f927e050381bc419" kind="function"><name>~BxString</name></member>
     <member refid="class_bx_string_1aa438d5974c167a3ed314777237575bb8" kind="function"><name>Empty</name></member>
     <member refid="class_bx_string_1a1c1ed24074f79412ae42d81bb0c59615" kind="function"><name>GetLength</name></member>
@@ -488,7 +524,7 @@
     <member refid="class_bx_string_1a2792945d195374da18c577707883963b" kind="function"><name>Compare</name></member>
     <member refid="class_bx_string_1aaf31f369dfc9d76a8bd304aebeef4752" kind="function"><name>CompareNoCase</name></member>
     <member refid="class_bx_string_1ada6eaa2e4864d928ea416bb48424ad54" kind="function"><name>CompareNoCase</name></member>
-    <member refid="class_bx_string_1aace96361eb806823448ce193a4cc0e76" kind="function"><name>Format</name></member>
+    <member refid="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" kind="function"><name>Format</name></member>
     <member refid="class_bx_string_1a854946ab5a5bf85872bc281ac7dfa24f" kind="function"><name>ParseCSV</name></member>
     <member refid="class_bx_string_1a403472e1b5d831c700304e6bee5f461c" kind="function"><name>ParseISO2022</name></member>
     <member refid="class_bx_string_1a62abfc5510718c8873e366895e413d4f" kind="function"><name>GetFileName</name></member>
@@ -523,23 +559,13 @@
     <member refid="class_bx_telex_1ab5940504cc448428eab270709b843b43" kind="function"><name>GetCommandValue</name></member>
     <member refid="class_bx_telex_1af1e8da037a867a279a114f1c6e41c437" kind="function"><name>FindCommand</name></member>
     <member refid="class_bx_telex_1a97d098c17ef0e71c5c2e1a107a907aaa" kind="function"><name>NextCommand</name></member>
-    <member refid="class_bx_telex_1a29d240cce5a1075e534b075166eabf59" kind="function"><name>Create</name></member>
+    <member refid="class_bx_telex_1a9b03e48342bc70146f09ef1ec537c586" kind="function"><name>Create</name></member>
     <member refid="class_bx_telex_1a60fe9bf219ce0f4d1dc0ba7921570a00" kind="function"><name>DestroyMe</name></member>
     <member refid="class_bx_telex_1a6d2b2afaf52b351f8b36b0138817fbef" kind="function"><name>BxTelex</name></member>
     <member refid="class_bx_telex_1ab771497159161d5fd8ff49d374be3251" kind="function"><name>~BxTelex</name></member>
   </compound>
-  <compound refid="class_bx_throw" kind="class"><name>BxThrow</name>
-    <member refid="class_bx_throw_1a1f1a2971f5e030ddb30d41cfa5e42abd" kind="variable"><name>List</name></member>
-    <member refid="class_bx_throw_1aedc3f59d88834cd04607b0c0c3286f6e" kind="function"><name>operator,</name></member>
-    <member refid="class_bx_throw_1ac7f526b42e8c94bf2db1158ad9e45b78" kind="function"><name>operator,</name></member>
-    <member refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kind="function"><name>Access</name></member>
-    <member refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kind="function"><name>Length</name></member>
-    <member refid="class_bx_throw_1ad7cb462b4cfc691a69570de2d65d1c68" kind="function"><name>zero</name></member>
-    <member refid="class_bx_throw_1a338da6d23d89baee5f5eb50dcccbf2ea" kind="function"><name>BxThrow</name></member>
-    <member refid="class_bx_throw_1a800431a78205c12460f7e9be54c43b4e" kind="function"><name>~BxThrow</name></member>
-  </compound>
   <compound refid="class_bx_tween" kind="class"><name>BxTween</name>
-    <member refid="class_bx_tween_1a2b92ab90d6d9b4556a2c3156e61662af" kind="typedef"><name>OnPart</name></member>
+    <member refid="class_bx_tween_1ac6bb073a370993abd87cdabd46a62553" kind="typedef"><name>OnPart</name></member>
     <member refid="class_bx_tween_1ac3117ee6bf3711db81bbb58705e57cea" kind="variable"><name>_IsAnimationPlay</name></member>
     <member refid="class_bx_tween_1a66724dc84b3aeefccf347638cc59d73f" kind="variable"><name>_IsAnimationFinished</name></member>
     <member refid="class_bx_tween_1ab52829c17f846e00c337217cd2eed284" kind="variable"><name>_MsPerFrame</name></member>
@@ -849,15 +875,15 @@
     <member refid="class_bx_path_find_1_1_get_position_1a69d709923d2563f5eaf9d9c6a8eed4c5" kind="function"><name>SubTarget</name></member>
     <member refid="class_bx_path_find_1_1_get_position_1a217fa8417b457001c1f472c0c715761d" kind="function"><name>ValidNext</name></member>
   </compound>
-  <compound refid="class_bx_throw_1_1_head_unit" kind="class"><name>BxThrow::HeadUnit</name>
-    <member refid="class_bx_throw_1_1_head_unit_1a8b1fe18657c5ceeab437935f473c62ac" kind="variable"><name>Count</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1a00898a2fdccd97d6edbee7310fb093c1" kind="variable"><name>Last</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1a72dc12f607de621fff6100a20556f9a8" kind="function"><name>HeadUnit</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1af194903dad4a5000c12f6cc3598ad59d" kind="function"><name>~HeadUnit</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1a5ff9599afaf938d4c601ba944eabdf13" kind="function"><name>Access</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1a950f7528b42d49922e98bbbec5c47595" kind="function"><name>Length</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1a943b09be19dfa11f6b41ebb436e505bc" kind="function"><name>AttachLast</name></member>
-    <member refid="class_bx_throw_1_1_head_unit_1a367943787abfef5ec13556c81a411f2d" kind="function"><name>DetachFirst</name></member>
+  <compound refid="class_bx_argument_1_1_head_unit" kind="class"><name>BxArgument::HeadUnit</name>
+    <member refid="class_bx_argument_1_1_head_unit_1adb003009fd6dbe8b79ec0774a85208e4" kind="variable"><name>Count</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1aab2fb00c813e24ce677fcec381b2675a" kind="variable"><name>Last</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1abd1444d8ec2e1cae752861d7b1b8d583" kind="function"><name>HeadUnit</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1a86f433ebe02c5c5aa69b612f82eca9d8" kind="function"><name>~HeadUnit</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1abd11570c3b3759f576df1959fcf29b2e" kind="function"><name>Access</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1a77060f75267ff7e706ce14c6fd10f523" kind="function"><name>Length</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1a4220e6da065eb0396b9b4d82990ec871" kind="function"><name>AttachLast</name></member>
+    <member refid="class_bx_argument_1_1_head_unit_1a16e973f8647ac5f01236e3a3822b5cef" kind="function"><name>DetachFirst</name></member>
   </compound>
   <compound refid="class_bx_telex_1_1_h_q" kind="class"><name>BxTelex::HQ</name>
     <member refid="class_bx_telex_1_1_h_q_1a1199314c018340ad8e34312fa80835c3" kind="friend"><name>BxPool&lt; HQ &gt;</name></member>
@@ -891,7 +917,7 @@
     <member refid="class_bx_path_find_1_1_hurdle_1a66343c400d746864e1e9902c53ddf85b" kind="function"><name>~Hurdle</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1a231115e424b437b84fb820d527cccfac" kind="function"><name>Create</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1aedf66ebf2d30359b27a0fe5b63911af5" kind="function"><name>Release</name></member>
-    <member refid="class_bx_path_find_1_1_hurdle_1a3c5dbe11a23b0094a8a2a1f00ba585d3" kind="function"><name>Add</name></member>
+    <member refid="class_bx_path_find_1_1_hurdle_1a2c508311140b1153a2df91e512cd0648" kind="function"><name>Add</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1a4d7d2b1deaa4697b191d05b598d2da90" kind="function"><name>AddWithoutMerging</name></member>
     <member refid="class_bx_path_find_1_1_hurdle_1ae03da345632a735457e839ff68487b68" kind="function"><name>BuildMap</name></member>
   </compound>
@@ -948,7 +974,7 @@
   <compound refid="class_bx_dynamic_1_1_resource_1_1_link_pool" kind="class"><name>BxDynamic::Resource::LinkPool</name>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a6c8f60dee624bb9d3b31ac9d430b19a6" kind="variable"><name>ParentBinder</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1ae46082139795c10bb3cc2e40c4c932f3" kind="variable"><name>ParamCB</name></member>
-    <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a8139455697043001867e53477bac4c38" kind="variable"><name>ParamComment</name></member>
+    <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1af3d41a129f020d6f54e1b7133772f8d4" kind="variable"><name>ParamComment</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a94666bc30e72eaefa290f8f5300b5a18" kind="friend"><name>Resource::BinderBegin</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1ad177b3a356c725efe9ac96dc48f2be49" kind="function"><name>LinkPool</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a2152df173b1227824fdc578d26354065" kind="function"><name>New</name></member>
@@ -961,6 +987,13 @@
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a414c01717bf4ff54763d8610ad59f42c" kind="function"><name>GetResource</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1adef288360223f451cc7893fc5b76f5e8" kind="function"><name>CallSerialize</name></member>
   </compound>
+  <compound refid="class_bx_auto_buffer_1_1_list" kind="class"><name>BxAutoBuffer::List</name>
+    <member refid="class_bx_auto_buffer_1_1_list_1ae35c02438d9067deb74156c823a3115f" kind="variable"><name>Data</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1ab4f72478274a95e6b54b672b20d5732c" kind="variable"><name>Size</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a616cd9450e2d3354a66ac938d4037229" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a94fd5e62cb0f37710d78e9dfb20800ce" kind="function"><name>List</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a0c9be1e5f422f13a70a9ea47082cb3cc" kind="function"><name>~List</name></member>
+  </compound>
   <compound refid="class_bx_singleton_1_1_list" kind="class"><name>BxSingleton::List</name>
     <member refid="class_bx_singleton_1_1_list_1a9adfb49d2ba3e720706370792c1ad038" kind="variable"><name>Unit</name></member>
     <member refid="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" kind="variable"><name>Next</name></member>
@@ -971,13 +1004,6 @@
     <member refid="class_bx_singleton_1_1_list_1a9813516fadd9d565d61c988da264cd96" kind="function"><name>Rebind</name></member>
     <member refid="class_bx_singleton_1_1_list_1aac733da6cfca2cf8c2059154d82cc1ac" kind="function"><name>Unbind</name></member>
     <member refid="class_bx_singleton_1_1_list_1a0e5b91668b0278e628ad6326576f9468" kind="function"><name>UnbindAll</name></member>
-  </compound>
-  <compound refid="class_bx_auto_buffer_1_1_list" kind="class"><name>BxAutoBuffer::List</name>
-    <member refid="class_bx_auto_buffer_1_1_list_1ae35c02438d9067deb74156c823a3115f" kind="variable"><name>Data</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1ab4f72478274a95e6b54b672b20d5732c" kind="variable"><name>Size</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a616cd9450e2d3354a66ac938d4037229" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a94fd5e62cb0f37710d78e9dfb20800ce" kind="function"><name>List</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a0c9be1e5f422f13a70a9ea47082cb3cc" kind="function"><name>~List</name></member>
   </compound>
   <compound refid="class_bx_telex_1_1_log" kind="class"><name>BxTelex::Log</name>
     <member refid="class_bx_telex_1_1_log_1ae33fd6c6a0ca8bbc63d7f10262e65532" kind="friend"><name>BxPool&lt; Log &gt;</name></member>
@@ -1034,7 +1060,7 @@
     <member refid="class_bx_string_1_1_parse_1a67105b5647f1e31bcfb94de979a03c8e" kind="function"><name>Parse</name></member>
     <member refid="class_bx_string_1_1_parse_1a0472574efd03e5e7881a2039c23f4da3" kind="function"><name>Parse</name></member>
     <member refid="class_bx_string_1_1_parse_1af800c7e1bb8dca01fa259d614897ba84" kind="function"><name>Parse</name></member>
-    <member refid="class_bx_string_1_1_parse_1a6859baec52342491ff6fd767642c9fdd" kind="function"><name>Parse</name></member>
+    <member refid="class_bx_string_1_1_parse_1a80bdc7751cea364fedd99186eec547a5" kind="function"><name>Parse</name></member>
     <member refid="class_bx_string_1_1_parse_1a66a98aa39b029070417c6420918a9386" kind="function"><name>~Parse</name></member>
     <member refid="class_bx_string_1_1_parse_1a501c0c42d5a3349b4380ca1ed460923e" kind="function"><name>GetLength</name></member>
     <member refid="class_bx_string_1_1_parse_1a803e49be0b06ee7701d1ca3e7f662b40" kind="function"><name>GetLast</name></member>
@@ -1085,11 +1111,11 @@
     <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1aa2c56c55db3158236a9565bc0b461ea9" kind="function"><name>Sub</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_pool_1a89b4a5beb18c9cac6ffd2d58931d1f39" kind="function"><name>Find</name></member>
   </compound>
-  <compound refid="class_bx_throw_1_1_ptr_unit" kind="class"><name>BxThrow::PtrUnit</name>
-    <member refid="class_bx_throw_1_1_ptr_unit_1ae1535f644c17bdb77568072b7b3bfe3c" kind="variable"><name>Ptr</name></member>
-    <member refid="class_bx_throw_1_1_ptr_unit_1a86096ba227f5a6ba20b5985aec59ab28" kind="function"><name>PtrUnit</name></member>
-    <member refid="class_bx_throw_1_1_ptr_unit_1a1bc5002827534a3405d7be5c893e83a2" kind="function"><name>~PtrUnit</name></member>
-    <member refid="class_bx_throw_1_1_ptr_unit_1ae1d2a971811f1ad6e7d9608038d99843" kind="function"><name>VTablePtr</name></member>
+  <compound refid="class_bx_argument_1_1_ptr_unit" kind="class"><name>BxArgument::PtrUnit</name>
+    <member refid="class_bx_argument_1_1_ptr_unit_1a8dae3366740b821486cd5ed07c6e2fda" kind="variable"><name>Ptr</name></member>
+    <member refid="class_bx_argument_1_1_ptr_unit_1a6aa144c19a5f4e53d23e172cfdd26af6" kind="function"><name>PtrUnit</name></member>
+    <member refid="class_bx_argument_1_1_ptr_unit_1ad35dc96fc89a9ed7d8def7e5c253e61d" kind="function"><name>~PtrUnit</name></member>
+    <member refid="class_bx_argument_1_1_ptr_unit_1a613d6bd5c4fd14476e0b9d6bbb5487c3" kind="function"><name>VTablePtr</name></member>
   </compound>
   <compound refid="structquater" kind="struct"><name>quater</name>
     <member refid="structquater_1a111420ac9244a035d6cdc48fe647caec" kind="variable"><name>x</name></member>
@@ -1214,32 +1240,6 @@
     <member refid="structsysevent_1a6a85bcf3889701378ae6522c2360e0a2" kind="variable"><name>field</name></member>
     <member refid="structsysevent_1abe76c46c30f9d61428de7fb1824f667e" kind="variable"><name>button</name></member>
   </compound>
-  <compound refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r" kind="class"><name>THROW_HEX_LOWER</name>
-    <member refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r_1a7fdaa327c00a79ea2eca7a7cef6ce683" kind="variable"><name>Value</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r_1a524ae0f2d8da1b2b7a7ec12974143c51" kind="function"><name>THROW_HEX_LOWER</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r_1a25f3b1150d8aa31656fd7480f9a19dd3" kind="function"><name>THROW_HEX_LOWER</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r_1a7b7b8c049f6038787280a81d01a7424c" kind="function"><name>THROW_HEX_LOWER</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___l_o_w_e_r_1a720eca907c24f5e1c13b5b616507d2ec" kind="function"><name>operator=</name></member>
-  </compound>
-  <compound refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r" kind="class"><name>THROW_HEX_UPPER</name>
-    <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1aebd5f21c92ed48ad414cd497dab96954" kind="variable"><name>Value</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1afdbf42c4cf09b67ce158d5d00b303489" kind="function"><name>THROW_HEX_UPPER</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1a1c4ca7621873407bf2fa5981d8e07ecd" kind="function"><name>THROW_HEX_UPPER</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1a0e0dbc65ef202d44471355e4d8197a5a" kind="function"><name>THROW_HEX_UPPER</name></member>
-    <member refid="class_t_h_r_o_w___h_e_x___u_p_p_e_r_1aae501a432017b0081a392236147ed6f7" kind="function"><name>operator=</name></member>
-  </compound>
-  <compound refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r" kind="class"><name>THROW_STR_LOWER</name>
-    <member refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r_1ac722e20153dca63494e789077ad189c8" kind="variable"><name>Value</name></member>
-    <member refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r_1a73c8ef93c9177428dd0c64459115f5d0" kind="function"><name>THROW_STR_LOWER</name></member>
-    <member refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r_1a690d9f0be5b4d9b9d0ba599f80ed647e" kind="function"><name>THROW_STR_LOWER</name></member>
-    <member refid="class_t_h_r_o_w___s_t_r___l_o_w_e_r_1ac45d94b50f69c781b8156ca8a31dbc4a" kind="function"><name>operator=</name></member>
-  </compound>
-  <compound refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r" kind="class"><name>THROW_STR_UPPER</name>
-    <member refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a756a937b55650a5266b2c757fa1f0ada" kind="variable"><name>Value</name></member>
-    <member refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a94984b9d45d41c5a4ae42d7b047d4b83" kind="function"><name>THROW_STR_UPPER</name></member>
-    <member refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a72ec9cbb535e63ab86db7b3aa3947284" kind="function"><name>THROW_STR_UPPER</name></member>
-    <member refid="class_t_h_r_o_w___s_t_r___u_p_p_e_r_1a5365769d6c85c25d0537038c7f4c4464" kind="function"><name>operator=</name></member>
-  </compound>
   <compound refid="class_bx_path_find_1_1_map_1_1_triangle" kind="class"><name>BxPathFind::Map::Triangle</name>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1ad2f32e921244459f7cc6d50355429cc6" kind="friend"><name>Map</name></member>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a0e6378d52c5ca386f47b05930aaae2a3" kind="variable"><name>TypeAB</name></member>
@@ -1258,18 +1258,6 @@
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1a8e388ca679bdd17704dda38c9c4207fd" kind="function"><name>Triangle</name></member>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa89ec58e16208cb7c953c4aef9b7a856" kind="function"><name>INSERT_FIRST</name></member>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1abfd96ca3b81c98259b869318913694cb" kind="function"><name>~Triangle</name></member>
-  </compound>
-  <compound refid="class_bx_xml_1_1_unit" kind="class"><name>BxXml::Unit</name>
-    <member refid="class_bx_xml_1_1_unit_1a230ffac023d60fe81b0e952e099d7d81" kind="variable"><name>IsWritten</name></member>
-    <member refid="class_bx_xml_1_1_unit_1ac3e85fb97cb60a682601ee392e4d6f5c" kind="variable"><name>TagName</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a7d517cc226900dd5a2ce3d8fd9f9d9aa" kind="variable"><name>Content</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a53630c55c160fd1ff18c6192eae31ee4" kind="variable"><name>AttbName</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a7fd32906711440cbe4d3af64a7db9ab5" kind="variable"><name>AttbValue</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a4f6b6ab80b376c28648a545bf55851a7" kind="function"><name>Unit</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a34becd918fa049e3d968b50614731d62" kind="function"><name>operator=</name></member>
-    <member refid="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" kind="function"><name>Read</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" kind="function"><name>Write</name></member>
-    <member refid="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" kind="function"><name>AtoH</name></member>
   </compound>
   <compound refid="class_bx_pool_global_1_1_unit" kind="class"><name>BxPoolGlobal::Unit</name>
     <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" kind="variable"><name>Next</name></member>
@@ -1290,11 +1278,23 @@
     <member refid="class_bx_pool_1_1_unit_1a4b823bdd28e76d909a185230a62e488e" kind="function"><name>Free</name></member>
     <member refid="class_bx_pool_1_1_unit_1a44e1937723a2f62d86c5e0cac7707756" kind="function"><name>Find</name></member>
   </compound>
-  <compound refid="class_bx_throw_1_1_unit" kind="class"><name>BxThrow::Unit</name>
-    <member refid="class_bx_throw_1_1_unit_1a0669421cde97e40027c33c1dfe4152cf" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_throw_1_1_unit_1af92d493271b40f6fec68e1971c62cd98" kind="function"><name>Unit</name></member>
-    <member refid="class_bx_throw_1_1_unit_1a16922fc0b002528d313930d604cd8ac3" kind="function"><name>~Unit</name></member>
-    <member refid="class_bx_throw_1_1_unit_1a8047c56b2f802b75610239430fa627e7" kind="function"><name>VTablePtr</name></member>
+  <compound refid="class_bx_argument_1_1_unit" kind="class"><name>BxArgument::Unit</name>
+    <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" kind="function"><name>Unit</name></member>
+    <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" kind="function"><name>~Unit</name></member>
+    <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" kind="function"><name>VTablePtr</name></member>
+  </compound>
+  <compound refid="class_bx_xml_1_1_unit" kind="class"><name>BxXml::Unit</name>
+    <member refid="class_bx_xml_1_1_unit_1a230ffac023d60fe81b0e952e099d7d81" kind="variable"><name>IsWritten</name></member>
+    <member refid="class_bx_xml_1_1_unit_1ac3e85fb97cb60a682601ee392e4d6f5c" kind="variable"><name>TagName</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a7d517cc226900dd5a2ce3d8fd9f9d9aa" kind="variable"><name>Content</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a53630c55c160fd1ff18c6192eae31ee4" kind="variable"><name>AttbName</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a7fd32906711440cbe4d3af64a7db9ab5" kind="variable"><name>AttbValue</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a4f6b6ab80b376c28648a545bf55851a7" kind="function"><name>Unit</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a34becd918fa049e3d968b50614731d62" kind="function"><name>operator=</name></member>
+    <member refid="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" kind="function"><name>Read</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" kind="function"><name>Write</name></member>
+    <member refid="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" kind="function"><name>AtoH</name></member>
   </compound>
   <compound refid="class_bx_pool_global_1_1_unit_link" kind="class"><name>BxPoolGlobal::UnitLink</name>
     <member refid="class_bx_pool_global_1_1_unit_link_1a039795c6e0ac983ed8845c5c5e5071f3" kind="variable"><name>Head</name></member>
@@ -1480,7 +1480,7 @@
   <compound refid="namespace_bx_core_1_1_sound" kind="namespace"><name>BxCore::Sound</name>
     <member refid="namespace_bx_core_1_1_sound_1afdb4f5ce1bf8fd5d6fe945ccef3d5309" kind="function"><name>Create</name></member>
     <member refid="namespace_bx_core_1_1_sound_1a6b955c392b411972ca91efd87c35fe8e" kind="function"><name>Release</name></member>
-    <member refid="namespace_bx_core_1_1_sound_1ae5f64a6ec2d340776d3db3961b123f58" kind="function"><name>PlayMusic</name></member>
+    <member refid="namespace_bx_core_1_1_sound_1a25c5399fb1f1359acdc9b394670771a0" kind="function"><name>PlayMusic</name></member>
     <member refid="namespace_bx_core_1_1_sound_1af8a207c266081ae3271f65c62eb60af3" kind="function"><name>StopMusic</name></member>
     <member refid="namespace_bx_core_1_1_sound_1a7ad143b76624bcfeccda99f889eeb009" kind="function"><name>SetMusicVolume</name></member>
     <member refid="namespace_bx_core_1_1_sound_1a6e42e6f184cca12f6cf0df5272426e6c" kind="function"><name>PlayEffect</name></member>
@@ -1488,6 +1488,7 @@
     <member refid="namespace_bx_core_1_1_sound_1af15db88c483a17d15554a266445c2e74" kind="function"><name>SetEffectVolume</name></member>
     <member refid="namespace_bx_core_1_1_sound_1a3aec21a0c95d090d4e7d14c755a21193" kind="function"><name>PauseAll</name></member>
     <member refid="namespace_bx_core_1_1_sound_1a7d386c2bb173df20750b012f56647c8d" kind="function"><name>ResumeAll</name></member>
+    <member refid="namespace_bx_core_1_1_sound_1a85767d56886b7937ff4d66a0f15b77c0" kind="function"><name>PlayMusic</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_surface" kind="namespace"><name>BxCore::Surface</name>
     <member refid="namespace_bx_core_1_1_surface_1aaef270c828cd57bb99c8d11128bfbbe3" kind="function"><name>Init</name></member>
@@ -1523,7 +1524,7 @@
     <member refid="namespace_bx_core_1_1_system_1a7fb73d2ee4780e2463f3bd4d93cba8b6" kind="function"><name>GetSimulatorCursorPos</name></member>
     <member refid="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" kind="function"><name>DoSimulatorMinimize</name></member>
     <member refid="namespace_bx_core_1_1_system_1af1378bb03a6217f9098f0386b4668f2e" kind="function"><name>Break</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a32cbcef13cd061545c46900a5a1de6ce" kind="function"><name>Trace</name></member>
+    <member refid="namespace_bx_core_1_1_system_1add31af8264dd786fcc5cf2e045877289" kind="function"><name>Trace</name></member>
     <member refid="namespace_bx_core_1_1_system_1a68e95a6afa87cea29d75098fedf3103d" kind="function"><name>GetUTF8LiteralByCP949</name></member>
     <member refid="namespace_bx_core_1_1_system_1a15ac9a31f47be8502f77a6bc9749ef95" kind="function"><name>GetCP949LiteralByUTF8</name></member>
     <member refid="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" kind="function"><name>GetOSName</name></member>
@@ -1542,6 +1543,7 @@
     <member refid="namespace_bx_core_1_1_system_1a80802612df8ad8e204870b2e9ce444d5" kind="function"><name>CallStaticMethodJNI</name></member>
     <member refid="namespace_bx_core_1_1_system_1aa721d486c3bd5d827a78b5ffb49dc2df" kind="function"><name>AddCallbackJNI</name></member>
     <member refid="namespace_bx_core_1_1_system_1ab1e1b596a676fcce2dfd0d73cc568265" kind="function"><name>SetCallbackEDK</name></member>
+    <member refid="namespace_bx_core_1_1_system_1ae27f1cfabd1383ab6d93107636dbec49" kind="function"><name>Trace</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_thread" kind="namespace"><name>BxCore::Thread</name>
     <member refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kind="function"><name>Create</name></member>
@@ -1555,11 +1557,11 @@
   </compound>
   <compound refid="namespace_bx_core_1_1_util" kind="namespace"><name>BxCore::Util</name>
     <member refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kind="function"><name>Alloc</name></member>
-    <member refid="namespace_bx_core_1_1_util_1abe79bf4d20f42ce940b4d4e7d58b7a1d" kind="function"><name>Free</name></member>
+    <member refid="namespace_bx_core_1_1_util_1a56c1aaa6d7106d36c67c88a5e3b6a6f1" kind="function"><name>Free</name></member>
     <member refid="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" kind="function"><name>MemSet</name></member>
     <member refid="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" kind="function"><name>MemCpy</name></member>
     <member refid="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" kind="function"><name>MemCmp</name></member>
-    <member refid="namespace_bx_core_1_1_util_1a39339febd9159aca9926f2a400bb0617" kind="function"><name>Print</name></member>
+    <member refid="namespace_bx_core_1_1_util_1acc00b7e6b5a850983733ca189777d3a7" kind="function"><name>Print</name></member>
     <member refid="namespace_bx_core_1_1_util_1a64ec381ceb5fbce7d4074c674a9b763d" kind="function"><name>Cos1024Table</name></member>
     <member refid="namespace_bx_core_1_1_util_1ae6c876f32bae515d93b7c1fe9388ec5a" kind="function"><name>Tan1024Table</name></member>
     <member refid="namespace_bx_core_1_1_util_1abf0ab76dfa6db0a92832c1671b69a590" kind="function"><name>UTF16Table</name></member>
@@ -1576,8 +1578,8 @@
     <member refid="namespace_bx_draw_global_1ae284872147dbce083bbdddfbcf6cf057" kind="function"><name>XYXY</name></member>
     <member refid="namespace_bx_draw_global_1ad15e4e6ddd48750b45d1262cad126e8d" kind="function"><name>XYR</name></member>
     <member refid="namespace_bx_draw_global_1aaad2b306eb1a3cdb820f97ec41543e96" kind="function"><name>XYRR</name></member>
-    <member refid="namespace_bx_draw_global_1a28d2b89e6225044de76d60cb3e47bde2" kind="function"><name>XYS</name></member>
-    <member refid="namespace_bx_draw_global_1abb606f769056ad58428a739cb2e80042" kind="function"><name>XYZS</name></member>
+    <member refid="namespace_bx_draw_global_1a3d154c2742e70d45fd7bd10c17a92dbb" kind="function"><name>XYS</name></member>
+    <member refid="namespace_bx_draw_global_1a77d25475925ffd41e85cedb205074b4e" kind="function"><name>XYZS</name></member>
     <member refid="namespace_bx_draw_global_1ad0b9b4235434c42dbaaff250b70589a1" kind="function"><name>XYARRAY</name></member>
     <member refid="namespace_bx_draw_global_1a962033425c873ce7caa3eafc54426b1c" kind="function"><name>XYZARRAY</name></member>
     <member refid="namespace_bx_draw_global_1ac92527c8048b58cf4e184738c1594bb9" kind="function"><name>RGB32</name></member>
@@ -1702,10 +1704,13 @@
     <member refid="namespace_bx_util_global_1ad1297c7c4fa7a887810713a0ab541400" kind="function"><name>LoadBytes</name></member>
     <member refid="namespace_bx_util_global_1aa3ddb995529bff12b689a073cd518e67" kind="function"><name>LoadBits</name></member>
     <member refid="namespace_bx_util_global_1a5bd37d311b067ed2ac52c3443363013f" kind="function"><name>LoadType</name></member>
-    <member refid="namespace_bx_util_global_1a956f04e1f763eddd08c74f1bf301c05f" kind="function"><name>LoadString</name></member>
-    <member refid="namespace_bx_util_global_1a8bc0de550dfeda13d1a2bb85e7d55590" kind="function"><name>SetArray</name></member>
+    <member refid="namespace_bx_util_global_1a9bba584552f6e46a3645bf9ba4179f9d" kind="function"><name>LoadString</name></member>
+    <member refid="namespace_bx_util_global_1a79b68673159a50732cfaf0e7252c0500" kind="function"><name>SetArray</name></member>
   </compound>
   <compound refid="_bx_animate_8hpp" kind="file"><name>BxAnimate.hpp</name>
+  </compound>
+  <compound refid="_bx_argument_8hpp" kind="file"><name>BxArgument.hpp</name>
+    <member refid="_bx_argument_8hpp_1aa7191ccf7a6144cddfbc1185a8609606" kind="define"><name>BxARG</name></member>
   </compound>
   <compound refid="_bx_auto_buffer_8hpp" kind="file"><name>BxAutoBuffer.hpp</name>
   </compound>
@@ -1787,9 +1792,6 @@
   </compound>
   <compound refid="_bx_telex_8hpp" kind="file"><name>BxTelex.hpp</name>
     <member refid="_bx_telex_8hpp_1a428c64fc180f3fb2f674495c877cf5d3" kind="define"><name>SEND_PACKET</name></member>
-  </compound>
-  <compound refid="_bx_throw_8hpp" kind="file"><name>BxThrow.hpp</name>
-    <member refid="_bx_throw_8hpp_1a4b66ca40d233e2a2b16cba3394af78c1" kind="define"><name>BxTHROW</name></member>
   </compound>
   <compound refid="_bx_tween_8hpp" kind="file"><name>BxTween.hpp</name>
     <member refid="_bx_tween_8hpp_1a6ae55e09f38049dcb5087de9a03d3d03" kind="define"><name>MS_TO_FRAME</name></member>
@@ -2183,7 +2185,7 @@
     <member refid="_bx_type_8hpp_1a845a8e2a081317281522847038823045" kind="typedef"><name>color_a888</name></member>
     <member refid="_bx_type_8hpp_1ae9d69708677fe1684ce817725d4f8a38" kind="typedef"><name>pixel_dst</name></member>
     <member refid="_bx_type_8hpp_1af827a0bc0f2466279c3708c2c7f1de77" kind="typedef"><name>pixel_src</name></member>
-    <member refid="_bx_type_8hpp_1ada40c4d7729e28ec90d47dc27af889b9" kind="typedef"><name>event</name></member>
+    <member refid="_bx_type_8hpp_1a138ae08fb4a028118d063f2afcecbdff" kind="typedef"><name>event</name></member>
     <member refid="_bx_type_8hpp_1abda1b2ecabaf4b248addea3dcb6e72c6" kind="typedef"><name>check</name></member>
     <member refid="_bx_type_8hpp_1a1b9f47f542ebf1e186d8efff8dc8f38b" kind="typedef"><name>radio</name></member>
     <member refid="_bx_type_8hpp_1a570e111805d8e719540a013bc219bef6" kind="typedef"><name>number</name></member>

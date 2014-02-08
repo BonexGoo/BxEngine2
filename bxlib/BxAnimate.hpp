@@ -471,7 +471,7 @@ protected:
 	{
 	public:
 		keyword Type;
-		string Name;
+		string_rw Name;
 		int ParentID;
 		union
 		{
@@ -479,7 +479,7 @@ protected:
 			check Check;
 			radio Radio;
 			number Number;
-			string String;
+			string_rw String;
 		};
 		_Keyword* _ref_ Link;
 	public:
@@ -582,10 +582,10 @@ protected:
 						Image = BxNew(BxImage);
 						BxString FileName;
 						#ifdef __BX_PIXEL16
-							FileName.Format("%s/%08x.b16", (string) SetResourcePath(), FileID);
+							FileName.Format("<>:<A>/<A:08>.b16", BxARG((string) SetResourcePath(), (ARG_HEX_LOWER) FileID));
 							Image->Load(FileName, BxImage::B16);
 						#else
-							FileName.Format("%s/%08x.b32", (string) SetResourcePath(), FileID);
+							FileName.Format("<>:<A>/<A:08>.b32", BxARG((string) SetResourcePath(), (ARG_HEX_LOWER) FileID));
 							Image->Load(FileName, BxImage::B32);
 						#endif
 						
@@ -870,7 +870,7 @@ protected:
 	class _Object
 	{
 	public:
-		string Name;
+		string_rw Name;
 		int NumAction;
 	public:
 		_Object() : Name(nullptr), NumAction(0), Action(nullptr) {}
@@ -888,7 +888,7 @@ protected:
 		class _Action // 행동
 		{
 		public:
-			string Name;
+			string_rw Name;
 			BxAnimate::_Keyword* _ref_ Event;
 			int NumMotion;
 		public:
@@ -1031,7 +1031,7 @@ protected:
 							check Check;
 							radio Radio;
 							number Number;
-							string String;
+							string_rw String;
 						} Compare;
 					public:
 						_Keyword() : _DataClass(ClassType_Keyword), Keyword(nullptr) {}

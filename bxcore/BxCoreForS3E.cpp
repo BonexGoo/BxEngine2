@@ -312,7 +312,7 @@ namespace BxCore
 			return true;
 		}
 
-		void Trace(string map, const BxThrow& args)
+		void Trace(string map, const BxArgument& args)
 		{
 			printf(BxCore::Util::Print(map, args));
 			fflush(stdout);
@@ -650,7 +650,7 @@ namespace BxCore
 			BxDelete_ByType(SoundData, sound);
 		}
 
-		void PlayMusic(id_sound sound, bool interrupt, const BxThrow& panorama)
+		void PlayMusic(id_sound sound, bool interrupt, const BxArgument& panorama)
 		{
 			if(PanoramaList::Focus()->GetLength() == 0)
 				interrupt = true;
@@ -766,9 +766,10 @@ namespace BxCore
 			return s3eMalloc(size);
 		}
 
-		void Free(void* buf)
+		void* Free(void* buf)
 		{
 			s3eFree(buf);
+			return nullptr;
 		}
 
 		void MemSet(void* dst, byte value, int length)

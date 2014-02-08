@@ -5,7 +5,12 @@ https://www.madewithmarmalade.com/downloads/7.0/7.0.0/marmalade-sdk-7.0.0-353650
 http://download.qt-project.org/official_releases/qt/5.2/5.2.1/qt-opensource-windows-x86-android-5.2.1.exe
 
 ※ ●:신규, ○:업데이트, ◎:버그패치, ★:폐지
-
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■ [3.0.0] → [3.0.1]
+★ BxThrow : 가변인수 구성기능, BxArgument로 대체
+● BxArgument : 가변인수 구성기능, BxARG(...)를 사용
+◎ BxGUI : DownloadCache함수 FilePath 미전달문제 해결(3.0.0 발생)
+★ BxCore::Util : id_memory 및 GetPtr개념 폐지
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■ [2.9.0] → [3.0.0]
 ● BxCoreForQT5 : QT5용 코어(그래픽스/사운드/폰트 향후추가)

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -104,9 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6b955c392b411972ca91efd87c35fe8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_sound.html#a6b955c392b411972ca91efd87c35fe8e">Release</a> (id_sound sound)</td></tr>
 <tr class="memdesc:a6b955c392b411972ca91efd87c35fe8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">사운드ID 반환  <a href="#a6b955c392b411972ca91efd87c35fe8e">More...</a><br/></td></tr>
 <tr class="separator:a6b955c392b411972ca91efd87c35fe8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f64a6ec2d340776d3db3961b123f58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_sound.html#ae5f64a6ec2d340776d3db3961b123f58">PlayMusic</a> (id_sound sound, bool interrupt=false, const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;panorama=<a class="el" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68">BxThrow::zero</a>())</td></tr>
-<tr class="memdesc:ae5f64a6ec2d340776d3db3961b123f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">배경음 출력  <a href="#ae5f64a6ec2d340776d3db3961b123f58">More...</a><br/></td></tr>
-<tr class="separator:ae5f64a6ec2d340776d3db3961b123f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c5399fb1f1359acdc9b394670771a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_sound.html#a25c5399fb1f1359acdc9b394670771a0">PlayMusic</a> (id_sound sound, bool interrupt=false, const <a class="el" href="class_bx_argument.html">BxArgument</a> &amp;panorama=<a class="el" href="class_bx_argument.html#ab9054620e6687cb4e0dfff9c4c54c5c1">BxArgument::zero</a>())</td></tr>
+<tr class="memdesc:a25c5399fb1f1359acdc9b394670771a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">배경음 출력  <a href="#a25c5399fb1f1359acdc9b394670771a0">More...</a><br/></td></tr>
+<tr class="separator:a25c5399fb1f1359acdc9b394670771a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8a207c266081ae3271f65c62eb60af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_sound.html#af8a207c266081ae3271f65c62eb60af3">StopMusic</a> ()</td></tr>
 <tr class="memdesc:af8a207c266081ae3271f65c62eb60af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">배경음 중지  <a href="#af8a207c266081ae3271f65c62eb60af3">More...</a><br/></td></tr>
 <tr class="separator:af8a207c266081ae3271f65c62eb60af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +130,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_sound.html#a7d386c2bb173df20750b012f56647c8d">ResumeAll</a> ()</td></tr>
 <tr class="memdesc:a7d386c2bb173df20750b012f56647c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">전체 배경음/효과음 일시정지 해제 <br/></td></tr>
 <tr class="separator:a7d386c2bb173df20750b012f56647c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85767d56886b7937ff4d66a0f15b77c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85767d56886b7937ff4d66a0f15b77c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PlayMusic</b> (id_sound sound, bool interrupt, const BxThrow &amp;panorama)</td></tr>
+<tr class="separator:a85767d56886b7937ff4d66a0f15b77c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sound파트 </p>
@@ -207,7 +210,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 
 </div>
 </div>
-<a class="anchor" id="ae5f64a6ec2d340776d3db3961b123f58"></a>
+<a class="anchor" id="a25c5399fb1f1359acdc9b394670771a0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -226,8 +229,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_bx_throw.html">BxThrow</a> &amp;&#160;</td>
-          <td class="paramname"><em>panorama</em> = <code><a class="el" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68">BxThrow::zero</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_bx_argument.html">BxArgument</a> &amp;&#160;</td>
+          <td class="paramname"><em>panorama</em> = <code><a class="el" href="class_bx_argument.html#ab9054620e6687cb4e0dfff9c4c54c5c1">BxArgument::zero</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -355,14 +358,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 </div><div class="memdoc">
 
 <p>배경음 중지 </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_sound.html#ae5f64a6ec2d340776d3db3961b123f58" title="배경음 출력 ">PlayMusic</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespace_bx_core_1_1_sound.html#a25c5399fb1f1359acdc9b394670771a0" title="배경음 출력 ">PlayMusic</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:47 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:08 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

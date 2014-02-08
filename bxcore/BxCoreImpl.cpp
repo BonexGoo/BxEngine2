@@ -198,7 +198,7 @@ namespace BxCore
 	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	namespace Util
 	{
-		string _tmp_ Print(string map, const BxThrow& args, int* length)
+		string _tmp_ Print(string map, const BxArgument& args, int* length)
 		{
 			BxASSERT("BxCore::Util::Print<스트링맵의 형식을 지키지 않았습니다>", map[0] == '<' && map[1] == '>' && map[2] == ':');
 			// 결과버퍼사이즈
@@ -318,24 +318,24 @@ namespace BxCore
 								ArgString[0] = (string) *((BxString*) ArgData);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
-							else if(ArgData = args.Access<THROW_STR_UPPER>(ArgID))
+							else if(ArgData = args.Access<ARG_STR_UPPER>(ArgID))
 							{
-								ArgString[0] = BxUtilGlobal::AtoA(true, ((THROW_STR_UPPER*) ArgData)->Value);
+								ArgString[0] = BxUtilGlobal::AtoA(true, ((ARG_STR_UPPER*) ArgData)->Value);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
-							else if(ArgData = args.Access<THROW_STR_LOWER>(ArgID))
+							else if(ArgData = args.Access<ARG_STR_LOWER>(ArgID))
 							{
-								ArgString[0] = BxUtilGlobal::AtoA(false, ((THROW_STR_LOWER*) ArgData)->Value);
+								ArgString[0] = BxUtilGlobal::AtoA(false, ((ARG_STR_LOWER*) ArgData)->Value);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
-							else if(ArgData = args.Access<THROW_HEX_UPPER>(ArgID))
+							else if(ArgData = args.Access<ARG_HEX_UPPER>(ArgID))
 							{
-								ArgString[0] = BxUtilGlobal::ItoH(true, ((THROW_HEX_UPPER*) ArgData)->Value);
+								ArgString[0] = BxUtilGlobal::ItoH(true, ((ARG_HEX_UPPER*) ArgData)->Value);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
-							else if(ArgData = args.Access<THROW_HEX_LOWER>(ArgID))
+							else if(ArgData = args.Access<ARG_HEX_LOWER>(ArgID))
 							{
-								ArgString[0] = BxUtilGlobal::ItoH(false, ((THROW_HEX_LOWER*) ArgData)->Value);
+								ArgString[0] = BxUtilGlobal::ItoH(false, ((ARG_HEX_LOWER*) ArgData)->Value);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
 							else BxASSERT("BxCore::Util::Print<지원하지 않는 타입의 인수입니다>", false);

@@ -1,47 +1,47 @@
 ﻿#pragma once
 #include <BxPool.hpp>
 
-// BxTHROW-모듈
-#define BxTHROW(...) (BxThrow(), __VA_ARGS__)
+// BxARG-모듈
+#define BxARG(...) (BxArgument(), __VA_ARGS__)
 
-// BxTHROW 전용타입
-class THROW_STR_UPPER
+// BxARG 전용타입
+class ARG_STR_UPPER
 {
 public:
 	string _tmp_ Value;
-	THROW_STR_UPPER(const THROW_STR_UPPER& RHS) {operator=(RHS);}
-	explicit THROW_STR_UPPER(string RHS) : Value(RHS) {}
-	THROW_STR_UPPER& operator=(const THROW_STR_UPPER& RHS) {Value = RHS.Value; return *this;}
+	ARG_STR_UPPER(const ARG_STR_UPPER& RHS) {operator=(RHS);}
+	explicit ARG_STR_UPPER(string RHS) : Value(RHS) {}
+	ARG_STR_UPPER& operator=(const ARG_STR_UPPER& RHS) {Value = RHS.Value; return *this;}
 };
-class THROW_STR_LOWER
+class ARG_STR_LOWER
 {
 public:
 	string _tmp_ Value;
-	THROW_STR_LOWER(const THROW_STR_LOWER& RHS) {operator=(RHS);}
-	explicit THROW_STR_LOWER(string RHS) : Value(RHS) {}
-	THROW_STR_LOWER& operator=(const THROW_STR_LOWER& RHS) {Value = RHS.Value; return *this;}
+	ARG_STR_LOWER(const ARG_STR_LOWER& RHS) {operator=(RHS);}
+	explicit ARG_STR_LOWER(string RHS) : Value(RHS) {}
+	ARG_STR_LOWER& operator=(const ARG_STR_LOWER& RHS) {Value = RHS.Value; return *this;}
 };
-class THROW_HEX_UPPER
+class ARG_HEX_UPPER
 {
 public:
 	uint Value;
-	THROW_HEX_UPPER(const THROW_HEX_UPPER& RHS) {operator=(RHS);}
-	explicit THROW_HEX_UPPER(const int RHS) : Value((uint) RHS) {}
-	explicit THROW_HEX_UPPER(const void* RHS) : Value((uint) RHS) {}
-	THROW_HEX_UPPER& operator=(const THROW_HEX_UPPER& RHS) {Value = RHS.Value; return *this;}
+	ARG_HEX_UPPER(const ARG_HEX_UPPER& RHS) {operator=(RHS);}
+	explicit ARG_HEX_UPPER(const int RHS) : Value((uint) RHS) {}
+	explicit ARG_HEX_UPPER(const void* RHS) : Value((uint) RHS) {}
+	ARG_HEX_UPPER& operator=(const ARG_HEX_UPPER& RHS) {Value = RHS.Value; return *this;}
 };
-class THROW_HEX_LOWER
+class ARG_HEX_LOWER
 {
 public:
 	uint Value;
-	THROW_HEX_LOWER(const THROW_HEX_LOWER& RHS) {operator=(RHS);}
-	explicit THROW_HEX_LOWER(const int RHS) : Value((uint) RHS) {}
-	explicit THROW_HEX_LOWER(const void* RHS) : Value((uint) RHS) {}
-	THROW_HEX_LOWER& operator=(const THROW_HEX_LOWER& RHS) {Value = RHS.Value; return *this;}
+	ARG_HEX_LOWER(const ARG_HEX_LOWER& RHS) {operator=(RHS);}
+	explicit ARG_HEX_LOWER(const int RHS) : Value((uint) RHS) {}
+	explicit ARG_HEX_LOWER(const void* RHS) : Value((uint) RHS) {}
+	ARG_HEX_LOWER& operator=(const ARG_HEX_LOWER& RHS) {Value = RHS.Value; return *this;}
 };
 
 //! \brief 가변인자 제공
-class BxThrow
+class BxArgument
 {
 public:
 	/*!
@@ -50,7 +50,7 @@ public:
 	\return 자신을 리턴
 	*/
 	template<typename TYPE>
-	inline BxThrow& operator,(const TYPE& rhs)
+	inline BxArgument& operator,(const TYPE& rhs)
 	{
 		PtrUnit<TYPE>* NewUint = BxPool< PtrUnit<TYPE> >::MakeClass();
 		NewUint->Ptr = (TYPE*) &rhs;
@@ -63,7 +63,7 @@ public:
 	\param rhs : 우측 피연산자
 	\return 자신을 리턴
 	*/
-	inline BxThrow& operator,(string rhs)
+	inline BxArgument& operator,(string rhs)
 	{
 		PtrUnit<string>* NewUint = BxPool< PtrUnit<string> >::MakeClass();
 		NewUint->Ptr = (string*) rhs; // 특수화
@@ -100,21 +100,21 @@ public:
 	\brief 공데이터
 	\return 공데이터를 리턴
 	*/
-	global_func inline const BxThrow& zero()
+	global_func inline const BxArgument& zero()
 	{
-		global_data const BxThrow Zero;
+		global_data const BxArgument Zero;
 		return Zero;
 	}
 
 	/*!
 	\brief 생성자
 	*/
-	BxThrow() {}
+	BxArgument() {}
 
 	/*!
 	\brief 소멸자
 	*/
-	~BxThrow()
+	~BxArgument()
 	{
 		Unit* OldUnit = nullptr;
 		while(OldUnit = List.DetachFirst())

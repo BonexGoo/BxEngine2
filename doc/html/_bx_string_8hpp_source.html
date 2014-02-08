@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -132,10 +132,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            ((<span class="keywordtype">char</span>*) String)[ValidCount] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_bx_string_1_1_parse.html#a6859baec52342491ff6fd767642c9fdd">   61</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="class_bx_string_1_1_parse.html#a6859baec52342491ff6fd767642c9fdd" title="복사생성자(string, BxThrow) ">Parse</a>(<span class="keywordtype">string</span> RHS, <span class="keyword">const</span> <a class="code" href="class_bx_throw.html" title="가변인자 제공 ">BxThrow</a>&amp; Args)</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_bx_string_1_1_parse.html#a80bdc7751cea364fedd99186eec547a5">   61</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="class_bx_string_1_1_parse.html#a80bdc7751cea364fedd99186eec547a5" title="복사생성자(string, BxArgument) ">Parse</a>(<span class="keywordtype">string</span> RHS, <span class="keyword">const</span> <a class="code" href="class_bx_argument.html" title="가변인자 제공 ">BxArgument</a>&amp; Args)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            ValidCount = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">string</span> _tmp_ Result = <a class="code" href="namespace_bx_core_1_1_util.html#a39339febd9159aca9926f2a400bb0617" title="스트링구성 ">BxCore::Util::Print</a>(RHS, Args, &amp;ValidCount);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">string</span> _tmp_ Result = <a class="code" href="namespace_bx_core_1_1_util.html#acc00b7e6b5a850983733ca189777d3a7" title="스트링구성 ">BxCore::Util::Print</a>(RHS, Args, &amp;ValidCount);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            StringLength = ValidCount + 1;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            String = <a class="code" href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a" title="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</a>(Result, ValidCount);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
@@ -263,9 +263,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
 <div class="line"><a name="l00270"></a><span class="lineno"><a class="code" href="class_bx_string.html#a819ce62aca47966ebea31617d4b7d070">  270</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_bx_string.html#a819ce62aca47966ebea31617d4b7d070" title="복사생성자(string) ">BxString</a>(<span class="keywordtype">string</span> RHS) {<a class="code" href="class_bx_string.html#aa95207728e64e496d10b395027392f77" title="연산자 중복함수=(char) ">operator=</a>(RHS);}</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="code" href="class_bx_string.html#a1177abf9d2542d1420cc84a69e230a76">  277</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_bx_string.html#a1177abf9d2542d1420cc84a69e230a76" title="복사생성자(string, BxThrow) ">BxString</a>(<span class="keywordtype">string</span> RHS, <span class="keyword">const</span> <a class="code" href="class_bx_throw.html" title="가변인자 제공 ">BxThrow</a>&amp; Args)</div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="code" href="class_bx_string.html#ad4ecde2d474a277c2cbef1d3491d30af">  277</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_bx_string.html#ad4ecde2d474a277c2cbef1d3491d30af" title="복사생성자(string, BxArgument) ">BxString</a>(<span class="keywordtype">string</span> RHS, <span class="keyword">const</span> <a class="code" href="class_bx_argument.html" title="가변인자 제공 ">BxArgument</a>&amp; Args)</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(RHS, Args);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(RHS, Args);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
 <div class="line"><a name="l00285"></a><span class="lineno"><a class="code" href="class_bx_string.html#a6bce07db311243e6f927e050381bc419">  285</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_bx_string.html#a6bce07db311243e6f927e050381bc419" title="소멸자 ">~BxString</a>() {Chars.Reset();}</div>
@@ -523,11 +523,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="keywordflow">return</span> same;</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    }</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
-<div class="line"><a name="l00690"></a><span class="lineno"><a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76">  690</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bx_string.html#aace96361eb806823448ce193a4cc0e76" title="스트링구성 ">Format</a>(<span class="keywordtype">string</span> Map, <span class="keyword">const</span> <a class="code" href="class_bx_throw.html" title="가변인자 제공 ">BxThrow</a>&amp; Args = <a class="code" href="class_bx_throw.html#ad7cb462b4cfc691a69570de2d65d1c68" title="공데이터 ">BxThrow::zero</a>())</div>
+<div class="line"><a name="l00690"></a><span class="lineno"><a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d">  690</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bx_string.html#abf4bf9f4f289c83596dcb870b1715f5d" title="스트링구성 ">Format</a>(<span class="keywordtype">string</span> Map, <span class="keyword">const</span> <a class="code" href="class_bx_argument.html" title="가변인자 제공 ">BxArgument</a>&amp; Args = <a class="code" href="class_bx_argument.html#ab9054620e6687cb4e0dfff9c4c54c5c1" title="공데이터 ">BxArgument::zero</a>())</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    {</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <a class="code" href="class_bx_string.html#aa438d5974c167a3ed314777237575bb8" title="내용 비우기 ">Empty</a>();</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="keywordtype">int</span> ResultLength = 0;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordtype">string</span> _tmp_ Result = <a class="code" href="namespace_bx_core_1_1_util.html#a39339febd9159aca9926f2a400bb0617" title="스트링구성 ">BxCore::Util::Print</a>(Map, Args, &amp;ResultLength);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordtype">string</span> _tmp_ Result = <a class="code" href="namespace_bx_core_1_1_util.html#acc00b7e6b5a850983733ca189777d3a7" title="스트링구성 ">BxCore::Util::Print</a>(Map, Args, &amp;ResultLength);</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; ResultLength; ++i)</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            Chars.Insert(i) = Result[i];</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    }</div>
@@ -648,7 +648,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:06 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

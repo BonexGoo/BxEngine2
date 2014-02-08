@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include <BxSingleton.hpp>
-#include <BxThrow.hpp>
+#include <BxArgument.hpp>
 #include <BxMemory.hpp>
 #include <BxVar.hpp>
 #include <BxVarMap.hpp>
@@ -106,7 +106,7 @@ class BxTelex
 		PeerName = BxUtilGlobal::StrFree(PeerName);
 	}
 	// 인스턴스관리
-	public: global_func BxTelex* Create(string projectname, string peername, const BxThrow& reports, const BxThrow& commands, UpdateCommandCB cb, void* cbdata)
+	public: global_func BxTelex* Create(string projectname, string peername, const BxArgument& reports, const BxArgument& commands, UpdateCommandCB cb, void* cbdata)
 	{
 		global_data int LastTelexID = 0;
 		BxTelex* Result = BxNew(BxTelex);

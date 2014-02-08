@@ -17,100 +17,95 @@
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <includedby refid="_bx_core_for_q_t5_8cpp" local="no">BxCoreForQT5.cpp</includedby>
     <incdepgraph>
-      <node id="97">
+      <node id="119">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="95" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
       </node>
-      <node id="96">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="93" relation="include">
-        </childnode>
-      </node>
-      <node id="85">
+      <node id="108">
         <label>QThread</label>
       </node>
-      <node id="84">
+      <node id="117">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
         <label>QHostInfo</label>
       </node>
-      <node id="81">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="BxCoreForQT5.hpp"/>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="83" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
-        </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
-        <childnode refid="86" relation="include">
-        </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
-        <childnode refid="88" relation="include">
-        </childnode>
-        <childnode refid="89" relation="include">
-        </childnode>
-        <childnode refid="90" relation="include">
-        </childnode>
-        <childnode refid="91" relation="include">
-        </childnode>
-        <childnode refid="93" relation="include">
-        </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="97" relation="include">
-        </childnode>
-      </node>
-      <node id="82">
-        <label>QEventLoop</label>
-      </node>
-      <node id="86">
-        <label>QMutex</label>
-      </node>
-      <node id="91">
+      <node id="114">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="92" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
-      <node id="87">
-        <label>QTime</label>
+      <node id="105">
+        <label>QEventLoop</label>
       </node>
-      <node id="92">
+      <node id="109">
+        <label>QMutex</label>
+      </node>
+      <node id="115">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="88">
+      <node id="110">
+        <label>QTime</label>
+      </node>
+      <node id="118">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="BxCoreForQT5.hpp"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
         <label>QFile</label>
       </node>
-      <node id="95">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="96" relation="include">
-        </childnode>
-      </node>
-      <node id="93">
+      <node id="116">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="92" relation="include">
-        </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
-      <node id="90">
+      <node id="113">
         <label>QDir</label>
       </node>
-      <node id="83">
+      <node id="106">
         <label>QTcpSocket</label>
       </node>
-      <node id="94">
-        <label>stdio.h</label>
-      </node>
-      <node id="89">
+      <node id="112">
         <label>QFileInfo</label>
       </node>
     </incdepgraph>
@@ -234,7 +229,7 @@
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Data;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StorageClass()<sp/>:<sp/>Data(nullptr)<sp/>{}</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~StorageClass()<sp/>{<ref refid="namespace_bx_core_1_1_util_1abe79bf4d20f42ce940b4d4e7d58b7a1d" kindref="member" tooltip="메모리반환 ">BxCore::Util::Free</ref>(Data);}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~StorageClass()<sp/>{<ref refid="namespace_bx_core_1_1_util_1a56c1aaa6d7106d36c67c88a5e3b6a6f1" kindref="member" tooltip="메모리반환 ">BxCore::Util::Free</ref>(Data);}</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_surface_1aaef270c828cd57bb99c8d11128bfbbe3" kindref="member" tooltip="화면생성 ">Init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structsize" kindref="compound" tooltip="size구조체 : w, h ">size</ref>)</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kindref="member" tooltip="메모리할당 ">BxCore::Util::Alloc</ref>(size);</highlight></codeline>
@@ -271,6 +266,6 @@
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="157"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxcore/BxCoreForQT5.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxcore/BxCoreForQT5.hpp"/>
   </compounddef>
 </doxygen>

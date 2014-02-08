@@ -6,97 +6,92 @@
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includedby refid="_bx_g_u_i_8hpp" local="no">BxGUI.hpp</includedby>
     <incdepgraph>
-      <node id="580">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="581" relation="include">
+      <node id="556">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
         </childnode>
       </node>
-      <node id="577">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="578" relation="include">
-        </childnode>
-        <childnode refid="581" relation="include">
+      <node id="552">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="553" relation="include">
         </childnode>
       </node>
-      <node id="586">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="578" relation="include">
-        </childnode>
-        <childnode refid="584" relation="include">
-        </childnode>
-      </node>
-      <node id="585">
+      <node id="557">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="582" relation="include">
+        <childnode refid="555" relation="include">
         </childnode>
       </node>
-      <node id="582">
+      <node id="551">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="576">
+      <node id="549">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="577" relation="include">
+        <childnode refid="550" relation="include">
         </childnode>
-        <childnode refid="584" relation="include">
+        <childnode refid="556" relation="include">
         </childnode>
-        <childnode refid="585" relation="include">
+        <childnode refid="557" relation="include">
         </childnode>
       </node>
-      <node id="575">
+      <node id="553">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="554" relation="include">
+        </childnode>
+      </node>
+      <node id="548">
         <label>BxWebContent.hpp</label>
         <link refid="BxWebContent.hpp"/>
-        <childnode refid="576" relation="include">
+        <childnode refid="549" relation="include">
         </childnode>
-        <childnode refid="586" relation="include">
-        </childnode>
-      </node>
-      <node id="579">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="580" relation="include">
+        <childnode refid="558" relation="include">
         </childnode>
       </node>
-      <node id="581">
+      <node id="554">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="582" relation="include">
-        </childnode>
-        <childnode refid="583" relation="include">
+        <childnode refid="555" relation="include">
         </childnode>
       </node>
-      <node id="583">
-        <label>stdio.h</label>
-      </node>
-      <node id="584">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="578" relation="include">
+      <node id="550">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="551" relation="include">
         </childnode>
-        <childnode refid="585" relation="include">
-        </childnode>
-      </node>
-      <node id="578">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="579" relation="include">
+        <childnode refid="554" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="588">
+      <node id="560">
         <label>BxGUI.hpp</label>
         <link refid="_bx_g_u_i_8hpp_source"/>
       </node>
-      <node id="587">
+      <node id="559">
         <label>BxWebContent.hpp</label>
         <link refid="BxWebContent.hpp"/>
-        <childnode refid="588" relation="include">
+        <childnode refid="560" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -165,7 +160,7 @@
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(connect_connected<sp/>==<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member" tooltip="서버로 접속 ">BxCore::Socket::Connect</ref>(Socket,<sp/>Domain,<sp/>Port,<sp/>Timeout,<sp/>Progress))</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RequestCharsLength<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>RequestChars<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1a39339febd9159aca9926f2a400bb0617" kindref="member" tooltip="스트링구성 ">BxCore::Util::Print</ref>(</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/>RequestChars<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1acc00b7e6b5a850983733ca189777d3a7" kindref="member" tooltip="스트링구성 ">BxCore::Util::Print</ref>(</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;&gt;:GET<sp/>/&lt;A&gt;&lt;A&gt;&lt;A&gt;<sp/>HTTP/1.1&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept:<sp/>text/html,<sp/>application/xhtml+xml,<sp/>*/*&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Language:<sp/>ko-KR&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -173,7 +168,7 @@
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Accept-Encoding:<sp/>deflate&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Host:<sp/>&lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Connection:<sp/>Keep-Alive&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(Path,<sp/>(!Arguments<sp/>||<sp/>!*Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">,<sp/>(!Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/>Arguments,<sp/>Domain),</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(Path,<sp/>(!Arguments<sp/>||<sp/>!*Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">,<sp/>(!Arguments)?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/>Arguments,<sp/>Domain),</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;RequestCharsLength);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SendResult<sp/>=<sp/>0,<sp/>SendedLength<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
@@ -315,7 +310,7 @@
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CacheSizeSumMax<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" kindref="member" tooltip="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;Bx.WebContent.CacheSizeSumMax&quot;</highlight><highlight class="normal">,<sp/>-1);</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"></highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시로드</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>CacheFileName(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;FS&gt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxTHROW(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>FilePath));</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_string" kindref="compound" tooltip="스트링 관리 ">BxString</ref><sp/>CacheFileName(</highlight><highlight class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;FS&gt;&lt;A&gt;&quot;</highlight><highlight class="normal">,<sp/>BxARG(<ref refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" kindref="member" tooltip="캐시폴더이름 받기 ">GetCachePath</ref>(),<sp/>FilePath));</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FindedPos<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((FindedPos<sp/>=<sp/>CacheFileName.<ref refid="class_bx_string_1a3ee00cfa51f7d302abc54a979f2fff07" kindref="member" tooltip="글자 찾기 ">Find</ref>(</highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">))<sp/>!=<sp/>-1)</highlight></codeline>
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CacheFileName[FindedPos]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;</highlight></codeline>
@@ -406,6 +401,6 @@
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="334"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxWebContent.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxWebContent.hpp"/>
   </compounddef>
 </doxygen>

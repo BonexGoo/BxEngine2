@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_bx_argument_1_1_head_unit" kind="class" prot="private">
+    <compoundname>BxArgument::HeadUnit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BxArgument::Unit</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_argument_1_1_head_unit_1adb003009fd6dbe8b79ec0774a85208e4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxArgument::HeadUnit::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="137" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_argument_1_1_head_unit_1aab2fb00c813e24ce677fcec381b2675a" prot="public" static="no" mutable="no">
+        <type>Unit *_ref_</type>
+        <definition>Unit* _ref_ BxArgument::HeadUnit::Last</definition>
+        <argsstring></argsstring>
+        <name>Last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="138" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_argument_1_1_head_unit_1abd1444d8ec2e1cae752861d7b1b8d583" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxArgument::HeadUnit::HeadUnit</definition>
+        <argsstring>()</argsstring>
+        <name>HeadUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="139" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_head_unit_1a86f433ebe02c5c5aa69b612f82eca9d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxArgument::HeadUnit::~HeadUnit</definition>
+        <argsstring>()</argsstring>
+        <name>~HeadUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="140" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_head_unit_1abd11570c3b3759f576df1959fcf29b2e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Unit *</type>
+        <definition>Unit* BxArgument::HeadUnit::Access</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="142" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="142" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_head_unit_1a77060f75267ff7e706ce14c6fd10f523" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxArgument::HeadUnit::Length</definition>
+        <argsstring>() const </argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="149" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_head_unit_1a4220e6da065eb0396b9b4d82990ec871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxArgument::HeadUnit::AttachLast</definition>
+        <argsstring>(Unit *NewUnit)</argsstring>
+        <name>AttachLast</name>
+        <param>
+          <type>Unit *</type>
+          <declname>NewUnit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="153" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="153" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_argument_1_1_head_unit_1a16e973f8647ac5f01236e3a3822b5cef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Unit *</type>
+        <definition>Unit* BxArgument::HeadUnit::DetachFirst</definition>
+        <argsstring>()</argsstring>
+        <name>DetachFirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="159" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="159" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="118">
+        <label>BxArgument::HeadUnit</label>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>BxArgument::Unit</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="120">
+        <label>BxArgument::HeadUnit</label>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+        <childnode refid="121" relation="usage">
+          <edgelabel>Last</edgelabel>
+        </childnode>
+      </node>
+      <node id="121">
+        <label>BxArgument::Unit</label>
+        <childnode refid="121" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="135" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="134" bodyend="169"/>
+    <listofallmembers>
+      <member refid="class_bx_argument_1_1_head_unit_1abd11570c3b3759f576df1959fcf29b2e" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>Access</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1a4220e6da065eb0396b9b4d82990ec871" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>AttachLast</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1adb003009fd6dbe8b79ec0774a85208e4" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>Count</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1a16e973f8647ac5f01236e3a3822b5cef" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>DetachFirst</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1abd1444d8ec2e1cae752861d7b1b8d583" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>HeadUnit</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1aab2fb00c813e24ce677fcec381b2675a" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>Last</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1a77060f75267ff7e706ce14c6fd10f523" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>Length</name></member>
+      <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>Next</name></member>
+      <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>Unit</name></member>
+      <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" prot="public" virt="non-virtual"><scope>BxArgument::HeadUnit</scope><name>VTablePtr</name></member>
+      <member refid="class_bx_argument_1_1_head_unit_1a86f433ebe02c5c5aa69b612f82eca9d8" prot="public" virt="virtual"><scope>BxArgument::HeadUnit</scope><name>~HeadUnit</name></member>
+      <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" prot="public" virt="virtual"><scope>BxArgument::HeadUnit</scope><name>~Unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

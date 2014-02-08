@@ -17,7 +17,7 @@ public:
 	{
 		BxASSERT("BxXml", Mode == DEFINE);
 		Tag[tagID].AttbName[attbID] = attbName;
-		Tag[tagID].AttbValue[attbID].Format("%d", intDefault);
+		Tag[tagID].AttbValue[attbID].Format("<>:<A>", BxARG(intDefault));
 	}
 	void DefineAttb(const int tagID, const int attbID, string attbName, string strDefault)
 	{
@@ -173,7 +173,7 @@ public:
 		if(TagStack.Length())
 		{
 			Unit& OneTag = TagStack[END];
-			OneTag.AttbValue[attbID].Format("%d", intValue);
+			OneTag.AttbValue[attbID].Format("<>:<A>", BxARG(intValue));
 		}
 	}
 	void WriteAttb(const int attbID, string strValue)
@@ -362,20 +362,20 @@ private:
 			case OPEN:
 			case OPENCLOSE:
 				{
-					Temp.Format("<>:<<<A>", BxTHROW(TagName));
+					Temp.Format("<>:<<<A>", BxARG(TagName));
 					Sum += Temp;
 					for(int i = 0; i < AttbName.Length(); ++i)
 					{
-						Temp.Format("<>: <A>=<DQ><A><DQ>", BxTHROW(AttbName[i], AttbValue[i]));
+						Temp.Format("<>: <A>=<DQ><A><DQ>", BxARG(AttbName[i], AttbValue[i]));
 						Sum += Temp;
 					}
-					Temp.Format("<>:<A><A>", BxTHROW((state == OPEN)? ">" : "/>", (Content.GetLength())? (string) Content : "\r\n"));
+					Temp.Format("<>:<A><A>", BxARG((state == OPEN)? ">" : "/>", (Content.GetLength())? (string) Content : "\r\n"));
 					Sum += Temp;
 				}
 				break;
 			case CLOSE:
 				{
-					Temp.Format("<>:<<<FS><A>>><R><N>", BxTHROW(TagName));
+					Temp.Format("<>:<<<FS><A>>><R><N>", BxARG(TagName));
 					Sum += Temp;
 				}
 				break;

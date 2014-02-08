@@ -3,96 +3,91 @@
   <compounddef id="_bx_telex_8hpp" kind="file">
     <compoundname>BxTelex.hpp</compoundname>
     <includes refid="_bx_singleton_8hpp" local="no">BxSingleton.hpp</includes>
-    <includes refid="_bx_throw_8hpp" local="no">BxThrow.hpp</includes>
+    <includes refid="_bx_argument_8hpp" local="no">BxArgument.hpp</includes>
     <includes refid="_bx_memory_8hpp" local="no">BxMemory.hpp</includes>
     <includes refid="_bx_var_8hpp" local="no">BxVar.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includedby refid="_bx_main_8cpp" local="no">BxMain.cpp</includedby>
     <incdepgraph>
-      <node id="434">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="432" relation="include">
-        </childnode>
-      </node>
-      <node id="428">
-        <label>BxThrow.hpp</label>
-        <link refid="_bx_throw_8hpp_source"/>
-        <childnode refid="429" relation="include">
-        </childnode>
-      </node>
-      <node id="433">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="431" relation="include">
-        </childnode>
-        <childnode refid="429" relation="include">
-        </childnode>
-      </node>
-      <node id="435">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="431" relation="include">
-        </childnode>
-        <childnode refid="436" relation="include">
-        </childnode>
-      </node>
-      <node id="425">
-        <label>BxTelex.hpp</label>
-        <link refid="BxTelex.hpp"/>
-        <childnode refid="426" relation="include">
-        </childnode>
-        <childnode refid="428" relation="include">
-        </childnode>
-        <childnode refid="431" relation="include">
+      <node id="442">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="437" relation="include">
         </childnode>
         <childnode refid="433" relation="include">
         </childnode>
-        <childnode refid="434" relation="include">
+      </node>
+      <node id="440">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="438" relation="include">
         </childnode>
+      </node>
+      <node id="438">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
         <childnode refid="435" relation="include">
         </childnode>
       </node>
-      <node id="426">
+      <node id="433">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="427" relation="include">
+        <childnode refid="434" relation="include">
         </childnode>
       </node>
-      <node id="427">
+      <node id="437">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
+      <node id="435">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="436" relation="include">
+        </childnode>
+      </node>
       <node id="432">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="428" relation="include">
+        <label>BxTelex.hpp</label>
+        <link refid="BxTelex.hpp"/>
+        <childnode refid="433" relation="include">
         </childnode>
-      </node>
-      <node id="429">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="427" relation="include">
+        <childnode refid="435" relation="include">
         </childnode>
-        <childnode refid="430" relation="include">
+        <childnode refid="437" relation="include">
         </childnode>
-      </node>
-      <node id="430">
-        <label>stdio.h</label>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
       </node>
       <node id="436">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="431" relation="include">
-        </childnode>
-        <childnode refid="426" relation="include">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="434" relation="include">
         </childnode>
       </node>
-      <node id="431">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="432" relation="include">
+      <node id="439">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -114,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxTelex.hpp" line="215" column="12"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxTelex.hpp" line="215" column="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -124,7 +119,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="normal">﻿#pragma<sp/>once</highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxSingleton.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxThrow.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxArgument.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxMemory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVar.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BxVarMap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -229,16 +224,16 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PeerName<sp/>=<sp/><ref refid="namespace_bx_util_global_1a33788c5de2f0a7b6e38324b5ecd7ae7f" kindref="member" tooltip="스트링 해제 ">BxUtilGlobal::StrFree</ref>(PeerName);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>인스턴스관리</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>global_func<sp/><ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>*<sp/>Create(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>projectname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>peername,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>reports,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_throw" kindref="compound" tooltip="가변인자 제공 ">BxThrow</ref>&amp;<sp/>commands,<sp/>UpdateCommandCB<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cbdata)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>global_func<sp/><ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>*<sp/>Create(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>projectname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>peername,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>reports,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bx_argument" kindref="compound" tooltip="가변인자 제공 ">BxArgument</ref>&amp;<sp/>commands,<sp/>UpdateCommandCB<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>cbdata)</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_data<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>LastTelexID<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>*<sp/>Result<sp/>=<sp/>BxNew(<ref refid="class_bx_telex" kindref="compound" tooltip="HQ서버연동 전보시스템 ">BxTelex</ref>);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;TelexID<sp/>=<sp/>--LastTelexID;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;ProjectName<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(projectname);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;PeerName<sp/>=<sp/><ref refid="namespace_bx_util_global_1af070166376fc2c75242084d8cb7deb3a" kindref="member" tooltip="스트링 할당 및 복사하기 ">BxUtilGlobal::StrCpyWithAlloc</ref>(peername);</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>reports.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();<sp/>++i)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>reports.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();<sp/>++i)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>**<sp/>OneReport<sp/>=<sp/>reports.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>*&gt;(i);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>**<sp/>OneReport<sp/>=<sp/>reports.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_telex_1_1_report" kindref="compound">Report</ref>*&gt;(i);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;reports파라미터<sp/>타입매칭<sp/>실패&gt;&quot;</highlight><highlight class="normal">,<sp/>OneReport);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneReport)</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -246,9 +241,9 @@
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result-&gt;ReportIDs[LAST]<sp/>=<sp/>(uint)<sp/>*OneReport;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>commands.<ref refid="class_bx_throw_1a7704438cd213692aa50b8adbb547cfe9" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();<sp/>++i)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>commands.<ref refid="class_bx_argument_1ae96cbca255ac73e912a23625e9eb23d5" kindref="member" tooltip="데이터길이 가져오기 ">Length</ref>();<sp/>++i)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>**<sp/>OneCommand<sp/>=<sp/>commands.<ref refid="class_bx_throw_1aa501b1854bd258ec7263fc6d7e7bb6be" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>*&gt;(i);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>**<sp/>OneCommand<sp/>=<sp/>commands.<ref refid="class_bx_argument_1a35e8e0a2c2ee8d5b344c513aa6dc723b" kindref="member" tooltip="데이터 접근하기 ">Access</ref>&lt;<ref refid="class_bx_telex_1_1_command" kindref="compound">Command</ref>*&gt;(i);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxTelex&lt;commands파라미터<sp/>타입매칭<sp/>실패&gt;&quot;</highlight><highlight class="normal">,<sp/>OneCommand);</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(OneCommand)</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -611,6 +606,6 @@
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="489"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxTelex.hpp"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxTelex.hpp"/>
   </compounddef>
 </doxygen>

@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="222" bodyend="222"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="222" bodyend="222"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="222" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpoints_1a5ff325db875c3d0584d1f7d64a4c347e" prot="public" static="no" mutable="no">
         <type><ref refid="structpoint" kindref="compound">point</ref></type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="222" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="222" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -56,19 +56,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="158">
+      <node id="168">
         <label>point</label>
         <link refid="structpoint"/>
       </node>
-      <node id="157">
+      <node id="167">
         <label>points</label>
         <link refid="structpoints"/>
-        <childnode refid="158" relation="usage">
+        <childnode refid="168" relation="usage">
           <edgelabel>pt</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxType.hpp" bodystart="222" bodyend="222"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" line="222" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxType.hpp" bodystart="222" bodyend="222"/>
     <listofallmembers>
       <member refid="structpoints_1a2b793020dd6f88989fb85d0b026eda0d" prot="public" virt="non-virtual"><scope>points</scope><name>count</name></member>
       <member refid="structpoints_1a24af8f922ec3484ce2bdc8f90ad7caf0ad6367ca852d00d0b5333c7ab80b34158" prot="public" virt="non-virtual"><scope>points</scope><name>max</name></member>

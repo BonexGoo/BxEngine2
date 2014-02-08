@@ -1,4 +1,4 @@
-BxEngine 3.0.0 For Marmalade 7.0.0 And QT 5.2.1
+BxEngine 3.0.1 For Marmalade 7.0.0 And QT 5.2.1
 ===============================================
 
 안녕하세요. github로 서비스하는 BxEngine입니다.

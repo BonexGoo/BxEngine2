@@ -23,8 +23,8 @@ public:
 		BxWebContent Web;
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf"))
 		{
-			buttonfont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxTHROW(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 12);
-			IMEfont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxTHROW(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 18);
+			buttonfont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxARG(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 12);
+			IMEfont = BxCore::Font::Open(BxString::Parse("<>:<A><FS><A>", BxARG(Web.GetCachePath(), "labtest/r00000000n.TTF-01-BONEC-000000.NanumGothicExtraBold.ttf")), 18);
 		}
 		if(Web.Cache("elgard.nowcdn.co.kr", 80, "labtest/r00000000n.IMG-01-BONEC-000000.keyboard.png"))
 		{

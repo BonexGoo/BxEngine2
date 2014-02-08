@@ -166,7 +166,7 @@ public:
 				}
 				if(buffer[i] == '[')
 				{
-					BxString Index("<>:.<A>", BxTHROW(GroupArrayIndex[END]++));
+					BxString Index("<>:.<A>", BxARG(GroupArrayIndex[END]++));
 					GroupArrayIndex[LAST] = 0;
 					GroupNameLength[LAST] = Index.GetLength();
 					GroupName += Index;
@@ -300,7 +300,7 @@ public:
 						}
 						BxCore::File::WriteString(KeywordFile, ") = ");
 						BxString SelectNumber;
-						SelectNumber.Format("<>:<A><R><N>", BxTHROW(SelectRadioIndex));
+						SelectNumber.Format("<>:<A><R><N>", BxARG(SelectRadioIndex));
 						BxCore::File::WriteString(KeywordFile, SelectNumber);
 					}
 				}
@@ -314,7 +314,7 @@ public:
 					BxCore::File::WriteString(KeywordFile, "number(");
 					BxCore::File::WriteString(KeywordFile, NumberPool[i].GetKeyword());
 					BxString NumberValue;
-					NumberValue.Format("<>:) = <A><R><N>", BxTHROW(NumberPool[i].LetInt()));
+					NumberValue.Format("<>:) = <A><R><N>", BxARG(NumberPool[i].LetInt()));
 					BxCore::File::WriteString(KeywordFile, NumberValue);
 				}
 			}

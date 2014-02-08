@@ -4,7 +4,7 @@ var searchData=
   ['searchfiles',['SearchFiles',['../namespace_bx_core_1_1_file.html#a81b8aee658da8a26de291fcc41d8fb78',1,'BxCore::File']]],
   ['send',['Send',['../namespace_bx_core_1_1_socket.html#a9a23c3a4ad8819aa795983a72eb8c5b2',1,'BxCore::Socket']]],
   ['sendevent',['SendEvent',['../class_bx_animate.html#aaf88b551be77ef906da4e61ac407a62c',1,'BxAnimate']]],
-  ['setarray',['SetArray',['../namespace_bx_util_global.html#a8bc0de550dfeda13d1a2bb85e7d55590',1,'BxUtilGlobal']]],
+  ['setarray',['SetArray',['../namespace_bx_util_global.html#a79b68673159a50732cfaf0e7252c0500',1,'BxUtilGlobal']]],
   ['setcallbackedk',['SetCallbackEDK',['../namespace_bx_core_1_1_system.html#ab1e1b596a676fcce2dfd0d73cc568265',1,'BxCore::System']]],
   ['seteffectvolume',['SetEffectVolume',['../namespace_bx_core_1_1_sound.html#af15db88c483a17d15554a266445c2e74',1,'BxCore::Sound']]],
   ['setencoding',['SetEncoding',['../namespace_bx_core_1_1_font.html#a42e36e9ec26a01aff7ecb46fbb04a3fb',1,'BxCore::Font']]],

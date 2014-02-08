@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_a_r_g___s_t_r___l_o_w_e_r" kind="class" prot="public">
+    <compoundname>ARG_STR_LOWER</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_r_g___s_t_r___l_o_w_e_r_1a22c09d3965f60ccf8fc464fd36534bab" prot="public" static="no" mutable="no">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ ARG_STR_LOWER::Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_r_g___s_t_r___l_o_w_e_r_1a83d446fda38e2a86b423078d9021b3bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ARG_STR_LOWER::ARG_STR_LOWER</definition>
+        <argsstring>(const ARG_STR_LOWER &amp;RHS)</argsstring>
+        <name>ARG_STR_LOWER</name>
+        <param>
+          <type>const <ref refid="class_a_r_g___s_t_r___l_o_w_e_r" kindref="compound">ARG_STR_LOWER</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="20" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_r_g___s_t_r___l_o_w_e_r_1a8b179ec2ab312f01485ca2e500df3cb6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ARG_STR_LOWER::ARG_STR_LOWER</definition>
+        <argsstring>(string RHS)</argsstring>
+        <name>ARG_STR_LOWER</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="21" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_r_g___s_t_r___l_o_w_e_r_1a58b35f5878e1885ab937abd47dafcead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_r_g___s_t_r___l_o_w_e_r" kindref="compound">ARG_STR_LOWER</ref> &amp;</type>
+        <definition>ARG_STR_LOWER&amp; ARG_STR_LOWER::operator=</definition>
+        <argsstring>(const ARG_STR_LOWER &amp;RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_a_r_g___s_t_r___l_o_w_e_r" kindref="compound">ARG_STR_LOWER</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="22" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" line="17" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxArgument.hpp" bodystart="16" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a83d446fda38e2a86b423078d9021b3bf" prot="public" virt="non-virtual"><scope>ARG_STR_LOWER</scope><name>ARG_STR_LOWER</name></member>
+      <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a8b179ec2ab312f01485ca2e500df3cb6" prot="public" virt="non-virtual"><scope>ARG_STR_LOWER</scope><name>ARG_STR_LOWER</name></member>
+      <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a58b35f5878e1885ab937abd47dafcead" prot="public" virt="non-virtual"><scope>ARG_STR_LOWER</scope><name>operator=</name></member>
+      <member refid="class_a_r_g___s_t_r___l_o_w_e_r_1a22c09d3965f60ccf8fc464fd36534bab" prot="public" virt="non-virtual"><scope>ARG_STR_LOWER</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

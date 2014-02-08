@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(connect_connected == <a class="code" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">BxCore::Socket::Connect</a>(Socket, Domain, Port, Timeout, Progress))</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">int</span> RequestCharsLength = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">string</span> _tmp_ RequestChars = <a class="code" href="namespace_bx_core_1_1_util.html#a39339febd9159aca9926f2a400bb0617" title="스트링구성 ">BxCore::Util::Print</a>(</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">string</span> _tmp_ RequestChars = <a class="code" href="namespace_bx_core_1_1_util.html#acc00b7e6b5a850983733ca189777d3a7" title="스트링구성 ">BxCore::Util::Print</a>(</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="stringliteral">&quot;&lt;&gt;:GET /&lt;A&gt;&lt;A&gt;&lt;A&gt; HTTP/1.1&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="stringliteral">&quot;Accept: text/html, application/xhtml+xml, */*&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="stringliteral">&quot;Accept-Language: ko-KR&lt;R&gt;&lt;N&gt;&quot;</span></div>
@@ -155,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="stringliteral">&quot;Accept-Encoding: deflate&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="stringliteral">&quot;Host: &lt;A&gt;&lt;R&gt;&lt;N&gt;&quot;</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="stringliteral">&quot;Connection: Keep-Alive&lt;R&gt;&lt;N&gt;&quot;</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</span>, BxTHROW(Path, (!Arguments || !*Arguments)? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;?&quot;</span>, (!Arguments)? <span class="stringliteral">&quot;&quot;</span> : Arguments, Domain),</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="stringliteral">&quot;&lt;R&gt;&lt;N&gt;&quot;</span>, BxARG(Path, (!Arguments || !*Arguments)? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;?&quot;</span>, (!Arguments)? <span class="stringliteral">&quot;&quot;</span> : Arguments, Domain),</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                &amp;RequestCharsLength);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">int</span> SendResult = 0, SendedLength = 0;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">do</span></div>
@@ -297,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        global_data <span class="keyword">const</span> <span class="keywordtype">int</span> CacheSizeSumMax = <a class="code" href="namespace_bx_core_1_1_system.html#acdf43bdd47ce78f2d24404bd6d782d4b" title="Number형 환경설정값 불러오기 ">BxCore::System::GetConfigNumber</a>(<span class="stringliteral">&quot;Bx.WebContent.CacheSizeSumMax&quot;</span>, -1);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">// 캐시로드</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> CacheFileName(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;FS&gt;&lt;A&gt;&quot;</span>, BxTHROW(<a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>(), FilePath));</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="class_bx_string.html" title="스트링 관리 ">BxString</a> CacheFileName(<span class="stringliteral">&quot;&lt;&gt;:&lt;A&gt;&lt;FS&gt;&lt;A&gt;&quot;</span>, BxARG(<a class="code" href="class_bx_web_content.html#a8ae29f0628682e1cfb7f6f667a895312" title="캐시폴더이름 받기 ">GetCachePath</a>(), FilePath));</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordtype">int</span> FindedPos = -1;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">while</span>((FindedPos = CacheFileName.<a class="code" href="class_bx_string.html#a3ee00cfa51f7d302abc54a979f2fff07" title="글자 찾기 ">Find</a>(<span class="charliteral">&#39;?&#39;</span>)) != -1)</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            CacheFileName[FindedPos] = <span class="charliteral">&#39;_&#39;</span>;</div>
@@ -390,7 +390,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:46 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:07 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

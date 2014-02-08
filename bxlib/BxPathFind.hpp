@@ -383,7 +383,7 @@ namespace BxPathFind
 			BxDelete(hurdle);
 		}
 
-		public: void Add(const points& polygon, const bool isBoundLine = false)
+		public: void Add(points& polygon, const bool isBoundLine = false)
 		{
 			BxASSERT("Object가 추가된 Hurdle은 Add를 지원하지 않습니다>", ObjectBeginID == -1);
 			rect Bound = {polygon.pt[0].x, polygon.pt[0].y, polygon.pt[0].x, polygon.pt[0].y};

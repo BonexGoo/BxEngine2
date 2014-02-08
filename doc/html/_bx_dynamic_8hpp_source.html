@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BxEngine
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
   </td>
  </tr>
@@ -345,7 +345,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keyword">friend</span> <a class="code" href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BindPool</a>* Resource::BinderBegin(<span class="keywordtype">string</span> CachePoolName);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keyword">private</span>: <a class="code" href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BindPool</a>* ParentBinder; <span class="comment">// MemberData</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keyword">private</span>: callback_serialize ParamCB; <span class="comment">// MemberData</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keyword">private</span>: <span class="keywordtype">string</span> ParamComment; <span class="comment">// MemberData</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keyword">private</span>: string_rw ParamComment; <span class="comment">// MemberData</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keyword">private</span>: <a class="code" href="class_bx_dynamic_1_1_resource_1_1_link_pool.html">LinkPool</a>(<a class="code" href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BindPool</a>* Parent) : ParentBinder(Parent), ParamCB(<span class="keyword">nullptr</span>), ParamComment(<span class="keyword">nullptr</span>) {}</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keyword">public</span>: <span class="keyword">virtual</span> ~<a class="code" href="class_bx_dynamic_1_1_resource_1_1_link_pool.html">LinkPool</a>() {ResetData();}</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keyword">private</span>: <span class="keyword">virtual</span> Pool* New(Pool* Parent) {<span class="keywordflow">return</span> BxNew_Param(<a class="code" href="class_bx_dynamic_1_1_resource_1_1_link_pool.html">LinkPool</a>, (<a class="code" href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BindPool</a>*) Parent);}</div>
@@ -427,7 +427,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2014 00:58:45 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 9 2014 01:20:04 for BxEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

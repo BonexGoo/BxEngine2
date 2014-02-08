@@ -83,9 +83,9 @@ public:
 	global_func int& Version() {global_data int _Version; return _Version;}
 	global_func bool& IsValidDownload() {global_data bool _IsValidDownload = true; return _IsValidDownload;}
 	global_func callback_event& Callback() {global_data callback_event _Callback; return _Callback;}
-	global_func bool DownloadCache(string url, BxWebContent _out_ Content, int _out_ FileSize, string _out_ FilePath, bool DoLoad)
+	global_func bool DownloadCache(string url, BxWebContent _out_ Content, bool DoLoad, int _out_ FileSize, string_rw _out_ FilePath)
 	{
-		BxString QueryArg("<>:subject=<A>&file=<A>&version=<A>", BxTHROW(BxGUI::Subject(), url, BxGUI::Version()));
+		BxString QueryArg("<>:subject=<A>&file=<A>&version=<A>", BxARG(BxGUI::Subject(), url, BxGUI::Version()));
 		BxWebContent Web;
 		if(Web.Query(BxGUI::Domain(), 80, "update/res_download_cdn.aspx", QueryArg))
 		{
@@ -93,10 +93,13 @@ public:
 			BxString::Parse::Division(QueryResults, (string) Web.GetBytes(), Web.GetTextLength());
 			if(QueryResults.Length() == 3 && BxUtilGlobal::AtoI(QueryResults[0]) == 1)
 			{
-				FileSize = BxUtilGlobal::AtoI(QueryResults[1]);
-				BxString FilePathString("<>:update<FS><A>", BxTHROW((string) QueryResults[2]));
+				BxString FilePathString("<>:update<FS><A>", BxARG((string) QueryResults[2]));
 				if(Content.Cache(BxGUI::Domain(), 80, FilePathString, DoLoad))
+				{
+					FileSize = BxUtilGlobal::AtoI(QueryResults[1]);
+					FilePath = BxUtilGlobal::StrCpyWithAlloc(FilePathString);
 					return true;
+				}
 			}
 		}
 		return false;
@@ -459,7 +462,7 @@ public:
 		return true;
 	}
 
-	bool AdjustTextFormat(string TextName, const BxThrow& Args)
+	bool AdjustTextFormat(string TextName, const BxArgument& Args)
 	{
 		if(!Map.Access(TextName)) return false;
 		Content::Text* TextElement = (Content::Text*) *Map.Access(TextName);
@@ -470,13 +473,13 @@ public:
 
 	int GetImageWidth(string ImageName)
 	{
-		Element* ValueElement = *Map.Access(BxString::Parse("<>:<A>.width", BxTHROW(ImageName)));
+		Element* ValueElement = *Map.Access(BxString::Parse("<>:<A>.width", BxARG(ImageName)));
 		return (ValueElement)? ValueElement->GetValue() : 0;
 	}
 
 	int GetImageHeight(string ImageName)
 	{
-		Element* ValueElement = *Map.Access(BxString::Parse("<>:<A>.height", BxTHROW(ImageName)));
+		Element* ValueElement = *Map.Access(BxString::Parse("<>:<A>.height", BxARG(ImageName)));
 		return (ValueElement)? ValueElement->GetValue() : 0;
 	}
 
@@ -628,7 +631,7 @@ protected:
 	public:
 		class Color : public Element
 		{
-			string Name;
+			string_rw Name;
 			uint Argb;
 		protected:
 			uint ArgbGen;
@@ -672,8 +675,8 @@ protected:
 		};
 		class Edge : public Element
 		{
-			string Name;
-			string Colors;
+			string_rw Name;
+			string_rw Colors;
 		public:
 			Element::VarPtr _ref_ ColorValues;
 		public:
@@ -707,11 +710,11 @@ protected:
 		};
 		class Image : public Element
 		{
-			string Name;
-			string Url;
+			string_rw Name;
+			string_rw Url;
 		public:
 			int FileSize;
-			string FilePath;
+			string_rw FilePath;
 			BxImage CacheImage;
 		public:
 			Image() : Name(nullptr), Url(nullptr), FileSize(0), FilePath(nullptr) {Type = TypeImage;}
@@ -733,7 +736,7 @@ protected:
 			{
 				SetStep(StepProcessed);
 				BxWebContent Content;
-				if(DownloadCache(Url, Content, FileSize, FilePath, true))
+				if(DownloadCache(Url, Content, true, FileSize, FilePath))
 				{
 					BxString FilePathString(FilePath);
 					BxString FileTypeString = FilePathString.Right(4);
@@ -755,14 +758,14 @@ protected:
 				}
 				else IsValidDownload() = false;
 				// 가로길이 추가등록
-				BxString WidthName("<>:<A>.width", BxTHROW(Name));
+				BxString WidthName("<>:<A>.width", BxARG(Name));
 				BxASSERT("BxGUI<중복된 컨텐트명입니다>", !Map->Access(WidthName));
 				Element* NewData1 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Width() : 0);
 				Elements->Insert(LAST, (*Map)[WidthName] = NewData1);
 				NewData1->SetStep(StepNamed);
 				NewData1->PreProcessing(nullptr, nullptr);
 				// 세로길이 추가등록
-				BxString HeightName("<>:<A>.height", BxTHROW(Name));
+				BxString HeightName("<>:<A>.height", BxARG(Name));
 				BxASSERT("BxGUI<중복된 컨텐트명입니다>", !Map->Access(HeightName));
 				Element* NewData2 = BxNew_Param(Element, (CacheImage.IsExist())? CacheImage.Height() : 0);
 				Elements->Insert(LAST, (*Map)[HeightName] = NewData2);
@@ -778,8 +781,8 @@ protected:
 		};
 		class Sprite : public Element
 		{
-			string Name;
-			string Images;
+			string_rw Name;
+			string_rw Images;
 			int Delay;
 		public:
 			Element::VarPtr _ref_ ImageValues;
@@ -815,12 +818,12 @@ protected:
 		};
 		class Font : public Element
 		{
-			string Name;
+			string_rw Name;
 			int Size;
-			string Url;
+			string_rw Url;
 		public:
 			int FileSize;
-			string FilePath;
+			string_rw FilePath;
 			id_font CacheFont;
 		public:
 			Font() : Name(nullptr), Size(0), Url(nullptr), FileSize(0), FilePath(nullptr), CacheFont(nullptr) {Type = TypeFont;}
@@ -846,21 +849,21 @@ protected:
 			{
 				SetStep(StepPreProcessed);
 				BxWebContent Content;
-				if(DownloadCache(Url, Content, FileSize, FilePath, false))
+				if(DownloadCache(Url, Content, false, FileSize, FilePath))
 					CacheFont = BxCore::Font::Open(BxString(BxWebContent::GetCachePath()) + "/" + FilePath, Size);
 				else IsValidDownload() = false;
 			}
 		};
 		class Text : public Element
 		{
-			string Name;
-			string Format;
-			string Font;
-			string Color;
-			string Vector;
-			string Line;
+			string_rw Name;
+			string_rw Format;
+			string_rw Font;
+			string_rw Color;
+			string_rw Vector;
+			string_rw Line;
 		protected:
-			string FormatGen;
+			string_rw FormatGen;
 		public:
 			Content::Font* _ref_ FontValue;
 			Content::Color* _ref_ ColorValue;
@@ -887,10 +890,10 @@ protected:
 				Format = BxUtilGlobal::StrCpyWithAlloc(format);
 				Font = BxUtilGlobal::StrCpyWithAlloc(font);
 				Color = BxUtilGlobal::StrCpyWithAlloc(color);
-				Vector = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:vector.<A>", BxTHROW(vector)));
-				Line = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:line.<A>", BxTHROW(line)));
+				Vector = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:vector.<A>", BxARG(vector)));
+				Line = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:line.<A>", BxARG(line)));
 			}
-			void AdjustFormat(Element::VarMapPtr* Map, BxVar<Element>* Elements, const BxThrow& Args = BxThrow::zero())
+			void AdjustFormat(Element::VarMapPtr* Map, BxVar<Element>* Elements, const BxArgument& Args = BxArgument::zero())
 			{
 				FormatGen = BxUtilGlobal::StrFree(FormatGen);
 				if(Format[0] == '<' && Format[1] == '>' && Format[2] == ':')
@@ -900,7 +903,7 @@ protected:
 				{
 					const size TextSize = (FontValue->GetCacheFont())? BxCore::Font::GetSize(FontValue->GetCacheFont(), FormatGen) : BxDrawGlobal::WH(0, 0);
 					// 가로길이 추가등록
-					BxString WidthName("<>:<A>.width", BxTHROW(Name));
+					BxString WidthName("<>:<A>.width", BxARG(Name));
 					if(Map->Access(WidthName)) (*Map->Access(WidthName))->SetValue(TextSize.w);
 					else if(Elements)
 					{
@@ -910,7 +913,7 @@ protected:
 						NewData->PreProcessing(nullptr, nullptr);
 					}
 					// 세로길이 추가등록
-					BxString HeightName("<>:<A>.height", BxTHROW(Name));
+					BxString HeightName("<>:<A>.height", BxARG(Name));
 					if(Map->Access(HeightName)) (*Map->Access(HeightName))->SetValue(TextSize.h);
 					else if(Elements)
 					{
@@ -990,11 +993,11 @@ protected:
 		};
 		class Button : public Element
 		{
-			string Name;
-			string Images;
-			string Edges;
-			string Event;
-			string Link;
+			string_rw Name;
+			string_rw Images;
+			string_rw Edges;
+			string_rw Event;
+			string_rw Link;
 		protected:
 			rect EventAreaGen;
 			bool IsClickedGen;
@@ -1089,9 +1092,9 @@ protected:
 		};
 		class EditBox : public Element
 		{
-			string Name;
-			string Text;
-			string Colors;
+			string_rw Name;
+			string_rw Text;
+			string_rw Colors;
 		public:
 			Element* _ref_ TextValue;
 			Element::VarPtr _ref_ ColorValues;
@@ -1241,10 +1244,10 @@ protected:
 	public:
 		class Split : public ElementTree
 		{
-			string Name;
-			string Pos;
-			string Size;
-			string Fill;
+			string_rw Name;
+			string_rw Pos;
+			string_rw Size;
+			string_rw Fill;
 		protected:
 			int AddSize1024Gen;
 		public:
@@ -1264,7 +1267,7 @@ protected:
 			{
 				SetStep(StepNamed);
 				Name = BxUtilGlobal::StrCpyWithAlloc(name);
-				Pos = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:pos.<A>", BxTHROW(pos)));
+				Pos = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:pos.<A>", BxARG(pos)));
 				Size = BxUtilGlobal::StrCpyWithAlloc(size);
 				Fill = BxUtilGlobal::StrCpyWithAlloc(fill);
 			}
@@ -1322,9 +1325,9 @@ protected:
 		};
 		class Outline : public ElementTree
 		{
-			string Name;
-			string Size;
-			string Fill;
+			string_rw Name;
+			string_rw Size;
+			string_rw Fill;
 		public:
 			Element* _ref_ FillValue;
 		public:
@@ -1393,10 +1396,10 @@ protected:
 		};
 		class Extra : public ElementTree
 		{
-			string Name;
-			string Width;
-			string Height;
-			string Fill;
+			string_rw Name;
+			string_rw Width;
+			string_rw Height;
+			string_rw Fill;
 		public:
 			Element* _ref_ FillValue;
 		public:
@@ -1470,13 +1473,13 @@ protected:
 		};
 		class View : public ElementTree
 		{
-			string Name;
-			string PosX;
-			string PosY;
-			string Width;
-			string Height;
-			string Scroll;
-			string Fill;
+			string_rw Name;
+			string_rw PosX;
+			string_rw PosY;
+			string_rw Width;
+			string_rw Height;
+			string_rw Scroll;
+			string_rw Fill;
 		protected:
 			int AddPosXGen;
 			int AddPosYGen;
@@ -1507,11 +1510,11 @@ protected:
 			{
 				SetStep(StepNamed);
 				Name = BxUtilGlobal::StrCpyWithAlloc(name);
-				PosX = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:posx.<A>", BxTHROW(posx)));
-				PosY = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:posy.<A>", BxTHROW(posy)));
+				PosX = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:posx.<A>", BxARG(posx)));
+				PosY = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:posy.<A>", BxARG(posy)));
 				Width = BxUtilGlobal::StrCpyWithAlloc(width);
 				Height = BxUtilGlobal::StrCpyWithAlloc(height);
-				Scroll = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:scroll.<A>", BxTHROW(scroll)));
+				Scroll = BxUtilGlobal::StrCpyWithAlloc(BxString::Parse("<>:scroll.<A>", BxARG(scroll)));
 				Fill = BxUtilGlobal::StrCpyWithAlloc(fill);
 			}
 			void AdjustScroll(int posx, int posy)

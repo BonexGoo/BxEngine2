@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include <BxThrow.hpp>
+#include <BxArgument.hpp>
 
 //! \brief BxEngine Core-API
 namespace BxCore
@@ -168,7 +168,7 @@ namespace BxCore
 		\param map : 스트링맵 스크립트(식별문자는 "<>:")
 		\param args : map에 쓰일 가변인자
 		*/
-		void Trace(string map, const BxThrow& args = BxThrow::zero());
+		void Trace(string map, const BxArgument& args = BxArgument::zero());
 
 		/*!
 		\brief CP949 스트링상수로부터 UTF8 스트링상수얻기 (Macro함수인 W1을 사용권장)
@@ -387,7 +387,7 @@ namespace BxCore
 		\param panorama : 파노라마로 추가될 사운드ID들
 		\see StopMusic
 		*/
-		void PlayMusic(id_sound sound, bool interrupt = false, const BxThrow& panorama = BxThrow::zero());
+		void PlayMusic(id_sound sound, bool interrupt = false, const BxArgument& panorama = BxArgument::zero());
 
 		/*!
 		\brief 배경음 중지
@@ -446,9 +446,10 @@ namespace BxCore
 		/*!
 		\brief 메모리반환
 		\param item : 반환할 메모리
+		\return 간편한 사용을 위한 nullptr값 리턴
 		\see Alloc
 		*/
-		void Free(void* buf);
+		void* Free(void* buf);
 
 		/*!
 		\brief 메모리 초기화
@@ -493,7 +494,7 @@ namespace BxCore
 		\param length : 구성된 스트링의 길이
 		\return 구성된 스트링
 		*/
-		string _tmp_ Print(string map, const BxThrow& args = BxThrow::zero(), int* length = nullptr);
+		string _tmp_ Print(string map, const BxArgument& args = BxArgument::zero(), int* length = nullptr);
 
 		const int* Cos1024Table();
 		const int* Tan1024Table();

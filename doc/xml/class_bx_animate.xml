@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="13" bodyend="13"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="13" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="typedef" id="class_bx_animate_1ae430e657f6e0620b85bdba4343b40a85" prot="public" static="no">
         <type>compare(*</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="11" bodyend="-1"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="11" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="19" bodyend="22"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="19" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="19" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a03fe8b9535741140ae149076da6bbeb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="27" bodyend="30"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="27" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a7f1d26b44a84cae17da512f14fd5ccfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func <ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -108,7 +108,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="37" bodyend="42"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="37" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="37" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1aa542dbaa87cd22940e08350440e3a237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -134,7 +134,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="49" bodyend="79"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="49" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="49" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1ad6e51ca501fa68b9b88f9035c87999a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -160,7 +160,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="86" bodyend="96"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="86" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="86" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -186,7 +186,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="103" bodyend="107"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="103" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="103" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>id_object</type>
@@ -235,7 +235,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="117" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="117" bodyend="133"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="117" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="117" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -261,7 +261,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="140" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="140" bodyend="166"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="140" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="140" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1af29a6641041d7c3dc33f24a817970e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="171" bodyend="185"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="171" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="171" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
@@ -300,7 +300,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="192" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="192" bodyend="204"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="192" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="192" bodyend="204"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -348,7 +348,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="212" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="212" bodyend="230"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="212" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="212" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a081c245107711ae03c88f091f964358a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -386,7 +386,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="238" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="238" bodyend="303"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="238" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="238" bodyend="303"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a55f71ae45caecc7efc23dd77c95cd903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -400,7 +400,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="309" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="309" bodyend="322"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="309" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="309" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func compare</type>
@@ -448,7 +448,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="331" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="331" bodyend="337"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="331" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="331" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1ab3805d16130bc272ba9b7d5629438389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>event</type>
@@ -470,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="339" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="339" bodyend="357"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="339" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="339" bodyend="357"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1ae041614d9aa7a75efbcfdb7700bb9b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>check</type>
@@ -492,7 +492,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="359" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="359" bodyend="374"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="359" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="359" bodyend="374"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a316ddc9c21e8ecd039bffd50ef315160" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>radio</type>
@@ -514,7 +514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="376" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="376" bodyend="392"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="376" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="376" bodyend="392"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1a3ccb6521155e4e75b32235ac45dc105a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>number</type>
@@ -536,7 +536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="394" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="394" bodyend="409"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="394" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="394" bodyend="409"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_animate_1ad60156ab1f65bec7d8c9ea1ba6002a19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -558,14 +558,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="411" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="411" bodyend="429"/>
+        <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="411" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="411" bodyend="429"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>메두사툴 애니메이션 운영 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine300ForMarmalade700/bxlib/BxAnimate.hpp" bodystart="7" bodyend="1518"/>
+    <location file="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" line="8" column="1" bodyfile="C:/Bonexpecial/Team_Onezay/Project/BxEngine301ForMarmalade700AndQT521/bxlib/BxAnimate.hpp" bodystart="7" bodyend="1518"/>
     <listofallmembers>
       <member refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>AddObject</name></member>
       <member refid="class_bx_animate_1a5d9cce0b015b4c734e5d0c11ba0e049caece320d09058d8e1941f4f7f08d654b7" prot="public" virt="non-virtual"><scope>BxAnimate</scope><name>BEGIN_MAX</name></member>

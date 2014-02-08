@@ -167,7 +167,7 @@ namespace BxCore
 			#endif
 		}
 
-		void Trace(string map, const BxThrow& args)
+        void Trace(string map, const BxArgument& args)
 		{
 			printf(BxCore::Util::Print(map, args));
 			fflush(stdout);
@@ -187,7 +187,9 @@ namespace BxCore
 
 		string _tmp_ GetDeviceID(int* integerid)
 		{
+			// 맥어드레스ID를 제작
 			////////////////////////////////////////
+			if(integerid) *integerid = 0;
 			return "UNSUPPORTED";
 		}
 
@@ -303,7 +305,7 @@ namespace BxCore
 			////////////////////////////////////////
 		}
 
-		void PlayMusic(id_sound sound, bool interrupt, const BxThrow& panorama)
+        void PlayMusic(id_sound sound, bool interrupt, const BxArgument& panorama)
 		{
 			////////////////////////////////////////
 		}
@@ -352,9 +354,10 @@ namespace BxCore
 			return (void*) new byte[size];
 		}
 
-		void Free(void* buf)
+		void* Free(void* buf)
 		{
 			delete[] (byte*) buf;
+			return nullptr;
 		}
 
 		void MemSet(void* dst, byte value, int length)
